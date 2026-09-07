@@ -1,0 +1,177 @@
+recorded_at=2026-09-05T20:37:54+08:00
+git_head=0587916c6c753407eb61761efd9a3951a9929592
+## master...origin/master
+ M Makefile.work
+ M platform/vs/docker-dash-engine/Dockerfile.j2
+ M sonic-slave-trixie/Dockerfile.j2
+ M src/bash/patches/series
+ M src/libyang3-py3/Makefile
+ ? src/linkmgrd
+ M src/lldpd/Makefile
+ M src/monit/BUILD.bazel
+ M src/p4lang/BUILD.bazel
+ M src/p4lang/Makefile
+ M src/radius/pam/Makefile
+ M src/sflow/hsflowd/Makefile
+ M src/sflow/psample/Makefile
+ M src/sflow/sflowtool/Makefile
+ m src/sonic-bmp
+ M src/sonic-build-hooks/scripts/post_run_cleanup
+ M src/sonic-config-engine/tests/test_cfggen.py
+ m src/sonic-dash-ha
+ ? src/sonic-dbsyncd
+ M src/sonic-device-data/pack_device_data.py
+ M src/sonic-frr/Makefile
+ ? src/sonic-frr/frr
+ m src/sonic-host-services
+ ? src/sonic-linux-kernel
+ m src/sonic-mgmt-common
+ m src/sonic-mgmt-framework
+ m src/sonic-platform-common
+ m src/sonic-platform-daemons
+ ? src/sonic-py-swsssdk
+ ? src/sonic-snmpagent
+ ? src/sonic-stp
+ M src/sonic-supervisord-utilities-rs/Cargo.lock
+ M src/sonic-supervisord-utilities-rs/debian/rules
+ m src/sonic-swss
+ ? src/sonic-swss-common
+ m src/sonic-utilities
+ M src/tacacs/audisp/Makefile
+ M src/tacacs/nss/Makefile
+ M src/tacacs/pam/Makefile
+ ? src/wpasupplicant/sonic-wpa-supplicant
+?? .alinos/
+?? .measure/
+?? src/bash/patches/0002-write-pdf-via-stdout.patch
+?? src/p4lang/p4lang-bmv2.patch/serialize-grpc-tests.patch
+?? src/p4lang/p4lang-bmv2.patch/tolerate-ageing-timer-jitter.patch
+?? src/p4lang/p4lang-pi.patch/serialize-grpc-tests.patch
+?? src/sonic-device-data/tests/test_pack_device_data.py
+?? src/sonic-eventd/eventdb
+ d484f504a4e3c6097a5b7d06139640608de7e1cc platform/alpinevs (latest-builds)
+ 6db5d8fd6b0fce967e2c1aa488480615b79c92ee platform/alpinevs/src/libsai-grpc/lemming (v0.7.0-4-g6db5d8fd)
+ 74da9a8beeb34773544a63ed08c2d2854504b4ae platform/aspeed/sonic-platform-modules-arista (remotes/origin/201904-997-g74da9a8)
+ e0904bc3ca3322bd27ddc732381ddac4ce36c248 platform/barefoot/sonic-platform-modules-arista (remotes/origin/201904-968-ge0904bc)
+ b9b38791bc5fd81f846789677ca873345fbf2048 platform/broadcom/saibcm-modules (remotes/origin/zitingguo/sdk-6.5.35-xgs-bcm-genl-dcbdir)
+ cd50cb45c1073b511efb3b2b7e82784a925907ad platform/broadcom/saibcm-modules-dnx (remotes/origin/sdk-6.5.32-dnx-gpl-trixie-7-gcd50cb4)
+ b60994d4666150faf5e22e32e9bcc4e84deeaed3 platform/broadcom/sonic-platform-modules-arista (remotes/origin/201904-1010-gb60994d)
+ bbd67705dcd96f27b22df66801c1326049f6495f platform/broadcom/sonic-platform-modules-nokia (bbd6770)
+ 55a8f6a4be18510aa43d60a54a93c8119abe5450 platform/broadcom/sonic-platform-modules-nokia/mackinac/fmt (11.2.0-10-g55a8f6a4)
+ 5607a8b7cd65cd4892a4fdcf7101ca13c214e48a platform/marvell-prestera/mrvl-prestera (MRVL_PRESTERA_DRIVER_1.8-31-g5607a8b)
+ e9c183cf0327ca9cca6e030dcbc1c015879abd54 platform/marvell-prestera/sonic-platform-marvell (heads/main)
+ 405f10e5305fc7100dc21783406dc69e25dacfc2 platform/marvell-teralynx/mrvl-teralynx (vT6.1.1.1.0.1-7-g405f10e)
+ 1cd0b6f30a7289d50bd19b1440974aff9afb529b platform/marvell-teralynx/sonic-platform-marvell-teralynx (remotes/origin/202505-9-g1cd0b6f)
+ ca327dbb89edc99b9417dd118520c7bde33cefca platform/mellanox/hw-management/hw-mgmt (V.7.0060.1046-2-gca327dbb)
+ c763924affd416df9c4d3e40d4f8ac1cb2be5fff platform/p4/SAI-P4-BM (remotes/origin/v1.0)
+ 75ce6338139d71102c9e056f3d27d7c0047c1bf7 platform/p4/SAI-P4-BM/p4-switch/behavioral-model (1.5.0)
+ 0ab8e58f8a92ee469235028430795088af9cda77 platform/p4/p4-hlir/p4-hlir (0ab8e58)
+ fdee55e2567fe65463f328d70558b5079894b420 platform/p4/p4-hlir/p4-hlir-v1.1 (remotes/origin/p4v1.1)
+ 5415c4160aff025f27fe45301c62aa9aeb4bab40 platform/p4/p4c-bm/p4c-bm (v0.1.0-135-g5415c41)
+ 800ba3026c6d5d6c6b32bfdcf5650f95ea08fbc3 platform/vpp (remotes/origin/rituppal-sFlow_phase_two_platform_vpp-19-g800ba30)
+ 066f838bd29a49788a51c0e8d6b7196417739541 sonic_rules (heads/master)
+ 3c2cfc5c6392e51d3b91c79ef1c658ebd5b53b3d src/dhcpmon (heads/master)
+ 8b1ad6c0ebfb568347d25ef7ae70c3e090e492e0 src/dhcprelay (heads/master)
+ 6552faa2a94250ed0192dbd62e608d37fafcc216 src/dhcprelay/gmock_global (1.0.2-3-g6552faa)
+ 83f8f300635205403433d551e58d78d0c20383f7 src/linkmgrd (remotes/origin/xzc/linkmgrd-bazel)
+ 36a3e3d9ac0447d28161d24028401239d756875f src/ptf (v0.9.4~51)
+ 978598dd04434b5270495ac0c6466eb2c6c752f5 src/ptf-py3 (v0.9.4-5-g978598d)
+ 758549795174dc6b3be70810e0e4d6308f80f1a3 src/redis-dump-load (release-1.1-6-g7585497)
+ 8e08cbf759de6709a5b4af6bea3655d293129bb4 src/scapy (v2.6.1)
+ e326d2e2191de56385bc26c8c5d42536428a34ba src/sonic-bmp (remotes/origin/xzc/sonic-bmp-bazel)
+ d5615a90273e942cd4564a7d77d505e3d3eb559c src/sonic-dash-api (remotes/origin/xzc/dash-api-bazel)
+ e550046f29c418f094b8171363d4752d3f9d5eef src/sonic-dash-ha (remotes/origin/xzc/sonic-dash-ha-bazel)
+ 18a29c1c8a21aeb22a4893c786564acaf8212156 src/sonic-dash-ha/crates/sonic-dash-api-proto/sonic-dash-api (remotes/origin/000001)
+ 8f439339e6c29537dcb8a9f7b7ed6a05b07db0a8 src/sonic-dbsyncd (heads/master)
+ 4cb6d9e6bfe4ad503d1fab21e6f665804b0649ac src/sonic-frr/frr (frr-10.5.4)
+ b6e6b1bfccb34ffd42a4fa4e3cc9454e94eedc4e src/sonic-genl-packet (remotes/origin/000001)
+ 1f3c61af7e48a09af66e025b3b6585af531da439 src/sonic-gnmi (heads/master)
+ dafe928ec86ccde618603babd6080ff7069f93fc src/sonic-host-services (heads/master)
+ defe541aae1323e803dc527a1963bd923d8cde68 src/sonic-linux-kernel (heads/master)
+ a618f13798fda3941a9cc9229a12f86cca7779c2 src/sonic-mgmt-common (heads/master)
+ 6628df2f7dbbd890669de9efac10bcfeb4602bab src/sonic-mgmt-framework (heads/master)
+ 56a7762a3f1efa6436577d83b9b1110d05387cd9 src/sonic-p4rt/sonic-pins (remotes/origin/000001)
+ 30671dbb07f2aadf7ea0268005f09312e6f1c2c2 src/sonic-platform-common (heads/master)
+ 96fe801c356e84c55328dbf855c7e311067d3f0f src/sonic-platform-daemons (heads/master)
+ ecdcfc4fd057addeed9cdc0b08bc2ae067336b72 src/sonic-platform-pde (heads/master)
+ 129db768e931e8d591ff4a603152bf4948667ac5 src/sonic-py-swsssdk (heads/master)
+ 957267cb042d808fa7ccf712448db8615e9aab07 src/sonic-redfish (957267c)
+ 2b20e23543919f47073a079f44aa34ad15659279 src/sonic-restapi (heads/master)
+ 133eac7dd2ecc6ed24e619de9668d521ceb27a8a src/sonic-sairedis (remotes/origin/xzc/sairedis-bazel)
+ c67f1152309ca08a94de0be8634a733c5cb25c35 src/sonic-sairedis/SAI (v1.18.1)
+ 7494366607e2e4c171439df3585eba3c9769fad8 src/sonic-sairedis/SAI/test/ptf (v0.9.4~5)
+ 3d2d9803339503d2988382aa861b47a6a4872c32 src/sonic-sairedis/SAI/test/saithrift/ctypesgen (ctypesgen-0.0.1^2)
+ 0a5f0293e167fca6550f5ac9792917fb4a697e90 src/sonic-snmpagent (heads/master)
+ 1a8d2e65afb29b0ea388d488853c4979c7fcac81 src/sonic-stp (heads/master)
+ b92ac26754bf90e1522873bb129470e2ea0301f4 src/sonic-swss (remotes/origin/xzc/swss-bazel)
+ e8afb2c99f079cccd83a0d7c909191d59637367c src/sonic-swss-common (heads/master)
+ 2b6ff72de5769839fc68bd019f345a184e3b0bf1 src/sonic-sysmgr/gnoi (v0.6.1-2-g2b6ff72)
+ da7b7bc0fddfa1dc3569147a92a077ae734b0e7f src/sonic-utilities (heads/master)
+ 036c8eaad345102e92d085bf36f30e4585934135 src/sonic-ztp (heads/master)
+ dbca8d457e61d8707c40f99c78330b87939483a3 src/supervisor (4.3.0)
+ eefb6c06d8f506746b382294f6c158cc82e8f0fc src/wpasupplicant/sonic-wpa-supplicant (remotes/origin/202605)
+Linux alinos-oncall215192149218.na131 7.0.0-22-generic #22-Ubuntu SMP PREEMPT_DYNAMIC Mon May 25 15:54:34 UTC 2026 x86_64 GNU/Linux
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           52 bits physical, 57 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  192
+On-line CPU(s) list:                     0-191
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Xeon(R) 6982P-C
+CPU family:                              6
+Model:                                   173
+Thread(s) per core:                      2
+Core(s) per socket:                      96
+Socket(s):                               1
+Stepping:                                1
+CPU(s) scaling MHz:                      93%
+CPU max MHz:                             3900.0000
+CPU min MHz:                             800.0000
+BogoMIPS:                                5600.00
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 wbnoinvd ida arat avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities
+Hypervisor vendor:                       KVM
+Virtualization type:                     full
+L1d cache:                               4.5 MiB (96 instances)
+L1i cache:                               6 MiB (96 instances)
+L2 cache:                                192 MiB (96 instances)
+L3 cache:                                504 MiB (1 instance)
+NUMA node(s):                            3
+NUMA node0 CPU(s):                       0-63
+NUMA node1 CPU(s):                       64-127
+NUMA node2 CPU(s):                       128-191
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS Not affected; BHI BHI_DIS_S
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+               total        used        free      shared  buff/cache   available
+Mem:           742Gi        17Gi       101Gi       712Mi       629Gi       725Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1   1007G  576G  380G  61% /data
+/dev/nvme0n1p3   59G   40G   17G  71% /
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          116       6         343.7GB   292GB (84%)
+Containers      7         2         234.8MB   20.48kB (0%)
+Local Volumes   0         0         0B        0B
+Build Cache     159       83        27.77GB   376.8kB
+162M	/data/sonic/时间统计/cache/20260901-233744
+http://11.161.18.240:3128
+http://11.161.18.240:3128
+http://11.161.18.240:3128
+http://11.161.18.240:3128

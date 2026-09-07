@@ -1,0 +1,10 @@
+2.1G	/data/sonic/时间统计/cache/20260901-233744/make-version-cache
+68M	/data/sonic/时间统计/cache/20260901-233744/make-fips-cache
+533M	/data/sonic/时间统计/cache/20260901-233744/make-cargo-home
+474M	/data/sonic/时间统计/cache/20260901-233744/make-go-mod-cache
+12K	/data/sonic/时间统计/cache/20260901-233744/make-go-sumdb-cache
+300
+27
+33677
+21628
+1

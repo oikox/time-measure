@@ -1,0 +1,42 @@
+Starting local Bazel server (8.6.0) and connecting to it...
+Computing main repo mapping: 
+WARNING: For repository 'protobuf', the root module requires module version protobuf@29.0, but got protobuf@31.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+WARNING: For repository 'rules_rust', the root module requires module version rules_rust@0.61.0, but got rules_rust@0.66.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //platform/vs:sonic-vs-bin (4 packages loaded, 7 targets configured)
+Analyzing: target //platform/vs:sonic-vs-bin (4 packages loaded, 7 targets configured)
+
+ERROR: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/rules_distroless+/apt/extensions.bzl:202:9: Traceback (most recent call last):
+	File "/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/rules_distroless+/apt/extensions.bzl", line 362, column 29, in _distroless_extension
+		_fetch_and_parse_sources(mctx, repo, glock, snapshot_suites, formats)
+	File "/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/rules_distroless+/apt/extensions.bzl", line 277, column 59, in _fetch_and_parse_sources
+		(output, url, integrity, ext) = _resolve_downloads(mctx, pkg_tokens, "Packages", dist, comp, arch)
+	File "/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/rules_distroless+/apt/extensions.bzl", line 202, column 9, in _resolve_downloads
+		fail("""
+Error in fail: 
+** Tried to download 4 different package indices and all failed.
+
+
+*) Failed 'https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/.../Packages.xz'
+
+Download failed. See warning above for details.
+
+*) Failed 'https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/.../Packages.gz'
+
+Download failed. See warning above for details.
+
+*) Failed 'https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/.../Packages.bz2'
+
+Download failed. See warning above for details.
+
+*) Failed 'https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/.../Packages'
+
+Download failed. See warning above for details.
+        
+ERROR: Analysis of target '//platform/vs:sonic-vs-bin' failed; build aborted: error evaluating module extension @@rules_distroless+//apt:extensions.bzl%apt
+INFO: Elapsed time: 3.570s, Critical Path: 0.03s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
+FAILED: 
+INFO: Build Event Protocol files produced successfully.

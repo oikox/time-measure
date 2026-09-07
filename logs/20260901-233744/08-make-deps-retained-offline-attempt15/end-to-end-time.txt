@@ -1,0 +1,24 @@
+Command exited with non-zero status 2
+	Command being timed: "/data/sonic/时间统计/logs/20260901-233744/run-08-make-deps-retained-offline.sh --run-stages"
+	User time (seconds): 4.30
+	System time (seconds): 4.70
+	Percent of CPU this job got: 1%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:33.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 48404
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 635261
+	Voluntary context switches: 34516
+	Involuntary context switches: 210
+	Swaps: 0
+	File system inputs: 160
+	File system outputs: 156032
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 2

@@ -1,0 +1,24 @@
+Command exited with non-zero status 2
+	Command being timed: "env SONIC_BUILDER_EXTRA_CMDLINE=-v /data/sonic/时间统计/cache/20260901-233744/make-git-mirrors:/git-mirrors:ro -v /data/sonic/时间统计/cache/20260901-233744/offline.gitconfig:/etc/sonic-offline.gitconfig:ro -v /data/sonic/时间统计/cache/20260901-233744/make-cargo-home:/cargo-home:rw -v /data/sonic/时间统计/cache/20260901-233744/make-go-mod-cache:/tmp/go/pkg/mod:rw -e GIT_CONFIG_GLOBAL=/etc/sonic-offline.gitconfig -e GIT_TERMINAL_PROMPT=0 -e CARGO_HOME=/cargo-home -e GOMODCACHE=/tmp/go/pkg/mod -e DEB_BUILD_OPTIONS=nocheck make PLATFORM=vs NOJESSIE=1 NOSTRETCH=1 NOBUSTER=1 NOBULLSEYE=1 NOBOOKWORM=1 NOTRIXIE=0 ENABLE_DOCKER_BASE_PULL=n SONIC_CONFIG_USE_CCACHE=n SONIC_DPKG_CACHE_METHOD=none SONIC_VERSION_CACHE_METHOD=cache SONIC_VERSION_CACHE_SOURCE=/data/sonic/时间统计/cache/20260901-233744/make-version-cache BUILD_SKIP_TEST=y SONIC_BUILD_JOBS=8 SONIC_CONFIG_MAKE_JOBS=192 TRUSTED_GPG_URLS= GOPROXY=https://goproxy.cn,direct target/sonic-vs.bin"
+	User time (seconds): 1.41
+	System time (seconds): 0.71
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:20.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 46932
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 174509
+	Voluntary context switches: 12012
+	Involuntary context switches: 44
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1688
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 2

@@ -1,0 +1,3 @@
+Starting local Bazel server (8.6.0) and connecting to it...
+ERROR: /data/sonic/时间统计/logs/20260901-233744/01-bazel-fully-cold/bep.json
+ERROR: Unable to write to '/data/sonic/时间统计/logs/20260901-233744/01-bazel-fully-cold/bep.json'. Omitting --build_event_json_file. /data/sonic/时间统计/logs/20260901-233744/01-bazel-fully-cold/bep.json

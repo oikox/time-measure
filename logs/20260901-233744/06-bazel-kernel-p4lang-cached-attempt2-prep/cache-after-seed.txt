@@ -1,0 +1,8 @@
+9.9G	/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base
+2.6G	/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/repository-cache
+target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb 3586300
+target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb 6905340
+target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb 45651888
+bed33d7c4fa105bc44880d01b431ab9c0455d4704f4a0387364ed05dd51be3fd  target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb
+d23712a5d3cb2d7c55969ed880ffa5846a7c7213df33c36dd212d825cf78f7dc  target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb
+7b016c489f1dd49d41cbe359f775667ada043dddfec877537c356a8d254e33bc  target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb

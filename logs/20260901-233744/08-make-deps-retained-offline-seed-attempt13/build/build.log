@@ -1,0 +1,609 @@
++++ --- Making target/sonic-vs.bin --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/sonic-vs.bin
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://11.161.18.240:3128"
+"HTTPS_PROXY"                     : "http://11.161.18.240:3128"
+"NO_PROXY"                        : ""
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.023656"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.023656"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ building ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-host-services-data_1.0-1_all.deb ] 
+[ finished ] [ target/debs/trixie/sonic-host-services-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ] 
+[ building ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/files/trixie/swss_vars.j2 ] 
+[ finished ] [ target/files/trixie/swss_vars.j2 ] 
+[ building ] [ target/files/trixie/rsyslog_plugin.conf.j2 ] 
+[ finished ] [ target/files/trixie/rsyslog_plugin.conf.j2 ] 
+[ building ] [ target/files/trixie/container ] 
+[ finished ] [ target/files/trixie/container ] 
+[ building ] [ target/files/trixie/readiness_probe.sh ] 
+[ finished ] [ target/files/trixie/readiness_probe.sh ] 
+[ building ] [ target/files/trixie/container_startup.py ] 
+[ finished ] [ target/files/trixie/container_startup.py ] 
+[ building ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/symcrypt-openssl_1.9.4_amd64.deb ] 
+[ finished ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/symcrypt-openssl_1.9.4_amd64.deb ] 
+[ building ] [ target/files/trixie/90-sonic.conf ] 
+[ finished ] [ target/files/trixie/90-sonic.conf ] 
+[ building ] [ target/files/trixie/update_chassisdb_config ] 
+[ finished ] [ target/files/trixie/update_chassisdb_config ] 
+[ building ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb-install ] 
+[ building ] [ target/files/trixie/container_checker ] 
+[ finished ] [ target/files/trixie/container_checker ] 
+[ building ] [ target/files/trixie/gnmi.sh ] 
+[ finished ] [ target/files/trixie/gnmi.sh ] 
+[ building ] [ target/files/trixie/k8s_pod_control.sh ] 
+[ finished ] [ target/files/trixie/k8s_pod_control.sh ] 
+[ building ] [ target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb ] 
+[ building ] [ target/files/trixie/arp_update ] 
+[ finished ] [ target/files/trixie/arp_update ] 
+[ building ] [ target/files/trixie/arp_update_vars.j2 ] 
+[ finished ] [ target/files/trixie/arp_update_vars.j2 ] 
+[ building ] [ target/python-wheels/trixie/scapy-2.6.1.dev0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/scapy-2.6.1.dev0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/lm-sensors_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_pddf_common-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/lm-sensors_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/files/trixie/restapi.sh ] 
+[ finished ] [ target/files/trixie/restapi.sh ] 
+[ building ] [ target/debs/trixie/hsflowd_2.0.51-26_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_pddf_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/sflowtool_5.04_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sflowtool_5.04_amd64.deb ] 
+[ finished ] [ target/debs/trixie/hsflowd_2.0.51-26_amd64.deb ] 
+[ building ] [ target/debs/trixie/psample_1.1-1_amd64.deb ] 
+[ building ] [ target/docker-dash-engine.gz ] 
+[ building ] [ target/debs/trixie/isc-dhcp-relay_4.4.3-P1-2_amd64.deb ] 
+[ building ] [ target/debs/trixie/rasdaemon_0.6.8-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/psample_1.1-1_amd64.deb ] 
+[ building ] [ target/files/trixie/remote_ctr.config.json ] 
+[ finished ] [ target/files/trixie/remote_ctr.config.json ] 
+[ building ] [ target/files/trixie/ctrmgrd.service ] 
+[ finished ] [ target/files/trixie/ctrmgrd.service ] 
+[ building ] [ target/debs/trixie/libpam-tacplus_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libpam-tacplus_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libssl3t64_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libssl3t64_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libssl-dev_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libssl-dev_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/openssl_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/openssl_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libk5crypto3_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libk5crypto3_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libkrb5support0_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libkrb5support0_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libkrb5-3_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libkrb5-3_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libgssapi-krb5-2_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libgssapi-krb5-2_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsensors5_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsensors5_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/fancontrol_3.6.0-7.1_all.deb ] 
+[ finished ] [ target/debs/trixie/fancontrol_3.6.0-7.1_all.deb ] 
+[ building ] [ target/debs/trixie/sensord_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sensord_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnss-tacplus_1.0.4-1_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/rasdaemon_0.6.8-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnss-tacplus_1.0.4-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/bash-tacplus_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/audisp-tacplus_1.0.2_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl-install ] 
+[ building ] [ target/docker-base-trixie.gz ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/frr_10.5.4-sonic-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/bash-tacplus_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/audisp-tacplus_1.0.2_amd64.deb ] 
+[ building ] [ target/debs/trixie/openssh-server_10.0p1-7_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/frr_10.5.4-sonic-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb-install ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb-install ] 
+[ building ] [ target/debs/trixie/linux-image-6.12.41+deb13-sonic-amd64-unsigned_6.12.41-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/linux-image-6.12.41+deb13-sonic-amd64-unsigned_6.12.41-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl ] 
+[ finished ] [ target/docker-dash-engine.gz ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/frr-snmp_10.5.4-sonic-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/frr-snmp_10.5.4-sonic-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-framework_1.0-01_amd64.deb ] 
+[ finished ] [ target/docker-base-trixie.gz ] 
+[ building ] [ target/docker-base-trixie.gz-load ] 
+[ finished ] [ target/docker-base-trixie.gz-load ] 
+[ finished ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/openssh-server_10.0p1-7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-framework_1.0-01_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-db-cli_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-db-cli_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-eventd_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-ctrmgrd-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-host-services-rs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/syslog-counter_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-supervisord-utilities-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-eventd_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-supervisord-utilities-rs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/dash-ha_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-host-services-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/syslog-counter_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/stp_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-gnmi_0.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/stp_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-linkmgrd_1.0.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-ctrmgrd-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/isc-dhcp-relay_4.4.3-P1-2_amd64.deb ] 
+[ building ] [ target/debs/trixie/sysmgr_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-linkmgrd_1.0.0-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcpmon_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-dhcpmon_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcp4relay_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-dhcp4relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcp6relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/wpasupplicant_2.9.0-14_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-gnmi_0.1_amd64.deb ] 
+[ building ] [ target/sonic-vs.bin__vs__rfs.squashfs ] 
+[ building ] [ target/debs/trixie/sonic-rsyslog-plugin_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-rsyslog-plugin_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sysmgr_1.0.0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/stp_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/stp_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_containercfgd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_supervisord_utilities-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/sonic-dhcp6relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_d-2.0.0-py3-none-any.whl ] 
+/sonic/src/sonic-dash-ha /sonic
+Removing patch ../sonic-dash-ha.patch/0001-build-use-relative-path-when-building-cargo-dependen.patch
+Restoring Cargo.toml
+
+No patches applied
+/sonic
+[ finished ] [ target/debs/trixie/dash-ha_1.0.0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_ledd-1.1-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/wpasupplicant_2.9.0-14_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_pcied-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_containercfgd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_stormond-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_dhcp_utilities-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_d-2.0.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ledd-1.1-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_ctrmgrd-1.0.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_pcied-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_supervisord_utilities-1.0-py3-none-any.whl ] 
+[ building ] [ target/docker-config-engine-trixie.gz ] 
+[ finished ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_bgpcfgd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_frr_mgmt_framework-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_stormond-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/system_health-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_dhcp_utilities-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ctrmgrd-1.0.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_bgpcfgd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_frr_mgmt_framework-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_psud-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_syseepromd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_thermalctld-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/system_health-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_sensormond-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_psud-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_xcvrd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_syseepromd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_ycabled-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_thermalctld-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_chassisd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_sensormond-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_bmcctld-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/asyncsnmp-2.1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_xcvrd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ycabled-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_chassisd-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/sonic-utilities-data_1.0-1_all.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_bmpcfgd_services-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_host_services-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_bmcctld-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/asyncsnmp-2.1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/sonic-utilities-data_1.0-1_all.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_bmpcfgd_services-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_host_services-1.0-py3-none-any.whl ] 
+[ finished ] [ target/docker-config-engine-trixie.gz ] 
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-bmp-watchdog.gz ] 
+[ building ] [ target/docker-sonic-bmp.gz ] 
+[ building ] [ target/docker-database.gz ] 
+[ building ] [ target/docker-eventd.gz ] 
+[ building ] [ target/docker-gnmi-sidecar.gz ] 
+[ building ] [ target/docker-gnmi-watchdog.gz ] 
+[ finished ] [ target/docker-gnmi-sidecar.gz ] 
+[ building ] [ target/docker-sonic-gnmi.gz ] 
+[ finished ] [ target/docker-sonic-bmp.gz ] 
+[ building ] [ target/docker-lldp.gz ] 
+[ finished ] [ target/docker-eventd.gz ] 
+[ building ] [ target/docker-mux.gz ] 
+[ finished ] [ target/docker-database.gz ] 
+[ building ] [ target/docker-sonic-otel.gz ] 
+[ finished ] [ target/docker-sonic-gnmi.gz ] 
+[ building ] [ target/docker-platform-monitor.gz ] 
+[ finished ] [ target/docker-lldp.gz ] 
+[ building ] [ target/docker-restapi-sidecar.gz ] 
+[ finished ] [ target/docker-mux.gz ] 
+[ building ] [ target/docker-router-advertiser.gz ] 
+[ finished ] [ target/docker-sonic-otel.gz ] 
+[ building ] [ target/docker-snmp.gz ] 
+[ finished ] [ target/docker-restapi-sidecar.gz ] 
+[ building ] [ target/docker-sonic-mgmt-framework.gz ] 
+[ finished ] [ target/docker-router-advertiser.gz ] 
+[ building ] [ target/docker-sysmgr.gz ] 
+[ finished ] [ target/docker-snmp.gz ] 
+[ building ] [ target/docker-dhcp-relay.gz ] 
+[ finished ] [ target/docker-sysmgr.gz ] 
+[ finished ] [ target/docker-sonic-mgmt-framework.gz ] 
+[ finished ] [ target/docker-gnmi-watchdog.gz ] 
+[ finished ] [ target/docker-dhcp-relay.gz ] 
+[ finished ] [ target/docker-platform-monitor.gz ] 
+[ finished ] [ target/docker-bmp-watchdog.gz ] 
+[ finished ] [ target/sonic-vs.bin__vs__rfs.squashfs ] 
+[ finished ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ] 
+[ building ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsai_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsai_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsai_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsai_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/syncd-vs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/syncd-vs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb-install ] 
+[ building ] [ target/docker-syncd-vs.gz ] 
+[ building ] [ target/docker-gbsyncd-vs.gz ] 
+[ building ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/swss_1.0.0_amd64.deb ] 
+[ finished ] [ target/docker-syncd-vs.gz ] 
+[ finished ] [ target/docker-gbsyncd-vs.gz ] 
+/sonic/src/sonic-swss /sonic
+Removing patch ../sonic-swss.patch/0002-Remove-lock-option-when-cargo-build.patch
+Restoring debian/rules
+
+Removing patch ../sonic-swss.patch/0001-build-use-relative-path-when-building-cargo-dependen.patch
+Restoring Cargo.toml
+
+No patches applied
+/sonic
+[ finished ] [ target/debs/trixie/swss_1.0.0_amd64.deb ] 
+[ building ] [ target/docker-swss-layer-trixie.gz ] 
+[ finished ] [ target/docker-swss-layer-trixie.gz ] 
+[ building ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ finished ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ building ] [ target/docker-dash-ha.gz ] 
+[ building ] [ target/docker-fpm-frr.gz ] 
+[ building ] [ target/docker-nat.gz ] 
+[ building ] [ target/docker-orchagent.gz ] 
+[ building ] [ target/docker-sflow.gz ] 
+[ building ] [ target/docker-teamd.gz ] 
+[ building ] [ target/docker-macsec.gz ] 
+[ finished ] [ target/docker-dash-ha.gz ] 
+[ finished ] [ target/docker-teamd.gz ] 
+[ finished ] [ target/docker-nat.gz ] 
+[ finished ] [ target/docker-sflow.gz ] 
+[ finished ] [ target/docker-macsec.gz ] 
+[ finished ] [ target/docker-fpm-frr.gz ] 
+[ finished ] [ target/docker-orchagent.gz ] 
+basename: missing operand
+Try 'basename --help' for more information.
+[ building ] [ target/sonic-vs.bin ] 
+[ finished ] [ target/sonic-vs.bin ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'

@@ -1,0 +1,1670 @@
++++ --- Making target/sonic-vs.bin --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/sonic-vs.bin
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: timed out
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : ""
+"HTTPS_PROXY"                     : ""
+"NO_PROXY"                        : ""
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260902.085001"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260902.085001"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ]
+[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ]
+[ 03 ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ]
+[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ]
+[ 03 ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ]
+[ 04 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ]
+[ 03 ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ]
+[ 04 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 05 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ]
+[ 03 ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ]
+[ 04 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 05 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 06 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ]
+[ 03 ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ]
+[ 04 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 05 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 06 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[ 07 ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ]
+[ 03 ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ]
+[ 04 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 05 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 06 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[ 07 ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+[ 08 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ]
+[ 03 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 04 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 05 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[ 06 ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ]
+[ 03 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 04 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 05 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[ 06 ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[ 08 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 03 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 04 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[ 05 ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 03 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 04 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[ 05 ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 08 ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 03 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 04 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[ 05 ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 03 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 04 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[ 05 ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 08 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 03 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 04 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[ 05 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 03 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 04 ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+[ 05 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+[ 08 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 03 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 04 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 03 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 04 ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 08 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 03 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 04 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ]
+[ 02 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 03 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 04 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 08 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 08 ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ]
+[ 08 ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ]
+[ 08 ] [ target/debs/trixie/sonic-host-services-data_1.0-1_all.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 08 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 07 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ]
+[ 08 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ]
+[ 08 ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ]
+[ 08 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 08 ] [ target/files/trixie/swss_vars.j2 ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 08 ] [ target/files/trixie/rsyslog_plugin.conf.j2 ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 08 ] [ target/files/trixie/container ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 08 ] [ target/files/trixie/readiness_probe.sh ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 08 ] [ target/files/trixie/container_startup.py ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 08 ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ]
+[ 06 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 07 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 08 ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 06 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 06 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ]
+[ 08 ] [ target/debs/trixie/symcrypt-openssl_1.9.4_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 06 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/symcrypt-openssl_1.9.4_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 06 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/symcrypt-openssl_1.9.4_amd64.deb ]
+[ 08 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 06 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 06 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[ 08 ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 05 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 05 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ]
+[ 08 ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ FAIL LOG START ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+Build start time: Wed Sep 2 00:55:11 UTC 2026
+[ REASON ] :      target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/radius/pam'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Build freeradius-server v1.1.x
+pushd freeradius
+rm -rf freeradius-server
+git clone https://github.com/FreeRADIUS/freeradius-server.git
+popd
+pushd freeradius/freeradius-server
+git checkout -f 5f715dba4d2dbdb268bf60fcc656352274930941
+# Apply patch
+patch -p1 < ../patches/freeradius_configure.patch
+patch -p1 < ../patches/freeradius_2007-04-06.patch
+patch -p1 < ../patches/freeradius_libeap_deprecated_openssl_1_0.patch
+patch -p1 < ../patches/libltdl_config_sub.patch
+cp ../patches/config.sub .
+cp ../patches/config.guess .
+./configure --disable-static --enable-libtool-lock
+make
+popd
+# Obtain pam_radius
+rm -rf ./pam_radius
+git clone https://github.com/FreeRADIUS/pam_radius.git
+pushd ./pam_radius
+# This is the latest commit with Radius MPL support
+git checkout -f 149c25df84cf5cd0e9addd9346699a9ca8fdddd2
+cp -r ../debian .
+dpkg-buildpackage -rfakeroot -b -us -uc -nc
+popd
+mv libpam-radius-auth-dbgsym_1.4.1-1_amd64.deb libpam-radius-auth_1.4.1-1_amd64.deb /sonic/target/debs/trixie/
+/sonic/src/radius/pam/freeradius /sonic/src/radius/pam
+Cloning into 'freeradius-server'...
+/sonic/src/radius/pam
+/sonic/src/radius/pam/freeradius/freeradius-server /sonic/src/radius/pam
+Note: switching to '5f715dba4d2dbdb268bf60fcc656352274930941'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5f715dba4d Make it easier to do a release
+patching file configure
+patching file configure.in
+patching file src/modules/rlm_eap/Makefile
+patching file src/include/radiusd.h
+Hunk #1 succeeded at 220 (offset 2 lines).
+Hunk #2 succeeded at 356 (offset 2 lines).
+patching file Makefile
+patching file src/Makefile
+patching file src/modules/Makefile
+patching file src/modules/rlm_eap/Makefile.in
+Hunk #1 succeeded at 2 with fuzz 1.
+patching file src/modules/rlm_eap/libeap/mppe_keys.c
+patching file libltdl/config.sub
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for AIX... no
+checking whether gcc needs -traditional... no
+checking whether we are using SUNPro C... no
+checking for ranlib... ranlib
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking for gmake... yes
+checking for gmake... /usr/bin/gmake
+checking for lt_dlinit in -lltdl... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... f77
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether f77 accepts -g... yes
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... (cached) ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... yes
+checking whether a program can dlopen itself... no
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for f77 option to produce PIC... -fPIC
+checking if f77 PIC flag -fPIC works... yes
+checking if f77 static flag -static works... yes
+checking if f77 supports -c -o file.o... yes
+checking whether the f77 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking docdir... ${datadir}/doc/freeradius
+checking logdir... ${localstatedir}/log/radius
+checking radacctdir... ${logdir}/radacct
+checking raddbdir... ${sysconfdir}/raddb
+checking for perl... /usr/bin/perl
+checking for snmpget... no
+configure: WARNING: snmpget not found - Simultaneous-Use and checkrad.pl may not work
+checking for snmpwalk... no
+configure: WARNING: snmpwalk not found - Simultaneous-Use and checkrad.pl may not work
+checking for rusers... /usr/bin/rusers
+checking for working aclocal... found
+checking for working autoconf... found
+checking for working autoheader... found
+checking for locate... no
+checking for dirname... /usr/bin/dirname
+checking for grep... (cached) /usr/bin/grep
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking for library containing sem_init... none required
+checking for getsockname in -lsocket... no
+checking for inet_aton in -lresolv... yes
+checking for inet_ntoa in -lnsl... yes
+checking for DH_new in -lcrypto... yes
+checking for SSL_new in -lssl... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for unistd.h... (cached) yes
+checking crypt.h usability... yes
+checking crypt.h presence... yes
+checking for crypt.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking resource.h usability... no
+checking resource.h presence... no
+checking for resource.h... no
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking utmpx.h usability... yes
+checking utmpx.h presence... yes
+checking for utmpx.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking semaphore.h usability... yes
+checking semaphore.h presence... yes
+checking for semaphore.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/wait.h... (cached) yes
+checking sys/security.h usability... no
+checking sys/security.h presence... no
+checking for sys/security.h... no
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking sys/fcntl.h usability... yes
+checking sys/fcntl.h presence... yes
+checking for sys/fcntl.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/prctl.h usability... yes
+checking sys/prctl.h presence... yes
+checking for sys/prctl.h... yes
+checking prot.h usability... no
+checking prot.h presence... no
+checking for prot.h... no
+checking sia.h usability... no
+checking sia.h presence... no
+checking for sia.h... no
+checking siad.h usability... no
+checking siad.h presence... no
+checking for siad.h... no
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking openssl/ssl.h usability... yes
+checking openssl/ssl.h presence... yes
+checking for openssl/ssl.h... yes
+checking openssl/crypto.h usability... yes
+checking openssl/crypto.h presence... yes
+checking for openssl/crypto.h... yes
+checking openssl/err.h usability... yes
+checking openssl/err.h presence... yes
+checking for openssl/err.h... yes
+checking openssl/engine.h usability... yes
+checking openssl/engine.h presence... yes
+checking for openssl/engine.h... yes
+checking for OpenSSL version >= 0.9.7... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking for socklen_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for getopt_long... yes
+checking for lockf... yes
+checking for strsignal... yes
+checking for sigaction... yes
+checking for sigprocmask... yes
+checking for pthread_sigmask... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking for setsid... yes
+checking for strncasecmp... yes
+checking for strcasecmp... yes
+checking for localtime_r... yes
+checking for ctime_r... yes
+checking for gmtime_r... yes
+checking for strsep... yes
+checking for inet_aton... yes
+checking for inet_pton... yes
+checking for inet_ntop... yes
+checking for gethostname... yes
+checking for setlinebuf... yes
+checking for setvbuf... yes
+checking for getusershell... yes
+checking for initgroups... yes
+checking for closefrom... yes
+checking whether crypt must be declared... no
+checking whether strncasecmp must be declared... no
+checking whether strcasecmp must be declared... no
+checking whether inet_aton must be declared... no
+checking whether gethostname must be declared... no
+checking whether setlinebuf must be declared... no
+checking whether getusershell must be declared... no
+checking whether endusershell must be declared... no
+checking return type of signal handlers... void
+checking for ut_xtime in struct utmpx... no
+checking for ipi_addr in struct in_pktinfo... yes
+checking for an ANSI C-conforming const... yes
+checking type of OS... Linux
+checking for developer gcc flags... no.
+checking for crypt in -lcrypt... yes
+checking for setkey in -lcipher... no
+checking for asn1.h,snmp.h,snmp_impl.h... (ucd-snmp)yes
+checking for snmp_build_var_op in -lsnmp... yes
+checking gethostbyaddr_r() syntax... GNU-style
+checking gethostbyname_r() syntax... GNU-style
+checking ctime_r() syntax... POSIX-style
+top_builddir=/sonic/src/radius/pam/freeradius/freeradius-server
+configure: creating ./config.status
+config.status: creating ./Make.inc
+config.status: WARNING:  ./Make.inc.in seems to ignore the --datarootdir setting
+config.status: creating ./src/include/build-radpaths-h
+config.status: WARNING:  ./src/include/build-radpaths-h.in seems to ignore the --datarootdir setting
+config.status: creating ./src/main/Makefile
+config.status: creating ./src/main/checkrad.pl
+config.status: creating ./src/main/radlast
+config.status: creating ./src/main/radtest
+config.status: creating ./scripts/rc.radiusd
+config.status: creating ./scripts/radwatch
+config.status: creating ./scripts/check-radiusd-config
+config.status: creating ./scripts/radiusd.cron.daily
+config.status: creating ./scripts/radiusd.cron.monthly
+config.status: creating ./scripts/cryptpasswd
+config.status: creating ./raddb/dictionary
+config.status: creating ./raddb/radiusd.conf
+config.status: creating src/include/autoconf.h
+=== configuring in src/modules/rlm_attr_rewrite (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_attr_rewrite)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src/modules/rlm_counter (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_counter)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for gdbm.h... no
+checking for gdbm_open in -lgdbm... no
+checking for gdbm_fdesc... no
+configure: WARNING: silently not building rlm_counter.
+configure: WARNING: FAILURE: rlm_counter requires:  libgdbm.
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in src/modules/rlm_dbm (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_dbm)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for ndbm.h... no
+checking for gdbm/ndbm.h... no
+checking for gdbm-ndbm.h... no
+checking for dbm in default lib... no
+checking for dbm_open in -lndbm... no
+checking for dbm_open in -lgdbm... no
+checking for dbm_open in -lgdbm_compat... no
+configure: WARNING: FAILURE: rlm_dbm requires:  (ndbm.h or gdbm/ndbm.h or gdbm-ndbm.h) (libndbm or libgdbm or libgdbm_compat).
+configure: WARNING: silently not building rlm_dbm.
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src/modules/rlm_eap (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_eap)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+configure: creating ./config.status
+config.status: creating Makefile
+configure: configuring in ./types/rlm_eap_md5
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for egrep... grep -E
+checking for ANSI C header files... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+configure: configuring in ./types/rlm_eap_ttls
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for OpenSSL support... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+configure: configuring in ./types/rlm_eap_sim
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+configure: creating ./config.status
+config.status: creating Makefile
+configure: configuring in ./types/rlm_eap_peap
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for OpenSSL support... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+configure: configuring in ./types/rlm_eap_mschapv2
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for egrep... grep -E
+checking for ANSI C header files... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+configure: configuring in ./types/rlm_eap_tls
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for OpenSSL support... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in src/modules/rlm_ippool (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_ippool)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for gdbm.h... no
+checking for gdbm_open in -lgdbm... no
+checking for gdbm_fdesc... no
+configure: WARNING: silently not building rlm_ippool.
+configure: WARNING: FAILURE: rlm_ippool requires:  libgdbm.
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in src/modules/rlm_krb5 (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_krb5)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for krb5.h... yes
+checking for krb5_encrypt_data in -lk5crypto... yes
+checking for set_com_err_hook in -lcom_err... yes
+checking for krb5_init_context in -lkrb5... yes
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src/modules/rlm_ldap (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_ldap)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for pthread_create in -lpthread... yes
+checking for ldap_init in -lldap_r... yes
+checking for ldap.h... yes
+checking for ldap_start_tls_s... yes
+checking for ldap_initialize... yes
+checking for ldap_int_tls_config... no
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src/modules/rlm_otp (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_otp)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for egrep... grep -E
+checking for ANSI C header files... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for inttypes.h... (cached) yes
+checking for SSL_new in -lssl... yes
+checking openssl/des.h usability... yes
+checking openssl/des.h presence... yes
+checking for openssl/des.h... yes
+checking openssl/hmac.h usability... yes
+checking openssl/hmac.h presence... yes
+checking for openssl/hmac.h... yes
+checking openssl/md4.h usability... yes
+checking openssl/md4.h presence... yes
+checking for openssl/md4.h... yes
+checking openssl/md5.h usability... yes
+checking openssl/md5.h presence... yes
+checking for openssl/md5.h... yes
+checking openssl/sha.h usability... yes
+checking openssl/sha.h presence... yes
+checking for openssl/sha.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src/modules/rlm_pam (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_pam)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for dlopen in -ldl... yes
+checking for pam_start in -lpam... yes
+checking for egrep... grep -E
+checking for ANSI C header files... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking security/pam_appl.h usability... yes
+checking security/pam_appl.h presence... yes
+checking for security/pam_appl.h... yes
+checking pam/pam_appl.h usability... no
+checking pam/pam_appl.h presence... no
+checking for pam/pam_appl.h... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in src/modules/rlm_perl (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_perl)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for perl... yes
+checking for EXTERN.h... yes
+checking for perl.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in src/modules/rlm_radutmp (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_radutmp)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for egrep... grep -E
+checking for ANSI C header files... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in src/modules/rlm_sql (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_sql)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+configure: creating ./config.status
+config.status: creating ./Makefile
+config.status: creating ./drivers/Makefile
+configure: configuring in ./drivers/rlm_sql_iodbc
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for isql.h... no
+configure: WARNING: iodbc headers not found.  Use --with-iodbc-include-dir=<path>.
+configure: WARNING: sql submodule 'iodbc' disabled
+configure: creating ./config.status
+config.status: creating Makefile
+configure: configuring in ./drivers/rlm_sql_mysql
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking for mysql_config... yes
+checking for pthread_create in -lpthread... yes
+checking for mysql_init in -lmysqlclient_r (using mysql_config)... yes
+checking for mysql.h (using mysql_config)... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+configure: configuring in ./drivers/rlm_sql_postgresql
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking for libpq-fe.h... no
+checking for PQconnectdb in -lpq... no
+configure: WARNING: silently not building rlm_sql_postgresql.
+configure: WARNING: FAILURE: rlm_sql_postgresql requires:  libpq-fe.h libpq.
+configure: creating ./config.status
+config.status: creating Makefile
+configure: configuring in ./drivers/rlm_sql_oracle
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for oci.h... no
+configure: WARNING: oracle headers not found.  Use --with-oracle-home-dir=<path>.
+configure: WARNING: sql submodule 'oracle' disabled
+configure: creating ./config.status
+config.status: creating Makefile
+configure: configuring in ./drivers/rlm_sql_unixodbc
+configure: running /bin/bash './configure' --prefix=/usr/local  '--prefix=/usr/local' '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' '--cache-file=/dev/null' '--srcdir=.' 'CFLAGS=-g -O2' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for sql.h... no
+configure: WARNING: unixODBC headers not found.  Use --with-unixodbc-include-dir=<path>.
+configure: WARNING: sql submodule 'unixodbc' disabled
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src/modules/rlm_sqlcounter (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_sqlcounter)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src/modules/rlm_sqlippool (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_sqlippool)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src/modules/rlm_unix (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_unix)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for system password file... /etc/passwd
+checking for system shadow password file... /etc/shadow
+checking for crypt... no
+checking for crypt in -lcrypt... yes
+checking for egrep... grep -E
+checking for ANSI C header files... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking crypt.h usability... yes
+checking crypt.h presence... yes
+checking for crypt.h... yes
+checking shadow.h usability... yes
+checking shadow.h presence... yes
+checking for shadow.h... yes
+checking for getspnam... yes
+checking for getusershell... yes
+checking for getspnam in -lshadow... no
+checking for fgetpwent... yes
+checking for fgetspent... yes
+checking for fgetgrent... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in src/modules/rlm_checkval (/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_checkval)
+configure: running /bin/bash ./configure '--prefix=/usr/local'  '--disable-static' '--enable-libtool-lock' '--enable-ltdl-install=no' --cache-file=/dev/null --srcdir=.
+configure: creating ./config.status
+config.status: creating Makefile
+make[2]: Entering directory '/sonic/src/radius/pam/freeradius/freeradius-server'
+gmake[3]: Entering directory '/sonic/src/radius/pam/freeradius/freeradius-server'
+gmake[3]: warning: -j192 forced in submake: resetting jobserver mode.
+Making all in src...
+gmake[4]: Entering directory '/sonic/src/radius/pam/freeradius/freeradius-server/src'
+gmake[4]: warning: -j192 forced in submake: resetting jobserver mode.
+gmake[5]: Entering directory '/sonic/src/radius/pam/freeradius/freeradius-server/src'
+gmake[5]: warning: -j192 forced in submake: resetting jobserver mode.
+Making all in include...
+gmake[6]: Entering directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/include'
+gmake[6]: warning: -j192 forced in submake: resetting jobserver mode.
+gmake[6]: Leaving directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/include'
+Making all in lib...
+gmake[6]: Entering directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/lib'
+gmake[6]: warning: -j192 forced in submake: resetting jobserver mode.
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c crypt.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c dict.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c filters.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c hash.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c hmac.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c hmacsha1.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c isaac.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c log.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c misc.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c missing.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c md4.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c md5.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c print.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c radius.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c rbtree.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c sha1.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c snprintf.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c token.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c udpfromto.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -D_LIBRADIUS -I../include -c valuepair.c
+mkdir .libs
+mkdir .libs
+mkdir .libs
+mkdir: cannot create directory '.libs': File exists
+mkdir: cannot create directory '.libs': File exists
+ gcc -g -O2 -D_LIBRADIUS -I../include -c filters.c  -fPIC -DPIC -o .libs/filters.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c hash.c  -fPIC -DPIC -o .libs/hash.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c log.c  -fPIC -DPIC -o .libs/log.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c dict.c  -fPIC -DPIC -o .libs/dict.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c missing.c  -fPIC -DPIC -o .libs/missing.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c hmacsha1.c  -fPIC -DPIC -o .libs/hmacsha1.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c hmac.c  -fPIC -DPIC -o .libs/hmac.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c misc.c  -fPIC -DPIC -o .libs/misc.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c md4.c  -fPIC -DPIC -o .libs/md4.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c crypt.c  -fPIC -DPIC -o .libs/crypt.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c print.c  -fPIC -DPIC -o .libs/print.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c md5.c  -fPIC -DPIC -o .libs/md5.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c radius.c  -fPIC -DPIC -o .libs/radius.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c sha1.c  -fPIC -DPIC -o .libs/sha1.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c rbtree.c  -fPIC -DPIC -o .libs/rbtree.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c isaac.c  -fPIC -DPIC -o .libs/isaac.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c snprintf.c  -fPIC -DPIC -o .libs/snprintf.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c udpfromto.c  -fPIC -DPIC -o .libs/udpfromto.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c valuepair.c  -fPIC -DPIC -o .libs/valuepair.o
+ gcc -g -O2 -D_LIBRADIUS -I../include -c token.c  -fPIC -DPIC -o .libs/token.o
+print.c: In function 'vp_prints_value':
+print.c:198:27: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  198 |                         a = ipv6_ntoa(buf, sizeof(buf), vp->strvalue);
+      |                           ^
+rbtree.c:44:13: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   44 | #define NIL &Sentinel           /* all leafs are sentinels */
+      |             ^
+rbtree.c:45:36: note: in expansion of macro 'NIL'
+   45 | static const rbnode_t Sentinel = { NIL, NIL, NULL, Black, NULL};
+      |                                    ^~~
+rbtree.c:44:13: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   44 | #define NIL &Sentinel           /* all leafs are sentinels */
+      |             ^
+rbtree.c:45:41: note: in expansion of macro 'NIL'
+   45 | static const rbnode_t Sentinel = { NIL, NIL, NULL, Black, NULL};
+      |                                         ^~~
+rbtree.c: In function 'rbtree_create':
+rbtree.c:106:20: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  106 |         tree->Root = NIL;
+      |                    ^
+rbtree.c: In function 'rbtree_insert':
+rbtree.c:281:17: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  281 |         X->Left = NIL;
+      |                 ^
+rbtree.c:282:18: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  282 |         X->Right = NIL;
+      |                  ^
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=link gcc -release 1.1.8 \
+ -export-dynamic -o libradius.la -rpath /usr/local/lib crypt.lo dict.lo filters.lo hash.lo hmac.lo hmacsha1.lo isaac.lo log.lo misc.lo missing.lo md4.lo md5.lo print.lo radius.lo rbtree.lo sha1.lo snprintf.lo token.lo udpfromto.lo valuepair.lo -lcrypt
+gcc -shared  .libs/crypt.o .libs/dict.o .libs/filters.o .libs/hash.o .libs/hmac.o .libs/hmacsha1.o .libs/isaac.o .libs/log.o .libs/misc.o .libs/missing.o .libs/md4.o .libs/md5.o .libs/print.o .libs/radius.o .libs/rbtree.o .libs/sha1.o .libs/snprintf.o .libs/token.o .libs/udpfromto.o .libs/valuepair.o  -lcrypt  -Wl,-soname -Wl,libradius-1.1.8.so -o .libs/libradius-1.1.8.so
+(cd .libs && rm -f libradius.so && ln -s libradius-1.1.8.so libradius.so)
+creating libradius.la
+(cd .libs && rm -f libradius.la && ln -s ../libradius.la libradius.la)
+gmake[6]: Leaving directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/lib'
+Making all in modules...
+gmake[6]: Entering directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/modules'
+gmake[6]: warning: -j192 forced in submake: resetting jobserver mode.
+gmake[7]: Entering directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/modules'
+gmake[7]: warning: -j192 forced in submake: resetting jobserver mode.
+Making all in rlm_eap...
+gmake[8]: Entering directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_eap'
+gmake[8]: warning: -j192 forced in submake: resetting jobserver mode.
+Making all in libeap...
+gmake[9]: Entering directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_eap/libeap'
+gmake[9]: warning: -j192 forced in submake: resetting jobserver mode.
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c eapcommon.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c eapcrypto.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c eapsimlib.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c fips186prf.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c cb.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c eap_tls.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c mppe_keys.c
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=compile gcc  -g -O2  -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c tls.c
+mkdir .libs
+mkdir .libs
+mkdir: cannot create directory '.libs': File exists
+ gcc -g -O2 -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c eapcommon.c  -fPIC -DPIC -o .libs/eapcommon.o
+ gcc -g -O2 -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c eapcrypto.c  -fPIC -DPIC -o .libs/eapcrypto.o
+ gcc -g -O2 -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c cb.c  -fPIC -DPIC -o .libs/cb.o
+ gcc -g -O2 -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c eapsimlib.c  -fPIC -DPIC -o .libs/eapsimlib.o
+ gcc -g -O2 -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c fips186prf.c  -fPIC -DPIC -o .libs/fips186prf.o
+ gcc -g -O2 -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c eap_tls.c  -fPIC -DPIC -o .libs/eap_tls.o
+ gcc -g -O2 -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c mppe_keys.c  -fPIC -DPIC -o .libs/mppe_keys.o
+ gcc -g -O2 -DEAPLIB -I. -I.. -I/sonic/src/radius/pam/freeradius/freeradius-server/src/include -DOPENSSL_NO_KRB5 -c tls.c  -fPIC -DPIC -o .libs/tls.o
+cb.c: In function 'cbtls_rsa':
+cb.c:113:17: warning: 'RSA_generate_key' is deprecated: Since OpenSSL 0.9.8 [-Wdeprecated-declarations]
+  113 |                 rsa_tmp=RSA_generate_key(keylength, RSA_F4, NULL, NULL);
+      |                 ^~~~~~~
+In file included from /usr/include/openssl/x509.h:38,
+                 from /usr/include/openssl/ssl.h:34,
+                 from eap_tls.h:61,
+                 from cb.c:22:
+/usr/include/openssl/rsa.h:264:30: note: declared here
+  264 | OSSL_DEPRECATEDIN_0_9_8 RSA *RSA_generate_key(int bits, unsigned long e, void (*callback)(int, int, void *),
+      |                              ^~~~~~~~~~~~~~~~
+mppe_keys.c: In function 'P_hash':
+mppe_keys.c:59:9: warning: 'HMAC_CTX_new' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   59 |         if (NULL == (ctx_a = HMAC_CTX_new())) {
+      |         ^~
+In file included from mppe_keys.c:24:
+/usr/include/openssl/hmac.h:33:33: note: declared here
+   33 | OSSL_DEPRECATEDIN_3_0 HMAC_CTX *HMAC_CTX_new(void);
+      |                                 ^~~~~~~~~~~~
+mppe_keys.c:63:9: warning: 'HMAC_CTX_new' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   63 |         if (NULL == (ctx_out = HMAC_CTX_new())) {
+      |         ^~
+/usr/include/openssl/hmac.h:33:33: note: declared here
+   33 | OSSL_DEPRECATEDIN_3_0 HMAC_CTX *HMAC_CTX_new(void);
+      |                                 ^~~~~~~~~~~~
+mppe_keys.c:68:9: warning: 'HMAC_Init_ex' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   68 |         HMAC_Init_ex(ctx_a, secret, secret_len, evp_md, NULL);
+      |         ^~~~~~~~~~~~
+/usr/include/openssl/hmac.h:43:27: note: declared here
+   43 | OSSL_DEPRECATEDIN_3_0 int HMAC_Init_ex(HMAC_CTX *ctx, const void *key, int len,
+      |                           ^~~~~~~~~~~~
+mppe_keys.c:69:9: warning: 'HMAC_Init_ex' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   69 |         HMAC_Init_ex(ctx_out, secret, secret_len, evp_md, NULL);
+      |         ^~~~~~~~~~~~
+/usr/include/openssl/hmac.h:43:27: note: declared here
+   43 | OSSL_DEPRECATEDIN_3_0 int HMAC_Init_ex(HMAC_CTX *ctx, const void *key, int len,
+      |                           ^~~~~~~~~~~~
+mppe_keys.c:71:9: warning: 'HMAC_size' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   71 |         size = HMAC_size(ctx_out);
+      |         ^~~~
+/usr/include/openssl/hmac.h:32:30: note: declared here
+   32 | OSSL_DEPRECATEDIN_3_0 size_t HMAC_size(const HMAC_CTX *e);
+      |                              ^~~~~~~~~
+mppe_keys.c:74:9: warning: 'HMAC_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   74 |         HMAC_Update(ctx_a, seed, seed_len);
+      |         ^~~~~~~~~~~
+/usr/include/openssl/hmac.h:45:27: note: declared here
+   45 | OSSL_DEPRECATEDIN_3_0 int HMAC_Update(HMAC_CTX *ctx, const unsigned char *data,
+      |                           ^~~~~~~~~~~
+mppe_keys.c:75:9: warning: 'HMAC_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   75 |         HMAC_Final(ctx_a, a, NULL);
+      |         ^~~~~~~~~~
+/usr/include/openssl/hmac.h:47:27: note: declared here
+   47 | OSSL_DEPRECATEDIN_3_0 int HMAC_Final(HMAC_CTX *ctx, unsigned char *md,
+      |                           ^~~~~~~~~~
+mppe_keys.c:79:17: warning: 'HMAC_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   79 |                 HMAC_Update(ctx_out, a, size);
+      |                 ^~~~~~~~~~~
+/usr/include/openssl/hmac.h:45:27: note: declared here
+   45 | OSSL_DEPRECATEDIN_3_0 int HMAC_Update(HMAC_CTX *ctx, const unsigned char *data,
+      |                           ^~~~~~~~~~~
+mppe_keys.c:80:17: warning: 'HMAC_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   80 |                 HMAC_Update(ctx_out, seed, seed_len);
+      |                 ^~~~~~~~~~~
+/usr/include/openssl/hmac.h:45:27: note: declared here
+   45 | OSSL_DEPRECATEDIN_3_0 int HMAC_Update(HMAC_CTX *ctx, const unsigned char *data,
+      |                           ^~~~~~~~~~~
+mppe_keys.c:84:25: warning: 'HMAC_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   84 |                         HMAC_Final(ctx_out, a, NULL);
+      |                         ^~~~~~~~~~
+/usr/include/openssl/hmac.h:47:27: note: declared here
+   47 | OSSL_DEPRECATEDIN_3_0 int HMAC_Final(HMAC_CTX *ctx, unsigned char *md,
+      |                           ^~~~~~~~~~
+mppe_keys.c:90:17: warning: 'HMAC_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   90 |                 HMAC_Final(ctx_out, out, NULL);
+      |                 ^~~~~~~~~~
+/usr/include/openssl/hmac.h:47:27: note: declared here
+   47 | OSSL_DEPRECATEDIN_3_0 int HMAC_Final(HMAC_CTX *ctx, unsigned char *md,
+      |                           ^~~~~~~~~~
+mppe_keys.c:91:17: warning: 'HMAC_Init_ex' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   91 |                 HMAC_Init_ex(ctx_out, NULL, 0, NULL, NULL);
+      |                 ^~~~~~~~~~~~
+/usr/include/openssl/hmac.h:43:27: note: declared here
+   43 | OSSL_DEPRECATEDIN_3_0 int HMAC_Init_ex(HMAC_CTX *ctx, const void *key, int len,
+      |                           ^~~~~~~~~~~~
+mppe_keys.c:96:17: warning: 'HMAC_Init_ex' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   96 |                 HMAC_Init_ex(ctx_a, NULL, 0, NULL, NULL);
+      |                 ^~~~~~~~~~~~
+/usr/include/openssl/hmac.h:43:27: note: declared here
+   43 | OSSL_DEPRECATEDIN_3_0 int HMAC_Init_ex(HMAC_CTX *ctx, const void *key, int len,
+      |                           ^~~~~~~~~~~~
+mppe_keys.c:97:17: warning: 'HMAC_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   97 |                 HMAC_Update(ctx_a, a, size);
+      |                 ^~~~~~~~~~~
+/usr/include/openssl/hmac.h:45:27: note: declared here
+   45 | OSSL_DEPRECATEDIN_3_0 int HMAC_Update(HMAC_CTX *ctx, const unsigned char *data,
+      |                           ^~~~~~~~~~~
+mppe_keys.c:98:17: warning: 'HMAC_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   98 |                 HMAC_Final(ctx_a, a, NULL);
+      |                 ^~~~~~~~~~
+/usr/include/openssl/hmac.h:47:27: note: declared here
+   47 | OSSL_DEPRECATEDIN_3_0 int HMAC_Final(HMAC_CTX *ctx, unsigned char *md,
+      |                           ^~~~~~~~~~
+mppe_keys.c:102:9: warning: 'HMAC_CTX_free' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  102 |         if (ctx_a) HMAC_CTX_free(ctx_a);
+      |         ^~
+/usr/include/openssl/hmac.h:35:28: note: declared here
+   35 | OSSL_DEPRECATEDIN_3_0 void HMAC_CTX_free(HMAC_CTX *ctx);
+      |                            ^~~~~~~~~~~~~
+mppe_keys.c:103:9: warning: 'HMAC_CTX_free' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  103 |         if (ctx_out) HMAC_CTX_free(ctx_out);
+      |         ^~
+/usr/include/openssl/hmac.h:35:28: note: declared here
+   35 | OSSL_DEPRECATEDIN_3_0 void HMAC_CTX_free(HMAC_CTX *ctx);
+      |                            ^~~~~~~~~~~~~
+/sonic/src/radius/pam/freeradius/freeradius-server/libtool --mode=link gcc -release 1.1.8 \
+ -export-dynamic -o libeap.la -rpath /usr/local/lib eapcommon.lo eapcrypto.lo eapsimlib.lo fips186prf.lo cb.lo eap_tls.lo mppe_keys.lo tls.lo \
+/sonic/src/radius/pam/freeradius/freeradius-server/src/lib/libradius.la -lnsl -lresolv  -lpthread 
+gcc -shared  .libs/eapcommon.o .libs/eapcrypto.o .libs/eapsimlib.o .libs/fips186prf.o .libs/cb.o .libs/eap_tls.o .libs/mppe_keys.o .libs/tls.o  -Wl,--rpath -Wl,/sonic/src/radius/pam/freeradius/freeradius-server/src/lib/.libs /sonic/src/radius/pam/freeradius/freeradius-server/src/lib/.libs/libradius.so -lnsl -lresolv -lpthread  -Wl,-soname -Wl,libeap-1.1.8.so -o .libs/libeap-1.1.8.so
+(cd .libs && rm -f libeap.so && ln -s libeap-1.1.8.so libeap.so)
+creating libeap.la
+(cd .libs && rm -f libeap.la && ln -s ../libeap.la libeap.la)
+gmake[9]: Leaving directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_eap/libeap'
+gmake[8]: Leaving directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/modules/rlm_eap'
+gmake[7]: Leaving directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/modules'
+gmake[6]: Leaving directory '/sonic/src/radius/pam/freeradius/freeradius-server/src/modules'
+gmake[5]: Leaving directory '/sonic/src/radius/pam/freeradius/freeradius-server/src'
+gmake[4]: Leaving directory '/sonic/src/radius/pam/freeradius/freeradius-server/src'
+gmake[3]: Leaving directory '/sonic/src/radius/pam/freeradius/freeradius-server'
+make[2]: Leaving directory '/sonic/src/radius/pam/freeradius/freeradius-server'
+/sonic/src/radius/pam
+Cloning into 'pam_radius'...
+fatal: unable to access 'https://github.com/FreeRADIUS/pam_radius.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+make[1]: *** [Makefile:9: /sonic/target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb] Error 128
+make[1]: Leaving directory '/sonic/src/radius/pam'
+[  FAIL LOG END  ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 04 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ]
+[ 07 ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ]
+make: *** [slave.mk:919: target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb] Error 1
+make: *** Waiting for unfinished jobs....
+[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ]
+[ 04 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[ 06 ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ]
+[ 03 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[ 05 ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ]
+[A[K[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 03 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[ 04 ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ]
+[A[K[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+[ 02 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 03 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[A[K[A[K[A[K[ 01 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[ 02 ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ]
+[A[K[A[K[ 01 ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ]
+[A[Kmake[1]: *** [Makefile.work:750: target/sonic-vs.bin] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/sonic-vs.bin] Error 2

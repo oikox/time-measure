@@ -1,0 +1,23 @@
+diff --git a/src/monit/BUILD.bazel b/src/monit/BUILD.bazel
+index 8495e75b8..d60a4afe8 100644
+--- a/src/monit/BUILD.bazel
++++ b/src/monit/BUILD.bazel
+@@ -57,13 +57,14 @@ genrule(
+     ],
+     cmd = ("set -e; " +
+            "BISON=$$(realpath $(execpath @sonic_build_infra//kernel/tools:bison_bin)); " +
+-           # bison shells out to m4 and reads its skeletons from
+-           # BISON_PKGDATADIR; both live in its runfiles tree.
++           "export M4=$$(realpath $(execpath @sonic_build_infra//kernel/tools:m4_bin)); " +
+            "RF=$$BISON.runfiles; " +
+-           "export M4=$$(echo $$RF/rules_m4*/bin/m4); " +
+            "export BISON_PKGDATADIR=$$(echo $$RF/rules_bison*/data); " +
+            "$$BISON -y -d -o $(location y.tab.c) $<"),
+-    tools = ["@sonic_build_infra//kernel/tools:bison_bin"],
++    tools = [
++        "@sonic_build_infra//kernel/tools:bison_bin",
++        "@sonic_build_infra//kernel/tools:m4_bin",
++    ],
+ )
+ 
+ cc_library(

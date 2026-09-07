@@ -1,0 +1,750 @@
+INFO: Invocation ID: 181e6212-3dff-4d1e-8609-aa7bdbcc7531
+Computing main repo mapping: 
+Computing main repo mapping: 
+WARNING: For repository 'protobuf', the root module requires module version protobuf@29.0, but got protobuf@31.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+WARNING: For repository 'rules_rust', the root module requires module version rules_rust@0.61.0, but got rules_rust@0.66.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 5 targets (5 packages loaded, 7 targets configured)
+Analyzing: 5 targets (5 packages loaded, 7 targets configured)
+
+Analyzing: 5 targets (239 packages loaded, 13038 targets configured)
+[3 / 8] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 1s local ... (3 actions running)
+INFO: Analyzed 5 targets (239 packages loaded, 108629 targets configured).
+[184 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 2s local ... (186 actions, 3 running)
+INFO: From Compiling src/tar.c [for tool]:
+external/sonic-build-infra++_repo_rules2+cpio_src/src/tar.c: In function 'write_out_tar_header':
+external/sonic-build-infra++_repo_rules2+cpio_src/src/tar.c:213:7: warning: '__builtin_strncpy' output truncated before terminating nul copying 2 bytes from a string of the same length [-Wstringop-truncation]
+  213 |       strncpy (tar_hdr->version, TVERSION, TVERSLEN);
+      |       ^
+external/sonic-build-infra++_repo_rules2+cpio_src/src/tar.c:147:7: warning: '__builtin___strncpy_chk' specified bound depends on the length of the source argument [-Wstringop-truncation]
+  147 |       strncpy (tar_hdr->name, file_hdr->c_name, name_len);
+      |       ^
+external/sonic-build-infra++_repo_rules2+cpio_src/src/tar.c:144:14: note: length computed here
+  144 |   name_len = strlen (file_hdr->c_name);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: From Compiling gnu/argp-help.c [for tool]:
+external/sonic-build-infra++_repo_rules2+cpio_src/gnu/argp-help.c: In function 'argp_doc':
+external/sonic-build-infra++_repo_rules2+cpio_src/gnu/argp-help.c:1599:18: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1599 |       char *vt = strchr (doc, '\v');
+      |                  ^~~~~~
+INFO: From Compiling src/util.c [for tool]:
+external/sonic-build-infra++_repo_rules2+cpio_src/src/util.c: In function 'prepare_append':
+external/sonic-build-infra++_repo_rules2+cpio_src/src/util.c:653:7: warning: ignoring return value of 'read' declared with attribute 'warn_unused_result' [-Wunused-result]
+  653 |       read (out_file_des, tmp_buf, useful_bytes_in_block);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: From Compiling src/read.c [for tool]:
+external/sonic-build-infra++_repo_rules2+make_src/src/read.c: In function 'tilde_expand':
+external/sonic-build-infra++_repo_rules2+make_src/src/read.c:3136:23: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3136 |       char *userend = strchr (name + 1, '/');
+      |                       ^~~~~~
+INFO: From Compiling shared/util.c [for tool]:
+external/sonic-build-infra++_repo_rules2+kmod_src/shared/util.c: In function 'mkdir_parents':
+external/sonic-build-infra++_repo_rules2+kmod_src/shared/util.c:470:21: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  470 |         char *end = strrchr(path, '/');
+      |                     ^~~~~~~
+INFO: From Compiling gnulib/lib/memchr2.c [for tool]:
+external/rules_m4++m4_repository_ext+m4_v1.4.18__cfgD7AAA708/gnulib/lib/memchr2.c: In function 'memchr2':
+external/rules_m4++m4_repository_ext+m4_v1.4.18__cfgD7AAA708/gnulib/lib/memchr2.c:58:12: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   58 |     return memchr (s, c1, n);
+      |            ^~~~~~
+INFO: From Compiling src/libbpf.c [for tool]:
+external/sonic-build-infra++_repo_rules2+libbpf_src/src/libbpf.c: In function 'resolve_full_path':
+external/sonic-build-infra++_repo_rules2+libbpf_src/src/libbpf.c:11364:35: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+11364 |                         next_path = strchr(s, ':');
+      |                                   ^
+INFO: From Compiling pahole.c [for tool]:
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c: In function 'type_instance__int_value':
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c:2451:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2451 |                 char *sep = strchr(member_name_orig, '.');
+      |                             ^~~~~~
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c: In function 'prototype__new':
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c:2922:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2922 |         char *args_open = strchr(name, '(');
+      |                           ^~~~~~
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c: In function 'type__find_type_enum':
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c:3082:21: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3082 |         char *sep = strchr(type_enum, '+');
+      |                     ^~~~~~
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c:3112:21: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3112 |                 sep = strchr(type_enum, '+');
+      |                     ^
+INFO: From Compiling btf_encoder.c [for tool]:
+external/sonic-build-infra++_repo_rules2+dwarves_src/btf_encoder.c: In function 'btf_encoder__tag_kfunc':
+external/sonic-build-infra++_repo_rules2+dwarves_src/btf_encoder.c:1827:16: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1827 |         target = bsearch(&key, base, cnt, sizeof(key), btf_func_cmp);
+      |                ^
+external/sonic-build-infra++_repo_rules2+dwarves_src/btf_encoder.c: In function 'btf_encoder__add_func_proto':
+external/sonic-build-infra++_repo_rules2+dwarves_src/btf_encoder.c:752:65: warning: 'state' may be used uninitialized [-Wmaybe-uninitialized]
+  752 |                         struct btf_encoder_func_parm *p = &state->parms[param_idx];
+      |                                                            ~~~~~^~~~~~~
+external/sonic-build-infra++_repo_rules2+dwarves_src/btf_encoder.c:705:40: note: 'state' was declared here
+  705 |         struct btf_encoder_func_state *state;
+      |                                        ^~~~~
+INFO: From Compiling libcpu/riscv_disasm.c [for tool]:
+external/sonic-build-infra++_repo_rules2+elfutils_src/libcpu/riscv_disasm.c: In function 'riscv_disasm':
+external/sonic-build-infra++_repo_rules2+elfutils_src/libcpu/riscv_disasm.c:1259:46: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1259 |                   struct known_csrs *found = bsearch (&key, known,
+      |                                              ^~~~~~~
+INFO: From Compiling libcpu/riscv_disasm.c [for tool]:
+external/sonic-build-infra++_repo_rules2+elfutils_src/libcpu/riscv_disasm.c: In function 'riscv_disasm':
+external/sonic-build-infra++_repo_rules2+elfutils_src/libcpu/riscv_disasm.c:1259:46: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1259 |                   struct known_csrs *found = bsearch (&key, known,
+      |                                              ^~~~~~~
+INFO: From Compiling libdw/dwarf_getsrclines.c [for tool]:
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c: In function 'read_srclines':
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:332:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  332 |           uint8_t *endp = memchr (dirp, '\0', lineendp - dirp);
+      |                           ^~~~~~
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:408:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  408 |           uint8_t *endp = memchr (linep, '\0', lineendp - linep);
+      |                           ^~~~~~
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:796:33: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  796 |                 uint8_t *endp = memchr (linep, '\0', lineendp - linep);
+      |                                 ^~~~~~
+INFO: From Compiling libdw/dwarf_getsrclines.c [for tool]:
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c: In function 'read_srclines':
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:332:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  332 |           uint8_t *endp = memchr (dirp, '\0', lineendp - dirp);
+      |                           ^~~~~~
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:408:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  408 |           uint8_t *endp = memchr (linep, '\0', lineendp - linep);
+      |                           ^~~~~~
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:796:33: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  796 |                 uint8_t *endp = memchr (linep, '\0', lineendp - linep);
+      |                                 ^~~~~~
+INFO: From Compiling backends/m68k_corenote.c [for tool]:
+In file included from external/sonic-build-infra++_repo_rules2+elfutils_src/backends/m68k_corenote.c:72:
+external/sonic-build-infra++_repo_rules2+elfutils_src/backends/linux-core-note.c:116:1: warning: alignment 2 of 'struct m68k_prstatus' is less than 4 [-Wpacked-not-aligned]
+  116 | ;
+      | ^
+external/sonic-build-infra++_repo_rules2+elfutils_src/backends/linux-core-note.c:110:5: warning: '({anonymous})' offset 70 in 'struct m68k_prstatus' isn't aligned to 4 [-Wpacked-not-aligned]
+  110 |     ;
+      |     ^
+INFO: From Compiling backends/m68k_corenote.c [for tool]:
+In file included from external/sonic-build-infra++_repo_rules2+elfutils_src/backends/m68k_corenote.c:72:
+external/sonic-build-infra++_repo_rules2+elfutils_src/backends/linux-core-note.c:116:1: warning: alignment 2 of 'struct m68k_prstatus' is less than 4 [-Wpacked-not-aligned]
+  116 | ;
+      | ^
+external/sonic-build-infra++_repo_rules2+elfutils_src/backends/linux-core-note.c:110:5: warning: '({anonymous})' offset 70 in 'struct m68k_prstatus' isn't aligned to 4 [-Wpacked-not-aligned]
+  110 |     ;
+      |     ^
+[2,782 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 3s local ... (4 actions, 3 running)
+[2,785 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 4s local ... (4 actions running)
+[2,785 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 13s local ... (4 actions running)
+[2,785 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 43s local ... (4 actions running)
+[2,785 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 103s local ... (4 actions running)
+INFO: From Building Linux kernel 6.12.41+deb13-sonic-amd64 (make bzImage + modules):
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/security/integrity/platform_certs/machine_keyring.c:52:20: warning: 'uefi_check_trust_mok_keys' defined but not used [-Wunused-function]
+   52 | static __init bool uefi_check_trust_mok_keys(void)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/device.h:15,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/acpi.h:14,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/i2c.h:13,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/sff_8436_eeprom.c:82:
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/sff_8436_eeprom.c: In function 'sff_8436_eeprom_probe':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/sff_8436_eeprom.c:898:32: warning: format '%zu' expects argument of type 'size_t', but argument 3 has type 'int' [-Wformat=]
+  898 |         dev_info(&client->dev, "%zu byte %s EEPROM, %s\n",
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dev_printk.h:110:30: note: in definition of macro 'dev_printk_index_wrap'
+  110 |                 _p_func(dev, fmt, ##__VA_ARGS__);                       \
+      |                              ^~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dev_printk.h:160:58: note: in expansion of macro 'dev_fmt'
+  160 |         dev_printk_index_wrap(_dev_info, KERN_INFO, dev, dev_fmt(fmt), ##__VA_ARGS__)
+      |                                                          ^~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/sff_8436_eeprom.c:898:9: note: in expansion of macro 'dev_info'
+  898 |         dev_info(&client->dev, "%zu byte %s EEPROM, %s\n",
+      |         ^~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/sff_8436_eeprom.c:898:35: note: format string is defined here
+  898 |         dev_info(&client->dev, "%zu byte %s EEPROM, %s\n",
+      |                                 ~~^
+      |                                   |
+      |                                   long unsigned int
+      |                                 %u
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/optoe.c: In function 'set_max_bank_size':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/optoe.c:1138:9: warning: ignoring return value of 'sysfs_create_bin_file' declared with attribute 'warn_unused_result' [-Wunused-result]
+ 1138 |         sysfs_create_bin_file(&client->dev.kobj, &optoe->bin);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/printk.h:605,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/asm-generic/bug.h:22,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/bug.h:100,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/alternative.h:8,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/barrier.h:5,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/asm-generic/bitops/generic-non-atomic.h:7,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/bitops.h:29,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/kernel.h:23,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/skbuff.h:13,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/if_arp.h:22,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:9:
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c: In function 'mctp_rtm_newaddr':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:246:25: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+  246 |         netdev_dbg(dev, "MCTP: address %u added (total %u addresses)\n",
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  247 |                    addr->s_addr, mdev->num_addrs);
+      |                                  ~~~~~~~~~~~~~~~
+      |                                      |
+      |                                      size_t {aka long unsigned int}
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:224:29: note: in definition of macro '__dynamic_func_call_cls'
+  224 |                 func(&id, ##__VA_ARGS__);                       \
+      |                             ^~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:250:9: note: in expansion of macro '_dynamic_func_call_cls'
+  250 |         _dynamic_func_call_cls(_DPRINTK_CLASS_DFLT, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:277:9: note: in expansion of macro '_dynamic_func_call'
+  277 |         _dynamic_func_call(fmt, __dynamic_netdev_dbg,           \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/net/net_debug.h:57:9: note: in expansion of macro 'dynamic_netdev_dbg'
+   57 |         dynamic_netdev_dbg(__dev, format, ##args);              \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:246:9: note: in expansion of macro 'netdev_dbg'
+  246 |         netdev_dbg(dev, "MCTP: address %u added (total %u addresses)\n",
+      |         ^~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:246:57: note: format string is defined here
+  246 |         netdev_dbg(dev, "MCTP: address %u added (total %u addresses)\n",
+      |                                                        ~^
+      |                                                         |
+      |                                                         unsigned int
+      |                                                        %lu
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c: In function 'mctp_rtm_deladdr':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:307:25: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+  307 |         netdev_dbg(dev, "MCTP: address %u deleted (remaining %u addresses)\n",
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  308 |                    addr->s_addr, mdev->num_addrs);
+      |                                  ~~~~~~~~~~~~~~~
+      |                                      |
+      |                                      size_t {aka long unsigned int}
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:224:29: note: in definition of macro '__dynamic_func_call_cls'
+  224 |                 func(&id, ##__VA_ARGS__);                       \
+      |                             ^~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:250:9: note: in expansion of macro '_dynamic_func_call_cls'
+  250 |         _dynamic_func_call_cls(_DPRINTK_CLASS_DFLT, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:277:9: note: in expansion of macro '_dynamic_func_call'
+  277 |         _dynamic_func_call(fmt, __dynamic_netdev_dbg,           \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/net/net_debug.h:57:9: note: in expansion of macro 'dynamic_netdev_dbg'
+   57 |         dynamic_netdev_dbg(__dev, format, ##args);              \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:307:9: note: in expansion of macro 'netdev_dbg'
+  307 |         netdev_dbg(dev, "MCTP: address %u deleted (remaining %u addresses)\n",
+      |         ^~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:307:63: note: format string is defined here
+  307 |         netdev_dbg(dev, "MCTP: address %u deleted (remaining %u addresses)\n",
+      |                                                              ~^
+      |                                                               |
+      |                                                               unsigned int
+      |                                                              %lu
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c: In function 'mctp_unregister':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:469:25: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+  469 |         netdev_dbg(dev, "MCTP: device unregistering (%u addresses)\n", mdev->num_addrs);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~
+      |                                                                            |
+      |                                                                            size_t {aka long unsigned int}
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:224:29: note: in definition of macro '__dynamic_func_call_cls'
+  224 |                 func(&id, ##__VA_ARGS__);                       \
+      |                             ^~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:250:9: note: in expansion of macro '_dynamic_func_call_cls'
+  250 |         _dynamic_func_call_cls(_DPRINTK_CLASS_DFLT, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:277:9: note: in expansion of macro '_dynamic_func_call'
+  277 |         _dynamic_func_call(fmt, __dynamic_netdev_dbg,           \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/net/net_debug.h:57:9: note: in expansion of macro 'dynamic_netdev_dbg'
+   57 |         dynamic_netdev_dbg(__dev, format, ##args);              \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:469:9: note: in expansion of macro 'netdev_dbg'
+  469 |         netdev_dbg(dev, "MCTP: device unregistering (%u addresses)\n", mdev->num_addrs);
+      |         ^~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:469:55: note: format string is defined here
+  469 |         netdev_dbg(dev, "MCTP: device unregistering (%u addresses)\n", mdev->num_addrs);
+      |                                                      ~^
+      |                                                       |
+      |                                                       unsigned int
+      |                                                      %lu
+In file included from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/asm-generic/bug.h:22,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/bug.h:100,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/alternative.h:8,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/barrier.h:5,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/asm-generic/bitops/generic-non-atomic.h:7,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/bitops.h:29,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/radix-tree.h:11,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/idr.h:15,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:13:
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c: In function 'mctp_queue_error':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:2984:34: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+ 2984 |                         pr_debug("mctp_queue_error: TX - used key payload (len=%u)\n", capture_len);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/printk.h:386:21: note: in definition of macro 'pr_fmt'
+  386 | #define pr_fmt(fmt) fmt
+      |                     ^~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:248:9: note: in expansion of macro '__dynamic_func_call_cls'
+  248 |         __dynamic_func_call_cls(__UNIQUE_ID(ddebug), cls, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:250:9: note: in expansion of macro '_dynamic_func_call_cls'
+  250 |         _dynamic_func_call_cls(_DPRINTK_CLASS_DFLT, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:269:9: note: in expansion of macro '_dynamic_func_call'
+  269 |         _dynamic_func_call(fmt, __dynamic_pr_debug,             \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/printk.h:620:9: note: in expansion of macro 'dynamic_pr_debug'
+  620 |         dynamic_pr_debug(fmt, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:2984:25: note: in expansion of macro 'pr_debug'
+ 2984 |                         pr_debug("mctp_queue_error: TX - used key payload (len=%u)\n", capture_len);
+      |                         ^~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:2984:81: note: format string is defined here
+ 2984 |                         pr_debug("mctp_queue_error: TX - used key payload (len=%u)\n", capture_len);
+      |                                                                                ~^
+      |                                                                                 |
+      |                                                                                 unsigned int
+      |                                                                                %lu
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:3035:26: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+ 3035 |                 pr_debug("mctp_queue_error: RX - used TX key payload (REQUEST, len=%u)\n", capture_len);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/printk.h:386:21: note: in definition of macro 'pr_fmt'
+  386 | #define pr_fmt(fmt) fmt
+      |                     ^~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:248:9: note: in expansion of macro '__dynamic_func_call_cls'
+  248 |         __dynamic_func_call_cls(__UNIQUE_ID(ddebug), cls, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:250:9: note: in expansion of macro '_dynamic_func_call_cls'
+  250 |         _dynamic_func_call_cls(_DPRINTK_CLASS_DFLT, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:269:9: note: in expansion of macro '_dynamic_func_call'
+  269 |         _dynamic_func_call(fmt, __dynamic_pr_debug,             \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/printk.h:620:9: note: in expansion of macro 'dynamic_pr_debug'
+  620 |         dynamic_pr_debug(fmt, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:3035:17: note: in expansion of macro 'pr_debug'
+ 3035 |                 pr_debug("mctp_queue_error: RX - used TX key payload (REQUEST, len=%u)\n", capture_len);
+      |                 ^~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:3035:85: note: format string is defined here
+ 3035 |                 pr_debug("mctp_queue_error: RX - used TX key payload (REQUEST, len=%u)\n", capture_len);
+      |                                                                                    ~^
+      |                                                                                     |
+      |                                                                                     unsigned int
+      |                                                                                    %lu
+stdout (/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/execroot/_main/bazel-out/_tmp/actions/stdout-4252) 4334508 exceeds maximum size of --experimental_ui_max_stdouterr_bytes=1048576 bytes; skipping
+[2,786 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 149s local ... (3 actions running)
+[2,786 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 160s local ... (3 actions running)
+INFO: From SONiC make (local) -> p4lang-pi_0.1.1-1_amd64.deb @@p4lang+//:p4lang-pi_0.1.1-1.deb:
+make: Entering directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : ""
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260903.194128"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260903.194128"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+[2,787 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 189s local ... (3 actions, 2 running)
+[2,789 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 190s local ... (2 actions running)
+[2,789 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 200s local ... (2 actions running)
+[2,789 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 230s local ... (2 actions running)
+[2,789 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 290s local ... (2 actions running)
+[2,789 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 350s local ... (2 actions running)
+[2,789 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 410s local ... (2 actions running)
+[2,789 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 470s local ... (2 actions running)
+[2,789 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 530s local ... (2 actions running)
+INFO: From SONiC make (local) -> p4lang-bmv2_1.15.0-9_amd64.deb @@p4lang+//:p4lang-bmv2_1.15.0-9.deb:
+make: Entering directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : ""
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260903.194438"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260903.194438"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+[2,790 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 562s local
+[2,790 / 2,791] SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb; 574s local
+ERROR: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/p4lang+/BUILD.bazel:37:12: SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb failed: (Exit 2): bash failed: error executing Genrule command (from target @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb) /bin/bash -c ... (remaining 1 argument skipped)
+make: Entering directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : ""
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260903.195050"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260903.195050"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ]
+Build start time: Thu Sep 3 11:51:14 UTC 2026
+[ REASON ] :      target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb does not exist   NON-EXISTENT PREREQUISITES: target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/p4lang'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+rm -rf p4lang-p4c-1.2.4.2
+dpkg-source -x ./p4lang-p4c_1.2.4.2-2.dsc
+pushd p4lang-p4c-1.2.4.2
+patch -p1 -i ../p4lang-p4c.patch/use-boost-1.83.patch
+patch -p1 -i ../p4lang-p4c.patch/fix-build-for-boost-1.83.patch
+patch -p1 -i ../p4lang-p4c.patch/update-thrift-dependency.patch
+patch -p1 -i ../p4lang-p4c.patch/remove-protobuf-from-debian-dependency.patch
+DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -us -uc -b -Pnocheck -j192 --admindir /sonic/dpkg/tmp.eQ9brMTaDo
+popd
+mv p4lang-p4c_1.2.4.2-2_amd64.deb /sonic/target/debs/trixie/
++ rm -rf p4lang-p4c-1.2.4.2
++ dpkg-source -x ./p4lang-p4c_1.2.4.2-2.dsc
+dpkg-source: warning: extracting unsigned source package (./p4lang-p4c_1.2.4.2-2.dsc)
+dpkg-source: error: file ./p4lang-p4c_1.2.4.2.orig.tar.gz has size 173767836 instead of expected 173732452
+make[1]: *** [Makefile:50: /sonic/target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb] Error 25
+make[1]: Leaving directory '/sonic/src/p4lang'
+[  FAIL LOG END  ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ]
+make: *** [slave.mk:919: target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb] Error 1
+make[1]: *** [Makefile.work:751: target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb] Error 2
+make: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 589.742s, Critical Path: 588.32s
+INFO: 2791 processes: 1538 disk cache hit, 1249 internal, 4 local.
+ERROR: Build did NOT complete successfully

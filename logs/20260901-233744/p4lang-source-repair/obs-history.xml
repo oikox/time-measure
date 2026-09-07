@@ -1,0 +1,97 @@
+<revisionlist>
+  <revision rev="1" vrev="1">
+    <srcmd5>41b346b3c28ca4e7056143d487fe022b</srcmd5>
+    <version>1.2.2</version>
+    <time>1635884103</time>
+    <user>p4lang</user>
+    <comment>This package provides the P4C compiler: https://github.com/p4lang/p4c</comment>
+    <requestid>928851</requestid>
+  </revision>
+  <revision rev="2" vrev="2">
+    <srcmd5>246b4eeb5ef668e0c3bc592e191a7134</srcmd5>
+    <version>1.2.2</version>
+    <time>1636001429</time>
+    <user>p4lang</user>
+    <comment>Update libbpf dependency</comment>
+    <requestid>929097</requestid>
+  </revision>
+  <revision rev="3" vrev="3">
+    <srcmd5>598923282137c243e88d15117ab066e5</srcmd5>
+    <version>1.2.2</version>
+    <time>1636248690</time>
+    <user>rstoyanov</user>
+    <comment>Update to 1.2.2-6</comment>
+    <requestid>929938</requestid>
+  </revision>
+  <revision rev="4" vrev="4">
+    <srcmd5>b1f4984c21d35476ef2908902ac19869</srcmd5>
+    <version>1.2.2</version>
+    <time>1638180268</time>
+    <user>rstoyanov</user>
+    <comment>Update p4lang-p4c (1.2.2-7)</comment>
+    <requestid>934500</requestid>
+  </revision>
+  <revision rev="5" vrev="5">
+    <srcmd5>872d3946755183354d23ced66682e743</srcmd5>
+    <version>1.2.2</version>
+    <time>1644389071</time>
+    <user>rstoyanov</user>
+    <comment>Update dependencies</comment>
+    <requestid>952860</requestid>
+  </revision>
+  <revision rev="6" vrev="1">
+    <srcmd5>b9e7b7b84182df75de34848a05df1445</srcmd5>
+    <version>1.2.3.0</version>
+    <time>1659474521</time>
+    <user>rstoyanov</user>
+    <comment>New upstream release v1.2.3.0</comment>
+    <requestid>992397</requestid>
+  </revision>
+  <revision rev="7" vrev="1">
+    <srcmd5>f94efe3ba51dcd87ba2088cf964fc52f</srcmd5>
+    <version>1.2.3.6</version>
+    <time>1676498856</time>
+    <user>rstoyanov</user>
+    <comment>New upstream release v1.2.3.6</comment>
+    <requestid>1066065</requestid>
+  </revision>
+  <revision rev="8" vrev="1">
+    <srcmd5>035f85c9325e7ace4dda5946e2a30d0f</srcmd5>
+    <version>1.2.4.0</version>
+    <time>1687207045</time>
+    <user>rstoyanov</user>
+    <comment>New upstream release v1.2.4</comment>
+    <requestid>1093832</requestid>
+  </revision>
+  <revision rev="9" vrev="1">
+    <srcmd5>b9684a64d293075540abc196ee429b6b</srcmd5>
+    <version>1.2.4.2</version>
+    <time>1691656719</time>
+    <user>rstoyanov</user>
+    <comment>New upstream release v1.2.4.2
+Enable test tools</comment>
+    <requestid>1103282</requestid>
+  </revision>
+  <revision rev="10" vrev="2">
+    <srcmd5>1853b8f8b21b1438dab7ac064fa460be</srcmd5>
+    <version>1.2.4.2</version>
+    <time>1691667329</time>
+    <user>rstoyanov</user>
+  </revision>
+  <revision rev="11" vrev="3">
+    <srcmd5>ed5c30a4bbf38ec6a881eddc923fe849</srcmd5>
+    <version>1.2.4.2</version>
+    <time>1691667437</time>
+    <user>rstoyanov</user>
+    <comment>Enable support for Ubuntu 23.04
+Compatibility fix for aarch64</comment>
+    <requestid>1103322</requestid>
+  </revision>
+  <revision rev="12" vrev="4">
+    <srcmd5>7e6643c47b3eaf7b403cc3988d80d12c</srcmd5>
+    <version>1.2.4.2</version>
+    <time>1784301115</time>
+    <user>chreekat</user>
+    <comment>osc copypac from project:home:p4lang:raspbian-p4c package:p4lang-p4c revision:6</comment>
+  </revision>
+</revisionlist>

@@ -1,0 +1,23 @@
+	Command being timed: "bazel --output_base=/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base build --repository_cache=/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/repository-cache --repository_disable_download --remote_cache= --experimental_remote_downloader= --disk_cache= --action_env=BUILD_SKIP_TEST=y --action_env=HTTP_PROXY=http://127.0.0.1:9 --action_env=HTTPS_PROXY=http://127.0.0.1:9 --action_env=http_proxy=http://127.0.0.1:9 --action_env=https_proxy=http://127.0.0.1:9 --profile=/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/evidence-kernel-p4lang-cached-attempt2/profile.gz --build_event_json_file=/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/evidence-kernel-p4lang-cached-attempt2/bep.json --show_progress_rate_limit=30 platform/vs:sonic-vs-bin"
+	User time (seconds): 0.67
+	System time (seconds): 0.38
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:31.85
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 10896
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 798
+	Voluntary context switches: 53866
+	Involuntary context switches: 42
+	Swaps: 0
+	File system inputs: 1056
+	File system outputs: 11848
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

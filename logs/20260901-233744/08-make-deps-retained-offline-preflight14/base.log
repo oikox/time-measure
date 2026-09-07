@@ -1,0 +1,683 @@
++++ --- Making target/docker-base-trixie.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-base-trixie.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.035410"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.035410"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-base-trixie.gz ] 
+[ finished ] [ target/docker-base-trixie.gz ] 
+[ FAIL LOG START ] [ target/docker-base-trixie.gz ]
+Build start time: Sat Sep 5 19:54:23 UTC 2026
+[ REASON ] :      target/docker-base-trixie.gz does not exist   NON-EXISTENT PREREQUISITES: docker-start 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+cat: 'files/build/versions/dockers/docker-base-trixie/versions-*-trixie-amd64': No such file or directory
+Client: Docker Engine - Community
+ Version:    28.5.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.26.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.39.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 372
+ Server Version: 28.5.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: b98a3aace656320842a23f4a392a33f46af97866
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 7.0.0-22-generic
+ Operating System: Debian GNU/Linux 13 (trixie)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 192
+ Total Memory: 743GiB
+ Name: 76421e02ae52
+ ID: 9050de27-efa9-406a-855d-9324d28b5135
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http://127.0.0.1:9
+ HTTPS Proxy: http://127.0.0.1:9
+ No Proxy: localhost,127.0.0.1,0.0.0.0
+ Experimental: true
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 4.20kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for publicmirror.azurecr.io/debian:trixie@sha256:d07d1b51c39f51188e60be9b64e6bf769fa94e187f092bc32b91305cfa34ba5a
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [base  1/26] FROM publicmirror.azurecr.io/debian:trixie@sha256:d07d1b51c39f51188e60be9b64e6bf769fa94e187f092bc32b91305cfa34ba5a
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 80.60MB 0.3s done
+#5 DONE 0.3s
+
+#6 [base  2/26] COPY [dpkg_01_drop, /etc/dpkg/dpkg.cfg.d/01_drop]
+#6 DONE 0.1s
+
+#7 [base  3/26] COPY [sources.list.amd64, /etc/apt/sources.list]
+#7 DONE 0.0s
+
+#8 [base  4/26] COPY [files/apt/apt.conf.d/, /etc/apt/apt.conf.d/]
+#8 DONE 0.0s
+
+#9 [base  5/26] COPY [buildinfo, /usr/local/share/buildinfo]
+#9 DONE 0.0s
+
+#10 [base  6/26] COPY vcache/ /sonic/target/vcache/docker-base-trixie
+#10 DONE 0.1s
+
+#11 [base  7/26] RUN dpkg -i /usr/local/share/buildinfo/sonic-build-hooks_1.0_all.deb
+#11 0.115 Selecting previously unselected package sonic-build-hooks.
+#11 0.118 (Reading database ... 4936 files and directories currently installed.)
+#11 0.118 Preparing to unpack .../sonic-build-hooks_1.0_all.deb ...
+#11 0.119 Unpacking sonic-build-hooks (1.0) ...
+#11 0.129 Setting up sonic-build-hooks (1.0) ...
+#11 DONE 0.1s
+
+#12 [base  8/26] RUN pre_run_buildinfo docker-base-trixie
+#12 1.426 ./
+#12 1.426 ./pip-wheelhouse/
+#12 1.426 ./pip-wheelhouse/supervisor-4.3.0-py2.py3-none-any.whl
+#12 1.427 ./pip-wheelhouse/toposort-1.10-py3-none-any.whl
+#12 1.427 ./pip-wheelhouse/supervisord_dependent_startup-1.4.0-py2.py3-none-any.whl
+#12 1.428 ./pip-wheelhouse/jsonschema-2.6.0-py2.py3-none-any.whl
+#12 1.428 ./pip/
+#12 1.428 ./pip/http-v2/
+#12 1.428 ./pip/http-v2/b/
+#12 1.428 ./pip/http-v2/b/3/
+#12 1.428 ./pip/http-v2/b/3/2/
+#12 1.428 ./pip/http-v2/b/3/2/f/
+#12 1.428 ./pip/http-v2/b/3/2/f/0/
+#12 1.428 ./pip/http-v2/b/3/2/f/0/b32f017f9c60d09d91ac0bac44002dec28ef8c04355223f13bf00b7a.body
+#12 1.428 ./pip/http-v2/b/3/2/f/0/b32f017f9c60d09d91ac0bac44002dec28ef8c04355223f13bf00b7a
+#12 1.428 ./pip/http-v2/b/1/
+#12 1.428 ./pip/http-v2/b/1/4/
+#12 1.428 ./pip/http-v2/b/1/4/e/
+#12 1.428 ./pip/http-v2/b/1/4/e/c/
+#12 1.428 ./pip/http-v2/b/1/4/e/c/b14ec1286f8ec83b268f9c52cdccd1001d22496d6e01ba5b4fd8aeb4
+#12 1.428 ./pip/http-v2/b/1/4/e/c/b14ec1286f8ec83b268f9c52cdccd1001d22496d6e01ba5b4fd8aeb4.body
+#12 1.428 ./pip/http-v2/b/f/
+#12 1.428 ./pip/http-v2/b/f/9/
+#12 1.428 ./pip/http-v2/b/f/9/6/
+#12 1.428 ./pip/http-v2/b/f/9/6/6/
+#12 1.428 ./pip/http-v2/b/f/9/6/6/bf966cc37805df72ac5b20f39e9bbc4548a3fcdd4068107c7f30831f.body
+#12 1.428 ./pip/http-v2/b/f/9/6/6/bf966cc37805df72ac5b20f39e9bbc4548a3fcdd4068107c7f30831f
+#12 1.428 ./pip/http-v2/b/8/
+#12 1.428 ./pip/http-v2/b/8/6/
+#12 1.428 ./pip/http-v2/b/8/6/2/
+#12 1.428 ./pip/http-v2/b/8/6/2/6/
+#12 1.428 ./pip/http-v2/b/8/6/2/6/b862637a242a4033f1ba3be874e038f3a95ab29277da4c878f7c162d.body
+#12 1.429 ./pip/http-v2/b/8/6/2/6/b862637a242a4033f1ba3be874e038f3a95ab29277da4c878f7c162d
+#12 1.429 ./pip/http-v2/2/
+#12 1.429 ./pip/http-v2/2/5/
+#12 1.429 ./pip/http-v2/2/5/a/
+#12 1.429 ./pip/http-v2/2/5/a/d/
+#12 1.429 ./pip/http-v2/2/5/a/d/9/
+#12 1.429 ./pip/http-v2/2/5/a/d/9/25ad9cf66b37dd8e773bc2962198890086c06a58e68e149798c15d42.body
+#12 1.429 ./pip/http-v2/2/5/a/d/9/25ad9cf66b37dd8e773bc2962198890086c06a58e68e149798c15d42
+#12 1.429 ./pip/http-v2/2/d/
+#12 1.429 ./pip/http-v2/2/d/2/
+#12 1.429 ./pip/http-v2/2/d/2/2/
+#12 1.429 ./pip/http-v2/2/d/2/2/f/
+#12 1.429 ./pip/http-v2/2/d/2/2/f/2d22f303d8f1beb19039dafefa8202703980ca37d2c83b5bd791dbf1
+#12 1.429 ./pip/http-v2/2/d/2/2/f/2d22f303d8f1beb19039dafefa8202703980ca37d2c83b5bd791dbf1.body
+#12 1.429 ./pip/http-v2/e/
+#12 1.429 ./pip/http-v2/e/a/
+#12 1.429 ./pip/http-v2/e/a/7/
+#12 1.429 ./pip/http-v2/e/a/7/6/
+#12 1.429 ./pip/http-v2/e/a/7/6/3/
+#12 1.429 ./pip/http-v2/e/a/7/6/3/ea763bb324d9e754b326e87af9025956fe6d945f13204443e12f54eb
+#12 1.429 ./pip/http-v2/e/a/7/6/3/ea763bb324d9e754b326e87af9025956fe6d945f13204443e12f54eb.body
+#12 1.429 ./pip/http-v2/3/
+#12 1.429 ./pip/http-v2/3/3/
+#12 1.429 ./pip/http-v2/3/3/9/
+#12 1.429 ./pip/http-v2/3/3/9/7/
+#12 1.429 ./pip/http-v2/3/3/9/7/4/
+#12 1.429 ./pip/http-v2/3/3/9/7/4/33974f84394d9a943f68359da08431dab4af9f86c33962982ea21b5f.body
+#12 1.429 ./pip/http-v2/3/3/9/7/4/33974f84394d9a943f68359da08431dab4af9f86c33962982ea21b5f
+#12 1.429 ./pip/http-v2/5/
+#12 1.429 ./pip/http-v2/5/b/
+#12 1.429 ./pip/http-v2/5/b/9/
+#12 1.429 ./pip/http-v2/5/b/9/a/
+#12 1.429 ./pip/http-v2/5/b/9/a/9/
+#12 1.429 ./pip/http-v2/5/b/9/a/9/5b9a9fd3c0c45469fcb69cafd8dcbf862b093a20c76a8fbb53eca5af.body
+#12 1.429 ./pip/http-v2/5/b/9/a/9/5b9a9fd3c0c45469fcb69cafd8dcbf862b093a20c76a8fbb53eca5af
+#12 1.429 ./pip/http-v2/5/3/
+#12 1.429 ./pip/http-v2/5/3/1/
+#12 1.429 ./pip/http-v2/5/3/1/8/
+#12 1.429 ./pip/http-v2/5/3/1/8/1/
+#12 1.429 ./pip/http-v2/5/3/1/8/1/53181fe2d7d3737de473ca37cdfff9e4719668d32d832169c1b4bc65.body
+#12 1.429 ./pip/http-v2/5/3/1/8/1/53181fe2d7d3737de473ca37cdfff9e4719668d32d832169c1b4bc65
+#12 1.429 ./pip/http-v2/5/5/
+#12 1.430 ./pip/http-v2/5/5/7/
+#12 1.430 ./pip/http-v2/5/5/7/3/
+#12 1.430 ./pip/http-v2/5/5/7/3/9/
+#12 1.430 ./pip/http-v2/5/5/7/3/9/55739ede7ec3316301bc20f31d2df3cbc96da095e0ab58471de5aee2
+#12 1.430 ./pip/http-v2/5/5/7/3/9/55739ede7ec3316301bc20f31d2df3cbc96da095e0ab58471de5aee2.body
+#12 1.430 ./pip/http-v2/1/
+#12 1.430 ./pip/http-v2/1/b/
+#12 1.430 ./pip/http-v2/1/b/5/
+#12 1.430 ./pip/http-v2/1/b/5/e/
+#12 1.430 ./pip/http-v2/1/b/5/e/5/
+#12 1.430 ./pip/http-v2/1/b/5/e/5/1b5e5a7ec2469bd2603f897e456dddd563ee5d0ef7634c0f5d7c08b9
+#12 1.430 ./pip/http-v2/1/b/5/e/5/1b5e5a7ec2469bd2603f897e456dddd563ee5d0ef7634c0f5d7c08b9.body
+#12 1.430 ./pip/http-v2/4/
+#12 1.430 ./pip/http-v2/4/3/
+#12 1.430 ./pip/http-v2/4/3/8/
+#12 1.430 ./pip/http-v2/4/3/8/9/
+#12 1.430 ./pip/http-v2/4/3/8/9/9/
+#12 1.430 ./pip/http-v2/4/3/8/9/9/43899518c9e441f1a8a0eb0f938280904054b59d4e27584a6aabbac1.body
+#12 1.430 ./pip/http-v2/4/3/8/9/9/43899518c9e441f1a8a0eb0f938280904054b59d4e27584a6aabbac1
+#12 1.430 ./pip/http-v2/4/5/
+#12 1.430 ./pip/http-v2/4/5/9/
+#12 1.430 ./pip/http-v2/4/5/9/7/
+#12 1.430 ./pip/http-v2/4/5/9/7/6/
+#12 1.430 ./pip/http-v2/4/5/9/7/6/45976c194ebb9180bf7410d422bcad653ce13bcb64dda0d07d72b09d
+#12 1.430 ./pip/http-v2/4/5/9/7/6/45976c194ebb9180bf7410d422bcad653ce13bcb64dda0d07d72b09d.body
+#12 1.430 ./pip/http-v2/f/
+#12 1.430 ./pip/http-v2/f/4/
+#12 1.430 ./pip/http-v2/f/4/8/
+#12 1.430 ./pip/http-v2/f/4/8/b/
+#12 1.430 ./pip/http-v2/f/4/8/b/0/
+#12 1.430 ./pip/http-v2/f/4/8/b/0/f48b0f6096a49248a1820cd7eec89abbdf62427b393bb5ce079aca62.body
+#12 1.432 ./pip/http-v2/f/4/8/b/0/f48b0f6096a49248a1820cd7eec89abbdf62427b393bb5ce079aca62
+#12 1.432 ./pip/http-v2/f/9/
+#12 1.432 ./pip/http-v2/f/9/9/
+#12 1.432 ./pip/http-v2/f/9/9/b/
+#12 1.432 ./pip/http-v2/f/9/9/b/3/
+#12 1.432 ./pip/http-v2/f/9/9/b/3/f99b3487d2b9c55edcd311aeafa35cbf852ab2cc5c3f5d1a1a08e2b5.body
+#12 1.432 ./pip/http-v2/f/9/9/b/3/f99b3487d2b9c55edcd311aeafa35cbf852ab2cc5c3f5d1a1a08e2b5
+#12 1.432 ./pip/http-v2/f/a/
+#12 1.432 ./pip/http-v2/f/a/f/
+#12 1.432 ./pip/http-v2/f/a/f/f/
+#12 1.432 ./pip/http-v2/f/a/f/f/d/
+#12 1.432 ./pip/http-v2/f/a/f/f/d/faffdb5825619a041feeb4cdd9df76cefb30cce63d480ff0ed1a5dae
+#12 1.432 ./pip/http-v2/f/a/f/f/d/faffdb5825619a041feeb4cdd9df76cefb30cce63d480ff0ed1a5dae.body
+#12 1.432 ./pip/http-v2/d/
+#12 1.432 ./pip/http-v2/d/0/
+#12 1.432 ./pip/http-v2/d/0/8/
+#12 1.432 ./pip/http-v2/d/0/8/2/
+#12 1.432 ./pip/http-v2/d/0/8/2/3/
+#12 1.432 ./pip/http-v2/d/0/8/2/3/d0823d926a80fb5fccfb62a7fa9b5e83ce3a3dada11bae12021a29a9
+#12 1.432 ./pip/http-v2/d/0/8/2/3/d0823d926a80fb5fccfb62a7fa9b5e83ce3a3dada11bae12021a29a9.body
+#12 1.432 ./pip/http-v2/d/c/
+#12 1.432 ./pip/http-v2/d/c/c/
+#12 1.432 ./pip/http-v2/d/c/c/2/
+#12 1.432 ./pip/http-v2/d/c/c/2/6/
+#12 1.432 ./pip/http-v2/d/c/c/2/6/dcc26b781e3e58d7e22a65615832539ca5512101a8522c4cbe3a930b.body
+#12 1.432 ./pip/http-v2/d/c/c/2/6/dcc26b781e3e58d7e22a65615832539ca5512101a8522c4cbe3a930b
+#12 1.432 ./pip/http-v2/7/
+#12 1.432 ./pip/http-v2/7/6/
+#12 1.432 ./pip/http-v2/7/6/3/
+#12 1.432 ./pip/http-v2/7/6/3/5/
+#12 1.432 ./pip/http-v2/7/6/3/5/d/
+#12 1.432 ./pip/http-v2/7/6/3/5/d/7635de8254c82e7e771831915759d7d8b2dc2759e9c5896e246e8b46.body
+#12 1.432 ./pip/http-v2/7/6/3/5/d/7635de8254c82e7e771831915759d7d8b2dc2759e9c5896e246e8b46
+#12 1.433 ./pip/http-v2/0/
+#12 1.433 ./pip/http-v2/0/e/
+#12 1.433 ./pip/http-v2/0/e/d/
+#12 1.433 ./pip/http-v2/0/e/d/3/
+#12 1.433 ./pip/http-v2/0/e/d/3/3/
+#12 1.433 ./pip/http-v2/0/e/d/3/3/0ed336d749e009fe1267c844e36c442e5b3dc645d5eb9865c545b81a.body
+#12 1.433 ./pip/http-v2/0/e/d/3/3/0ed336d749e009fe1267c844e36c442e5b3dc645d5eb9865c545b81a
+#12 1.433 ./pip/http-v2/0/6/
+#12 1.433 ./pip/http-v2/0/6/4/
+#12 1.433 ./pip/http-v2/0/6/4/1/
+#12 1.433 ./pip/http-v2/0/6/4/1/2/
+#12 1.433 ./pip/http-v2/0/6/4/1/2/06412fcf44b9a9522ff6367cabc965d23cb1165807c45516a879c5c4.body
+#12 1.433 ./pip/http-v2/0/6/4/1/2/06412fcf44b9a9522ff6367cabc965d23cb1165807c45516a879c5c4
+#12 1.433 ./pip/http-v2/0/6/7/
+#12 1.433 ./pip/http-v2/0/6/7/d/
+#12 1.433 ./pip/http-v2/0/6/7/d/e/
+#12 1.433 ./pip/http-v2/0/6/7/d/e/067de891d4624fc09de1c690b01d8bf477f69f0ce81f8101b21b3549.body
+#12 1.433 ./pip/http-v2/0/6/7/d/e/067de891d4624fc09de1c690b01d8bf477f69f0ce81f8101b21b3549
+#12 1.433 ./pip/http-v2/c/
+#12 1.433 ./pip/http-v2/c/b/
+#12 1.433 ./pip/http-v2/c/b/5/
+#12 1.433 ./pip/http-v2/c/b/5/2/
+#12 1.433 ./pip/http-v2/c/b/5/2/a/
+#12 1.434 ./pip/http-v2/c/b/5/2/a/cb52a2d86b549893dbebd3c41cb632b74900e6546f238508e1029e00.body
+#12 1.434 ./pip/http-v2/c/b/5/2/a/cb52a2d86b549893dbebd3c41cb632b74900e6546f238508e1029e00
+#12 1.434 ./pip/http-v2/c/1/
+#12 1.434 ./pip/http-v2/c/1/8/
+#12 1.434 ./pip/http-v2/c/1/8/d/
+#12 1.434 ./pip/http-v2/c/1/8/d/0/
+#12 1.434 ./pip/http-v2/c/1/8/d/0/c18d02f6e7b2bc128a137ad0b421c01673135bb73632621ee88261f5
+#12 1.434 ./pip/http-v2/c/1/8/d/0/c18d02f6e7b2bc128a137ad0b421c01673135bb73632621ee88261f5.body
+#12 1.434 ./pip/http-v2/c/f/
+#12 1.434 ./pip/http-v2/c/f/e/
+#12 1.434 ./pip/http-v2/c/f/e/a/
+#12 1.434 ./pip/http-v2/c/f/e/a/8/
+#12 1.434 ./pip/http-v2/c/f/e/a/8/cfea8709881c23f856c58e03d8c1459ee5cf4b465b369d76c9bed187.body
+#12 1.434 ./pip/http-v2/c/f/e/a/8/cfea8709881c23f856c58e03d8c1459ee5cf4b465b369d76c9bed187
+#12 1.434 ./pip/http-v2/c/0/
+#12 1.434 ./pip/http-v2/c/0/2/
+#12 1.434 ./pip/http-v2/c/0/2/6/
+#12 1.434 ./pip/http-v2/c/0/2/6/f/
+#12 1.434 ./pip/http-v2/c/0/2/6/f/c026fe7c82450cb738f9bef708a323a721bc89407b938090ded9294a
+#12 1.434 ./pip/http-v2/c/0/2/6/f/c026fe7c82450cb738f9bef708a323a721bc89407b938090ded9294a.body
+#12 1.439 ./pip/http-v2/9/
+#12 1.439 ./pip/http-v2/9/3/
+#12 1.439 ./pip/http-v2/9/3/1/
+#12 1.439 ./pip/http-v2/9/3/1/d/
+#12 1.439 ./pip/http-v2/9/3/1/d/d/
+#12 1.439 ./pip/http-v2/9/3/1/d/d/931dd4b51a80ffc83a0ce2caffcc883124ae68a310fbc8bfac06086d
+#12 1.439 ./pip/http-v2/9/3/1/d/d/931dd4b51a80ffc83a0ce2caffcc883124ae68a310fbc8bfac06086d.body
+#12 1.439 ./pip/http-v2/9/4/
+#12 1.439 ./pip/http-v2/9/4/5/
+#12 1.439 ./pip/http-v2/9/4/5/2/
+#12 1.439 ./pip/http-v2/9/4/5/2/4/
+#12 1.439 ./pip/http-v2/9/4/5/2/4/9452417670b2e75527d793717779fce5d54e5f21adb3344c273876fa
+#12 1.439 ./pip/http-v2/9/4/5/2/4/9452417670b2e75527d793717779fce5d54e5f21adb3344c273876fa.body
+#12 1.440 ./pip/http-v2/a/
+#12 1.440 ./pip/http-v2/a/b/
+#12 1.440 ./pip/http-v2/a/b/d/
+#12 1.440 ./pip/http-v2/a/b/d/d/
+#12 1.440 ./pip/http-v2/a/b/d/d/d/
+#12 1.440 ./pip/http-v2/a/b/d/d/d/abdddc46265b81c7d6dc73a20f1ad8ef043a66e9e79abdc1379bf71e.body
+#12 1.440 ./pip/http-v2/a/b/d/d/d/abdddc46265b81c7d6dc73a20f1ad8ef043a66e9e79abdc1379bf71e
+#12 1.440 ./pip/http-v2/a/9/
+#12 1.440 ./pip/http-v2/a/9/9/
+#12 1.440 ./pip/http-v2/a/9/9/4/
+#12 1.440 ./pip/http-v2/a/9/9/4/1/
+#12 1.440 ./pip/http-v2/a/9/9/4/1/a9941bc105752b6feb6a23eb0c6717c296b4944142da4fccf404e881.body
+#12 1.440 ./pip/http-v2/a/9/9/4/1/a9941bc105752b6feb6a23eb0c6717c296b4944142da4fccf404e881
+#12 1.440 ./pip/http-v2/a/a/
+#12 1.440 ./pip/http-v2/a/a/c/
+#12 1.440 ./pip/http-v2/a/a/c/a/
+#12 1.440 ./pip/http-v2/a/a/c/a/c/
+#12 1.440 ./pip/http-v2/a/a/c/a/c/aacac81bf1d35d08fd880f2e19cbd5a198730437b2c32b1ce1da7aa3.body
+#12 1.440 ./pip/http-v2/a/a/c/a/c/aacac81bf1d35d08fd880f2e19cbd5a198730437b2c32b1ce1da7aa3
+#12 1.440 ./pip/http-v2/6/
+#12 1.440 ./pip/http-v2/6/b/
+#12 1.440 ./pip/http-v2/6/b/c/
+#12 1.440 ./pip/http-v2/6/b/c/4/
+#12 1.440 ./pip/http-v2/6/b/c/4/4/
+#12 1.440 ./pip/http-v2/6/b/c/4/4/6bc44665bb603ed852c296157543510833d416bcf304a53eed83717c
+#12 1.440 ./pip/http-v2/6/b/c/4/4/6bc44665bb603ed852c296157543510833d416bcf304a53eed83717c.body
+#12 1.440 ./deb/
+#12 1.440 ./deb/libpopt0_1.19+dfsg-2_amd64.deb
+#12 1.440 ./deb/rsync_3.4.1+ds1-5+deb13u4_amd64.deb
+#12 1.442 ./deb/lock
+#12 1.442 ./deb/partial/
+#12 1.442 ./deb/libcap2-bin_1%3a2.75-10+deb13u1+b1_amd64.deb
+#12 1.443 ./deb/libmnl0_1.0.5-3_amd64.deb
+#12 1.443 ./deb/libtirpc3t64_1.3.6+ds-1_amd64.deb
+#12 1.443 ./deb/libtirpc-common_1.3.6+ds-1_all.deb
+#12 1.443 ./deb/libbpf1_1%3a1.5.0-3_amd64.deb
+#12 1.444 ./deb/libelf1t64_0.192-4_amd64.deb
+#12 1.445 ./deb/libxtables12_1.8.11-2_amd64.deb
+#12 1.445 ./deb/libpsl5t64_0.21.2-1.1+b1_amd64.deb
+#12 1.445 ./deb/less_668-1_amd64.deb
+#12 1.446 ./deb/media-types_13.0.0_all.deb
+#12 1.447 ./deb/vim-common_2%3a9.1.1230-2_all.deb
+#12 1.449 ./deb/libkrb5support0_1.21.3-5+deb13u1_amd64.deb
+#12 1.449 ./deb/libidn2-0_2.3.8-2_amd64.deb
+#12 1.449 ./deb/libpgm-5.3-0t64_5.3.128~dfsg-2.1+b1_amd64.deb
+#12 1.450 ./deb/jq_1.7.1-6+deb13u3_amd64.deb
+#12 1.451 ./deb/libsodium23_1.0.18-1+deb13u1_amd64.deb
+#12 1.451 ./deb/rsyslog_8.2504.0-1_amd64.deb
+#12 1.455 ./deb/libdbus-1-3_1.16.2-2_amd64.deb
+#12 1.456 ./deb/libjansson4_2.14-2+b3_amd64.deb
+#12 1.456 ./deb/python3-typeguard_4.4.2-1_all.deb
+#12 1.456 ./deb/libk5crypto3_1.21.3-5+deb13u1_amd64.deb
+#12 1.456 ./deb/python3-pkg-resources_78.1.1-0.1_all.deb
+#12 1.458 ./deb/libnghttp2-14_1.64.0-1.1+deb13u1_amd64.deb
+#12 1.458 ./deb/python3-autocommand_2.2.2-3_all.deb
+#12 1.458 ./deb/libnorm1t64_1.5.9+dfsg-3.1+b2_amd64.deb
+#12 1.459 ./deb/libunistring5_1.3-2_amd64.deb
+#12 1.461 ./deb/redis-tools_5%3a8.0.2-3+deb13u2_amd64.deb
+#12 1.467 ./deb/libffi8_3.4.8-2_amd64.deb
+#12 1.467 ./deb/libtasn1-6_4.20.0-2+deb13u1_amd64.deb
+#12 1.467 ./deb/vim-tiny_2%3a9.1.1230-2_amd64.deb
+#12 1.471 ./deb/perl-modules-5.40_5.40.1-6_all.deb
+#12 1.485 ./deb/libpython3-stdlib_3.13.5-1_amd64.deb
+#12 1.485 ./deb/python3-more-itertools_10.7.0-1_all.deb
+#12 1.485 ./deb/python3-jaraco.text_4.0.0-1_all.deb
+#12 1.485 ./deb/netbase_6.5_all.deb
+#12 1.485 ./deb/libssh2-1t64_1.11.1-1+deb13u1_amd64.deb
+#12 1.486 ./deb/libgnutls30t64_3.8.9-3+deb13u4_amd64.deb
+#12 1.493 ./deb/libsasl2-modules-db_2.1.28+dfsg1-9_amd64.deb
+#12 1.493 ./deb/python-is-python3_3.13.3-1_all.deb
+#12 1.493 ./deb/libsasl2-2_2.1.28+dfsg1-9_amd64.deb
+#12 1.494 ./deb/libreadline8t64_8.2-6_amd64.deb
+#12 1.494 ./deb/libonig5_6.9.9-1+b1_amd64.deb
+#12 1.495 ./deb/libkeyutils1_1.6.3-6_amd64.deb
+#12 1.495 ./deb/python3-packaging_25.0-1_all.deb
+#12 1.496 ./deb/libwrap0_7.6.q-36_amd64.deb
+#12 1.496 ./deb/procps_2%3a4.0.4-9_amd64.deb
+#12 1.500 ./deb/python3-jaraco.context_6.0.1-1+deb13u1_all.deb
+#12 1.500 ./deb/libjemalloc2_5.3.0-3_amd64.deb
+#12 1.501 ./deb/python3-inflect_7.3.1-2_all.deb
+#12 1.501 ./deb/liblognorm5_2.0.6-5_amd64.deb
+#12 1.502 ./deb/python3-minimal_3.13.5-1_amd64.deb
+#12 1.502 ./deb/libldap2_2.6.10+dfsg-1_amd64.deb
+#12 1.503 ./deb/librtmp1_2.4+20151223.gitfa8646d.1-2+b5_amd64.deb
+#12 1.503 ./deb/libperl5.40_5.40.1-6_amd64.deb
+#12 1.523 ./deb/libgdbm-compat4t64_1.24-2_amd64.deb
+#12 1.523 ./deb/python3.13-minimal_3.13.5-2+deb13u4_amd64.deb
+#12 1.533 ./deb/net-tools_2.10-1.3_amd64.deb
+#12 1.534 ./deb/python3-typing-extensions_4.13.2-1_all.deb
+#12 1.534 ./deb/perl_5.40.1-6_amd64.deb
+#12 1.536 ./deb/libbrotli1_1.1.0-2+b7_amd64.deb
+#12 1.537 ./deb/libpython3.13-stdlib_3.13.5-2+deb13u4_amd64.deb
+#12 1.546 ./deb/libcurl4t64_8.14.1-2+deb13u4_amd64.deb
+#12 1.548 ./deb/python3-pip_25.1.1+dfsg-1_all.deb
+#12 1.554 ./deb/libp11-kit0_0.25.5-3_amd64.deb
+#12 1.556 ./deb/libestr0_0.1.11-2_amd64.deb
+#12 1.557 ./deb/libatomic1_14.2.0-19_amd64.deb
+#12 1.557 ./deb/libgdbm6t64_1.24-2_amd64.deb
+#12 1.557 ./deb/libkrb5-3_1.21.3-5+deb13u1_amd64.deb
+#12 1.558 ./deb/librelp0_1.11.0-2_amd64.deb
+#12 1.559 ./deb/rsyslog-relp_8.2504.0-1_amd64.deb
+#12 1.560 ./deb/liblzf1_3.6-4+b3_amd64.deb
+#12 1.560 ./deb/libdaemon0_0.14-7.1+b3_amd64.deb
+#12 1.560 ./deb/libzmq5_4.3.5-1+b3_amd64.deb
+#12 1.562 ./deb/python3-jaraco.functools_4.1.0-1_all.deb
+#12 1.562 ./deb/adduser_3.152_all.deb
+#12 1.563 ./deb/python3-setuptools_78.1.1-0.1_all.deb
+#12 1.566 ./deb/libgssapi-krb5-2_1.21.3-5+deb13u1_amd64.deb
+#12 1.567 ./deb/libpython3.13-minimal_3.13.5-2+deb13u4_amd64.deb
+#12 1.571 ./deb/python3.13_3.13.5-2+deb13u4_amd64.deb
+#12 1.574 ./deb/libjq1_1.7.1-6+deb13u3_amd64.deb
+#12 1.575 ./deb/libncursesw6_6.5+20250216-2_amd64.deb
+#12 1.576 ./deb/libcom-err2_1.47.2-3+b11_amd64.deb
+#12 1.576 ./deb/python3-wheel_0.46.1-2_all.deb
+#12 1.576 ./deb/libfastjson4_1.2304.0-2_amd64.deb
+#12 1.576 ./deb/libnghttp3-9_1.8.0-1_amd64.deb
+#12 1.576 ./deb/python3_3.13.5-1_amd64.deb
+#12 1.577 ./deb/readline-common_8.2-6_all.deb
+#12 1.577 ./deb/libproc2-0_2%3a4.0.4-9_amd64.deb
+#12 1.577 ./deb/libexpat1_2.8.3-1~deb13u1_amd64.deb
+#12 1.578 ./deb/curl_8.14.1-2+deb13u4_amd64.deb
+#12 1.579 ./deb/python3-zipp_3.21.0-1_all.deb
+#12 1.579 ./deb/ca-certificates_20250419_all.deb
+#12 1.580 ./deb/openssl_3.5.7-1~deb13u2_amd64.deb
+#12 1.587 ./deb/openssl-provider-legacy_3.5.7-1~deb13u2_amd64.deb
+#12 1.588 ./deb/libssl3t64_3.5.7-1~deb13u2_amd64.deb
+#12 1.600 ./apt-lists/
+#12 1.600 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_main_source_Sources.lz4
+#12 1.600 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_non-free-firmware_source_Sources.lz4
+#12 1.600 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_contrib_source_Sources.lz4
+#12 1.601 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_non-free-firmware_binary-amd64_Packages.lz4
+#12 1.601 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_main_source_Sources.lz4
+#12 1.808 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_main_binary-amd64_Packages.lz4
+#12 1.813 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_non-free-firmware_source_Sources.lz4
+#12 1.813 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_InRelease
+#12 1.813 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_main_source_Sources.lz4
+#12 1.819 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_main_binary-amd64_Packages.lz4
+#12 2.011 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_InRelease
+#12 2.011 ./apt-lists/auxfiles/
+#12 2.011 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_non-free-firmware_binary-amd64_Packages.lz4
+#12 2.011 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_main_binary-amd64_Packages.lz4
+#12 2.017 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_contrib_binary-amd64_Packages.lz4
+#12 2.017 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_InRelease
+#12 2.018 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_non-free-firmware_binary-amd64_Packages.lz4
+#12 2.018 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_contrib_binary-amd64_Packages.lz4
+#12 2.018 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_contrib_binary-amd64_Packages.lz4
+#12 2.020 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_contrib_source_Sources.lz4
+#12 2.020 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_main_binary-amd64_Packages.lz4
+#12 2.020 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_InRelease
+#12 2.020 ./apt-lists/partial/
+#12 2.020 ./apt-lists/lock
+#12 2.029 cp: -r not specified; omitting directory '/sonic/target/vcache/docker-base-trixie/deb/partial'
+#12 DONE 2.3s
+
+#13 [base  9/26] RUN apt -o Acquire::https::Verify-Peer=false update &&     apt -o Acquire::https::Verify-Peer=false install -y ca-certificates
+#13 0.132 
+#13 0.132 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#13 0.132 
+#13 0.155 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 0.155 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 0.155 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 0.155 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 1.156 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 1.156 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 1.156 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 1.156 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 3.156 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 3.156 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 3.156 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 3.156 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 7.157 Err:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 7.157   Unable to connect to 127.0.0.1:9:
+#13 7.157 Err:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 7.157   Unable to connect to 127.0.0.1:9:
+#13 7.157 Err:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 7.157   Unable to connect to 127.0.0.1:9:
+#13 7.157 Err:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 7.157   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#13 7.157   Unable to connect to 127.0.0.1:9:
+#13 7.163 Reading package lists...
+#13 7.597 Building dependency tree...
+#13 7.682 Reading state information...
+#13 7.694 13 packages can be upgraded. Run 'apt list --upgradable' to see them.
+#13 7.694 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.694 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-updates/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.694 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-backports/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.694 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/dists/trixie-security/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.694 Warning: Some index files failed to download. They have been ignored, or old ones used instead.
+#13 7.725 
+#13 7.725 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#13 7.725 
+#13 7.738 Reading package lists...
+#13 8.163 Building dependency tree...
+#13 8.245 Reading state information...
+#13 8.397 Upgrading:
+#13 8.397   libssl3t64  openssl-provider-legacy
+#13 8.397 
+#13 8.399 Installing:
+#13 8.399   ca-certificates
+#13 8.399 
+#13 8.400 Installing dependencies:
+#13 8.400   openssl
+#13 8.400 
+#13 8.423 Summary:
+#13 8.423   Upgrading: 2, Installing: 2, Removing: 0, Not Upgrading: 11
+#13 8.423   Download size: 4439 kB
+#13 8.423   Space needed: 2978 kB / 271 GB available
+#13 8.423 
+#13 8.423 Ign:1 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl-provider-legacy amd64 3.5.7-1~deb13u2
+#13 8.423 Ign:2 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 libssl3t64 amd64 3.5.7-1~deb13u2
+#13 8.423 Ign:3 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl amd64 3.5.7-1~deb13u2
+#13 8.423 Ign:4 http://debian-archive.trafficmanager.net/debian trixie/main amd64 ca-certificates all 20250419
+#13 9.424 Ign:4 http://debian-archive.trafficmanager.net/debian trixie/main amd64 ca-certificates all 20250419
+#13 9.424 Ign:3 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl amd64 3.5.7-1~deb13u2
+#13 9.424 Ign:2 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 libssl3t64 amd64 3.5.7-1~deb13u2
+#13 9.424 Ign:1 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl-provider-legacy amd64 3.5.7-1~deb13u2
+#13 11.42 Ign:1 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl-provider-legacy amd64 3.5.7-1~deb13u2
+#13 11.42 Ign:2 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 libssl3t64 amd64 3.5.7-1~deb13u2
+#13 11.42 Ign:3 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl amd64 3.5.7-1~deb13u2
+#13 11.42 Ign:4 http://debian-archive.trafficmanager.net/debian trixie/main amd64 ca-certificates all 20250419
+#13 15.42 Err:4 http://debian-archive.trafficmanager.net/debian trixie/main amd64 ca-certificates all 20250419
+#13 15.42   Unable to connect to 127.0.0.1:9:
+#13 15.42 Err:3 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl amd64 3.5.7-1~deb13u2
+#13 15.42   Unable to connect to 127.0.0.1:9:
+#13 15.42 Err:2 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 libssl3t64 amd64 3.5.7-1~deb13u2
+#13 15.42   Unable to connect to 127.0.0.1:9:
+#13 15.42 Err:1 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl-provider-legacy amd64 3.5.7-1~deb13u2
+#13 15.42   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#13 15.42   Unable to connect to 127.0.0.1:9:
+#13 15.43 Error: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/pool/updates/main/o/openssl/openssl-provider-legacy_3.5.7-1%7edeb13u2_amd64.deb  Unable to connect to 127.0.0.1:9:
+#13 15.43 Error: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/pool/updates/main/o/openssl/libssl3t64_3.5.7-1%7edeb13u2_amd64.deb  Unable to connect to 127.0.0.1:9:
+#13 15.43 Error: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1%7edeb13u2_amd64.deb  Unable to connect to 127.0.0.1:9:
+#13 15.43 Error: Failed to fetch http://debian-archive.trafficmanager.net/debian/pool/main/c/ca-certificates/ca-certificates_20250419_all.deb  Unable to connect to 127.0.0.1:9:
+#13 15.43 Error: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+#13 ERROR: process "/bin/sh -c apt -o Acquire::https::Verify-Peer=false update &&     apt -o Acquire::https::Verify-Peer=false install -y ca-certificates" did not complete successfully: exit code: 100
+------
+ > [base  9/26] RUN apt -o Acquire::https::Verify-Peer=false update &&     apt -o Acquire::https::Verify-Peer=false install -y ca-certificates:
+15.42 Err:2 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 libssl3t64 amd64 3.5.7-1~deb13u2
+15.42   Unable to connect to 127.0.0.1:9:
+15.42 Err:1 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl-provider-legacy amd64 3.5.7-1~deb13u2
+15.42   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+15.42   Unable to connect to 127.0.0.1:9:
+15.43 Error: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/pool/updates/main/o/openssl/openssl-provider-legacy_3.5.7-1%7edeb13u2_amd64.deb  Unable to connect to 127.0.0.1:9:
+15.43 Error: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/pool/updates/main/o/openssl/libssl3t64_3.5.7-1%7edeb13u2_amd64.deb  Unable to connect to 127.0.0.1:9:
+15.43 Error: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1%7edeb13u2_amd64.deb  Unable to connect to 127.0.0.1:9:
+15.43 Error: Failed to fetch http://debian-archive.trafficmanager.net/debian/pool/main/c/ca-certificates/ca-certificates_20250419_all.deb  Unable to connect to 127.0.0.1:9:
+15.43 Error: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+------
+Dockerfile:30
+--------------------
+  29 |     
+  30 | >>> RUN apt -o Acquire::https::Verify-Peer=false update && \
+  31 | >>>     apt -o Acquire::https::Verify-Peer=false install -y ca-certificates
+  32 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c apt -o Acquire::https::Verify-Peer=false update &&     apt -o Acquire::https::Verify-Peer=false install -y ca-certificates" did not complete successfully: exit code: 100
+[  FAIL LOG END  ] [ target/docker-base-trixie.gz ]
+make: *** [slave.mk:1406: target/docker-base-trixie.gz] Error 1
+make[1]: *** [Makefile.work:751: target/docker-base-trixie.gz] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/docker-base-trixie.gz] Error 2

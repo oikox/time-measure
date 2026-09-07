@@ -1,0 +1,24 @@
+Command exited with non-zero status 2
+	Command being timed: "/data/sonic/时间统计/logs/20260901-233744/run-07-make-fully-cold.sh --run-stages"
+	User time (seconds): 10.36
+	System time (seconds): 4.70
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 36:54.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 51668
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 45
+	Minor (reclaiming a frame) page faults: 939232
+	Voluntary context switches: 291033
+	Involuntary context switches: 295
+	Swaps: 0
+	File system inputs: 264
+	File system outputs: 27200
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 2

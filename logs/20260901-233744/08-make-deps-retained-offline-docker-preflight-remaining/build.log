@@ -1,0 +1,1866 @@
++++ --- Making target/docker-database.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-database.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.114049"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.114049"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-database.gz ] 
+[ finished ] [ target/docker-database.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-swss-layer-trixie.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-swss-layer-trixie.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.114149"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.114149"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsai_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/stp_1.0.0_amd64.deb-install ] 
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/debs/trixie/stp_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/debs/trixie/libsai_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsai_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsai_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/swss_1.0.0_amd64.deb ] 
+/sonic/src/sonic-swss /sonic
+Removing patch ../sonic-swss.patch/0002-Remove-lock-option-when-cargo-build.patch
+Restoring debian/rules
+
+Removing patch ../sonic-swss.patch/0001-build-use-relative-path-when-building-cargo-dependen.patch
+Restoring Cargo.toml
+
+No patches applied
+/sonic
+[ finished ] [ target/debs/trixie/swss_1.0.0_amd64.deb ] 
+[ building ] [ target/docker-swss-layer-trixie.gz ] 
+[ finished ] [ target/docker-swss-layer-trixie.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-fpm-frr.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-fpm-frr.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.115148"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.115148"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ finished ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ building ] [ target/docker-fpm-frr.gz ] 
+[ finished ] [ target/docker-fpm-frr.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-nat.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-nat.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.115248"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.115248"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ finished ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ building ] [ target/docker-nat.gz ] 
+[ finished ] [ target/docker-nat.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-orchagent.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-orchagent.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.115341"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.115341"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ finished ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ building ] [ target/docker-orchagent.gz ] 
+[ finished ] [ target/docker-orchagent.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-sonic-otel.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-sonic-otel.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.115448"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.115448"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-sonic-otel.gz ] 
+[ finished ] [ target/docker-sonic-otel.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-platform-monitor.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-platform-monitor.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.115549"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.115549"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-platform-monitor.gz ] 
+[ finished ] [ target/docker-platform-monitor.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-router-advertiser.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-router-advertiser.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.115932"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.115932"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-router-advertiser.gz ] 
+[ finished ] [ target/docker-router-advertiser.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-sflow.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-sflow.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.120021"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.120021"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ finished ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ building ] [ target/docker-sflow.gz ] 
+[ finished ] [ target/docker-sflow.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-snmp.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-snmp.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.120116"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.120116"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-snmp.gz ] 
+[ finished ] [ target/docker-snmp.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-sonic-mgmt-framework.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-sonic-mgmt-framework.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.120251"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.120251"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-sonic-mgmt-framework.gz ] 
+[ finished ] [ target/docker-sonic-mgmt-framework.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-sysmgr.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-sysmgr.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.120432"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.120432"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-base-trixie.gz-load ] 
+[ finished ] [ target/docker-base-trixie.gz-load ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-sysmgr.gz ] 
+[ finished ] [ target/docker-sysmgr.gz ] 
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+BLDENV=bookworm make -f Makefile.work docker-cleanup
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
++++ --- Making target/docker-dhcp-relay.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-dhcp-relay.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.120523"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.120523"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install ] 
+[ FAIL LOG START ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install ]
+Build start time: Sun Sep 6 04:05:41 UTC 2026
+sed: -e expression #1, char 11: extra characters after command
+Looking in links: /pip-wheelhouse
+Processing ./target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl
+Requirement already satisfied: bcrypt>=3.2.2 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (4.2.0)
+Requirement already satisfied: click<8.2,>=8.0 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (8.1.8)
+Requirement already satisfied: cryptography>=3.3.2 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (43.0.0)
+Requirement already satisfied: urllib3>=2 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (2.3.0)
+Processing /pip-wheelhouse/click_log-0.4.0-py2.py3-none-any.whl (from sonic-utilities==1.2)
+Processing /pip-wheelhouse/docker-7.1.0-py3-none-any.whl (from sonic-utilities==1.2)
+Processing /pip-wheelhouse/docker_image_py-0.1.13-py3-none-any.whl (from sonic-utilities==1.2)
+Processing /pip-wheelhouse/filelock-3.29.4-py3-none-any.whl (from sonic-utilities==1.2)
+Requirement already satisfied: enlighten>=1.8.0 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (1.11.2)
+Requirement already satisfied: ijson>=3.2.3 in /usr/local/lib/python3.13/dist-packages (from sonic-utilities==1.2) (3.5.0)
+Processing /pip-wheelhouse/ipaddress-1.0.23-py2.py3-none-any.whl (from sonic-utilities==1.2)
+Requirement already satisfied: protobuf in /usr/local/lib/python3.13/dist-packages (from sonic-utilities==1.2) (5.29.6)
+Requirement already satisfied: jinja2>=2.11.3 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (3.1.6)
+Requirement already satisfied: jsondiff>=1.2.0 in /usr/local/lib/python3.13/dist-packages (from sonic-utilities==1.2) (2.2.1)
+Processing /pip-wheelhouse/jsonpatch-1.33-py2.py3-none-any.whl (from sonic-utilities==1.2)
+Requirement already satisfied: jsonpointer>=1.9 in /usr/local/lib/python3.13/dist-packages (from sonic-utilities==1.2) (3.1.1)
+Requirement already satisfied: m2crypto>=0.31.0 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (0.42.0)
+Requirement already satisfied: natsort>=8.0 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (8.0.2)
+Requirement already satisfied: netaddr>=0.8.0 in /usr/local/lib/python3.13/dist-packages (from sonic-utilities==1.2) (0.8.0)
+Requirement already satisfied: netifaces>=0.10.7 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (0.11.0)
+Requirement already satisfied: paramiko>=3.0 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (3.5.1)
+Requirement already satisfied: pexpect>=4.8.0 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (4.9.0)
+Processing /pip-wheelhouse/semantic_version-2.10.0-py2.py3-none-any.whl (from sonic-utilities==1.2)
+Processing /pip-wheelhouse/prettyprinter-0.18.0-py2.py3-none-any.whl (from sonic-utilities==1.2)
+Processing /pip-wheelhouse/pyroute2-0.9.6-py3-none-any.whl (from sonic-utilities==1.2)
+Requirement already satisfied: requests>=2.25.0 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (2.32.3)
+Requirement already satisfied: tabulate==0.9.0 in /usr/local/lib/python3.13/dist-packages (from sonic-utilities==1.2) (0.9.0)
+Processing /pip-wheelhouse/toposort-1.6-py2.py3-none-any.whl (from sonic-utilities==1.2)
+Collecting www-authenticate==0.9.2 (from sonic-utilities==1.2)
+  Using cached www_authenticate-0.9.2-py3-none-any.whl
+Processing /pip-wheelhouse/xmltodict-0.12.0-py2.py3-none-any.whl (from sonic-utilities==1.2)
+Processing /pip-wheelhouse/lazy_object_proxy-1.12.0-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (from sonic-utilities==1.2)
+Requirement already satisfied: six>=1.16.0 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (1.17.0)
+Processing /pip-wheelhouse/scp-0.14.5-py2.py3-none-any.whl (from sonic-utilities==1.2)
+Requirement already satisfied: sonic-config-engine in /usr/local/lib/python3.13/dist-packages (from sonic-utilities==1.2) (1.0)
+Requirement already satisfied: sonic-platform-common in /usr/local/lib/python3.13/dist-packages (from sonic-utilities==1.2) (1.0)
+Requirement already satisfied: sonic-py-common in /usr/local/lib/python3.13/dist-packages (from sonic-utilities==1.2) (1.0)
+Requirement already satisfied: sonic-yang-mgmt in /usr/local/lib/python3.13/dist-packages (from sonic-utilities==1.2) (1.0)
+Requirement already satisfied: regex>=2019.4.14 in /usr/lib/python3/dist-packages (from docker-image-py==0.1.13->sonic-utilities==1.2) (2024.11.6)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/lib/python3/dist-packages (from jinja2>=2.11.3->sonic-utilities==1.2) (2.1.5)
+Requirement already satisfied: pyyaml in /usr/lib/python3/dist-packages (from jsondiff>=1.2.0->sonic-utilities==1.2) (6.0.2)
+Requirement already satisfied: pynacl>=1.5 in /usr/lib/python3/dist-packages (from paramiko>=3.0->sonic-utilities==1.2) (1.5.0)
+Requirement already satisfied: ptyprocess>=0.5 in /usr/lib/python3/dist-packages (from pexpect>=4.8.0->sonic-utilities==1.2) (0.7.0)
+Requirement already satisfied: Pygments>=2.2.0 in /usr/lib/python3/dist-packages (from prettyprinter>=0.18.0->sonic-utilities==1.2) (2.18.0)
+Processing /pip-wheelhouse/colorful-0.5.8-py2.py3-none-any.whl (from prettyprinter>=0.18.0->sonic-utilities==1.2)
+Requirement already satisfied: cffi>=1.4.1 in /usr/lib/python3/dist-packages (from pynacl>=1.5->paramiko>=3.0->sonic-utilities==1.2) (1.17.1)
+Requirement already satisfied: pycparser in /usr/lib/python3/dist-packages (from cffi>=1.4.1->pynacl>=1.5->paramiko>=3.0->sonic-utilities==1.2) (2.22)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/lib/python3/dist-packages (from requests>=2.25.0->sonic-utilities==1.2) (3.4.2)
+Requirement already satisfied: idna<4,>=2.5 in /usr/lib/python3/dist-packages (from requests>=2.25.0->sonic-utilities==1.2) (3.10)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests>=2.25.0->sonic-utilities==1.2) (2025.1.31)
+Requirement already satisfied: bitarray==2.8.1 in /usr/local/lib/python3.13/dist-packages (from sonic-config-engine->sonic-utilities==1.2) (2.8.1)
+Requirement already satisfied: lxml>=4.9.1 in /usr/lib/python3/dist-packages (from sonic-config-engine->sonic-utilities==1.2) (5.4.0)
+Requirement already satisfied: sonic-yang-models>=1.0 in /usr/local/lib/python3.13/dist-packages (from sonic-config-engine->sonic-utilities==1.2) (1.0)
+Requirement already satisfied: redis in /usr/local/lib/python3.13/dist-packages (from sonic-platform-common->sonic-utilities==1.2) (8.0.1)
+Requirement already satisfied: redis-dump-load in /usr/local/lib/python3.13/dist-packages (from sonic-py-common->sonic-utilities==1.2) (1.1)
+Installing collected packages: www-authenticate, toposort, ipaddress, colorful, xmltodict, semantic-version, pyroute2, prettyprinter, lazy-object-proxy, jsonpatch, filelock, docker-image-py, click-log, docker, scp, sonic-utilities
+  Attempting uninstall: pyroute2
+    Found existing installation: pyroute2 0.7.7
+error: uninstall-no-record-file
+
+× Cannot uninstall pyroute2 0.7.7
+╰─> The package's contents are unknown: no RECORD file was found for pyroute2.
+
+hint: The package was installed by debian. You should check if it can uninstall the package.
+
+[  FAIL LOG END  ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install ]
+make: *** [slave.mk:1233: target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install] Error 1
+make[1]: *** [Makefile.work:751: target/docker-dhcp-relay.gz] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/docker-dhcp-relay.gz] Error 2

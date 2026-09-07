@@ -1,0 +1,1237 @@
+Starting local Bazel server (8.6.0) and connecting to it...
+Computing main repo mapping: 
+Computing main repo mapping: 
+WARNING: For repository 'protobuf', the root module requires module version protobuf@29.0, but got protobuf@31.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+WARNING: For repository 'rules_rust', the root module requires module version rules_rust@0.61.0, but got rules_rust@0.66.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+Loading: 
+Loading: 0 packages loaded
+Loading: 0 packages loaded
+Analyzing: target //platform/vs:sonic-vs-bin (4 packages loaded, 7 targets configured)
+Analyzing: target //platform/vs:sonic-vs-bin (4 packages loaded, 7 targets configured)
+
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/main/Contents-amd64.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+DEBUG: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/rules_distroless+/apt/extensions.bzl:189:14: Warning: Could not fetch Contents index for focal/main/amd64. Contents files are optional.
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/universe/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/universe/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/universe/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/universe/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/universe/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal/universe/Contents-amd64.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/main/Contents-amd64.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/universe/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/universe/Contents-amd64.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/universe/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+DEBUG: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/rules_distroless+/apt/extensions.bzl:189:14: Warning: Could not fetch Contents index for focal/universe/amd64. Contents files are optional.
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/universe/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/universe/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-updates/universe/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/main/Contents-amd64.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/universe/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/universe/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/universe/Contents-amd64.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/universe/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/universe/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/dists/focal-security/universe/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (125 packages loaded, 577 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/contrib/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/contrib/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+DEBUG: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/rules_distroless+/apt/extensions.bzl:189:14: Warning: Could not fetch Contents index for focal-updates/main/amd64. Contents files are optional.
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/contrib/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/contrib/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+DEBUG: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/rules_distroless+/apt/extensions.bzl:189:14: Warning: Could not fetch Contents index for focal-updates/universe/amd64. Contents files are optional.
+DEBUG: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/rules_distroless+/apt/extensions.bzl:189:14: Warning: Could not fetch Contents index for focal-security/main/amd64. Contents files are optional.
+DEBUG: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/rules_distroless+/apt/extensions.bzl:189:14: Warning: Could not fetch Contents index for focal-security/universe/amd64. Contents files are optional.
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/non-free-firmware/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/non-free-firmware/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/non-free-firmware/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/non-free-firmware/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/non-free-firmware/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/contrib/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/main/binary-arm64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/main/binary-arm64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/main/Contents-arm64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/main/Contents-arm64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/main/Contents-arm64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (125 packages loaded, 577 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/contrib/binary-arm64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/contrib/binary-arm64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (125 packages loaded, 577 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/contrib/Contents-arm64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/contrib/Contents-arm64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/contrib/Contents-arm64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/non-free-firmware/binary-arm64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/non-free-firmware/Contents-arm64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/non-free-firmware/Contents-arm64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/non-free-firmware/binary-arm64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie/non-free-firmware/Contents-arm64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (126 packages loaded, 579 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/binary-amd64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/binary-amd64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (126 packages loaded, 579 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/binary-amd64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (126 packages loaded, 579 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/binary-arm64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/binary-arm64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/binary-arm64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/Contents-arm64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/Contents-arm64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/main/Contents-arm64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/binary-arm64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/binary-arm64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/binary-arm64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/Contents-arm64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/Contents-arm64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/contrib/Contents-arm64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (126 packages loaded, 579 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/binary-arm64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/binary-arm64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/binary-arm64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/Contents-arm64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/Contents-arm64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20260409T202916Z/dists/trixie-updates/non-free-firmware/Contents-arm64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/binary-amd64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (126 packages loaded, 579 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/binary-amd64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/binary-amd64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (126 packages loaded, 579 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/binary-arm64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/binary-arm64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/binary-arm64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/Contents-arm64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/Contents-arm64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/main/Contents-arm64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (126 packages loaded, 579 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/binary-arm64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/binary-arm64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/binary-arm64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/Contents-arm64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/Contents-arm64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/contrib/Contents-arm64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (126 packages loaded, 579 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/binary-arm64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/binary-arm64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/binary-arm64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/Contents-arm64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/Contents-arm64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20260409T182303Z/dists/trixie-security/non-free-firmware/Contents-arm64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: target //platform/vs:sonic-vs-bin (283 packages loaded, 33389 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (290 packages loaded, 33592 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (296 packages loaded, 33875 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (296 packages loaded, 33875 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (299 packages loaded, 33909 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (301 packages loaded, 37805 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (302 packages loaded, 37869 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (302 packages loaded, 37869 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (302 packages loaded, 37869 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (302 packages loaded, 37869 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (305 packages loaded, 39715 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (306 packages loaded, 39718 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (307 packages loaded, 39720 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (310 packages loaded, 39754 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (315 packages loaded, 39897 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (315 packages loaded, 39897 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (315 packages loaded, 39897 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (315 packages loaded, 39897 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (315 packages loaded, 39897 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (317 packages loaded, 40219 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (318 packages loaded, 40223 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (465 packages loaded, 44954 targets configured)
+
+WARNING: Following dependencies could not be resolved for python3-scp: python3-cffi-backend-api-max,python3-cffi-backend-api-min,python3-cffi-backend-api-max,python3-cffi-backend-api-min (dependency set trixie)
+WARNING: Following dependencies could not be resolved for python3-cryptography: python3-cffi-backend-api-max,python3-cffi-backend-api-min (dependency set None)
+WARNING: Following dependencies could not be resolved for python3-nacl: python3-cffi-backend-api-max,python3-cffi-backend-api-min (dependency set None)
+WARNING: Following dependencies could not be resolved for python3-paramiko: python3-cffi-backend-api-max,python3-cffi-backend-api-min,python3-cffi-backend-api-max,python3-cffi-backend-api-min (dependency set None)
+WARNING: Following dependencies could not be resolved for python3-paramiko: python3-cffi-backend-api-max,python3-cffi-backend-api-min,python3-cffi-backend-api-max,python3-cffi-backend-api-min (dependency set trixie)
+WARNING: Following dependencies could not be resolved for python3-nacl: python3-cffi-backend-api-max,python3-cffi-backend-api-min (dependency set trixie)
+WARNING: Following dependencies could not be resolved for python3-cryptography: python3-cffi-backend-api-max,python3-cffi-backend-api-min (dependency set trixie)
+WARNING: Following dependencies could not be resolved for libdbd-sqlite3-perl: perl-dbdabi-94 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for mpi-default-dev: automake-1.17 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for libltdl-dev: automake-1.17 (dependency set None)
+WARNING: Following dependencies could not be resolved for libhwloc-dev: automake-1.17 (dependency set None)
+WARNING: Following dependencies could not be resolved for libpmix-dev: automake-1.17 (dependency set None)
+WARNING: Following dependencies could not be resolved for libopenmpi-dev: automake-1.17 (dependency set None)
+WARNING: Following dependencies could not be resolved for libpmix-dev: automake-1.17 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for libopenmpi-dev: automake-1.17 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for libltdl-dev: automake-1.17 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for libhwloc-dev: automake-1.17 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for libboost1.83-all-dev: automake-1.17 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for libboost-mpi-python1.83-dev: automake-1.17 (dependency set None)
+WARNING: Following dependencies could not be resolved for libboost-mpi1.83-dev: automake-1.17 (dependency set None)
+WARNING: Following dependencies could not be resolved for libboost-mpi1.83-dev: automake-1.17 (dependency set None)
+WARNING: Following dependencies could not be resolved for libboost-mpi1.83-dev: automake-1.17 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for libboost-mpi-python1.83-dev: automake-1.17 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for python3-pycparser: python3-ply-yacc-3.10 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for python3-pycparser: python3-ply-yacc-3.10 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for python3-cffi: python3-ply-yacc-3.10 (dependency set trixie)
+WARNING: Following dependencies could not be resolved for python3-cffi: python3-ply-yacc-3.10 (dependency set trixie)
+Analyzing: target //platform/vs:sonic-vs-bin (629 packages loaded, 131468 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (683 packages loaded, 147455 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (696 packages loaded, 147673 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (697 packages loaded, 147675 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (699 packages loaded, 148132 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (701 packages loaded, 148216 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (701 packages loaded, 148216 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (755 packages loaded, 149424 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (760 packages loaded, 151049 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (798 packages loaded, 153267 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (798 packages loaded, 153267 targets configured)
+
+DEBUG: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/aspect_rules_py+/uv/private/sdist_build/repository.bzl:179:22: Detected native sources in aspect_rules_py++uv+sdist_build__docker_base_trixie__thrift__0_13_0: 4 file(s)
+DEBUG: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/aspect_rules_py+/uv/private/sdist_build/repository.bzl:179:22: Detected native sources in aspect_rules_py++uv+sdist_build__docker_base_trixie__pyroute2__0_5_14: 1 file(s)
+Analyzing: target //platform/vs:sonic-vs-bin (826 packages loaded, 166927 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (836 packages loaded, 167223 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (840 packages loaded, 167318 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (841 packages loaded, 167911 targets configured)
+
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/grpc+/src/compiler/BUILD:87:18: target 'grpc_cpp_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/grpc+/src/compiler/BUILD:93:18: target 'grpc_csharp_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/grpc+/src/compiler/BUILD:99:18: target 'grpc_node_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/grpc+/src/compiler/BUILD:105:18: target 'grpc_objective_c_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/grpc+/src/compiler/BUILD:111:18: target 'grpc_php_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/grpc+/src/compiler/BUILD:117:18: target 'grpc_python_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/grpc+/src/compiler/BUILD:123:18: target 'grpc_ruby_plugin' is both a rule and a file; please choose another name for the rule
+Analyzing: target //platform/vs:sonic-vs-bin (854 packages loaded, 168602 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (877 packages loaded, 169302 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (883 packages loaded, 169444 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (887 packages loaded, 170689 targets configured)
+
+Only the workspace's Cargo.toml is required in the `manifests` attribute; the rest can be removed
+Analyzing: target //platform/vs:sonic-vs-bin (984 packages loaded, 175502 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (986 packages loaded, 175588 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (988 packages loaded, 175703 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (988 packages loaded, 175703 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (988 packages loaded, 175703 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (1359 packages loaded, 199987 targets configured)
+
+Only the workspace's Cargo.toml is required in the `manifests` attribute; the rest can be removed
+Analyzing: target //platform/vs:sonic-vs-bin (1359 packages loaded, 199987 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (1359 packages loaded, 199987 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (1359 packages loaded, 199987 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (1359 packages loaded, 199987 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (1359 packages loaded, 199987 targets configured)
+
+Only the workspace's Cargo.toml is required in the `manifests` attribute; the rest can be removed
+Analyzing: target //platform/vs:sonic-vs-bin (1359 packages loaded, 199987 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (1359 packages loaded, 199987 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (1359 packages loaded, 199987 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (1478 packages loaded, 207699 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (1817 packages loaded, 224013 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2161 packages loaded, 237439 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+Analyzing: target //platform/vs:sonic-vs-bin (2169 packages loaded, 238391 targets configured)
+
+WARNING: some symlinks could not be solved for gcc. 
+resolved: {
+	"usr/lib/bfd-plugins/liblto_plugin.so": "usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so"
+}
+unresolved:{
+	"usr/lib/bfd-plugins/liblto_plugin.so": "usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so"
+}
+WARNING: some symlinks could not be solved for libexpat1. 
+resolved: {
+	"usr/lib/x86_64-linux-gnu/libexpat.so": "lib/x86_64-linux-gnu/libexpat.so.1.6.11",
+	"usr/lib/x86_64-linux-gnu/libexpatw.so": "usr/lib/x86_64-linux-gnu/libexpatw.so.1.6.11"
+}
+unresolved:{
+	"usr/lib/x86_64-linux-gnu/libexpat.so": "lib/x86_64-linux-gnu/libexpat.so.1.6.11",
+	"usr/lib/x86_64-linux-gnu/libexpatw.so": "usr/lib/x86_64-linux-gnu/libexpatw.so.1.6.11"
+}
+WARNING: some symlinks could not be solved for zlib1g. 
+resolved: {
+	"usr/lib/x86_64-linux-gnu/libz.so": "lib/x86_64-linux-gnu/libz.so.1.2.11"
+}
+unresolved:{
+	"usr/lib/x86_64-linux-gnu/libz.so": "lib/x86_64-linux-gnu/libz.so.1.2.11"
+}
+WARNING: some symlinks could not be solved for libgcc-9. 
+resolved: {
+	"usr/lib/gcc/x86_64-linux-gnu/9/libasan.so": "usr/lib/x86_64-linux-gnu/libasan.so.5",
+	"usr/lib/gcc/x86_64-linux-gnu/9/libatomic.so": "usr/lib/x86_64-linux-gnu/libatomic.so.1",
+	"usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so": "usr/lib/x86_64-linux-gnu/libgomp.so.1",
+	"usr/lib/gcc/x86_64-linux-gnu/9/libitm.so": "usr/lib/x86_64-linux-gnu/libitm.so.1",
+	"usr/lib/gcc/x86_64-linux-gnu/9/liblsan.so": "usr/lib/x86_64-linux-gnu/liblsan.so.0",
+	"usr/lib/gcc/x86_64-linux-gnu/9/libquadmath.so": "usr/lib/x86_64-linux-gnu/libquadmath.so.0",
+	"usr/lib/gcc/x86_64-linux-gnu/9/libtsan.so": "usr/lib/x86_64-linux-gnu/libtsan.so.0",
+	"usr/lib/gcc/x86_64-linux-gnu/9/libubsan.so": "usr/lib/x86_64-linux-gnu/libubsan.so.1"
+}
+unresolved:{
+	"usr/lib/gcc/x86_64-linux-gnu/9/libasan.so": "usr/lib/x86_64-linux-gnu/libasan.so.5",
+	"usr/lib/gcc/x86_64-linux-gnu/9/libtsan.so": "usr/lib/x86_64-linux-gnu/libtsan.so.0"
+}
+WARNING: some symlinks could not be solved for libpython3.8. 
+resolved: {
+	"usr/lib/x86_64-linux-gnu/libpython3.8.a": "usr/lib/python3.8/config-3.8-x86_64-linux-gnu/libpython3.8.a",
+	"usr/lib/x86_64-linux-gnu/libpython3.8.so": "usr/lib/x86_64-linux-gnu/libpython3.8.so.1"
+}
+unresolved:{
+	"usr/lib/x86_64-linux-gnu/libpython3.8.so": "usr/lib/x86_64-linux-gnu/libpython3.8.so.1"
+}
+WARNING: symlink target for usr/lib/x86_64-linux-gnu/libexpat.so not found: lib/x86_64-linux-gnu/libexpat.so.1.6.11
+WARNING: symlink target for usr/lib/x86_64-linux-gnu/libz.so not found: lib/x86_64-linux-gnu/libz.so.1.2.11
+WARNING: symlink target for usr/lib/x86_64-linux-gnu/libexpatw.so not found: usr/lib/x86_64-linux-gnu/libexpatw.so.1.6.11
+WARNING: symlink target for usr/lib/x86_64-linux-gnu/libpython3.8.so not found: usr/lib/x86_64-linux-gnu/libpython3.8.so.1
+WARNING: symlink target for usr/lib/x86_64-linux-gnu/libunwind.so not found: usr/lib/llvm-19/lib/libunwind.so
+WARNING: symlink target for usr/lib/x86_64-linux-gnu/libpmix.so not found: usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so
+WARNING: symlink target for usr/lib/x86_64-linux-gnu/libcurses.so not found: usr/lib/x86_64-linux-gnu/libncurses.so
+WARNING: some symlinks could not be solved for libclang-common-19. 
+resolved: {
+	"usr/include/clang/19.1.7/include": "usr/lib/llvm-19/lib/clang/19/include",
+	"usr/include/clang/19/include": "usr/lib/llvm-19/lib/clang/19/include"
+}
+unresolved:{
+	"usr/include/clang/19.1.7/include": "usr/lib/llvm-19/lib/clang/19/include",
+	"usr/include/clang/19/include": "usr/lib/llvm-19/lib/clang/19/include"
+}
+WARNING: some symlinks could not be solved for libopenmpi. 
+resolved: {
+	"usr/include/x86_64-linux-gnu/openmpi": "usr/lib/x86_64-linux-gnu/openmpi/include",
+	"usr/lib/x86_64-linux-gnu/fortran/gfortran/libmpi_mpifh.so": "usr/lib/x86_64-linux-gnu/libmpi_mpifh-gfortran.so.40",
+	"usr/lib/x86_64-linux-gnu/fortran/gfortran/libmpi_usempi_ignore_tkr.so": "usr/lib/x86_64-linux-gnu/libmpi_usempi_ignore_tkr-gfortran.so.40",
+	"usr/lib/x86_64-linux-gnu/fortran/gfortran/libmpi_usempif08.so": "usr/lib/x86_64-linux-gnu/libmpi_usempif08-gfortran.so.40",
+	"usr/lib/x86_64-linux-gnu/libmpi_java.so": "usr/lib/x86_64-linux-gnu/libmpi_java.so.40",
+	"usr/lib/x86_64-linux-gnu/libmpi_mpifh-gfortran.so": "usr/lib/x86_64-linux-gnu/libmpi_mpifh-gfortran.so.40",
+	"usr/lib/x86_64-linux-gnu/libmpi_mpifh.so": "usr/lib/x86_64-linux-gnu/libmpi_mpifh.so.40",
+	"usr/lib/x86_64-linux-gnu/libmpi_usempi_ignore_tkr-gfortran.so": "usr/lib/x86_64-linux-gnu/libmpi_usempi_ignore_tkr-gfortran.so.40",
+	"usr/lib/x86_64-linux-gnu/libmpi_usempi_ignore_tkr.so": "usr/lib/x86_64-linux-gnu/libmpi_usempi_ignore_tkr.so.40",
+	"usr/lib/x86_64-linux-gnu/libmpi_usempif08-gfortran.so": "usr/lib/x86_64-linux-gnu/libmpi_usempif08-gfortran.so.40",
+	"usr/lib/x86_64-linux-gnu/libmpi_usempif08.so": "usr/lib/x86_64-linux-gnu/libmpi_usempif08.so.40",
+	"usr/lib/x86_64-linux-gnu/libopen-pal.so": "usr/lib/x86_64-linux-gnu/libopen-pal.so.80",
+	"usr/lib/x86_64-linux-gnu/liboshmem.so": "usr/lib/x86_64-linux-gnu/liboshmem.so.40",
+	"usr/lib/x86_64-linux-gnu/libprrte.so": "usr/lib/x86_64-linux-gnu/libprrte.so.3",
+	"usr/lib/x86_64-linux-gnu/openmpi/include/mpp/shmem.h": "usr/lib/x86_64-linux-gnu/openmpi/include/shmem.h",
+	"usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so": "usr/lib/x86_64-linux-gnu/libmpi.so.40",
+	"usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_java.so": "usr/lib/x86_64-linux-gnu/libmpi_java.so.40",
+	"usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_mpifh.so": "usr/lib/x86_64-linux-gnu/libmpi_mpifh.so.40",
+	"usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_usempi_ignore_tkr.so": "usr/lib/x86_64-linux-gnu/libmpi_usempi_ignore_tkr.so.40",
+	"usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_usempif08.so": "usr/lib/x86_64-linux-gnu/libmpi_usempif08.so.40",
+	"usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so": "usr/lib/x86_64-linux-gnu/libopen-pal.so.80",
+	"usr/lib/x86_64-linux-gnu/openmpi/lib/liboshmem.so": "usr/lib/x86_64-linux-gnu/liboshmem.so.40",
+	"usr/lib/x86_64-linux-gnu/openmpi/lib/libprrte.so": "usr/lib/x86_64-linux-gnu/libprrte.so.3"
+}
+unresolved:{
+	"usr/include/x86_64-linux-gnu/openmpi": "usr/lib/x86_64-linux-gnu/openmpi/include"
+}
+WARNING: symlink target for usr/lib/x86_64-linux-gnu/libtermcap.so not found: usr/lib/x86_64-linux-gnu/libtinfo.so
+WARNING: some symlinks could not be solved for libpng. 
+resolved: {
+	"usr/include/libpng": "usr/include/libpng16",
+	"usr/lib/x86_64-linux-gnu/libpng.a": "usr/lib/x86_64-linux-gnu/libpng16.a",
+	"usr/lib/x86_64-linux-gnu/libpng.so": "usr/lib/x86_64-linux-gnu/libpng16.so",
+	"usr/lib/x86_64-linux-gnu/libpng16.so": "usr/lib/x86_64-linux-gnu/libpng16.so.16"
+}
+unresolved:{
+	"usr/include/libpng": "usr/include/libpng16"
+}
+WARNING: symlink target for usr/lib/x86_64-linux-gnu/libldap_r.so not found: usr/lib/x86_64-linux-gnu/libldap.so
+WARNING: symlink target for usr/lib/x86_64-linux-gnu/libpng.so not found: usr/lib/x86_64-linux-gnu/libpng16.so
+INFO: Analyzed target //platform/vs:sonic-vs-bin (4878 packages loaded, 273654 targets configured).
+INFO: From Executing genrule @@sonic-sairedis+//:config_h_gen:
+/bin/bash: line 3: cd: bazel-out/k8-opt/bin/external/SAI: No such file or directory
+INFO: From Compiling try.c [for tool]:
+external/sonic-build-infra++_repo_rules2+pigz_src/try.c: In function 'try_create_':
+external/sonic-build-infra++_repo_rules2+pigz_src/try.c:21:13: warning: unused variable 'ret' [-Wunused-variable]
+   21 |         int ret = pthread_key_create(&try_key_, NULL);
+      |             ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.c: In function 'try_setup_':
+external/sonic-build-infra++_repo_rules2+pigz_src/try.c:26:13: warning: unused variable 'ret' [-Wunused-variable]
+   26 |         int ret = pthread_once(&try_once_, try_create_);
+      |             ^~~
+INFO: From Compiling shared/util.c [for tool]:
+external/sonic-build-infra++_repo_rules2+kmod_src/shared/util.c: In function 'mkdir_parents':
+external/sonic-build-infra++_repo_rules2+kmod_src/shared/util.c:470:21: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  470 |         char *end = strrchr(path, '/');
+      |                     ^~~~~~~
+INFO: From Compiling gnulib/lib/memchr2.c [for tool]:
+external/rules_m4++m4_repository_ext+m4_v1.4.18__cfgD7AAA708/gnulib/lib/memchr2.c: In function 'memchr2':
+external/rules_m4++m4_repository_ext+m4_v1.4.18__cfgD7AAA708/gnulib/lib/memchr2.c:58:12: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   58 |     return memchr (s, c1, n);
+      |            ^~~~~~
+INFO: From Compiling src/checkpoint.c [for tool]:
+external/sonic-build-infra++_repo_rules2+tar_src/src/checkpoint.c: In function 'getarg':
+external/sonic-build-infra++_repo_rules2+tar_src/src/checkpoint.c:205:17: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  205 |       char *p = strchr (input + 1, '}');
+      |                 ^~~~~~
+INFO: From Compiling pigz.c [for tool]:
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c: In function 'use_space':
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:1518:10: warning: variable 'use' set but not used [-Wunused-but-set-variable]
+ 1518 |     long use;
+      |          ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c: In function 'finish_jobs':
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:1629:9: warning: variable 'caught' set but not used [-Wunused-but-set-variable]
+ 1629 |     int caught;
+      |         ^~~~~~
+In file included from external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:440:
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c: In function 'compress_thread':
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:383:9: note: in expansion of macro 'try_stack_set_'
+  383 |         try_stack_set_(&try_this_); \
+      |         ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:318:13: note: in expansion of macro 'TRY_TRY_'
+  318 | #define try TRY_TRY_
+      |             ^~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:1704:5: note: in expansion of macro 'try'
+ 1704 |     try {
+      |     ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:454:13: note: in expansion of macro 'try_stack_set_'
+  454 |             try_stack_set_(try_this_.next); \
+      |             ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:321:15: note: in expansion of macro 'TRY_CATCH_'
+  321 | #define catch TRY_CATCH_
+      |               ^~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:1955:5: note: in expansion of macro 'catch'
+ 1955 |     catch (err) {
+      |     ^~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c: In function 'write_thread':
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:383:9: note: in expansion of macro 'try_stack_set_'
+  383 |         try_stack_set_(&try_this_); \
+      |         ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:318:13: note: in expansion of macro 'TRY_TRY_'
+  318 | #define try TRY_TRY_
+      |             ^~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:1976:5: note: in expansion of macro 'try'
+ 1976 |     try {
+      |     ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:454:13: note: in expansion of macro 'try_stack_set_'
+  454 |             try_stack_set_(try_this_.next); \
+      |             ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:321:15: note: in expansion of macro 'TRY_CATCH_'
+  321 | #define catch TRY_CATCH_
+      |               ^~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:2033:5: note: in expansion of macro 'catch'
+ 2033 |     catch (err) {
+      |     ^~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c: In function 'load_read':
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:383:9: note: in expansion of macro 'try_stack_set_'
+  383 |         try_stack_set_(&try_this_); \
+      |         ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:318:13: note: in expansion of macro 'TRY_TRY_'
+  318 | #define try TRY_TRY_
+      |             ^~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:2532:5: note: in expansion of macro 'try'
+ 2532 |     try {
+      |     ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:454:13: note: in expansion of macro 'try_stack_set_'
+  454 |             try_stack_set_(try_this_.next); \
+      |             ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:321:15: note: in expansion of macro 'TRY_CATCH_'
+  321 | #define catch TRY_CATCH_
+      |               ^~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:2546:5: note: in expansion of macro 'catch'
+ 2546 |     catch (err) {
+      |     ^~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c: In function 'outb_write':
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:383:9: note: in expansion of macro 'try_stack_set_'
+  383 |         try_stack_set_(&try_this_); \
+      |         ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:318:13: note: in expansion of macro 'TRY_TRY_'
+  318 | #define try TRY_TRY_
+      |             ^~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:3351:5: note: in expansion of macro 'try'
+ 3351 |     try {
+      |     ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:454:13: note: in expansion of macro 'try_stack_set_'
+  454 |             try_stack_set_(try_this_.next); \
+      |             ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:321:15: note: in expansion of macro 'TRY_CATCH_'
+  321 | #define catch TRY_CATCH_
+      |               ^~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:3362:5: note: in expansion of macro 'catch'
+ 3362 |     catch (err) {
+      |     ^~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c: In function 'outb_check':
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:383:9: note: in expansion of macro 'try_stack_set_'
+  383 |         try_stack_set_(&try_this_); \
+      |         ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:318:13: note: in expansion of macro 'TRY_TRY_'
+  318 | #define try TRY_TRY_
+      |             ^~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:3376:5: note: in expansion of macro 'try'
+ 3376 |     try {
+      |     ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:454:13: note: in expansion of macro 'try_stack_set_'
+  454 |             try_stack_set_(try_this_.next); \
+      |             ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:321:15: note: in expansion of macro 'TRY_CATCH_'
+  321 | #define catch TRY_CATCH_
+      |               ^~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:3386:5: note: in expansion of macro 'catch'
+ 3386 |     catch (err) {
+      |     ^~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c: In function 'process':
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:383:9: note: in expansion of macro 'try_stack_set_'
+  383 |         try_stack_set_(&try_this_); \
+      |         ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:318:13: note: in expansion of macro 'TRY_TRY_'
+  318 | #define try TRY_TRY_
+      |             ^~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:4071:13: note: in expansion of macro 'try'
+ 4071 |             try {
+      |             ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:454:13: note: in expansion of macro 'try_stack_set_'
+  454 |             try_stack_set_(try_this_.next); \
+      |             ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:321:15: note: in expansion of macro 'TRY_CATCH_'
+  321 | #define catch TRY_CATCH_
+      |               ^~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:4082:13: note: in expansion of macro 'catch'
+ 4082 |             catch (err) {
+      |             ^~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:383:9: note: in expansion of macro 'try_stack_set_'
+  383 |         try_stack_set_(&try_this_); \
+      |         ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:318:13: note: in expansion of macro 'TRY_TRY_'
+  318 | #define try TRY_TRY_
+      |             ^~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:4173:9: note: in expansion of macro 'try'
+ 4173 |         try {
+      |         ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:454:13: note: in expansion of macro 'try_stack_set_'
+  454 |             try_stack_set_(try_this_.next); \
+      |             ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:321:15: note: in expansion of macro 'TRY_CATCH_'
+  321 | #define catch TRY_CATCH_
+      |               ^~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:4181:9: note: in expansion of macro 'catch'
+ 4181 |         catch (err) {
+      |         ^~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c: In function 'main':
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:383:9: note: in expansion of macro 'try_stack_set_'
+  383 |         try_stack_set_(&try_this_); \
+      |         ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:318:13: note: in expansion of macro 'TRY_TRY_'
+  318 | #define try TRY_TRY_
+      |             ^~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:4608:5: note: in expansion of macro 'try'
+ 4608 |     try {
+      |     ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:424:13: note: in expansion of macro 'try_stack_set_'
+  424 |             try_stack_set_(try_this_.next); \
+      |             ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:320:16: note: in expansion of macro 'TRY_ALWAYS_'
+  320 | #define always TRY_ALWAYS_
+      |                ^~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:4730:5: note: in expansion of macro 'always'
+ 4730 |     always {
+      |     ^~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:360:17: warning: unused variable 'ret' [-Wunused-variable]
+  360 |             int ret = pthread_setspecific(try_key_, next); \
+      |                 ^~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:454:13: note: in expansion of macro 'try_stack_set_'
+  454 |             try_stack_set_(try_this_.next); \
+      |             ^~~~~~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/try.h:321:15: note: in expansion of macro 'TRY_CATCH_'
+  321 | #define catch TRY_CATCH_
+      |               ^~~~~~~~~~
+external/sonic-build-infra++_repo_rules2+pigz_src/pigz.c:4736:5: note: in expansion of macro 'catch'
+ 4736 |     catch (err) {
+      |     ^~~~~
+INFO: From Compiling src/read.c [for tool]:
+external/sonic-build-infra++_repo_rules2+make_src/src/read.c: In function 'tilde_expand':
+external/sonic-build-infra++_repo_rules2+make_src/src/read.c:3136:23: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3136 |       char *userend = strchr (name + 1, '/');
+      |                       ^~~~~~
+INFO: From Compiling src/suffix.c [for tool]:
+external/sonic-build-infra++_repo_rules2+tar_src/src/suffix.c: In function 'find_compression_suffix':
+external/sonic-build-infra++_repo_rules2+tar_src/src/suffix.c:58:15: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   58 |   char *suf = strrchr (name, '.');
+      |               ^~~~~~~
+[9,452 / 21,686] SONiC make (local) -> p4lang-pi_0.1.1-1_amd64.deb @@p4lang+//:p4lang-pi_0.1.1-1.deb; 4s local ... (192 actions, 191 running)
+INFO: From Compiling gnu/argp-help.c [for tool]:
+external/sonic-build-infra++_repo_rules2+cpio_src/gnu/argp-help.c: In function 'argp_doc':
+external/sonic-build-infra++_repo_rules2+cpio_src/gnu/argp-help.c:1599:18: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1599 |       char *vt = strchr (doc, '\v');
+      |                  ^~~~~~
+INFO: From WhlInstall external/aspect_rules_py++uv+whl_install__docker_base_trixie__pyangbind__0_8_7/install:
+bazel-out/k8-opt-ST-268ebcf28a51/bin/external/aspect_rules_py++uv+whl_install__docker_base_trixie__pyangbind__0_8_7/install/lib/python3.13/site-packages/pyangbind/lib/xpathhelper.py:177: SyntaxWarning: invalid escape sequence '\('
+  remaining_path = regex.sub("current\(\)(?P<remaining>.*)", r"\g<remaining>", v).split("/")
+INFO: From WhlInstall external/aspect_rules_py++uv+whl_install__docker_base_trixie__azure_storage__0_36_0/install:
+bazel-out/k8-opt-ST-268ebcf28a51/bin/external/aspect_rules_py++uv+whl_install__docker_base_trixie__azure_storage__0_36_0/install/lib/python3.13/site-packages/azure/storage/_connection.py:84: SyntaxWarning: "is" with 'str' literal. Did you mean "=="?
+  self.protocol = self.protocol if parsed_url.scheme is '' else parsed_url.scheme
+bazel-out/k8-opt-ST-268ebcf28a51/bin/external/aspect_rules_py++uv+whl_install__docker_base_trixie__azure_storage__0_36_0/install/lib/python3.13/site-packages/azure/storage/blob/_upload_chunking.py:384: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+  if n is 0 or self._buffer.closed:
+bazel-out/k8-opt-ST-268ebcf28a51/bin/external/aspect_rules_py++uv+whl_install__docker_base_trixie__azure_storage__0_36_0/install/lib/python3.13/site-packages/azure/storage/blob/baseblobservice.py:975: SyntaxWarning: "is not" with 'int' literal. Did you mean "!="?
+  if lease_duration is not -1 and\
+bazel-out/k8-opt-ST-268ebcf28a51/bin/external/aspect_rules_py++uv+whl_install__docker_base_trixie__azure_storage__0_36_0/install/lib/python3.13/site-packages/azure/storage/blob/baseblobservice.py:2527: SyntaxWarning: "is not" with 'int' literal. Did you mean "!="?
+  if lease_duration is not -1 and\
+ERROR: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt2/output-base/external/monit+/BUILD.bazel:51:8: Executing genrule @@monit+//:gen_parser failed: (Exit 1): bash failed: error executing Genrule command (from target @@monit+//:gen_parser) /bin/bash -c ... (remaining 1 argument skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+external/monit++_repo_rules+monit_src/src/p.y: warning: 25 reduce/reduce conflicts [-Wconflicts-rr]
+external/monit++_repo_rules+monit_src/src/p.y:2756.19-2758.19: warning: rule useless in parser due to conflicts [-Wother]
+                 | ALERT {
+                   ^~~~~~~
+bison: m4 subprocess failed: Unknown system error
+Target //platform/vs:sonic-vs-bin failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 9949.511s, Critical Path: 10.59s
+INFO: 9983 processes: 8063 internal, 1919 linux-sandbox, 1 local.
+ERROR: Build did NOT complete successfully
+FAILED: 
+INFO: Build Event Protocol files produced successfully.

@@ -1,0 +1,863 @@
++++ --- Making target/docker-dash-engine.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-dash-engine.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.034901"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.034901"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-dash-engine.gz ] 
+[ finished ] [ target/docker-dash-engine.gz ] 
+[ FAIL LOG START ] [ target/docker-dash-engine.gz ]
+Build start time: Sat Sep 5 19:49:14 UTC 2026
+[ REASON ] :      target/docker-dash-engine.gz does not exist   NON-EXISTENT PREREQUISITES: docker-start 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+cat: 'files/build/versions/dockers/docker-dash-engine/versions-*-noble-amd64': No such file or directory
+ls: cannot access 'files/build/versions/dockers/docker-dash-engine/versions-*-noble-amd64': No such file or directory
+fatal: path 'files/build/versions/default/versions-docker' exists on disk, but not in 'HEAD'
+ls: cannot access 'files/build/versions/dockers/docker-dash-engine/versions-*-noble-amd64': No such file or directory
+fatal: path 'files/build/versions/default/versions-docker' exists on disk, but not in 'HEAD~1'
+ls: cannot access 'files/build/versions/dockers/docker-dash-engine/versions-*-noble-amd64': No such file or directory
+fatal: path 'files/build/versions/default/versions-docker' exists on disk, but not in 'HEAD~2'
+Client: Docker Engine - Community
+ Version:    28.5.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.26.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.39.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 370
+ Server Version: 28.5.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: b98a3aace656320842a23f4a392a33f46af97866
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 7.0.0-22-generic
+ Operating System: Debian GNU/Linux 13 (trixie)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 192
+ Total Memory: 743GiB
+ Name: e1055092bcda
+ ID: 9050de27-efa9-406a-855d-9324d28b5135
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http://127.0.0.1:9
+ HTTPS Proxy: http://127.0.0.1:9
+ No Proxy: localhost,127.0.0.1,0.0.0.0
+ Experimental: true
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.52kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for publicmirror.azurecr.io/p4lang/behavioral-model:latest
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [base  1/12] FROM publicmirror.azurecr.io/p4lang/behavioral-model:latest
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 75.92MB 0.3s done
+#5 DONE 0.3s
+
+#6 [base  2/12] COPY [buildinfo, /usr/local/share/buildinfo]
+#6 DONE 0.1s
+
+#7 [base  3/12] COPY vcache/ /sonic/target/vcache/docker-dash-engine
+#7 DONE 0.2s
+
+#8 [base  4/12] RUN dpkg -i /usr/local/share/buildinfo/sonic-build-hooks_1.0_all.deb
+#8 0.135 Selecting previously unselected package sonic-build-hooks.
+#8 0.145 (Reading database ... 38345 files and directories currently installed.)
+#8 0.146 Preparing to unpack .../sonic-build-hooks_1.0_all.deb ...
+#8 0.147 Unpacking sonic-build-hooks (1.0) ...
+#8 0.158 Setting up sonic-build-hooks (1.0) ...
+#8 DONE 0.2s
+
+#9 [base  5/12] RUN pre_run_buildinfo docker-dash-engine
+#9 2.261 ./
+#9 2.261 ./apt-lists/
+#9 2.261 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_InRelease
+#9 2.262 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_main_binary-amd64_Packages.lz4
+#9 2.287 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages.lz4
+#9 2.584 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_restricted_binary-amd64_Packages.lz4
+#9 2.616 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_multiverse_binary-amd64_Packages.lz4
+#9 2.616 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages.lz4
+#9 2.644 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_InRelease
+#9 2.646 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_multiverse_binary-amd64_Packages.lz4
+#9 2.647 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_main_binary-amd64_Packages.lz4
+#9 2.648 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_multiverse_binary-amd64_Packages.lz4
+#9 2.648 ./apt-lists/auxfiles/
+#9 2.648 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_InRelease
+#9 2.648 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_main_binary-amd64_Packages.lz4
+#9 2.668 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_restricted_binary-amd64_Packages.lz4
+#9 2.670 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_universe_binary-amd64_Packages.lz4
+#9 2.704 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages.lz4
+#9 2.729 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_restricted_binary-amd64_Packages.lz4
+#9 2.759 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_multiverse_binary-amd64_Packages.lz4
+#9 2.764 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_universe_binary-amd64_Packages.lz4
+#9 2.764 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_InRelease
+#9 2.765 ./pip/
+#9 2.765 ./pip/http-v2/
+#9 2.765 ./pip/http-v2/b/
+#9 2.765 ./pip/http-v2/b/3/
+#9 2.765 ./pip/http-v2/b/3/2/
+#9 2.765 ./pip/http-v2/b/3/2/f/
+#9 2.765 ./pip/http-v2/b/3/2/f/0/
+#9 2.765 ./pip/http-v2/b/3/2/f/0/b32f017f9c60d09d91ac0bac44002dec28ef8c04355223f13bf00b7a.body
+#9 2.765 ./pip/http-v2/b/3/2/f/0/b32f017f9c60d09d91ac0bac44002dec28ef8c04355223f13bf00b7a
+#9 2.765 ./pip/http-v2/2/
+#9 2.765 ./pip/http-v2/2/8/
+#9 2.765 ./pip/http-v2/2/8/7/
+#9 2.765 ./pip/http-v2/2/8/7/9/
+#9 2.765 ./pip/http-v2/2/8/7/9/6/
+#9 2.765 ./pip/http-v2/2/8/7/9/6/28796067d09eb6879940dba05607b65ff5a21bf3f669ab495c6999a9
+#9 2.765 ./pip/http-v2/2/8/7/9/6/28796067d09eb6879940dba05607b65ff5a21bf3f669ab495c6999a9.body
+#9 2.766 ./pip/http-v2/1/
+#9 2.766 ./pip/http-v2/1/b/
+#9 2.766 ./pip/http-v2/1/b/5/
+#9 2.766 ./pip/http-v2/1/b/5/e/
+#9 2.766 ./pip/http-v2/1/b/5/e/5/
+#9 2.766 ./pip/http-v2/1/b/5/e/5/1b5e5a7ec2469bd2603f897e456dddd563ee5d0ef7634c0f5d7c08b9
+#9 2.766 ./pip/http-v2/1/b/5/e/5/1b5e5a7ec2469bd2603f897e456dddd563ee5d0ef7634c0f5d7c08b9.body
+#9 2.766 ./pip/http-v2/f/
+#9 2.766 ./pip/http-v2/f/a/
+#9 2.766 ./pip/http-v2/f/a/f/
+#9 2.766 ./pip/http-v2/f/a/f/f/
+#9 2.766 ./pip/http-v2/f/a/f/f/d/
+#9 2.766 ./pip/http-v2/f/a/f/f/d/faffdb5825619a041feeb4cdd9df76cefb30cce63d480ff0ed1a5dae
+#9 2.766 ./pip/http-v2/f/a/f/f/d/faffdb5825619a041feeb4cdd9df76cefb30cce63d480ff0ed1a5dae.body
+#9 2.766 ./pip/http-v2/7/
+#9 2.766 ./pip/http-v2/7/6/
+#9 2.766 ./pip/http-v2/7/6/3/
+#9 2.766 ./pip/http-v2/7/6/3/5/
+#9 2.766 ./pip/http-v2/7/6/3/5/d/
+#9 2.766 ./pip/http-v2/7/6/3/5/d/7635de8254c82e7e771831915759d7d8b2dc2759e9c5896e246e8b46.body
+#9 2.766 ./pip/http-v2/7/6/3/5/d/7635de8254c82e7e771831915759d7d8b2dc2759e9c5896e246e8b46
+#9 2.766 ./pip/http-v2/0/
+#9 2.766 ./pip/http-v2/0/6/
+#9 2.766 ./pip/http-v2/0/6/4/
+#9 2.766 ./pip/http-v2/0/6/4/1/
+#9 2.766 ./pip/http-v2/0/6/4/1/2/
+#9 2.766 ./pip/http-v2/0/6/4/1/2/06412fcf44b9a9522ff6367cabc965d23cb1165807c45516a879c5c4.body
+#9 2.766 ./pip/http-v2/0/6/4/1/2/06412fcf44b9a9522ff6367cabc965d23cb1165807c45516a879c5c4
+#9 2.766 ./pip/http-v2/a/
+#9 2.766 ./pip/http-v2/a/5/
+#9 2.766 ./pip/http-v2/a/5/7/
+#9 2.766 ./pip/http-v2/a/5/7/6/
+#9 2.766 ./pip/http-v2/a/5/7/6/a/
+#9 2.766 ./pip/http-v2/a/5/7/6/a/a576adadf536bc11b2719ae2f275733a69215dc284bb6886cbb4384c.body
+#9 2.768 ./pip/http-v2/a/5/7/6/a/a576adadf536bc11b2719ae2f275733a69215dc284bb6886cbb4384c
+#9 2.768 ./pip/http-v2/a/a/
+#9 2.768 ./pip/http-v2/a/a/c/
+#9 2.768 ./pip/http-v2/a/a/c/a/
+#9 2.768 ./pip/http-v2/a/a/c/a/c/
+#9 2.768 ./pip/http-v2/a/a/c/a/c/aacac81bf1d35d08fd880f2e19cbd5a198730437b2c32b1ce1da7aa3.body
+#9 2.768 ./pip/http-v2/a/a/c/a/c/aacac81bf1d35d08fd880f2e19cbd5a198730437b2c32b1ce1da7aa3
+#9 2.768 ./pip/http-v2/6/
+#9 2.768 ./pip/http-v2/6/b/
+#9 2.768 ./pip/http-v2/6/b/c/
+#9 2.768 ./pip/http-v2/6/b/c/4/
+#9 2.768 ./pip/http-v2/6/b/c/4/4/
+#9 2.768 ./pip/http-v2/6/b/c/4/4/6bc44665bb603ed852c296157543510833d416bcf304a53eed83717c
+#9 2.768 ./pip/http-v2/6/b/c/4/4/6bc44665bb603ed852c296157543510833d416bcf304a53eed83717c.body
+#9 2.768 ./deb/
+#9 2.768 ./deb/libpopt0_1.19+dfsg-1build1_amd64.deb
+#9 2.768 ./deb/lock
+#9 2.768 ./deb/rsync_3.2.7-1ubuntu1.5_amd64.deb
+#9 2.770 ./deb/partial/
+#9 2.770 ./deb/rsyslog_8.2312.0-3ubuntu9.3_amd64.deb
+#9 2.773 ./deb/cron-daemon-common_3.0pl1-184ubuntu2_all.deb
+#9 2.773 ./deb/libjson-c5_0.17-1build1_amd64.deb
+#9 2.773 ./deb/libjs-sphinxdoc_7.2.6-6_all.deb
+#9 2.774 ./deb/dbus-session-bus-common_1.14.10-4ubuntu4.1_all.deb
+#9 2.775 ./deb/libsystemd0_255.4-1ubuntu8.17_amd64.deb
+#9 2.776 ./deb/util-linux_2.39.3-9ubuntu6.6_amd64.deb
+#9 2.782 ./deb/libsystemd-shared_255.4-1ubuntu8.17_amd64.deb
+#9 2.792 ./deb/libpython3.12-dev_3.12.3-1ubuntu0.16_amd64.deb
+#9 2.819 ./deb/zlib1g_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb
+#9 2.820 ./deb/shared-mime-info_2.4-4_amd64.deb
+#9 2.822 ./deb/systemd-resolved_255.4-1ubuntu8.17_amd64.deb
+#9 2.824 ./deb/libargon2-1_0~20190702+dfsg-4build1_amd64.deb
+#9 2.824 ./deb/javascript-common_11+nmu1_all.deb
+#9 2.824 ./deb/cron_3.0pl1-184ubuntu2_amd64.deb
+#9 2.824 ./deb/xdg-user-dirs_0.18-1build1_amd64.deb
+#9 2.824 ./deb/systemd-dev_255.4-1ubuntu8.17_all.deb
+#9 2.825 ./deb/gir1.2-girepository-2.0_1.80.1-1_amd64.deb
+#9 2.825 ./deb/python3.12-minimal_3.12.3-1ubuntu0.16_amd64.deb
+#9 2.836 ./deb/libfastjson4_1.2304.0-1build1_amd64.deb
+#9 2.836 ./deb/systemd-timesyncd_255.4-1ubuntu8.17_amd64.deb
+#9 2.837 ./deb/libpython3-dev_3.12.3-0ubuntu2.1_amd64.deb
+#9 2.837 ./deb/python3-pkg-resources_68.1.2-2ubuntu1.2_all.deb
+#9 2.837 ./deb/libkmod2_31+20240202-2ubuntu7.2_amd64.deb
+#9 2.838 ./deb/libpython3.12-stdlib_3.12.3-1ubuntu0.16_amd64.deb
+#9 2.848 ./deb/openssl_3.0.13-0ubuntu3.15_amd64.deb
+#9 2.853 ./deb/networkd-dispatcher_2.2.4-1_all.deb
+#9 2.853 ./deb/ucf_3.0043+nmu1_all.deb
+#9 2.853 ./deb/net-tools_2.10-0.1ubuntu4.4_amd64.deb
+#9 2.854 ./deb/python3-gi_3.48.2-1_amd64.deb
+#9 2.855 ./deb/libestr0_0.1.11-1build1_amd64.deb
+#9 2.855 ./deb/libpython3.12-minimal_3.12.3-1ubuntu0.16_amd64.deb
+#9 2.859 ./deb/logrotate_3.21.0-2build1_amd64.deb
+#9 2.859 ./deb/libdevmapper1.02.1_2%3a1.02.185-3ubuntu3.2_amd64.deb
+#9 2.860 ./deb/libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb
+#9 2.862 ./deb/systemd_255.4-1ubuntu8.17_amd64.deb
+#9 2.878 ./deb/python3-wheel_0.42.0-2_all.deb
+#9 2.879 ./deb/dbus-daemon_1.14.10-4ubuntu4.1_amd64.deb
+#9 2.879 ./deb/python3-pip_24.0+dfsg-1ubuntu1.3_all.deb
+#9 2.886 ./deb/libcryptsetup12_2%3a2.7.0-1ubuntu4.2_amd64.deb
+#9 2.887 ./deb/dbus-system-bus-common_1.14.10-4ubuntu4.1_all.deb
+#9 2.887 ./deb/libmount1_2.39.3-9ubuntu6.6_amd64.deb
+#9 2.888 ./deb/libblkid1_2.39.3-9ubuntu6.6_amd64.deb
+#9 2.889 ./deb/python3-setuptools_68.1.2-2ubuntu1.2_all.deb
+#9 2.891 ./deb/libapparmor1_4.0.1really4.0.1-0ubuntu0.24.04.7_amd64.deb
+#9 2.891 ./deb/libssl3t64_3.0.13-0ubuntu3.15_amd64.deb
+#9 2.900 ./deb/dmsetup_2%3a1.02.185-3ubuntu3.2_amd64.deb
+#9 2.901 ./deb/ca-certificates_20260601~24.04.1_all.deb
+#9 2.901 ./deb/zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb
+#9 2.906 ./deb/libsmartcols1_2.39.3-9ubuntu6.6_amd64.deb
+#9 2.906 ./deb/libpython3.12t64_3.12.3-1ubuntu0.16_amd64.deb
+#9 2.917 ./deb/gir1.2-glib-2.0_2.80.0-6ubuntu3.8_amd64.deb
+#9 2.918 ./deb/libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb
+#9 2.919 ./deb/supervisor_4.2.5-1ubuntu0.1_all.deb
+#9 2.920 ./deb/bsdutils_1%3a2.39.3-9ubuntu6.6_amd64.deb
+#9 2.921 ./deb/python3-dbus_1.3.2-5build3_amd64.deb
+#9 2.921 ./deb/libglib2.0-data_2.80.0-6ubuntu3.8_all.deb
+#9 2.921 ./deb/python3.12-dev_3.12.3-1ubuntu0.16_amd64.deb
+#9 2.924 ./deb/mount_2.39.3-9ubuntu6.6_amd64.deb
+#9 2.924 ./deb/libglib2.0-0t64_2.80.0-6ubuntu3.8_amd64.deb
+#9 2.932 ./deb/libexpat1-dev_2.6.1-2ubuntu0.4_amd64.deb
+#9 2.933 ./deb/libudev1_255.4-1ubuntu8.17_amd64.deb
+#9 2.933 ./deb/libgirepository-1.0-1_1.80.1-1_amd64.deb
+#9 2.934 ./deb/libssl-dev_3.0.13-0ubuntu3.15_amd64.deb
+#9 2.945 ./deb/dbus_1.14.10-4ubuntu4.1_amd64.deb
+#9 2.945 ./deb/dbus-bin_1.14.10-4ubuntu4.1_amd64.deb
+#9 2.945 ./deb/libuuid1_2.39.3-9ubuntu6.6_amd64.deb
+#9 2.946 ./deb/python3.12_3.12.3-1ubuntu0.16_amd64.deb
+#9 2.949 ./deb/python3-dev_3.12.3-0ubuntu2.1_amd64.deb
+#9 2.949 ./deb/libfdisk1_2.39.3-9ubuntu6.6_amd64.deb
+#9 2.959 cp: -r not specified; omitting directory '/sonic/target/vcache/docker-dash-engine/deb/partial'
+#9 DONE 3.3s
+
+#10 [base  6/12] RUN sed -i 's|http://.*.ubuntu.com|http://azure.archive.ubuntu.com|g' /etc/apt/sources.list
+#10 DONE 0.1s
+
+#11 [base  7/12] RUN apt-get update
+#11 0.162 Ign:1 http://archive.ubuntu.com/ubuntu noble InRelease
+#11 0.162 Ign:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+#11 0.162 Ign:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+#11 0.162 Ign:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+#11 1.163 Ign:1 http://archive.ubuntu.com/ubuntu noble InRelease
+#11 1.163 Ign:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+#11 1.163 Ign:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+#11 1.163 Ign:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+#11 3.163 Ign:1 http://archive.ubuntu.com/ubuntu noble InRelease
+#11 3.163 Ign:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+#11 3.163 Ign:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+#11 3.163 Ign:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+#11 7.164 Err:1 http://archive.ubuntu.com/ubuntu noble InRelease
+#11 7.164   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#11 7.164 Err:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+#11 7.164   Unable to connect to 127.0.0.1:9:
+#11 7.164 Err:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+#11 7.164   Unable to connect to 127.0.0.1:9:
+#11 7.164 Err:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+#11 7.164   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#11 7.166 Reading package lists...
+#11 7.790 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble/InRelease  Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#11 7.790 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease  Unable to connect to 127.0.0.1:9:
+#11 7.790 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-backports/InRelease  Unable to connect to 127.0.0.1:9:
+#11 7.790 W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/noble-security/InRelease  Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#11 7.790 W: Some index files failed to download. They have been ignored, or old ones used instead.
+#11 DONE 7.9s
+
+#12 [base  8/12] RUN apt-get install -f -y net-tools supervisor rsyslog  python3-pip
+#12 0.122 Reading package lists...
+#12 0.136 Building dependency tree...
+#12 0.283 Reading state information...
+#12 0.498 The following additional packages will be installed:
+#12 0.498   bsdutils ca-certificates cron cron-daemon-common dbus dbus-bin dbus-daemon
+#12 0.498   dbus-session-bus-common dbus-system-bus-common dmsetup
+#12 0.498   gir1.2-girepository-2.0 gir1.2-glib-2.0 javascript-common libapparmor1
+#12 0.498   libargon2-1 libblkid1 libcryptsetup12 libdevmapper1.02.1 libestr0
+#12 0.498   libexpat1-dev libfastjson4 libfdisk1 libgirepository-1.0-1 libglib2.0-0t64
+#12 0.498   libglib2.0-data libjs-jquery libjs-sphinxdoc libjs-underscore libjson-c5
+#12 0.498   libkmod2 libmount1 libpopt0 libpython3-dev libpython3.12-dev
+#12 0.498   libpython3.12-minimal libpython3.12-stdlib libpython3.12t64 libsmartcols1
+#12 0.498   libssl-dev libssl3t64 libsystemd-shared libsystemd0 libudev1 libuuid1
+#12 0.498   logrotate mount networkd-dispatcher openssl python3-dbus python3-dev
+#12 0.498   python3-gi python3-pkg-resources python3-setuptools python3-wheel python3.12
+#12 0.499   python3.12-dev python3.12-minimal shared-mime-info systemd systemd-dev
+#12 0.499   systemd-resolved systemd-timesyncd ucf util-linux xdg-user-dirs zlib1g
+#12 0.499   zlib1g-dev
+#12 0.500 Suggested packages:
+#12 0.500   anacron checksecurity supercat default-mta | mail-transport-agent
+#12 0.500   default-dbus-session-bus | dbus-session-bus apache2 | lighttpd | httpd
+#12 0.500   low-memory-monitor cryptsetup-bin libssl-doc bsd-mailx | mailx nfs-common iw
+#12 0.500   | wireless-tools python-dbus-doc python-setuptools-doc python3.12-venv
+#12 0.500   python3.12-doc binfmt-support rsyslog-mysql | rsyslog-pgsql rsyslog-mongodb
+#12 0.500   rsyslog-doc rsyslog-openssl | rsyslog-gnutls rsyslog-gssapi rsyslog-relp
+#12 0.500   apparmor supervisor-doc systemd-container systemd-homed systemd-userdbd
+#12 0.500   systemd-boot libfido2-1 libip4tc2 libqrencode4 libtss2-esys-3.0.2-0
+#12 0.500   libtss2-mu-4.0.1-0 libtss2-rc0 libtss2-tcti-device0 polkitd dosfstools kbd
+#12 0.500   util-linux-extra util-linux-locales
+#12 0.500 Recommended packages:
+#12 0.500   bsdextrautils uuid-runtime
+#12 0.602 The following NEW packages will be installed:
+#12 0.602   ca-certificates cron cron-daemon-common dbus dbus-bin dbus-daemon
+#12 0.602   dbus-session-bus-common dbus-system-bus-common dmsetup
+#12 0.602   gir1.2-girepository-2.0 gir1.2-glib-2.0 javascript-common libapparmor1
+#12 0.602   libargon2-1 libcryptsetup12 libdevmapper1.02.1 libestr0 libexpat1-dev
+#12 0.602   libfastjson4 libfdisk1 libgirepository-1.0-1 libglib2.0-0t64 libglib2.0-data
+#12 0.602   libjs-jquery libjs-sphinxdoc libjs-underscore libjson-c5 libkmod2 libpopt0
+#12 0.603   libpython3-dev libpython3.12-dev libpython3.12t64 libsystemd-shared
+#12 0.603   logrotate net-tools networkd-dispatcher openssl python3-dbus python3-dev
+#12 0.603   python3-gi python3-pip python3-pkg-resources python3-setuptools
+#12 0.603   python3-wheel python3.12-dev rsyslog shared-mime-info supervisor systemd
+#12 0.603   systemd-dev systemd-resolved systemd-timesyncd ucf xdg-user-dirs zlib1g-dev
+#12 0.603 The following packages will be upgraded:
+#12 0.604   bsdutils libblkid1 libmount1 libpython3.12-minimal libpython3.12-stdlib
+#12 0.604   libsmartcols1 libssl-dev libssl3t64 libsystemd0 libudev1 libuuid1 mount
+#12 0.604   python3.12 python3.12-minimal util-linux zlib1g
+#12 0.720 debconf: delaying package configuration, since apt-utils is not installed
+#12 0.742 16 upgraded, 55 newly installed, 0 to remove and 17 not upgraded.
+#12 0.742 Need to get 0 B/37.0 MB of archives.
+#12 0.742 After this operation, 93.9 MB of additional disk space will be used.
+#12 0.754 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38371 files and directories currently installed.)
+#12 0.765 Preparing to unpack .../bsdutils_1%3a2.39.3-9ubuntu6.6_amd64.deb ...
+#12 0.769 Unpacking bsdutils (1:2.39.3-9ubuntu6.6) over (1:2.39.3-9ubuntu6.5) ...
+#12 0.803 Setting up bsdutils (1:2.39.3-9ubuntu6.6) ...
+#12 0.824 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38371 files and directories currently installed.)
+#12 0.834 Preparing to unpack .../util-linux_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 0.839 Unpacking util-linux (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 0.995 Setting up util-linux (2.39.3-9ubuntu6.6) ...
+#12 1.099 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38371 files and directories currently installed.)
+#12 1.108 Preparing to unpack .../mount_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 1.112 Unpacking mount (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 1.142 Preparing to unpack .../libssl-dev_3.0.13-0ubuntu3.15_amd64.deb ...
+#12 1.146 Unpacking libssl-dev:amd64 (3.0.13-0ubuntu3.15) over (3.0.13-0ubuntu3.12) ...
+#12 1.350 Preparing to unpack .../libssl3t64_3.0.13-0ubuntu3.15_amd64.deb ...
+#12 1.355 Unpacking libssl3t64:amd64 (3.0.13-0ubuntu3.15) over (3.0.13-0ubuntu3.12) ...
+#12 1.407 Setting up libssl3t64:amd64 (3.0.13-0ubuntu3.15) ...
+#12 1.424 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38371 files and directories currently installed.)
+#12 1.434 Preparing to unpack .../python3.12_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 1.466 Unpacking python3.12 (3.12.3-1ubuntu0.16) over (3.12.3-1ubuntu0.15) ...
+#12 1.493 Preparing to unpack .../libpython3.12-stdlib_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 1.519 Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.16) over (3.12.3-1ubuntu0.15) ...
+#12 1.855 Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 1.862 Unpacking python3.12-minimal (3.12.3-1ubuntu0.16) over (3.12.3-1ubuntu0.15) ...
+#12 1.934 Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 1.970 Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.16) over (3.12.3-1ubuntu0.15) ...
+#12 2.255 Preparing to unpack .../zlib1g_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb ...
+#12 2.258 Unpacking zlib1g:amd64 (1:1.3.dfsg-3.1ubuntu2.2) over (1:1.3.dfsg-3.1ubuntu2.1) ...
+#12 2.282 Setting up zlib1g:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+#12 2.301 Selecting previously unselected package libapparmor1:amd64.
+#12 2.301 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38371 files and directories currently installed.)
+#12 2.311 Preparing to unpack .../libapparmor1_4.0.1really4.0.1-0ubuntu0.24.04.7_amd64.deb ...
+#12 2.312 Unpacking libapparmor1:amd64 (4.0.1really4.0.1-0ubuntu0.24.04.7) ...
+#12 2.328 Selecting previously unselected package libargon2-1:amd64.
+#12 2.330 Preparing to unpack .../libargon2-1_0~20190702+dfsg-4build1_amd64.deb ...
+#12 2.331 Unpacking libargon2-1:amd64 (0~20190702+dfsg-4build1) ...
+#12 2.350 Preparing to unpack .../libblkid1_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 2.353 Unpacking libblkid1:amd64 (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 2.377 Setting up libblkid1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 2.397 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38380 files and directories currently installed.)
+#12 2.405 Preparing to unpack .../libudev1_255.4-1ubuntu8.17_amd64.deb ...
+#12 2.408 Unpacking libudev1:amd64 (255.4-1ubuntu8.17) over (255.4-1ubuntu8.16) ...
+#12 2.431 Setting up libudev1:amd64 (255.4-1ubuntu8.17) ...
+#12 2.449 Selecting previously unselected package libdevmapper1.02.1:amd64.
+#12 2.449 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38380 files and directories currently installed.)
+#12 2.459 Preparing to unpack .../libdevmapper1.02.1_2%3a1.02.185-3ubuntu3.2_amd64.deb ...
+#12 2.461 Unpacking libdevmapper1.02.1:amd64 (2:1.02.185-3ubuntu3.2) ...
+#12 2.477 Selecting previously unselected package libjson-c5:amd64.
+#12 2.479 Preparing to unpack .../libjson-c5_0.17-1build1_amd64.deb ...
+#12 2.481 Unpacking libjson-c5:amd64 (0.17-1build1) ...
+#12 2.501 Preparing to unpack .../libuuid1_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 2.505 Unpacking libuuid1:amd64 (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 2.527 Setting up libuuid1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 2.547 Selecting previously unselected package libcryptsetup12:amd64.
+#12 2.547 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38391 files and directories currently installed.)
+#12 2.556 Preparing to unpack .../libcryptsetup12_2%3a2.7.0-1ubuntu4.2_amd64.deb ...
+#12 2.558 Unpacking libcryptsetup12:amd64 (2:2.7.0-1ubuntu4.2) ...
+#12 2.576 Selecting previously unselected package libfdisk1:amd64.
+#12 2.578 Preparing to unpack .../libfdisk1_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 2.580 Unpacking libfdisk1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 2.597 Selecting previously unselected package libkmod2:amd64.
+#12 2.598 Preparing to unpack .../libkmod2_31+20240202-2ubuntu7.2_amd64.deb ...
+#12 2.600 Unpacking libkmod2:amd64 (31+20240202-2ubuntu7.2) ...
+#12 2.619 Preparing to unpack .../libmount1_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 2.622 Unpacking libmount1:amd64 (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 2.646 Setting up libmount1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 2.663 Selecting previously unselected package libsystemd-shared:amd64.
+#12 2.663 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38410 files and directories currently installed.)
+#12 2.672 Preparing to unpack .../libsystemd-shared_255.4-1ubuntu8.17_amd64.deb ...
+#12 2.674 Unpacking libsystemd-shared:amd64 (255.4-1ubuntu8.17) ...
+#12 2.712 Preparing to unpack .../libsystemd0_255.4-1ubuntu8.17_amd64.deb ...
+#12 2.716 Unpacking libsystemd0:amd64 (255.4-1ubuntu8.17) over (255.4-1ubuntu8.16) ...
+#12 2.743 Setting up libsystemd0:amd64 (255.4-1ubuntu8.17) ...
+#12 2.761 Selecting previously unselected package systemd-dev.
+#12 2.761 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38418 files and directories currently installed.)
+#12 2.771 Preparing to unpack .../systemd-dev_255.4-1ubuntu8.17_all.deb ...
+#12 2.772 Unpacking systemd-dev (255.4-1ubuntu8.17) ...
+#12 2.794 Selecting previously unselected package systemd.
+#12 2.796 Preparing to unpack .../systemd_255.4-1ubuntu8.17_amd64.deb ...
+#12 2.805 Unpacking systemd (255.4-1ubuntu8.17) ...
+#12 2.881 Selecting previously unselected package cron-daemon-common.
+#12 2.883 Preparing to unpack .../cron-daemon-common_3.0pl1-184ubuntu2_all.deb ...
+#12 2.884 Unpacking cron-daemon-common (3.0pl1-184ubuntu2) ...
+#12 2.903 Setting up libapparmor1:amd64 (4.0.1really4.0.1-0ubuntu0.24.04.7) ...
+#12 2.906 Setting up libargon2-1:amd64 (0~20190702+dfsg-4build1) ...
+#12 2.909 Setting up libdevmapper1.02.1:amd64 (2:1.02.185-3ubuntu3.2) ...
+#12 2.912 Setting up libjson-c5:amd64 (0.17-1build1) ...
+#12 2.915 Setting up libcryptsetup12:amd64 (2:2.7.0-1ubuntu4.2) ...
+#12 2.919 Setting up libfdisk1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 2.922 Setting up libkmod2:amd64 (31+20240202-2ubuntu7.2) ...
+#12 2.925 Setting up libsystemd-shared:amd64 (255.4-1ubuntu8.17) ...
+#12 2.928 Setting up systemd-dev (255.4-1ubuntu8.17) ...
+#12 2.932 Setting up mount (2.39.3-9ubuntu6.6) ...
+#12 2.935 Setting up systemd (255.4-1ubuntu8.17) ...
+#12 2.947 Created symlink /etc/systemd/system/getty.target.wants/getty@tty1.service → /usr/lib/systemd/system/getty@.service.
+#12 2.950 Created symlink /etc/systemd/system/multi-user.target.wants/remote-fs.target → /usr/lib/systemd/system/remote-fs.target.
+#12 2.952 Created symlink /etc/systemd/system/sysinit.target.wants/systemd-pstore.service → /usr/lib/systemd/system/systemd-pstore.service.
+#12 2.954 Initializing machine ID from random generator.
+#12 2.967 /usr/lib/tmpfiles.d/cron-daemon-common.conf:1: Failed to resolve group 'crontab': No such process
+#12 2.967 /usr/lib/tmpfiles.d/systemd-network.conf:10: Failed to resolve user 'systemd-network': No such process
+#12 2.967 /usr/lib/tmpfiles.d/systemd-network.conf:11: Failed to resolve user 'systemd-network': No such process
+#12 2.967 /usr/lib/tmpfiles.d/systemd-network.conf:12: Failed to resolve user 'systemd-network': No such process
+#12 2.967 /usr/lib/tmpfiles.d/systemd-network.conf:13: Failed to resolve user 'systemd-network': No such process
+#12 2.967 /usr/lib/tmpfiles.d/systemd.conf:22: Failed to resolve group 'systemd-journal': No such process
+#12 2.967 /usr/lib/tmpfiles.d/systemd.conf:23: Failed to resolve group 'systemd-journal': No such process
+#12 2.967 /usr/lib/tmpfiles.d/systemd.conf:28: Failed to resolve group 'systemd-journal': No such process
+#12 2.967 /usr/lib/tmpfiles.d/systemd.conf:29: Failed to resolve group 'systemd-journal': No such process
+#12 2.967 /usr/lib/tmpfiles.d/systemd.conf:30: Failed to resolve group 'systemd-journal': No such process
+#12 2.972 Creating group 'systemd-journal' with GID 999.
+#12 2.972 Creating group 'systemd-network' with GID 998.
+#12 2.972 Creating user 'systemd-network' (systemd Network Management) with UID 998 and GID 998.
+#12 2.988 Setting up cron-daemon-common (3.0pl1-184ubuntu2) ...
+#12 3.006 Creating group 'crontab' with GID 997.
+#12 3.033 Selecting previously unselected package cron.
+#12 3.033 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39415 files and directories currently installed.)
+#12 3.042 Preparing to unpack .../cron_3.0pl1-184ubuntu2_amd64.deb ...
+#12 3.045 Unpacking cron (3.0pl1-184ubuntu2) ...
+#12 3.062 Selecting previously unselected package python3-pkg-resources.
+#12 3.064 Preparing to unpack .../python3-pkg-resources_68.1.2-2ubuntu1.2_all.deb ...
+#12 3.067 Unpacking python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+#12 3.088 Selecting previously unselected package supervisor.
+#12 3.090 Preparing to unpack .../supervisor_4.2.5-1ubuntu0.1_all.deb ...
+#12 3.093 Unpacking supervisor (4.2.5-1ubuntu0.1) ...
+#12 3.119 Preparing to unpack .../libsmartcols1_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 3.123 Unpacking libsmartcols1:amd64 (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 3.146 Setting up libsmartcols1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 3.165 Selecting previously unselected package openssl.
+#12 3.165 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39649 files and directories currently installed.)
+#12 3.175 Preparing to unpack .../00-openssl_3.0.13-0ubuntu3.15_amd64.deb ...
+#12 3.177 Unpacking openssl (3.0.13-0ubuntu3.15) ...
+#12 3.204 Selecting previously unselected package ca-certificates.
+#12 3.206 Preparing to unpack .../01-ca-certificates_20260601~24.04.1_all.deb ...
+#12 3.208 Unpacking ca-certificates (20260601~24.04.1) ...
+#12 3.232 Selecting previously unselected package dbus-bin.
+#12 3.234 Preparing to unpack .../02-dbus-bin_1.14.10-4ubuntu4.1_amd64.deb ...
+#12 3.235 Unpacking dbus-bin (1.14.10-4ubuntu4.1) ...
+#12 3.249 Selecting previously unselected package dbus-session-bus-common.
+#12 3.251 Preparing to unpack .../03-dbus-session-bus-common_1.14.10-4ubuntu4.1_all.deb ...
+#12 3.252 Unpacking dbus-session-bus-common (1.14.10-4ubuntu4.1) ...
+#12 3.268 Selecting previously unselected package dbus-daemon.
+#12 3.269 Preparing to unpack .../04-dbus-daemon_1.14.10-4ubuntu4.1_amd64.deb ...
+#12 3.271 Unpacking dbus-daemon (1.14.10-4ubuntu4.1) ...
+#12 3.286 Selecting previously unselected package dbus-system-bus-common.
+#12 3.288 Preparing to unpack .../05-dbus-system-bus-common_1.14.10-4ubuntu4.1_all.deb ...
+#12 3.289 Unpacking dbus-system-bus-common (1.14.10-4ubuntu4.1) ...
+#12 3.307 Selecting previously unselected package dbus.
+#12 3.309 Preparing to unpack .../06-dbus_1.14.10-4ubuntu4.1_amd64.deb ...
+#12 3.311 Unpacking dbus (1.14.10-4ubuntu4.1) ...
+#12 3.330 Selecting previously unselected package dmsetup.
+#12 3.332 Preparing to unpack .../07-dmsetup_2%3a1.02.185-3ubuntu3.2_amd64.deb ...
+#12 3.333 Unpacking dmsetup (2:1.02.185-3ubuntu3.2) ...
+#12 3.354 Selecting previously unselected package libglib2.0-0t64:amd64.
+#12 3.356 Preparing to unpack .../08-libglib2.0-0t64_2.80.0-6ubuntu3.8_amd64.deb ...
+#12 3.365 Unpacking libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.8) ...
+#12 3.394 Selecting previously unselected package gir1.2-glib-2.0:amd64.
+#12 3.396 Preparing to unpack .../09-gir1.2-glib-2.0_2.80.0-6ubuntu3.8_amd64.deb ...
+#12 3.397 Unpacking gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.8) ...
+#12 3.416 Selecting previously unselected package libgirepository-1.0-1:amd64.
+#12 3.418 Preparing to unpack .../10-libgirepository-1.0-1_1.80.1-1_amd64.deb ...
+#12 3.419 Unpacking libgirepository-1.0-1:amd64 (1.80.1-1) ...
+#12 3.434 Selecting previously unselected package gir1.2-girepository-2.0:amd64.
+#12 3.436 Preparing to unpack .../11-gir1.2-girepository-2.0_1.80.1-1_amd64.deb ...
+#12 3.437 Unpacking gir1.2-girepository-2.0:amd64 (1.80.1-1) ...
+#12 3.453 Selecting previously unselected package libestr0:amd64.
+#12 3.455 Preparing to unpack .../12-libestr0_0.1.11-1build1_amd64.deb ...
+#12 3.456 Unpacking libestr0:amd64 (0.1.11-1build1) ...
+#12 3.472 Selecting previously unselected package libfastjson4:amd64.
+#12 3.474 Preparing to unpack .../13-libfastjson4_1.2304.0-1build1_amd64.deb ...
+#12 3.475 Unpacking libfastjson4:amd64 (1.2304.0-1build1) ...
+#12 3.489 Selecting previously unselected package libglib2.0-data.
+#12 3.491 Preparing to unpack .../14-libglib2.0-data_2.80.0-6ubuntu3.8_all.deb ...
+#12 3.492 Unpacking libglib2.0-data (2.80.0-6ubuntu3.8) ...
+#12 3.510 Selecting previously unselected package libpopt0:amd64.
+#12 3.512 Preparing to unpack .../15-libpopt0_1.19+dfsg-1build1_amd64.deb ...
+#12 3.513 Unpacking libpopt0:amd64 (1.19+dfsg-1build1) ...
+#12 3.530 Selecting previously unselected package logrotate.
+#12 3.532 Preparing to unpack .../16-logrotate_3.21.0-2build1_amd64.deb ...
+#12 3.533 Unpacking logrotate (3.21.0-2build1) ...
+#12 3.549 Selecting previously unselected package python3-dbus.
+#12 3.551 Preparing to unpack .../17-python3-dbus_1.3.2-5build3_amd64.deb ...
+#12 3.552 Unpacking python3-dbus (1.3.2-5build3) ...
+#12 3.569 Selecting previously unselected package python3-gi.
+#12 3.571 Preparing to unpack .../18-python3-gi_3.48.2-1_amd64.deb ...
+#12 3.572 Unpacking python3-gi (3.48.2-1) ...
+#12 3.593 Selecting previously unselected package networkd-dispatcher.
+#12 3.595 Preparing to unpack .../19-networkd-dispatcher_2.2.4-1_all.deb ...
+#12 3.596 Unpacking networkd-dispatcher (2.2.4-1) ...
+#12 3.613 Selecting previously unselected package ucf.
+#12 3.615 Preparing to unpack .../20-ucf_3.0043+nmu1_all.deb ...
+#12 3.620 Moving old data out of the way
+#12 3.621 Unpacking ucf (3.0043+nmu1) ...
+#12 3.640 Selecting previously unselected package rsyslog.
+#12 3.642 Preparing to unpack .../21-rsyslog_8.2312.0-3ubuntu9.3_amd64.deb ...
+#12 3.651 Unpacking rsyslog (8.2312.0-3ubuntu9.3) ...
+#12 3.675 Selecting previously unselected package shared-mime-info.
+#12 3.676 Preparing to unpack .../22-shared-mime-info_2.4-4_amd64.deb ...
+#12 3.678 Unpacking shared-mime-info (2.4-4) ...
+#12 3.702 Selecting previously unselected package systemd-resolved.
+#12 3.704 Preparing to unpack .../23-systemd-resolved_255.4-1ubuntu8.17_amd64.deb ...
+#12 3.705 Unpacking systemd-resolved (255.4-1ubuntu8.17) ...
+#12 3.727 Selecting previously unselected package systemd-timesyncd.
+#12 3.729 Preparing to unpack .../24-systemd-timesyncd_255.4-1ubuntu8.17_amd64.deb ...
+#12 3.730 Unpacking systemd-timesyncd (255.4-1ubuntu8.17) ...
+#12 3.748 Selecting previously unselected package xdg-user-dirs.
+#12 3.750 Preparing to unpack .../25-xdg-user-dirs_0.18-1build1_amd64.deb ...
+#12 3.754 Unpacking xdg-user-dirs (0.18-1build1) ...
+#12 3.772 Selecting previously unselected package javascript-common.
+#12 3.774 Preparing to unpack .../26-javascript-common_11+nmu1_all.deb ...
+#12 3.783 Unpacking javascript-common (11+nmu1) ...
+#12 3.798 Selecting previously unselected package libexpat1-dev:amd64.
+#12 3.800 Preparing to unpack .../27-libexpat1-dev_2.6.1-2ubuntu0.4_amd64.deb ...
+#12 3.801 Unpacking libexpat1-dev:amd64 (2.6.1-2ubuntu0.4) ...
+#12 3.821 Selecting previously unselected package libjs-jquery.
+#12 3.823 Preparing to unpack .../28-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+#12 3.830 Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+#12 3.848 Selecting previously unselected package libjs-underscore.
+#12 3.850 Preparing to unpack .../29-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+#12 3.851 Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+#12 3.866 Selecting previously unselected package libjs-sphinxdoc.
+#12 3.868 Preparing to unpack .../30-libjs-sphinxdoc_7.2.6-6_all.deb ...
+#12 3.870 Unpacking libjs-sphinxdoc (7.2.6-6) ...
+#12 3.886 Selecting previously unselected package libpython3.12t64:amd64.
+#12 3.888 Preparing to unpack .../31-libpython3.12t64_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 3.889 Unpacking libpython3.12t64:amd64 (3.12.3-1ubuntu0.16) ...
+#12 3.931 Selecting previously unselected package zlib1g-dev:amd64.
+#12 3.933 Preparing to unpack .../32-zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb ...
+#12 3.934 Unpacking zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+#12 3.951 Selecting previously unselected package libpython3.12-dev:amd64.
+#12 3.953 Preparing to unpack .../33-libpython3.12-dev_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 3.954 Unpacking libpython3.12-dev:amd64 (3.12.3-1ubuntu0.16) ...
+#12 4.059 Selecting previously unselected package libpython3-dev:amd64.
+#12 4.061 Preparing to unpack .../34-libpython3-dev_3.12.3-0ubuntu2.1_amd64.deb ...
+#12 4.062 Unpacking libpython3-dev:amd64 (3.12.3-0ubuntu2.1) ...
+#12 4.076 Selecting previously unselected package net-tools.
+#12 4.078 Preparing to unpack .../35-net-tools_2.10-0.1ubuntu4.4_amd64.deb ...
+#12 4.080 Unpacking net-tools (2.10-0.1ubuntu4.4) ...
+#12 4.098 Selecting previously unselected package python3.12-dev.
+#12 4.100 Preparing to unpack .../36-python3.12-dev_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 4.102 Unpacking python3.12-dev (3.12.3-1ubuntu0.16) ...
+#12 4.116 Selecting previously unselected package python3-dev.
+#12 4.118 Preparing to unpack .../37-python3-dev_3.12.3-0ubuntu2.1_amd64.deb ...
+#12 4.119 Unpacking python3-dev (3.12.3-0ubuntu2.1) ...
+#12 4.134 Selecting previously unselected package python3-setuptools.
+#12 4.136 Preparing to unpack .../38-python3-setuptools_68.1.2-2ubuntu1.2_all.deb ...
+#12 4.138 Unpacking python3-setuptools (68.1.2-2ubuntu1.2) ...
+#12 4.166 Selecting previously unselected package python3-wheel.
+#12 4.168 Preparing to unpack .../39-python3-wheel_0.42.0-2_all.deb ...
+#12 4.170 Unpacking python3-wheel (0.42.0-2) ...
+#12 4.187 Selecting previously unselected package python3-pip.
+#12 4.189 Preparing to unpack .../40-python3-pip_24.0+dfsg-1ubuntu1.3_all.deb ...
+#12 4.190 Unpacking python3-pip (24.0+dfsg-1ubuntu1.3) ...
+#12 4.252 Setting up python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+#12 4.522 Setting up javascript-common (11+nmu1) ...
+#12 4.539 Setting up net-tools (2.10-0.1ubuntu4.4) ...
+#12 4.542 Setting up supervisor (4.2.5-1ubuntu0.1) ...
+#12 4.807 invoke-rc.d: could not determine current runlevel
+#12 4.810 invoke-rc.d: policy-rc.d denied execution of start.
+#12 4.887 Created symlink /etc/systemd/system/multi-user.target.wants/supervisor.service → /usr/lib/systemd/system/supervisor.service.
+#12 4.890 Setting up python3-setuptools (68.1.2-2ubuntu1.2) ...
+#12 5.202 Setting up xdg-user-dirs (0.18-1build1) ...
+#12 5.213 Setting up libestr0:amd64 (0.1.11-1build1) ...
+#12 5.216 Setting up libfastjson4:amd64 (1.2304.0-1build1) ...
+#12 5.219 Setting up cron (3.0pl1-184ubuntu2) ...
+#12 5.239 invoke-rc.d: could not determine current runlevel
+#12 5.242 invoke-rc.d: policy-rc.d denied execution of start.
+#12 5.317 Created symlink /etc/systemd/system/multi-user.target.wants/cron.service → /usr/lib/systemd/system/cron.service.
+#12 5.320 Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.16) ...
+#12 5.326 Setting up python3-wheel (0.42.0-2) ...
+#12 5.422 Setting up libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.8) ...
+#12 5.427 No schema files found: doing nothing.
+#12 5.430 Setting up libglib2.0-data (2.80.0-6ubuntu3.8) ...
+#12 5.434 Setting up libexpat1-dev:amd64 (2.6.1-2ubuntu0.4) ...
+#12 5.438 Setting up shared-mime-info (2.4-4) ...
+#12 6.237 Setting up libssl-dev:amd64 (3.0.13-0ubuntu3.15) ...
+#12 6.242 Setting up systemd-timesyncd (255.4-1ubuntu8.17) ...
+#12 6.249 Creating group 'systemd-timesync' with GID 996.
+#12 6.249 Creating user 'systemd-timesync' (systemd Time Synchronization) with UID 996 and GID 996.
+#12 6.332 Created symlink /etc/systemd/system/dbus-org.freedesktop.timesync1.service → /usr/lib/systemd/system/systemd-timesyncd.service.
+#12 6.332 Created symlink /etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service → /usr/lib/systemd/system/systemd-timesyncd.service.
+#12 6.335 Setting up ucf (3.0043+nmu1) ...
+#12 6.383 Setting up gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.8) ...
+#12 6.386 Setting up zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+#12 6.389 Setting up dmsetup (2:1.02.185-3ubuntu3.2) ...
+#12 6.395 Setting up dbus-session-bus-common (1.14.10-4ubuntu4.1) ...
+#12 6.398 Setting up libgirepository-1.0-1:amd64 (1.80.1-1) ...
+#12 6.401 Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+#12 6.411 Setting up dbus-system-bus-common (1.14.10-4ubuntu4.1) ...
+#12 6.466 Setting up openssl (3.0.13-0ubuntu3.15) ...
+#12 6.471 Setting up dbus-bin (1.14.10-4ubuntu4.1) ...
+#12 6.474 Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+#12 6.477 Setting up libpopt0:amd64 (1.19+dfsg-1build1) ...
+#12 6.480 Setting up logrotate (3.21.0-2build1) ...
+#12 6.562 Created symlink /etc/systemd/system/timers.target.wants/logrotate.timer → /usr/lib/systemd/system/logrotate.timer.
+#12 6.565 Setting up python3.12-minimal (3.12.3-1ubuntu0.16) ...
+#12 7.034 Setting up python3-dbus (1.3.2-5build3) ...
+#12 7.120 Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.16) ...
+#12 7.125 Setting up python3.12 (3.12.3-1ubuntu0.16) ...
+#12 7.759 Setting up rsyslog (8.2312.0-3ubuntu9.3) ...
+#12 7.833 info: Adding user `syslog' to group `adm' ...
+#12 7.934 
+#12 7.934 Creating config file /etc/rsyslog.d/50-default.conf with new version
+#12 8.052 Created symlink /etc/systemd/system/multi-user.target.wants/dmesg.service → /usr/lib/systemd/system/dmesg.service.
+#12 8.128 Created symlink /etc/systemd/system/syslog.service → /usr/lib/systemd/system/rsyslog.service.
+#12 8.128 Created symlink /etc/systemd/system/multi-user.target.wants/rsyslog.service → /usr/lib/systemd/system/rsyslog.service.
+#12 8.131 Setting up dbus-daemon (1.14.10-4ubuntu4.1) ...
+#12 8.141 Setting up libpython3.12t64:amd64 (3.12.3-1ubuntu0.16) ...
+#12 8.145 Setting up ca-certificates (20260601~24.04.1) ...
+#12 8.496 Updating certificates in /etc/ssl/certs...
+#12 8.940 121 added, 0 removed; done.
+#12 8.953 Setting up gir1.2-girepository-2.0:amd64 (1.80.1-1) ...
+#12 8.956 Setting up dbus (1.14.10-4ubuntu4.1) ...
+#12 8.972 Setting up python3-gi (3.48.2-1) ...
+#12 9.085 Setting up python3-pip (24.0+dfsg-1ubuntu1.3) ...
+#12 9.900 Setting up libjs-sphinxdoc (7.2.6-6) ...
+#12 9.903 Setting up systemd-resolved (255.4-1ubuntu8.17) ...
+#12 9.910 Converting /etc/resolv.conf to a symlink to /run/systemd/resolve/stub-resolv.conf...
+#12 9.912 mv: cannot move '/etc/resolv.conf' to '/etc/.resolv.conf.systemd-resolved.bak': Device or resource busy
+#12 9.913 Cannot take a backup of /etc/resolv.conf.
+#12 9.913 ln: failed to create symbolic link '/etc/resolv.conf': Device or resource busy
+#12 9.913 Cannot install symlink from /etc/resolv.conf to ../run/systemd/resolve/stub-resolv.conf
+#12 9.916 Creating group 'systemd-resolve' with GID 995.
+#12 9.916 Creating user 'systemd-resolve' (systemd Resolver) with UID 995 and GID 995.
+#12 10.00 Created symlink /etc/systemd/system/dbus-org.freedesktop.resolve1.service → /usr/lib/systemd/system/systemd-resolved.service.
+#12 10.00 Created symlink /etc/systemd/system/sysinit.target.wants/systemd-resolved.service → /usr/lib/systemd/system/systemd-resolved.service.
+#12 10.00 Setting up networkd-dispatcher (2.2.4-1) ...
+#12 10.08 Created symlink /etc/systemd/system/multi-user.target.wants/networkd-dispatcher.service → /usr/lib/systemd/system/networkd-dispatcher.service.
+#12 10.09 Setting up libpython3.12-dev:amd64 (3.12.3-1ubuntu0.16) ...
+#12 10.09 Setting up python3.12-dev (3.12.3-1ubuntu0.16) ...
+#12 10.10 Setting up libpython3-dev:amd64 (3.12.3-0ubuntu2.1) ...
+#12 10.10 Setting up python3-dev (3.12.3-0ubuntu2.1) ...
+#12 10.11 Processing triggers for libc-bin (2.39-0ubuntu8.8) ...
+#12 10.12 Processing triggers for ca-certificates (20260601~24.04.1) ...
+#12 10.12 Updating certificates in /etc/ssl/certs...
+#12 10.49 0 added, 0 removed; done.
+#12 10.49 Running hooks in /etc/ca-certificates/update.d...
+#12 10.49 done.
+#12 DONE 10.8s
+
+#13 [base  9/12] RUN pip3 install --break-system-packages supervisord-dependent-startup
+#13 0.376 Looking in links: /sonic/target/vcache/docker-dash-engine/pip-wheelhouse
+#13 0.380 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x723e37d7ee70>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisord-dependent-startup/
+#13 0.881 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x723e382ed820>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisord-dependent-startup/
+#13 1.881 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x723e37d7ef90>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisord-dependent-startup/
+#13 3.882 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x723e37d7f0b0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisord-dependent-startup/
+#13 7.882 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x723e37d7f230>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisord-dependent-startup/
+#13 7.902 Processing /sonic/target/vcache/docker-dash-engine/pip-wheelhouse/supervisord_dependent_startup-1.4.0-py2.py3-none-any.whl
+#13 7.907 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x723e37cbe270>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisor/
+#13 8.407 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x723e37cbcdd0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisor/
+#13 9.407 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x723e37cbc620>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisor/
+#13 11.41 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x723e37c04200>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisor/
+#13 15.41 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x723e37c042c0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisor/
+#13 15.41 INFO: pip is looking at multiple versions of supervisord-dependent-startup to determine which version is compatible with other requirements. This could take a while.
+#13 15.41 ERROR: Cannot install supervisord-dependent-startup==1.4.0 because these package versions have conflicting dependencies.
+#13 15.41 
+#13 15.41 The conflict is caused by:
+#13 15.41     supervisord-dependent-startup 1.4.0 depends on supervisor>=3.2.0
+#13 15.41     The user requested (constraint) supervisor==4.1.0
+#13 15.41 
+#13 15.41 To fix this you could try to:
+#13 15.41 1. loosen the range of package versions you've specified
+#13 15.41 2. remove package versions to allow pip attempt to solve the dependency conflict
+#13 15.41 
+#13 15.41 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+#13 ERROR: process "/bin/sh -c pip3 install --break-system-packages supervisord-dependent-startup" did not complete successfully: exit code: 1
+------
+ > [base  9/12] RUN pip3 install --break-system-packages supervisord-dependent-startup:
+15.41 
+15.41 The conflict is caused by:
+15.41     supervisord-dependent-startup 1.4.0 depends on supervisor>=3.2.0
+15.41     The user requested (constraint) supervisor==4.1.0
+15.41 
+15.41 To fix this you could try to:
+15.41 1. loosen the range of package versions you've specified
+15.41 2. remove package versions to allow pip attempt to solve the dependency conflict
+15.41 
+15.41 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+------
+Dockerfile:29
+--------------------
+  27 |     
+  28 |     RUN apt-get install -f -y net-tools supervisor rsyslog  python3-pip
+  29 | >>> RUN pip3 install --break-system-packages supervisord-dependent-startup
+  30 |     
+  31 |     COPY ["start.sh", "/usr/bin/"]
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c pip3 install --break-system-packages supervisord-dependent-startup" did not complete successfully: exit code: 1
+[  FAIL LOG END  ] [ target/docker-dash-engine.gz ]
+make: *** [slave.mk:1406: target/docker-dash-engine.gz] Error 1
+make[1]: *** [Makefile.work:751: target/docker-dash-engine.gz] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/docker-dash-engine.gz] Error 2

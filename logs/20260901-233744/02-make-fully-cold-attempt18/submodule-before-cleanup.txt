@@ -1,0 +1,86 @@
+Entering 'platform/alpinevs'
+Entering 'platform/alpinevs/src/libsai-grpc/lemming'
+Entering 'platform/aspeed/sonic-platform-modules-arista'
+Entering 'platform/barefoot/sonic-platform-modules-arista'
+Entering 'platform/broadcom/saibcm-modules'
+Entering 'platform/broadcom/saibcm-modules-dnx'
+Entering 'platform/broadcom/sonic-platform-modules-arista'
+Entering 'platform/broadcom/sonic-platform-modules-nokia'
+Entering 'platform/broadcom/sonic-platform-modules-nokia/mackinac/fmt'
+Entering 'platform/marvell-prestera/mrvl-prestera'
+Entering 'platform/marvell-prestera/sonic-platform-marvell'
+Entering 'platform/marvell-teralynx/mrvl-teralynx'
+Entering 'platform/marvell-teralynx/sonic-platform-marvell-teralynx'
+Entering 'platform/mellanox/hw-management/hw-mgmt'
+Entering 'platform/p4/SAI-P4-BM'
+Entering 'platform/p4/SAI-P4-BM/p4-switch/behavioral-model'
+Entering 'platform/p4/p4-hlir/p4-hlir'
+Entering 'platform/p4/p4-hlir/p4-hlir-v1.1'
+Entering 'platform/p4/p4c-bm/p4c-bm'
+Entering 'platform/vpp'
+Entering 'sonic_rules'
+Entering 'src/dhcpmon'
+Entering 'src/dhcprelay'
+Entering 'src/dhcprelay/gmock_global'
+Entering 'src/linkmgrd'
+Entering 'src/ptf'
+Entering 'src/ptf-py3'
+Entering 'src/redis-dump-load'
+Entering 'src/scapy'
+Entering 'src/sonic-bmp'
+[src/sonic-bmp]
+ M debian/rules
+Entering 'src/sonic-dash-api'
+Entering 'src/sonic-dash-ha'
+[src/sonic-dash-ha]
+ M Cargo.lock
+Entering 'src/sonic-dash-ha/crates/sonic-dash-api-proto/sonic-dash-api'
+Entering 'src/sonic-dbsyncd'
+Entering 'src/sonic-frr/frr'
+[src/sonic-frr/frr]
+?? zebra/dplane_fpm_sonic.c
+Entering 'src/sonic-genl-packet'
+Entering 'src/sonic-gnmi'
+Entering 'src/sonic-host-services'
+[src/sonic-host-services]
+ M Cargo.lock
+ M Cargo.toml
+ M debian/rules
+?? sonic-host-services-data_1.0-1_amd64.buildinfo
+?? sonic-host-services-data_1.0-1_amd64.changes
+?? target/
+Entering 'src/sonic-linux-kernel'
+[src/sonic-linux-kernel]
+?? linux_6.12.41-1_amd64.buildinfo
+?? linux_6.12.41-1_amd64.changes
+Entering 'src/sonic-mgmt-common'
+[src/sonic-mgmt-common]
+ M go.sum
+Entering 'src/sonic-mgmt-framework'
+[src/sonic-mgmt-framework]
+ M go.mod
+ M go.sum
+Entering 'src/sonic-p4rt/sonic-pins'
+Entering 'src/sonic-platform-common'
+Entering 'src/sonic-platform-daemons'
+Entering 'src/sonic-platform-pde'
+Entering 'src/sonic-py-swsssdk'
+[src/sonic-py-swsssdk]
+?? test-results.xml
+Entering 'src/sonic-redfish'
+Entering 'src/sonic-restapi'
+Entering 'src/sonic-sairedis'
+Entering 'src/sonic-sairedis/SAI'
+Entering 'src/sonic-sairedis/SAI/test/ptf'
+Entering 'src/sonic-sairedis/SAI/test/saithrift/ctypesgen'
+Entering 'src/sonic-snmpagent'
+Entering 'src/sonic-stp'
+Entering 'src/sonic-swss'
+Entering 'src/sonic-swss-common'
+[src/sonic-swss-common]
+?? target/
+Entering 'src/sonic-sysmgr/gnoi'
+Entering 'src/sonic-utilities'
+Entering 'src/sonic-ztp'
+Entering 'src/supervisor'
+Entering 'src/wpasupplicant/sonic-wpa-supplicant'

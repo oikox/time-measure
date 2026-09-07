@@ -1,0 +1,2 @@
+target/sonic-vs.bin__vs__rfs.squashfs: Squashfs filesystem, little endian, version 4.0, zlib compressed, 1557424261 bytes, 36614 inodes, blocksize: 131072 bytes, created: Sat Sep  5 23:57:02 2026
+8964b4a0dba98a814c92b144800d492818e0397b32bbf1170b9031f3d92ab29e  target/sonic-vs.bin__vs__rfs.squashfs

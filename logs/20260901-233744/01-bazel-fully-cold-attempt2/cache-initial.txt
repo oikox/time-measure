@@ -1,0 +1,9 @@
+.measure/20260901-233744/bazel-fully-cold-attempt2/output-base:
+total 8
+drwxr-xr-x 2 qiuying.xzc docker 4096 Sep  1 23:45 .
+drwxr-xr-x 5 qiuying.xzc docker 4096 Sep  1 23:45 ..
+
+.measure/20260901-233744/bazel-fully-cold-attempt2/repository-cache:
+total 8
+drwxr-xr-x 2 qiuying.xzc docker 4096 Sep  1 23:45 .
+drwxr-xr-x 5 qiuying.xzc docker 4096 Sep  1 23:45 ..

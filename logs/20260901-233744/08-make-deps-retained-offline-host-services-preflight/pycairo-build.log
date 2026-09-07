@@ -1,0 +1,15 @@
+Looking in links: /pip-wheelhouse
+Processing /pip-wheelhouse/pycairo-1.26.1.tar.gz
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: pycairo
+  Building wheel for pycairo (pyproject.toml): started
+  Building wheel for pycairo (pyproject.toml): finished with status 'done'
+  Created wheel for pycairo: filename=pycairo-1.26.1-cp313-cp313-linux_x86_64.whl size=332005 sha256=6925b0fcbd9c0518856c019f16695d9f7afa1c68150eca521af656dbf351d843
+  Stored in directory: /root/.cache/pip/wheels/80/45/05/f82a376e189c8f04094473269f79bc89eae64c578cbf20c797
+Successfully built pycairo
+6925b0fcbd9c0518856c019f16695d9f7afa1c68150eca521af656dbf351d843  /tmp/pycairo-wheel/pycairo-1.26.1-cp313-cp313-linux_x86_64.whl

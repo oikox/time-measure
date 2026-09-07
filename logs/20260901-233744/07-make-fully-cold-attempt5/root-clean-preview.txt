@@ -1,0 +1,11 @@
+Would remove fsroot.docker.trixie/
+Would remove sonic-slave-trixie/Dockerfile
+Would remove sonic-slave-trixie/Dockerfile.user
+Would remove sonic-slave-trixie/apt-retries-count
+Would remove sonic-slave-trixie/buildinfo/
+Would remove sonic-slave-trixie/files/
+Would remove sonic-slave-trixie/sources.list.amd64
+Would remove sonic-slave-trixie/vcache/
+Would remove src/sonic-build-hooks/buildinfo/
+Would remove src/sonic-build-hooks/tmp/
+Would remove target/

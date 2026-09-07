@@ -1,0 +1,4 @@
+path: /data/sonic/sonic-dzf-time-measure/target/sonic-vs.bin
+size_bytes: 2565971951
+/data/sonic/sonic-dzf-time-measure/target/sonic-vs.bin: POSIX shell script executable (binary data)
+00a2b718aeeb04950e795ccfe8e2a691b18a8f02b59fc91c7c2221d360c31dd2  /data/sonic/sonic-dzf-time-measure/target/sonic-vs.bin

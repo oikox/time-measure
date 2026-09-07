@@ -1,0 +1,13 @@
+http_proxy=http://127.0.0.1:9
+https_proxy=http://127.0.0.1:9
+HTTP_PROXY=http://127.0.0.1:9
+HTTPS_PROXY=http://127.0.0.1:9
+ALL_PROXY=http://127.0.0.1:9
+no_proxy=localhost,127.0.0.1,0.0.0.0
+NO_PROXY=localhost,127.0.0.1,0.0.0.0
+GOPROXY=off
+CARGO_NET_OFFLINE=true
+npm_config_offline=true
+PIP_NO_INDEX=1
+GIT_TERMINAL_PROMPT=0
+GIT_SSH_COMMAND=false

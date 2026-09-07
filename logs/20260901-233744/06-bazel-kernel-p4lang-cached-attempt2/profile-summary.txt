@@ -1,0 +1,29 @@
+
+=== PHASE SUMMARY INFORMATION ===
+
+Total launch phase time                              1.158 s    0.13%
+Total init phase time                                1.751 s    0.20%
+Total target pattern evaluation phase time           0.317 s    0.04%
+Total interleaved loading, analysis and execution phase time  868.403 s   99.63%
+Total finish phase time                              0.035 s    0.00%
+---------------------------------------------------------------------
+Total run time                                     871.665 s  100.00%
+
+Critical path (642.087 s):
+       Time Percentage   Description
+  141.814 s   22.09%   action 'Unpack external/rules_distroless++apt+trixie_libboost1.83-dev-amd64_1.83.0-4.2/usr/include/boost/container/detail/alloc_lib.h'
+  114.227 s   17.79%   action 'Generating SWIG bindings for @@sonic-swss-common+// swsscommon_wrap_gen'
+  332.738 s   51.82%   action 'Compiling external/sonic-swss-common+/pyext/py3/swsscommon_wrap.cpp'
+    59.0 ms    0.01%   action 'Linking external/sonic-swss-common+/lib_swsscommon.pic.a'
+    1.175 s    0.18%   action 'Linking external/sonic-swss-common+/_swsscommon.so.0.0.0'
+     179 ms    0.03%   action 'Stripping binaries for python3-swsscommon_1.0.0.deb_stripped'
+    19.4 ms    0.00%   action 'Generating md5sums for stripped python3-swsscommon_1.0.0.deb_md5sums'
+    81.3 ms    0.01%   action 'Creating control.tar.gz for python3-swsscommon'
+    11.0 ms    0.00%   action 'Action external/sonic-swss-common+/python3-swsscommon_1.0.0.deb_statusd.tar'
+     133 ms    0.02%   action 'Flattening //dockers/docker-config-engine-trixie sonic_pkgs'
+    27.5 ms    0.00%   action 'OCI Descriptor dockers/docker-config-engine-trixie/sonic_pkgs.tar'
+     317 ms    0.05%   action 'OCI Image //dockers/docker-config-engine-trixie docker-config-engine-trixie'
+    1.838 s    0.29%   action 'OCI Image //platform/vs/docker-gbsyncd-vs docker-gbsyncd-vs'
+   42.038 s    6.55%   action 'Building overlay2 store platform/vs/dockerfs.tar.gz'
+    2.680 s    0.42%   action 'Building installer payload platform/vs/fs.zip'
+    4.749 s    0.74%   action 'Building ONIE self-extracting installer platform/vs/sonic-vs.bin'

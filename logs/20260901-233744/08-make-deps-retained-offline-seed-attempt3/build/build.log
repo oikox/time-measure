@@ -1,0 +1,225 @@
++++ --- Making target/sonic-vs.bin --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/sonic-vs.bin
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://11.161.18.240:3128"
+"HTTPS_PROXY"                     : "http://11.161.18.240:3128"
+"NO_PROXY"                        : ""
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260905.201730"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260905.201730"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ building ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/sonic-host-services-data_1.0-1_all.deb ] 
+[ finished ] [ target/debs/trixie/sonic-host-services-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ] 
+[ building ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ] 
+[ building ] [ target/files/trixie/swss_vars.j2 ] 
+[ finished ] [ target/files/trixie/swss_vars.j2 ] 
+[ building ] [ target/files/trixie/rsyslog_plugin.conf.j2 ] 
+[ finished ] [ target/files/trixie/rsyslog_plugin.conf.j2 ] 
+[ building ] [ target/files/trixie/container ] 
+[ finished ] [ target/files/trixie/container ] 
+[ building ] [ target/files/trixie/readiness_probe.sh ] 
+[ finished ] [ target/files/trixie/readiness_probe.sh ] 
+[ building ] [ target/files/trixie/container_startup.py ] 
+[ finished ] [ target/files/trixie/container_startup.py ] 
+[ building ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/symcrypt-openssl_1.9.4_amd64.deb ] 
+[ finished ] [ target/debs/trixie/symcrypt-openssl_1.9.4_amd64.deb ] 
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ] 
+[ building ] [ target/files/trixie/90-sonic.conf ] 
+[ finished ] [ target/files/trixie/90-sonic.conf ] 
+[ building ] [ target/files/trixie/update_chassisdb_config ] 
+[ finished ] [ target/files/trixie/update_chassisdb_config ] 
+[ building ] [ target/files/trixie/container_checker ] 
+[ finished ] [ target/files/trixie/container_checker ] 
+[ building ] [ target/files/trixie/gnmi.sh ] 
+[ finished ] [ target/files/trixie/gnmi.sh ] 
+[ building ] [ target/files/trixie/k8s_pod_control.sh ] 
+[ finished ] [ target/files/trixie/k8s_pod_control.sh ] 
+[ building ] [ target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb ]
+Build start time: Sat Sep 5 12:20:07 UTC 2026
+[ REASON ] :      target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/lldpd'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Remove any stale files
+rm -rf lldpd-1.0.16
+# download debian LLDPDD
+dget https://packages.trafficmanager.net/public/debian/pool/main/l/lldpd/lldpd_1.0.16-1+deb12u1.dsc
+pushd lldpd-1.0.16
+git init
+git add -f *
+git commit -m "unmodified lldp source"
+# Apply patches
+stg init
+stg import -s ../patch/series
+# Build source and Debian packages
+env "with_netlink_receive_bufsize=2*1024*1024" "with_netlink_max_receive_bufsize=4*1024*1024" dpkg-buildpackage -rfakeroot -b -us -uc -j192 --admindir /sonic/dpkg/tmp.8plyAh5QF7
+popd
+# Move the newly-built .deb packages to the destination directory
+mv lldpd_1.0.16-1+deb12u1_amd64.deb liblldpctl-dev_1.0.16-1+deb12u1_amd64.deb lldpd-dbgsym_1.0.16-1+deb12u1_amd64.deb /sonic/target/debs/trixie/
+dget: retrieving https://packages.trafficmanager.net/public/debian/pool/main/l/lldpd/lldpd_1.0.16-1+deb12u1.dsc
+make[1]: *** [Makefile:19: /sonic/target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb] Error 1
+make[1]: Leaving directory '/sonic/src/lldpd'
+[  FAIL LOG END  ] [ target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb ]
+make: *** [slave.mk:919: target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb] Error 1
+make: *** Waiting for unfinished jobs....
+[ finished ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ finished ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ] 
+make[1]: *** [Makefile.work:751: target/sonic-vs.bin] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/sonic-vs.bin] Error 2

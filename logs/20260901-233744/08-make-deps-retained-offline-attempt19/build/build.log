@@ -1,0 +1,1723 @@
++++ --- Making target/sonic-vs.bin --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/sonic-vs.bin
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.083509"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.083509"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ building ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-host-services-data_1.0-1_all.deb ] 
+[ finished ] [ target/debs/trixie/sonic-host-services-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ] 
+[ building ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/files/trixie/swss_vars.j2 ] 
+[ finished ] [ target/files/trixie/swss_vars.j2 ] 
+[ building ] [ target/files/trixie/rsyslog_plugin.conf.j2 ] 
+[ finished ] [ target/files/trixie/rsyslog_plugin.conf.j2 ] 
+[ building ] [ target/files/trixie/container ] 
+[ finished ] [ target/files/trixie/container ] 
+[ building ] [ target/files/trixie/readiness_probe.sh ] 
+[ finished ] [ target/files/trixie/readiness_probe.sh ] 
+[ building ] [ target/files/trixie/container_startup.py ] 
+[ finished ] [ target/files/trixie/container_startup.py ] 
+[ building ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libssl3t64_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libssl3t64_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libssl-dev_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libssl-dev_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/openssl_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/openssl_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libk5crypto3_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libk5crypto3_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libkrb5support0_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libkrb5support0_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libkrb5-3_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libkrb5-3_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libgssapi-krb5-2_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libgssapi-krb5-2_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ] 
+[ building ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ] 
+[ building ] [ target/files/trixie/90-sonic.conf ] 
+[ finished ] [ target/files/trixie/90-sonic.conf ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ] 
+[ building ] [ target/files/trixie/update_chassisdb_config ] 
+[ finished ] [ target/files/trixie/update_chassisdb_config ] 
+[ building ] [ target/files/trixie/container_checker ] 
+[ finished ] [ target/files/trixie/container_checker ] 
+[ building ] [ target/files/trixie/gnmi.sh ] 
+[ finished ] [ target/files/trixie/gnmi.sh ] 
+[ building ] [ target/files/trixie/k8s_pod_control.sh ] 
+[ finished ] [ target/files/trixie/k8s_pod_control.sh ] 
+[ building ] [ target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ] 
+[ building ] [ target/files/trixie/arp_update ] 
+[ finished ] [ target/files/trixie/arp_update ] 
+[ building ] [ target/files/trixie/arp_update_vars.j2 ] 
+[ finished ] [ target/files/trixie/arp_update_vars.j2 ] 
+[ building ] [ target/python-wheels/trixie/scapy-2.6.1.dev0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/scapy-2.6.1.dev0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/lm-sensors_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_pddf_common-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/lm-sensors_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/files/trixie/restapi.sh ] 
+[ finished ] [ target/files/trixie/restapi.sh ] 
+[ building ] [ target/debs/trixie/hsflowd_2.0.51-26_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_pddf_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/sflowtool_5.04_amd64.deb ] 
+[ finished ] [ target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb ] 
+[ building ] [ target/debs/trixie/psample_1.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ] 
+[ building ] [ target/docker-dash-engine.gz ] 
+[ finished ] [ target/debs/trixie/sflowtool_5.04_amd64.deb ] 
+[ building ] [ target/debs/trixie/isc-dhcp-relay_4.4.3-P1-2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/psample_1.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/rasdaemon_0.6.8-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ building ] [ target/files/trixie/remote_ctr.config.json ] 
+[ finished ] [ target/files/trixie/remote_ctr.config.json ] 
+[ building ] [ target/files/trixie/ctrmgrd.service ] 
+[ finished ] [ target/files/trixie/ctrmgrd.service ] 
+[ building ] [ target/debs/trixie/libpam-tacplus_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libpam-tacplus_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/hsflowd_2.0.51-26_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl-install ] 
+[ building ] [ target/docker-base-trixie.gz ] 
+[ building ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsensors5_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsensors5_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/fancontrol_3.6.0-7.1_all.deb ] 
+[ finished ] [ target/debs/trixie/fancontrol_3.6.0-7.1_all.deb ] 
+[ building ] [ target/debs/trixie/sensord_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sensord_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnss-tacplus_1.0.4-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/rasdaemon_0.6.8-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/bash-tacplus_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/audisp-tacplus_1.0.2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnss-tacplus_1.0.4-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/frr_10.5.4-sonic-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/bash-tacplus_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/openssh-server_10.0p1-7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/audisp-tacplus_1.0.2_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb ] 
+[ finished ] [ target/debs/trixie/frr_10.5.4-sonic-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/frr-snmp_10.5.4-sonic-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/frr-snmp_10.5.4-sonic-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb-install ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb-install ] 
+[ building ] [ target/debs/trixie/linux-image-6.12.41+deb13-sonic-amd64-unsigned_6.12.41-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/linux-image-6.12.41+deb13-sonic-amd64-unsigned_6.12.41-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb ] 
+[ finished ] [ target/docker-dash-engine.gz ] 
+[ building ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-framework_1.0-01_amd64.deb ] 
+[ finished ] [ target/debs/trixie/openssh-server_10.0p1-7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/docker-base-trixie.gz ] 
+[ building ] [ target/docker-base-trixie.gz-load ] 
+[ finished ] [ target/docker-base-trixie.gz-load ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-framework_1.0-01_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-db-cli_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-db-cli_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-eventd_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-ctrmgrd-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-host-services-rs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/syslog-counter_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-supervisord-utilities-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-eventd_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-supervisord-utilities-rs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/dash-ha_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/syslog-counter_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/stp_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-host-services-rs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-gnmi_0.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-linkmgrd_1.0.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/isc-dhcp-relay_4.4.3-P1-2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/stp_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-ctrmgrd-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-linkmgrd_1.0.0-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/sysmgr_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcpmon_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-dhcpmon_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-gnmi_0.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcp4relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcp6relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/wpasupplicant_2.9.0-14_amd64.deb ] 
+[ building ] [ target/sonic-vs.bin__vs__rfs.squashfs ] 
+[ building ] [ target/debs/trixie/sonic-rsyslog-plugin_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-rsyslog-plugin_1.0.0-0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/stp_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/stp_1.0.0_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl ] 
+/sonic/src/sonic-dash-ha /sonic
+Removing patch ../sonic-dash-ha.patch/0001-build-use-relative-path-when-building-cargo-dependen.patch
+Restoring Cargo.toml
+
+No patches applied
+/sonic
+[ finished ] [ target/debs/trixie/dash-ha_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/wpasupplicant_2.9.0-14_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_containercfgd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/sonic-dhcp6relay_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_containercfgd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_supervisord_utilities-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_d-2.0.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_ledd-1.1-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_pcied-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/sonic-dhcp4relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_stormond-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_supervisord_utilities-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_dhcp_utilities-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_d-2.0.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_ctrmgrd-1.0.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ledd-1.1-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/system_health-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_pcied-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_stormond-1.0-py3-none-any.whl ] 
+[ building ] [ target/docker-config-engine-trixie.gz ] 
+[ finished ] [ target/debs/trixie/sysmgr_1.0.0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_bgpcfgd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_frr_mgmt_framework-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_dhcp_utilities-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ctrmgrd-1.0.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/system_health-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_psud-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_syseepromd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl ] 
+[ FAIL LOG START ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl ]
+Build start time: Sun Sep 6 00:45:26 UTC 2026
+[ REASON ] :      target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl does not exist   NON-EXISTENT PREREQUISITES: target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+/sonic/src/sonic-utilities /sonic
+Defaulting to user installation because normal site-packages is not writeable
+Looking in links: /pip-wheelhouse
+Processing /sonic/src/sonic-utilities
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: bcrypt>=3.2.2 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (4.2.0)
+Requirement already satisfied: click<8.2,>=8.0 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (8.1.8)
+Requirement already satisfied: cryptography>=3.3.2 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (43.0.0)
+Requirement already satisfied: urllib3>=2 in /usr/lib/python3/dist-packages (from sonic-utilities==1.2) (2.3.0)
+Processing /pip-wheelhouse/click_log-0.4.0-py2.py3-none-any.whl (from sonic-utilities==1.2)
+Requirement already satisfied: docker>=4.4.4 in /var/qiuying.xzc/.local/lib/python3.13/site-packages (from sonic-utilities==1.2) (7.1.0)
+INFO: pip is looking at multiple versions of sonic-utilities to determine which version is compatible with other requirements. This could take a while.
+ERROR: Cannot install sonic-utilities==1.2 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    sonic-utilities 1.2 depends on docker-image-py==0.1.13
+    The user requested (constraint) docker-image-py==0.1.13
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+[  FAIL LOG END  ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl ]
+make: *** [slave.mk:1164: target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl] Error 1
+make: *** Waiting for unfinished jobs....
+[ finished ] [ target/python-wheels/trixie/sonic_psud-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_syseepromd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_bgpcfgd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_frr_mgmt_framework-1.0-py3-none-any.whl ] 
+[ finished ] [ target/sonic-vs.bin__vs__rfs.squashfs ] 
+[ finished ] [ target/docker-config-engine-trixie.gz ] 
+[ FAIL LOG START ] [ target/docker-config-engine-trixie.gz ]
+Build start time: Sun Sep 6 00:45:07 UTC 2026
+[ REASON ] :      target/docker-config-engine-trixie.gz does not exist   NON-EXISTENT PREREQUISITES: docker-start target/docker-base-trixie.gz-load 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+cat: 'files/build/versions/dockers/docker-config-engine-trixie/versions-*-trixie-amd64': No such file or directory
+Client: Docker Engine - Community
+ Version:    28.5.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.26.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.39.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 528
+ Server Version: 28.5.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: b98a3aace656320842a23f4a392a33f46af97866
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 7.0.0-22-generic
+ Operating System: Debian GNU/Linux 13 (trixie)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 192
+ Total Memory: 743GiB
+ Name: 7a523e11fcd7
+ ID: 9050de27-efa9-406a-855d-9324d28b5135
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http://127.0.0.1:9
+ HTTPS Proxy: http://127.0.0.1:9
+ No Proxy: localhost,127.0.0.1,0.0.0.0
+ Experimental: true
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 4.07kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/docker-base-trixie-sonic:latest
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [base  1/18] FROM docker.io/library/docker-base-trixie-sonic:latest
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 158.24MB 0.6s done
+#5 DONE 0.6s
+
+#6 [base  2/18] COPY [buildinfo, /usr/local/share/buildinfo]
+#6 DONE 0.6s
+
+#7 [base  3/18] COPY vcache/ /sonic/target/vcache/docker-config-engine-trixie
+#7 DONE 0.3s
+
+#8 [base  4/18] RUN dpkg -i /usr/local/share/buildinfo/sonic-build-hooks_1.0_all.deb
+#8 0.143 (Reading database ... 11487 files and directories currently installed.)
+#8 0.144 Preparing to unpack .../sonic-build-hooks_1.0_all.deb ...
+#8 0.147 Unpacking sonic-build-hooks (1.0) over (1.0) ...
+#8 0.172 Setting up sonic-build-hooks (1.0) ...
+#8 DONE 0.2s
+
+#9 [base  5/18] RUN pre_run_buildinfo docker-config-engine-trixie
+#9 2.768 ./
+#9 2.768 ./apt-lists/
+#9 2.768 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_main_source_Sources.lz4
+#9 2.768 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_non-free-firmware_source_Sources.lz4
+#9 2.768 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_contrib_source_Sources.lz4
+#9 2.769 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_non-free-firmware_binary-amd64_Packages.lz4
+#9 2.769 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_main_source_Sources.lz4
+#9 2.977 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_main_binary-amd64_Packages.lz4
+#9 2.982 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_non-free-firmware_source_Sources.lz4
+#9 2.982 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_InRelease
+#9 2.982 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_main_source_Sources.lz4
+#9 2.987 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_main_binary-amd64_Packages.lz4
+#9 3.180 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_InRelease
+#9 3.180 ./apt-lists/auxfiles/
+#9 3.180 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_non-free-firmware_binary-amd64_Packages.lz4
+#9 3.180 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_main_binary-amd64_Packages.lz4
+#9 3.187 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_contrib_binary-amd64_Packages.lz4
+#9 3.187 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_InRelease
+#9 3.187 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_non-free-firmware_binary-amd64_Packages.lz4
+#9 3.188 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_contrib_binary-amd64_Packages.lz4
+#9 3.188 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_contrib_binary-amd64_Packages.lz4
+#9 3.189 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_contrib_source_Sources.lz4
+#9 3.189 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_main_binary-amd64_Packages.lz4
+#9 3.189 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_InRelease
+#9 3.189 ./pip/
+#9 3.189 ./pip/http-v2/
+#9 3.189 ./pip/http-v2/b/
+#9 3.189 ./pip/http-v2/b/f/
+#9 3.189 ./pip/http-v2/b/f/2/
+#9 3.189 ./pip/http-v2/b/f/2/8/
+#9 3.189 ./pip/http-v2/b/f/2/8/a/
+#9 3.189 ./pip/http-v2/b/f/2/8/a/bf28a8a2ae6432f2ebac7c6f2455fd35d4c0a5e9fc0abbb7a092fc5f
+#9 3.189 ./pip/http-v2/b/f/2/8/a/bf28a8a2ae6432f2ebac7c6f2455fd35d4c0a5e9fc0abbb7a092fc5f.body
+#9 3.189 ./pip/http-v2/b/f/c/
+#9 3.189 ./pip/http-v2/b/f/c/f/
+#9 3.189 ./pip/http-v2/b/f/c/f/e/
+#9 3.189 ./pip/http-v2/b/f/c/f/e/bfcfeacfaea39c427d6e71b1fcbdf9ce4b91dff426b7d4c85d92528c
+#9 3.189 ./pip/http-v2/b/f/c/f/e/bfcfeacfaea39c427d6e71b1fcbdf9ce4b91dff426b7d4c85d92528c.body
+#9 3.189 ./pip/http-v2/e/
+#9 3.189 ./pip/http-v2/e/b/
+#9 3.189 ./pip/http-v2/e/b/e/
+#9 3.189 ./pip/http-v2/e/b/e/5/
+#9 3.189 ./pip/http-v2/e/b/e/5/7/
+#9 3.189 ./pip/http-v2/e/b/e/5/7/ebe571408a6ccf0ae8bdaa4ad5534546620cb3d5dfc84b42ce83c3f8
+#9 3.189 ./pip/http-v2/e/b/e/5/7/ebe571408a6ccf0ae8bdaa4ad5534546620cb3d5dfc84b42ce83c3f8.body
+#9 3.189 ./pip/http-v2/e/b/c/
+#9 3.189 ./pip/http-v2/e/b/c/e/
+#9 3.189 ./pip/http-v2/e/b/c/e/3/
+#9 3.189 ./pip/http-v2/e/b/c/e/3/ebce3019c369b1b594f02880340a76acd268ebe1099eb20054635695
+#9 3.189 ./pip/http-v2/e/b/c/e/3/ebce3019c369b1b594f02880340a76acd268ebe1099eb20054635695.body
+#9 3.189 ./pip/http-v2/e/2/
+#9 3.189 ./pip/http-v2/e/2/6/
+#9 3.189 ./pip/http-v2/e/2/6/0/
+#9 3.189 ./pip/http-v2/e/2/6/0/1/
+#9 3.189 ./pip/http-v2/e/2/6/0/1/e260174921fc11064a6d933cf008d0b44dbe3cb589aaa6d387790f23
+#9 3.189 ./pip/http-v2/e/2/6/0/1/e260174921fc11064a6d933cf008d0b44dbe3cb589aaa6d387790f23.body
+#9 3.189 ./pip/http-v2/e/1/
+#9 3.190 ./pip/http-v2/e/1/5/
+#9 3.190 ./pip/http-v2/e/1/5/f/
+#9 3.190 ./pip/http-v2/e/1/5/f/a/
+#9 3.190 ./pip/http-v2/e/1/5/f/a/e15fa87e3c11b97cd04f034569d038493687b9e48b97c820667c39b2
+#9 3.190 ./pip/http-v2/e/1/5/f/a/e15fa87e3c11b97cd04f034569d038493687b9e48b97c820667c39b2.body
+#9 3.190 ./pip/http-v2/e/1/a/
+#9 3.190 ./pip/http-v2/e/1/a/d/
+#9 3.190 ./pip/http-v2/e/1/a/d/4/
+#9 3.190 ./pip/http-v2/e/1/a/d/4/e1ad40135ce702fbafdd1646f6bcb7f750c893652df2e392ed976b04
+#9 3.190 ./pip/http-v2/e/1/a/d/4/e1ad40135ce702fbafdd1646f6bcb7f750c893652df2e392ed976b04.body
+#9 3.190 ./pip/http-v2/e/d/
+#9 3.190 ./pip/http-v2/e/d/7/
+#9 3.190 ./pip/http-v2/e/d/7/e/
+#9 3.190 ./pip/http-v2/e/d/7/e/6/
+#9 3.190 ./pip/http-v2/e/d/7/e/6/ed7e6ec4e9af525dc23c201efa9352a0c58c33181168ca548b2fa5d0.body
+#9 3.190 ./pip/http-v2/e/d/7/e/6/ed7e6ec4e9af525dc23c201efa9352a0c58c33181168ca548b2fa5d0
+#9 3.190 ./pip/http-v2/3/
+#9 3.190 ./pip/http-v2/3/4/
+#9 3.190 ./pip/http-v2/3/4/3/
+#9 3.190 ./pip/http-v2/3/4/3/f/
+#9 3.190 ./pip/http-v2/3/4/3/f/3/
+#9 3.190 ./pip/http-v2/3/4/3/f/3/343f389d69e84593172a60fda76bae2bfc6bf64823fd50dbf01ed843
+#9 3.190 ./pip/http-v2/3/4/3/f/3/343f389d69e84593172a60fda76bae2bfc6bf64823fd50dbf01ed843.body
+#9 3.190 ./pip/http-v2/3/4/5/
+#9 3.190 ./pip/http-v2/3/4/5/7/
+#9 3.190 ./pip/http-v2/3/4/5/7/c/
+#9 3.190 ./pip/http-v2/3/4/5/7/c/3457ceeb165a10e21eb7a09c6caeb600430118fc38a3a3f373a2b189
+#9 3.190 ./pip/http-v2/3/4/5/7/c/3457ceeb165a10e21eb7a09c6caeb600430118fc38a3a3f373a2b189.body
+#9 3.190 ./pip/http-v2/3/c/
+#9 3.190 ./pip/http-v2/3/c/7/
+#9 3.190 ./pip/http-v2/3/c/7/8/
+#9 3.190 ./pip/http-v2/3/c/7/8/1/
+#9 3.190 ./pip/http-v2/3/c/7/8/1/3c781c3b73b09ddd36925d78cf82a2d09feb397935d9a4add65629c8.body
+#9 3.190 ./pip/http-v2/3/c/7/8/1/3c781c3b73b09ddd36925d78cf82a2d09feb397935d9a4add65629c8
+#9 3.190 ./pip/http-v2/3/c/0/
+#9 3.190 ./pip/http-v2/3/c/0/8/
+#9 3.190 ./pip/http-v2/3/c/0/8/9/
+#9 3.190 ./pip/http-v2/3/c/0/8/9/3c089ac24e7fff08c1b0a591a60afba8de60befc71fa8da4e493276b.body
+#9 3.190 ./pip/http-v2/3/c/0/8/9/3c089ac24e7fff08c1b0a591a60afba8de60befc71fa8da4e493276b
+#9 3.190 ./pip/http-v2/5/
+#9 3.190 ./pip/http-v2/5/d/
+#9 3.190 ./pip/http-v2/5/d/5/
+#9 3.190 ./pip/http-v2/5/d/5/4/
+#9 3.190 ./pip/http-v2/5/d/5/4/5/
+#9 3.190 ./pip/http-v2/5/d/5/4/5/5d545845ac2420c351a2dbcc2608738bc5b0ac7c54cb23b8e4d0974a
+#9 3.190 ./pip/http-v2/5/d/5/4/5/5d545845ac2420c351a2dbcc2608738bc5b0ac7c54cb23b8e4d0974a.body
+#9 3.191 ./pip/http-v2/5/9/
+#9 3.191 ./pip/http-v2/5/9/6/
+#9 3.191 ./pip/http-v2/5/9/6/7/
+#9 3.191 ./pip/http-v2/5/9/6/7/5/
+#9 3.191 ./pip/http-v2/5/9/6/7/5/596758aa4c6b168cf797481bc7a8a088f32f40699f2e9d0b14ba0ee6
+#9 3.191 ./pip/http-v2/5/9/6/7/5/596758aa4c6b168cf797481bc7a8a088f32f40699f2e9d0b14ba0ee6.body
+#9 3.191 ./pip/http-v2/1/
+#9 3.191 ./pip/http-v2/1/2/
+#9 3.191 ./pip/http-v2/1/2/a/
+#9 3.191 ./pip/http-v2/1/2/a/3/
+#9 3.191 ./pip/http-v2/1/2/a/3/1/
+#9 3.191 ./pip/http-v2/1/2/a/3/1/12a314444b2c71e7e95d460d903506dadca0c7a099b94a7f0ce4844a.body
+#9 3.196 ./pip/http-v2/1/2/a/3/1/12a314444b2c71e7e95d460d903506dadca0c7a099b94a7f0ce4844a
+#9 3.196 ./pip/http-v2/1/0/
+#9 3.196 ./pip/http-v2/1/0/e/
+#9 3.196 ./pip/http-v2/1/0/e/9/
+#9 3.196 ./pip/http-v2/1/0/e/9/2/
+#9 3.196 ./pip/http-v2/1/0/e/9/2/10e920455aff9b9abbfbd27e192530e13bfdc790cc01875bba4121a4
+#9 3.196 ./pip/http-v2/1/0/e/9/2/10e920455aff9b9abbfbd27e192530e13bfdc790cc01875bba4121a4.body
+#9 3.196 ./pip/http-v2/1/c/
+#9 3.196 ./pip/http-v2/1/c/5/
+#9 3.196 ./pip/http-v2/1/c/5/3/
+#9 3.196 ./pip/http-v2/1/c/5/3/c/
+#9 3.196 ./pip/http-v2/1/c/5/3/c/1c53c20d66bacf7408ac53181a0cca22d543e6c77dc2c742cca13388.body
+#9 3.196 ./pip/http-v2/1/c/5/3/c/1c53c20d66bacf7408ac53181a0cca22d543e6c77dc2c742cca13388
+#9 3.196 ./pip/http-v2/1/c/c/
+#9 3.196 ./pip/http-v2/1/c/c/4/
+#9 3.196 ./pip/http-v2/1/c/c/4/5/
+#9 3.196 ./pip/http-v2/1/c/c/4/5/1cc455737ed6cac4380f1ca802f9f660a87adbc732ff787e825a9829
+#9 3.196 ./pip/http-v2/1/c/c/4/5/1cc455737ed6cac4380f1ca802f9f660a87adbc732ff787e825a9829.body
+#9 3.196 ./pip/http-v2/1/6/
+#9 3.196 ./pip/http-v2/1/6/f/
+#9 3.196 ./pip/http-v2/1/6/f/6/
+#9 3.196 ./pip/http-v2/1/6/f/6/c/
+#9 3.196 ./pip/http-v2/1/6/f/6/c/16f6c7250aadc1419e2586a45ff8b6eef68f89102c30d1fe3b57d054.body
+#9 3.196 ./pip/http-v2/1/6/f/6/c/16f6c7250aadc1419e2586a45ff8b6eef68f89102c30d1fe3b57d054
+#9 3.196 ./pip/http-v2/4/
+#9 3.196 ./pip/http-v2/4/4/
+#9 3.196 ./pip/http-v2/4/4/b/
+#9 3.197 ./pip/http-v2/4/4/b/4/
+#9 3.197 ./pip/http-v2/4/4/b/4/d/
+#9 3.197 ./pip/http-v2/4/4/b/4/d/44b4d190ee125ba64671590355d9e683a29a2426e2e62d5b41144c36.body
+#9 3.197 ./pip/http-v2/4/4/b/4/d/44b4d190ee125ba64671590355d9e683a29a2426e2e62d5b41144c36
+#9 3.197 ./pip/http-v2/4/d/
+#9 3.197 ./pip/http-v2/4/d/7/
+#9 3.197 ./pip/http-v2/4/d/7/5/
+#9 3.197 ./pip/http-v2/4/d/7/5/e/
+#9 3.197 ./pip/http-v2/4/d/7/5/e/4d75e65dff914facce83de04c93cd89305f0b11d18ddd5b532dd7c93
+#9 3.197 ./pip/http-v2/4/d/7/5/e/4d75e65dff914facce83de04c93cd89305f0b11d18ddd5b532dd7c93.body
+#9 3.197 ./pip/http-v2/4/8/
+#9 3.197 ./pip/http-v2/4/8/0/
+#9 3.197 ./pip/http-v2/4/8/0/d/
+#9 3.197 ./pip/http-v2/4/8/0/d/6/
+#9 3.197 ./pip/http-v2/4/8/0/d/6/480d6f7ef777fd4fe0178a90255bde2c80a7d6807db13d9efb77f8d8.body
+#9 3.200 ./pip/http-v2/4/8/0/d/6/480d6f7ef777fd4fe0178a90255bde2c80a7d6807db13d9efb77f8d8
+#9 3.200 ./pip/http-v2/f/
+#9 3.200 ./pip/http-v2/f/b/
+#9 3.200 ./pip/http-v2/f/b/8/
+#9 3.200 ./pip/http-v2/f/b/8/c/
+#9 3.200 ./pip/http-v2/f/b/8/c/c/
+#9 3.200 ./pip/http-v2/f/b/8/c/c/fb8cc0e7d180a3f3e8f3e2e4b79a80a5316b6f60b074d5c7cf1b0158.body
+#9 3.200 ./pip/http-v2/f/b/8/c/c/fb8cc0e7d180a3f3e8f3e2e4b79a80a5316b6f60b074d5c7cf1b0158
+#9 3.200 ./pip/http-v2/d/
+#9 3.200 ./pip/http-v2/d/5/
+#9 3.200 ./pip/http-v2/d/5/2/
+#9 3.200 ./pip/http-v2/d/5/2/4/
+#9 3.200 ./pip/http-v2/d/5/2/4/c/
+#9 3.200 ./pip/http-v2/d/5/2/4/c/d524cebd3a5eb70443b24156e0b8c633e0762c984be826720ec35a1c
+#9 3.200 ./pip/http-v2/d/5/2/4/c/d524cebd3a5eb70443b24156e0b8c633e0762c984be826720ec35a1c.body
+#9 3.201 ./pip/http-v2/d/9/
+#9 3.201 ./pip/http-v2/d/9/c/
+#9 3.201 ./pip/http-v2/d/9/c/7/
+#9 3.201 ./pip/http-v2/d/9/c/7/e/
+#9 3.201 ./pip/http-v2/d/9/c/7/e/d9c7e14f8d672302ea2ed488c03cec7c8abdf2a99ae27cda4b552f99.body
+#9 3.210 ./pip/http-v2/d/9/c/7/e/d9c7e14f8d672302ea2ed488c03cec7c8abdf2a99ae27cda4b552f99
+#9 3.210 ./pip/http-v2/7/
+#9 3.210 ./pip/http-v2/7/9/
+#9 3.210 ./pip/http-v2/7/9/3/
+#9 3.210 ./pip/http-v2/7/9/3/2/
+#9 3.210 ./pip/http-v2/7/9/3/2/2/
+#9 3.210 ./pip/http-v2/7/9/3/2/2/79322883ec81e3ced280782ca45c9dc436dd8eec78c81b634338bb14.body
+#9 3.210 ./pip/http-v2/7/9/3/2/2/79322883ec81e3ced280782ca45c9dc436dd8eec78c81b634338bb14
+#9 3.210 ./pip/http-v2/0/
+#9 3.211 ./pip/http-v2/0/6/
+#9 3.211 ./pip/http-v2/0/6/0/
+#9 3.211 ./pip/http-v2/0/6/0/d/
+#9 3.211 ./pip/http-v2/0/6/0/d/5/
+#9 3.211 ./pip/http-v2/0/6/0/d/5/060d58842f0dc871b121b8ed4e4924262659da80a19c10979bbcf371
+#9 3.211 ./pip/http-v2/0/6/0/d/5/060d58842f0dc871b121b8ed4e4924262659da80a19c10979bbcf371.body
+#9 3.211 ./pip/http-v2/c/
+#9 3.212 ./pip/http-v2/c/7/
+#9 3.212 ./pip/http-v2/c/7/e/
+#9 3.212 ./pip/http-v2/c/7/e/5/
+#9 3.212 ./pip/http-v2/c/7/e/5/4/
+#9 3.212 ./pip/http-v2/c/7/e/5/4/c7e543c1b06a0eed672478d859516a888756ccd88c7591394a11b88b
+#9 3.212 ./pip/http-v2/c/7/e/5/4/c7e543c1b06a0eed672478d859516a888756ccd88c7591394a11b88b.body
+#9 3.215 ./pip/http-v2/c/0/
+#9 3.215 ./pip/http-v2/c/0/8/
+#9 3.215 ./pip/http-v2/c/0/8/a/
+#9 3.215 ./pip/http-v2/c/0/8/a/6/
+#9 3.215 ./pip/http-v2/c/0/8/a/6/c08a6df1b957468ecc0617cb25c4cbe5d7a75a13d2edfe789c8f8474.body
+#9 3.215 ./pip/http-v2/c/0/8/a/6/c08a6df1b957468ecc0617cb25c4cbe5d7a75a13d2edfe789c8f8474
+#9 3.215 ./pip/http-v2/8/
+#9 3.215 ./pip/http-v2/8/b/
+#9 3.215 ./pip/http-v2/8/b/2/
+#9 3.215 ./pip/http-v2/8/b/2/d/
+#9 3.215 ./pip/http-v2/8/b/2/d/5/
+#9 3.215 ./pip/http-v2/8/b/2/d/5/8b2d5cd96f9bc56ca000ce7495c5c3d37a830faf47a5d9e5b6b4a372
+#9 3.215 ./pip/http-v2/8/b/2/d/5/8b2d5cd96f9bc56ca000ce7495c5c3d37a830faf47a5d9e5b6b4a372.body
+#9 3.215 ./pip/http-v2/8/1/
+#9 3.215 ./pip/http-v2/8/1/3/
+#9 3.215 ./pip/http-v2/8/1/3/c/
+#9 3.216 ./pip/http-v2/8/1/3/c/c/
+#9 3.216 ./pip/http-v2/8/1/3/c/c/813cc7096c25ba43edba14a4ab40832db33af638c43e975795995aec
+#9 3.216 ./pip/http-v2/8/1/3/c/c/813cc7096c25ba43edba14a4ab40832db33af638c43e975795995aec.body
+#9 3.221 ./pip/http-v2/8/9/
+#9 3.221 ./pip/http-v2/8/9/2/
+#9 3.221 ./pip/http-v2/8/9/2/4/
+#9 3.221 ./pip/http-v2/8/9/2/4/c/
+#9 3.221 ./pip/http-v2/8/9/2/4/c/8924c3d1cd569941062011f905a81971db931364147250e16bc6c7e0
+#9 3.221 ./pip/http-v2/8/9/2/4/c/8924c3d1cd569941062011f905a81971db931364147250e16bc6c7e0.body
+#9 3.221 ./pip/http-v2/a/
+#9 3.221 ./pip/http-v2/a/7/
+#9 3.221 ./pip/http-v2/a/7/a/
+#9 3.221 ./pip/http-v2/a/7/a/3/
+#9 3.221 ./pip/http-v2/a/7/a/3/a/
+#9 3.221 ./pip/http-v2/a/7/a/3/a/a7a3a31b570f927ae31d9be11a0612e96eb86b1610660f096985c4eb
+#9 3.221 ./pip/http-v2/a/7/a/3/a/a7a3a31b570f927ae31d9be11a0612e96eb86b1610660f096985c4eb.body
+#9 3.225 ./pip/http-v2/a/c/
+#9 3.225 ./pip/http-v2/a/c/9/
+#9 3.225 ./pip/http-v2/a/c/9/b/
+#9 3.225 ./pip/http-v2/a/c/9/b/f/
+#9 3.225 ./pip/http-v2/a/c/9/b/f/ac9bfae5b8c3eb1d5bd91a145e1ce4373e3a3e0691b390bf8a3b709a.body
+#9 3.225 ./pip/http-v2/a/c/9/b/f/ac9bfae5b8c3eb1d5bd91a145e1ce4373e3a3e0691b390bf8a3b709a
+#9 3.225 ./pip/http-v2/6/
+#9 3.225 ./pip/http-v2/6/b/
+#9 3.225 ./pip/http-v2/6/b/2/
+#9 3.225 ./pip/http-v2/6/b/2/2/
+#9 3.225 ./pip/http-v2/6/b/2/2/e/
+#9 3.225 ./pip/http-v2/6/b/2/2/e/6b22ef655e66995e45017bce9b079f74c4962087b86d81f48240f774
+#9 3.225 ./pip/http-v2/6/b/2/2/e/6b22ef655e66995e45017bce9b079f74c4962087b86d81f48240f774.body
+#9 3.225 ./pip/http-v2/6/b/9/
+#9 3.225 ./pip/http-v2/6/b/9/8/
+#9 3.225 ./pip/http-v2/6/b/9/8/f/
+#9 3.225 ./pip/http-v2/6/b/9/8/f/6b98f776c5f9a73b8e68673f48320a329fa97d96868582b350b08cb3
+#9 3.225 ./pip/http-v2/6/b/9/8/f/6b98f776c5f9a73b8e68673f48320a329fa97d96868582b350b08cb3.body
+#9 3.225 ./pip/http-v2/6/4/
+#9 3.225 ./pip/http-v2/6/4/a/
+#9 3.225 ./pip/http-v2/6/4/a/0/
+#9 3.225 ./pip/http-v2/6/4/a/0/7/
+#9 3.225 ./pip/http-v2/6/4/a/0/7/64a0720fceca9e26c927a5d5e4f4f58ff66b66bf2ee042b74cad6ebe.body
+#9 3.251 ./pip/http-v2/6/4/a/0/7/64a0720fceca9e26c927a5d5e4f4f58ff66b66bf2ee042b74cad6ebe
+#9 3.251 ./pip/wheels/
+#9 3.251 ./pip/wheels/07/
+#9 3.251 ./pip/wheels/07/be/
+#9 3.251 ./pip/wheels/07/be/75/
+#9 3.251 ./pip/wheels/07/be/75/82d0de59d7d6726dcdd22a64edc8ab499ca3e42cd6647747c6/
+#9 3.251 ./pip/wheels/07/be/75/82d0de59d7d6726dcdd22a64edc8ab499ca3e42cd6647747c6/bitarray-2.8.1-cp313-cp313-linux_x86_64.whl
+#9 3.252 ./pip/wheels/07/be/75/82d0de59d7d6726dcdd22a64edc8ab499ca3e42cd6647747c6/origin.json
+#9 3.252 ./pip/wheels/e1/
+#9 3.253 ./pip/wheels/e1/a3/
+#9 3.253 ./pip/wheels/e1/a3/ea/
+#9 3.253 ./pip/wheels/e1/a3/ea/64ac12686f966e48d375bca325568197b64be84648ae369c0b/
+#9 3.253 ./pip/wheels/e1/a3/ea/64ac12686f966e48d375bca325568197b64be84648ae369c0b/origin.json
+#9 3.253 ./pip/wheels/e1/a3/ea/64ac12686f966e48d375bca325568197b64be84648ae369c0b/redis_dump_load-1.1-py3-none-any.whl
+#9 3.253 ./deb/
+#9 3.253 ./deb/zlib1g-dev_1%3a1.3.dfsg+really1.3.1-1+b1_amd64.deb
+#9 3.257 ./deb/libexpat1-dev_2.8.3-1~deb13u1_amd64.deb
+#9 3.258 ./deb/python3-ply_3.11-9_all.deb
+#9 3.258 ./deb/libisl23_0.27-1_amd64.deb
+#9 3.261 ./deb/python3-yaml_6.0.2-1+b2_amd64.deb
+#9 3.262 ./deb/make_4.4.1-2_amd64.deb
+#9 3.264 ./deb/liblzma5_5.8.1-1+deb13u1_amd64.deb
+#9 3.265 ./deb/libcc1-0_14.2.0-19_amd64.deb
+#9 3.266 ./deb/libcrypt-dev_1%3a4.4.38-1_amd64.deb
+#9 3.266 ./deb/cpp_4%3a14.2.0-1_amd64.deb
+#9 3.266 ./deb/libtsan2_14.2.0-19_amd64.deb
+#9 3.277 ./deb/libgomp1_14.2.0-19_amd64.deb
+#9 3.278 ./deb/python3-redis_6.1.0-2_all.deb
+#9 3.279 ./deb/libubsan1_14.2.0-19_amd64.deb
+#9 3.284 ./deb/libgcc-14-dev_14.2.0-19_amd64.deb
+#9 3.296 ./deb/python3.13-dev_3.13.5-2+deb13u4_amd64.deb
+#9 3.298 ./deb/bzip2_1.0.8-6_amd64.deb
+#9 3.299 ./deb/cpp-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb
+#9 3.299 ./deb/python3-cffi_1.17.1-3_all.deb
+#9 3.299 ./deb/patch_2.8-2_amd64.deb
+#9 3.300 ./deb/gcc-14-x86-64-linux-gnu_14.2.0-19_amd64.deb
+#9 3.395 ./deb/liblsan0_14.2.0-19_amd64.deb
+#9 3.401 ./deb/libctf-nobfd0_2.44-3_amd64.deb
+#9 3.401 ./deb/g++-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb
+#9 3.401 ./deb/libbinutils_2.44-3_amd64.deb
+#9 3.404 ./deb/libstdc++-14-dev_14.2.0-19_amd64.deb
+#9 3.416 ./deb/lock
+#9 3.416 ./deb/libquadmath0_14.2.0-19_amd64.deb
+#9 3.416 ./deb/libctf0_2.44-3_amd64.deb
+#9 3.417 ./deb/binutils-common_2.44-3_amd64.deb
+#9 3.428 ./deb/libasan8_14.2.0-19_amd64.deb
+#9 3.440 ./deb/xz-utils_5.8.1-1+deb13u1_amd64.deb
+#9 3.443 ./deb/libpython3.13-dev_3.13.5-2+deb13u4_amd64.deb
+#9 3.467 ./deb/libdpkg-perl_1.22.22_all.deb
+#9 3.470 ./deb/libpython3-dev_3.13.5-1_amd64.deb
+#9 3.470 ./deb/python3-cffi-backend_1.17.1-3_amd64.deb
+#9 3.471 ./deb/python3-pycparser_2.22-2_all.deb
+#9 3.471 ./deb/apt-utils_3.0.3_amd64.deb
+#9 3.473 ./deb/g++-14_14.2.0-19_amd64.deb
+#9 3.473 ./deb/libhiredis1.1.0_1.2.0-6+b3_amd64.deb
+#9 3.473 ./deb/libpython3.13_3.13.5-2+deb13u4_amd64.deb
+#9 3.483 ./deb/libgprofng0_2.44-3_amd64.deb
+#9 3.486 ./deb/dpkg-dev_1.22.22_all.deb
+#9 3.492 ./deb/libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb
+#9 3.494 ./deb/libitm1_14.2.0-19_amd64.deb
+#9 3.494 ./deb/gcc-14_14.2.0-19_amd64.deb
+#9 3.497 ./deb/libc6-dev_2.41-12+deb13u3_amd64.deb
+#9 3.506 ./deb/binutils-x86-64-linux-gnu_2.44-3_amd64.deb
+#9 3.510 ./deb/gcc_4%3a14.2.0-1_amd64.deb
+#9 3.510 ./deb/g++_4%3a14.2.0-1_amd64.deb
+#9 3.510 ./deb/rpcsvc-proto_1.4.3-1_amd64.deb
+#9 3.511 ./deb/libc-dev-bin_2.41-12+deb13u3_amd64.deb
+#9 3.511 ./deb/libyaml-0-2_0.2.5-2_amd64.deb
+#9 3.511 ./deb/python3-dev_3.13.5-1_amd64.deb
+#9 3.511 ./deb/libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb
+#9 3.512 ./deb/binutils_2.44-3_amd64.deb
+#9 3.513 ./deb/libjs-sphinxdoc_8.1.3-5_all.deb
+#9 3.514 ./deb/g++-14-x86-64-linux-gnu_14.2.0-19_amd64.deb
+#9 3.568 ./deb/libmpfr6_4.2.2-1_amd64.deb
+#9 3.571 ./deb/libsframe1_2.44-3_amd64.deb
+#9 3.571 ./deb/partial/
+#9 3.571 ./deb/gcc-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb
+#9 3.571 ./deb/cpp-14-x86-64-linux-gnu_14.2.0-19_amd64.deb
+#9 3.621 ./deb/linux-libc-dev_6.12.107-1_all.deb
+#9 3.634 ./deb/cpp-14_14.2.0-19_amd64.deb
+#9 3.634 ./deb/build-essential_12.12_amd64.deb
+#9 3.634 ./deb/libboost-serialization1.83.0_1.83.0-4.2_amd64.deb
+#9 3.636 ./deb/libhwasan0_14.2.0-19_amd64.deb
+#9 3.642 ./deb/libmpc3_1.3.1-1+b3_amd64.deb
+#9 3.742 restored_deb_count=67
+#9 DONE 4.7s
+
+#10 [base  6/18] RUN apt update         &&     apt install -y                apt-utils                 build-essential           python3-dev               python3-cffi              python3-redis             python3-yaml
+#10 0.234 
+#10 0.234 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#10 0.234 
+#10 0.256 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#10 0.256 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#10 0.256 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#10 0.256 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#10 1.257 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#10 1.257 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#10 1.257 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#10 1.257 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#10 3.257 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#10 3.257 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#10 3.257 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#10 3.257 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#10 7.258 Err:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#10 7.258   Unable to connect to 127.0.0.1:9:
+#10 7.258 Err:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#10 7.258   Unable to connect to 127.0.0.1:9:
+#10 7.258 Err:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#10 7.258   Unable to connect to 127.0.0.1:9:
+#10 7.258 Err:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#10 7.258   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#10 7.258   Unable to connect to 127.0.0.1:9:
+#10 7.263 sending incremental file list
+#10 7.264 ./
+#10 7.264 apt-utils_3.0.3_amd64.deb
+#10 7.265 binutils-common_2.44-3_amd64.deb
+#10 7.268 binutils-x86-64-linux-gnu_2.44-3_amd64.deb
+#10 7.269 binutils_2.44-3_amd64.deb
+#10 7.269 build-essential_12.12_amd64.deb
+#10 7.269 bzip2_1.0.8-6_amd64.deb
+#10 7.270 cpp-14-x86-64-linux-gnu_14.2.0-19_amd64.deb
+#10 7.280 cpp-14_14.2.0-19_amd64.deb
+#10 7.280 cpp-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb
+#10 7.280 cpp_4%3a14.2.0-1_amd64.deb
+#10 7.280 dpkg-dev_1.22.22_all.deb
+#10 7.281 g++-14-x86-64-linux-gnu_14.2.0-19_amd64.deb
+#10 7.293 g++-14_14.2.0-19_amd64.deb
+#10 7.293 g++-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb
+#10 7.293 g++_4%3a14.2.0-1_amd64.deb
+#10 7.293 gcc-14-x86-64-linux-gnu_14.2.0-19_amd64.deb
+#10 7.312 gcc-14_14.2.0-19_amd64.deb
+#10 7.313 gcc-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb
+#10 7.313 gcc_4%3a14.2.0-1_amd64.deb
+#10 7.313 libasan8_14.2.0-19_amd64.deb
+#10 7.316 libbinutils_2.44-3_amd64.deb
+#10 7.316 libboost-serialization1.83.0_1.83.0-4.2_amd64.deb
+#10 7.317 libc-dev-bin_2.41-12+deb13u3_amd64.deb
+#10 7.317 libc6-dev_2.41-12+deb13u3_amd64.deb
+#10 7.319 libcc1-0_14.2.0-19_amd64.deb
+#10 7.319 libcrypt-dev_1%3a4.4.38-1_amd64.deb
+#10 7.319 libctf-nobfd0_2.44-3_amd64.deb
+#10 7.319 libctf0_2.44-3_amd64.deb
+#10 7.319 libdpkg-perl_1.22.22_all.deb
+#10 7.320 libexpat1-dev_2.8.3-1~deb13u1_amd64.deb
+#10 7.320 libgcc-14-dev_14.2.0-19_amd64.deb
+#10 7.323 libgomp1_14.2.0-19_amd64.deb
+#10 7.323 libgprofng0_2.44-3_amd64.deb
+#10 7.324 libhiredis1.1.0_1.2.0-6+b3_amd64.deb
+#10 7.324 libhwasan0_14.2.0-19_amd64.deb
+#10 7.326 libisl23_0.27-1_amd64.deb
+#10 7.327 libitm1_14.2.0-19_amd64.deb
+#10 7.327 libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb
+#10 7.327 libjs-sphinxdoc_8.1.3-5_all.deb
+#10 7.327 libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb
+#10 7.327 liblsan0_14.2.0-19_amd64.deb
+#10 7.329 liblzma5_5.8.1-1+deb13u1_amd64.deb
+#10 7.329 libmpc3_1.3.1-1+b3_amd64.deb
+#10 7.329 libmpfr6_4.2.2-1_amd64.deb
+#10 7.330 libpython3-dev_3.13.5-1_amd64.deb
+#10 7.330 libpython3.13-dev_3.13.5-2+deb13u4_amd64.deb
+#10 7.335 libpython3.13_3.13.5-2+deb13u4_amd64.deb
+#10 7.337 libquadmath0_14.2.0-19_amd64.deb
+#10 7.338 libsframe1_2.44-3_amd64.deb
+#10 7.338 libstdc++-14-dev_14.2.0-19_amd64.deb
+#10 7.340 libtsan2_14.2.0-19_amd64.deb
+#10 7.342 libubsan1_14.2.0-19_amd64.deb
+#10 7.344 libyaml-0-2_0.2.5-2_amd64.deb
+#10 7.344 linux-libc-dev_6.12.107-1_all.deb
+#10 7.347 lock
+#10 7.347 make_4.4.1-2_amd64.deb
+#10 7.347 patch_2.8-2_amd64.deb
+#10 7.347 python3-cffi-backend_1.17.1-3_amd64.deb
+#10 7.347 python3-cffi_1.17.1-3_all.deb
+#10 7.348 python3-dev_3.13.5-1_amd64.deb
+#10 7.348 python3-ply_3.11-9_all.deb
+#10 7.348 python3-pycparser_2.22-2_all.deb
+#10 7.348 python3-redis_6.1.0-2_all.deb
+#10 7.348 python3-yaml_6.0.2-1+b2_amd64.deb
+#10 7.349 python3.13-dev_3.13.5-2+deb13u4_amd64.deb
+#10 7.349 rpcsvc-proto_1.4.3-1_amd64.deb
+#10 7.349 xz-utils_5.8.1-1+deb13u1_amd64.deb
+#10 7.350 zlib1g-dev_1%3a1.3.dfsg+really1.3.1-1+b1_amd64.deb
+#10 7.351 partial/
+#10 7.392 
+#10 7.392 sent 86.18M bytes  received 1.32K bytes  57.45M bytes/sec
+#10 7.392 total size is 86.16M  speedup is 1.00
+#10 7.395 sending incremental file list
+#10 7.396 ./
+#10 7.396 lock
+#10 7.396 partial/
+#10 7.436 
+#10 7.436 sent 1.41K bytes  received 47 bytes  2.91K bytes/sec
+#10 7.436 total size is 45.49M  speedup is 31,304.84
+#10 7.438 Reading package lists...
+#10 7.903 Building dependency tree...
+#10 7.988 Reading state information...
+#10 8.001 15 packages can be upgraded. Run 'apt list --upgradable' to see them.
+#10 8.001 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie/InRelease  Unable to connect to 127.0.0.1:9:
+#10 8.001 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-updates/InRelease  Unable to connect to 127.0.0.1:9:
+#10 8.001 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-backports/InRelease  Unable to connect to 127.0.0.1:9:
+#10 8.001 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/dists/trixie-security/InRelease  Unable to connect to 127.0.0.1:9:
+#10 8.001 Warning: Some index files failed to download. They have been ignored, or old ones used instead.
+#10 8.030 
+#10 8.030 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#10 8.030 
+#10 8.044 Reading package lists...
+#10 8.054 Building dependency tree...
+#10 8.155 Reading state information...
+#10 8.542 Upgrading:
+#10 8.542   liblzma5
+#10 8.542 
+#10 8.543 Installing:
+#10 8.543   apt-utils        python3-cffi  python3-redis
+#10 8.543   build-essential  python3-dev   python3-yaml
+#10 8.543 
+#10 8.544 Installing dependencies:
+#10 8.544   binutils                   libc6-dev         libpython3.13
+#10 8.544   binutils-common            libcc1-0          libpython3.13-dev
+#10 8.544   binutils-x86-64-linux-gnu  libcrypt-dev      libquadmath0
+#10 8.544   bzip2                      libctf-nobfd0     libsframe1
+#10 8.544   cpp                        libctf0           libstdc++-14-dev
+#10 8.544   cpp-14                     libdpkg-perl      libtsan2
+#10 8.544   cpp-14-x86-64-linux-gnu    libexpat1-dev     libubsan1
+#10 8.544   cpp-x86-64-linux-gnu       libgcc-14-dev     libyaml-0-2
+#10 8.544   dpkg-dev                   libgomp1          linux-libc-dev
+#10 8.544   g++                        libgprofng0       make
+#10 8.544   g++-14                     libhwasan0        patch
+#10 8.544   g++-14-x86-64-linux-gnu    libisl23          python3-cffi-backend
+#10 8.544   g++-x86-64-linux-gnu       libitm1           python3-ply
+#10 8.544   gcc                        libjs-jquery      python3-pycparser
+#10 8.544   gcc-14                     libjs-sphinxdoc   python3.13-dev
+#10 8.544   gcc-14-x86-64-linux-gnu    libjs-underscore  rpcsvc-proto
+#10 8.544   gcc-x86-64-linux-gnu       liblsan0          xz-utils
+#10 8.544   libasan8                   libmpc3           zlib1g-dev
+#10 8.544   libbinutils                libmpfr6
+#10 8.544   libc-dev-bin               libpython3-dev
+#10 8.544 
+#10 8.544 Suggested packages:
+#10 8.544   binutils-doc               autoconf              | gosop
+#10 8.544   gprofng-gui                automake              | pgpainless-cli
+#10 8.544   binutils-gold              libtool               | gpg-sq
+#10 8.544   bzip2-doc                  flex                  | gnupg
+#10 8.544   cpp-doc                    bison                 sensible-utils
+#10 8.544   gcc-14-locales             gdb                   git
+#10 8.544   cpp-14-doc                 gcc-doc               bzr
+#10 8.544   debian-keyring             gcc-14-multilib       libstdc++-14-doc
+#10 8.544   debian-tag2upload-keyring  gdb-x86-64-linux-gnu  make-doc
+#10 8.544   g++-multilib               libc-devtools         ed
+#10 8.544   g++-14-multilib            glibc-doc             diffutils-doc
+#10 8.544   gcc-14-doc                 sq                    python-ply-doc
+#10 8.544   gcc-multilib               | sqop                python3-hiredis
+#10 8.544   manpages-dev               | rsop
+#10 8.544 
+#10 8.544 Recommended packages:
+#10 8.544   fakeroot  | gosop           libalgorithm-merge-perl  liblocale-gettext-perl
+#10 8.544   sq        | pgpainless-cli  manpages                 javascript-common
+#10 8.544   | sqop    | gpg-sq          manpages-dev
+#10 8.544   | rsop    | gnupg           libfile-fcntllock-perl
+#10 8.544 
+#10 8.682 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#10 8.714 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#10 8.742 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#10 8.886 Summary:
+#10 8.886   Upgrading: 1, Installing: 64, Removing: 0, Not Upgrading: 14
+#10 8.886   Download size: 0 B / 85.8 MB
+#10 8.886   Space needed: 329 MB / 162 GB available
+#10 8.886 
+#10 8.900 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11487 files and directories currently installed.)
+#10 8.905 Preparing to unpack .../liblzma5_5.8.1-1+deb13u1_amd64.deb ...
+#10 8.910 Unpacking liblzma5:amd64 (5.8.1-1+deb13u1) over (5.8.1-1) ...
+#10 8.935 Setting up liblzma5:amd64 (5.8.1-1+deb13u1) ...
+#10 8.952 Selecting previously unselected package apt-utils.
+#10 8.952 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11487 files and directories currently installed.)
+#10 8.956 Preparing to unpack .../00-apt-utils_3.0.3_amd64.deb ...
+#10 8.957 Unpacking apt-utils (3.0.3) ...
+#10 8.984 Selecting previously unselected package bzip2.
+#10 8.985 Preparing to unpack .../01-bzip2_1.0.8-6_amd64.deb ...
+#10 8.986 Unpacking bzip2 (1.0.8-6) ...
+#10 9.001 Selecting previously unselected package xz-utils.
+#10 9.002 Preparing to unpack .../02-xz-utils_5.8.1-1+deb13u1_amd64.deb ...
+#10 9.003 Unpacking xz-utils (5.8.1-1+deb13u1) ...
+#10 9.036 Selecting previously unselected package libsframe1:amd64.
+#10 9.037 Preparing to unpack .../03-libsframe1_2.44-3_amd64.deb ...
+#10 9.038 Unpacking libsframe1:amd64 (2.44-3) ...
+#10 9.053 Selecting previously unselected package binutils-common:amd64.
+#10 9.053 Preparing to unpack .../04-binutils-common_2.44-3_amd64.deb ...
+#10 9.055 Unpacking binutils-common:amd64 (2.44-3) ...
+#10 9.168 Selecting previously unselected package libbinutils:amd64.
+#10 9.169 Preparing to unpack .../05-libbinutils_2.44-3_amd64.deb ...
+#10 9.170 Unpacking libbinutils:amd64 (2.44-3) ...
+#10 9.207 Selecting previously unselected package libgprofng0:amd64.
+#10 9.208 Preparing to unpack .../06-libgprofng0_2.44-3_amd64.deb ...
+#10 9.209 Unpacking libgprofng0:amd64 (2.44-3) ...
+#10 9.256 Selecting previously unselected package libctf-nobfd0:amd64.
+#10 9.257 Preparing to unpack .../07-libctf-nobfd0_2.44-3_amd64.deb ...
+#10 9.258 Unpacking libctf-nobfd0:amd64 (2.44-3) ...
+#10 9.278 Selecting previously unselected package libctf0:amd64.
+#10 9.279 Preparing to unpack .../08-libctf0_2.44-3_amd64.deb ...
+#10 9.280 Unpacking libctf0:amd64 (2.44-3) ...
+#10 9.297 Selecting previously unselected package binutils-x86-64-linux-gnu.
+#10 9.298 Preparing to unpack .../09-binutils-x86-64-linux-gnu_2.44-3_amd64.deb ...
+#10 9.300 Unpacking binutils-x86-64-linux-gnu (2.44-3) ...
+#10 9.365 Selecting previously unselected package binutils.
+#10 9.366 Preparing to unpack .../10-binutils_2.44-3_amd64.deb ...
+#10 9.368 Unpacking binutils (2.44-3) ...
+#10 9.390 Selecting previously unselected package libc-dev-bin.
+#10 9.391 Preparing to unpack .../11-libc-dev-bin_2.41-12+deb13u3_amd64.deb ...
+#10 9.392 Unpacking libc-dev-bin (2.41-12+deb13u3) ...
+#10 9.407 Selecting previously unselected package linux-libc-dev.
+#10 9.408 Preparing to unpack .../12-linux-libc-dev_6.12.107-1_all.deb ...
+#10 9.409 Unpacking linux-libc-dev (6.12.107-1) ...
+#10 9.535 Selecting previously unselected package libcrypt-dev:amd64.
+#10 9.536 Preparing to unpack .../13-libcrypt-dev_1%3a4.4.38-1_amd64.deb ...
+#10 9.542 Unpacking libcrypt-dev:amd64 (1:4.4.38-1) ...
+#10 9.558 Selecting previously unselected package rpcsvc-proto.
+#10 9.559 Preparing to unpack .../14-rpcsvc-proto_1.4.3-1_amd64.deb ...
+#10 9.560 Unpacking rpcsvc-proto (1.4.3-1) ...
+#10 9.577 Selecting previously unselected package libc6-dev:amd64.
+#10 9.578 Preparing to unpack .../15-libc6-dev_2.41-12+deb13u3_amd64.deb ...
+#10 9.579 Unpacking libc6-dev:amd64 (2.41-12+deb13u3) ...
+#10 9.678 Selecting previously unselected package libisl23:amd64.
+#10 9.679 Preparing to unpack .../16-libisl23_0.27-1_amd64.deb ...
+#10 9.680 Unpacking libisl23:amd64 (0.27-1) ...
+#10 9.722 Selecting previously unselected package libmpfr6:amd64.
+#10 9.723 Preparing to unpack .../17-libmpfr6_4.2.2-1_amd64.deb ...
+#10 9.724 Unpacking libmpfr6:amd64 (4.2.2-1) ...
+#10 9.753 Selecting previously unselected package libmpc3:amd64.
+#10 9.754 Preparing to unpack .../18-libmpc3_1.3.1-1+b3_amd64.deb ...
+#10 9.755 Unpacking libmpc3:amd64 (1.3.1-1+b3) ...
+#10 9.769 Selecting previously unselected package cpp-14-x86-64-linux-gnu.
+#10 9.770 Preparing to unpack .../19-cpp-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+#10 9.771 Unpacking cpp-14-x86-64-linux-gnu (14.2.0-19) ...
+#10 10.13 Selecting previously unselected package cpp-14.
+#10 10.13 Preparing to unpack .../20-cpp-14_14.2.0-19_amd64.deb ...
+#10 10.13 Unpacking cpp-14 (14.2.0-19) ...
+#10 10.14 Selecting previously unselected package cpp-x86-64-linux-gnu.
+#10 10.14 Preparing to unpack .../21-cpp-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+#10 10.14 Unpacking cpp-x86-64-linux-gnu (4:14.2.0-1) ...
+#10 10.16 Selecting previously unselected package cpp.
+#10 10.16 Preparing to unpack .../22-cpp_4%3a14.2.0-1_amd64.deb ...
+#10 10.17 Unpacking cpp (4:14.2.0-1) ...
+#10 10.18 Selecting previously unselected package libcc1-0:amd64.
+#10 10.18 Preparing to unpack .../23-libcc1-0_14.2.0-19_amd64.deb ...
+#10 10.19 Unpacking libcc1-0:amd64 (14.2.0-19) ...
+#10 10.20 Selecting previously unselected package libgomp1:amd64.
+#10 10.20 Preparing to unpack .../24-libgomp1_14.2.0-19_amd64.deb ...
+#10 10.20 Unpacking libgomp1:amd64 (14.2.0-19) ...
+#10 10.22 Selecting previously unselected package libitm1:amd64.
+#10 10.22 Preparing to unpack .../25-libitm1_14.2.0-19_amd64.deb ...
+#10 10.22 Unpacking libitm1:amd64 (14.2.0-19) ...
+#10 10.24 Selecting previously unselected package libasan8:amd64.
+#10 10.24 Preparing to unpack .../26-libasan8_14.2.0-19_amd64.deb ...
+#10 10.24 Unpacking libasan8:amd64 (14.2.0-19) ...
+#10 10.37 Selecting previously unselected package liblsan0:amd64.
+#10 10.37 Preparing to unpack .../27-liblsan0_14.2.0-19_amd64.deb ...
+#10 10.37 Unpacking liblsan0:amd64 (14.2.0-19) ...
+#10 10.44 Selecting previously unselected package libtsan2:amd64.
+#10 10.44 Preparing to unpack .../28-libtsan2_14.2.0-19_amd64.deb ...
+#10 10.44 Unpacking libtsan2:amd64 (14.2.0-19) ...
+#10 10.56 Selecting previously unselected package libubsan1:amd64.
+#10 10.56 Preparing to unpack .../29-libubsan1_14.2.0-19_amd64.deb ...
+#10 10.56 Unpacking libubsan1:amd64 (14.2.0-19) ...
+#10 10.62 Selecting previously unselected package libhwasan0:amd64.
+#10 10.62 Preparing to unpack .../30-libhwasan0_14.2.0-19_amd64.deb ...
+#10 10.62 Unpacking libhwasan0:amd64 (14.2.0-19) ...
+#10 10.69 Selecting previously unselected package libquadmath0:amd64.
+#10 10.69 Preparing to unpack .../31-libquadmath0_14.2.0-19_amd64.deb ...
+#10 10.70 Unpacking libquadmath0:amd64 (14.2.0-19) ...
+#10 10.71 Selecting previously unselected package libgcc-14-dev:amd64.
+#10 10.72 Preparing to unpack .../32-libgcc-14-dev_14.2.0-19_amd64.deb ...
+#10 10.72 Unpacking libgcc-14-dev:amd64 (14.2.0-19) ...
+#10 10.83 Selecting previously unselected package gcc-14-x86-64-linux-gnu.
+#10 10.83 Preparing to unpack .../33-gcc-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+#10 10.83 Unpacking gcc-14-x86-64-linux-gnu (14.2.0-19) ...
+#10 11.25 Selecting previously unselected package gcc-14.
+#10 11.25 Preparing to unpack .../34-gcc-14_14.2.0-19_amd64.deb ...
+#10 11.25 Unpacking gcc-14 (14.2.0-19) ...
+#10 11.27 Selecting previously unselected package gcc-x86-64-linux-gnu.
+#10 11.27 Preparing to unpack .../35-gcc-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+#10 11.28 Unpacking gcc-x86-64-linux-gnu (4:14.2.0-1) ...
+#10 11.29 Selecting previously unselected package gcc.
+#10 11.29 Preparing to unpack .../36-gcc_4%3a14.2.0-1_amd64.deb ...
+#10 11.29 Unpacking gcc (4:14.2.0-1) ...
+#10 11.31 Selecting previously unselected package libstdc++-14-dev:amd64.
+#10 11.31 Preparing to unpack .../37-libstdc++-14-dev_14.2.0-19_amd64.deb ...
+#10 11.31 Unpacking libstdc++-14-dev:amd64 (14.2.0-19) ...
+#10 11.43 Selecting previously unselected package g++-14-x86-64-linux-gnu.
+#10 11.43 Preparing to unpack .../38-g++-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+#10 11.43 Unpacking g++-14-x86-64-linux-gnu (14.2.0-19) ...
+#10 11.80 Selecting previously unselected package g++-14.
+#10 11.80 Preparing to unpack .../39-g++-14_14.2.0-19_amd64.deb ...
+#10 11.80 Unpacking g++-14 (14.2.0-19) ...
+#10 11.82 Selecting previously unselected package g++-x86-64-linux-gnu.
+#10 11.82 Preparing to unpack .../40-g++-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+#10 11.82 Unpacking g++-x86-64-linux-gnu (4:14.2.0-1) ...
+#10 11.83 Selecting previously unselected package g++.
+#10 11.83 Preparing to unpack .../41-g++_4%3a14.2.0-1_amd64.deb ...
+#10 11.83 Unpacking g++ (4:14.2.0-1) ...
+#10 11.85 Selecting previously unselected package make.
+#10 11.85 Preparing to unpack .../42-make_4.4.1-2_amd64.deb ...
+#10 11.85 Unpacking make (4.4.1-2) ...
+#10 11.88 Selecting previously unselected package libdpkg-perl.
+#10 11.88 Preparing to unpack .../43-libdpkg-perl_1.22.22_all.deb ...
+#10 11.88 Unpacking libdpkg-perl (1.22.22) ...
+#10 11.91 Selecting previously unselected package patch.
+#10 11.92 Preparing to unpack .../44-patch_2.8-2_amd64.deb ...
+#10 11.92 Unpacking patch (2.8-2) ...
+#10 11.94 Selecting previously unselected package dpkg-dev.
+#10 11.94 Preparing to unpack .../45-dpkg-dev_1.22.22_all.deb ...
+#10 11.94 Unpacking dpkg-dev (1.22.22) ...
+#10 11.99 Selecting previously unselected package build-essential.
+#10 11.99 Preparing to unpack .../46-build-essential_12.12_amd64.deb ...
+#10 11.99 Unpacking build-essential (12.12) ...
+#10 12.01 Selecting previously unselected package libexpat1-dev:amd64.
+#10 12.01 Preparing to unpack .../47-libexpat1-dev_2.8.3-1~deb13u1_amd64.deb ...
+#10 12.01 Unpacking libexpat1-dev:amd64 (2.8.3-1~deb13u1) ...
+#10 12.04 Selecting previously unselected package libjs-jquery.
+#10 12.04 Preparing to unpack .../48-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+#10 12.04 Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+#10 12.07 Selecting previously unselected package libjs-underscore.
+#10 12.07 Preparing to unpack .../49-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+#10 12.07 Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+#10 12.09 Selecting previously unselected package libjs-sphinxdoc.
+#10 12.09 Preparing to unpack .../50-libjs-sphinxdoc_8.1.3-5_all.deb ...
+#10 12.09 Unpacking libjs-sphinxdoc (8.1.3-5) ...
+#10 12.10 Selecting previously unselected package libpython3.13:amd64.
+#10 12.11 Preparing to unpack .../51-libpython3.13_3.13.5-2+deb13u4_amd64.deb ...
+#10 12.11 Unpacking libpython3.13:amd64 (3.13.5-2+deb13u4) ...
+#10 12.21 Selecting previously unselected package zlib1g-dev:amd64.
+#10 12.21 Preparing to unpack .../52-zlib1g-dev_1%3a1.3.dfsg+really1.3.1-1+b1_amd64.deb ...
+#10 12.21 Unpacking zlib1g-dev:amd64 (1:1.3.dfsg+really1.3.1-1+b1) ...
+#10 12.23 Selecting previously unselected package libpython3.13-dev:amd64.
+#10 12.23 Preparing to unpack .../53-libpython3.13-dev_3.13.5-2+deb13u4_amd64.deb ...
+#10 12.23 Unpacking libpython3.13-dev:amd64 (3.13.5-2+deb13u4) ...
+#10 12.45 Selecting previously unselected package libpython3-dev:amd64.
+#10 12.45 Preparing to unpack .../54-libpython3-dev_3.13.5-1_amd64.deb ...
+#10 12.45 Unpacking libpython3-dev:amd64 (3.13.5-1) ...
+#10 12.47 Selecting previously unselected package libyaml-0-2:amd64.
+#10 12.47 Preparing to unpack .../55-libyaml-0-2_0.2.5-2_amd64.deb ...
+#10 12.47 Unpacking libyaml-0-2:amd64 (0.2.5-2) ...
+#10 12.48 Selecting previously unselected package python3-cffi-backend:amd64.
+#10 12.49 Preparing to unpack .../56-python3-cffi-backend_1.17.1-3_amd64.deb ...
+#10 12.49 Unpacking python3-cffi-backend:amd64 (1.17.1-3) ...
+#10 12.50 Selecting previously unselected package python3-ply.
+#10 12.50 Preparing to unpack .../57-python3-ply_3.11-9_all.deb ...
+#10 12.51 Unpacking python3-ply (3.11-9) ...
+#10 12.52 Selecting previously unselected package python3-pycparser.
+#10 12.52 Preparing to unpack .../58-python3-pycparser_2.22-2_all.deb ...
+#10 12.52 Unpacking python3-pycparser (2.22-2) ...
+#10 12.54 Selecting previously unselected package python3-cffi.
+#10 12.55 Preparing to unpack .../59-python3-cffi_1.17.1-3_all.deb ...
+#10 12.55 Unpacking python3-cffi (1.17.1-3) ...
+#10 12.56 Selecting previously unselected package python3.13-dev.
+#10 12.57 Preparing to unpack .../60-python3.13-dev_3.13.5-2+deb13u4_amd64.deb ...
+#10 12.57 Unpacking python3.13-dev (3.13.5-2+deb13u4) ...
+#10 12.58 Selecting previously unselected package python3-dev.
+#10 12.58 Preparing to unpack .../61-python3-dev_3.13.5-1_amd64.deb ...
+#10 12.59 Unpacking python3-dev (3.13.5-1) ...
+#10 12.60 Selecting previously unselected package python3-redis.
+#10 12.60 Preparing to unpack .../62-python3-redis_6.1.0-2_all.deb ...
+#10 12.60 Unpacking python3-redis (6.1.0-2) ...
+#10 12.63 Selecting previously unselected package python3-yaml.
+#10 12.63 Preparing to unpack .../63-python3-yaml_6.0.2-1+b2_amd64.deb ...
+#10 12.63 Unpacking python3-yaml (6.0.2-1+b2) ...
+#10 12.65 Setting up libpython3.13:amd64 (3.13.5-2+deb13u4) ...
+#10 12.66 Setting up apt-utils (3.0.3) ...
+#10 12.66 Setting up libyaml-0-2:amd64 (0.2.5-2) ...
+#10 12.66 Setting up python3-ply (3.11-9) ...
+#10 12.76 Setting up binutils-common:amd64 (2.44-3) ...
+#10 12.77 Setting up linux-libc-dev (6.12.107-1) ...
+#10 12.77 Setting up libctf-nobfd0:amd64 (2.44-3) ...
+#10 12.78 Setting up python3-yaml (6.0.2-1+b2) ...
+#10 12.87 Setting up libgomp1:amd64 (14.2.0-19) ...
+#10 12.87 Setting up bzip2 (1.0.8-6) ...
+#10 12.88 Setting up libsframe1:amd64 (2.44-3) ...
+#10 12.88 Setting up python3-pycparser (2.22-2) ...
+#10 13.00 Setting up rpcsvc-proto (1.4.3-1) ...
+#10 13.00 Setting up make (4.4.1-2) ...
+#10 13.01 Setting up libmpfr6:amd64 (4.2.2-1) ...
+#10 13.01 Setting up xz-utils (5.8.1-1+deb13u1) ...
+#10 13.02 update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
+#10 13.02 update-alternatives: warning: skip creation of /usr/share/man/man1/lzma.1.gz because associated file /usr/share/man/man1/xz.1.gz (of link group lzma) doesn't exist
+#10 13.02 update-alternatives: warning: skip creation of /usr/share/man/man1/unlzma.1.gz because associated file /usr/share/man/man1/unxz.1.gz (of link group lzma) doesn't exist
+#10 13.02 update-alternatives: warning: skip creation of /usr/share/man/man1/lzcat.1.gz because associated file /usr/share/man/man1/xzcat.1.gz (of link group lzma) doesn't exist
+#10 13.02 update-alternatives: warning: skip creation of /usr/share/man/man1/lzmore.1.gz because associated file /usr/share/man/man1/xzmore.1.gz (of link group lzma) doesn't exist
+#10 13.02 update-alternatives: warning: skip creation of /usr/share/man/man1/lzless.1.gz because associated file /usr/share/man/man1/xzless.1.gz (of link group lzma) doesn't exist
+#10 13.02 update-alternatives: warning: skip creation of /usr/share/man/man1/lzdiff.1.gz because associated file /usr/share/man/man1/xzdiff.1.gz (of link group lzma) doesn't exist
+#10 13.02 update-alternatives: warning: skip creation of /usr/share/man/man1/lzcmp.1.gz because associated file /usr/share/man/man1/xzcmp.1.gz (of link group lzma) doesn't exist
+#10 13.02 update-alternatives: warning: skip creation of /usr/share/man/man1/lzgrep.1.gz because associated file /usr/share/man/man1/xzgrep.1.gz (of link group lzma) doesn't exist
+#10 13.02 update-alternatives: warning: skip creation of /usr/share/man/man1/lzegrep.1.gz because associated file /usr/share/man/man1/xzegrep.1.gz (of link group lzma) doesn't exist
+#10 13.02 update-alternatives: warning: skip creation of /usr/share/man/man1/lzfgrep.1.gz because associated file /usr/share/man/man1/xzfgrep.1.gz (of link group lzma) doesn't exist
+#10 13.02 Setting up libquadmath0:amd64 (14.2.0-19) ...
+#10 13.03 Setting up libmpc3:amd64 (1.3.1-1+b3) ...
+#10 13.03 Setting up patch (2.8-2) ...
+#10 13.03 Setting up python3-redis (6.1.0-2) ...
+#10 13.22 Setting up libdpkg-perl (1.22.22) ...
+#10 13.22 Setting up libubsan1:amd64 (14.2.0-19) ...
+#10 13.23 Setting up libhwasan0:amd64 (14.2.0-19) ...
+#10 13.23 Setting up libcrypt-dev:amd64 (1:4.4.38-1) ...
+#10 13.24 Setting up libasan8:amd64 (14.2.0-19) ...
+#10 13.24 Setting up libtsan2:amd64 (14.2.0-19) ...
+#10 13.25 Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+#10 13.25 Setting up libbinutils:amd64 (2.44-3) ...
+#10 13.26 Setting up libisl23:amd64 (0.27-1) ...
+#10 13.26 Setting up libc-dev-bin (2.41-12+deb13u3) ...
+#10 13.26 Setting up libcc1-0:amd64 (14.2.0-19) ...
+#10 13.27 Setting up liblsan0:amd64 (14.2.0-19) ...
+#10 13.27 Setting up libitm1:amd64 (14.2.0-19) ...
+#10 13.28 Setting up python3-cffi-backend:amd64 (1.17.1-3) ...
+#10 13.28 Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+#10 13.28 Setting up libctf0:amd64 (2.44-3) ...
+#10 13.29 Setting up python3-cffi (1.17.1-3) ...
+#10 13.40 Setting up libgprofng0:amd64 (2.44-3) ...
+#10 13.40 Setting up cpp-14-x86-64-linux-gnu (14.2.0-19) ...
+#10 13.40 Setting up libjs-sphinxdoc (8.1.3-5) ...
+#10 13.41 Setting up cpp-14 (14.2.0-19) ...
+#10 13.41 Setting up libc6-dev:amd64 (2.41-12+deb13u3) ...
+#10 13.41 Setting up libgcc-14-dev:amd64 (14.2.0-19) ...
+#10 13.42 Setting up libstdc++-14-dev:amd64 (14.2.0-19) ...
+#10 13.42 Setting up binutils-x86-64-linux-gnu (2.44-3) ...
+#10 13.43 Setting up cpp-x86-64-linux-gnu (4:14.2.0-1) ...
+#10 13.43 Setting up binutils (2.44-3) ...
+#10 13.43 
+#10 13.43 Configuration file '/etc/gprofng.rc', does not exist on system.
+#10 13.43 Installing new config file as you requested.
+#10 13.43 Setting up dpkg-dev (1.22.22) ...
+#10 13.44 
+#10 13.44 Configuration file '/etc/dpkg/shlibs.default', does not exist on system.
+#10 13.44 Installing new config file as you requested.
+#10 13.44 
+#10 13.44 Configuration file '/etc/dpkg/shlibs.override', does not exist on system.
+#10 13.44 Installing new config file as you requested.
+#10 13.44 Setting up libexpat1-dev:amd64 (2.8.3-1~deb13u1) ...
+#10 13.44 Setting up zlib1g-dev:amd64 (1:1.3.dfsg+really1.3.1-1+b1) ...
+#10 13.45 Setting up cpp (4:14.2.0-1) ...
+#10 13.46 Setting up gcc-14-x86-64-linux-gnu (14.2.0-19) ...
+#10 13.46 Setting up gcc-x86-64-linux-gnu (4:14.2.0-1) ...
+#10 13.46 Setting up gcc-14 (14.2.0-19) ...
+#10 13.47 Setting up libpython3.13-dev:amd64 (3.13.5-2+deb13u4) ...
+#10 13.47 Setting up g++-14-x86-64-linux-gnu (14.2.0-19) ...
+#10 13.48 Setting up g++-x86-64-linux-gnu (4:14.2.0-1) ...
+#10 13.48 Setting up g++-14 (14.2.0-19) ...
+#10 13.48 Setting up libpython3-dev:amd64 (3.13.5-1) ...
+#10 13.49 Setting up python3.13-dev (3.13.5-2+deb13u4) ...
+#10 13.49 Setting up gcc (4:14.2.0-1) ...
+#10 13.50 Setting up python3-dev (3.13.5-1) ...
+#10 13.50 Setting up g++ (4:14.2.0-1) ...
+#10 13.51 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+#10 13.51 Setting up build-essential (12.12) ...
+#10 13.51 Processing triggers for libc-bin (2.41-12+deb13u3) ...
+#10 13.60 sending incremental file list
+#10 13.60 apt-utils_3.0.3_amd64.deb
+#10 13.61 binutils-common_2.44-3_amd64.deb
+#10 13.61 binutils-x86-64-linux-gnu_2.44-3_amd64.deb
+#10 13.61 binutils_2.44-3_amd64.deb
+#10 13.61 build-essential_12.12_amd64.deb
+#10 13.61 bzip2_1.0.8-6_amd64.deb
+#10 13.61 cpp-14-x86-64-linux-gnu_14.2.0-19_amd64.deb
+#10 13.62 cpp-14_14.2.0-19_amd64.deb
+#10 13.62 cpp-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb
+#10 13.62 cpp_4%3a14.2.0-1_amd64.deb
+#10 13.62 dpkg-dev_1.22.22_all.deb
+#10 13.62 g++-14-x86-64-linux-gnu_14.2.0-19_amd64.deb
+#10 13.63 g++-14_14.2.0-19_amd64.deb
+#10 13.64 g++-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb
+#10 13.64 g++_4%3a14.2.0-1_amd64.deb
+#10 13.64 gcc-14-x86-64-linux-gnu_14.2.0-19_amd64.deb
+#10 13.66 gcc-14_14.2.0-19_amd64.deb
+#10 13.67 gcc-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb
+#10 13.67 gcc_4%3a14.2.0-1_amd64.deb
+#10 13.67 libasan8_14.2.0-19_amd64.deb
+#10 13.67 libbinutils_2.44-3_amd64.deb
+#10 13.67 libc-dev-bin_2.41-12+deb13u3_amd64.deb
+#10 13.67 libc6-dev_2.41-12+deb13u3_amd64.deb
+#10 13.68 libcc1-0_14.2.0-19_amd64.deb
+#10 13.68 libcrypt-dev_1%3a4.4.38-1_amd64.deb
+#10 13.68 libctf-nobfd0_2.44-3_amd64.deb
+#10 13.68 libctf0_2.44-3_amd64.deb
+#10 13.68 libdpkg-perl_1.22.22_all.deb
+#10 13.68 libexpat1-dev_2.8.3-1~deb13u1_amd64.deb
+#10 13.68 libgcc-14-dev_14.2.0-19_amd64.deb
+#10 13.68 libgomp1_14.2.0-19_amd64.deb
+#10 13.68 libgprofng0_2.44-3_amd64.deb
+#10 13.68 libhwasan0_14.2.0-19_amd64.deb
+#10 13.68 libisl23_0.27-1_amd64.deb
+#10 13.69 libitm1_14.2.0-19_amd64.deb
+#10 13.69 libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb
+#10 13.69 libjs-sphinxdoc_8.1.3-5_all.deb
+#10 13.69 libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb
+#10 13.69 liblsan0_14.2.0-19_amd64.deb
+#10 13.69 liblzma5_5.8.1-1+deb13u1_amd64.deb
+#10 13.69 libmpc3_1.3.1-1+b3_amd64.deb
+#10 13.69 libmpfr6_4.2.2-1_amd64.deb
+#10 13.69 libpython3-dev_3.13.5-1_amd64.deb
+#10 13.69 libpython3.13-dev_3.13.5-2+deb13u4_amd64.deb
+#10 13.69 libpython3.13_3.13.5-2+deb13u4_amd64.deb
+#10 13.70 libquadmath0_14.2.0-19_amd64.deb
+#10 13.70 libsframe1_2.44-3_amd64.deb
+#10 13.70 libstdc++-14-dev_14.2.0-19_amd64.deb
+#10 13.70 libtsan2_14.2.0-19_amd64.deb
+#10 13.70 libubsan1_14.2.0-19_amd64.deb
+#10 13.71 libyaml-0-2_0.2.5-2_amd64.deb
+#10 13.71 linux-libc-dev_6.12.107-1_all.deb
+#10 13.71 make_4.4.1-2_amd64.deb
+#10 13.71 patch_2.8-2_amd64.deb
+#10 13.72 python3-cffi-backend_1.17.1-3_amd64.deb
+#10 13.72 python3-cffi_1.17.1-3_all.deb
+#10 13.72 python3-dev_3.13.5-1_amd64.deb
+#10 13.72 python3-ply_3.11-9_all.deb
+#10 13.72 python3-pycparser_2.22-2_all.deb
+#10 13.72 python3-redis_6.1.0-2_all.deb
+#10 13.72 python3-yaml_6.0.2-1+b2_amd64.deb
+#10 13.72 python3.13-dev_3.13.5-2+deb13u4_amd64.deb
+#10 13.72 rpcsvc-proto_1.4.3-1_amd64.deb
+#10 13.72 xz-utils_5.8.1-1+deb13u1_amd64.deb
+#10 13.72 zlib1g-dev_1%3a1.3.dfsg+really1.3.1-1+b1_amd64.deb
+#10 13.76 
+#10 13.76 sent 85.79M bytes  received 1.25K bytes  171.59M bytes/sec
+#10 13.76 total size is 86.16M  speedup is 1.00
+#10 DONE 17.2s
+
+#11 [base  7/18] RUN pip3 install pyangbind==0.8.7
+#11 0.507 Looking in links: /sonic/target/vcache/docker-config-engine-trixie/pip-wheelhouse
+#11 0.513 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042de4d70>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/pyangbind/
+#11 1.014 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e34a50>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/pyangbind/
+#11 2.014 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e34b90>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/pyangbind/
+#11 4.015 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e34cd0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/pyangbind/
+#11 8.015 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e34e10>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/pyangbind/
+#11 8.020 Processing /sonic/target/vcache/docker-config-engine-trixie/pip-wheelhouse/pyangbind-0.8.7-py3-none-any.whl
+#11 8.025 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e35450>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/pyang/
+#11 8.525 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e356d0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/pyang/
+#11 9.526 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e35810>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/pyang/
+#11 11.53 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e35950>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/pyang/
+#11 15.53 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e35a90>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/pyang/
+#11 15.53 Processing /sonic/target/vcache/docker-config-engine-trixie/pip-wheelhouse/pyang-2.7.1-py2.py3-none-any.whl (from pyangbind==0.8.7)
+#11 15.53 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e37250>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/lxml/
+#11 16.03 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e37390>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/lxml/
+#11 17.03 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e374d0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/lxml/
+#11 19.03 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e37610>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/lxml/
+#11 23.03 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e37750>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/lxml/
+#11 23.03 Processing /sonic/target/vcache/docker-config-engine-trixie/pip-wheelhouse/lxml-6.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from pyangbind==0.8.7)
+#11 23.04 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042cd4f50>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/regex/
+#11 23.54 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042cd5090>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/regex/
+#11 24.54 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042cd51d0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/regex/
+#11 26.55 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042cd5310>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/regex/
+#11 30.55 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e379d0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/regex/
+#11 30.55 Processing /sonic/target/vcache/docker-config-engine-trixie/pip-wheelhouse/regex-2026.5.9-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from pyangbind==0.8.7)
+#11 30.55 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e36fd0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/enum34/
+#11 31.05 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e37890>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/enum34/
+#11 32.05 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e37750>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/enum34/
+#11 34.05 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e37610>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/enum34/
+#11 38.05 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7cd042e374d0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/enum34/
+#11 38.06 Processing /sonic/target/vcache/docker-config-engine-trixie/pip-wheelhouse/enum34-1.1.10-py3-none-any.whl (from pyangbind==0.8.7)
+#11 38.08 Installing collected packages: enum34, regex, lxml, pyang, pyangbind
+#11 38.44 
+#11 38.44 Successfully installed enum34-1.1.10 lxml-6.1.1 pyang-2.7.1 pyangbind-0.8.7 regex-2026.5.9
+#11 38.44 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#11 DONE 43.6s
+
+#12 [base  8/18] RUN pip3 uninstall -y enum34
+#12 0.342 Found existing installation: enum34 1.1.10
+#12 0.344 Uninstalling enum34-1.1.10:
+#12 0.345   Successfully uninstalled enum34-1.1.10
+#12 0.345 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#12 DONE 0.5s
+
+#13 [base  9/18] COPY         debs//libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb         debs//libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb         debs//libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb         debs//libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb         debs//libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb         debs//libyang3_3.12.2-1_amd64.deb         debs//libswsscommon_1.0.0_amd64.deb         debs//python3-libyang_3.1.0-1_amd64.deb         debs//python3-swsscommon_1.0.0_amd64.deb         debs//sonic-db-cli_1.0.0_amd64.deb         debs//sonic-eventd_1.0.0-0_amd64.deb         debs//sonic-supervisord-utilities-rs_1.0.0_amd64.deb     /debs/
+#13 DONE 0.1s
+
+#14 [base 10/18] RUN dpkg -i     /debs/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb     /debs/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb     /debs/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb     /debs/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb     /debs/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb     /debs/libyang3_3.12.2-1_amd64.deb     /debs/libswsscommon_1.0.0_amd64.deb     /debs/python3-libyang_3.1.0-1_amd64.deb     /debs/python3-swsscommon_1.0.0_amd64.deb     /debs/sonic-db-cli_1.0.0_amd64.deb     /debs/sonic-eventd_1.0.0-0_amd64.deb     /debs/sonic-supervisord-utilities-rs_1.0.0_amd64.deb || apt-get -y install -f --no-remove
+#14 0.128 Selecting previously unselected package libnl-3-200:amd64.
+#14 0.134 (Reading database ... 18108 files and directories currently installed.)
+#14 0.135 Preparing to unpack .../libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ...
+#14 0.137 Unpacking libnl-3-200:amd64 (3.7.0-0.2+b1sonic1) ...
+#14 0.154 Selecting previously unselected package libnl-route-3-200:amd64.
+#14 0.155 Preparing to unpack .../libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb ...
+#14 0.156 Unpacking libnl-route-3-200:amd64 (3.7.0-0.2+b1sonic1) ...
+#14 0.178 Selecting previously unselected package libnl-genl-3-200:amd64.
+#14 0.179 Preparing to unpack .../libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ...
+#14 0.180 Unpacking libnl-genl-3-200:amd64 (3.7.0-0.2+b1sonic1) ...
+#14 0.195 Selecting previously unselected package libnl-nf-3-200:amd64.
+#14 0.196 Preparing to unpack .../libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb ...
+#14 0.197 Unpacking libnl-nf-3-200:amd64 (3.7.0-0.2+b1sonic1) ...
+#14 0.213 Selecting previously unselected package libnl-cli-3-200:amd64.
+#14 0.214 Preparing to unpack .../libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb ...
+#14 0.215 Unpacking libnl-cli-3-200:amd64 (3.7.0-0.2+b1sonic1) ...
+#14 0.234 Selecting previously unselected package libyang3:amd64.
+#14 0.235 Preparing to unpack .../libyang3_3.12.2-1_amd64.deb ...
+#14 0.236 Unpacking libyang3:amd64 (3.12.2-1) ...
+#14 0.269 Selecting previously unselected package libswsscommon.
+#14 0.270 Preparing to unpack .../libswsscommon_1.0.0_amd64.deb ...
+#14 0.271 Unpacking libswsscommon (1.0.0) ...
+#14 0.305 Selecting previously unselected package python3-libyang.
+#14 0.306 Preparing to unpack .../python3-libyang_3.1.0-1_amd64.deb ...
+#14 0.307 Unpacking python3-libyang (3.1.0-1) ...
+#14 0.322 Selecting previously unselected package python3-swsscommon.
+#14 0.323 Preparing to unpack .../python3-swsscommon_1.0.0_amd64.deb ...
+#14 0.325 Unpacking python3-swsscommon (1.0.0) ...
+#14 0.362 Selecting previously unselected package sonic-db-cli.
+#14 0.364 Preparing to unpack .../sonic-db-cli_1.0.0_amd64.deb ...
+#14 0.365 Unpacking sonic-db-cli (1.0.0) ...
+#14 0.379 Selecting previously unselected package sonic-eventd.
+#14 0.380 Preparing to unpack .../sonic-eventd_1.0.0-0_amd64.deb ...
+#14 0.382 Unpacking sonic-eventd (1.0.0-0) ...
+#14 0.401 Selecting previously unselected package sonic-supervisord-utilities-rs.
+#14 0.402 Preparing to unpack .../sonic-supervisord-utilities-rs_1.0.0_amd64.deb ...
+#14 0.403 Unpacking sonic-supervisord-utilities-rs (1.0.0) ...
+#14 0.424 Setting up libnl-3-200:amd64 (3.7.0-0.2+b1sonic1) ...
+#14 0.425 
+#14 0.425 Configuration file '/etc/libnl-3/classid', does not exist on system.
+#14 0.425 Installing new config file as you requested.
+#14 0.426 
+#14 0.426 Configuration file '/etc/libnl-3/pktloc', does not exist on system.
+#14 0.426 Installing new config file as you requested.
+#14 0.429 Setting up libnl-route-3-200:amd64 (3.7.0-0.2+b1sonic1) ...
+#14 0.432 Setting up libnl-genl-3-200:amd64 (3.7.0-0.2+b1sonic1) ...
+#14 0.435 Setting up libnl-nf-3-200:amd64 (3.7.0-0.2+b1sonic1) ...
+#14 0.439 Setting up libnl-cli-3-200:amd64 (3.7.0-0.2+b1sonic1) ...
+#14 0.442 Setting up libyang3:amd64 (3.12.2-1) ...
+#14 0.445 dpkg: dependency problems prevent configuration of libswsscommon:
+#14 0.445  libswsscommon depends on libboost-serialization1.83.0 (>= 1.83.0); however:
+#14 0.445   Package libboost-serialization1.83.0 is not installed.
+#14 0.445  libswsscommon depends on libhiredis1.1.0 (>= 1.2.0); however:
+#14 0.445   Package libhiredis1.1.0 is not installed.
+#14 0.445 
+#14 0.445 dpkg: error processing package libswsscommon (--install):
+#14 0.445  dependency problems - leaving unconfigured
+#14 0.445 Setting up python3-libyang (3.1.0-1) ...
+#14 0.543 dpkg: dependency problems prevent configuration of python3-swsscommon:
+#14 0.543  python3-swsscommon depends on libhiredis1.1.0 (>= 1.2.0); however:
+#14 0.543   Package libhiredis1.1.0 is not installed.
+#14 0.543  python3-swsscommon depends on libswsscommon (>= 1.0.0); however:
+#14 0.543   Package libswsscommon is not configured yet.
+#14 0.543 
+#14 0.543 dpkg: error processing package python3-swsscommon (--install):
+#14 0.543  dependency problems - leaving unconfigured
+#14 0.543 dpkg: dependency problems prevent configuration of sonic-db-cli:
+#14 0.543  sonic-db-cli depends on libswsscommon (>= 1.0.0); however:
+#14 0.543   Package libswsscommon is not configured yet.
+#14 0.543 
+#14 0.543 dpkg: error processing package sonic-db-cli (--install):
+#14 0.543  dependency problems - leaving unconfigured
+#14 0.543 dpkg: dependency problems prevent configuration of sonic-eventd:
+#14 0.543  sonic-eventd depends on libboost-serialization1.83.0 (>= 1.83.0); however:
+#14 0.543   Package libboost-serialization1.83.0 is not installed.
+#14 0.543  sonic-eventd depends on libswsscommon (>= 1.0.0); however:
+#14 0.543   Package libswsscommon is not configured yet.
+#14 0.543 
+#14 0.543 dpkg: error processing package sonic-eventd (--install):
+#14 0.543  dependency problems - leaving unconfigured
+#14 0.543 dpkg: dependency problems prevent configuration of sonic-supervisord-utilities-rs:
+#14 0.543  sonic-supervisord-utilities-rs depends on libswsscommon (>= 1.0.0); however:
+#14 0.543   Package libswsscommon is not configured yet.
+#14 0.543 
+#14 0.543 dpkg: error processing package sonic-supervisord-utilities-rs (--install):
+#14 0.543  dependency problems - leaving unconfigured
+#14 0.543 Processing triggers for libc-bin (2.41-12+deb13u3) ...
+#14 0.558 Errors were encountered while processing:
+#14 0.558  libswsscommon
+#14 0.558  python3-swsscommon
+#14 0.558  sonic-db-cli
+#14 0.558  sonic-eventd
+#14 0.558  sonic-supervisord-utilities-rs
+#14 0.590 Reading package lists...
+#14 1.039 Building dependency tree...
+#14 1.120 Reading state information...
+#14 1.125 Correcting dependencies... Done
+#14 1.298 The following additional packages will be installed:
+#14 1.299   libboost-serialization1.83.0 libhiredis1.1.0
+#14 1.313 The following NEW packages will be installed:
+#14 1.313   libboost-serialization1.83.0 libhiredis1.1.0
+#14 1.435 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#14 1.466 0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+#14 1.466 5 not fully installed or removed.
+#14 1.466 Need to get 0 B/384 kB of archives.
+#14 1.466 After this operation, 2821 kB of additional disk space will be used.
+#14 1.477 Selecting previously unselected package libboost-serialization1.83.0:amd64.
+#14 1.477 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18243 files and directories currently installed.)
+#14 1.483 Preparing to unpack .../libboost-serialization1.83.0_1.83.0-4.2_amd64.deb ...
+#14 1.485 Unpacking libboost-serialization1.83.0:amd64 (1.83.0-4.2) ...
+#14 1.514 Selecting previously unselected package libhiredis1.1.0:amd64.
+#14 1.515 Preparing to unpack .../libhiredis1.1.0_1.2.0-6+b3_amd64.deb ...
+#14 1.516 Unpacking libhiredis1.1.0:amd64 (1.2.0-6+b3) ...
+#14 1.536 Setting up libboost-serialization1.83.0:amd64 (1.83.0-4.2) ...
+#14 1.538 Setting up libhiredis1.1.0:amd64 (1.2.0-6+b3) ...
+#14 1.542 Setting up libswsscommon (1.0.0) ...
+#14 1.543 
+#14 1.543 Configuration file '/var/run/redis/sonic-db/database_config.json', does not exist on system.
+#14 1.543 Installing new config file as you requested.
+#14 1.546 Setting up sonic-db-cli (1.0.0) ...
+#14 1.549 Setting up sonic-supervisord-utilities-rs (1.0.0) ...
+#14 1.553 Setting up python3-swsscommon (1.0.0) ...
+#14 1.557 Setting up sonic-eventd (1.0.0-0) ...
+#14 1.558 
+#14 1.558 Configuration file '/etc/eventd.json', does not exist on system.
+#14 1.558 Installing new config file as you requested.
+#14 1.559 
+#14 1.559 Configuration file '/etc/evprofile/default.json', does not exist on system.
+#14 1.559 Installing new config file as you requested.
+#14 1.562 Processing triggers for libc-bin (2.41-12+deb13u3) ...
+#14 1.653 sending incremental file list
+#14 1.654 libboost-serialization1.83.0_1.83.0-4.2_amd64.deb
+#14 1.655 libhiredis1.1.0_1.2.0-6+b3_amd64.deb
+#14 1.696 
+#14 1.696 sent 387.48K bytes  received 55 bytes  775.07K bytes/sec
+#14 1.696 total size is 86.16M  speedup is 222.33
+#14 DONE 1.7s
+
+#15 [base 11/18] COPY         python-wheels//sonic_py_common-1.0-py3-none-any.whl         python-wheels//sonic_yang_mgmt-1.0-py3-none-any.whl         python-wheels//sonic_yang_models-1.0-py3-none-any.whl         python-wheels//sonic_containercfgd-1.0-py3-none-any.whl         python-wheels//sonic_config_engine-1.0-py3-none-any.whl         python-wheels//sonic_supervisord_utilities-1.0-py3-none-any.whl     /python-wheels/
+#15 DONE 0.0s
+
+#16 [base 12/18] RUN cd /python-wheels/ && pip3 install sonic_py_common-1.0-py3-none-any.whl sonic_yang_mgmt-1.0-py3-none-any.whl sonic_yang_models-1.0-py3-none-any.whl sonic_containercfgd-1.0-py3-none-any.whl sonic_config_engine-1.0-py3-none-any.whl sonic_supervisord_utilities-1.0-py3-none-any.whl
+#16 0.371 Looking in links: /sonic/target/vcache/docker-config-engine-trixie/pip-wheelhouse
+#16 0.374 Processing ./sonic_py_common-1.0-py3-none-any.whl
+#16 0.378 Processing ./sonic_yang_mgmt-1.0-py3-none-any.whl
+#16 0.379 Processing ./sonic_yang_models-1.0-py3-none-any.whl
+#16 0.382 Processing ./sonic_containercfgd-1.0-py3-none-any.whl
+#16 0.383 Processing ./sonic_config_engine-1.0-py3-none-any.whl
+#16 0.384 Processing ./sonic_supervisord_utilities-1.0-py3-none-any.whl
+#16 0.389 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x73dc18b406e0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/natsort/
+#16 0.890 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x73dc18cfead0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/natsort/
+#16 1.890 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x73dc18cfec10>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/natsort/
+#16 3.891 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x73dc18cfed50>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/natsort/
+#16 7.891 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x73dc18cfee90>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/natsort/
+#16 7.892 INFO: pip is looking at multiple versions of sonic-py-common to determine which version is compatible with other requirements. This could take a while.
+#16 7.892 ERROR: Cannot install sonic-py-common==1.0 because these package versions have conflicting dependencies.
+#16 7.892 
+#16 7.892 The conflict is caused by:
+#16 7.892     sonic-py-common 1.0 depends on natsort
+#16 7.892     The user requested (constraint) natsort==8.4.0
+#16 7.892 
+#16 7.892 To fix this you could try to:
+#16 7.892 1. loosen the range of package versions you've specified
+#16 7.892 2. remove package versions to allow pip to attempt to solve the dependency conflict
+#16 7.892 
+#16 7.892 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+#16 ERROR: process "/bin/sh -c cd /python-wheels/ && pip3 install sonic_py_common-1.0-py3-none-any.whl sonic_yang_mgmt-1.0-py3-none-any.whl sonic_yang_models-1.0-py3-none-any.whl sonic_containercfgd-1.0-py3-none-any.whl sonic_config_engine-1.0-py3-none-any.whl sonic_supervisord_utilities-1.0-py3-none-any.whl" did not complete successfully: exit code: 1
+------
+ > [base 12/18] RUN cd /python-wheels/ && pip3 install sonic_py_common-1.0-py3-none-any.whl sonic_yang_mgmt-1.0-py3-none-any.whl sonic_yang_models-1.0-py3-none-any.whl sonic_containercfgd-1.0-py3-none-any.whl sonic_config_engine-1.0-py3-none-any.whl sonic_supervisord_utilities-1.0-py3-none-any.whl:
+7.892 
+7.892 The conflict is caused by:
+7.892     sonic-py-common 1.0 depends on natsort
+7.892     The user requested (constraint) natsort==8.4.0
+7.892 
+7.892 To fix this you could try to:
+7.892 1. loosen the range of package versions you've specified
+7.892 2. remove package versions to allow pip to attempt to solve the dependency conflict
+7.892 
+7.892 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+------
+Dockerfile:84
+--------------------
+  82 |     # Install locally-built Python wheel dependencies
+  83 |     
+  84 | >>> RUN cd /python-wheels/ && pip3 install sonic_py_common-1.0-py3-none-any.whl sonic_yang_mgmt-1.0-py3-none-any.whl sonic_yang_models-1.0-py3-none-any.whl sonic_containercfgd-1.0-py3-none-any.whl sonic_config_engine-1.0-py3-none-any.whl sonic_supervisord_utilities-1.0-py3-none-any.whl
+  85 |     
+  86 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c cd /python-wheels/ && pip3 install sonic_py_common-1.0-py3-none-any.whl sonic_yang_mgmt-1.0-py3-none-any.whl sonic_yang_models-1.0-py3-none-any.whl sonic_containercfgd-1.0-py3-none-any.whl sonic_config_engine-1.0-py3-none-any.whl sonic_supervisord_utilities-1.0-py3-none-any.whl" did not complete successfully: exit code: 1
+[  FAIL LOG END  ] [ target/docker-config-engine-trixie.gz ]
+make: *** [slave.mk:1406: target/docker-config-engine-trixie.gz] Error 1
+[ finished ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ] 
+make[1]: *** [Makefile.work:751: target/sonic-vs.bin] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/sonic-vs.bin] Error 2

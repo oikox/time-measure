@@ -1,0 +1,31 @@
+Starting local Bazel server (8.6.0) and connecting to it...
+Computing main repo mapping: 
+WARNING: For repository 'protobuf', the root module requires module version protobuf@29.0, but got protobuf@31.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+WARNING: For repository 'rules_rust', the root module requires module version rules_rust@0.61.0, but got rules_rust@0.66.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //platform/vs:sonic-vs-bin (4 packages loaded, 7 targets configured)
+Analyzing: target //platform/vs:sonic-vs-bin (4 packages loaded, 7 targets configured)
+
+WARNING: <builtin>: External repository 'aspect_tools_telemetry++telemetry+aspect_tools_telemetry_report' is not up-to-date and fetching is disabled. To update, run the build without the '--nofetch' command line option.
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/grpc+/src/compiler/BUILD:87:18: target 'grpc_cpp_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/grpc+/src/compiler/BUILD:93:18: target 'grpc_csharp_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/grpc+/src/compiler/BUILD:99:18: target 'grpc_node_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/grpc+/src/compiler/BUILD:105:18: target 'grpc_objective_c_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/grpc+/src/compiler/BUILD:111:18: target 'grpc_php_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/grpc+/src/compiler/BUILD:117:18: target 'grpc_python_plugin' is both a rule and a file; please choose another name for the rule
+WARNING: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/grpc+/src/compiler/BUILD:123:18: target 'grpc_ruby_plugin' is both a rule and a file; please choose another name for the rule
+Analyzing: target //platform/vs:sonic-vs-bin (731 packages loaded, 59561 targets configured)
+
+ERROR: error loading package '@@sonic-mgmt-framework+//': at /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/gazelle+/def.bzl:16:5: Encountered error while reading extension file 'go_env.bzl': no such package '@@gazelle++go_deps+bazel_gazelle_go_repository_config//': no such package '@@xds+//go': to fix, run
+	bazel fetch //...
+External repository @@xds+ not found and fetching repositories is disabled.
+ERROR: /data/sonic/sonic-dzf-time-measure/dockers/docker-sonic-mgmt-framework/BUILD.bazel:34:8: error loading package '@@sonic-mgmt-framework+//': at /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/gazelle+/def.bzl:16:5: Encountered error while reading extension file 'go_env.bzl': no such package '@@gazelle++go_deps+bazel_gazelle_go_repository_config//': no such package '@@xds+//go': to fix, run
+	bazel fetch //...
+External repository @@xds+ not found and fetching repositories is disabled. and referenced by '//dockers/docker-sonic-mgmt-framework:sonic_pkgs'
+ERROR: Analysis of target '//platform/vs:sonic-vs-bin' failed; build aborted: Analysis failed
+INFO: Elapsed time: 75.980s, Critical Path: 0.04s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
+FAILED: 
+INFO: Build Event Protocol files produced successfully.

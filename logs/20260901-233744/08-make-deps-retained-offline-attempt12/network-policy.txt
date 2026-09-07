@@ -1,0 +1,14 @@
+http_proxy=http://127.0.0.1:9
+https_proxy=http://127.0.0.1:9
+HTTP_PROXY=http://127.0.0.1:9
+HTTPS_PROXY=http://127.0.0.1:9
+ALL_PROXY=http://127.0.0.1:9
+no_proxy=localhost,127.0.0.1,0.0.0.0
+NO_PROXY=localhost,127.0.0.1,0.0.0.0
+GOPROXY=off
+CARGO_NET_OFFLINE=true
+npm_config_offline=true
+PIP_NO_INDEX=1
+GIT_TERMINAL_PROMPT=0
+GIT_SSH_COMMAND=false
+SONIC_BUILDER_EXTRA_CMDLINE=-v /data/sonic/时间统计/cache/20260901-233744/make-git-mirrors:/git-mirrors:ro -v /data/sonic/时间统计/cache/20260901-233744/offline.gitconfig:/etc/sonic-offline.gitconfig:ro -v /data/sonic/时间统计/cache/20260901-233744/make-cargo-home:/cargo-home:rw -v /data/sonic/时间统计/cache/20260901-233744/make-pip-wheelhouse:/pip-wheelhouse:ro -e GIT_CONFIG_GLOBAL=/etc/sonic-offline.gitconfig -e GIT_TERMINAL_PROMPT=0 -e CARGO_HOME=/cargo-home -e CARGO_NET_OFFLINE=true -e DEB_BUILD_OPTIONS=nocheck -e PIP_NO_INDEX=1 -e PIP_FIND_LINKS=/pip-wheelhouse

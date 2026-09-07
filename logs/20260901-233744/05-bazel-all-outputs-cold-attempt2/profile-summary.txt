@@ -1,0 +1,33 @@
+
+=== PHASE SUMMARY INFORMATION ===
+
+Total launch phase time                              0.759 s    0.04%
+Total init phase time                                1.752 s    0.10%
+Total target pattern evaluation phase time           0.323 s    0.02%
+Total interleaved loading, analysis and execution phase time 1825.260 s   99.84%
+Total finish phase time                              0.044 s    0.00%
+---------------------------------------------------------------------
+Total run time                                    1828.139 s  100.00%
+
+Critical path (1816.997 s):
+       Time Percentage   Description
+ 1721.331 s   94.73%   action 'SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+// p4lang-p4c_1.2.4.2-2.deb'
+   24.799 s    1.36%   action 'Executing genrule @@dash-sai++_repo_rules+dash_src// p4_compile'
+    3.736 s    0.21%   action 'Executing genrule @@dash-sai++_repo_rules+dash_src// sai_gen'
+    19.9 ms    0.00%   action 'Executing genrule @@dash-sai++_repo_rules+dash_src// sai_inc_hdrs'
+    1.327 s    0.07%   action 'Building doxygen documentation for rule 'doxygen''
+    2.353 s    0.13%   action 'Executing genrule @@dash-sai++_repo_rules+dash_src// saimetadata_sources'
+   19.054 s    1.05%   action 'Compiling external/dash-sai++_repo_rules+dash_src/meta/saimetadata.c'
+    34.0 ms    0.00%   action 'Linking external/dash-sai++_repo_rules+dash_src/libdashsaimetadata.pic.lo'
+     475 ms    0.03%   action 'Linking external/dash-sai++_repo_rules+dash_src/libsai.so'
+    0.22 ms    0.00%   action 'SolibSymlink _solib_k8/_Uexternal_Sdash-sai++_Urepo_Urules+dash_Usrc/libsai.so'
+     628 ms    0.03%   action 'Linking external/sonic-sairedis+/syncd/syncd_dash_elf'
+    48.4 ms    0.00%   action 'Executing genrule @@sonic-sairedis+//syncd syncd_dash'
+     270 ms    0.01%   action 'Stripping binaries for syncd-vs_1.0.0.deb_stripped'
+     615 ms    0.03%   action 'Tar external/sonic-sairedis+/syncd-vs_1.0.0.deb_data.tar.gz'
+     318 ms    0.02%   action 'Flattening //platform/vs/docker-gbsyncd-vs sonic_pkgs'
+    67.6 ms    0.00%   action 'OCI Descriptor platform/vs/docker-gbsyncd-vs/sonic_pkgs.tar'
+    1.559 s    0.09%   action 'OCI Image //platform/vs/docker-gbsyncd-vs docker-gbsyncd-vs'
+   33.144 s    1.82%   action 'Building overlay2 store platform/vs/dockerfs.tar.gz'
+    2.606 s    0.14%   action 'Building installer payload platform/vs/fs.zip'
+    4.610 s    0.25%   action 'Building ONIE self-extracting installer platform/vs/sonic-vs.bin'

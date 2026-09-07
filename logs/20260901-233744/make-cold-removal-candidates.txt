@@ -1,0 +1,6 @@
+base_image=sonic-slave-trixie:da39a3ee5e
+user_image=sonic-slave-trixie-qiuying.xzc:4a377d4adb
+
+base_present=no
+
+user_present=no

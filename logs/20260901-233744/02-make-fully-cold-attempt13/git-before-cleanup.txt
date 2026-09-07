@@ -1,0 +1,19 @@
+## master...origin/master
+ M platform/vs/docker-dash-engine/Dockerfile.j2
+ M sonic-slave-trixie/Dockerfile.j2
+ M src/bash/patches/series
+ M src/libyang3-py3/Makefile
+ M src/monit/BUILD.bazel
+ M src/radius/pam/Makefile
+ M src/sflow/hsflowd/Makefile
+ M src/sflow/sflowtool/Makefile
+ M src/sonic-build-hooks/scripts/post_run_cleanup
+ M src/sonic-frr/frr
+ ? src/sonic-host-services
+ ? src/sonic-linux-kernel
+ ? src/sonic-py-swsssdk
+ M src/tacacs/audisp/Makefile
+ M src/tacacs/pam/Makefile
+?? .alinos/
+?? .measure/
+?? src/bash/patches/0002-write-pdf-via-stdout.patch

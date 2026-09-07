@@ -1,0 +1,9 @@
+Removing sonic-slave-trixie/Dockerfile
+Removing sonic-slave-trixie/Dockerfile.user
+Removing sonic-slave-trixie/apt-retries-count
+Removing sonic-slave-trixie/buildinfo/
+Removing sonic-slave-trixie/files/
+Removing sonic-slave-trixie/sources.list.amd64
+Removing sonic-slave-trixie/vcache/
+Removing src/sonic-build-hooks/buildinfo/
+Removing src/sonic-build-hooks/tmp/

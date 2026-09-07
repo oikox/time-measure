@@ -1,0 +1,2 @@
+user_image=sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+base_image=sonic-slave-trixie:ca17477b760

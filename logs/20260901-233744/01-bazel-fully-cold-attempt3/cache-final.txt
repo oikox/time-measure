@@ -1,0 +1,2 @@
+52G	.measure/20260901-233744/bazel-fully-cold-attempt3/output-base
+2.2G	.measure/20260901-233744/bazel-fully-cold-attempt3/repository-cache

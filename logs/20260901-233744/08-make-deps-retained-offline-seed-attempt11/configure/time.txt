@@ -1,0 +1,23 @@
+	Command being timed: "env SONIC_BUILDER_EXTRA_CMDLINE=-v /data/sonic/时间统计/cache/20260901-233744/make-git-mirrors:/git-mirrors:ro -v /data/sonic/时间统计/cache/20260901-233744/offline.gitconfig:/etc/sonic-offline.gitconfig:ro -v /data/sonic/时间统计/cache/20260901-233744/make-cargo-home:/cargo-home:rw -e GIT_CONFIG_GLOBAL=/etc/sonic-offline.gitconfig -e GIT_TERMINAL_PROMPT=0 -e CARGO_HOME=/cargo-home -e DEB_BUILD_OPTIONS=nocheck make PLATFORM=vs NOJESSIE=1 NOSTRETCH=1 NOBUSTER=1 NOBULLSEYE=1 NOBOOKWORM=1 NOTRIXIE=0 ENABLE_DOCKER_BASE_PULL=n SONIC_CONFIG_USE_CCACHE=n SONIC_DPKG_CACHE_METHOD=none SONIC_VERSION_CACHE_METHOD=cache SONIC_VERSION_CACHE_SOURCE=/data/sonic/时间统计/cache/20260901-233744/make-version-cache BUILD_SKIP_TEST=y SONIC_BUILD_JOBS=8 SONIC_CONFIG_MAKE_JOBS=192 TRUSTED_GPG_URLS= configure"
+	User time (seconds): 1.41
+	System time (seconds): 0.68
+	Percent of CPU this job got: 14%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:14.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 48468
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 173965
+	Voluntary context switches: 10312
+	Involuntary context switches: 23
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1048
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

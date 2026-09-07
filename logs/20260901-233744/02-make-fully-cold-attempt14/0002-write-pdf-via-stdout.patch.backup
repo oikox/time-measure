@@ -1,0 +1,20 @@
+--- a/bash-5.2.37/doc/Makefile.in
++++ b/bash-5.2.37/doc/Makefile.in
+@@ -86,7 +86,7 @@ SET_TEXINPUTS = TEXINPUTS=.:$(TEXINPUTDIR):$$TEXINPUTS
+ 
+ # These tools might not be available; they're not required
+ DVIPDF	    = dvipdfm -o $@ -p ${PAPERSIZE}
+-PSPDF       = gs -sPAPERSIZE=${PAPERSIZE} -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -sOutputFile=$@
++PSPDF       = gs -sPAPERSIZE=${PAPERSIZE} -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -sOutputFile=-
+ 
+ MKDIRS      = ${SUPPORT_SRCDIR}/mkdirs
+ 
+@@ -139,7 +139,7 @@ MKDIRS      = ${SUPPORT_SRCDIR}/mkdirs
+ 
+ .ps.pdf:
+ 	$(RM) $@
+-	-${PSPDF} $<
++	-${PSPDF} $< > $@
+ 
+ .dvi.pdf:
+ 	$(RM) $@

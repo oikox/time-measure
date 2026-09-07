@@ -1,0 +1,15 @@
+diff --git a/sonic-slave-trixie/Dockerfile.j2 b/sonic-slave-trixie/Dockerfile.j2
+index 72f49705e..d0d50b48e 100644
+--- a/sonic-slave-trixie/Dockerfile.j2
++++ b/sonic-slave-trixie/Dockerfile.j2
+@@ -682,7 +682,9 @@ RUN eatmydata apt-get install -y libthrift-0.19.0t64\
+         python3-thrift
+ 
+ # Install swi tools
+-RUN pip3 install git+https://github.com/aristanetworks/swi-tools.git@bead66bf261770237f7dd21ace3774ba04a017e9
++RUN git config --global http.version HTTP/1.1 \
++ && pip3 install git+https://github.com/aristanetworks/swi-tools.git@bead66bf261770237f7dd21ace3774ba04a017e9 \
++ && git config --global --unset http.version
+ 
+ {% if CONFIGURED_ARCH != "amd64" -%}
+ # Install node.js for azure pipeline

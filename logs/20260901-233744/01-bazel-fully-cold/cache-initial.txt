@@ -1,0 +1,9 @@
+/data/sonic/时间统计/cache/20260901-233744/bazel-fully-cold/output-base:
+total 8
+drwxr-xr-x 2 qiuying.xzc docker 4096 Sep  1 23:43 .
+drwxr-xr-x 4 qiuying.xzc docker 4096 Sep  1 23:43 ..
+
+/data/sonic/时间统计/cache/20260901-233744/bazel-fully-cold/repository-cache:
+total 8
+drwxr-xr-x 2 qiuying.xzc docker 4096 Sep  1 23:43 .
+drwxr-xr-x 4 qiuying.xzc docker 4096 Sep  1 23:43 ..

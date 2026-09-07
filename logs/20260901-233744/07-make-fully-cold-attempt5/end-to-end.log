@@ -1,0 +1,3 @@
+sudo: A terminal is required to authenticate
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: warning: ignoring 1 warning about the control file(s)

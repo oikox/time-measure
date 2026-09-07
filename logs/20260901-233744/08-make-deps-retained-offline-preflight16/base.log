@@ -1,0 +1,1369 @@
++++ --- Making target/docker-base-trixie.gz --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/docker-base-trixie.gz
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.040142"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.040142"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/docker-base-trixie.gz ] 
+[ finished ] [ target/docker-base-trixie.gz ] 
+[ FAIL LOG START ] [ target/docker-base-trixie.gz ]
+Build start time: Sat Sep 5 20:01:55 UTC 2026
+[ REASON ] :      target/docker-base-trixie.gz does not exist   NON-EXISTENT PREREQUISITES: docker-start 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+cat: 'files/build/versions/dockers/docker-base-trixie/versions-*-trixie-amd64': No such file or directory
+Client: Docker Engine - Community
+ Version:    28.5.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.26.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.39.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 374
+ Server Version: 28.5.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: b98a3aace656320842a23f4a392a33f46af97866
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 7.0.0-22-generic
+ Operating System: Debian GNU/Linux 13 (trixie)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 192
+ Total Memory: 743GiB
+ Name: d92edda3a189
+ ID: 9050de27-efa9-406a-855d-9324d28b5135
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http://127.0.0.1:9
+ HTTPS Proxy: http://127.0.0.1:9
+ No Proxy: localhost,127.0.0.1,0.0.0.0
+ Experimental: true
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 4.20kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for publicmirror.azurecr.io/debian:trixie@sha256:d07d1b51c39f51188e60be9b64e6bf769fa94e187f092bc32b91305cfa34ba5a
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [base  1/26] FROM publicmirror.azurecr.io/debian:trixie@sha256:d07d1b51c39f51188e60be9b64e6bf769fa94e187f092bc32b91305cfa34ba5a
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 80.60MB 0.3s done
+#5 DONE 0.3s
+
+#6 [base  2/26] COPY [dpkg_01_drop, /etc/dpkg/dpkg.cfg.d/01_drop]
+#6 DONE 0.1s
+
+#7 [base  3/26] COPY [sources.list.amd64, /etc/apt/sources.list]
+#7 DONE 0.0s
+
+#8 [base  4/26] COPY [files/apt/apt.conf.d/, /etc/apt/apt.conf.d/]
+#8 DONE 0.0s
+
+#9 [base  5/26] COPY [buildinfo, /usr/local/share/buildinfo]
+#9 DONE 0.0s
+
+#10 [base  6/26] COPY vcache/ /sonic/target/vcache/docker-base-trixie
+#10 DONE 0.1s
+
+#11 [base  7/26] RUN dpkg -i /usr/local/share/buildinfo/sonic-build-hooks_1.0_all.deb
+#11 0.126 Selecting previously unselected package sonic-build-hooks.
+#11 0.129 (Reading database ... 4936 files and directories currently installed.)
+#11 0.129 Preparing to unpack .../sonic-build-hooks_1.0_all.deb ...
+#11 0.130 Unpacking sonic-build-hooks (1.0) ...
+#11 0.141 Setting up sonic-build-hooks (1.0) ...
+#11 DONE 0.2s
+
+#12 [base  8/26] RUN pre_run_buildinfo docker-base-trixie
+#12 1.386 ./
+#12 1.386 ./pip-wheelhouse/
+#12 1.386 ./pip-wheelhouse/supervisor-4.3.0-py2.py3-none-any.whl
+#12 1.388 ./pip-wheelhouse/toposort-1.10-py3-none-any.whl
+#12 1.388 ./pip-wheelhouse/supervisord_dependent_startup-1.4.0-py2.py3-none-any.whl
+#12 1.388 ./pip-wheelhouse/jsonschema-2.6.0-py2.py3-none-any.whl
+#12 1.389 ./pip/
+#12 1.389 ./pip/http-v2/
+#12 1.389 ./pip/http-v2/b/
+#12 1.389 ./pip/http-v2/b/3/
+#12 1.389 ./pip/http-v2/b/3/2/
+#12 1.389 ./pip/http-v2/b/3/2/f/
+#12 1.389 ./pip/http-v2/b/3/2/f/0/
+#12 1.389 ./pip/http-v2/b/3/2/f/0/b32f017f9c60d09d91ac0bac44002dec28ef8c04355223f13bf00b7a.body
+#12 1.389 ./pip/http-v2/b/3/2/f/0/b32f017f9c60d09d91ac0bac44002dec28ef8c04355223f13bf00b7a
+#12 1.389 ./pip/http-v2/b/1/
+#12 1.389 ./pip/http-v2/b/1/4/
+#12 1.389 ./pip/http-v2/b/1/4/e/
+#12 1.389 ./pip/http-v2/b/1/4/e/c/
+#12 1.389 ./pip/http-v2/b/1/4/e/c/b14ec1286f8ec83b268f9c52cdccd1001d22496d6e01ba5b4fd8aeb4
+#12 1.389 ./pip/http-v2/b/1/4/e/c/b14ec1286f8ec83b268f9c52cdccd1001d22496d6e01ba5b4fd8aeb4.body
+#12 1.389 ./pip/http-v2/b/f/
+#12 1.389 ./pip/http-v2/b/f/9/
+#12 1.389 ./pip/http-v2/b/f/9/6/
+#12 1.389 ./pip/http-v2/b/f/9/6/6/
+#12 1.389 ./pip/http-v2/b/f/9/6/6/bf966cc37805df72ac5b20f39e9bbc4548a3fcdd4068107c7f30831f.body
+#12 1.389 ./pip/http-v2/b/f/9/6/6/bf966cc37805df72ac5b20f39e9bbc4548a3fcdd4068107c7f30831f
+#12 1.389 ./pip/http-v2/b/8/
+#12 1.389 ./pip/http-v2/b/8/6/
+#12 1.389 ./pip/http-v2/b/8/6/2/
+#12 1.389 ./pip/http-v2/b/8/6/2/6/
+#12 1.389 ./pip/http-v2/b/8/6/2/6/b862637a242a4033f1ba3be874e038f3a95ab29277da4c878f7c162d.body
+#12 1.390 ./pip/http-v2/b/8/6/2/6/b862637a242a4033f1ba3be874e038f3a95ab29277da4c878f7c162d
+#12 1.390 ./pip/http-v2/2/
+#12 1.390 ./pip/http-v2/2/5/
+#12 1.390 ./pip/http-v2/2/5/a/
+#12 1.390 ./pip/http-v2/2/5/a/d/
+#12 1.390 ./pip/http-v2/2/5/a/d/9/
+#12 1.390 ./pip/http-v2/2/5/a/d/9/25ad9cf66b37dd8e773bc2962198890086c06a58e68e149798c15d42.body
+#12 1.390 ./pip/http-v2/2/5/a/d/9/25ad9cf66b37dd8e773bc2962198890086c06a58e68e149798c15d42
+#12 1.390 ./pip/http-v2/2/d/
+#12 1.390 ./pip/http-v2/2/d/2/
+#12 1.390 ./pip/http-v2/2/d/2/2/
+#12 1.390 ./pip/http-v2/2/d/2/2/f/
+#12 1.390 ./pip/http-v2/2/d/2/2/f/2d22f303d8f1beb19039dafefa8202703980ca37d2c83b5bd791dbf1
+#12 1.390 ./pip/http-v2/2/d/2/2/f/2d22f303d8f1beb19039dafefa8202703980ca37d2c83b5bd791dbf1.body
+#12 1.390 ./pip/http-v2/e/
+#12 1.390 ./pip/http-v2/e/a/
+#12 1.390 ./pip/http-v2/e/a/7/
+#12 1.390 ./pip/http-v2/e/a/7/6/
+#12 1.390 ./pip/http-v2/e/a/7/6/3/
+#12 1.390 ./pip/http-v2/e/a/7/6/3/ea763bb324d9e754b326e87af9025956fe6d945f13204443e12f54eb
+#12 1.390 ./pip/http-v2/e/a/7/6/3/ea763bb324d9e754b326e87af9025956fe6d945f13204443e12f54eb.body
+#12 1.390 ./pip/http-v2/3/
+#12 1.390 ./pip/http-v2/3/3/
+#12 1.390 ./pip/http-v2/3/3/9/
+#12 1.390 ./pip/http-v2/3/3/9/7/
+#12 1.390 ./pip/http-v2/3/3/9/7/4/
+#12 1.390 ./pip/http-v2/3/3/9/7/4/33974f84394d9a943f68359da08431dab4af9f86c33962982ea21b5f.body
+#12 1.390 ./pip/http-v2/3/3/9/7/4/33974f84394d9a943f68359da08431dab4af9f86c33962982ea21b5f
+#12 1.390 ./pip/http-v2/5/
+#12 1.390 ./pip/http-v2/5/b/
+#12 1.390 ./pip/http-v2/5/b/9/
+#12 1.390 ./pip/http-v2/5/b/9/a/
+#12 1.390 ./pip/http-v2/5/b/9/a/9/
+#12 1.390 ./pip/http-v2/5/b/9/a/9/5b9a9fd3c0c45469fcb69cafd8dcbf862b093a20c76a8fbb53eca5af.body
+#12 1.390 ./pip/http-v2/5/b/9/a/9/5b9a9fd3c0c45469fcb69cafd8dcbf862b093a20c76a8fbb53eca5af
+#12 1.390 ./pip/http-v2/5/3/
+#12 1.390 ./pip/http-v2/5/3/1/
+#12 1.390 ./pip/http-v2/5/3/1/8/
+#12 1.390 ./pip/http-v2/5/3/1/8/1/
+#12 1.390 ./pip/http-v2/5/3/1/8/1/53181fe2d7d3737de473ca37cdfff9e4719668d32d832169c1b4bc65.body
+#12 1.390 ./pip/http-v2/5/3/1/8/1/53181fe2d7d3737de473ca37cdfff9e4719668d32d832169c1b4bc65
+#12 1.390 ./pip/http-v2/5/5/
+#12 1.390 ./pip/http-v2/5/5/7/
+#12 1.390 ./pip/http-v2/5/5/7/3/
+#12 1.390 ./pip/http-v2/5/5/7/3/9/
+#12 1.390 ./pip/http-v2/5/5/7/3/9/55739ede7ec3316301bc20f31d2df3cbc96da095e0ab58471de5aee2
+#12 1.390 ./pip/http-v2/5/5/7/3/9/55739ede7ec3316301bc20f31d2df3cbc96da095e0ab58471de5aee2.body
+#12 1.390 ./pip/http-v2/1/
+#12 1.391 ./pip/http-v2/1/b/
+#12 1.391 ./pip/http-v2/1/b/5/
+#12 1.391 ./pip/http-v2/1/b/5/e/
+#12 1.391 ./pip/http-v2/1/b/5/e/5/
+#12 1.391 ./pip/http-v2/1/b/5/e/5/1b5e5a7ec2469bd2603f897e456dddd563ee5d0ef7634c0f5d7c08b9
+#12 1.391 ./pip/http-v2/1/b/5/e/5/1b5e5a7ec2469bd2603f897e456dddd563ee5d0ef7634c0f5d7c08b9.body
+#12 1.391 ./pip/http-v2/4/
+#12 1.391 ./pip/http-v2/4/3/
+#12 1.391 ./pip/http-v2/4/3/8/
+#12 1.391 ./pip/http-v2/4/3/8/9/
+#12 1.391 ./pip/http-v2/4/3/8/9/9/
+#12 1.391 ./pip/http-v2/4/3/8/9/9/43899518c9e441f1a8a0eb0f938280904054b59d4e27584a6aabbac1.body
+#12 1.391 ./pip/http-v2/4/3/8/9/9/43899518c9e441f1a8a0eb0f938280904054b59d4e27584a6aabbac1
+#12 1.391 ./pip/http-v2/4/5/
+#12 1.391 ./pip/http-v2/4/5/9/
+#12 1.391 ./pip/http-v2/4/5/9/7/
+#12 1.391 ./pip/http-v2/4/5/9/7/6/
+#12 1.391 ./pip/http-v2/4/5/9/7/6/45976c194ebb9180bf7410d422bcad653ce13bcb64dda0d07d72b09d
+#12 1.391 ./pip/http-v2/4/5/9/7/6/45976c194ebb9180bf7410d422bcad653ce13bcb64dda0d07d72b09d.body
+#12 1.391 ./pip/http-v2/f/
+#12 1.391 ./pip/http-v2/f/4/
+#12 1.391 ./pip/http-v2/f/4/8/
+#12 1.391 ./pip/http-v2/f/4/8/b/
+#12 1.391 ./pip/http-v2/f/4/8/b/0/
+#12 1.391 ./pip/http-v2/f/4/8/b/0/f48b0f6096a49248a1820cd7eec89abbdf62427b393bb5ce079aca62.body
+#12 1.393 ./pip/http-v2/f/4/8/b/0/f48b0f6096a49248a1820cd7eec89abbdf62427b393bb5ce079aca62
+#12 1.393 ./pip/http-v2/f/9/
+#12 1.393 ./pip/http-v2/f/9/9/
+#12 1.393 ./pip/http-v2/f/9/9/b/
+#12 1.393 ./pip/http-v2/f/9/9/b/3/
+#12 1.393 ./pip/http-v2/f/9/9/b/3/f99b3487d2b9c55edcd311aeafa35cbf852ab2cc5c3f5d1a1a08e2b5.body
+#12 1.393 ./pip/http-v2/f/9/9/b/3/f99b3487d2b9c55edcd311aeafa35cbf852ab2cc5c3f5d1a1a08e2b5
+#12 1.393 ./pip/http-v2/f/a/
+#12 1.393 ./pip/http-v2/f/a/f/
+#12 1.393 ./pip/http-v2/f/a/f/f/
+#12 1.393 ./pip/http-v2/f/a/f/f/d/
+#12 1.393 ./pip/http-v2/f/a/f/f/d/faffdb5825619a041feeb4cdd9df76cefb30cce63d480ff0ed1a5dae
+#12 1.393 ./pip/http-v2/f/a/f/f/d/faffdb5825619a041feeb4cdd9df76cefb30cce63d480ff0ed1a5dae.body
+#12 1.393 ./pip/http-v2/d/
+#12 1.393 ./pip/http-v2/d/0/
+#12 1.393 ./pip/http-v2/d/0/8/
+#12 1.393 ./pip/http-v2/d/0/8/2/
+#12 1.393 ./pip/http-v2/d/0/8/2/3/
+#12 1.393 ./pip/http-v2/d/0/8/2/3/d0823d926a80fb5fccfb62a7fa9b5e83ce3a3dada11bae12021a29a9
+#12 1.393 ./pip/http-v2/d/0/8/2/3/d0823d926a80fb5fccfb62a7fa9b5e83ce3a3dada11bae12021a29a9.body
+#12 1.393 ./pip/http-v2/d/c/
+#12 1.393 ./pip/http-v2/d/c/c/
+#12 1.393 ./pip/http-v2/d/c/c/2/
+#12 1.393 ./pip/http-v2/d/c/c/2/6/
+#12 1.393 ./pip/http-v2/d/c/c/2/6/dcc26b781e3e58d7e22a65615832539ca5512101a8522c4cbe3a930b.body
+#12 1.393 ./pip/http-v2/d/c/c/2/6/dcc26b781e3e58d7e22a65615832539ca5512101a8522c4cbe3a930b
+#12 1.393 ./pip/http-v2/7/
+#12 1.393 ./pip/http-v2/7/6/
+#12 1.393 ./pip/http-v2/7/6/3/
+#12 1.393 ./pip/http-v2/7/6/3/5/
+#12 1.393 ./pip/http-v2/7/6/3/5/d/
+#12 1.393 ./pip/http-v2/7/6/3/5/d/7635de8254c82e7e771831915759d7d8b2dc2759e9c5896e246e8b46.body
+#12 1.393 ./pip/http-v2/7/6/3/5/d/7635de8254c82e7e771831915759d7d8b2dc2759e9c5896e246e8b46
+#12 1.393 ./pip/http-v2/0/
+#12 1.393 ./pip/http-v2/0/e/
+#12 1.393 ./pip/http-v2/0/e/d/
+#12 1.393 ./pip/http-v2/0/e/d/3/
+#12 1.393 ./pip/http-v2/0/e/d/3/3/
+#12 1.393 ./pip/http-v2/0/e/d/3/3/0ed336d749e009fe1267c844e36c442e5b3dc645d5eb9865c545b81a.body
+#12 1.394 ./pip/http-v2/0/e/d/3/3/0ed336d749e009fe1267c844e36c442e5b3dc645d5eb9865c545b81a
+#12 1.394 ./pip/http-v2/0/6/
+#12 1.394 ./pip/http-v2/0/6/4/
+#12 1.394 ./pip/http-v2/0/6/4/1/
+#12 1.394 ./pip/http-v2/0/6/4/1/2/
+#12 1.394 ./pip/http-v2/0/6/4/1/2/06412fcf44b9a9522ff6367cabc965d23cb1165807c45516a879c5c4.body
+#12 1.394 ./pip/http-v2/0/6/4/1/2/06412fcf44b9a9522ff6367cabc965d23cb1165807c45516a879c5c4
+#12 1.394 ./pip/http-v2/0/6/7/
+#12 1.394 ./pip/http-v2/0/6/7/d/
+#12 1.394 ./pip/http-v2/0/6/7/d/e/
+#12 1.394 ./pip/http-v2/0/6/7/d/e/067de891d4624fc09de1c690b01d8bf477f69f0ce81f8101b21b3549.body
+#12 1.394 ./pip/http-v2/0/6/7/d/e/067de891d4624fc09de1c690b01d8bf477f69f0ce81f8101b21b3549
+#12 1.394 ./pip/http-v2/c/
+#12 1.394 ./pip/http-v2/c/b/
+#12 1.394 ./pip/http-v2/c/b/5/
+#12 1.394 ./pip/http-v2/c/b/5/2/
+#12 1.394 ./pip/http-v2/c/b/5/2/a/
+#12 1.394 ./pip/http-v2/c/b/5/2/a/cb52a2d86b549893dbebd3c41cb632b74900e6546f238508e1029e00.body
+#12 1.394 ./pip/http-v2/c/b/5/2/a/cb52a2d86b549893dbebd3c41cb632b74900e6546f238508e1029e00
+#12 1.394 ./pip/http-v2/c/1/
+#12 1.395 ./pip/http-v2/c/1/8/
+#12 1.395 ./pip/http-v2/c/1/8/d/
+#12 1.395 ./pip/http-v2/c/1/8/d/0/
+#12 1.395 ./pip/http-v2/c/1/8/d/0/c18d02f6e7b2bc128a137ad0b421c01673135bb73632621ee88261f5
+#12 1.395 ./pip/http-v2/c/1/8/d/0/c18d02f6e7b2bc128a137ad0b421c01673135bb73632621ee88261f5.body
+#12 1.395 ./pip/http-v2/c/f/
+#12 1.395 ./pip/http-v2/c/f/e/
+#12 1.395 ./pip/http-v2/c/f/e/a/
+#12 1.395 ./pip/http-v2/c/f/e/a/8/
+#12 1.395 ./pip/http-v2/c/f/e/a/8/cfea8709881c23f856c58e03d8c1459ee5cf4b465b369d76c9bed187.body
+#12 1.395 ./pip/http-v2/c/f/e/a/8/cfea8709881c23f856c58e03d8c1459ee5cf4b465b369d76c9bed187
+#12 1.395 ./pip/http-v2/c/0/
+#12 1.395 ./pip/http-v2/c/0/2/
+#12 1.395 ./pip/http-v2/c/0/2/6/
+#12 1.395 ./pip/http-v2/c/0/2/6/f/
+#12 1.395 ./pip/http-v2/c/0/2/6/f/c026fe7c82450cb738f9bef708a323a721bc89407b938090ded9294a
+#12 1.395 ./pip/http-v2/c/0/2/6/f/c026fe7c82450cb738f9bef708a323a721bc89407b938090ded9294a.body
+#12 1.400 ./pip/http-v2/9/
+#12 1.400 ./pip/http-v2/9/3/
+#12 1.400 ./pip/http-v2/9/3/1/
+#12 1.400 ./pip/http-v2/9/3/1/d/
+#12 1.400 ./pip/http-v2/9/3/1/d/d/
+#12 1.400 ./pip/http-v2/9/3/1/d/d/931dd4b51a80ffc83a0ce2caffcc883124ae68a310fbc8bfac06086d
+#12 1.400 ./pip/http-v2/9/3/1/d/d/931dd4b51a80ffc83a0ce2caffcc883124ae68a310fbc8bfac06086d.body
+#12 1.400 ./pip/http-v2/9/4/
+#12 1.400 ./pip/http-v2/9/4/5/
+#12 1.400 ./pip/http-v2/9/4/5/2/
+#12 1.400 ./pip/http-v2/9/4/5/2/4/
+#12 1.400 ./pip/http-v2/9/4/5/2/4/9452417670b2e75527d793717779fce5d54e5f21adb3344c273876fa
+#12 1.400 ./pip/http-v2/9/4/5/2/4/9452417670b2e75527d793717779fce5d54e5f21adb3344c273876fa.body
+#12 1.401 ./pip/http-v2/a/
+#12 1.401 ./pip/http-v2/a/b/
+#12 1.401 ./pip/http-v2/a/b/d/
+#12 1.401 ./pip/http-v2/a/b/d/d/
+#12 1.401 ./pip/http-v2/a/b/d/d/d/
+#12 1.401 ./pip/http-v2/a/b/d/d/d/abdddc46265b81c7d6dc73a20f1ad8ef043a66e9e79abdc1379bf71e.body
+#12 1.401 ./pip/http-v2/a/b/d/d/d/abdddc46265b81c7d6dc73a20f1ad8ef043a66e9e79abdc1379bf71e
+#12 1.401 ./pip/http-v2/a/9/
+#12 1.401 ./pip/http-v2/a/9/9/
+#12 1.401 ./pip/http-v2/a/9/9/4/
+#12 1.401 ./pip/http-v2/a/9/9/4/1/
+#12 1.401 ./pip/http-v2/a/9/9/4/1/a9941bc105752b6feb6a23eb0c6717c296b4944142da4fccf404e881.body
+#12 1.401 ./pip/http-v2/a/9/9/4/1/a9941bc105752b6feb6a23eb0c6717c296b4944142da4fccf404e881
+#12 1.401 ./pip/http-v2/a/a/
+#12 1.401 ./pip/http-v2/a/a/c/
+#12 1.401 ./pip/http-v2/a/a/c/a/
+#12 1.401 ./pip/http-v2/a/a/c/a/c/
+#12 1.401 ./pip/http-v2/a/a/c/a/c/aacac81bf1d35d08fd880f2e19cbd5a198730437b2c32b1ce1da7aa3.body
+#12 1.401 ./pip/http-v2/a/a/c/a/c/aacac81bf1d35d08fd880f2e19cbd5a198730437b2c32b1ce1da7aa3
+#12 1.401 ./pip/http-v2/6/
+#12 1.401 ./pip/http-v2/6/b/
+#12 1.401 ./pip/http-v2/6/b/c/
+#12 1.401 ./pip/http-v2/6/b/c/4/
+#12 1.401 ./pip/http-v2/6/b/c/4/4/
+#12 1.401 ./pip/http-v2/6/b/c/4/4/6bc44665bb603ed852c296157543510833d416bcf304a53eed83717c
+#12 1.401 ./pip/http-v2/6/b/c/4/4/6bc44665bb603ed852c296157543510833d416bcf304a53eed83717c.body
+#12 1.401 ./deb/
+#12 1.401 ./deb/libpopt0_1.19+dfsg-2_amd64.deb
+#12 1.401 ./deb/rsync_3.4.1+ds1-5+deb13u4_amd64.deb
+#12 1.403 ./deb/lock
+#12 1.403 ./deb/partial/
+#12 1.403 ./deb/libcap2-bin_1%3a2.75-10+deb13u1+b1_amd64.deb
+#12 1.403 ./deb/libmnl0_1.0.5-3_amd64.deb
+#12 1.403 ./deb/libtirpc3t64_1.3.6+ds-1_amd64.deb
+#12 1.404 ./deb/libtirpc-common_1.3.6+ds-1_all.deb
+#12 1.404 ./deb/libbpf1_1%3a1.5.0-3_amd64.deb
+#12 1.405 ./deb/libelf1t64_0.192-4_amd64.deb
+#12 1.406 ./deb/libxtables12_1.8.11-2_amd64.deb
+#12 1.406 ./deb/libpsl5t64_0.21.2-1.1+b1_amd64.deb
+#12 1.406 ./deb/less_668-1_amd64.deb
+#12 1.407 ./deb/media-types_13.0.0_all.deb
+#12 1.407 ./deb/vim-common_2%3a9.1.1230-2_all.deb
+#12 1.409 ./deb/libkrb5support0_1.21.3-5+deb13u1_amd64.deb
+#12 1.410 ./deb/libidn2-0_2.3.8-2_amd64.deb
+#12 1.410 ./deb/libpgm-5.3-0t64_5.3.128~dfsg-2.1+b1_amd64.deb
+#12 1.411 ./deb/jq_1.7.1-6+deb13u3_amd64.deb
+#12 1.411 ./deb/libsodium23_1.0.18-1+deb13u1_amd64.deb
+#12 1.412 ./deb/rsyslog_8.2504.0-1_amd64.deb
+#12 1.416 ./deb/libdbus-1-3_1.16.2-2_amd64.deb
+#12 1.416 ./deb/libjansson4_2.14-2+b3_amd64.deb
+#12 1.417 ./deb/python3-typeguard_4.4.2-1_all.deb
+#12 1.417 ./deb/libk5crypto3_1.21.3-5+deb13u1_amd64.deb
+#12 1.417 ./deb/python3-pkg-resources_78.1.1-0.1_all.deb
+#12 1.418 ./deb/libnghttp2-14_1.64.0-1.1+deb13u1_amd64.deb
+#12 1.419 ./deb/python3-autocommand_2.2.2-3_all.deb
+#12 1.419 ./deb/libnorm1t64_1.5.9+dfsg-3.1+b2_amd64.deb
+#12 1.420 ./deb/libunistring5_1.3-2_amd64.deb
+#12 1.422 ./deb/redis-tools_5%3a8.0.2-3+deb13u2_amd64.deb
+#12 1.428 ./deb/libffi8_3.4.8-2_amd64.deb
+#12 1.428 ./deb/libtasn1-6_4.20.0-2+deb13u1_amd64.deb
+#12 1.428 ./deb/vim-tiny_2%3a9.1.1230-2_amd64.deb
+#12 1.432 ./deb/perl-modules-5.40_5.40.1-6_all.deb
+#12 1.445 ./deb/libpython3-stdlib_3.13.5-1_amd64.deb
+#12 1.446 ./deb/python3-more-itertools_10.7.0-1_all.deb
+#12 1.446 ./deb/python3-jaraco.text_4.0.0-1_all.deb
+#12 1.446 ./deb/netbase_6.5_all.deb
+#12 1.446 ./deb/libssh2-1t64_1.11.1-1+deb13u1_amd64.deb
+#12 1.447 ./deb/libgnutls30t64_3.8.9-3+deb13u4_amd64.deb
+#12 1.454 ./deb/libsasl2-modules-db_2.1.28+dfsg1-9_amd64.deb
+#12 1.454 ./deb/python-is-python3_3.13.3-1_all.deb
+#12 1.454 ./deb/libsasl2-2_2.1.28+dfsg1-9_amd64.deb
+#12 1.454 ./deb/libreadline8t64_8.2-6_amd64.deb
+#12 1.455 ./deb/libonig5_6.9.9-1+b1_amd64.deb
+#12 1.456 ./deb/libkeyutils1_1.6.3-6_amd64.deb
+#12 1.456 ./deb/python3-packaging_25.0-1_all.deb
+#12 1.457 ./deb/libwrap0_7.6.q-36_amd64.deb
+#12 1.457 ./deb/procps_2%3a4.0.4-9_amd64.deb
+#12 1.461 ./deb/python3-jaraco.context_6.0.1-1+deb13u1_all.deb
+#12 1.461 ./deb/libjemalloc2_5.3.0-3_amd64.deb
+#12 1.462 ./deb/python3-inflect_7.3.1-2_all.deb
+#12 1.462 ./deb/liblognorm5_2.0.6-5_amd64.deb
+#12 1.463 ./deb/python3-minimal_3.13.5-1_amd64.deb
+#12 1.463 ./deb/libldap2_2.6.10+dfsg-1_amd64.deb
+#12 1.464 ./deb/librtmp1_2.4+20151223.gitfa8646d.1-2+b5_amd64.deb
+#12 1.464 ./deb/libperl5.40_5.40.1-6_amd64.deb
+#12 1.484 ./deb/libgdbm-compat4t64_1.24-2_amd64.deb
+#12 1.484 ./deb/python3.13-minimal_3.13.5-2+deb13u4_amd64.deb
+#12 1.494 ./deb/net-tools_2.10-1.3_amd64.deb
+#12 1.495 ./deb/python3-typing-extensions_4.13.2-1_all.deb
+#12 1.495 ./deb/perl_5.40.1-6_amd64.deb
+#12 1.497 ./deb/libbrotli1_1.1.0-2+b7_amd64.deb
+#12 1.498 ./deb/libpython3.13-stdlib_3.13.5-2+deb13u4_amd64.deb
+#12 1.507 ./deb/libcurl4t64_8.14.1-2+deb13u4_amd64.deb
+#12 1.509 ./deb/python3-pip_25.1.1+dfsg-1_all.deb
+#12 1.515 ./deb/libp11-kit0_0.25.5-3_amd64.deb
+#12 1.517 ./deb/libestr0_0.1.11-2_amd64.deb
+#12 1.518 ./deb/libatomic1_14.2.0-19_amd64.deb
+#12 1.518 ./deb/libgdbm6t64_1.24-2_amd64.deb
+#12 1.518 ./deb/libkrb5-3_1.21.3-5+deb13u1_amd64.deb
+#12 1.520 ./deb/librelp0_1.11.0-2_amd64.deb
+#12 1.520 ./deb/rsyslog-relp_8.2504.0-1_amd64.deb
+#12 1.521 ./deb/liblzf1_3.6-4+b3_amd64.deb
+#12 1.521 ./deb/libdaemon0_0.14-7.1+b3_amd64.deb
+#12 1.521 ./deb/libzmq5_4.3.5-1+b3_amd64.deb
+#12 1.523 ./deb/python3-jaraco.functools_4.1.0-1_all.deb
+#12 1.523 ./deb/adduser_3.152_all.deb
+#12 1.524 ./deb/python3-setuptools_78.1.1-0.1_all.deb
+#12 1.527 ./deb/libgssapi-krb5-2_1.21.3-5+deb13u1_amd64.deb
+#12 1.528 ./deb/libpython3.13-minimal_3.13.5-2+deb13u4_amd64.deb
+#12 1.532 ./deb/python3.13_3.13.5-2+deb13u4_amd64.deb
+#12 1.535 ./deb/libjq1_1.7.1-6+deb13u3_amd64.deb
+#12 1.536 ./deb/libncursesw6_6.5+20250216-2_amd64.deb
+#12 1.537 ./deb/libcom-err2_1.47.2-3+b11_amd64.deb
+#12 1.537 ./deb/python3-wheel_0.46.1-2_all.deb
+#12 1.537 ./deb/libfastjson4_1.2304.0-2_amd64.deb
+#12 1.537 ./deb/libnghttp3-9_1.8.0-1_amd64.deb
+#12 1.537 ./deb/python3_3.13.5-1_amd64.deb
+#12 1.538 ./deb/readline-common_8.2-6_all.deb
+#12 1.538 ./deb/libproc2-0_2%3a4.0.4-9_amd64.deb
+#12 1.538 ./deb/libexpat1_2.8.3-1~deb13u1_amd64.deb
+#12 1.539 ./deb/curl_8.14.1-2+deb13u4_amd64.deb
+#12 1.540 ./deb/python3-zipp_3.21.0-1_all.deb
+#12 1.540 ./deb/ca-certificates_20250419_all.deb
+#12 1.541 ./deb/openssl_3.5.7-1~deb13u2_amd64.deb
+#12 1.548 ./deb/openssl-provider-legacy_3.5.7-1~deb13u2_amd64.deb
+#12 1.549 ./deb/libssl3t64_3.5.7-1~deb13u2_amd64.deb
+#12 1.561 ./apt-lists/
+#12 1.561 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_main_source_Sources.lz4
+#12 1.561 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_non-free-firmware_source_Sources.lz4
+#12 1.561 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_contrib_source_Sources.lz4
+#12 1.562 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_non-free-firmware_binary-amd64_Packages.lz4
+#12 1.562 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_main_source_Sources.lz4
+#12 1.770 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_main_binary-amd64_Packages.lz4
+#12 1.774 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_non-free-firmware_source_Sources.lz4
+#12 1.774 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_InRelease
+#12 1.774 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_main_source_Sources.lz4
+#12 1.780 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_main_binary-amd64_Packages.lz4
+#12 1.972 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_InRelease
+#12 1.973 ./apt-lists/auxfiles/
+#12 1.973 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_non-free-firmware_binary-amd64_Packages.lz4
+#12 1.973 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_main_binary-amd64_Packages.lz4
+#12 1.979 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_contrib_binary-amd64_Packages.lz4
+#12 1.979 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_InRelease
+#12 1.980 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_non-free-firmware_binary-amd64_Packages.lz4
+#12 1.980 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_contrib_binary-amd64_Packages.lz4
+#12 1.980 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_contrib_binary-amd64_Packages.lz4
+#12 1.981 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_contrib_source_Sources.lz4
+#12 1.981 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_main_binary-amd64_Packages.lz4
+#12 1.981 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_InRelease
+#12 1.981 ./apt-lists/partial/
+#12 1.981 ./apt-lists/lock
+#12 2.099 restored_deb_count=97
+#12 DONE 2.8s
+
+#13 [base  9/26] RUN apt -o Acquire::https::Verify-Peer=false update &&     apt -o Acquire::https::Verify-Peer=false install -y ca-certificates
+#13 0.269 
+#13 0.269 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#13 0.269 
+#13 0.291 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 0.291 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 0.291 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 0.291 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 1.292 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 1.292 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 1.292 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 1.292 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 3.292 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 3.292 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 3.292 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 3.292 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 7.293 Err:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 7.293   Unable to connect to 127.0.0.1:9:
+#13 7.293 Err:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 7.293   Unable to connect to 127.0.0.1:9:
+#13 7.293 Err:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 7.293   Unable to connect to 127.0.0.1:9:
+#13 7.293 Err:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 7.293   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#13 7.293   Unable to connect to 127.0.0.1:9:
+#13 7.296 Reading package lists...
+#13 7.749 Building dependency tree...
+#13 7.827 Reading state information...
+#13 7.839 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.839 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-updates/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.839 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-backports/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.839 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/dists/trixie-security/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.839 Warning: Some index files failed to download. They have been ignored, or old ones used instead.
+#13 7.839 13 packages can be upgraded. Run 'apt list --upgradable' to see them.
+#13 7.870 
+#13 7.870 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#13 7.870 
+#13 7.884 Reading package lists...
+#13 7.894 Building dependency tree...
+#13 7.975 Reading state information...
+#13 8.120 Upgrading:
+#13 8.120   libssl3t64  openssl-provider-legacy
+#13 8.120 
+#13 8.121 Installing:
+#13 8.121   ca-certificates
+#13 8.121 
+#13 8.121 Installing dependencies:
+#13 8.121   openssl
+#13 8.121 
+#13 8.231 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#13 8.234 Preconfiguring packages ...
+#13 8.275 Summary:
+#13 8.275   Upgrading: 2, Installing: 2, Removing: 0, Not Upgrading: 11
+#13 8.275   Download size: 0 B / 4439 kB
+#13 8.275   Space needed: 2978 kB / 268 GB available
+#13 8.275 
+#13 8.285 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4962 files and directories currently installed.)
+#13 8.288 Preparing to unpack .../openssl-provider-legacy_3.5.7-1~deb13u2_amd64.deb ...
+#13 8.291 Unpacking openssl-provider-legacy (3.5.7-1~deb13u2) over (3.5.6-1~deb13u2) ...
+#13 8.312 Setting up openssl-provider-legacy (3.5.7-1~deb13u2) ...
+#13 8.329 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4962 files and directories currently installed.)
+#13 8.331 Preparing to unpack .../libssl3t64_3.5.7-1~deb13u2_amd64.deb ...
+#13 8.336 Unpacking libssl3t64:amd64 (3.5.7-1~deb13u2) over (3.5.6-1~deb13u2) ...
+#13 8.440 Setting up libssl3t64:amd64 (3.5.7-1~deb13u2) ...
+#13 8.456 Selecting previously unselected package openssl.
+#13 8.456 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4962 files and directories currently installed.)
+#13 8.458 Preparing to unpack .../openssl_3.5.7-1~deb13u2_amd64.deb ...
+#13 8.460 Unpacking openssl (3.5.7-1~deb13u2) ...
+#13 8.517 Selecting previously unselected package ca-certificates.
+#13 8.517 Preparing to unpack .../ca-certificates_20250419_all.deb ...
+#13 8.518 Unpacking ca-certificates (20250419) ...
+#13 8.541 Setting up openssl (3.5.7-1~deb13u2) ...
+#13 8.542 
+#13 8.542 Configuration file '/etc/ssl/openssl.cnf', does not exist on system.
+#13 8.542 Installing new config file as you requested.
+#13 8.546 Setting up ca-certificates (20250419) ...
+#13 8.999 Updating certificates in /etc/ssl/certs...
+#13 9.557 150 added, 0 removed; done.
+#13 9.570 Processing triggers for libc-bin (2.41-12+deb13u3) ...
+#13 9.578 Processing triggers for ca-certificates (20250419) ...
+#13 9.582 Updating certificates in /etc/ssl/certs...
+#13 10.00 0 added, 0 removed; done.
+#13 10.00 Running hooks in /etc/ca-certificates/update.d...
+#13 10.00 done.
+#13 DONE 10.1s
+
+#14 [base 10/26] RUN apt update &&                apt -y install                   curl                         less                         perl                         procps                       python3                      python3-pip                  python3-setuptools           python3-wheel                python-is-python3            vim-tiny                     rsyslog                      rsyslog-relp                 rsync                        redis-tools                  libdaemon0                   libdbus-1-3                  libjansson4                  net-tools                    jq                           libzmq5                      libwrap0                    libatomic1
+#14 0.150 
+#14 0.150 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#14 0.150 
+#14 0.173 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#14 0.173 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#14 0.173 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#14 0.173 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#14 1.173 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#14 1.173 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#14 1.173 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#14 1.173 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#14 3.174 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#14 3.174 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#14 3.174 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#14 3.174 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#14 7.175 Err:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#14 7.175   Unable to connect to 127.0.0.1:9:
+#14 7.175 Err:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#14 7.175   Unable to connect to 127.0.0.1:9:
+#14 7.175 Err:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#14 7.175   Unable to connect to 127.0.0.1:9:
+#14 7.175 Err:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#14 7.175   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#14 7.175   Unable to connect to 127.0.0.1:9:
+#14 7.177 Reading package lists...
+#14 7.628 Building dependency tree...
+#14 7.705 Reading state information...
+#14 7.717 11 packages can be upgraded. Run 'apt list --upgradable' to see them.
+#14 7.717 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie/InRelease  Unable to connect to 127.0.0.1:9:
+#14 7.717 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-updates/InRelease  Unable to connect to 127.0.0.1:9:
+#14 7.717 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-backports/InRelease  Unable to connect to 127.0.0.1:9:
+#14 7.717 Warning: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/dists/trixie-security/InRelease  Unable to connect to 127.0.0.1:9:
+#14 7.717 Warning: Some index files failed to download. They have been ignored, or old ones used instead.
+#14 7.748 
+#14 7.748 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#14 7.748 
+#14 7.762 Reading package lists...
+#14 7.773 Building dependency tree...
+#14 7.852 Reading state information...
+#14 8.384 Installing:
+#14 8.384   curl         libjansson4  python-is-python3   rsync
+#14 8.384   jq           libwrap0     python3             rsyslog
+#14 8.384   less         libzmq5      python3-pip         rsyslog-relp
+#14 8.384   libatomic1   net-tools    python3-setuptools  vim-tiny
+#14 8.384   libdaemon0   perl         python3-wheel
+#14 8.384   libdbus-1-3  procps       redis-tools
+#14 8.384 
+#14 8.385 Installing dependencies:
+#14 8.385   adduser             libncursesw6           libunistring5
+#14 8.385   libbrotli1          libnghttp2-14          media-types
+#14 8.385   libcom-err2         libnghttp3-9           netbase
+#14 8.385   libcurl4t64         libnorm1t64            perl-modules-5.40
+#14 8.385   libestr0            libonig5               python3-autocommand
+#14 8.385   libexpat1           libp11-kit0            python3-inflect
+#14 8.385   libfastjson4        libperl5.40            python3-jaraco.context
+#14 8.385   libffi8             libpgm-5.3-0t64        python3-jaraco.functools
+#14 8.385   libgdbm-compat4t64  libpopt0               python3-jaraco.text
+#14 8.385   libgdbm6t64         libproc2-0             python3-minimal
+#14 8.385   libgnutls30t64      libpsl5t64             python3-more-itertools
+#14 8.385   libgssapi-krb5-2    libpython3-stdlib      python3-packaging
+#14 8.385   libidn2-0           libpython3.13-minimal  python3-pkg-resources
+#14 8.385   libjemalloc2        libpython3.13-stdlib   python3-typeguard
+#14 8.385   libjq1              libreadline8t64        python3-typing-extensions
+#14 8.385   libk5crypto3        librelp0               python3-zipp
+#14 8.385   libkeyutils1        librtmp1               python3.13
+#14 8.385   libkrb5-3           libsasl2-2             python3.13-minimal
+#14 8.385   libkrb5support0     libsasl2-modules-db    readline-common
+#14 8.385   libldap2            libsodium23            vim-common
+#14 8.385   liblognorm5         libssh2-1t64
+#14 8.385   liblzf1             libtasn1-6
+#14 8.385 
+#14 8.385 Suggested packages:
+#14 8.385   liblocale-gettext-perl        python3-tk             | rsyslog-pgsql
+#14 8.385   cron                          python3-venv           rsyslog-mongodb
+#14 8.385   quota                         python-setuptools-doc  rsyslog-elasticsearch
+#14 8.385   gdbm-l10n                     python3.13-venv        rsyslog-kafka
+#14 8.385   gnutls-bin                    python3.13-doc         rsyslog-hiredis
+#14 8.385   krb5-doc                      binutils               rsyslog-snmp
+#14 8.385   krb5-user                     binfmt-support         rsyslog-kubernetes
+#14 8.385   sensible-utils                readline-doc           rsyslog-docker
+#14 8.385   perl-doc                      ruby-redis             rsyslog-clickhouse
+#14 8.385   libterm-readline-gnu-perl     openssh-client         rsyslog-openssl
+#14 8.385   | libterm-readline-perl-perl  openssh-server         | rsyslog-gnutls
+#14 8.385   make                          python3-braceexpand    rsyslog-gssapi
+#14 8.385   libtap-harness-archive-perl   rsyslog-doc            indent
+#14 8.385   python3-doc                   rsyslog-mysql
+#14 8.385 
+#14 8.385 Recommended packages:
+#14 8.385   bash-completion  libgpm2           linux-sysctl-defaults  logrotate
+#14 8.385   dbus             publicsuffix      build-essential        xxd
+#14 8.385   krb5-locales     libsasl2-modules  python3-dev
+#14 8.385   libldap-common   psmisc            libjs-sphinxdoc
+#14 8.385 
+#14 8.508 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#14 8.539 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#14 8.569 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#14 8.690 Summary:
+#14 8.690   Upgrading: 0, Installing: 86, Removing: 0, Not Upgrading: 11
+#14 8.690   Download size: 0 B / 29.4 MB
+#14 8.690   Space needed: 132 MB / 268 GB available
+#14 8.690 
+#14 8.701 Selecting previously unselected package libexpat1:amd64.
+#14 8.701 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5526 files and directories currently installed.)
+#14 8.704 Preparing to unpack .../libexpat1_2.8.3-1~deb13u1_amd64.deb ...
+#14 8.707 Unpacking libexpat1:amd64 (2.8.3-1~deb13u1) ...
+#14 8.728 Selecting previously unselected package libpython3.13-minimal:amd64.
+#14 8.728 Preparing to unpack .../libpython3.13-minimal_3.13.5-2+deb13u4_amd64.deb ...
+#14 8.729 Unpacking libpython3.13-minimal:amd64 (3.13.5-2+deb13u4) ...
+#14 8.781 Selecting previously unselected package python3.13-minimal.
+#14 8.781 Preparing to unpack .../python3.13-minimal_3.13.5-2+deb13u4_amd64.deb ...
+#14 8.785 Unpacking python3.13-minimal (3.13.5-2+deb13u4) ...
+#14 8.884 Setting up libpython3.13-minimal:amd64 (3.13.5-2+deb13u4) ...
+#14 8.886 
+#14 8.886 Configuration file '/etc/python3.13/sitecustomize.py', does not exist on system.
+#14 8.886 Installing new config file as you requested.
+#14 8.889 Setting up libexpat1:amd64 (2.8.3-1~deb13u1) ...
+#14 8.893 Setting up python3.13-minimal (3.13.5-2+deb13u4) ...
+#14 9.412 Selecting previously unselected package python3-minimal.
+#14 9.412 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5860 files and directories currently installed.)
+#14 9.415 Preparing to unpack .../0-python3-minimal_3.13.5-1_amd64.deb ...
+#14 9.416 Unpacking python3-minimal (3.13.5-1) ...
+#14 9.433 Selecting previously unselected package media-types.
+#14 9.433 Preparing to unpack .../1-media-types_13.0.0_all.deb ...
+#14 9.435 Unpacking media-types (13.0.0) ...
+#14 9.451 Selecting previously unselected package netbase.
+#14 9.452 Preparing to unpack .../2-netbase_6.5_all.deb ...
+#14 9.453 Unpacking netbase (6.5) ...
+#14 9.468 Selecting previously unselected package libffi8:amd64.
+#14 9.469 Preparing to unpack .../3-libffi8_3.4.8-2_amd64.deb ...
+#14 9.470 Unpacking libffi8:amd64 (3.4.8-2) ...
+#14 9.486 Selecting previously unselected package libncursesw6:amd64.
+#14 9.487 Preparing to unpack .../4-libncursesw6_6.5+20250216-2_amd64.deb ...
+#14 9.488 Unpacking libncursesw6:amd64 (6.5+20250216-2) ...
+#14 9.507 Selecting previously unselected package readline-common.
+#14 9.508 Preparing to unpack .../5-readline-common_8.2-6_all.deb ...
+#14 9.509 Unpacking readline-common (8.2-6) ...
+#14 9.527 Selecting previously unselected package libreadline8t64:amd64.
+#14 9.528 Preparing to unpack .../6-libreadline8t64_8.2-6_amd64.deb ...
+#14 9.531 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+#14 9.536 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+#14 9.539 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+#14 9.542 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+#14 9.544 Unpacking libreadline8t64:amd64 (8.2-6) ...
+#14 9.565 Selecting previously unselected package libpython3.13-stdlib:amd64.
+#14 9.565 Preparing to unpack .../7-libpython3.13-stdlib_3.13.5-2+deb13u4_amd64.deb ...
+#14 9.567 Unpacking libpython3.13-stdlib:amd64 (3.13.5-2+deb13u4) ...
+#14 9.658 Selecting previously unselected package python3.13.
+#14 9.658 Preparing to unpack .../8-python3.13_3.13.5-2+deb13u4_amd64.deb ...
+#14 9.660 Unpacking python3.13 (3.13.5-2+deb13u4) ...
+#14 9.678 Selecting previously unselected package libpython3-stdlib:amd64.
+#14 9.678 Preparing to unpack .../9-libpython3-stdlib_3.13.5-1_amd64.deb ...
+#14 9.679 Unpacking libpython3-stdlib:amd64 (3.13.5-1) ...
+#14 9.696 Setting up python3-minimal (3.13.5-1) ...
+#14 9.797 Selecting previously unselected package python3.
+#14 9.797 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6368 files and directories currently installed.)
+#14 9.800 Preparing to unpack .../python3_3.13.5-1_amd64.deb ...
+#14 9.803 Unpacking python3 (3.13.5-1) ...
+#14 9.821 Selecting previously unselected package libpopt0:amd64.
+#14 9.822 Preparing to unpack .../libpopt0_1.19+dfsg-2_amd64.deb ...
+#14 9.823 Unpacking libpopt0:amd64 (1.19+dfsg-2) ...
+#14 9.841 Selecting previously unselected package rsync.
+#14 9.842 Preparing to unpack .../rsync_3.4.1+ds1-5+deb13u4_amd64.deb ...
+#14 9.844 Unpacking rsync (3.4.1+ds1-5+deb13u4) ...
+#14 9.873 Selecting previously unselected package adduser.
+#14 9.873 Preparing to unpack .../archives/adduser_3.152_all.deb ...
+#14 9.876 Unpacking adduser (3.152) ...
+#14 9.895 Setting up adduser (3.152) ...
+#14 9.897 
+#14 9.897 Configuration file '/etc/adduser.conf', does not exist on system.
+#14 9.897 Installing new config file as you requested.
+#14 9.898 
+#14 9.898 Configuration file '/etc/deluser.conf', does not exist on system.
+#14 9.898 Installing new config file as you requested.
+#14 9.915 Selecting previously unselected package less.
+#14 9.915 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6553 files and directories currently installed.)
+#14 9.918 Preparing to unpack .../00-less_668-1_amd64.deb ...
+#14 9.920 Unpacking less (668-1) ...
+#14 9.940 Selecting previously unselected package libproc2-0:amd64.
+#14 9.941 Preparing to unpack .../01-libproc2-0_2%3a4.0.4-9_amd64.deb ...
+#14 9.942 Unpacking libproc2-0:amd64 (2:4.0.4-9) ...
+#14 9.962 Selecting previously unselected package procps.
+#14 9.962 Preparing to unpack .../02-procps_2%3a4.0.4-9_amd64.deb ...
+#14 9.968 Unpacking procps (2:4.0.4-9) ...
+#14 10.01 Selecting previously unselected package vim-common.
+#14 10.01 Preparing to unpack .../03-vim-common_2%3a9.1.1230-2_all.deb ...
+#14 10.02 Unpacking vim-common (2:9.1.1230-2) ...
+#14 10.05 Selecting previously unselected package vim-tiny.
+#14 10.05 Preparing to unpack .../04-vim-tiny_2%3a9.1.1230-2_amd64.deb ...
+#14 10.05 Unpacking vim-tiny (2:9.1.1230-2) ...
+#14 10.09 Selecting previously unselected package perl-modules-5.40.
+#14 10.09 Preparing to unpack .../05-perl-modules-5.40_5.40.1-6_all.deb ...
+#14 10.09 Unpacking perl-modules-5.40 (5.40.1-6) ...
+#14 10.25 Selecting previously unselected package libgdbm6t64:amd64.
+#14 10.25 Preparing to unpack .../06-libgdbm6t64_1.24-2_amd64.deb ...
+#14 10.25 Unpacking libgdbm6t64:amd64 (1.24-2) ...
+#14 10.27 Selecting previously unselected package libgdbm-compat4t64:amd64.
+#14 10.27 Preparing to unpack .../07-libgdbm-compat4t64_1.24-2_amd64.deb ...
+#14 10.27 Unpacking libgdbm-compat4t64:amd64 (1.24-2) ...
+#14 10.29 Selecting previously unselected package libperl5.40:amd64.
+#14 10.29 Preparing to unpack .../08-libperl5.40_5.40.1-6_amd64.deb ...
+#14 10.29 Unpacking libperl5.40:amd64 (5.40.1-6) ...
+#14 10.48 Selecting previously unselected package perl.
+#14 10.48 Preparing to unpack .../09-perl_5.40.1-6_amd64.deb ...
+#14 10.48 Unpacking perl (5.40.1-6) ...
+#14 10.50 Selecting previously unselected package libbrotli1:amd64.
+#14 10.50 Preparing to unpack .../10-libbrotli1_1.1.0-2+b7_amd64.deb ...
+#14 10.51 Unpacking libbrotli1:amd64 (1.1.0-2+b7) ...
+#14 10.53 Selecting previously unselected package libkrb5support0:amd64.
+#14 10.54 Preparing to unpack .../11-libkrb5support0_1.21.3-5+deb13u1_amd64.deb ...
+#14 10.54 Unpacking libkrb5support0:amd64 (1.21.3-5+deb13u1) ...
+#14 10.55 Selecting previously unselected package libcom-err2:amd64.
+#14 10.55 Preparing to unpack .../12-libcom-err2_1.47.2-3+b11_amd64.deb ...
+#14 10.56 Unpacking libcom-err2:amd64 (1.47.2-3+b11) ...
+#14 10.57 Selecting previously unselected package libk5crypto3:amd64.
+#14 10.57 Preparing to unpack .../13-libk5crypto3_1.21.3-5+deb13u1_amd64.deb ...
+#14 10.57 Unpacking libk5crypto3:amd64 (1.21.3-5+deb13u1) ...
+#14 10.59 Selecting previously unselected package libkeyutils1:amd64.
+#14 10.59 Preparing to unpack .../14-libkeyutils1_1.6.3-6_amd64.deb ...
+#14 10.59 Unpacking libkeyutils1:amd64 (1.6.3-6) ...
+#14 10.61 Selecting previously unselected package libkrb5-3:amd64.
+#14 10.61 Preparing to unpack .../15-libkrb5-3_1.21.3-5+deb13u1_amd64.deb ...
+#14 10.61 Unpacking libkrb5-3:amd64 (1.21.3-5+deb13u1) ...
+#14 10.64 Selecting previously unselected package libgssapi-krb5-2:amd64.
+#14 10.64 Preparing to unpack .../16-libgssapi-krb5-2_1.21.3-5+deb13u1_amd64.deb ...
+#14 10.64 Unpacking libgssapi-krb5-2:amd64 (1.21.3-5+deb13u1) ...
+#14 10.66 Selecting previously unselected package libunistring5:amd64.
+#14 10.66 Preparing to unpack .../17-libunistring5_1.3-2_amd64.deb ...
+#14 10.67 Unpacking libunistring5:amd64 (1.3-2) ...
+#14 10.70 Selecting previously unselected package libidn2-0:amd64.
+#14 10.70 Preparing to unpack .../18-libidn2-0_2.3.8-2_amd64.deb ...
+#14 10.70 Unpacking libidn2-0:amd64 (2.3.8-2) ...
+#14 10.72 Selecting previously unselected package libsasl2-modules-db:amd64.
+#14 10.72 Preparing to unpack .../19-libsasl2-modules-db_2.1.28+dfsg1-9_amd64.deb ...
+#14 10.73 Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg1-9) ...
+#14 10.74 Selecting previously unselected package libsasl2-2:amd64.
+#14 10.74 Preparing to unpack .../20-libsasl2-2_2.1.28+dfsg1-9_amd64.deb ...
+#14 10.74 Unpacking libsasl2-2:amd64 (2.1.28+dfsg1-9) ...
+#14 10.76 Selecting previously unselected package libldap2:amd64.
+#14 10.76 Preparing to unpack .../21-libldap2_2.6.10+dfsg-1_amd64.deb ...
+#14 10.76 Unpacking libldap2:amd64 (2.6.10+dfsg-1) ...
+#14 10.78 Selecting previously unselected package libnghttp2-14:amd64.
+#14 10.79 Preparing to unpack .../22-libnghttp2-14_1.64.0-1.1+deb13u1_amd64.deb ...
+#14 10.79 Unpacking libnghttp2-14:amd64 (1.64.0-1.1+deb13u1) ...
+#14 10.81 Selecting previously unselected package libnghttp3-9:amd64.
+#14 10.81 Preparing to unpack .../23-libnghttp3-9_1.8.0-1_amd64.deb ...
+#14 10.81 Unpacking libnghttp3-9:amd64 (1.8.0-1) ...
+#14 10.83 Selecting previously unselected package libpsl5t64:amd64.
+#14 10.83 Preparing to unpack .../24-libpsl5t64_0.21.2-1.1+b1_amd64.deb ...
+#14 10.83 Unpacking libpsl5t64:amd64 (0.21.2-1.1+b1) ...
+#14 10.85 Selecting previously unselected package libp11-kit0:amd64.
+#14 10.85 Preparing to unpack .../25-libp11-kit0_0.25.5-3_amd64.deb ...
+#14 10.85 Unpacking libp11-kit0:amd64 (0.25.5-3) ...
+#14 10.88 Selecting previously unselected package libtasn1-6:amd64.
+#14 10.88 Preparing to unpack .../26-libtasn1-6_4.20.0-2+deb13u1_amd64.deb ...
+#14 10.88 Unpacking libtasn1-6:amd64 (4.20.0-2+deb13u1) ...
+#14 10.90 Selecting previously unselected package libgnutls30t64:amd64.
+#14 10.90 Preparing to unpack .../27-libgnutls30t64_3.8.9-3+deb13u4_amd64.deb ...
+#14 10.90 Unpacking libgnutls30t64:amd64 (3.8.9-3+deb13u4) ...
+#14 10.95 Selecting previously unselected package librtmp1:amd64.
+#14 10.95 Preparing to unpack .../28-librtmp1_2.4+20151223.gitfa8646d.1-2+b5_amd64.deb ...
+#14 10.95 Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b5) ...
+#14 10.97 Selecting previously unselected package libssh2-1t64:amd64.
+#14 10.97 Preparing to unpack .../29-libssh2-1t64_1.11.1-1+deb13u1_amd64.deb ...
+#14 10.97 Unpacking libssh2-1t64:amd64 (1.11.1-1+deb13u1) ...
+#14 10.99 Selecting previously unselected package libcurl4t64:amd64.
+#14 10.99 Preparing to unpack .../30-libcurl4t64_8.14.1-2+deb13u4_amd64.deb ...
+#14 10.99 Unpacking libcurl4t64:amd64 (8.14.1-2+deb13u4) ...
+#14 11.02 Selecting previously unselected package curl.
+#14 11.02 Preparing to unpack .../31-curl_8.14.1-2+deb13u4_amd64.deb ...
+#14 11.02 Unpacking curl (8.14.1-2+deb13u4) ...
+#14 11.05 Selecting previously unselected package libonig5:amd64.
+#14 11.05 Preparing to unpack .../32-libonig5_6.9.9-1+b1_amd64.deb ...
+#14 11.05 Unpacking libonig5:amd64 (6.9.9-1+b1) ...
+#14 11.07 Selecting previously unselected package libjq1:amd64.
+#14 11.07 Preparing to unpack .../33-libjq1_1.7.1-6+deb13u3_amd64.deb ...
+#14 11.07 Unpacking libjq1:amd64 (1.7.1-6+deb13u3) ...
+#14 11.09 Selecting previously unselected package jq.
+#14 11.09 Preparing to unpack .../34-jq_1.7.1-6+deb13u3_amd64.deb ...
+#14 11.09 Unpacking jq (1.7.1-6+deb13u3) ...
+#14 11.11 Selecting previously unselected package libatomic1:amd64.
+#14 11.11 Preparing to unpack .../35-libatomic1_14.2.0-19_amd64.deb ...
+#14 11.11 Unpacking libatomic1:amd64 (14.2.0-19) ...
+#14 11.13 Selecting previously unselected package libdaemon0:amd64.
+#14 11.13 Preparing to unpack .../36-libdaemon0_0.14-7.1+b3_amd64.deb ...
+#14 11.13 Unpacking libdaemon0:amd64 (0.14-7.1+b3) ...
+#14 11.14 Selecting previously unselected package libdbus-1-3:amd64.
+#14 11.14 Preparing to unpack .../37-libdbus-1-3_1.16.2-2_amd64.deb ...
+#14 11.15 Unpacking libdbus-1-3:amd64 (1.16.2-2) ...
+#14 11.17 Selecting previously unselected package libestr0:amd64.
+#14 11.17 Preparing to unpack .../38-libestr0_0.1.11-2_amd64.deb ...
+#14 11.17 Unpacking libestr0:amd64 (0.1.11-2) ...
+#14 11.18 Selecting previously unselected package libfastjson4:amd64.
+#14 11.18 Preparing to unpack .../39-libfastjson4_1.2304.0-2_amd64.deb ...
+#14 11.19 Unpacking libfastjson4:amd64 (1.2304.0-2) ...
+#14 11.20 Selecting previously unselected package libjansson4:amd64.
+#14 11.20 Preparing to unpack .../40-libjansson4_2.14-2+b3_amd64.deb ...
+#14 11.20 Unpacking libjansson4:amd64 (2.14-2+b3) ...
+#14 11.22 Selecting previously unselected package libjemalloc2:amd64.
+#14 11.22 Preparing to unpack .../41-libjemalloc2_5.3.0-3_amd64.deb ...
+#14 11.22 Unpacking libjemalloc2:amd64 (5.3.0-3) ...
+#14 11.25 Selecting previously unselected package liblognorm5:amd64.
+#14 11.25 Preparing to unpack .../42-liblognorm5_2.0.6-5_amd64.deb ...
+#14 11.25 Unpacking liblognorm5:amd64 (2.0.6-5) ...
+#14 11.27 Selecting previously unselected package liblzf1:amd64.
+#14 11.27 Preparing to unpack .../43-liblzf1_3.6-4+b3_amd64.deb ...
+#14 11.27 Unpacking liblzf1:amd64 (3.6-4+b3) ...
+#14 11.28 Selecting previously unselected package libnorm1t64:amd64.
+#14 11.28 Preparing to unpack .../44-libnorm1t64_1.5.9+dfsg-3.1+b2_amd64.deb ...
+#14 11.29 Unpacking libnorm1t64:amd64 (1.5.9+dfsg-3.1+b2) ...
+#14 11.31 Selecting previously unselected package libpgm-5.3-0t64:amd64.
+#14 11.31 Preparing to unpack .../45-libpgm-5.3-0t64_5.3.128~dfsg-2.1+b1_amd64.deb ...
+#14 11.31 Unpacking libpgm-5.3-0t64:amd64 (5.3.128~dfsg-2.1+b1) ...
+#14 11.33 Selecting previously unselected package librelp0:amd64.
+#14 11.33 Preparing to unpack .../46-librelp0_1.11.0-2_amd64.deb ...
+#14 11.33 Unpacking librelp0:amd64 (1.11.0-2) ...
+#14 11.35 Selecting previously unselected package libsodium23:amd64.
+#14 11.35 Preparing to unpack .../47-libsodium23_1.0.18-1+deb13u1_amd64.deb ...
+#14 11.35 Unpacking libsodium23:amd64 (1.0.18-1+deb13u1) ...
+#14 11.37 Selecting previously unselected package libwrap0:amd64.
+#14 11.38 Preparing to unpack .../48-libwrap0_7.6.q-36_amd64.deb ...
+#14 11.38 Unpacking libwrap0:amd64 (7.6.q-36) ...
+#14 11.39 Selecting previously unselected package libzmq5:amd64.
+#14 11.39 Preparing to unpack .../49-libzmq5_4.3.5-1+b3_amd64.deb ...
+#14 11.40 Unpacking libzmq5:amd64 (4.3.5-1+b3) ...
+#14 11.42 Selecting previously unselected package net-tools.
+#14 11.42 Preparing to unpack .../50-net-tools_2.10-1.3_amd64.deb ...
+#14 11.42 Unpacking net-tools (2.10-1.3) ...
+#14 11.44 Selecting previously unselected package python-is-python3.
+#14 11.44 Preparing to unpack .../51-python-is-python3_3.13.3-1_all.deb ...
+#14 11.45 Unpacking python-is-python3 (3.13.3-1) ...
+#14 11.46 Selecting previously unselected package python3-autocommand.
+#14 11.46 Preparing to unpack .../52-python3-autocommand_2.2.2-3_all.deb ...
+#14 11.46 Unpacking python3-autocommand (2.2.2-3) ...
+#14 11.48 Selecting previously unselected package python3-more-itertools.
+#14 11.48 Preparing to unpack .../53-python3-more-itertools_10.7.0-1_all.deb ...
+#14 11.48 Unpacking python3-more-itertools (10.7.0-1) ...
+#14 11.49 Selecting previously unselected package python3-typing-extensions.
+#14 11.50 Preparing to unpack .../54-python3-typing-extensions_4.13.2-1_all.deb ...
+#14 11.50 Unpacking python3-typing-extensions (4.13.2-1) ...
+#14 11.51 Selecting previously unselected package python3-typeguard.
+#14 11.51 Preparing to unpack .../55-python3-typeguard_4.4.2-1_all.deb ...
+#14 11.52 Unpacking python3-typeguard (4.4.2-1) ...
+#14 11.53 Selecting previously unselected package python3-inflect.
+#14 11.53 Preparing to unpack .../56-python3-inflect_7.3.1-2_all.deb ...
+#14 11.53 Unpacking python3-inflect (7.3.1-2) ...
+#14 11.55 Selecting previously unselected package python3-jaraco.functools.
+#14 11.55 Preparing to unpack .../57-python3-jaraco.functools_4.1.0-1_all.deb ...
+#14 11.55 Unpacking python3-jaraco.functools (4.1.0-1) ...
+#14 11.56 Selecting previously unselected package python3-pkg-resources.
+#14 11.56 Preparing to unpack .../58-python3-pkg-resources_78.1.1-0.1_all.deb ...
+#14 11.57 Unpacking python3-pkg-resources (78.1.1-0.1) ...
+#14 11.59 Selecting previously unselected package python3-jaraco.text.
+#14 11.59 Preparing to unpack .../59-python3-jaraco.text_4.0.0-1_all.deb ...
+#14 11.59 Unpacking python3-jaraco.text (4.0.0-1) ...
+#14 11.60 Selecting previously unselected package python3-zipp.
+#14 11.61 Preparing to unpack .../60-python3-zipp_3.21.0-1_all.deb ...
+#14 11.61 Unpacking python3-zipp (3.21.0-1) ...
+#14 11.63 Selecting previously unselected package python3-setuptools.
+#14 11.63 Preparing to unpack .../61-python3-setuptools_78.1.1-0.1_all.deb ...
+#14 11.63 Unpacking python3-setuptools (78.1.1-0.1) ...
+#14 11.67 Selecting previously unselected package python3-jaraco.context.
+#14 11.67 Preparing to unpack .../62-python3-jaraco.context_6.0.1-1+deb13u1_all.deb ...
+#14 11.67 Unpacking python3-jaraco.context (6.0.1-1+deb13u1) ...
+#14 11.69 Selecting previously unselected package python3-packaging.
+#14 11.69 Preparing to unpack .../63-python3-packaging_25.0-1_all.deb ...
+#14 11.69 Unpacking python3-packaging (25.0-1) ...
+#14 11.71 Selecting previously unselected package python3-wheel.
+#14 11.71 Preparing to unpack .../64-python3-wheel_0.46.1-2_all.deb ...
+#14 11.71 Unpacking python3-wheel (0.46.1-2) ...
+#14 11.73 Selecting previously unselected package python3-pip.
+#14 11.73 Preparing to unpack .../65-python3-pip_25.1.1+dfsg-1_all.deb ...
+#14 11.73 Unpacking python3-pip (25.1.1+dfsg-1) ...
+#14 11.80 Selecting previously unselected package redis-tools.
+#14 11.80 Preparing to unpack .../66-redis-tools_5%3a8.0.2-3+deb13u2_amd64.deb ...
+#14 11.80 Unpacking redis-tools (5:8.0.2-3+deb13u2) ...
+#14 11.87 Selecting previously unselected package rsyslog.
+#14 11.87 Preparing to unpack .../67-rsyslog_8.2504.0-1_amd64.deb ...
+#14 11.88 Unpacking rsyslog (8.2504.0-1) ...
+#14 11.92 Selecting previously unselected package rsyslog-relp.
+#14 11.92 Preparing to unpack .../68-rsyslog-relp_8.2504.0-1_amd64.deb ...
+#14 11.92 Unpacking rsyslog-relp (8.2504.0-1) ...
+#14 11.95 Setting up media-types (13.0.0) ...
+#14 11.95 
+#14 11.95 Configuration file '/etc/mime.types', does not exist on system.
+#14 11.95 Installing new config file as you requested.
+#14 11.95 Setting up libnorm1t64:amd64 (1.5.9+dfsg-3.1+b2) ...
+#14 11.95 Setting up net-tools (2.10-1.3) ...
+#14 11.96 Setting up libkeyutils1:amd64 (1.6.3-6) ...
+#14 11.96 Setting up libsodium23:amd64 (1.0.18-1+deb13u1) ...
+#14 11.96 Setting up libgdbm6t64:amd64 (1.24-2) ...
+#14 11.97 Setting up libgdbm-compat4t64:amd64 (1.24-2) ...
+#14 11.97 Setting up libestr0:amd64 (0.1.11-2) ...
+#14 11.97 Setting up libfastjson4:amd64 (1.2304.0-2) ...
+#14 11.98 Setting up libbrotli1:amd64 (1.1.0-2+b7) ...
+#14 11.98 Setting up libnghttp2-14:amd64 (1.64.0-1.1+deb13u1) ...
+#14 11.98 Setting up less (668-1) ...
+#14 11.99 Setting up libcom-err2:amd64 (1.47.2-3+b11) ...
+#14 11.99 Setting up libjemalloc2:amd64 (5.3.0-3) ...
+#14 12.00 Setting up libjansson4:amd64 (2.14-2+b3) ...
+#14 12.00 Setting up libkrb5support0:amd64 (1.21.3-5+deb13u1) ...
+#14 12.01 Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg1-9) ...
+#14 12.01 Setting up libpgm-5.3-0t64:amd64 (5.3.128~dfsg-2.1+b1) ...
+#14 12.02 Setting up vim-common (2:9.1.1230-2) ...
+#14 12.02 
+#14 12.02 Configuration file '/etc/vim/vimrc', does not exist on system.
+#14 12.02 Installing new config file as you requested.
+#14 12.02 Setting up libwrap0:amd64 (7.6.q-36) ...
+#14 12.03 Setting up libdbus-1-3:amd64 (1.16.2-2) ...
+#14 12.03 Setting up liblzf1:amd64 (3.6-4+b3) ...
+#14 12.03 Setting up libproc2-0:amd64 (2:4.0.4-9) ...
+#14 12.04 Setting up libunistring5:amd64 (1.3-2) ...
+#14 12.04 Setting up libatomic1:amd64 (14.2.0-19) ...
+#14 12.04 Setting up libncursesw6:amd64 (6.5+20250216-2) ...
+#14 12.05 Setting up libk5crypto3:amd64 (1.21.3-5+deb13u1) ...
+#14 12.05 Setting up libsasl2-2:amd64 (2.1.28+dfsg1-9) ...
+#14 12.05 Setting up libnghttp3-9:amd64 (1.8.0-1) ...
+#14 12.06 Setting up liblognorm5:amd64 (2.0.6-5) ...
+#14 12.06 Setting up libffi8:amd64 (3.4.8-2) ...
+#14 12.06 Setting up perl-modules-5.40 (5.40.1-6) ...
+#14 12.07 Setting up procps (2:4.0.4-9) ...
+#14 12.07 
+#14 12.07 Configuration file '/etc/init.d/procps', does not exist on system.
+#14 12.07 Installing new config file as you requested.
+#14 12.07 
+#14 12.07 Configuration file '/etc/sysctl.d/README.sysctl', does not exist on system.
+#14 12.07 Installing new config file as you requested.
+#14 12.08 Setting up libtasn1-6:amd64 (4.20.0-2+deb13u1) ...
+#14 12.09 Setting up netbase (6.5) ...
+#14 12.09 
+#14 12.09 Configuration file '/etc/ethertypes', does not exist on system.
+#14 12.09 Installing new config file as you requested.
+#14 12.09 
+#14 12.09 Configuration file '/etc/protocols', does not exist on system.
+#14 12.09 Installing new config file as you requested.
+#14 12.09 
+#14 12.09 Configuration file '/etc/rpc', does not exist on system.
+#14 12.09 Installing new config file as you requested.
+#14 12.09 
+#14 12.09 Configuration file '/etc/services', does not exist on system.
+#14 12.09 Installing new config file as you requested.
+#14 12.10 Setting up libkrb5-3:amd64 (1.21.3-5+deb13u1) ...
+#14 12.10 Setting up libssh2-1t64:amd64 (1.11.1-1+deb13u1) ...
+#14 12.10 Setting up libdaemon0:amd64 (0.14-7.1+b3) ...
+#14 12.10 Setting up readline-common (8.2-6) ...
+#14 12.11 Setting up libldap2:amd64 (2.6.10+dfsg-1) ...
+#14 12.11 Setting up libonig5:amd64 (6.9.9-1+b1) ...
+#14 12.12 Setting up libpopt0:amd64 (1.19+dfsg-2) ...
+#14 12.12 Setting up libjq1:amd64 (1.7.1-6+deb13u3) ...
+#14 12.12 Setting up rsyslog (8.2504.0-1) ...
+#14 12.12 
+#14 12.12 Configuration file '/etc/logcheck/ignore.d.server/rsyslog', does not exist on system.
+#14 12.12 Installing new config file as you requested.
+#14 12.12 
+#14 12.12 Configuration file '/etc/logrotate.d/rsyslog', does not exist on system.
+#14 12.12 Installing new config file as you requested.
+#14 12.13 
+#14 12.13 Configuration file '/etc/rsyslog.conf', does not exist on system.
+#14 12.13 Installing new config file as you requested.
+#14 12.22 Setting up libidn2-0:amd64 (2.3.8-2) ...
+#14 12.22 Setting up vim-tiny (2:9.1.1230-2) ...
+#14 12.22 
+#14 12.22 Configuration file '/etc/vim/vimrc.tiny', does not exist on system.
+#14 12.22 Installing new config file as you requested.
+#14 12.22 update-alternatives: using /usr/bin/vim.tiny to provide /usr/bin/editor (editor) in auto mode
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group editor) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/da/man1/editor.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group editor) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/de/man1/editor.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group editor) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/fr/man1/editor.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group editor) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/it/man1/editor.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group editor) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/ja/man1/editor.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group editor) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/pl/man1/editor.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group editor) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/ru/man1/editor.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group editor) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/tr/man1/editor.1.gz because associated file /usr/share/man/tr/man1/vim.1.gz (of link group editor) doesn't exist
+#14 12.22 update-alternatives: using /usr/bin/vim.tiny to provide /usr/bin/ex (ex) in auto mode
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/man1/ex.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group ex) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/da/man1/ex.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group ex) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/de/man1/ex.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group ex) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/fr/man1/ex.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group ex) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/it/man1/ex.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group ex) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/ja/man1/ex.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group ex) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/pl/man1/ex.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group ex) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/ru/man1/ex.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group ex) doesn't exist
+#14 12.22 update-alternatives: warning: skip creation of /usr/share/man/tr/man1/ex.1.gz because associated file /usr/share/man/tr/man1/vim.1.gz (of link group ex) doesn't exist
+#14 12.23 update-alternatives: using /usr/bin/vim.tiny to provide /usr/bin/rview (rview) in auto mode
+#14 12.23 update-alternatives: using /usr/bin/vim.tiny to provide /usr/bin/vi (vi) in auto mode
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/man1/vi.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group vi) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/da/man1/vi.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group vi) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/de/man1/vi.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group vi) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/fr/man1/vi.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group vi) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/it/man1/vi.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group vi) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/ja/man1/vi.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group vi) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/pl/man1/vi.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group vi) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/ru/man1/vi.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group vi) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/tr/man1/vi.1.gz because associated file /usr/share/man/tr/man1/vim.1.gz (of link group vi) doesn't exist
+#14 12.23 update-alternatives: using /usr/bin/vim.tiny to provide /usr/bin/view (view) in auto mode
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/man1/view.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group view) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/da/man1/view.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group view) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/de/man1/view.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group view) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/fr/man1/view.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group view) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/it/man1/view.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group view) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/ja/man1/view.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group view) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/pl/man1/view.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group view) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/ru/man1/view.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group view) doesn't exist
+#14 12.23 update-alternatives: warning: skip creation of /usr/share/man/tr/man1/view.1.gz because associated file /usr/share/man/tr/man1/vim.1.gz (of link group view) doesn't exist
+#14 12.23 Setting up libperl5.40:amd64 (5.40.1-6) ...
+#14 12.24 Setting up perl (5.40.1-6) ...
+#14 12.24 
+#14 12.24 Configuration file '/etc/perl/Net/libnet.cfg', does not exist on system.
+#14 12.24 Installing new config file as you requested.
+#14 12.24 Setting up redis-tools (5:8.0.2-3+deb13u2) ...
+#14 12.32 Setting up libp11-kit0:amd64 (0.25.5-3) ...
+#14 12.32 Setting up libgssapi-krb5-2:amd64 (1.21.3-5+deb13u1) ...
+#14 12.33 Setting up libreadline8t64:amd64 (8.2-6) ...
+#14 12.33 Setting up jq (1.7.1-6+deb13u3) ...
+#14 12.33 Setting up libpython3.13-stdlib:amd64 (3.13.5-2+deb13u4) ...
+#14 12.34 Setting up rsync (3.4.1+ds1-5+deb13u4) ...
+#14 12.34 
+#14 12.34 Configuration file '/etc/default/rsync', does not exist on system.
+#14 12.34 Installing new config file as you requested.
+#14 12.34 
+#14 12.34 Configuration file '/etc/init.d/rsync', does not exist on system.
+#14 12.34 Installing new config file as you requested.
+#14 12.35 invoke-rc.d: could not determine current runlevel
+#14 12.35 invoke-rc.d: policy-rc.d denied execution of start.
+#14 12.40 Setting up libpython3-stdlib:amd64 (3.13.5-1) ...
+#14 12.41 Setting up libgnutls30t64:amd64 (3.8.9-3+deb13u4) ...
+#14 12.41 Setting up libzmq5:amd64 (4.3.5-1+b3) ...
+#14 12.42 Setting up python3.13 (3.13.5-2+deb13u4) ...
+#14 13.01 Setting up libpsl5t64:amd64 (0.21.2-1.1+b1) ...
+#14 13.01 Setting up python3 (3.13.5-1) ...
+#14 13.08 Setting up python3-zipp (3.21.0-1) ...
+#14 13.15 Setting up python3-autocommand (2.2.2-3) ...
+#14 13.22 Setting up python3-packaging (25.0-1) ...
+#14 13.32 Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b5) ...
+#14 13.32 Setting up python3-typing-extensions (4.13.2-1) ...
+#14 13.40 Setting up librelp0:amd64 (1.11.0-2) ...
+#14 13.41 Setting up python-is-python3 (3.13.3-1) ...
+#14 13.41 Setting up python3-more-itertools (10.7.0-1) ...
+#14 13.49 Setting up python3-jaraco.functools (4.1.0-1) ...
+#14 13.56 Setting up python3-jaraco.context (6.0.1-1+deb13u1) ...
+#14 13.63 Setting up libcurl4t64:amd64 (8.14.1-2+deb13u4) ...
+#14 13.63 Setting up python3-typeguard (4.4.2-1) ...
+#14 13.72 Setting up rsyslog-relp (8.2504.0-1) ...
+#14 13.72 Setting up python3-wheel (0.46.1-2) ...
+#14 13.80 Setting up python3-inflect (7.3.1-2) ...
+#14 13.88 Setting up python3-jaraco.text (4.0.0-1) ...
+#14 13.95 Setting up python3-pip (25.1.1+dfsg-1) ...
+#14 14.55 Setting up curl (8.14.1-2+deb13u4) ...
+#14 14.55 Setting up python3-pkg-resources (78.1.1-0.1) ...
+#14 14.68 Setting up python3-setuptools (78.1.1-0.1) ...
+#14 15.14 Processing triggers for libc-bin (2.41-12+deb13u3) ...
+#14 15.23 sending incremental file list
+#14 15.23 ./
+#14 15.23 adduser_3.152_all.deb
+#14 15.23 ca-certificates_20250419_all.deb
+#14 15.23 curl_8.14.1-2+deb13u4_amd64.deb
+#14 15.23 jq_1.7.1-6+deb13u3_amd64.deb
+#14 15.23 less_668-1_amd64.deb
+#14 15.23 libatomic1_14.2.0-19_amd64.deb
+#14 15.23 libbpf1_1%3a1.5.0-3_amd64.deb
+#14 15.23 libbrotli1_1.1.0-2+b7_amd64.deb
+#14 15.23 libcap2-bin_1%3a2.75-10+deb13u1+b1_amd64.deb
+#14 15.23 libcom-err2_1.47.2-3+b11_amd64.deb
+#14 15.23 libcurl4t64_8.14.1-2+deb13u4_amd64.deb
+#14 15.23 libdaemon0_0.14-7.1+b3_amd64.deb
+#14 15.23 libdbus-1-3_1.16.2-2_amd64.deb
+#14 15.23 libelf1t64_0.192-4_amd64.deb
+#14 15.23 libestr0_0.1.11-2_amd64.deb
+#14 15.23 libexpat1_2.8.3-1~deb13u1_amd64.deb
+#14 15.23 libfastjson4_1.2304.0-2_amd64.deb
+#14 15.23 libffi8_3.4.8-2_amd64.deb
+#14 15.23 libgdbm-compat4t64_1.24-2_amd64.deb
+#14 15.24 libgdbm6t64_1.24-2_amd64.deb
+#14 15.24 libgnutls30t64_3.8.9-3+deb13u4_amd64.deb
+#14 15.24 libgssapi-krb5-2_1.21.3-5+deb13u1_amd64.deb
+#14 15.24 libidn2-0_2.3.8-2_amd64.deb
+#14 15.24 libjansson4_2.14-2+b3_amd64.deb
+#14 15.24 libjemalloc2_5.3.0-3_amd64.deb
+#14 15.24 libjq1_1.7.1-6+deb13u3_amd64.deb
+#14 15.24 libk5crypto3_1.21.3-5+deb13u1_amd64.deb
+#14 15.24 libkeyutils1_1.6.3-6_amd64.deb
+#14 15.24 libkrb5-3_1.21.3-5+deb13u1_amd64.deb
+#14 15.24 libkrb5support0_1.21.3-5+deb13u1_amd64.deb
+#14 15.24 libldap2_2.6.10+dfsg-1_amd64.deb
+#14 15.24 liblognorm5_2.0.6-5_amd64.deb
+#14 15.24 liblzf1_3.6-4+b3_amd64.deb
+#14 15.24 libmnl0_1.0.5-3_amd64.deb
+#14 15.24 libncursesw6_6.5+20250216-2_amd64.deb
+#14 15.24 libnghttp2-14_1.64.0-1.1+deb13u1_amd64.deb
+#14 15.24 libnghttp3-9_1.8.0-1_amd64.deb
+#14 15.24 libnorm1t64_1.5.9+dfsg-3.1+b2_amd64.deb
+#14 15.24 libonig5_6.9.9-1+b1_amd64.deb
+#14 15.24 libp11-kit0_0.25.5-3_amd64.deb
+#14 15.24 libperl5.40_5.40.1-6_amd64.deb
+#14 15.25 libpgm-5.3-0t64_5.3.128~dfsg-2.1+b1_amd64.deb
+#14 15.25 libpopt0_1.19+dfsg-2_amd64.deb
+#14 15.25 libproc2-0_2%3a4.0.4-9_amd64.deb
+#14 15.25 libpsl5t64_0.21.2-1.1+b1_amd64.deb
+#14 15.25 libpython3-stdlib_3.13.5-1_amd64.deb
+#14 15.25 libpython3.13-minimal_3.13.5-2+deb13u4_amd64.deb
+#14 15.25 libpython3.13-stdlib_3.13.5-2+deb13u4_amd64.deb
+#14 15.25 libreadline8t64_8.2-6_amd64.deb
+#14 15.25 librelp0_1.11.0-2_amd64.deb
+#14 15.25 librtmp1_2.4+20151223.gitfa8646d.1-2+b5_amd64.deb
+#14 15.25 libsasl2-2_2.1.28+dfsg1-9_amd64.deb
+#14 15.25 libsasl2-modules-db_2.1.28+dfsg1-9_amd64.deb
+#14 15.25 libsodium23_1.0.18-1+deb13u1_amd64.deb
+#14 15.25 libssh2-1t64_1.11.1-1+deb13u1_amd64.deb
+#14 15.25 libssl3t64_3.5.7-1~deb13u2_amd64.deb
+#14 15.26 libtasn1-6_4.20.0-2+deb13u1_amd64.deb
+#14 15.26 libtirpc-common_1.3.6+ds-1_all.deb
+#14 15.26 libtirpc3t64_1.3.6+ds-1_amd64.deb
+#14 15.26 libunistring5_1.3-2_amd64.deb
+#14 15.26 libwrap0_7.6.q-36_amd64.deb
+#14 15.26 libxtables12_1.8.11-2_amd64.deb
+#14 15.26 libzmq5_4.3.5-1+b3_amd64.deb
+#14 15.26 lock
+#14 15.26 media-types_13.0.0_all.deb
+#14 15.26 net-tools_2.10-1.3_amd64.deb
+#14 15.26 netbase_6.5_all.deb
+#14 15.26 openssl-provider-legacy_3.5.7-1~deb13u2_amd64.deb
+#14 15.26 openssl_3.5.7-1~deb13u2_amd64.deb
+#14 15.26 perl-modules-5.40_5.40.1-6_all.deb
+#14 15.26 perl_5.40.1-6_amd64.deb
+#14 15.26 procps_2%3a4.0.4-9_amd64.deb
+#14 15.26 python-is-python3_3.13.3-1_all.deb
+#14 15.26 python3-autocommand_2.2.2-3_all.deb
+#14 15.26 python3-inflect_7.3.1-2_all.deb
+#14 15.26 python3-jaraco.context_6.0.1-1+deb13u1_all.deb
+#14 15.26 python3-jaraco.functools_4.1.0-1_all.deb
+#14 15.26 python3-jaraco.text_4.0.0-1_all.deb
+#14 15.26 python3-minimal_3.13.5-1_amd64.deb
+#14 15.26 python3-more-itertools_10.7.0-1_all.deb
+#14 15.26 python3-packaging_25.0-1_all.deb
+#14 15.26 python3-pip_25.1.1+dfsg-1_all.deb
+#14 15.27 python3-pkg-resources_78.1.1-0.1_all.deb
+#14 15.27 python3-setuptools_78.1.1-0.1_all.deb
+#14 15.27 python3-typeguard_4.4.2-1_all.deb
+#14 15.27 python3-typing-extensions_4.13.2-1_all.deb
+#14 15.27 python3-wheel_0.46.1-2_all.deb
+#14 15.27 python3-zipp_3.21.0-1_all.deb
+#14 15.27 python3.13-minimal_3.13.5-2+deb13u4_amd64.deb
+#14 15.27 python3.13_3.13.5-2+deb13u4_amd64.deb
+#14 15.27 python3_3.13.5-1_amd64.deb
+#14 15.27 readline-common_8.2-6_all.deb
+#14 15.27 redis-tools_5%3a8.0.2-3+deb13u2_amd64.deb
+#14 15.27 rsync_3.4.1+ds1-5+deb13u4_amd64.deb
+#14 15.27 rsyslog-relp_8.2504.0-1_amd64.deb
+#14 15.27 rsyslog_8.2504.0-1_amd64.deb
+#14 15.28 vim-common_2%3a9.1.1230-2_all.deb
+#14 15.28 vim-tiny_2%3a9.1.1230-2_amd64.deb
+#14 15.28 partial/
+#14 15.32 
+#14 15.32 sent 33.90M bytes  received 1.89K bytes  67.81M bytes/sec
+#14 15.32 total size is 34.36M  speedup is 1.01
+#14 DONE 15.6s
+
+#15 [base 11/26] COPY [pip.conf, /etc/pip.conf]
+#15 DONE 0.0s
+
+#16 [base 12/26] RUN pip3 install jinjanator
+#16 0.346 Looking in links: /sonic/target/vcache/docker-base-trixie/pip-wheelhouse
+#16 0.350 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x78cebf7623c0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/jinjanator/
+#16 0.850 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x78cebf8102d0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/jinjanator/
+#16 1.851 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x78cebf810410>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/jinjanator/
+#16 3.851 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x78cebf810550>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/jinjanator/
+#16 7.852 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x78cebf810690>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/jinjanator/
+#16 7.856 ERROR: Cannot install jinjanator because these package versions have conflicting dependencies.
+#16 7.856 
+#16 7.856 The conflict is caused by:
+#16 7.856     The user requested jinjanator
+#16 7.856     The user requested (constraint) jinjanator==25.3.1
+#16 7.856 
+#16 7.856 To fix this you could try to:
+#16 7.856 1. loosen the range of package versions you've specified
+#16 7.856 2. remove package versions to allow pip to attempt to solve the dependency conflict
+#16 7.856 
+#16 7.856 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+#16 ERROR: process "/bin/sh -c pip3 install jinjanator" did not complete successfully: exit code: 1
+------
+ > [base 12/26] RUN pip3 install jinjanator:
+7.856 
+7.856 The conflict is caused by:
+7.856     The user requested jinjanator
+7.856     The user requested (constraint) jinjanator==25.3.1
+7.856 
+7.856 To fix this you could try to:
+7.856 1. loosen the range of package versions you've specified
+7.856 2. remove package versions to allow pip to attempt to solve the dependency conflict
+7.856 
+7.856 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+------
+Dockerfile:72
+--------------------
+  70 |     
+  71 |     # For templating
+  72 | >>> RUN pip3 install jinjanator
+  73 |     
+  74 |     # Add support for supervisord to handle startup dependencies
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c pip3 install jinjanator" did not complete successfully: exit code: 1
+[  FAIL LOG END  ] [ target/docker-base-trixie.gz ]
+make: *** [slave.mk:1406: target/docker-base-trixie.gz] Error 1
+make[1]: *** [Makefile.work:751: target/docker-base-trixie.gz] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/docker-base-trixie.gz] Error 2

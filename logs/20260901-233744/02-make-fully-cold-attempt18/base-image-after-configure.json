@@ -1,0 +1,125 @@
+[
+    {
+        "Id": "sha256:d81a81eaa5afed261b6370b9ccd66ad614604478fbb38a871415cbd317effc72",
+        "RepoTags": [
+            "sonic-slave-trixie:ca17477b760"
+        ],
+        "RepoDigests": [
+            "sonic-slave-trixie@sha256:d81a81eaa5afed261b6370b9ccd66ad614604478fbb38a871415cbd317effc72"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-09-02T20:05:27Z",
+        "Author": "gulv@microsoft.com",
+        "Config": {
+            "ExposedPorts": {
+                "22/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/.cargo/bin",
+                "IMAGENAME=sonic-slave-trixie",
+                "DISTRO=trixie",
+                "ENABLE_SBOM=n",
+                "DEBIAN_FRONTEND=noninteractive",
+                "RUSTUP_HOME=/usr/.cargo"
+            ],
+            "Cmd": [
+                "bash"
+            ]
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 3356748974,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:8007431a6be6089f64b17854599eb05ecee65ddd1bf3609dc8248e835570bb65",
+                "sha256:ee46a31dddaba8fed9a98f7f6646f3dffb0d0c87e8e17f38a38cb454a13c5661",
+                "sha256:72d42edef403d53b95237af4b05e749ec319e6158cb692ac29ab9de0a059773c",
+                "sha256:bde14c0f8cb4bcfc193308dea4ebba03cde30c4a46f752a545e10157aa7b48a3",
+                "sha256:9bed25fd46b4ee1c402d30e89c1ddc93a20081ccde1f3de0be76f09b9fbfcfd9",
+                "sha256:a41f73ff710a3227700443c238e4dc8925050427c0b2135cd0272f76128de3e2",
+                "sha256:5906192cc28dd153e99cdad54b418c17e08c6768d7ec8d34554b5b7152a4807e",
+                "sha256:ee0f9cf0bccfb190f974bbbf16121ee4a9c74d637063bd91260b06bdc8d8b127",
+                "sha256:9dbfb97b68f48d5d44a01faa03db7c0f6792f055fa1280ddf932793d1b63c87a",
+                "sha256:eb2a9cd49680f1199d62623ae078d3b92d19d0e4c22d7f4064e2c5cbbef3cfc2",
+                "sha256:60d51d1acff0b0327de1aa20794644af22ce240d8030d2dafd6f053d7b33b461",
+                "sha256:309ea8be1b12d252f35b1198608cc297a47e2d1556d152ad3c2030d0ba8d8c7a",
+                "sha256:8bcfb53eafd1aae9961773a2c9ab9af539338d80560dcca4ed1cc80e0408684f",
+                "sha256:c18a8c912b9bde1395370eb6ed2009c138b95a7690cc9f6062bff33f562891a8",
+                "sha256:611e6e8c13a4683b1105745a5bf80e0f8c3c45852c4d0028b39e6319746b4b64",
+                "sha256:1ea61bb88688c743e45a5194701d26a905a320cfdfb40d5d2429de946aa89a21",
+                "sha256:d69bae343e97f1894a5e55b883c73d58d178a3d204f6ee9d98707846215a08ce",
+                "sha256:95fa9702148fc620bf3f7c8ca2ba03a72eb1a97056e2bb0a0600101b30c7d0a5",
+                "sha256:89f82803162da7e363dac376f280cbf292eb0d6db72c54b1c4ff473aa5a00893",
+                "sha256:8f3022c624e8e1fa8060917c7f1509adab64613099c3bf089b717cc8a1740205",
+                "sha256:e6b6588b12cb590d74484eae0803e278457c546b038ee3c4275879a598d8d123",
+                "sha256:bf6daa24ae2c8535ddcfa722508f3ae231e43b35d9938d910e5a391e5ca6ae70",
+                "sha256:c73cee4d07640babee99ea33f008741265f9552389105c5f8669b33ecf986869",
+                "sha256:e423550ce861d34bc277b0f841da5195a6c3cb591d292a2d0c3f3a84b0f0a4ec",
+                "sha256:166a3c411cc4b17fcc9a3b8bc4643a6fd72c6fabdbc049f2af5e860413097f27",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:8648b1be5ce20ea22ede7dacc8cf5b7c2670fac0aa4d7f3bf043b164fa9045e1",
+                "sha256:902edad67d6a0556b9d7cc92797a05a2a5d846dcef3f089d97659dfb8714e0c2",
+                "sha256:42a71086e1e721f8f207fee7098b464a9e7dd0e70e3abffb5a30b430d523bb18",
+                "sha256:eb36420f3010f6d5eaea4c4367a723c61d1715808cd66bfcf52bee2843590e29",
+                "sha256:b551dad9229bf3d6488dc4f0d5e691478cfea1e50975786d24d55657110a0344",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:54675a3352b0d3c81f86b1bb62a40818086572d791838f1670db69f9458cbfeb",
+                "sha256:8ae9c0672eb558865bab3ff41fdc3cb81b9481c74254f300d3f00034956032b1",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:d8a0e4af3f35efd0f09a6573062ebf05e8711cafcceaeea580d182df11af1632",
+                "sha256:194bf1211a966c0d5e2488926e33eff8cf994d4b55887befc153b0864b98ad07",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:dd835d61e8679b41ea572c0ed57e14e558264311f3e8c7f4a8224e71a5a24f49",
+                "sha256:3cc56366e5905dba2e834f8bdbb64993c1379258381bce4569ade625fae7b777",
+                "sha256:bae57472d12b9b8c0c480d4b60f64f06d8ed499b588c8501325d8ed3748587a4",
+                "sha256:81ef6207151a14d58d0d5c7d03a4623bdc554f892d68374e36b70834a1df8d68",
+                "sha256:98dccf985d81836315cf923a30a7bd0c0a6014d94f99525f71c9b6cfd638fe96",
+                "sha256:eba281c251afd268c9c377500e5b060e16340261f6a9743000cff8c78cc082e1",
+                "sha256:f1016bbedec5d856b7221e79a978950c206282d8189ef3f6cdfe0a12e16f2be4",
+                "sha256:0a2e4d67b29bcc1d9814569b12167e08f0cb1a3b9bef960f725ff5dac2cab3ba",
+                "sha256:285e0c505af6b5ba1748b826e2c38ba1bd63e76a7a28101e0c3ee1a7773ebfb9",
+                "sha256:7c19bf1a77562f25ae4610416fa261ffb3a07bb31c428fbd035372f42498ad8b",
+                "sha256:ff730738387da4ca67ed024cd62f22fa0a3615720ce20524e946e337668dd56d",
+                "sha256:e38ed1ded1c639e050d58255ec2afd5a82c0e8d1258d3d21a1fbe9f40a476c39",
+                "sha256:17a7b7cdbf81707a6b17297339d869f67840a22fd83d02d6a8de34c90047eb33",
+                "sha256:9f6949553515a64221c8b8dccefbf575f69f9d31a3f824ee80f9d92d26d838e4",
+                "sha256:f10abe47902cba94f0a635a0eed26f8dd4a9f03234b129ef3b30ac6fed4ab24b",
+                "sha256:3212b872adb253a5bc760c236a40dda0784e6d701c0873351064bd8ff5a7c27f",
+                "sha256:9d0bf3691c630c7f16bba1e720acf22c27b3c4c10c08cd07bc9d2b0e295a2094",
+                "sha256:cff9a8976f3d7cd09e230dc4e304330c2cd38584a4441e198655d77db2937591",
+                "sha256:1b26b0eb6482bb87f355f002b7d7a7b2bd1201d6b19096bb9e7ef7c7d3cc434d",
+                "sha256:84fa1159b10973330f6606dd39f0ff1ef302e16b83c193cdf07d7c94d57f47cc",
+                "sha256:1d7a43a8e36586a431b84dd8bcc93851415f1e4614ba47cf190bb430bc22131a",
+                "sha256:a4a525baf320d1252ad3e264235792d95353bcd10e58570e1b67fae859c02d79",
+                "sha256:66dbe9e3c254a2f5deb75ad73d70c80260594b8173628995bb8a3fe1f842c69b",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:d91e40b4d1758070d92d88d88807236dbef4ff7639727319f8bbe1d554175027",
+                "sha256:e95341ee48d7bad9b7bae42ee9b4f8d7c2aa3973794a2f8442c71f85e595ada0",
+                "sha256:07f156086adef0bcd232c01b71fb6f8aa30bd47dc8b4af045807c6d81d679a99"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-09-02T20:05:27Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:d81a81eaa5afed261b6370b9ccd66ad614604478fbb38a871415cbd317effc72",
+            "size": 857
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/library/sonic-slave-trixie"
+                }
+            ],
+            "Build": [
+                {
+                    "Ref": "5yzlrtoy2heox6m8thxodqhiq",
+                    "CreatedAt": "2026-09-03T04:21:16.057186561+08:00"
+                }
+            ]
+        }
+    }
+]

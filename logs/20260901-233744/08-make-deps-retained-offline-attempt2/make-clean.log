@@ -1,0 +1,10 @@
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+pushd src/sonic-build-hooks; TRUSTED_GPG_URLS=https://packages.microsoft.com/keys/microsoft.asc make all; popd
+mkdir -p sonic-slave-trixie/buildinfo
+cp src/sonic-build-hooks/buildinfo/sonic-build-hooks* sonic-slave-trixie/buildinfo
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+make[1]: *** [Makefile:35: buildinfo/sonic-build-hooks_1.0_all.deb] Error 4
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+make: *** [Makefile.work:767: sonic-build-hooks] Error 2

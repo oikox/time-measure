@@ -1,0 +1,36 @@
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //platform/vs:sonic-vs-bin (0 packages loaded, 0 targets configured)
+ERROR: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/rules_distroless+/apt/extensions.bzl:202:9: Traceback (most recent call last):
+	File "/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/rules_distroless+/apt/extensions.bzl", line 362, column 29, in _distroless_extension
+		_fetch_and_parse_sources(mctx, repo, glock, snapshot_suites, formats)
+	File "/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/rules_distroless+/apt/extensions.bzl", line 277, column 59, in _fetch_and_parse_sources
+		(output, url, integrity, ext) = _resolve_downloads(mctx, pkg_tokens, "Packages", dist, comp, arch)
+	File "/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/rules_distroless+/apt/extensions.bzl", line 202, column 9, in _resolve_downloads
+		fail("""
+Error in fail: 
+** Tried to download 4 different package indices and all failed.
+
+
+*) Failed 'https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/.../Packages.xz'
+
+Download failed. See warning above for details.
+
+*) Failed 'https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/.../Packages.gz'
+
+Download failed. See warning above for details.
+
+*) Failed 'https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/.../Packages.bz2'
+
+Download failed. See warning above for details.
+
+*) Failed 'https://snapshot.ubuntu.com/ubuntu/20260706T000000Z/.../Packages'
+
+Download failed. See warning above for details.
+        
+ERROR: Analysis of target '//platform/vs:sonic-vs-bin' failed; build aborted: error evaluating module extension @@rules_distroless+//apt:extensions.bzl%apt
+INFO: Elapsed time: 0.222s
+INFO: 0 processes.
+ERROR: Build did NOT complete successfully
+ERROR: Fetching some target dependencies failed with errors: Analysis of target '//platform/vs:sonic-vs-bin' failed; build aborted

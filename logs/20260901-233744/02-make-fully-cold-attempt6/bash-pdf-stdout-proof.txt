@@ -1,0 +1,2 @@
+112:[ finished ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ] 
+1a46bbf27ee52299c2146ce21141d3fa62ba9bc2541d3b38ec99a6965d73a049  target/debs/trixie/bash_5.2.37-2_amd64.deb

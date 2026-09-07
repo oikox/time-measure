@@ -1,0 +1,313 @@
++++ --- Making target/sonic-vs.bin --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/sonic-vs.bin
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260905.235324"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260905.235324"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ building ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+Build start time: Sat Sep 5 15:53:36 UTC 2026
+[ REASON ] :      target/debs/trixie/ifupdown2_3.0.0-1_all.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/ifupdown2'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Remove any stale files
+rm -rf ./ifupdown2-3.0.0-1 ./3.0.0-1.tar.gz
+# Get ifupdown2 release
+wget -O 3.0.0-1.tar.gz https://github.com/CumulusNetworks/ifupdown2/archive/3.0.0-1.tar.gz
+echo "55ded1c60f720c81a5d4b5feeb48d893fd3f29d4ad0fe7d9cec508fe84b5f1b8  3.0.0-1.tar.gz" | sha256sum -c -
+tar -z -f 3.0.0-1.tar.gz -x
+pushd ./ifupdown2-3.0.0-1
+git init
+git add -f *
+git commit -m "unmodified ifupdown2 source"
+# Apply patch series
+stg init
+stg import -s ../patch/series
+# Build source and Debian packages
+dpkg-buildpackage -rfakeroot -b -us -uc -j192 --admindir /sonic/dpkg/tmp.XjWQGnrJ6B
+popd
+# Move the newly-built .deb packages to the destination directory
+mv ifupdown2_3.0.0-1_all.deb /sonic/target/debs/trixie/
+Loading from web cache URL:https://github.com/CumulusNetworks/ifupdown2/archive/3.0.0-1.tar.gz, SRC:/vcache/sonic-slave-trixie/web/3.0.0-1.tar.gz-755459b3a58fbc11625336846cea7420.tgz, DST:3.0.0-1.tar.gz
+3.0.0-1.tar.gz: OK
+/sonic/src/ifupdown2/ifupdown2-3.0.0-1 /sonic/src/ifupdown2
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /sonic/src/ifupdown2/ifupdown2-3.0.0-1/.git/
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <qiuying.xzc@localhost>) not allowed
+make[1]: *** [Makefile:9: /sonic/target/debs/trixie/ifupdown2_3.0.0-1_all.deb] Error 128
+make[1]: Leaving directory '/sonic/src/ifupdown2'
+[  FAIL LOG END  ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+make: *** [slave.mk:919: target/debs/trixie/ifupdown2_3.0.0-1_all.deb] Error 1
+make: *** Waiting for unfinished jobs....
+[ finished ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+Build start time: Sat Sep 5 15:53:36 UTC 2026
+[ REASON ] :      target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/makedumpfile'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Remove any stale files
+rm -rf makedumpfile-1.7.7*
+# Get makedumpfile release
+dget https://deb.debian.org/debian/pool/main/m/makedumpfile/makedumpfile_1.7.7-1.dsc
+pushd makedumpfile-1.7.7
+git init
+git add -f *
+git commit -m "unmodified makedumpfile source"
+# Build source and Debian packages
+dpkg-buildpackage -rfakeroot -b -us -uc -j192 --admindir /sonic/dpkg/tmp.mjLFjrPI50
+popd
+# Move the newly-built .deb package to the destination directory
+mv makedumpfile_1.7.7-1_amd64.deb /sonic/target/debs/trixie/
+dget: retrieving https://deb.debian.org/debian/pool/main/m/makedumpfile/makedumpfile_1.7.7-1.dsc
+Loading from web cache URL:https://deb.debian.org/debian/pool/main/m/makedumpfile/makedumpfile_1.7.7-1.dsc, SRC:/vcache/sonic-slave-trixie/web/makedumpfile_1.7.7-1.dsc-74b61898edb1a1fae67a540a8959f657.tgz, DST:makedumpfile_1.7.7-1.dsc
+dget: using existing makedumpfile_1.7.7.orig.tar.gz
+dget: using existing makedumpfile_1.7.7-1.debian.tar.xz
+makedumpfile_1.7.7-1.dsc:
+      Good signature found
+   validating makedumpfile_1.7.7.orig.tar.gz
+   validating makedumpfile_1.7.7-1.debian.tar.xz
+All files validated successfully.
+dpkg-source: info: extracting makedumpfile in makedumpfile-1.7.7
+dpkg-source: info: unpacking makedumpfile_1.7.7.orig.tar.gz
+dpkg-source: info: unpacking makedumpfile_1.7.7-1.debian.tar.xz
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying adapt-makefile-to-debian.patch
+/sonic/src/makedumpfile/makedumpfile-1.7.7 /sonic/src/makedumpfile
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /sonic/src/makedumpfile/makedumpfile-1.7.7/.git/
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <qiuying.xzc@localhost>) not allowed
+make[1]: *** [Makefile:8: /sonic/target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb] Error 128
+make[1]: Leaving directory '/sonic/src/makedumpfile'
+[  FAIL LOG END  ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+make: *** [slave.mk:919: target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb] Error 1
+[ finished ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+Build start time: Sat Sep 5 15:53:36 UTC 2026
+[ REASON ] :      target/debs/trixie/kdump-tools_1.10.7_amd64.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/kdump-tools'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Remove any stale files
+rm -rf ./kdump-tools-1.10.7*
+# Get kdump-tools release
+dget https://deb.debian.org/debian/pool/main/k/kdump-tools/kdump-tools_1.10.7.dsc
+pushd ./kdump-tools-1.10.7
+git init
+git add -f *
+git commit -m "unmodified kdump-tools source"
+# Apply patches
+stg init
+stg import -s ../patch/series
+# Build source and Debian packages
+dpkg-buildpackage -rfakeroot -b -us -uc -j192 --admindir /sonic/dpkg/tmp.N9cXeuvsmW
+popd
+# Move the newly-built .deb packages to the destination directory
+mv kdump-tools_1.10.7_amd64.deb /sonic/target/debs/trixie/
+dget: retrieving https://deb.debian.org/debian/pool/main/k/kdump-tools/kdump-tools_1.10.7.dsc
+Loading from web cache URL:https://deb.debian.org/debian/pool/main/k/kdump-tools/kdump-tools_1.10.7.dsc, SRC:/vcache/sonic-slave-trixie/web/kdump-tools_1.10.7.dsc-b7c20dcfa144f7905dae83f907878201.tgz, DST:kdump-tools_1.10.7.dsc
+dget: using existing kdump-tools_1.10.7.tar.xz
+kdump-tools_1.10.7.dsc:
+      Good signature found
+   validating kdump-tools_1.10.7.tar.xz
+All files validated successfully.
+dpkg-source: info: extracting kdump-tools in kdump-tools-1.10.7
+dpkg-source: info: unpacking kdump-tools_1.10.7.tar.xz
+/sonic/src/kdump-tools/kdump-tools-1.10.7 /sonic/src/kdump-tools
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /sonic/src/kdump-tools/kdump-tools-1.10.7/.git/
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <qiuying.xzc@localhost>) not allowed
+make[1]: *** [Makefile:8: /sonic/target/debs/trixie/kdump-tools_1.10.7_amd64.deb] Error 128
+make[1]: Leaving directory '/sonic/src/kdump-tools'
+[  FAIL LOG END  ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+make: *** [slave.mk:919: target/debs/trixie/kdump-tools_1.10.7_amd64.deb] Error 1
+[ finished ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ finished ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+make[1]: *** [Makefile.work:751: target/sonic-vs.bin] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/sonic-vs.bin] Error 2

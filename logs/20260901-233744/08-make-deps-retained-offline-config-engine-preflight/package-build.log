@@ -1,0 +1,621 @@
+Build start time: Sat Sep 5 22:31:44 UTC 2026
+[ REASON ] :      target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl does not exist   NON-EXISTENT PREREQUISITES: target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+/sonic/src/sonic-config-engine /sonic
+Defaulting to user installation because normal site-packages is not writeable
+Looking in links: /pip-wheelhouse
+Processing /sonic/src/sonic-config-engine
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Processing /pip-wheelhouse/bitarray-2.8.1.tar.gz (from sonic-config-engine==1.0)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: lxml>=4.9.1 in /usr/lib/python3/dist-packages (from sonic-config-engine==1.0) (5.4.0)
+Processing /pip-wheelhouse/netaddr-0.8.0-py2.py3-none-any.whl (from sonic-config-engine==1.0)
+Requirement already satisfied: Jinja2>=2.10 in /usr/lib/python3/dist-packages (from sonic-config-engine==1.0) (3.1.6)
+Requirement already satisfied: pyyaml>=6.0.1 in /usr/lib/python3/dist-packages (from sonic-config-engine==1.0) (6.0.2)
+Requirement already satisfied: sonic-py-common in /usr/local/lib/python3.13/dist-packages (from sonic-config-engine==1.0) (1.0)
+Requirement already satisfied: sonic-yang-mgmt>=1.0 in /usr/local/lib/python3.13/dist-packages (from sonic-config-engine==1.0) (1.0)
+Requirement already satisfied: sonic-yang-models>=1.0 in /usr/local/lib/python3.13/dist-packages (from sonic-config-engine==1.0) (1.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/lib/python3/dist-packages (from Jinja2>=2.10->sonic-config-engine==1.0) (2.1.5)
+Requirement already satisfied: ijson>=3.2.3 in /usr/local/lib/python3.13/dist-packages (from sonic-yang-mgmt>=1.0->sonic-config-engine==1.0) (3.5.0)
+Requirement already satisfied: jsonpointer>=1.9 in /usr/local/lib/python3.13/dist-packages (from sonic-yang-mgmt>=1.0->sonic-config-engine==1.0) (3.1.1)
+Requirement already satisfied: jsondiff>=1.2.0 in /usr/local/lib/python3.13/dist-packages (from sonic-yang-mgmt>=1.0->sonic-config-engine==1.0) (2.2.1)
+Requirement already satisfied: tabulate==0.9.0 in /usr/local/lib/python3.13/dist-packages (from sonic-yang-mgmt>=1.0->sonic-config-engine==1.0) (0.9.0)
+Requirement already satisfied: natsort in /usr/lib/python3/dist-packages (from sonic-py-common->sonic-config-engine==1.0) (8.0.2)
+Requirement already satisfied: redis-dump-load in /usr/local/lib/python3.13/dist-packages (from sonic-py-common->sonic-config-engine==1.0) (1.1)
+Requirement already satisfied: redis in /usr/local/lib/python3.13/dist-packages (from redis-dump-load->sonic-py-common->sonic-config-engine==1.0) (8.0.1)
+Building wheels for collected packages: sonic-config-engine, bitarray
+  DEPRECATION: Building 'sonic-config-engine' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'sonic-config-engine'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for sonic-config-engine (setup.py): started
+  Building wheel for sonic-config-engine (setup.py): finished with status 'done'
+  Created wheel for sonic-config-engine: filename=sonic_config_engine-1.0-py3-none-any.whl size=72275 sha256=9f8116b1823578001a7ac105f909098e2d1f58c358374e319d029897790c7466
+  Stored in directory: /vcache/sonic-slave-trixie/pip/wheels/0b/7e/3b/e9875c49918127c354e300cf440ec3172597ba86436c7f7f6c
+  DEPRECATION: Building 'bitarray' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'bitarray'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for bitarray (setup.py): started
+  Building wheel for bitarray (setup.py): finished with status 'done'
+  Created wheel for bitarray: filename=bitarray-2.8.1-cp313-cp313-linux_x86_64.whl size=241639 sha256=89ba32d26a732107be6b1b503e4efa542e015b72649875f84286535038fc59a4
+  Stored in directory: /vcache/sonic-slave-trixie/pip/wheels/75/14/aa/d8b95addfe0f7d166262dc3a5b0b669d3d36d5d6eeb044827e
+Successfully built sonic-config-engine bitarray
+Installing collected packages: netaddr, bitarray, sonic-config-engine
+  WARNING: The script netaddr is installed in '/var/qiuying.xzc/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+
+Successfully installed bitarray-2.8.1 netaddr-0.8.0 sonic-config-engine-1.0
+/sonic/src/sonic-config-engine/setup.py:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/usr/local/lib/python3.13/dist-packages/setuptools/__init__.py:94: _DeprecatedInstaller: setuptools.installer and fetch_build_eggs are deprecated.
+!!
+
+        ********************************************************************************
+        Requirements should be satisfied by a PEP 517 installer.
+        If you are using pip, you can try `pip install --use-pep517`.
+        ********************************************************************************
+
+!!
+  dist.fetch_build_eggs(dist.setup_requires)
+/usr/local/lib/python3.13/dist-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+Found existing installation: sonic-config-engine 1.0
+Uninstalling sonic-config-engine-1.0:
+  Successfully uninstalled sonic-config-engine-1.0
+Building Wheels package target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl
+* Getting build dependencies for sdist...
+<string>:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+* Building sdist...
+<string>:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+/usr/local/lib/python3.13/dist-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running sdist
+running egg_info
+writing sonic_config_engine.egg-info/PKG-INFO
+writing dependency_links to sonic_config_engine.egg-info/dependency_links.txt
+writing requirements to sonic_config_engine.egg-info/requires.txt
+writing top-level names to sonic_config_engine.egg-info/top_level.txt
+reading manifest template 'MANIFEST.in'
+writing manifest file 'sonic_config_engine.egg-info/SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+creating sonic_config_engine-1.0
+creating sonic_config_engine-1.0/data
+creating sonic_config_engine-1.0/sonic_config_engine.egg-info
+creating sonic_config_engine-1.0/tests
+creating sonic_config_engine-1.0/tests/chassis_data/packet_chassis_data
+creating sonic_config_engine-1.0/tests/chassis_data/voq_chassis_data
+creating sonic_config_engine-1.0/tests/data
+creating sonic_config_engine-1.0/tests/data/asic_sensors
+creating sonic_config_engine-1.0/tests/data/backend_acl
+creating sonic_config_engine-1.0/tests/data/dns
+creating sonic_config_engine-1.0/tests/data/j2_template
+creating sonic_config_engine-1.0/tests/data/lldp
+creating sonic_config_engine-1.0/tests/data/ndppd
+creating sonic_config_engine-1.0/tests/data/ntp
+creating sonic_config_engine-1.0/tests/data/pfx_filter
+creating sonic_config_engine-1.0/tests/data/rsyslog
+creating sonic_config_engine-1.0/tests/data/smartswitch
+creating sonic_config_engine-1.0/tests/data/smartswitch/SS-DPU-1x400Gb
+creating sonic_config_engine-1.0/tests/data/smartswitch/SSwitch-32x1000Gb
+creating sonic_config_engine-1.0/tests/mock_tables
+creating sonic_config_engine-1.0/tests/mock_tables/asic0
+creating sonic_config_engine-1.0/tests/mock_tables/asic1
+creating sonic_config_engine-1.0/tests/mock_tables/asic2
+creating sonic_config_engine-1.0/tests/mock_tables/asic3
+creating sonic_config_engine-1.0/tests/mock_tables/asic4
+creating sonic_config_engine-1.0/tests/multi_npu_data
+creating sonic_config_engine-1.0/tests/multi_npu_data/py2
+creating sonic_config_engine-1.0/tests/multi_npu_data/py3
+creating sonic_config_engine-1.0/tests/sample_output
+creating sonic_config_engine-1.0/tests/sample_output/py2
+creating sonic_config_engine-1.0/tests/sample_output/py2/lldp_conf
+creating sonic_config_engine-1.0/tests/sample_output/py3
+creating sonic_config_engine-1.0/tests/sample_output/py3/lldp_conf
+creating sonic_config_engine-1.0/tests/sample_output/t0_sample_output
+copying files to sonic_config_engine-1.0...
+copying .gitignore -> sonic_config_engine-1.0
+copying BUILD.bazel -> sonic_config_engine-1.0
+copying MANIFEST.in -> sonic_config_engine-1.0
+copying MODULE.bazel -> sonic_config_engine-1.0
+copying __init__.py -> sonic_config_engine-1.0
+copying asic_sensors_config.py -> sonic_config_engine-1.0
+copying config_samples.py -> sonic_config_engine-1.0
+copying minigraph.py -> sonic_config_engine-1.0
+copying openconfig_acl.py -> sonic_config_engine-1.0
+copying portconfig.py -> sonic_config_engine-1.0
+copying setup.cfg -> sonic_config_engine-1.0
+copying setup.py -> sonic_config_engine-1.0
+copying smartswitch_config.py -> sonic_config_engine-1.0
+copying sonic-acl-extension.yang -> sonic_config_engine-1.0
+copying sonic-cfggen -> sonic_config_engine-1.0
+copying sonic_yang_cfg_generator.py -> sonic_config_engine-1.0
+copying data/l1intf.j2 -> sonic_config_engine-1.0/data
+copying data/l2switch.j2 -> sonic_config_engine-1.0/data
+copying data/l3intf.j2 -> sonic_config_engine-1.0/data
+copying sonic_config_engine.egg-info/PKG-INFO -> sonic_config_engine-1.0/sonic_config_engine.egg-info
+copying sonic_config_engine.egg-info/SOURCES.txt -> sonic_config_engine-1.0/sonic_config_engine.egg-info
+copying sonic_config_engine.egg-info/dependency_links.txt -> sonic_config_engine-1.0/sonic_config_engine.egg-info
+copying sonic_config_engine.egg-info/requires.txt -> sonic_config_engine-1.0/sonic_config_engine.egg-info
+copying sonic_config_engine.egg-info/top_level.txt -> sonic_config_engine-1.0/sonic_config_engine.egg-info
+copying tests/.gitignore -> sonic_config_engine-1.0/tests
+copying tests/__init__.py -> sonic_config_engine-1.0/tests
+copying tests/chrony.conf.j2 -> sonic_config_engine-1.0/tests
+copying tests/chrony.keys.j2 -> sonic_config_engine-1.0/tests
+copying tests/common_utils.py -> sonic_config_engine-1.0/tests
+copying tests/device.xml -> sonic_config_engine-1.0/tests
+copying tests/dhcp-relay-sample.json -> sonic_config_engine-1.0/tests
+copying tests/dhcp-sonic-relay-disabled-sample.json -> sonic_config_engine-1.0/tests
+copying tests/dhcp-sonic-relay-enabled-sample.json -> sonic_config_engine-1.0/tests
+copying tests/dns.j2 -> sonic_config_engine-1.0/tests
+copying tests/fg-ecmp-sample-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/l1-l3-sample-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/macsec_profile.json -> sonic_config_engine-1.0/tests
+copying tests/mellanox-sample-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/minigraph-str2-temp-2-lc04.xml -> sonic_config_engine-1.0/tests
+copying tests/ndppd.conf.j2 -> sonic_config_engine-1.0/tests
+copying tests/pc-test-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/platform-sample-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/radv-test-sample-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7050-t0-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7050-t0-storage-backend-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7050cx3-dualtor-minigraph-remap-disabled.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7050cx3-dualtor-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7060-t0-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7060x6-t0-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7260-dualtor-minigraph-remap-disabled.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7260-dualtor-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7260-t0-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7260-t1-minigraph-remap-disabled.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7260-t1-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7800r3-48cq2-lc-t2-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7800r3-48cqm2-lc-t2-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7800r3a-36dm2-c36-lc-t2-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-arista-7800r3a-36dm2-d36-lc-t2-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-chassis-packet-lc-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-chassis-packet-lc-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/sample-cisco-8101-t1-100-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-cisco-8101-t1-400-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-cisco-8101-t1-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/sample-cisco-8111-100-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-cisco-8111-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/sample-dell-6100-t0-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-dell-9332-t1-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-frh-b-o128-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-ft2-p64-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-graph-resource-type.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-graph-storage-backend.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-graph-subintf.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-lrh-nh5010-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-lt2-p32o64-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-mellanox-2410-t1-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-mellanox-2700-t0-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-mellanox-4600c-t0-minigraph-remap-disabled.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-mellanox-4600c-t0-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-mellanox-4600c-t1-minigraph-remap-disabled.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-mellanox-4600c-t1-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-mellanox-4700-t1-minigraph-smartswitch.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-no-config-lc-t2-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-nokia-ixr7250e-36x100g-t2-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-nokia-ixr7250e-36x400g-t2-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-pch-lc-t2-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-port-config-mlnx.ini -> sonic_config_engine-1.0/tests
+copying tests/sample-port-data.json -> sonic_config_engine-1.0/tests
+copying tests/sample-template-1.json.j2 -> sonic_config_engine-1.0/tests
+copying tests/sample-template-2.json.j2 -> sonic_config_engine-1.0/tests
+copying tests/sample-urh-nh5010-minigraph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-voq-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample-ztp-inband-ip.json -> sonic_config_engine-1.0/tests
+copying tests/sample-ztp-inband.json -> sonic_config_engine-1.0/tests
+copying tests/sample-ztp-ip.json -> sonic_config_engine-1.0/tests
+copying tests/sample-ztp.json -> sonic_config_engine-1.0/tests
+copying tests/sample_graph.xml -> sonic_config_engine-1.0/tests
+copying tests/sample_hwsku.json -> sonic_config_engine-1.0/tests
+copying tests/sample_platform.json -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-device-desc-ipv6-only.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-device-desc-linecard.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-device-desc-supervisor.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-device-desc.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-graph-case-acl-test.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-graph-case-remap-disabled.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-graph-case-remap-enabled-no-tunnel-attributes.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-graph-case-remap-enabled.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-graph-case.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-graph-m0.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-graph-metadata.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-graph-mx.xml -> sonic_config_engine-1.0/tests
+copying tests/simple-sample-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/syslog-server-vrf.json -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-acl.json -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-autoneg-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-bgp-speaker.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-deployment-id.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-graph-common-dhcp-relay.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-graph-mgmt31.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-graph-mvrf-nomgmt.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-graph-mvrf.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-graph-nomgmt.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-graph-secondary-subnets.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-graph-syslog.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-graph-two-mgmt.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-no-ip-helper-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-port-config-duplicated-name-alias.ini -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-port-config-tiny.ini -> sonic_config_engine-1.0/tests
+copying tests/t0-sample-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/t0-sonic-dhcp4relay-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/t0_7050cx3_d48c8_port_config.ini -> sonic_config_engine-1.0/tests
+copying tests/t1-sample-graph-mlnx.xml -> sonic_config_engine-1.0/tests
+copying tests/t1-ss-dpu-sample-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/t1-ss-sample-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/t2-chassis-fe-graph-pc.xml -> sonic_config_engine-1.0/tests
+copying tests/t2-chassis-fe-graph-vni.xml -> sonic_config_engine-1.0/tests
+copying tests/t2-chassis-fe-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/t2-chassis-fe-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/test.j2 -> sonic_config_engine-1.0/tests
+copying tests/test.yml -> sonic_config_engine-1.0/tests
+copying tests/test2.j2 -> sonic_config_engine-1.0/tests
+copying tests/test_cfggen.py -> sonic_config_engine-1.0/tests
+copying tests/test_cfggen_from_yang.py -> sonic_config_engine-1.0/tests
+copying tests/test_cfggen_pfx_filter.py -> sonic_config_engine-1.0/tests
+copying tests/test_cfggen_platformJson.py -> sonic_config_engine-1.0/tests
+copying tests/test_cfggen_t2_chassis_fe.py -> sonic_config_engine-1.0/tests
+copying tests/test_chassis_cfggen.py -> sonic_config_engine-1.0/tests
+copying tests/test_frr.py -> sonic_config_engine-1.0/tests
+copying tests/test_j2files.py -> sonic_config_engine-1.0/tests
+copying tests/test_j2files_t2_chassis_fe.py -> sonic_config_engine-1.0/tests
+copying tests/test_minigraph_case.py -> sonic_config_engine-1.0/tests
+copying tests/test_multinpu_cfggen.py -> sonic_config_engine-1.0/tests
+copying tests/test_yang_data.json -> sonic_config_engine-1.0/tests
+copying tests/voq-sample-400g-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/voq-sample-masic-graph.xml -> sonic_config_engine-1.0/tests
+copying tests/voq-sample-port-config.ini -> sonic_config_engine-1.0/tests
+copying tests/chassis_data/packet_chassis_data/packet-chassis-port-config-1.ini -> sonic_config_engine-1.0/tests/chassis_data/packet_chassis_data
+copying tests/chassis_data/packet_chassis_data/packet_chassis_sup.xml -> sonic_config_engine-1.0/tests/chassis_data/packet_chassis_data
+copying tests/chassis_data/voq_chassis_data/system_ports.json -> sonic_config_engine-1.0/tests/chassis_data/voq_chassis_data
+copying tests/chassis_data/voq_chassis_data/voq-sample-port-config-1.ini -> sonic_config_engine-1.0/tests/chassis_data/voq_chassis_data
+copying tests/chassis_data/voq_chassis_data/voq-sample-port-config-2.ini -> sonic_config_engine-1.0/tests/chassis_data/voq_chassis_data
+copying tests/chassis_data/voq_chassis_data/voq_chassis_lc_multi_asic.xml -> sonic_config_engine-1.0/tests/chassis_data/voq_chassis_data
+copying tests/chassis_data/voq_chassis_data/voq_chassis_lc_single_asic.xml -> sonic_config_engine-1.0/tests/chassis_data/voq_chassis_data
+copying tests/chassis_data/voq_chassis_data/voq_chassis_sup.xml -> sonic_config_engine-1.0/tests/chassis_data/voq_chassis_data
+copying tests/data/constants.yml -> sonic_config_engine-1.0/tests/data
+copying tests/data/asic_sensors/platform.json -> sonic_config_engine-1.0/tests/data/asic_sensors
+copying tests/data/backend_acl/acl_multi_vlan.json -> sonic_config_engine-1.0/tests/data/backend_acl
+copying tests/data/backend_acl/acl_single_vlan.json -> sonic_config_engine-1.0/tests/data/backend_acl
+copying tests/data/backend_acl/multi_vlan.json -> sonic_config_engine-1.0/tests/data/backend_acl
+copying tests/data/backend_acl/single_vlan.json -> sonic_config_engine-1.0/tests/data/backend_acl
+copying tests/data/dns/resolv.conf -> sonic_config_engine-1.0/tests/data/dns
+copying tests/data/dns/static_dns.json -> sonic_config_engine-1.0/tests/data/dns
+copying tests/data/j2_template/config.bcm.j2 -> sonic_config_engine-1.0/tests/data/j2_template
+copying tests/data/j2_template/port_config.ini -> sonic_config_engine-1.0/tests/data/j2_template
+copying tests/data/lldp/mgmt_iface_ipv4.json -> sonic_config_engine-1.0/tests/data/lldp
+copying tests/data/lldp/mgmt_iface_ipv4_and_ipv6.json -> sonic_config_engine-1.0/tests/data/lldp
+copying tests/data/lldp/mgmt_iface_ipv4_with_ports.json -> sonic_config_engine-1.0/tests/data/lldp
+copying tests/data/lldp/mgmt_iface_ipv6.json -> sonic_config_engine-1.0/tests/data/lldp
+copying tests/data/ndppd/empty_vlan_interfaces.json -> sonic_config_engine-1.0/tests/data/ndppd
+copying tests/data/ndppd/vlan_interfaces.json -> sonic_config_engine-1.0/tests/data/ndppd
+copying tests/data/ntp/ntp_interfaces.json -> sonic_config_engine-1.0/tests/data/ntp
+copying tests/data/ntp/ntp_smartswitch_dpu_interfaces.json -> sonic_config_engine-1.0/tests/data/ntp
+copying tests/data/ntp/ntp_smartswitch_interfaces.json -> sonic_config_engine-1.0/tests/data/ntp
+copying tests/data/pfx_filter/param_1.json -> sonic_config_engine-1.0/tests/data/pfx_filter
+copying tests/data/pfx_filter/result_1.txt -> sonic_config_engine-1.0/tests/data/pfx_filter
+copying tests/data/pfx_filter/tmpl_1.txt.j2 -> sonic_config_engine-1.0/tests/data/pfx_filter
+copying tests/data/rsyslog/config_db.json -> sonic_config_engine-1.0/tests/data/rsyslog
+copying tests/data/smartswitch/sample_dpu_platform.json -> sonic_config_engine-1.0/tests/data/smartswitch
+copying tests/data/smartswitch/sample_switch_platform.json -> sonic_config_engine-1.0/tests/data/smartswitch
+copying tests/data/smartswitch/SS-DPU-1x400Gb/hwsku.json -> sonic_config_engine-1.0/tests/data/smartswitch/SS-DPU-1x400Gb
+copying tests/data/smartswitch/SSwitch-32x1000Gb/hwsku.json -> sonic_config_engine-1.0/tests/data/smartswitch/SSwitch-32x1000Gb
+copying tests/mock_tables/__init__.py -> sonic_config_engine-1.0/tests/mock_tables
+copying tests/mock_tables/config_db.json -> sonic_config_engine-1.0/tests/mock_tables
+copying tests/mock_tables/database_config.json -> sonic_config_engine-1.0/tests/mock_tables
+copying tests/mock_tables/database_global.json -> sonic_config_engine-1.0/tests/mock_tables
+copying tests/mock_tables/dbconnector.py -> sonic_config_engine-1.0/tests/mock_tables
+copying tests/mock_tables/asic0/config_db.json -> sonic_config_engine-1.0/tests/mock_tables/asic0
+copying tests/mock_tables/asic0/database_config.json -> sonic_config_engine-1.0/tests/mock_tables/asic0
+copying tests/mock_tables/asic1/config_db.json -> sonic_config_engine-1.0/tests/mock_tables/asic1
+copying tests/mock_tables/asic1/database_config.json -> sonic_config_engine-1.0/tests/mock_tables/asic1
+copying tests/mock_tables/asic2/config_db.json -> sonic_config_engine-1.0/tests/mock_tables/asic2
+copying tests/mock_tables/asic2/database_config.json -> sonic_config_engine-1.0/tests/mock_tables/asic2
+copying tests/mock_tables/asic3/config_db.json -> sonic_config_engine-1.0/tests/mock_tables/asic3
+copying tests/mock_tables/asic3/database_config.json -> sonic_config_engine-1.0/tests/mock_tables/asic3
+copying tests/mock_tables/asic4/database_config.json -> sonic_config_engine-1.0/tests/mock_tables/asic4
+copying tests/multi_npu_data/buffers.json.j2 -> sonic_config_engine-1.0/tests/multi_npu_data
+copying tests/multi_npu_data/buffers_defaults_t2.j2 -> sonic_config_engine-1.0/tests/multi_npu_data
+copying tests/multi_npu_data/sample-minigraph-noportchannel.xml -> sonic_config_engine-1.0/tests/multi_npu_data
+copying tests/multi_npu_data/sample-minigraph.xml -> sonic_config_engine-1.0/tests/multi_npu_data
+copying tests/multi_npu_data/sample_port_config-0.ini -> sonic_config_engine-1.0/tests/multi_npu_data
+copying tests/multi_npu_data/sample_port_config-1.ini -> sonic_config_engine-1.0/tests/multi_npu_data
+copying tests/multi_npu_data/sample_port_config-2.ini -> sonic_config_engine-1.0/tests/multi_npu_data
+copying tests/multi_npu_data/sample_port_config-3.ini -> sonic_config_engine-1.0/tests/multi_npu_data
+copying tests/multi_npu_data/sample_port_config-4.ini -> sonic_config_engine-1.0/tests/multi_npu_data
+copying tests/multi_npu_data/sample_port_config.ini -> sonic_config_engine-1.0/tests/multi_npu_data
+copying tests/multi_npu_data/py2/ipinip.json -> sonic_config_engine-1.0/tests/multi_npu_data/py2
+copying tests/multi_npu_data/py3/ipinip.json -> sonic_config_engine-1.0/tests/multi_npu_data/py3
+copying tests/sample_output/msn27.32ports.json -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/platform_output.json -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/t0-switch-masic1.json -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/t0-switch-masic3.json -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/t0-switch.json -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/t1-smartswitch-dpu.json -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/t1-smartswitch.json -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/t1-switch.json -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/t2-chassis-fe-pc-zebra.conf -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/t2-switch-masic1.json -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/t2-switch-masic3.json -> sonic_config_engine-1.0/tests/sample_output
+copying tests/sample_output/py2/bgpd_frr.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/bgpd_frr_backend_asic.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/bgpd_frr_bmp.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/bgpd_frr_dualtor.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/bgpd_frr_frontend_asic.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/bgpd_quagga.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffer-arista7060-t0.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffer-arista7260-t0.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffer-arista7800r3-48cq2-lc.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffer-arista7800r3-48cqm2-lc.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffer-arista7800r3a-36dm2-c36-lc.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffer-arista7800r3a-36dm2-d36-lc.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffer-nokia-ixr7250e-36x100g.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffer-nokia-ixr7250e-36x400g.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffers-dell6100.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffers-mellanox2410-dynamic.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffers-mellanox2410.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/buffers-mellanox2700.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/chrony.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/chrony.keys -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/chrony_smartswitch.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/docker-dhcp-relay-no-ip-helper.supervisord.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/docker-dhcp-relay-secondary-subnets.supervisord.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/docker-dhcp-relay-sonic-agent-no-relay-cfg.supervisord.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/docker-dhcp-relay-sonic-agent.supervisord.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/docker-dhcp-relay.supervisord.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/frr.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/interfaces -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/interfaces_mgmt31 -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/interfaces_nomgmt -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/interfaces_nomgmt_ztp -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/interfaces_nomgmt_ztp_inband -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/interfaces_nomgmt_ztp_inband_ip -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/interfaces_nomgmt_ztp_ip -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/interfaces_syslog -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/interfaces_syslog_vrf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/ipinip.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/ipinip_backend_no_storage.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/ipinip_backend_with_storage.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/ipinip_backend_with_storage_broadcom.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/ipinip_subnet_decap_enable.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/l1_intfs.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/l2switch.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/l2switch_dualtor.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/l3_intfs.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/mvrf_interfaces -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/mvrf_interfaces_nomgmt -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/ndppd.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/ports.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-arista7050.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-arista7260-t0.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-arista7260.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-arista7800r3-48cq2-lc.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-arista7800r3-48cqm2-lc.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-arista7800r3a-36dm2-c36-lc.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-arista7800r3a-36dm2-d36-lc.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-dell6100.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-dell9332.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-nokia-ixr7250e-36x100g.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/qos-nokia-ixr7250e-36x400g.json -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/radvd.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/staticd_frr.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/t2-chassis-fe-bgpd.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/t2-chassis-fe-vni-zebra.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/t2-chassis-fe-zebra.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/two_mgmt_interfaces -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/wait_for_intf.sh -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/zebra_frr.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/zebra_frr_dualtor.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/zebra_quagga.conf -> sonic_config_engine-1.0/tests/sample_output/py2
+copying tests/sample_output/py2/lldp_conf/lldpd-ipv4-iface.conf -> sonic_config_engine-1.0/tests/sample_output/py2/lldp_conf
+copying tests/sample_output/py2/lldp_conf/lldpd-ipv6-iface.conf -> sonic_config_engine-1.0/tests/sample_output/py2/lldp_conf
+copying tests/sample_output/py3/arista7050cx3-dualtor.config.bcm -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/arista7260-dualtor.config.bcm -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/arista7260-t1.config.bcm -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/bgpd_frr.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/bgpd_frr_backend_asic.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/bgpd_frr_bmp.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/bgpd_frr_confed.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/bgpd_frr_confed_lt2.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/bgpd_frr_confed_masic.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/bgpd_frr_dualtor.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/bgpd_frr_frontend_asic.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/bgpd_quagga.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7050cx3-dualtor-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7050cx3-dualtor.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7060-t0.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7260-dualtor-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7260-dualtor.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7260-t0.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7260-t1-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7260-t1.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7800r3-48cq2-lc.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7800r3-48cqm2-lc.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7800r3a-36dm2-c36-lc.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-arista7800r3a-36dm2-d36-lc.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-frh-b-o128.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-ft2-p64.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-lrh-nh5010.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-lt2-p32o64.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-no-config.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-nokia-ixr7250e-36x100g.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-nokia-ixr7250e-36x400g.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-pch-config.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffer-urh-nh5010.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-dell6100.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-mellanox2410-dynamic.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-mellanox2410.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-mellanox4600c-t0-dynamic-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-mellanox4600c-t0-dynamic.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-mellanox4600c-t0-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-mellanox4600c-t0.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-mellanox4600c-t1-dynamic-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-mellanox4600c-t1-dynamic.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-mellanox4600c-t1-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/buffers-mellanox4600c-t1.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/chrony.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/chrony.keys -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/chrony_smartswitch.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/chrony_smartswitch_dpu.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/docker-dhcp-relay-no-ip-helper.supervisord.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/docker-dhcp-relay-secondary-subnets.supervisord.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/docker-dhcp-relay-sonic-agent-no-relay-cfg.supervisord.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/docker-dhcp-relay-sonic-agent.supervisord.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/docker-dhcp-relay.supervisord.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/frr.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/interfaces -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/interfaces_mgmt31 -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/interfaces_nomgmt -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/interfaces_nomgmt_ztp -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/interfaces_nomgmt_ztp_inband -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/interfaces_nomgmt_ztp_inband_ip -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/interfaces_nomgmt_ztp_ip -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/interfaces_syslog -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/interfaces_syslog_vrf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/ipinip.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/ipinip_backend_no_storage.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/ipinip_backend_with_storage.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/ipinip_backend_with_storage_broadcom.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/ipinip_subnet_decap_enable.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/l1_intfs.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/l2switch.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/l2switch_dualtor.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/l3_intfs.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/mvrf_interfaces -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/mvrf_interfaces_nomgmt -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/ndppd.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/ports.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7050-t0-storage-backend.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7050.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7050cx3-dualtor-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7050cx3-dualtor.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7060x6.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7260-dualtor-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7260-dualtor.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7260-t0.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7260-t1-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7260-t1.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7260.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7800r3-48cq2-lc.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7800r3-48cqm2-lc.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7800r3a-36dm2-c36-lc.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-arista7800r3a-36dm2-d36-lc.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-dell6100.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-dell9332.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-mellanox4600c-c64-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-mellanox4600c-c64.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-mellanox4600c-d48c40-t0-remap-disabled.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-mellanox4600c-d48c40-t0.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-mellanox4700-o28-t1-smartswitch.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-mellanox4700-o28-t1-smartswitch_dyn.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-no-config.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-nokia-ixr7250e-36x100g.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-nokia-ixr7250e-36x400g.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/qos-pch-config.json -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/radvd.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/rsyslog.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/rsyslog_same_ip.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/rsyslog_with_docker0.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/staticd_frr.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/t2-chassis-fe-bgpd.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/t2-chassis-fe-vni-zebra.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/t2-chassis-fe-zebra.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/two_mgmt_interfaces -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/wait_for_intf.sh -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/zebra_frr.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/zebra_frr_dualtor.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/zebra_quagga.conf -> sonic_config_engine-1.0/tests/sample_output/py3
+copying tests/sample_output/py3/lldp_conf/lldpd-ipv4-iface-with-ports.conf -> sonic_config_engine-1.0/tests/sample_output/py3/lldp_conf
+copying tests/sample_output/py3/lldp_conf/lldpd-ipv4-iface.conf -> sonic_config_engine-1.0/tests/sample_output/py3/lldp_conf
+copying tests/sample_output/py3/lldp_conf/lldpd-ipv6-iface.conf -> sonic_config_engine-1.0/tests/sample_output/py3/lldp_conf
+copying tests/sample_output/t0_sample_output/PortChannel01.conf -> sonic_config_engine-1.0/tests/sample_output/t0_sample_output
+copying tests/sample_output/t0_sample_output/PortChannel02.conf -> sonic_config_engine-1.0/tests/sample_output/t0_sample_output
+copying tests/sample_output/t0_sample_output/PortChannel03.conf -> sonic_config_engine-1.0/tests/sample_output/t0_sample_output
+copying tests/sample_output/t0_sample_output/PortChannel04.conf -> sonic_config_engine-1.0/tests/sample_output/t0_sample_output
+copying sonic_config_engine.egg-info/SOURCES.txt -> sonic_config_engine-1.0/sonic_config_engine.egg-info
+Writing sonic_config_engine-1.0/setup.cfg
+Creating tar archive
+removing 'sonic_config_engine-1.0' (and everything under it)
+* Building wheel from sdist
+* Getting build dependencies for wheel...
+<string>:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+* Building wheel...
+<string>:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+/usr/local/lib/python3.13/dist-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running bdist_wheel
+running build
+running build_py
+creating build/lib
+copying config_samples.py -> build/lib
+copying minigraph.py -> build/lib
+copying openconfig_acl.py -> build/lib
+copying portconfig.py -> build/lib
+copying smartswitch_config.py -> build/lib
+copying asic_sensors_config.py -> build/lib
+copying sonic_yang_cfg_generator.py -> build/lib
+running build_scripts
+creating build/scripts-3.13
+copying and adjusting sonic-cfggen -> build/scripts-3.13
+changing mode of build/scripts-3.13/sonic-cfggen from 644 to 755
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+copying build/lib/smartswitch_config.py -> build/bdist.linux-x86_64/wheel/.
+copying build/lib/minigraph.py -> build/bdist.linux-x86_64/wheel/.
+copying build/lib/config_samples.py -> build/bdist.linux-x86_64/wheel/.
+copying build/lib/asic_sensors_config.py -> build/bdist.linux-x86_64/wheel/.
+copying build/lib/portconfig.py -> build/bdist.linux-x86_64/wheel/.
+copying build/lib/openconfig_acl.py -> build/bdist.linux-x86_64/wheel/.
+copying build/lib/sonic_yang_cfg_generator.py -> build/bdist.linux-x86_64/wheel/.
+running install_data
+creating build/bdist.linux-x86_64/wheel/sonic_config_engine-1.0.data/data
+creating build/bdist.linux-x86_64/wheel/usr/share/sonic/templates
+copying data/l3intf.j2 -> build/bdist.linux-x86_64/wheel/usr/share/sonic/templates
+copying data/l1intf.j2 -> build/bdist.linux-x86_64/wheel/usr/share/sonic/templates
+copying data/l2switch.j2 -> build/bdist.linux-x86_64/wheel/usr/share/sonic/templates
+running install_egg_info
+running egg_info
+writing sonic_config_engine.egg-info/PKG-INFO
+writing dependency_links to sonic_config_engine.egg-info/dependency_links.txt
+writing requirements to sonic_config_engine.egg-info/requires.txt
+writing top-level names to sonic_config_engine.egg-info/top_level.txt
+ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+reading manifest file 'sonic_config_engine.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'sonic_config_engine.egg-info/SOURCES.txt'
+Copying sonic_config_engine.egg-info to build/bdist.linux-x86_64/wheel/./sonic_config_engine-1.0-py3.13.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/sonic_config_engine-1.0.data/scripts
+copying build/scripts-3.13/sonic-cfggen -> build/bdist.linux-x86_64/wheel/sonic_config_engine-1.0.data/scripts
+changing mode of build/bdist.linux-x86_64/wheel/sonic_config_engine-1.0.data/scripts/sonic-cfggen to 755
+creating build/bdist.linux-x86_64/wheel/sonic_config_engine-1.0.dist-info/WHEEL
+creating '/sonic/src/sonic-config-engine/dist/.tmp-6eskhw3_/sonic_config_engine-1.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'asic_sensors_config.py'
+adding 'config_samples.py'
+adding 'minigraph.py'
+adding 'openconfig_acl.py'
+adding 'portconfig.py'
+adding 'smartswitch_config.py'
+adding 'sonic_yang_cfg_generator.py'
+adding 'sonic_config_engine-1.0.data/scripts/sonic-cfggen'
+adding 'usr/share/sonic/templates/l1intf.j2'
+adding 'usr/share/sonic/templates/l2switch.j2'
+adding 'usr/share/sonic/templates/l3intf.j2'
+adding 'sonic_config_engine-1.0.dist-info/METADATA'
+adding 'sonic_config_engine-1.0.dist-info/WHEEL'
+adding 'sonic_config_engine-1.0.dist-info/top_level.txt'
+adding 'sonic_config_engine-1.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built sonic_config_engine-1.0.tar.gz and sonic_config_engine-1.0-py3-none-any.whl
+/sonic
+/sonic/src/sonic-config-engine /sonic
+/sonic
+Build end time: Sat Sep 5 22:31:54 UTC 2026
+Elapsed time: 0h 0m 10s

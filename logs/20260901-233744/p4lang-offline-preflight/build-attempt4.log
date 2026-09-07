@@ -1,0 +1,11 @@
++++ --- Making target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+make[2]: *** [Makefile:35: buildinfo/sonic-build-hooks_1.0_all.deb] Error 4
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+make[1]: *** [Makefile.work:767: sonic-build-hooks] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb] Error 2

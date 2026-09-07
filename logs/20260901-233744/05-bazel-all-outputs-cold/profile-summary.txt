@@ -1,0 +1,14 @@
+
+=== PHASE SUMMARY INFORMATION ===
+
+Total launch phase time                              0.854 s    0.07%
+Total init phase time                                1.746 s    0.14%
+Total target pattern evaluation phase time           0.320 s    0.03%
+Total interleaved loading, analysis and execution phase time 1216.816 s   99.76%
+Total finish phase time                              0.026 s    0.00%
+---------------------------------------------------------------------
+Total run time                                    1219.763 s  100.00%
+
+Critical path (1204.397 s):
+       Time Percentage   Description
+ 1204.397 s  100.00%   action 'SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+// p4lang-p4c_1.2.4.2-2.deb'

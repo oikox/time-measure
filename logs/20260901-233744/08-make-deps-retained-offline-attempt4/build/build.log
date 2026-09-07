@@ -1,0 +1,328 @@
++++ --- Making target/sonic-vs.bin --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/sonic-vs.bin
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260905.232141"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260905.232141"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ building ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+Build start time: Sat Sep 5 15:21:59 UTC 2026
+[ REASON ] :      target/debs/trixie/monit_5.34.3-1_amd64.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/monit'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Remove any stale files
+rm -rf ./monit
+# Clone monit repo
+git clone https://salsa.debian.org/debian/monit.git
+pushd ./monit
+# Reset HEAD to the commit of the proper tag
+# NOTE: Using "git checkout <tag_name>" here detaches our HEAD,
+# which stg doesn't like, so we use this method instead
+# NOTE: For some reason, tags in the Debian monit repo are prefixed with "1%"
+git reset --hard debian/1\%5.34.3-1
+# Apply patches
+stg init
+stg import -s ../patch/series
+# Build source and Debian packages
+dpkg-buildpackage -rfakeroot -b -us -uc -j192 --admindir /sonic/dpkg/tmp.YhsANym5yB
+popd
+# Move the newly-built .deb packages to the destination directory
+mv monit-dbgsym_5.34.3-1_amd64.deb monit_5.34.3-1_amd64.deb /sonic/target/debs/trixie/
+Cloning into 'monit'...
+fatal: unable to access 'https://salsa.debian.org/debian/monit.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+make[1]: *** [Makefile:9: /sonic/target/debs/trixie/monit_5.34.3-1_amd64.deb] Error 128
+make[1]: Leaving directory '/sonic/src/monit'
+[  FAIL LOG END  ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ]
+make: *** [slave.mk:919: target/debs/trixie/monit_5.34.3-1_amd64.deb] Error 1
+make: *** Waiting for unfinished jobs....
+[ finished ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+Build start time: Sat Sep 5 15:21:54 UTC 2026
+[ REASON ] :      target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/radius/pam'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Build freeradius-server v1.1.x
+for attempt in 1 2 3 4 5; do
+rm -rf freeradius/freeradius-server
+mkdir -p freeradius/freeradius-server
+git -C freeradius/freeradius-server init
+git -C freeradius/freeradius-server remote add origin https://github.com/FreeRADIUS/freeradius-server.git
+git -C freeradius/freeradius-server -c http.version=HTTP/1.1 fetch --depth 1 origin 5f715dba4d2dbdb268bf60fcc656352274930941 && break
+if [[ $attempt -eq 5 ]]; then exit 1; fi
+sleep 5
+done
+pushd freeradius/freeradius-server
+git checkout --detach FETCH_HEAD
+# Apply patch
+patch -p1 < ../patches/freeradius_configure.patch
+patch -p1 < ../patches/freeradius_2007-04-06.patch
+patch -p1 < ../patches/freeradius_libeap_deprecated_openssl_1_0.patch
+patch -p1 < ../patches/libltdl_config_sub.patch
+cp ../patches/config.sub .
+cp ../patches/config.guess .
+./configure --disable-static --enable-libtool-lock
+make
+popd
+# Obtain pam_radius
+for attempt in 1 2 3 4 5; do
+rm -rf ./pam_radius
+mkdir -p ./pam_radius
+git -C ./pam_radius init
+git -C ./pam_radius remote add origin https://github.com/FreeRADIUS/pam_radius.git
+git -C ./pam_radius -c http.version=HTTP/1.1 fetch --depth 1 origin 149c25df84cf5cd0e9addd9346699a9ca8fdddd2 && break
+if [[ $attempt -eq 5 ]]; then exit 1; fi
+sleep 5
+done
+pushd ./pam_radius
+# This is the latest commit with Radius MPL support
+git checkout --detach FETCH_HEAD
+cp -r ../debian .
+dpkg-buildpackage -rfakeroot -b -us -uc -nc
+popd
+mv libpam-radius-auth-dbgsym_1.4.1-1_amd64.deb libpam-radius-auth_1.4.1-1_amd64.deb /sonic/target/debs/trixie/
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /sonic/src/radius/pam/freeradius/freeradius-server/.git/
+fatal: unable to access 'https://github.com/FreeRADIUS/freeradius-server.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /sonic/src/radius/pam/freeradius/freeradius-server/.git/
+fatal: unable to access 'https://github.com/FreeRADIUS/freeradius-server.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /sonic/src/radius/pam/freeradius/freeradius-server/.git/
+fatal: unable to access 'https://github.com/FreeRADIUS/freeradius-server.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /sonic/src/radius/pam/freeradius/freeradius-server/.git/
+fatal: unable to access 'https://github.com/FreeRADIUS/freeradius-server.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /sonic/src/radius/pam/freeradius/freeradius-server/.git/
+fatal: unable to access 'https://github.com/FreeRADIUS/freeradius-server.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+make[1]: *** [Makefile:9: /sonic/target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb] Error 1
+make[1]: Leaving directory '/sonic/src/radius/pam'
+[  FAIL LOG END  ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ]
+make: *** [slave.mk:919: target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb] Error 1
+[ finished ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+Build start time: Sat Sep 5 15:21:56 UTC 2026
+[ REASON ] :      target/debs/trixie/libtac2_1.4.1-1_amd64.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/tacacs/pam'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Obtain pam_tacplus
+for attempt in 1 2 3 4 5; do
+rm -rf ./pam_tacplus
+git -c http.version=HTTP/1.1 clone --depth 1 --branch v1.4.1 https://github.com/jeroennijhof/pam_tacplus.git ./pam_tacplus && break
+if [[ $attempt -eq 5 ]]; then exit 1; fi
+sleep 5
+done
+pushd ./pam_tacplus
+git switch -c sonic-build
+# Apply patch
+git apply ../0001-Don-t-init-declarations-in-a-for-loop.patch
+git apply ../0002-Fix-libtac2-bin-install-directory-error.patch
+git apply ../0003-Obfuscate-key-before-printing-to-syslog.patch
+git apply ../0004-management-vrf-support.patch
+git apply ../0005-pam-Modify-parsing-of-IP-address-and-port-number-to-.patch
+git apply ../0006-Add-support-for-source-ip-address.patch
+git apply ../0007-Fix-memory-leak-when-parse-configuration.patch
+git apply ../0008-Extract-tacacs-support-functions-into-library.patch
+git apply ../0009-Add-setting-flag-for-authorization-and-accounting.patch
+git apply ../0010-handle-bad-password-set-by-sshd.patch
+dpkg-buildpackage -rfakeroot -b -us -uc -j192 --admindir /sonic/dpkg/tmp.Xn7wk4DtWl
+popd
+mv libtac2_1.4.1-1_amd64.deb libtac2-dbgsym_1.4.1-1_amd64.deb libpam-tacplus-dbgsym_1.4.1-1_amd64.deb libtac-dev_1.4.1-1_amd64.deb libpam-tacplus_1.4.1-1_amd64.deb /sonic/target/debs/trixie/
+Cloning into './pam_tacplus'...
+fatal: unable to access 'https://github.com/jeroennijhof/pam_tacplus.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+Cloning into './pam_tacplus'...
+fatal: unable to access 'https://github.com/jeroennijhof/pam_tacplus.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+Cloning into './pam_tacplus'...
+fatal: unable to access 'https://github.com/jeroennijhof/pam_tacplus.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+Cloning into './pam_tacplus'...
+fatal: unable to access 'https://github.com/jeroennijhof/pam_tacplus.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+Cloning into './pam_tacplus'...
+fatal: unable to access 'https://github.com/jeroennijhof/pam_tacplus.git/': Failed to connect to 127.0.0.1 port 9 after 0 ms: Could not connect to server
+make[1]: *** [Makefile:12: /sonic/target/debs/trixie/libpam-tacplus_1.4.1-1_amd64.deb] Error 1
+make[1]: Leaving directory '/sonic/src/tacacs/pam'
+[  FAIL LOG END  ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ]
+make: *** [slave.mk:919: target/debs/trixie/libtac2_1.4.1-1_amd64.deb] Error 1
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+make[1]: *** [Makefile.work:751: target/sonic-vs.bin] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/sonic-vs.bin] Error 2

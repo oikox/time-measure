@@ -1,0 +1,1272 @@
++++ --- Making target/sonic-vs.bin --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/sonic-vs.bin
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.130117"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.130117"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/libpam-tacplus_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libpam-tacplus_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libssl3t64_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libssl3t64_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libssl-dev_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libssl-dev_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/openssl_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/openssl_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libk5crypto3_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libk5crypto3_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libkrb5support0_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libkrb5support0_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libkrb5-3_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libkrb5-3_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libgssapi-krb5-2_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libgssapi-krb5-2_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsensors5_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsensors5_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/fancontrol_3.6.0-7.1_all.deb ] 
+[ finished ] [ target/debs/trixie/fancontrol_3.6.0-7.1_all.deb ] 
+[ building ] [ target/debs/trixie/sensord_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/files/trixie/restapi.sh ] 
+[ finished ] [ target/files/trixie/restapi.sh ] 
+[ building ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/hsflowd_2.0.51-26_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sflowtool_5.04_amd64.deb ] 
+[ building ] [ target/debs/trixie/psample_1.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/docker-dash-engine.gz ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/isc-dhcp-relay_4.4.3-P1-2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/rasdaemon_0.6.8-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/files/trixie/remote_ctr.config.json ] 
+[ finished ] [ target/files/trixie/remote_ctr.config.json ] 
+[ building ] [ target/files/trixie/ctrmgrd.service ] 
+[ finished ] [ target/files/trixie/ctrmgrd.service ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/sonic-vs.bin__vs__rfs.squashfs ] 
+[ finished ] [ target/debs/trixie/psample_1.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb-install ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb-install ] 
+[ building ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/openssh-server_10.0p1-7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sflowtool_5.04_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sensord_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/bash-tacplus_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/rasdaemon_0.6.8-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/hsflowd_2.0.51-26_amd64.deb ] 
+[ building ] [ target/debs/trixie/audisp-tacplus_1.0.2_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ building ] [ target/docker-base-trixie.gz ] 
+[ finished ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb ] 
+[ finished ] [ target/debs/trixie/bash-tacplus_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnss-tacplus_1.0.4-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/audisp-tacplus_1.0.2_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/frr_10.5.4-sonic-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnss-tacplus_1.0.4-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/openssh-server_10.0p1-7_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb ] 
+[ finished ] [ target/sonic-vs.bin__vs__rfs.squashfs ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-framework_1.0-01_amd64.deb ] 
+[ finished ] [ target/debs/trixie/frr_10.5.4-sonic-0_amd64.deb ] 
+[ finished ] [ target/docker-dash-engine.gz ] 
+[ building ] [ target/debs/trixie/frr-snmp_10.5.4-sonic-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/frr-snmp_10.5.4-sonic-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-framework_1.0-01_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-db-cli_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-db-cli_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-eventd_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-ctrmgrd-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-host-services-rs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/syslog-counter_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-supervisord-utilities-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/docker-base-trixie.gz ] 
+[ building ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-eventd_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-supervisord-utilities-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-host-services-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/dash-ha_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/stp_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/syslog-counter_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-gnmi_0.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-linkmgrd_1.0.0-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/sysmgr_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-linkmgrd_1.0.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/stp_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-ctrmgrd-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-gnmi_0.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/isc-dhcp-relay_4.4.3-P1-2_amd64.deb ] 
+[ building ] [ target/docker-base-trixie.gz-load ] 
+[ finished ] [ target/docker-base-trixie.gz-load ] 
+[ building ] [ target/debs/trixie/sonic-dhcpmon_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sysmgr_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcp4relay_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-dhcpmon_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcp6relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/wpasupplicant_2.9.0-14_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-rsyslog-plugin_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-rsyslog-plugin_1.0.0-0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/stp_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/stp_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_containercfgd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_supervisord_utilities-1.0-py3-none-any.whl ] 
+/sonic/src/sonic-dash-ha /sonic
+Removing patch ../sonic-dash-ha.patch/0001-build-use-relative-path-when-building-cargo-dependen.patch
+Restoring Cargo.toml
+
+No patches applied
+/sonic
+[ finished ] [ target/debs/trixie/dash-ha_1.0.0_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_containercfgd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_d-2.0.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_ledd-1.1-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_pcied-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_supervisord_utilities-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/sonic-dhcp6relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_stormond-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/wpasupplicant_2.9.0-14_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_dhcp_utilities-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_ctrmgrd-1.0.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_d-2.0.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/system_health-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/sonic-dhcp4relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ledd-1.1-py3-none-any.whl ] 
+[ building ] [ target/docker-config-engine-trixie.gz ] 
+[ finished ] [ target/python-wheels/trixie/sonic_pcied-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_bgpcfgd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_stormond-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_frr_mgmt_framework-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_dhcp_utilities-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ctrmgrd-1.0.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/system_health-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_bgpcfgd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_frr_mgmt_framework-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_psud-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_syseepromd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_thermalctld-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_sensormond-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_xcvrd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_psud-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_ycabled-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_syseepromd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_chassisd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_thermalctld-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_bmcctld-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_sensormond-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/asyncsnmp-2.1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_xcvrd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/sonic-utilities-data_1.0-1_all.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_bmpcfgd_services-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ycabled-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_host_services-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_chassisd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_bmcctld-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/asyncsnmp-2.1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/sonic-utilities-data_1.0-1_all.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_bmpcfgd_services-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_host_services-1.0-py3-none-any.whl ] 
+[ finished ] [ target/docker-config-engine-trixie.gz ] 
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-bmp-watchdog.gz ] 
+[ building ] [ target/docker-sonic-bmp.gz ] 
+[ building ] [ target/docker-database.gz ] 
+[ building ] [ target/docker-eventd.gz ] 
+[ building ] [ target/docker-gnmi-sidecar.gz ] 
+[ building ] [ target/docker-gnmi-watchdog.gz ] 
+[ building ] [ target/docker-sonic-gnmi.gz ] 
+[ finished ] [ target/docker-gnmi-sidecar.gz ] 
+[ building ] [ target/docker-lldp.gz ] 
+[ finished ] [ target/docker-sonic-bmp.gz ] 
+[ building ] [ target/docker-mux.gz ] 
+[ finished ] [ target/docker-sonic-gnmi.gz ] 
+[ building ] [ target/docker-sonic-otel.gz ] 
+[ finished ] [ target/docker-eventd.gz ] 
+[ building ] [ target/docker-platform-monitor.gz ] 
+[ finished ] [ target/docker-database.gz ] 
+[ building ] [ target/docker-restapi-sidecar.gz ] 
+[ finished ] [ target/docker-gnmi-watchdog.gz ] 
+[ building ] [ target/docker-router-advertiser.gz ] 
+[ finished ] [ target/docker-bmp-watchdog.gz ] 
+[ building ] [ target/docker-snmp.gz ] 
+[ finished ] [ target/docker-lldp.gz ] 
+[ building ] [ target/docker-sonic-mgmt-framework.gz ] 
+[ finished ] [ target/docker-mux.gz ] 
+[ building ] [ target/docker-sysmgr.gz ] 
+[ finished ] [ target/docker-restapi-sidecar.gz ] 
+[ building ] [ target/docker-dhcp-relay.gz ] 
+[ finished ] [ target/docker-sonic-otel.gz ] 
+[ finished ] [ target/docker-router-advertiser.gz ] 
+[ finished ] [ target/docker-sysmgr.gz ] 
+[ finished ] [ target/docker-snmp.gz ] 
+[ finished ] [ target/docker-sonic-mgmt-framework.gz ] 
+[ finished ] [ target/docker-dhcp-relay.gz ] 
+[ finished ] [ target/docker-platform-monitor.gz ] 
+[ finished ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ] 
+[ building ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsai_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsai_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsai_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsai_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/syncd-vs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/syncd-vs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsairedis_1.0.0_amd64.deb-install ] 
+[ building ] [ target/docker-syncd-vs.gz ] 
+[ building ] [ target/docker-gbsyncd-vs.gz ] 
+[ building ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsairedis-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaimetadata_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaimetadata-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaivs_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libsaivs-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/swss_1.0.0_amd64.deb ] 
+[ finished ] [ target/docker-gbsyncd-vs.gz ] 
+[ finished ] [ target/docker-syncd-vs.gz ] 
+/sonic/src/sonic-swss /sonic
+Removing patch ../sonic-swss.patch/0002-Remove-lock-option-when-cargo-build.patch
+Restoring debian/rules
+
+Removing patch ../sonic-swss.patch/0001-build-use-relative-path-when-building-cargo-dependen.patch
+Restoring Cargo.toml
+
+No patches applied
+/sonic
+[ finished ] [ target/debs/trixie/swss_1.0.0_amd64.deb ] 
+[ building ] [ target/docker-swss-layer-trixie.gz ] 
+[ finished ] [ target/docker-swss-layer-trixie.gz ] 
+[ building ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ finished ] [ target/docker-swss-layer-trixie.gz-load ] 
+[ building ] [ target/docker-dash-ha.gz ] 
+[ building ] [ target/docker-fpm-frr.gz ] 
+[ building ] [ target/docker-nat.gz ] 
+[ building ] [ target/docker-orchagent.gz ] 
+[ building ] [ target/docker-sflow.gz ] 
+[ building ] [ target/docker-teamd.gz ] 
+[ building ] [ target/docker-macsec.gz ] 
+[ finished ] [ target/docker-dash-ha.gz ] 
+[ finished ] [ target/docker-nat.gz ] 
+[ finished ] [ target/docker-macsec.gz ] 
+[ finished ] [ target/docker-teamd.gz ] 
+[ finished ] [ target/docker-sflow.gz ] 
+[ finished ] [ target/docker-fpm-frr.gz ] 
+[ finished ] [ target/docker-orchagent.gz ] 
+basename: missing operand
+Try 'basename --help' for more information.
+[ building ] [ target/sonic-vs.bin ] 
+[ finished ] [ target/sonic-vs.bin ] 
+[ FAIL LOG START ] [ target/sonic-vs.bin ]
+Build start time: Sun Sep 6 05:29:12 UTC 2026
+++ '[' -f .arch ']'
+++ cat .arch
++ CONFIGURED_ARCH=amd64
++ DOCKER_VERSION=5:28.5.2-1~debian.13~trixie
++ CONTAINERD_IO_VERSION=1.7.28-2~debian.13~trixie
++ LINUX_KERNEL_VERSION=6.12.41+deb13
++ FILESYSTEM_ROOT=./fsroot
++ PLATFORM_DIR=platform
++ HOSTNAME=sonic
++ DEFAULT_USERINFO='Default admin user,,,'
++ BUILD_TOOL_PATH=src/sonic-build-hooks/buildinfo
++ TRUSTED_GPG_DIR=src/sonic-build-hooks/buildinfo/trusted.gpg.d
++ . ./onie-image.conf
+++ : 32768
+++ : x86_64
+++ : vs
+++ ONIEIMAGE_VERSION=r0
+++ FILESYSTEM_ROOT=./fsroot-vs
+++ FILESYSTEM_SQUASHFS=fs.squashfs
+++ INSTALLER_PAYLOAD=fs.zip
+++ FILESYSTEM_DOCKERFS=dockerfs.tar.gz
+++ DOCKERFS_DIR=docker
+++ DOCKER_RAMFS_SIZE=3500M
+++ OUTPUT_ONIE_IMAGE=target/sonic-vs.bin
+++ OUTPUT_RAW_IMAGE=target/sonic-vs.raw
+++ RAW_IMAGE_DISK_SIZE=1700
+++ OUTPUT_KVM_IMAGE=target/sonic-vs.img
+++ KVM_IMAGE_DISK_SIZE=16
+++ OUTPUT_ABOOT_IMAGE=target/sonic-aboot-vs.swi
+++ ABOOT_BOOT_IMAGE=.sonic-boot.swi
+++ OUTPUT_KVM_4ASIC_IMAGE=target/sonic-4asic-vs.img
+++ OUTPUT_KVM_6ASIC_IMAGE=target/sonic-6asic-vs.img
+++ OUTPUT_DSC_IMAGE=target/sonic-vs.tar
++ '[' -n 32768 ']'
++ '[' -n fs.zip ']'
++ '[' -n fs.squashfs ']'
++ '[' onie = aboot ']'
++ [[ y != y ]]
++ [[ n == y ]]
++ [[ y == y ]]
++ echo '[INFO] RFS build: second stage'
+[INFO] RFS build: second stage
++ sudo mount proc /proc -t proc
++ sudo fuser -vm ./fsroot-vs
+                     USER        PID ACCESS COMMAND
+/sonic/fsroot-vs:    root     kernel mount /git-mirrors
+                     qiuying.xzc      1 ..c.. docker-init
+                     qiuying.xzc      7 ..c.. bash
+                     qiuying.xzc      8 ..c.. make
+                     root      11681 ....m dockerd
+                     root      11768 ....m containerd
+                     qiuying.xzc  656192 ..c.. bash
+                     qiuying.xzc  656288 ..c.. build_debian.sh
+                     qiuying.xzc  656289 ..c.. process_log.sh
+                     root      656298 ..c.. sudo
++ sudo rm -rf ./fsroot-vs
++ sudo unsquashfs -d ./fsroot-vs target/sonic-vs.bin__vs__rfs.squashfs
+Parallel unsquashfs: Using 192 processors
+32489 inodes (48263 blocks) to write
+
+[====/                                                       ]  6248/80752   7%[=============-                                              ] 18432/80752  22%[============================\                               ] 39604/80752  49%[=====================================================|      ] 72572/80752  89%[===========================================================|] 80752/80752 100%
+
+created 29417 files
+created 4202 directories
+created 3056 symlinks
+created 8 devices
+created 0 fifos
+created 0 sockets
+created 8 hardlinks
++ pushd ./fsroot-vs
+/sonic/fsroot-vs /sonic
++ sudo mount --bind . .
++ popd
+/sonic
++ trap_push 'sudo LANG=C chroot $FILESYSTEM_ROOT umount /proc || true'
++ local oldcmd=true
++ local 'newcmd=sudo LANG=C chroot $FILESYSTEM_ROOT umount /proc || true; true'
++ trap -- 'sudo LANG=C chroot $FILESYSTEM_ROOT umount /proc || true; true' EXIT INT TERM HUP
++ _trap_push 'sudo LANG=C chroot $FILESYSTEM_ROOT umount /proc || true; true'
++ local 'next=sudo LANG=C chroot $FILESYSTEM_ROOT umount /proc || true; true'
+++ echo 'sudo LANG=C chroot $FILESYSTEM_ROOT umount /proc || true; true'
+++ sed -e 's/'\''/'\''\\'\'''\''/g'
++ eval 'trap_push() {
+        local oldcmd='\''sudo LANG=C chroot $FILESYSTEM_ROOT umount /proc || true; true'\''
+        local newcmd="$1; $oldcmd"
+        trap -- "$newcmd" EXIT INT TERM HUP
+        _trap_push "$newcmd"
+    }'
++ sudo LANG=C chroot ./fsroot-vs mount proc /proc -t proc
++ export build_version=master.0-dirty-20260906.130117
++ build_version=master.0-dirty-20260906.130117
+++ cat ./fsroot-vs/etc/debian_version
++ export debian_version=13.6
++ debian_version=13.6
++ export kernel_version=6.12.41+deb13-sonic-amd64
++ kernel_version=6.12.41+deb13-sonic-amd64
++ export asic_type=vs
++ asic_type=vs
++ export asic_subtype=vs
++ asic_subtype=vs
+++ git rev-parse --short HEAD
++ export commit_id=0587916c6
++ commit_id=0587916c6
+++ git rev-parse --abbrev-ref HEAD
++ export branch=master
++ branch=master
+++ '[' -f ./fsroot-vs/etc/sonic/sonic_release ']'
++ export release=
++ release=
+++ date -u
++ export 'build_date=Sun Sep  6 05:29:35 UTC 2026'
++ build_date='Sun Sep  6 05:29:35 UTC 2026'
++ export build_number=0
++ build_number=0
++ export built_by=qiuying.xzc@alinos-oncall215192149218.na131
++ built_by=qiuying.xzc@alinos-oncall215192149218.na131
++ export sonic_os_version=13
++ sonic_os_version=13
++ j2 files/build_templates/sonic_version.yml.j2
++ sudo tee ./fsroot-vs/etc/sonic/sonic_version.yml
+---
+build_version: 'master.0-dirty-20260906.130117'
+debian_version: '13.6'
+kernel_version: '6.12.41+deb13-sonic-amd64'
+asic_type: vs
+asic_subtype: 'vs'
+commit_id: '0587916c6'
+branch: 'master'
+release: 'none'
+build_date: Sun Sep  6 05:29:35 UTC 2026
+build_number: 0
+built_by: qiuying.xzc@alinos-oncall215192149218.na131
+libswsscommon: 1.0.0
+sonic-ctrmgrd-rs: 1.0.0
+sonic-host-services-rs: 1.0.0
+sonic_utilities: 1.2
+sonic_os_version: 13
+secure_boot_image: 'no'
++ '[' -f sonic_debian_extension.sh ']'
++ ./sonic_debian_extension.sh ./fsroot-vs platform trixie
+++ '[' -f .arch ']'
+++ cat .arch
++ CONFIGURED_ARCH=amd64
+++ '[' -f .platform ']'
+++ cat .platform
++ CONFIGURED_PLATFORM=vs
++ . functions.sh
+++ _trap_push true
+++ local next=true
++++ echo true
++++ sed -e 's/'\''/'\''\\'\'''\''/g'
+++ eval 'trap_push() {
+        local oldcmd='\''true'\''
+        local newcmd="$1; $oldcmd"
+        trap -- "$newcmd" EXIT INT TERM HUP
+        _trap_push "$newcmd"
+    }'
++ BUILD_SCRIPTS_DIR=files/build_scripts
++ BUILD_TEMPLATES=files/build_templates
++ IMAGE_CONFIGS=files/image_config
++ SCRIPTS_DIR=files/scripts
++ DOCKER_SCRIPTS_DIR=files/docker
++ DOCKER_CTL_DIR=/usr/lib/docker/
++ DOCKER_CTL_SCRIPT=/usr/lib/docker//docker.sh
++ FILESYSTEM_ROOT_USR=./fsroot-vs/usr
++ FILESYSTEM_ROOT_USR_LIB=./fsroot-vs/usr/lib/
++ FILESYSTEM_ROOT_USR_LIB_SYSTEMD_SYSTEM=./fsroot-vs/usr/lib//systemd/system
++ FILESYSTEM_ROOT_USR_LIB_SYSTEMD_NETWORK=./fsroot-vs/usr/lib//systemd/network
++ FILESYSTEM_ROOT_USR_SHARE=./fsroot-vs/usr/share
++ FILESYSTEM_ROOT_USR_SHARE_SONIC=./fsroot-vs/usr/share/sonic
++ FILESYSTEM_ROOT_USR_SHARE_SONIC_SCRIPTS=./fsroot-vs/usr/share/sonic/scripts
++ FILESYSTEM_ROOT_USR_SHARE_SONIC_TEMPLATES=./fsroot-vs/usr/share/sonic/templates
++ FILESYSTEM_ROOT_USR_SHARE_SONIC_FIRMWARE=./fsroot-vs/usr/share/sonic/firmware
++ FILESYSTEM_ROOT_ETC=./fsroot-vs/etc
++ FILESYSTEM_ROOT_ETC_SONIC=./fsroot-vs/etc/sonic
++ GENERATED_SERVICE_FILE=./fsroot-vs/etc/sonic/generated_services.conf
++ trap_push clean_sys
++ local oldcmd=true
++ local 'newcmd=clean_sys; true'
++ trap -- 'clean_sys; true' EXIT INT TERM HUP
++ _trap_push 'clean_sys; true'
++ local 'next=clean_sys; true'
+++ echo 'clean_sys; true'
+++ sed -e 's/'\''/'\''\\'\'''\''/g'
++ eval 'trap_push() {
+        local oldcmd='\''clean_sys; true'\''
+        local newcmd="$1; $oldcmd"
+        trap -- "$newcmd" EXIT INT TERM HUP
+        _trap_push "$newcmd"
+    }'
++ sudo LANG=C chroot ./fsroot-vs mount sysfs /sys -t sysfs
++ sudo bash -c 'echo "DOCKER_OPTS="--storage-driver=overlay2"" >> ./fsroot-vs/etc/default/docker'
++ sudo mkdir -p ./fsroot-vs//usr/lib/docker/
++ sudo cp files/docker/docker ./fsroot-vs//usr/lib/docker//docker.sh
++ [[ n == y ]]
++ [[ n == y ]]
++ sudo chroot ./fsroot-vs /usr/lib/docker//docker.sh start
+Starting Docker: docker.
++ sudo LANG=C DEBIAN_FRONTEND=noninteractive chroot ./fsroot-vs apt-get update
+Ign:1 https://download.docker.com/linux/debian trixie InRelease
+Ign:2 http://debian-archive.trafficmanager.net/debian trixie InRelease
+Ign:3 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+Ign:4 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+Ign:5 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+Ign:5 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+Ign:4 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+Ign:3 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+Ign:1 https://download.docker.com/linux/debian trixie InRelease
+Ign:2 http://debian-archive.trafficmanager.net/debian trixie InRelease
+Ign:2 http://debian-archive.trafficmanager.net/debian trixie InRelease
+Ign:3 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+Ign:4 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+Ign:1 https://download.docker.com/linux/debian trixie InRelease
+Ign:5 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+Err:5 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+  Unable to connect to 127.0.0.1:9:
+Err:1 https://download.docker.com/linux/debian trixie InRelease
+  Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+  Unable to connect to 127.0.0.1:9:
+Err:4 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+  Unable to connect to 127.0.0.1:9:
+Err:3 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+  Unable to connect to 127.0.0.1:9:
+Err:2 http://debian-archive.trafficmanager.net/debian trixie InRelease
+  Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+  Unable to connect to 127.0.0.1:9:
+Reading package lists...
+W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie/InRelease  Unable to connect to 127.0.0.1:9:
+W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-updates/InRelease  Unable to connect to 127.0.0.1:9:
+W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-backports/InRelease  Unable to connect to 127.0.0.1:9:
+W: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/dists/trixie-security/InRelease  Unable to connect to 127.0.0.1:9:
+W: Failed to fetch https://download.docker.com/linux/debian/dists/trixie/InRelease  Unable to connect to 127.0.0.1:9:
+W: Some index files failed to download. They have been ignored, or old ones used instead.
++ sudo LANG=C DEBIAN_FRONTEND=noninteractive chroot ./fsroot-vs apt-get -y install efitools
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libfuse3-4
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  sbsigntool
+The following NEW packages will be installed:
+  efitools sbsigntool
+0 upgraded, 2 newly installed, 0 to remove and 7 not upgraded.
+Need to get 0 B/201 kB of archives.
+After this operation, 1456 kB of additional disk space will be used.
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
+Selecting previously unselected package sbsigntool.
+(Reading database ... 29545 files and directories currently installed.)
+Preparing to unpack .../sbsigntool_0.9.4-3.2_amd64.deb ...
+Unpacking sbsigntool (0.9.4-3.2) ...
+Selecting previously unselected package efitools.
+Preparing to unpack .../efitools_1.9.2-3.5_amd64.deb ...
+Unpacking efitools (1.9.2-3.5) ...
+Setting up sbsigntool (0.9.4-3.2) ...
+Setting up efitools (1.9.2-3.5) ...
++ sudo LANG=C DEBIAN_FRONTEND=noninteractive chroot ./fsroot-vs apt-get -y install mokutil
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libfuse3-4
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  mokutil
+0 upgraded, 1 newly installed, 0 to remove and 7 not upgraded.
+Need to get 0 B/26.7 kB of archives.
+After this operation, 80.9 kB of additional disk space will be used.
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
+Selecting previously unselected package mokutil.
+(Reading database ... 29598 files and directories currently installed.)
+Preparing to unpack .../mokutil_0.7.2-1_amd64.deb ...
+Unpacking mokutil (0.7.2-1) ...
+Setting up mokutil (0.7.2-1) ...
++ install_deb_package target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb
++ deb_packages=target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb
++ [[ -z target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ]]
++ sudo cp target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ./fsroot-vs/
+++ basename -a target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb
++ basename_deb_packages=sedutil_1.15-5ad84d8_amd64.deb
++ sudo LANG=C DEBIAN_FRONTEND=noninteractive chroot ./fsroot-vs dpkg -i sedutil_1.15-5ad84d8_amd64.deb
+Selecting previously unselected package sedutil.
+(Reading database ... 29604 files and directories currently installed.)
+Preparing to unpack sedutil_1.15-5ad84d8_amd64.deb ...
+Unpacking sedutil (1.15-5ad84d8) ...
+Setting up sedutil (1.15-5ad84d8) ...
++ cd ./fsroot-vs
++ sudo rm -f sedutil_1.15-5ad84d8_amd64.deb
++ sudo cp files/image_config/sed_mgmt/sed_pw_utils.sh ./fsroot-vs/usr/local/bin/
++ sudo chmod 755 ./fsroot-vs/usr/local/bin/sed_pw_utils.sh
++ sudo cp files/image_config/sed_mgmt/sed_pw_change.sh ./fsroot-vs/usr/local/bin/
++ sudo chmod 755 ./fsroot-vs/usr/local/bin/sed_pw_change.sh
++ sudo cp files/image_config/sed_mgmt/sed_pw_reset.sh ./fsroot-vs/usr/local/bin/
++ sudo chmod 755 ./fsroot-vs/usr/local/bin/sed_pw_reset.sh
++ sudo cp files/image_config/sed_mgmt/sed_pw_tpm_recovery.sh ./fsroot-vs/usr/local/bin/
++ sudo chmod 755 ./fsroot-vs/usr/local/bin/sed_pw_tpm_recovery.sh
++ sudo cp files/image_config/sed_mgmt/sed-pw-tpm-recovery.service ./fsroot-vs/usr/lib//systemd/system
++ echo sed-pw-tpm-recovery.service
++ sudo tee -a ./fsroot-vs/etc/sonic/generated_services.conf
+sed-pw-tpm-recovery.service
++ sudo LANG=C DEBIAN_FRONTEND=noninteractive chroot ./fsroot-vs systemctl enable sed-pw-tpm-recovery.service
+Created symlink '/etc/systemd/system/sonic.target.wants/sed-pw-tpm-recovery.service' -> '/usr/lib/systemd/system/sed-pw-tpm-recovery.service'.
+Unit /usr/lib/systemd/system/sed-pw-tpm-recovery.service is added as a dependency to a non-existent unit sonic.target.
++ sudo LANG=C DEBIAN_FRONTEND=noninteractive chroot ./fsroot-vs apt-get -y install tpm2-tools
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libfuse3-4
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  libtss2-esys-3.0.2-0t64 libtss2-fapi1t64 libtss2-mu-4.0.1-0t64
+  libtss2-rc0t64 libtss2-sys1t64 libtss2-tcti-cmd0t64 libtss2-tcti-device0t64
+  libtss2-tcti-libtpms0t64 libtss2-tcti-mssim0t64 libtss2-tcti-spi-helper0t64
+  libtss2-tcti-swtpm0t64 libtss2-tctildr0t64 tpm-udev
+The following NEW packages will be installed:
+  libtss2-esys-3.0.2-0t64 libtss2-fapi1t64 libtss2-mu-4.0.1-0t64
+  libtss2-rc0t64 libtss2-sys1t64 libtss2-tcti-cmd0t64 libtss2-tcti-device0t64
+  libtss2-tcti-libtpms0t64 libtss2-tcti-mssim0t64 libtss2-tcti-spi-helper0t64
+  libtss2-tcti-swtpm0t64 libtss2-tctildr0t64 tpm-udev tpm2-tools
+0 upgraded, 14 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/1717 kB of archives.
+After this operation, 4862 kB of additional disk space will be used.
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
+Selecting previously unselected package tpm-udev.
+(Reading database ... 29606 files and directories currently installed.)
+Preparing to unpack .../00-tpm-udev_0.6+nmu1_all.deb ...
+Unpacking tpm-udev (0.6+nmu1) ...
+Selecting previously unselected package libtss2-mu-4.0.1-0t64:amd64.
+Preparing to unpack .../01-libtss2-mu-4.0.1-0t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-mu-4.0.1-0t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-tcti-cmd0t64:amd64.
+Preparing to unpack .../02-libtss2-tcti-cmd0t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-tcti-cmd0t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-tcti-device0t64:amd64.
+Preparing to unpack .../03-libtss2-tcti-device0t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-tcti-device0t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-tcti-mssim0t64:amd64.
+Preparing to unpack .../04-libtss2-tcti-mssim0t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-tcti-mssim0t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-tcti-swtpm0t64:amd64.
+Preparing to unpack .../05-libtss2-tcti-swtpm0t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-tcti-swtpm0t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-sys1t64:amd64.
+Preparing to unpack .../06-libtss2-sys1t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-sys1t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-esys-3.0.2-0t64:amd64.
+Preparing to unpack .../07-libtss2-esys-3.0.2-0t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-esys-3.0.2-0t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-tcti-libtpms0t64:amd64.
+Preparing to unpack .../08-libtss2-tcti-libtpms0t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-tcti-libtpms0t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-tcti-spi-helper0t64:amd64.
+Preparing to unpack .../09-libtss2-tcti-spi-helper0t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-tcti-spi-helper0t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-tctildr0t64:amd64.
+Preparing to unpack .../10-libtss2-tctildr0t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-tctildr0t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-fapi1t64:amd64.
+Preparing to unpack .../11-libtss2-fapi1t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-fapi1t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package libtss2-rc0t64:amd64.
+Preparing to unpack .../12-libtss2-rc0t64_4.1.3-1.2_amd64.deb ...
+Unpacking libtss2-rc0t64:amd64 (4.1.3-1.2) ...
+Selecting previously unselected package tpm2-tools.
+Preparing to unpack .../13-tpm2-tools_5.7-1_amd64.deb ...
+Unpacking tpm2-tools (5.7-1) ...
+Setting up tpm-udev (0.6+nmu1) ...
+Running in chroot, ignoring request.
+Running in chroot, ignoring request.
+Running in chroot, ignoring request.
+Running in chroot, ignoring request.
+Setting up libtss2-rc0t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-mu-4.0.1-0t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-tcti-libtpms0t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-sys1t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-tcti-device0t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-tcti-mssim0t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-tcti-cmd0t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-tcti-swtpm0t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-tcti-spi-helper0t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-tctildr0t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-esys-3.0.2-0t64:amd64 (4.1.3-1.2) ...
+Setting up libtss2-fapi1t64:amd64 (4.1.3-1.2) ...
+Setting up tpm2-tools (5.7-1) ...
+Processing triggers for libc-bin (2.41-12+deb13u3) ...
++ sudo cp src/sonic-platform-common/sonic_platform_base/bmc_fw_update.py ./fsroot-vs/usr/bin/bmc_fw_update.py
++ sudo chmod 755 ./fsroot-vs/usr/bin/bmc_fw_update.py
++ sudo cp files/image_config/environment/environment ./fsroot-vs/etc/
++ sudo cp files/image_config/environment/motd ./fsroot-vs/etc/
++ sudo cp files/image_config/environment/logout_message ./fsroot-vs/etc/
++ sudo mkdir -p ./fsroot-vs/etc/sonic/
++ sudo mkdir -p ./fsroot-vs/etc/modprobe.d/
++ sudo mkdir -p ./fsroot-vs/var/cache/sonic/
++ sudo mkdir -p ./fsroot-vs/usr/share/sonic/templates/
++ sudo mkdir -p ./fsroot-vs/usr/share/sonic/firmware/
++ sudo mkdir -p ./fsroot-vs/usr/lib//systemd/system
++ install_deb_package target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb
++ deb_packages=target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb
++ [[ -z target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ]]
++ sudo cp target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ./fsroot-vs/
+++ basename -a target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb
++ basename_deb_packages=sonic-nettools_0.0.1-0_amd64.deb
++ sudo LANG=C DEBIAN_FRONTEND=noninteractive chroot ./fsroot-vs dpkg -i sonic-nettools_0.0.1-0_amd64.deb
+Selecting previously unselected package sonic-nettools.
+(Reading database ... 30034 files and directories currently installed.)
+Preparing to unpack sonic-nettools_0.0.1-0_amd64.deb ...
+Unpacking sonic-nettools (0.0.1-0) ...
+Setting up sonic-nettools (0.0.1-0) ...
++ cd ./fsroot-vs
++ sudo rm -f sonic-nettools_0.0.1-0_amd64.deb
++ sudo setcap cap_net_raw=+ep ./fsroot-vs/usr/bin/wol
++ sudo bash -c 'echo "d	/dev/shm/monit/ 0755 root root" > ./fsroot-vs/etc/tmpfiles.d/tmpfs-monit.conf'
++ sudo bash -c 'echo "d	/dev/shm/logrotate/ 0755 root root" > ./fsroot-vs/etc/tmpfiles.d/tmpfs-logrotate.conf'
++ install_deb_package target/debs/trixie/ifupdown2_3.0.0-1_all.deb
++ deb_packages=target/debs/trixie/ifupdown2_3.0.0-1_all.deb
++ [[ -z target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]]
++ sudo cp target/debs/trixie/ifupdown2_3.0.0-1_all.deb ./fsroot-vs/
+++ basename -a target/debs/trixie/ifupdown2_3.0.0-1_all.deb
++ basename_deb_packages=ifupdown2_3.0.0-1_all.deb
++ sudo LANG=C DEBIAN_FRONTEND=noninteractive chroot ./fsroot-vs dpkg -i ifupdown2_3.0.0-1_all.deb
+Selecting previously unselected package ifupdown2.
+(Reading database ... 30037 files and directories currently installed.)
+Preparing to unpack ifupdown2_3.0.0-1_all.deb ...
+Unpacking ifupdown2 (3.0.0-1) ...
+Setting up ifupdown2 (3.0.0-1) ...
+ifupdown2.postinst: Warning: No 'iface lo' definition found in /etc/network/interfaces
+ifupdown2.postinst: Warning: No 'auto lo' statement found in /etc/network/interfaces
+/usr/share/ifupdown2/addons/bridge.py:3641: SyntaxWarning: invalid escape sequence '\s'
+  for protocol in re.split(',|\s*', user_config_l2protocol_tunnel):
+/usr/share/ifupdown2/ifupdown/ifupdownmain.py:1569: SyntaxWarning: invalid escape sequence '\d'
+  vlan_match = re.match("^([\d]+)-([\d]+)", ifacename)
+/usr/share/ifupdown2/ifupdown/utils.py:233: SyntaxWarning: invalid escape sequence '\w'
+  range_match = re.match("^([\w]+)\[([\d]+)-([\d]+)\]([\.\w]+)", name)
+/usr/share/ifupdown2/ifupdown/utils.py:243: SyntaxWarning: invalid escape sequence '\w'
+  range_match = re.match("^([\w\.]+)\[([\d]+)-([\d]+)\]", name)
+/usr/share/ifupdown2/lib/iproute2.py:65: SyntaxWarning: invalid escape sequence '\s'
+  VXLAN_PEER_REGEX_PATTERN = re.compile("\s+dst\s+(\d+.\d+.\d+.\d+)\s+")
+Created symlink '/etc/systemd/system/basic.target.wants/networking.service' -> '/usr/lib/systemd/system/networking.service'.
+Created symlink '/etc/systemd/system/network.target.wants/networking.service' -> '/usr/lib/systemd/system/networking.service'.
+Created symlink '/etc/systemd/system/shutdown.target.wants/networking.service' -> '/usr/lib/systemd/system/networking.service'.
++ cd ./fsroot-vs
++ sudo rm -f ifupdown2_3.0.0-1_all.deb
++ sudo LANG=C DEBIAN_FRONTEND=noninteractive chroot ./fsroot-vs apt-get -y install python3-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libfuse3-4
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  libc-dev-bin libc6-dev libcrypt-dev libexpat1-dev libjs-jquery
+  libjs-sphinxdoc libjs-underscore libpython3-dev libpython3.13-dev
+  linux-libc-dev python3.13-dev rpcsvc-proto zlib1g-dev
+Suggested packages:
+  libc-devtools glibc-doc manpages-dev
+Recommended packages:
+  manpages manpages-dev javascript-common
+The following NEW packages will be installed:
+  libc-dev-bin libc6-dev libcrypt-dev libexpat1-dev libjs-jquery
+  libjs-sphinxdoc libjs-underscore libpython3-dev libpython3.13-dev
+  linux-libc-dev python3-dev python3.13-dev rpcsvc-proto zlib1g-dev
+0 upgraded, 14 newly installed, 0 to remove and 9 not upgraded.
+Need to get 0 B/12.5 MB of archives.
+After this operation, 56.4 MB of additional disk space will be used.
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
+Selecting previously unselected package libc-dev-bin.
+(Reading database ... 30156 files and directories currently installed.)
+Preparing to unpack .../00-libc-dev-bin_2.41-12+deb13u3_amd64.deb ...
+Unpacking libc-dev-bin (2.41-12+deb13u3) ...
+Selecting previously unselected package linux-libc-dev.
+Preparing to unpack .../01-linux-libc-dev_6.12.107-1_all.deb ...
+Unpacking linux-libc-dev (6.12.107-1) ...
+Selecting previously unselected package libcrypt-dev:amd64.
+Preparing to unpack .../02-libcrypt-dev_1%3a4.4.38-1_amd64.deb ...
+Unpacking libcrypt-dev:amd64 (1:4.4.38-1) ...
+Selecting previously unselected package rpcsvc-proto.
+Preparing to unpack .../03-rpcsvc-proto_1.4.3-1_amd64.deb ...
+Unpacking rpcsvc-proto (1.4.3-1) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../04-libc6-dev_2.41-12+deb13u3_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.41-12+deb13u3) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../05-libexpat1-dev_2.8.3-1~deb13u1_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.8.3-1~deb13u1) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../06-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../07-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../08-libjs-sphinxdoc_8.1.3-5_all.deb ...
+Unpacking libjs-sphinxdoc (8.1.3-5) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../09-zlib1g-dev_1%3a1.3.dfsg+really1.3.1-1+b1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.3.dfsg+really1.3.1-1+b1) ...
+Selecting previously unselected package libpython3.13-dev:amd64.
+Preparing to unpack .../10-libpython3.13-dev_3.13.5-2+deb13u4_amd64.deb ...
+Unpacking libpython3.13-dev:amd64 (3.13.5-2+deb13u4) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../11-libpython3-dev_3.13.5-1_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.13.5-1) ...
+Selecting previously unselected package python3.13-dev.
+Preparing to unpack .../12-python3.13-dev_3.13.5-2+deb13u4_amd64.deb ...
+Unpacking python3.13-dev (3.13.5-2+deb13u4) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../13-python3-dev_3.13.5-1_amd64.deb ...
+Unpacking python3-dev (3.13.5-1) ...
+Setting up linux-libc-dev (6.12.107-1) ...
+Setting up rpcsvc-proto (1.4.3-1) ...
+Setting up libcrypt-dev:amd64 (1:4.4.38-1) ...
+Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Setting up libc-dev-bin (2.41-12+deb13u3) ...
+Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Setting up libjs-sphinxdoc (8.1.3-5) ...
+Setting up libc6-dev:amd64 (2.41-12+deb13u3) ...
+Setting up libexpat1-dev:amd64 (2.8.3-1~deb13u1) ...
+Setting up zlib1g-dev:amd64 (1:1.3.dfsg+really1.3.1-1+b1) ...
+Setting up libpython3.13-dev:amd64 (3.13.5-2+deb13u4) ...
+Setting up libpython3-dev:amd64 (3.13.5-1) ...
+Setting up python3.13-dev (3.13.5-2+deb13u4) ...
+Setting up python3-dev (3.13.5-1) ...
++ sudo LANG=C DEBIAN_FRONTEND=noninteractive chroot ./fsroot-vs apt-get -y install j2cli
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libfuse3-4
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  python3-jinja2 python3-markupsafe python3-yaml
+Suggested packages:
+  python-jinja2-doc
+Recommended packages:
+  python3-babel
+The following NEW packages will be installed:
+  j2cli python3-jinja2 python3-markupsafe python3-yaml
+0 upgraded, 4 newly installed, 0 to remove and 9 not upgraded.
+Need to get 0 B/273 kB of archives.
+After this operation, 1220 kB of additional disk space will be used.
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
+Selecting previously unselected package python3-markupsafe.
+(Reading database ... 33876 files and directories currently installed.)
+Preparing to unpack .../python3-markupsafe_2.1.5-1+b3_amd64.deb ...
+Unpacking python3-markupsafe (2.1.5-1+b3) ...
+Selecting previously unselected package python3-jinja2.
+Preparing to unpack .../python3-jinja2_3.1.6-1_all.deb ...
+Unpacking python3-jinja2 (3.1.6-1) ...
+Selecting previously unselected package python3-yaml.
+Preparing to unpack .../python3-yaml_6.0.2-1+b2_amd64.deb ...
+Unpacking python3-yaml (6.0.2-1+b2) ...
+Selecting previously unselected package j2cli.
+Preparing to unpack .../j2cli_0.3.12b-5_all.deb ...
+Unpacking j2cli (0.3.12b-5) ...
+Setting up python3-yaml (6.0.2-1+b2) ...
+Setting up python3-markupsafe (2.1.5-1+b3) ...
+Setting up python3-jinja2 (3.1.6-1) ...
+Setting up j2cli (0.3.12b-5) ...
++ install_external_pip_package redis==3.5.3
++ [[ y == y ]]
++ sudo LANG=C chroot ./fsroot-vs env PIP_NO_INDEX=1 PIP_FIND_LINKS=/pip-wheelhouse pip3 install redis==3.5.3
+Looking in links: /pip-wheelhouse
+Processing /pip-wheelhouse/redis-3.5.3-py2.py3-none-any.whl
+Installing collected packages: redis
+Successfully installed redis-3.5.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ install_pip_package target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl
++ pip_wheel=target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl
++ [[ -z target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ]]
++ sudo cp target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ./fsroot-vs/
+++ basename -a target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl
++ basename_pip_wheel=redis_dump_load-1.1-py3-none-any.whl
++ install_external_pip_package redis_dump_load-1.1-py3-none-any.whl
++ [[ y == y ]]
++ sudo LANG=C chroot ./fsroot-vs env PIP_NO_INDEX=1 PIP_FIND_LINKS=/pip-wheelhouse pip3 install redis_dump_load-1.1-py3-none-any.whl
+Looking in links: /pip-wheelhouse
+Processing /redis_dump_load-1.1-py3-none-any.whl
+Requirement already satisfied: redis in /usr/local/lib/python3.13/dist-packages (from redis-dump-load==1.1) (3.5.3)
+Installing collected packages: redis-dump-load
+Successfully installed redis-dump-load-1.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ cd ./fsroot-vs
++ sudo rm -f redis_dump_load-1.1-py3-none-any.whl
++ install_external_pip_package psutil
++ [[ y == y ]]
++ sudo LANG=C chroot ./fsroot-vs env PIP_NO_INDEX=1 PIP_FIND_LINKS=/pip-wheelhouse pip3 install psutil
+Looking in links: /pip-wheelhouse
+Processing /pip-wheelhouse/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl
+Installing collected packages: psutil
+Successfully installed psutil-7.2.2
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ install_external_pip_package blkinfo
++ [[ y == y ]]
++ sudo LANG=C chroot ./fsroot-vs env PIP_NO_INDEX=1 PIP_FIND_LINKS=/pip-wheelhouse pip3 install blkinfo
+Looking in links: /pip-wheelhouse
+Processing /pip-wheelhouse/blkinfo-0.2.0.tar.gz
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: blkinfo
+  DEPRECATION: Building 'blkinfo' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'blkinfo'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for blkinfo (setup.py): started
+  Building wheel for blkinfo (setup.py): finished with status 'done'
+  Created wheel for blkinfo: filename=blkinfo-0.2.0-py3-none-any.whl size=7718 sha256=297a02d53b0b6001a45ffbcce9d61d7c5ad827fe78aaa2a354a9617877234029
+  Stored in directory: /sonic/target/vcache/host-image/pip/wheels/bb/a5/02/30e27e833eb18ec5dadf8d52cf5f05bc0401f105351b850e10
+Successfully built blkinfo
+Installing collected packages: blkinfo
+Successfully installed blkinfo-0.2.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ install_external_pip_package ipaddr
++ [[ y == y ]]
++ sudo LANG=C chroot ./fsroot-vs env PIP_NO_INDEX=1 PIP_FIND_LINKS=/pip-wheelhouse pip3 install ipaddr
+Looking in links: /pip-wheelhouse
+Processing /pip-wheelhouse/ipaddr-2.2.0.tar.gz
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: ipaddr
+  DEPRECATION: Building 'ipaddr' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'ipaddr'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for ipaddr (setup.py): started
+  Building wheel for ipaddr (setup.py): finished with status 'done'
+  Created wheel for ipaddr: filename=ipaddr-2.2.0-py3-none-any.whl size=18352 sha256=f46414bbb95d7921a2d5014354e3bca81808a4d8dd185f546f1ee033f562f794
+  Stored in directory: /sonic/target/vcache/host-image/pip/wheels/b5/b6/73/e83f01e71d7a833123ab727d2a322077e7248f134e8f0fcb06
+Successfully built ipaddr
+Installing collected packages: ipaddr
+Successfully installed ipaddr-2.2.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ [[ amd64 == amd64 ]]
++ install_external_pip_package grpcio==1.66.2
++ [[ y == y ]]
++ sudo LANG=C chroot ./fsroot-vs env PIP_NO_INDEX=1 PIP_FIND_LINKS=/pip-wheelhouse pip3 install grpcio==1.66.2
+Looking in links: /pip-wheelhouse
+Processing /pip-wheelhouse/grpcio-1.66.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Installing collected packages: grpcio
+Successfully installed grpcio-1.66.2
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ install_external_pip_package grpcio-tools==1.66.2
++ [[ y == y ]]
++ sudo LANG=C chroot ./fsroot-vs env PIP_NO_INDEX=1 PIP_FIND_LINKS=/pip-wheelhouse pip3 install grpcio-tools==1.66.2
+Looking in links: /pip-wheelhouse
+Processing /pip-wheelhouse/grpcio_tools-1.66.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing /pip-wheelhouse/protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl (from grpcio-tools==1.66.2)
+Requirement already satisfied: grpcio>=1.66.2 in /usr/local/lib/python3.13/dist-packages (from grpcio-tools==1.66.2) (1.66.2)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from grpcio-tools==1.66.2) (78.1.1)
+Installing collected packages: protobuf, grpcio-tools
+
+Successfully installed grpcio-tools-1.66.2 protobuf-5.29.6
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ install_external_pip_package smbus2
++ [[ y == y ]]
++ sudo LANG=C chroot ./fsroot-vs env PIP_NO_INDEX=1 PIP_FIND_LINKS=/pip-wheelhouse pip3 install smbus2
+Looking in links: /pip-wheelhouse
+Processing /pip-wheelhouse/smbus2-0.6.1-py2.py3-none-any.whl
+Installing collected packages: smbus2
+Successfully installed smbus2-0.6.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ install_external_pip_package telnetlib3
++ [[ y == y ]]
++ sudo LANG=C chroot ./fsroot-vs env PIP_NO_INDEX=1 PIP_FIND_LINKS=/pip-wheelhouse pip3 install telnetlib3
+Looking in links: /pip-wheelhouse
+Processing /pip-wheelhouse/telnetlib3-4.0.5-py3-none-any.whl
+INFO: pip is looking at multiple versions of telnetlib3 to determine which version is compatible with other requirements. This could take a while.
+ERROR: Cannot install telnetlib3==4.0.5 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    telnetlib3 4.0.5 depends on wcwidth>=0.6.0
+    The user requested (constraint) wcwidth==0.8.1
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
++ clean_sys
++ sudo chroot ./fsroot-vs umount /sys/fs/cgroup/cgroup.controllers /sys/fs/cgroup/cgroup.events /sys/fs/cgroup/cgroup.freeze /sys/fs/cgroup/cgroup.kill /sys/fs/cgroup/cgroup.max.depth /sys/fs/cgroup/cgroup.max.descendants /sys/fs/cgroup/cgroup.pressure /sys/fs/cgroup/cgroup.procs /sys/fs/cgroup/cgroup.stat /sys/fs/cgroup/cgroup.stat.local /sys/fs/cgroup/cgroup.subtree_control /sys/fs/cgroup/cgroup.threads /sys/fs/cgroup/cgroup.type /sys/fs/cgroup/cpu.idle /sys/fs/cgroup/cpu.max /sys/fs/cgroup/cpu.max.burst /sys/fs/cgroup/cpu.pressure /sys/fs/cgroup/cpu.stat /sys/fs/cgroup/cpu.stat.local /sys/fs/cgroup/cpu.uclamp.max /sys/fs/cgroup/cpu.uclamp.min /sys/fs/cgroup/cpu.weight /sys/fs/cgroup/cpu.weight.nice /sys/fs/cgroup/cpuset.cpus /sys/fs/cgroup/cpuset.cpus.effective /sys/fs/cgroup/cpuset.cpus.exclusive /sys/fs/cgroup/cpuset.cpus.exclusive.effective /sys/fs/cgroup/cpuset.cpus.partition /sys/fs/cgroup/cpuset.mems /sys/fs/cgroup/cpuset.mems.effective /sys/fs/cgroup/dmem.current /sys/fs/cgroup/dmem.low /sys/fs/cgroup/dmem.max /sys/fs/cgroup/dmem.min /sys/fs/cgroup/docker /sys/fs/cgroup/hugetlb.1GB.current /sys/fs/cgroup/hugetlb.1GB.events /sys/fs/cgroup/hugetlb.1GB.events.local /sys/fs/cgroup/hugetlb.1GB.max /sys/fs/cgroup/hugetlb.1GB.numa_stat /sys/fs/cgroup/hugetlb.1GB.rsvd.current /sys/fs/cgroup/hugetlb.1GB.rsvd.max /sys/fs/cgroup/hugetlb.2MB.current /sys/fs/cgroup/hugetlb.2MB.events /sys/fs/cgroup/hugetlb.2MB.events.local /sys/fs/cgroup/hugetlb.2MB.max /sys/fs/cgroup/hugetlb.2MB.numa_stat /sys/fs/cgroup/hugetlb.2MB.rsvd.current /sys/fs/cgroup/hugetlb.2MB.rsvd.max /sys/fs/cgroup/io.max /sys/fs/cgroup/io.pressure /sys/fs/cgroup/io.prio.class /sys/fs/cgroup/io.stat /sys/fs/cgroup/io.weight /sys/fs/cgroup/memory.current /sys/fs/cgroup/memory.events /sys/fs/cgroup/memory.events.local /sys/fs/cgroup/memory.high /sys/fs/cgroup/memory.low /sys/fs/cgroup/memory.max /sys/fs/cgroup/memory.min /sys/fs/cgroup/memory.numa_stat /sys/fs/cgroup/memory.oom.group /sys/fs/cgroup/memory.peak /sys/fs/cgroup/memory.pressure /sys/fs/cgroup/memory.reclaim /sys/fs/cgroup/memory.stat /sys/fs/cgroup/memory.swap.current /sys/fs/cgroup/memory.swap.events /sys/fs/cgroup/memory.swap.high /sys/fs/cgroup/memory.swap.max /sys/fs/cgroup/memory.swap.peak /sys/fs/cgroup/memory.zswap.current /sys/fs/cgroup/memory.zswap.max /sys/fs/cgroup/memory.zswap.writeback /sys/fs/cgroup/misc.current /sys/fs/cgroup/misc.events /sys/fs/cgroup/misc.events.local /sys/fs/cgroup/misc.max /sys/fs/cgroup/misc.peak /sys/fs/cgroup/pids.current /sys/fs/cgroup/pids.events /sys/fs/cgroup/pids.events.local /sys/fs/cgroup/pids.max /sys/fs/cgroup/pids.peak /sys/fs/cgroup/rdma.current /sys/fs/cgroup/rdma.max /sys/fs/cgroup /sys
+umount: /sys/fs/cgroup/cgroup.controllers: not mounted.
+umount: /sys/fs/cgroup/cgroup.events: not mounted.
+umount: /sys/fs/cgroup/cgroup.freeze: not mounted.
+umount: /sys/fs/cgroup/cgroup.kill: not mounted.
+umount: /sys/fs/cgroup/cgroup.max.depth: not mounted.
+umount: /sys/fs/cgroup/cgroup.max.descendants: not mounted.
+umount: /sys/fs/cgroup/cgroup.pressure: not mounted.
+umount: /sys/fs/cgroup/cgroup.procs: not mounted.
+umount: /sys/fs/cgroup/cgroup.stat: not mounted.
+umount: /sys/fs/cgroup/cgroup.stat.local: not mounted.
+umount: /sys/fs/cgroup/cgroup.subtree_control: not mounted.
+umount: /sys/fs/cgroup/cgroup.threads: not mounted.
+umount: /sys/fs/cgroup/cgroup.type: not mounted.
+umount: /sys/fs/cgroup/cpu.idle: not mounted.
+umount: /sys/fs/cgroup/cpu.max: not mounted.
+umount: /sys/fs/cgroup/cpu.max.burst: not mounted.
+umount: /sys/fs/cgroup/cpu.pressure: not mounted.
+umount: /sys/fs/cgroup/cpu.stat: not mounted.
+umount: /sys/fs/cgroup/cpu.stat.local: not mounted.
+umount: /sys/fs/cgroup/cpu.uclamp.max: not mounted.
+umount: /sys/fs/cgroup/cpu.uclamp.min: not mounted.
+umount: /sys/fs/cgroup/cpu.weight: not mounted.
+umount: /sys/fs/cgroup/cpu.weight.nice: not mounted.
+umount: /sys/fs/cgroup/cpuset.cpus: not mounted.
+umount: /sys/fs/cgroup/cpuset.cpus.effective: not mounted.
+umount: /sys/fs/cgroup/cpuset.cpus.exclusive: not mounted.
+umount: /sys/fs/cgroup/cpuset.cpus.exclusive.effective: not mounted.
+umount: /sys/fs/cgroup/cpuset.cpus.partition: not mounted.
+umount: /sys/fs/cgroup/cpuset.mems: not mounted.
+umount: /sys/fs/cgroup/cpuset.mems.effective: not mounted.
+umount: /sys/fs/cgroup/dmem.current: not mounted.
+umount: /sys/fs/cgroup/dmem.low: not mounted.
+umount: /sys/fs/cgroup/dmem.max: not mounted.
+umount: /sys/fs/cgroup/dmem.min: not mounted.
+umount: /sys/fs/cgroup/docker: not mounted.
+umount: /sys/fs/cgroup/hugetlb.1GB.current: not mounted.
+umount: /sys/fs/cgroup/hugetlb.1GB.events: not mounted.
+umount: /sys/fs/cgroup/hugetlb.1GB.events.local: not mounted.
+umount: /sys/fs/cgroup/hugetlb.1GB.max: not mounted.
+umount: /sys/fs/cgroup/hugetlb.1GB.numa_stat: not mounted.
+umount: /sys/fs/cgroup/hugetlb.1GB.rsvd.current: not mounted.
+umount: /sys/fs/cgroup/hugetlb.1GB.rsvd.max: not mounted.
+umount: /sys/fs/cgroup/hugetlb.2MB.current: not mounted.
+umount: /sys/fs/cgroup/hugetlb.2MB.events: not mounted.
+umount: /sys/fs/cgroup/hugetlb.2MB.events.local: not mounted.
+umount: /sys/fs/cgroup/hugetlb.2MB.max: not mounted.
+umount: /sys/fs/cgroup/hugetlb.2MB.numa_stat: not mounted.
+umount: /sys/fs/cgroup/hugetlb.2MB.rsvd.current: not mounted.
+umount: /sys/fs/cgroup/hugetlb.2MB.rsvd.max: not mounted.
+umount: /sys/fs/cgroup/io.max: not mounted.
+umount: /sys/fs/cgroup/io.pressure: not mounted.
+umount: /sys/fs/cgroup/io.prio.class: not mounted.
+umount: /sys/fs/cgroup/io.stat: not mounted.
+umount: /sys/fs/cgroup/io.weight: not mounted.
+umount: /sys/fs/cgroup/memory.current: not mounted.
+umount: /sys/fs/cgroup/memory.events: not mounted.
+umount: /sys/fs/cgroup/memory.events.local: not mounted.
+umount: /sys/fs/cgroup/memory.high: not mounted.
+umount: /sys/fs/cgroup/memory.low: not mounted.
+umount: /sys/fs/cgroup/memory.max: not mounted.
+umount: /sys/fs/cgroup/memory.min: not mounted.
+umount: /sys/fs/cgroup/memory.numa_stat: not mounted.
+umount: /sys/fs/cgroup/memory.oom.group: not mounted.
+umount: /sys/fs/cgroup/memory.peak: not mounted.
+umount: /sys/fs/cgroup/memory.pressure: not mounted.
+umount: /sys/fs/cgroup/memory.reclaim: not mounted.
+umount: /sys/fs/cgroup/memory.stat: not mounted.
+umount: /sys/fs/cgroup/memory.swap.current: not mounted.
+umount: /sys/fs/cgroup/memory.swap.events: not mounted.
+umount: /sys/fs/cgroup/memory.swap.high: not mounted.
+umount: /sys/fs/cgroup/memory.swap.max: not mounted.
+umount: /sys/fs/cgroup/memory.swap.peak: not mounted.
+umount: /sys/fs/cgroup/memory.zswap.current: not mounted.
+umount: /sys/fs/cgroup/memory.zswap.max: not mounted.
+umount: /sys/fs/cgroup/memory.zswap.writeback: not mounted.
+umount: /sys/fs/cgroup/misc.current: not mounted.
+umount: /sys/fs/cgroup/misc.events: not mounted.
+umount: /sys/fs/cgroup/misc.events.local: not mounted.
+umount: /sys/fs/cgroup/misc.max: not mounted.
+umount: /sys/fs/cgroup/misc.peak: not mounted.
+umount: /sys/fs/cgroup/pids.current: not mounted.
+umount: /sys/fs/cgroup/pids.events: not mounted.
+umount: /sys/fs/cgroup/pids.events.local: not mounted.
+umount: /sys/fs/cgroup/pids.max: not mounted.
+umount: /sys/fs/cgroup/pids.peak: not mounted.
+umount: /sys/fs/cgroup/rdma.current: not mounted.
+umount: /sys/fs/cgroup/rdma.max: not mounted.
++ true
++ true
++ sudo LANG=C chroot ./fsroot-vs umount /proc
++ true
+[  FAIL LOG END  ] [ target/sonic-vs.bin ]
+make: *** [slave.mk:1713: target/sonic-vs.bin] Error 1
+make[1]: *** [Makefile.work:751: target/sonic-vs.bin] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/sonic-vs.bin] Error 2

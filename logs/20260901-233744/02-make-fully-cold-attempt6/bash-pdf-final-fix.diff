@@ -1,0 +1,9 @@
+diff --git a/src/bash/patches/series b/src/bash/patches/series
+index a27ad05ca..2409b248a 100644
+--- a/src/bash/patches/series
++++ b/src/bash/patches/series
+@@ -1 +1,2 @@
+-0001-Add-plugin-support-to-bash.patch
+\ No newline at end of file
++0001-Add-plugin-support-to-bash.patch
++0002-write-pdf-via-stdout.patch

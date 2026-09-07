@@ -1,0 +1,718 @@
++++ --- Making target/sonic-vs.bin --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/sonic-vs.bin
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260905.195238"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260905.195238"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ building ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ]
+Build start time: Sat Sep 5 11:52:50 UTC 2026
+[ REASON ] :      target/debs/trixie/initramfs-tools_0.142_all.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/initramfs-tools'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Obtaining the initramfs-tools from pinned tarball
+rm -rf ./initramfs-tools
+wget -q -O initramfs-tools.tar.gz "https://salsa.debian.org/kernel-team/initramfs-tools/-/archive/v0.142/initramfs-tools-v0.142.tar.gz"
+echo "27a78cc25acc3ca3d9c78deca165bf001b09b260ce25a3f3756e47a0e7bc0554  initramfs-tools.tar.gz" | sha256sum -c -
+tar xzf initramfs-tools.tar.gz
+mv initramfs-tools-v0.142 initramfs-tools
+rm -f initramfs-tools.tar.gz
+# Patch
+pushd ./initramfs-tools
+QUILT_PATCHES=.. quilt push -a
+# Build the package
+rm -f debian/*.debhelper.log
+dpkg-buildpackage -rfakeroot -b -us -uc -j192 --admindir /sonic/dpkg/tmp.JhIMKcLUOO
+popd
+mv initramfs-tools-core_0.142_all.deb initramfs-tools_0.142_all.deb /sonic/target/debs/trixie/
+mkdir: cannot create directory '/vcache/sonic-slave-trixie/web': Permission denied
+get_url_version https://salsa.debian.org/kernel-team/initramfs-tools/-/archive/v0.142/initramfs-tools-v0.142.tar.gz failed
+make[1]: *** [Makefile:15: /sonic/target/debs/trixie/initramfs-tools_0.142_all.deb] Error 1
+make[1]: Leaving directory '/sonic/src/initramfs-tools'
+[  FAIL LOG END  ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ]
+make: *** [slave.mk:919: target/debs/trixie/initramfs-tools_0.142_all.deb] Error 1
+make: *** Waiting for unfinished jobs....
+[ finished ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+Build start time: Sat Sep 5 11:52:50 UTC 2026
+[ REASON ] :      target/debs/trixie/ifupdown2_3.0.0-1_all.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/ifupdown2'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Remove any stale files
+rm -rf ./ifupdown2-3.0.0-1 ./3.0.0-1.tar.gz
+# Get ifupdown2 release
+wget -O 3.0.0-1.tar.gz https://github.com/CumulusNetworks/ifupdown2/archive/3.0.0-1.tar.gz
+echo "55ded1c60f720c81a5d4b5feeb48d893fd3f29d4ad0fe7d9cec508fe84b5f1b8  3.0.0-1.tar.gz" | sha256sum -c -
+tar -z -f 3.0.0-1.tar.gz -x
+pushd ./ifupdown2-3.0.0-1
+git init
+git add -f *
+git commit -m "unmodified ifupdown2 source"
+# Apply patch series
+stg init
+stg import -s ../patch/series
+# Build source and Debian packages
+dpkg-buildpackage -rfakeroot -b -us -uc -j192 --admindir /sonic/dpkg/tmp.wUGG6YxbQO
+popd
+# Move the newly-built .deb packages to the destination directory
+mv ifupdown2_3.0.0-1_all.deb /sonic/target/debs/trixie/
+mkdir: cannot create directory '/vcache/sonic-slave-trixie/web': Permission denied
+get_url_version https://github.com/CumulusNetworks/ifupdown2/archive/3.0.0-1.tar.gz failed
+make[1]: *** [Makefile:9: /sonic/target/debs/trixie/ifupdown2_3.0.0-1_all.deb] Error 1
+make[1]: Leaving directory '/sonic/src/ifupdown2'
+[  FAIL LOG END  ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ]
+make: *** [slave.mk:919: target/debs/trixie/ifupdown2_3.0.0-1_all.deb] Error 1
+[ finished ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+Build start time: Sat Sep 5 11:52:50 UTC 2026
+[ REASON ] :      target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/makedumpfile'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Remove any stale files
+rm -rf makedumpfile-1.7.7*
+# Get makedumpfile release
+dget https://deb.debian.org/debian/pool/main/m/makedumpfile/makedumpfile_1.7.7-1.dsc
+pushd makedumpfile-1.7.7
+git init
+git add -f *
+git commit -m "unmodified makedumpfile source"
+# Build source and Debian packages
+dpkg-buildpackage -rfakeroot -b -us -uc -j192 --admindir /sonic/dpkg/tmp.a9AKlou5Sx
+popd
+# Move the newly-built .deb package to the destination directory
+mv makedumpfile_1.7.7-1_amd64.deb /sonic/target/debs/trixie/
+dget: retrieving https://deb.debian.org/debian/pool/main/m/makedumpfile/makedumpfile_1.7.7-1.dsc
+mkdir: cannot create directory '/vcache/sonic-slave-trixie/web': Permission denied
+get_url_version https://deb.debian.org/debian/pool/main/m/makedumpfile/makedumpfile_1.7.7-1.dsc failed
+dget: curl makedumpfile_1.7.7-1.dsc https://deb.debian.org/debian/pool/main/m/makedumpfile/makedumpfile_1.7.7-1.dsc failed
+make[1]: *** [Makefile:8: /sonic/target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb] Error 1
+make[1]: Leaving directory '/sonic/src/makedumpfile'
+[  FAIL LOG END  ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ]
+make: *** [slave.mk:919: target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb] Error 1
+[ finished ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+Build start time: Sat Sep 5 11:52:50 UTC 2026
+[ REASON ] :      target/debs/trixie/kdump-tools_1.10.7_amd64.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/kdump-tools'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Remove any stale files
+rm -rf ./kdump-tools-1.10.7*
+# Get kdump-tools release
+dget https://deb.debian.org/debian/pool/main/k/kdump-tools/kdump-tools_1.10.7.dsc
+pushd ./kdump-tools-1.10.7
+git init
+git add -f *
+git commit -m "unmodified kdump-tools source"
+# Apply patches
+stg init
+stg import -s ../patch/series
+# Build source and Debian packages
+dpkg-buildpackage -rfakeroot -b -us -uc -j192 --admindir /sonic/dpkg/tmp.Kw2xlr7atJ
+popd
+# Move the newly-built .deb packages to the destination directory
+mv kdump-tools_1.10.7_amd64.deb /sonic/target/debs/trixie/
+dget: retrieving https://deb.debian.org/debian/pool/main/k/kdump-tools/kdump-tools_1.10.7.dsc
+mkdir: cannot create directory '/vcache/sonic-slave-trixie/web': Permission denied
+get_url_version https://deb.debian.org/debian/pool/main/k/kdump-tools/kdump-tools_1.10.7.dsc failed
+dget: curl kdump-tools_1.10.7.dsc https://deb.debian.org/debian/pool/main/k/kdump-tools/kdump-tools_1.10.7.dsc failed
+make[1]: *** [Makefile:8: /sonic/target/debs/trixie/kdump-tools_1.10.7_amd64.deb] Error 1
+make[1]: Leaving directory '/sonic/src/kdump-tools'
+[  FAIL LOG END  ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ]
+make: *** [slave.mk:919: target/debs/trixie/kdump-tools_1.10.7_amd64.deb] Error 1
+[ finished ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ FAIL LOG START ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+Build start time: Sat Sep 5 11:52:50 UTC 2026
+[ REASON ] :      target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb does not exist  
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+make[1]: Entering directory '/sonic/src/sonic-linux-kernel'
+make[1]: warning: -j192 forced in submake: resetting jobserver mode.
+# Include any non upstream patches
+rm -rf /tmp/non_upstream_patches
+mkdir -p /tmp/non_upstream_patches
+if [ xn == xy ]; then
+if [ ! -z  ]; then
+wget  -O patches.tar
+tar -xf patches.tar -C /tmp/non_upstream_patches
+else
+if [ -d "" ]; then
+cp -r /* /tmp/non_upstream_patches/
+fi
+fi
+fi
+if [ -f "/tmp/non_upstream_patches/external-changes.patch" ]; then
+cat /tmp/non_upstream_patches/external-changes.patch
+git stash -- patch/
+git apply /tmp/non_upstream_patches/external-changes.patch
+fi
+if [ -d "/tmp/non_upstream_patches/patches" ]; then
+echo "Copy the non upstream patches"
+cp /tmp/non_upstream_patches/patches/*.patch patch/
+fi
+# Obtaining the Debian kernel source
+rm -rf linux-6.12.41
+wget -O linux_6.12.41-1.dsc "https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc"
+wget -O linux_6.12.41.orig.tar.xz "https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41.orig.tar.xz"
+wget -O linux_6.12.41-1.debian.tar.xz "https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.debian.tar.xz"
+dpkg-source -x linux_6.12.41-1.dsc
+pushd linux-6.12.41
+cp -vr ../config.local ../patches-sonic debian/
+if [[ -f debian/config.local/amd64/config.sonic-vs ]]; then
+cp debian/config.local/amd64/config.sonic-vs debian/config.local/amd64/config.sonic-platform-specific
+fi
+patch -p1 -i ../patches-debian/disable-secureboot-config-checks.patch
+# Enable secure boot configs if needed
+../manage-config amd64 no_sign 
+# re-generate debian packages and rules with SONiC customizations
+debian/bin/gencontrol.py
+# TODO(trixie): Make a way to verify that our configs are being set
+dpkg-buildpackage -b -us -uc -Pnodoc -j192
+popd
+mv linux-headers-6.12.41+deb13-sonic-amd64_6.12.41-1_amd64.deb linux-image-6.12.41+deb13-sonic-amd64-unsigned_6.12.41-1_amd64.deb linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb /sonic/target/debs/trixie/
++ rm -rf /tmp/non_upstream_patches
++ mkdir -p /tmp/non_upstream_patches
++ '[' xn == xy ']'
++ '[' -f /tmp/non_upstream_patches/external-changes.patch ']'
++ '[' -d /tmp/non_upstream_patches/patches ']'
++ rm -rf linux-6.12.41
++ wget -O linux_6.12.41-1.dsc https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+--2026-09-05 11:53:07--  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:53:08--  (try: 2)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:53:10--  (try: 3)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:53:13--  (try: 4)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:53:17--  (try: 5)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:53:22--  (try: 6)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:53:28--  (try: 7)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:53:35--  (try: 8)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:53:43--  (try: 9)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:53:52--  (try:10)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:54:02--  (try:11)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:54:12--  (try:12)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:54:22--  (try:13)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:54:32--  (try:14)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:54:42--  (try:15)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:54:52--  (try:16)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:55:02--  (try:17)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:55:12--  (try:18)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:55:22--  (try:19)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:55:32--  (try:20)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Giving up.
+
+Try 1: /usr/bin/wget --retry-connrefused failed to get: -O linux_6.12.41-1.dsc https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc. Retry..
+--2026-09-05 11:55:32--  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:55:33--  (try: 2)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:55:35--  (try: 3)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:55:38--  (try: 4)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:55:42--  (try: 5)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:55:47--  (try: 6)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:55:53--  (try: 7)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:56:00--  (try: 8)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:56:08--  (try: 9)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:56:17--  (try:10)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:56:27--  (try:11)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:56:37--  (try:12)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:56:47--  (try:13)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:56:57--  (try:14)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:57:07--  (try:15)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:57:17--  (try:16)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:57:27--  (try:17)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:57:37--  (try:18)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:57:47--  (try:19)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:57:57--  (try:20)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Giving up.
+
+Try 2: /usr/bin/wget --retry-connrefused failed to get: -O linux_6.12.41-1.dsc https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc. Retry..
+--2026-09-05 11:57:57--  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:57:58--  (try: 2)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:58:00--  (try: 3)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:58:03--  (try: 4)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:58:07--  (try: 5)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:58:12--  (try: 6)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:58:18--  (try: 7)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:58:25--  (try: 8)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:58:33--  (try: 9)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:58:42--  (try:10)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:58:52--  (try:11)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:59:02--  (try:12)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:59:12--  (try:13)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:59:22--  (try:14)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:59:32--  (try:15)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:59:42--  (try:16)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 11:59:52--  (try:17)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:02--  (try:18)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:12--  (try:19)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:22--  (try:20)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Giving up.
+
+Try 3: /usr/bin/wget --retry-connrefused failed to get: -O linux_6.12.41-1.dsc https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc. Retry..
+--2026-09-05 12:00:22--  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:23--  (try: 2)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:25--  (try: 3)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:28--  (try: 4)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:32--  (try: 5)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:37--  (try: 6)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:43--  (try: 7)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:50--  (try: 8)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:00:58--  (try: 9)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:01:07--  (try:10)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:01:17--  (try:11)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:01:27--  (try:12)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:01:37--  (try:13)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:01:47--  (try:14)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:01:57--  (try:15)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:02:07--  (try:16)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:02:17--  (try:17)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:02:27--  (try:18)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:02:37--  (try:19)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:02:47--  (try:20)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Giving up.
+
+Try 4: /usr/bin/wget --retry-connrefused failed to get: -O linux_6.12.41-1.dsc https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc. Retry..
+--2026-09-05 12:02:47--  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:02:48--  (try: 2)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:02:50--  (try: 3)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:02:53--  (try: 4)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:02:57--  (try: 5)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:03:02--  (try: 6)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:03:08--  (try: 7)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:03:15--  (try: 8)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:03:23--  (try: 9)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:03:32--  (try:10)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:03:42--  (try:11)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:03:52--  (try:12)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:04:02--  (try:13)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:04:12--  (try:14)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:04:22--  (try:15)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:04:32--  (try:16)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:04:42--  (try:17)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:04:52--  (try:18)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:05:02--  (try:19)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Retrying.
+
+--2026-09-05 12:05:12--  (try:20)  https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc
+Connecting to 127.0.0.1:9... failed: Connection refused.
+Giving up.
+
+Try 5: /usr/bin/wget --retry-connrefused failed to get: -O linux_6.12.41-1.dsc https://packages.trafficmanager.net/public/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc. Retry..
+make[1]: *** [Makefile:50: /sonic/target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb] Error 4
+make[1]: Leaving directory '/sonic/src/sonic-linux-kernel'
+[  FAIL LOG END  ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ]
+make: *** [slave.mk:919: target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb] Error 1
+make[1]: *** [Makefile.work:751: target/sonic-vs.bin] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/sonic-vs.bin] Error 2

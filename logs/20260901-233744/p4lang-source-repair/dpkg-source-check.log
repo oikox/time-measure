@@ -1,0 +1,4 @@
+dpkg-source: warning: extracting unsigned source package (src/p4lang/p4lang-p4c_1.2.4.2-2.dsc)
+dpkg-source: info: extracting p4lang-p4c in /tmp/p4lang-p4c-source-check-1460204
+dpkg-source: info: unpacking p4lang-p4c_1.2.4.2.orig.tar.gz
+dpkg-source: info: unpacking p4lang-p4c_1.2.4.2-2.debian.tar.xz

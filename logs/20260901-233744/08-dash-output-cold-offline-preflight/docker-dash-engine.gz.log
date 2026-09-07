@@ -1,0 +1,1426 @@
+Build start time: Mon Sep 7 03:20:48 UTC 2026
+[ REASON ] :      target/docker-dash-engine.gz does not exist   NON-EXISTENT PREREQUISITES: docker-start 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+cat: 'files/build/versions/dockers/docker-dash-engine/versions-*-noble-amd64': No such file or directory
+ls: cannot access 'files/build/versions/dockers/docker-dash-engine/versions-*-noble-amd64': No such file or directory
+fatal: path 'files/build/versions/default/versions-docker' exists on disk, but not in 'HEAD'
+ls: cannot access 'files/build/versions/dockers/docker-dash-engine/versions-*-noble-amd64': No such file or directory
+fatal: path 'files/build/versions/default/versions-docker' exists on disk, but not in 'HEAD~1'
+ls: cannot access 'files/build/versions/dockers/docker-dash-engine/versions-*-noble-amd64': No such file or directory
+fatal: path 'files/build/versions/default/versions-docker' exists on disk, but not in 'HEAD~2'
+Client: Docker Engine - Community
+ Version:    28.5.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.26.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.39.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 1262
+ Server Version: 28.5.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: b98a3aace656320842a23f4a392a33f46af97866
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 7.0.0-22-generic
+ Operating System: Debian GNU/Linux 13 (trixie)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 192
+ Total Memory: 743GiB
+ Name: 77bf5c391076
+ ID: 9050de27-efa9-406a-855d-9324d28b5135
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http://127.0.0.1:9
+ HTTPS Proxy: http://127.0.0.1:9
+ No Proxy: localhost,127.0.0.1,0.0.0.0
+ Experimental: true
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.52kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for publicmirror.azurecr.io/p4lang/behavioral-model:latest
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [base  1/12] FROM publicmirror.azurecr.io/p4lang/behavioral-model:latest
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 260.21MB 0.9s done
+#5 DONE 0.9s
+
+#6 [base  2/12] COPY [buildinfo, /usr/local/share/buildinfo]
+#6 DONE 0.5s
+
+#7 [base  3/12] COPY vcache/ /sonic/target/vcache/docker-dash-engine
+#7 DONE 0.5s
+
+#8 [base  4/12] RUN dpkg -i /usr/local/share/buildinfo/sonic-build-hooks_1.0_all.deb
+#8 0.125 Selecting previously unselected package sonic-build-hooks.
+#8 0.135 (Reading database ... 38345 files and directories currently installed.)
+#8 0.136 Preparing to unpack .../sonic-build-hooks_1.0_all.deb ...
+#8 0.137 Unpacking sonic-build-hooks (1.0) ...
+#8 0.147 Setting up sonic-build-hooks (1.0) ...
+#8 DONE 0.2s
+
+#9 [base  5/12] RUN pre_run_buildinfo docker-dash-engine
+#9 2.223 ./
+#9 2.223 ./pip-wheelhouse/
+#9 2.223 ./pip-wheelhouse/supervisor-4.3.0-py2.py3-none-any.whl
+#9 2.225 ./pip-wheelhouse/sonic_yang_models-1.0-py3-none-any.whl
+#9 2.228 ./pip-wheelhouse/six-1.17.0-py2.py3-none-any.whl
+#9 2.228 ./pip-wheelhouse/typing_extensions-4.13.2-py3-none-any.whl
+#9 2.229 ./pip-wheelhouse/cffi-2.1.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+#9 2.230 ./pip-wheelhouse/python_dotenv-1.2.3-py3-none-any.whl
+#9 2.230 ./pip-wheelhouse/click-8.4.2-py3-none-any.whl
+#9 2.231 ./pip-wheelhouse/bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl
+#9 2.232 ./pip-wheelhouse/wheel-0.46.1-py3-none-any.whl
+#9 2.232 ./pip-wheelhouse/inotify-0.2.12-py2.py3-none-any.whl
+#9 2.232 ./pip-wheelhouse/smbus2-0.6.1-py2.py3-none-any.whl
+#9 2.233 ./pip-wheelhouse/grpcio_tools-1.71.0.tar.gz
+#9 2.262 ./pip-wheelhouse/scapy-2.6.1-py3-none-any.whl
+#9 2.275 ./pip-wheelhouse/prefixed-0.7.0-py2.py3-none-any.whl
+#9 2.275 ./pip-wheelhouse/azure_storage-0.36.0-py2.py3-none-any.whl
+#9 2.277 ./pip-wheelhouse/thrift-0.13.0.tar.gz
+#9 2.277 ./pip-wheelhouse/prettyprinter-0.18.0-py2.py3-none-any.whl
+#9 2.277 ./pip-wheelhouse/pluggy-1.6.0-py3-none-any.whl
+#9 2.277 ./pip-wheelhouse/markupsafe-3.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.277 ./pip-wheelhouse/pycparser-2.22-py3-none-any.whl
+#9 2.278 ./pip-wheelhouse/www-authenticate-0.9.2.tar.gz
+#9 2.278 ./pip-wheelhouse/pycairo-1.26.1.tar.gz
+#9 2.280 ./pip-wheelhouse/ptyprocess-0.7.0-py2.py3-none-any.whl
+#9 2.280 ./pip-wheelhouse/pyproject_hooks-1.2.0-py3-none-any.whl
+#9 2.280 ./pip-wheelhouse/azure_nspkg-3.0.2-py3-none-any.whl
+#9 2.280 ./pip-wheelhouse/protobuf-4.21.12-cp37-abi3-manylinux2014_x86_64.whl
+#9 2.282 ./pip-wheelhouse/regex-2026.5.9-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.287 ./pip-wheelhouse/docker_image_py-0.1.13-py3-none-any.whl
+#9 2.287 ./pip-wheelhouse/pygments-2.20.0-py3-none-any.whl
+#9 2.295 ./pip-wheelhouse/blkinfo-0.2.0.tar.gz
+#9 2.295 ./pip-wheelhouse/lxml-5.4.0-cp313-cp313-manylinux_2_28_x86_64.whl
+#9 2.320 ./pip-wheelhouse/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+#9 2.321 ./pip-wheelhouse/build-1.5.0-py3-none-any.whl
+#9 2.321 ./pip-wheelhouse/PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl
+#9 2.326 ./pip-wheelhouse/pyroute2-0.5.14.tar.gz
+#9 2.330 ./pip-wheelhouse/jsonpatch-1.33-py2.py3-none-any.whl
+#9 2.330 ./pip-wheelhouse/pyroute2-0.9.6-py3-none-any.whl
+#9 2.333 ./pip-wheelhouse/zipp-3.21.0-py3-none-any.whl
+#9 2.333 ./pip-wheelhouse/bottle-0.13.2-py2.py3-none-any.whl
+#9 2.334 ./pip-wheelhouse/ijson-3.4.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#9 2.335 ./pip-wheelhouse/lazy_object_proxy-1.12.0-cp314-cp314-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
+#9 2.335 ./pip-wheelhouse/redis-6.1.0-py3-none-any.whl
+#9 2.337 ./pip-wheelhouse/pyang-2.7.1-py2.py3-none-any.whl
+#9 2.340 ./pip-wheelhouse/toposort-1.10-py3-none-any.whl
+#9 2.340 ./pip-wheelhouse/jaraco.text-4.0.0-py3-none-any.whl
+#9 2.341 ./pip-wheelhouse/hiredis-3.4.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.342 ./pip-wheelhouse/sonic_platform_common-1.0-py3-none-any.whl
+#9 2.345 ./pip-wheelhouse/jaraco.context-6.0.1-py3-none-any.whl
+#9 2.345 ./pip-wheelhouse/requests-2.34.2-py3-none-any.whl
+#9 2.346 ./pip-wheelhouse/pexpect-4.9.0-py2.py3-none-any.whl
+#9 2.346 ./pip-wheelhouse/typing_extensions-4.16.0-py3-none-any.whl
+#9 2.346 ./pip-wheelhouse/jinjanator_plugins-25.1.0-py3-none-any.whl
+#9 2.346 ./pip-wheelhouse/charset_normalizer-3.4.7-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.347 ./pip-wheelhouse/netaddr-0.8.0-py2.py3-none-any.whl
+#9 2.357 ./pip-wheelhouse/smbus-1.1.post2.tar.gz
+#9 2.357 ./pip-wheelhouse/pycparser-3.0-py3-none-any.whl
+#9 2.358 ./pip-wheelhouse/lxml-6.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+#9 2.383 ./pip-wheelhouse/paramiko-5.0.0-py3-none-any.whl
+#9 2.385 ./pip-wheelhouse/bitarray-2.8.1.tar.gz
+#9 2.385 ./pip-wheelhouse/telnetlib3-4.0.5-py3-none-any.whl
+#9 2.387 ./pip-wheelhouse/click-8.5.0-py3-none-any.whl
+#9 2.388 ./pip-wheelhouse/pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl
+#9 2.397 ./pip-wheelhouse/packaging-25.0-py3-none-any.whl
+#9 2.397 ./pip-wheelhouse/colorful-0.5.8-py2.py3-none-any.whl
+#9 2.398 ./pip-wheelhouse/regex-2024.11.6-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#9 2.403 ./pip-wheelhouse/jsonpointer-3.1.1-py3-none-any.whl
+#9 2.403 ./pip-wheelhouse/freezegun-1.5.5-py3-none-any.whl
+#9 2.403 ./pip-wheelhouse/idna-3.19-py3-none-any.whl
+#9 2.403 ./pip-wheelhouse/ijson-3.5.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.404 ./pip-wheelhouse/systemd-python-235.tar.gz
+#9 2.405 ./pip-wheelhouse/libpci-0.2-py3-none-any.whl
+#9 2.405 ./pip-wheelhouse/sonic_config_engine-1.0-py3-none-any.whl
+#9 2.405 ./pip-wheelhouse/click-8.1.8-py3-none-any.whl
+#9 2.406 ./pip-wheelhouse/cryptography-43.0.0-cp39-abi3-manylinux_2_28_x86_64.whl
+#9 2.427 ./pip-wheelhouse/lxml-6.1.3-cp314-cp314-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl
+#9 2.453 ./pip-wheelhouse/tabulate-0.9.0-py3-none-any.whl
+#9 2.453 ./pip-wheelhouse/sonic_yang_mgmt-1.0-py3-none-any.whl
+#9 2.453 ./pip-wheelhouse/jinja2-3.1.6-py3-none-any.whl
+#9 2.454 ./pip-wheelhouse/pip-25.1.1-py3-none-any.whl
+#9 2.465 ./pip-wheelhouse/autocommand-2.2.2-py3-none-any.whl
+#9 2.465 ./pip-wheelhouse/hiredis-3.4.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.466 ./pip-wheelhouse/inflect-7.3.1-py3-none-any.whl
+#9 2.467 ./pip-wheelhouse/grpcio-1.71.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#9 2.496 ./pip-wheelhouse/paramiko-3.5.1-py3-none-any.whl
+#9 2.497 ./pip-wheelhouse/supervisor-4.1.0-py2.py3-none-any.whl
+#9 2.499 ./pip-wheelhouse/ipaddress-1.0.23-py2.py3-none-any.whl
+#9 2.500 ./pip-wheelhouse/filelock-3.29.4-py3-none-any.whl
+#9 2.500 ./pip-wheelhouse/certifi-2026.6.17-py3-none-any.whl
+#9 2.500 ./pip-wheelhouse/jinjanator-25.3.1-py3-none-any.whl
+#9 2.501 ./pip-wheelhouse/redis-dump-load-1.1.tar.gz
+#9 2.501 ./pip-wheelhouse/natsort-8.4.0-py3-none-any.whl
+#9 2.501 ./pip-wheelhouse/bcrypt-4.2.0-cp39-abi3-manylinux_2_28_x86_64.whl
+#9 2.502 ./pip-wheelhouse/semantic_version-2.10.0-py2.py3-none-any.whl
+#9 2.502 ./pip-wheelhouse/charset_normalizer-3.5.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.504 ./pip-wheelhouse/ijson-3.5.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.505 ./pip-wheelhouse/grpcio-1.66.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#9 2.534 ./pip-wheelhouse/protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl
+#9 2.535 ./pip-wheelhouse/idna-3.18-py3-none-any.whl
+#9 2.536 ./pip-wheelhouse/certifi-2026.7.22-py3-none-any.whl
+#9 2.536 ./pip-wheelhouse/ipaddr-2.2.0.tar.gz
+#9 2.537 ./pip-wheelhouse/pyangbind-0.8.7-py3-none-any.whl
+#9 2.537 ./pip-wheelhouse/jsondiff-2.2.1-py3-none-any.whl
+#9 2.537 ./pip-wheelhouse/toposort-1.6-py2.py3-none-any.whl
+#9 2.537 ./pip-wheelhouse/grpcio_tools-1.71.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#9 2.550 ./pip-wheelhouse/scp-0.14.5-py2.py3-none-any.whl
+#9 2.550 ./pip-wheelhouse/guacamole-0.9.2-py2.py3-none-any.whl
+#9 2.550 ./pip-wheelhouse/cryptography-50.0.1-cp311-abi3-manylinux_2_34_x86_64.whl
+#9 2.575 ./pip-wheelhouse/python_dotenv-1.2.2-py3-none-any.whl
+#9 2.576 ./pip-wheelhouse/typeguard-4.4.2-py3-none-any.whl
+#9 2.576 ./pip-wheelhouse/enlighten-1.11.2-py2.py3-none-any.whl
+#9 2.576 ./pip-wheelhouse/regex-2026.9.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.581 ./pip-wheelhouse/click_log-0.4.0-py2.py3-none-any.whl
+#9 2.581 ./pip-wheelhouse/m2crypto-0.42.0.tar.gz
+#9 2.582 ./pip-wheelhouse/MarkupSafe-2.1.5.tar.gz
+#9 2.582 ./pip-wheelhouse/azure_common-1.1.28-py2.py3-none-any.whl
+#9 2.582 ./pip-wheelhouse/redis-8.1.0-py3-none-any.whl
+#9 2.585 ./pip-wheelhouse/grpcio-1.71.0.tar.gz
+#9 2.651 ./pip-wheelhouse/enum34-1.1.10-py3-none-any.whl
+#9 2.652 ./pip-wheelhouse/wcwidth-0.8.1-py3-none-any.whl
+#9 2.653 ./pip-wheelhouse/redis_dump_load-1.1-py3-none-any.whl
+#9 2.654 ./pip-wheelhouse/redis-3.5.3-py2.py3-none-any.whl
+#9 2.654 ./pip-wheelhouse/urllib3-2.7.0-py3-none-any.whl
+#9 2.655 ./pip-wheelhouse/charset_normalizer-3.5.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.656 ./pip-wheelhouse/more_itertools-10.7.0-py3-none-any.whl
+#9 2.657 ./pip-wheelhouse/jaraco.functools-4.1.0-py3-none-any.whl
+#9 2.657 ./pip-wheelhouse/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl
+#9 2.658 ./pip-wheelhouse/pyyaml-6.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.662 ./pip-wheelhouse/grpcio_tools-1.66.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#9 2.675 ./pip-wheelhouse/cffi-1.17.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#9 2.677 ./pip-wheelhouse/pygments-2.21.0-py3-none-any.whl
+#9 2.685 ./pip-wheelhouse/setuptools-78.1.1-py3-none-any.whl
+#9 2.692 ./pip-wheelhouse/invoke-3.0.3-py3-none-any.whl
+#9 2.693 ./pip-wheelhouse/pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#9 2.698 ./pip-wheelhouse/PyYAML-6.0.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#9 2.703 ./pip-wheelhouse/docker-7.1.0-py3-none-any.whl
+#9 2.703 ./pip-wheelhouse/supervisord_dependent_startup-1.4.0-py2.py3-none-any.whl
+#9 2.704 ./pip-wheelhouse/python_arptable-0.0.2.tar.gz
+#9 2.704 ./pip-wheelhouse/lazy_object_proxy-1.12.0-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
+#9 2.704 ./pip-wheelhouse/blessed-1.21.0-py2.py3-none-any.whl
+#9 2.705 ./pip-wheelhouse/sonic_py_common-1.0-py3-none-any.whl
+#9 2.705 ./pip-wheelhouse/attrs-26.1.0-py3-none-any.whl
+#9 2.705 ./pip-wheelhouse/sonic_ctrmgrd-1.0.0-py3-none-any.whl
+#9 2.706 ./pip-wheelhouse/sonic_utilities-1.2-py3-none-any.whl
+#9 2.725 ./pip-wheelhouse/netifaces-0.11.0.tar.gz
+#9 2.725 ./pip-wheelhouse/jsonschema-2.6.0-py2.py3-none-any.whl
+#9 2.725 ./pip-wheelhouse/xmltodict-0.12.0-py2.py3-none-any.whl
+#9 2.725 ./apt-lists/
+#9 2.725 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_InRelease
+#9 2.726 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_main_binary-amd64_Packages.lz4
+#9 2.751 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages.lz4
+#9 3.047 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_restricted_binary-amd64_Packages.lz4
+#9 3.078 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_multiverse_binary-amd64_Packages.lz4
+#9 3.079 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages.lz4
+#9 3.106 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_InRelease
+#9 3.108 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_multiverse_binary-amd64_Packages.lz4
+#9 3.109 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_main_binary-amd64_Packages.lz4
+#9 3.110 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_multiverse_binary-amd64_Packages.lz4
+#9 3.110 ./apt-lists/auxfiles/
+#9 3.110 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_InRelease
+#9 3.111 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_main_binary-amd64_Packages.lz4
+#9 3.130 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_restricted_binary-amd64_Packages.lz4
+#9 3.132 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_universe_binary-amd64_Packages.lz4
+#9 3.166 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages.lz4
+#9 3.190 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_restricted_binary-amd64_Packages.lz4
+#9 3.219 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_multiverse_binary-amd64_Packages.lz4
+#9 3.224 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_universe_binary-amd64_Packages.lz4
+#9 3.225 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_InRelease
+#9 3.226 ./pip/
+#9 3.226 ./pip/http-v2/
+#9 3.226 ./pip/http-v2/b/
+#9 3.226 ./pip/http-v2/b/3/
+#9 3.226 ./pip/http-v2/b/3/2/
+#9 3.226 ./pip/http-v2/b/3/2/f/
+#9 3.226 ./pip/http-v2/b/3/2/f/0/
+#9 3.226 ./pip/http-v2/b/3/2/f/0/b32f017f9c60d09d91ac0bac44002dec28ef8c04355223f13bf00b7a.body
+#9 3.226 ./pip/http-v2/b/3/2/f/0/b32f017f9c60d09d91ac0bac44002dec28ef8c04355223f13bf00b7a
+#9 3.226 ./pip/http-v2/2/
+#9 3.226 ./pip/http-v2/2/8/
+#9 3.226 ./pip/http-v2/2/8/7/
+#9 3.226 ./pip/http-v2/2/8/7/9/
+#9 3.226 ./pip/http-v2/2/8/7/9/6/
+#9 3.226 ./pip/http-v2/2/8/7/9/6/28796067d09eb6879940dba05607b65ff5a21bf3f669ab495c6999a9
+#9 3.226 ./pip/http-v2/2/8/7/9/6/28796067d09eb6879940dba05607b65ff5a21bf3f669ab495c6999a9.body
+#9 3.226 ./pip/http-v2/1/
+#9 3.226 ./pip/http-v2/1/b/
+#9 3.226 ./pip/http-v2/1/b/5/
+#9 3.226 ./pip/http-v2/1/b/5/e/
+#9 3.226 ./pip/http-v2/1/b/5/e/5/
+#9 3.226 ./pip/http-v2/1/b/5/e/5/1b5e5a7ec2469bd2603f897e456dddd563ee5d0ef7634c0f5d7c08b9
+#9 3.226 ./pip/http-v2/1/b/5/e/5/1b5e5a7ec2469bd2603f897e456dddd563ee5d0ef7634c0f5d7c08b9.body
+#9 3.226 ./pip/http-v2/f/
+#9 3.226 ./pip/http-v2/f/a/
+#9 3.226 ./pip/http-v2/f/a/f/
+#9 3.226 ./pip/http-v2/f/a/f/f/
+#9 3.226 ./pip/http-v2/f/a/f/f/d/
+#9 3.226 ./pip/http-v2/f/a/f/f/d/faffdb5825619a041feeb4cdd9df76cefb30cce63d480ff0ed1a5dae
+#9 3.226 ./pip/http-v2/f/a/f/f/d/faffdb5825619a041feeb4cdd9df76cefb30cce63d480ff0ed1a5dae.body
+#9 3.226 ./pip/http-v2/7/
+#9 3.227 ./pip/http-v2/7/6/
+#9 3.227 ./pip/http-v2/7/6/3/
+#9 3.227 ./pip/http-v2/7/6/3/5/
+#9 3.227 ./pip/http-v2/7/6/3/5/d/
+#9 3.227 ./pip/http-v2/7/6/3/5/d/7635de8254c82e7e771831915759d7d8b2dc2759e9c5896e246e8b46.body
+#9 3.227 ./pip/http-v2/7/6/3/5/d/7635de8254c82e7e771831915759d7d8b2dc2759e9c5896e246e8b46
+#9 3.227 ./pip/http-v2/0/
+#9 3.227 ./pip/http-v2/0/6/
+#9 3.227 ./pip/http-v2/0/6/4/
+#9 3.227 ./pip/http-v2/0/6/4/1/
+#9 3.227 ./pip/http-v2/0/6/4/1/2/
+#9 3.227 ./pip/http-v2/0/6/4/1/2/06412fcf44b9a9522ff6367cabc965d23cb1165807c45516a879c5c4.body
+#9 3.227 ./pip/http-v2/0/6/4/1/2/06412fcf44b9a9522ff6367cabc965d23cb1165807c45516a879c5c4
+#9 3.227 ./pip/http-v2/a/
+#9 3.227 ./pip/http-v2/a/5/
+#9 3.227 ./pip/http-v2/a/5/7/
+#9 3.227 ./pip/http-v2/a/5/7/6/
+#9 3.227 ./pip/http-v2/a/5/7/6/a/
+#9 3.227 ./pip/http-v2/a/5/7/6/a/a576adadf536bc11b2719ae2f275733a69215dc284bb6886cbb4384c.body
+#9 3.228 ./pip/http-v2/a/5/7/6/a/a576adadf536bc11b2719ae2f275733a69215dc284bb6886cbb4384c
+#9 3.228 ./pip/http-v2/a/a/
+#9 3.229 ./pip/http-v2/a/a/c/
+#9 3.229 ./pip/http-v2/a/a/c/a/
+#9 3.229 ./pip/http-v2/a/a/c/a/c/
+#9 3.229 ./pip/http-v2/a/a/c/a/c/aacac81bf1d35d08fd880f2e19cbd5a198730437b2c32b1ce1da7aa3.body
+#9 3.229 ./pip/http-v2/a/a/c/a/c/aacac81bf1d35d08fd880f2e19cbd5a198730437b2c32b1ce1da7aa3
+#9 3.229 ./pip/http-v2/6/
+#9 3.229 ./pip/http-v2/6/b/
+#9 3.229 ./pip/http-v2/6/b/c/
+#9 3.229 ./pip/http-v2/6/b/c/4/
+#9 3.229 ./pip/http-v2/6/b/c/4/4/
+#9 3.229 ./pip/http-v2/6/b/c/4/4/6bc44665bb603ed852c296157543510833d416bcf304a53eed83717c
+#9 3.229 ./pip/http-v2/6/b/c/4/4/6bc44665bb603ed852c296157543510833d416bcf304a53eed83717c.body
+#9 3.229 ./deb/
+#9 3.229 ./deb/libpopt0_1.19+dfsg-1build1_amd64.deb
+#9 3.229 ./deb/lock
+#9 3.229 ./deb/rsync_3.2.7-1ubuntu1.5_amd64.deb
+#9 3.231 ./deb/partial/
+#9 3.231 ./deb/rsyslog_8.2312.0-3ubuntu9.3_amd64.deb
+#9 3.233 ./deb/cron-daemon-common_3.0pl1-184ubuntu2_all.deb
+#9 3.234 ./deb/libjson-c5_0.17-1build1_amd64.deb
+#9 3.234 ./deb/libjs-sphinxdoc_7.2.6-6_all.deb
+#9 3.234 ./deb/dbus-session-bus-common_1.14.10-4ubuntu4.1_all.deb
+#9 3.235 ./deb/libsystemd0_255.4-1ubuntu8.17_amd64.deb
+#9 3.237 ./deb/util-linux_2.39.3-9ubuntu6.6_amd64.deb
+#9 3.242 ./deb/libsystemd-shared_255.4-1ubuntu8.17_amd64.deb
+#9 3.252 ./deb/libpython3.12-dev_3.12.3-1ubuntu0.16_amd64.deb
+#9 3.280 ./deb/zlib1g_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb
+#9 3.281 ./deb/shared-mime-info_2.4-4_amd64.deb
+#9 3.283 ./deb/systemd-resolved_255.4-1ubuntu8.17_amd64.deb
+#9 3.284 ./deb/libargon2-1_0~20190702+dfsg-4build1_amd64.deb
+#9 3.284 ./deb/javascript-common_11+nmu1_all.deb
+#9 3.285 ./deb/cron_3.0pl1-184ubuntu2_amd64.deb
+#9 3.285 ./deb/xdg-user-dirs_0.18-1build1_amd64.deb
+#9 3.285 ./deb/systemd-dev_255.4-1ubuntu8.17_all.deb
+#9 3.286 ./deb/gir1.2-girepository-2.0_1.80.1-1_amd64.deb
+#9 3.286 ./deb/python3.12-minimal_3.12.3-1ubuntu0.16_amd64.deb
+#9 3.297 ./deb/libfastjson4_1.2304.0-1build1_amd64.deb
+#9 3.297 ./deb/systemd-timesyncd_255.4-1ubuntu8.17_amd64.deb
+#9 3.297 ./deb/libpython3-dev_3.12.3-0ubuntu2.1_amd64.deb
+#9 3.297 ./deb/python3-pkg-resources_68.1.2-2ubuntu1.2_all.deb
+#9 3.298 ./deb/libkmod2_31+20240202-2ubuntu7.2_amd64.deb
+#9 3.299 ./deb/libpython3.12-stdlib_3.12.3-1ubuntu0.16_amd64.deb
+#9 3.309 ./deb/openssl_3.0.13-0ubuntu3.15_amd64.deb
+#9 3.314 ./deb/networkd-dispatcher_2.2.4-1_all.deb
+#9 3.314 ./deb/ucf_3.0043+nmu1_all.deb
+#9 3.314 ./deb/net-tools_2.10-0.1ubuntu4.4_amd64.deb
+#9 3.315 ./deb/python3-gi_3.48.2-1_amd64.deb
+#9 3.317 ./deb/libestr0_0.1.11-1build1_amd64.deb
+#9 3.317 ./deb/libpython3.12-minimal_3.12.3-1ubuntu0.16_amd64.deb
+#9 3.321 ./deb/logrotate_3.21.0-2build1_amd64.deb
+#9 3.321 ./deb/libdevmapper1.02.1_2%3a1.02.185-3ubuntu3.2_amd64.deb
+#9 3.321 ./deb/libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb
+#9 3.323 ./deb/systemd_255.4-1ubuntu8.17_amd64.deb
+#9 3.340 ./deb/python3-wheel_0.42.0-2_all.deb
+#9 3.340 ./deb/dbus-daemon_1.14.10-4ubuntu4.1_amd64.deb
+#9 3.341 ./deb/python3-pip_24.0+dfsg-1ubuntu1.3_all.deb
+#9 3.347 ./deb/libcryptsetup12_2%3a2.7.0-1ubuntu4.2_amd64.deb
+#9 3.348 ./deb/dbus-system-bus-common_1.14.10-4ubuntu4.1_all.deb
+#9 3.349 ./deb/libmount1_2.39.3-9ubuntu6.6_amd64.deb
+#9 3.349 ./deb/libblkid1_2.39.3-9ubuntu6.6_amd64.deb
+#9 3.350 ./deb/python3-setuptools_68.1.2-2ubuntu1.2_all.deb
+#9 3.352 ./deb/libapparmor1_4.0.1really4.0.1-0ubuntu0.24.04.7_amd64.deb
+#9 3.352 ./deb/libssl3t64_3.0.13-0ubuntu3.15_amd64.deb
+#9 3.361 ./deb/dmsetup_2%3a1.02.185-3ubuntu3.2_amd64.deb
+#9 3.362 ./deb/ca-certificates_20260601~24.04.1_all.deb
+#9 3.363 ./deb/zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb
+#9 3.367 ./deb/libsmartcols1_2.39.3-9ubuntu6.6_amd64.deb
+#9 3.367 ./deb/libpython3.12t64_3.12.3-1ubuntu0.16_amd64.deb
+#9 3.378 ./deb/gir1.2-glib-2.0_2.80.0-6ubuntu3.8_amd64.deb
+#9 3.379 ./deb/libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb
+#9 3.380 ./deb/supervisor_4.2.5-1ubuntu0.1_all.deb
+#9 3.381 ./deb/bsdutils_1%3a2.39.3-9ubuntu6.6_amd64.deb
+#9 3.382 ./deb/python3-dbus_1.3.2-5build3_amd64.deb
+#9 3.382 ./deb/libglib2.0-data_2.80.0-6ubuntu3.8_all.deb
+#9 3.383 ./deb/python3.12-dev_3.12.3-1ubuntu0.16_amd64.deb
+#9 3.385 ./deb/mount_2.39.3-9ubuntu6.6_amd64.deb
+#9 3.386 ./deb/libglib2.0-0t64_2.80.0-6ubuntu3.8_amd64.deb
+#9 3.393 ./deb/libexpat1-dev_2.6.1-2ubuntu0.4_amd64.deb
+#9 3.394 ./deb/libudev1_255.4-1ubuntu8.17_amd64.deb
+#9 3.395 ./deb/libgirepository-1.0-1_1.80.1-1_amd64.deb
+#9 3.395 ./deb/libssl-dev_3.0.13-0ubuntu3.15_amd64.deb
+#9 3.407 ./deb/dbus_1.14.10-4ubuntu4.1_amd64.deb
+#9 3.407 ./deb/dbus-bin_1.14.10-4ubuntu4.1_amd64.deb
+#9 3.407 ./deb/libuuid1_2.39.3-9ubuntu6.6_amd64.deb
+#9 3.407 ./deb/python3.12_3.12.3-1ubuntu0.16_amd64.deb
+#9 3.411 ./deb/python3-dev_3.12.3-0ubuntu2.1_amd64.deb
+#9 3.411 ./deb/libfdisk1_2.39.3-9ubuntu6.6_amd64.deb
+#9 3.496 restored_deb_count=72
+#9 DONE 3.9s
+
+#10 [base  6/12] RUN sed -i 's|http://.*.ubuntu.com|http://azure.archive.ubuntu.com|g' /etc/apt/sources.list
+#10 DONE 0.1s
+
+#11 [base  7/12] RUN apt-get update
+#11 0.171 Ign:1 http://archive.ubuntu.com/ubuntu noble InRelease
+#11 0.171 Ign:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+#11 0.171 Ign:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+#11 0.171 Ign:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+#11 1.172 Ign:1 http://archive.ubuntu.com/ubuntu noble InRelease
+#11 1.172 Ign:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+#11 1.172 Ign:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+#11 1.172 Ign:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+#11 3.172 Ign:1 http://archive.ubuntu.com/ubuntu noble InRelease
+#11 3.172 Ign:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+#11 3.172 Ign:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+#11 3.172 Ign:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+#11 7.173 Err:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+#11 7.173   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#11 7.173 Err:1 http://archive.ubuntu.com/ubuntu noble InRelease
+#11 7.173   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#11 7.173 Err:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+#11 7.173   Unable to connect to 127.0.0.1:9:
+#11 7.173 Err:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+#11 7.173   Unable to connect to 127.0.0.1:9:
+#11 7.176 Reading package lists...
+#11 7.807 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble/InRelease  Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#11 7.807 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease  Unable to connect to 127.0.0.1:9:
+#11 7.807 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-backports/InRelease  Unable to connect to 127.0.0.1:9:
+#11 7.807 W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/noble-security/InRelease  Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#11 7.807 W: Some index files failed to download. They have been ignored, or old ones used instead.
+#11 DONE 8.0s
+
+#12 [base  8/12] RUN apt-get install -f -y net-tools supervisor rsyslog  python3-pip
+#12 0.126 Reading package lists...
+#12 0.140 Building dependency tree...
+#12 0.263 Reading state information...
+#12 0.442 The following additional packages will be installed:
+#12 0.442   bsdutils ca-certificates cron cron-daemon-common dbus dbus-bin dbus-daemon
+#12 0.442   dbus-session-bus-common dbus-system-bus-common dmsetup
+#12 0.442   gir1.2-girepository-2.0 gir1.2-glib-2.0 javascript-common libapparmor1
+#12 0.442   libargon2-1 libblkid1 libcryptsetup12 libdevmapper1.02.1 libestr0
+#12 0.442   libexpat1-dev libfastjson4 libfdisk1 libgirepository-1.0-1 libglib2.0-0t64
+#12 0.442   libglib2.0-data libjs-jquery libjs-sphinxdoc libjs-underscore libjson-c5
+#12 0.442   libkmod2 libmount1 libpopt0 libpython3-dev libpython3.12-dev
+#12 0.442   libpython3.12-minimal libpython3.12-stdlib libpython3.12t64 libsmartcols1
+#12 0.442   libssl-dev libssl3t64 libsystemd-shared libsystemd0 libudev1 libuuid1
+#12 0.442   logrotate mount networkd-dispatcher openssl python3-dbus python3-dev
+#12 0.442   python3-gi python3-pkg-resources python3-setuptools python3-wheel python3.12
+#12 0.442   python3.12-dev python3.12-minimal shared-mime-info systemd systemd-dev
+#12 0.442   systemd-resolved systemd-timesyncd ucf util-linux xdg-user-dirs zlib1g
+#12 0.442   zlib1g-dev
+#12 0.443 Suggested packages:
+#12 0.443   anacron checksecurity supercat default-mta | mail-transport-agent
+#12 0.443   default-dbus-session-bus | dbus-session-bus apache2 | lighttpd | httpd
+#12 0.443   low-memory-monitor cryptsetup-bin libssl-doc bsd-mailx | mailx nfs-common iw
+#12 0.443   | wireless-tools python-dbus-doc python-setuptools-doc python3.12-venv
+#12 0.443   python3.12-doc binfmt-support rsyslog-mysql | rsyslog-pgsql rsyslog-mongodb
+#12 0.443   rsyslog-doc rsyslog-openssl | rsyslog-gnutls rsyslog-gssapi rsyslog-relp
+#12 0.443   apparmor supervisor-doc systemd-container systemd-homed systemd-userdbd
+#12 0.443   systemd-boot libfido2-1 libip4tc2 libqrencode4 libtss2-esys-3.0.2-0
+#12 0.443   libtss2-mu-4.0.1-0 libtss2-rc0 libtss2-tcti-device0 polkitd dosfstools kbd
+#12 0.443   util-linux-extra util-linux-locales
+#12 0.443 Recommended packages:
+#12 0.443   bsdextrautils uuid-runtime
+#12 0.544 The following NEW packages will be installed:
+#12 0.544   ca-certificates cron cron-daemon-common dbus dbus-bin dbus-daemon
+#12 0.544   dbus-session-bus-common dbus-system-bus-common dmsetup
+#12 0.544   gir1.2-girepository-2.0 gir1.2-glib-2.0 javascript-common libapparmor1
+#12 0.544   libargon2-1 libcryptsetup12 libdevmapper1.02.1 libestr0 libexpat1-dev
+#12 0.544   libfastjson4 libfdisk1 libgirepository-1.0-1 libglib2.0-0t64 libglib2.0-data
+#12 0.544   libjs-jquery libjs-sphinxdoc libjs-underscore libjson-c5 libkmod2 libpopt0
+#12 0.544   libpython3-dev libpython3.12-dev libpython3.12t64 libsystemd-shared
+#12 0.544   logrotate net-tools networkd-dispatcher openssl python3-dbus python3-dev
+#12 0.544   python3-gi python3-pip python3-pkg-resources python3-setuptools
+#12 0.545   python3-wheel python3.12-dev rsyslog shared-mime-info supervisor systemd
+#12 0.545   systemd-dev systemd-resolved systemd-timesyncd ucf xdg-user-dirs zlib1g-dev
+#12 0.545 The following packages will be upgraded:
+#12 0.545   bsdutils libblkid1 libmount1 libpython3.12-minimal libpython3.12-stdlib
+#12 0.546   libsmartcols1 libssl-dev libssl3t64 libsystemd0 libudev1 libuuid1 mount
+#12 0.546   python3.12 python3.12-minimal util-linux zlib1g
+#12 0.654 debconf: delaying package configuration, since apt-utils is not installed
+#12 0.768 16 upgraded, 55 newly installed, 0 to remove and 17 not upgraded.
+#12 0.768 Need to get 0 B/37.0 MB of archives.
+#12 0.768 After this operation, 93.9 MB of additional disk space will be used.
+#12 0.780 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38371 files and directories currently installed.)
+#12 0.791 Preparing to unpack .../bsdutils_1%3a2.39.3-9ubuntu6.6_amd64.deb ...
+#12 0.795 Unpacking bsdutils (1:2.39.3-9ubuntu6.6) over (1:2.39.3-9ubuntu6.5) ...
+#12 0.833 Setting up bsdutils (1:2.39.3-9ubuntu6.6) ...
+#12 0.852 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38371 files and directories currently installed.)
+#12 0.862 Preparing to unpack .../util-linux_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 0.867 Unpacking util-linux (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 1.026 Setting up util-linux (2.39.3-9ubuntu6.6) ...
+#12 1.130 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38371 files and directories currently installed.)
+#12 1.140 Preparing to unpack .../mount_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 1.143 Unpacking mount (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 1.172 Preparing to unpack .../libssl-dev_3.0.13-0ubuntu3.15_amd64.deb ...
+#12 1.176 Unpacking libssl-dev:amd64 (3.0.13-0ubuntu3.15) over (3.0.13-0ubuntu3.12) ...
+#12 1.386 Preparing to unpack .../libssl3t64_3.0.13-0ubuntu3.15_amd64.deb ...
+#12 1.390 Unpacking libssl3t64:amd64 (3.0.13-0ubuntu3.15) over (3.0.13-0ubuntu3.12) ...
+#12 1.444 Setting up libssl3t64:amd64 (3.0.13-0ubuntu3.15) ...
+#12 1.462 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38371 files and directories currently installed.)
+#12 1.471 Preparing to unpack .../python3.12_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 1.504 Unpacking python3.12 (3.12.3-1ubuntu0.16) over (3.12.3-1ubuntu0.15) ...
+#12 1.529 Preparing to unpack .../libpython3.12-stdlib_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 1.557 Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.16) over (3.12.3-1ubuntu0.15) ...
+#12 1.917 Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 1.923 Unpacking python3.12-minimal (3.12.3-1ubuntu0.16) over (3.12.3-1ubuntu0.15) ...
+#12 1.995 Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 2.036 Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.16) over (3.12.3-1ubuntu0.15) ...
+#12 2.307 Preparing to unpack .../zlib1g_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb ...
+#12 2.311 Unpacking zlib1g:amd64 (1:1.3.dfsg-3.1ubuntu2.2) over (1:1.3.dfsg-3.1ubuntu2.1) ...
+#12 2.333 Setting up zlib1g:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+#12 2.351 Selecting previously unselected package libapparmor1:amd64.
+#12 2.351 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38371 files and directories currently installed.)
+#12 2.361 Preparing to unpack .../libapparmor1_4.0.1really4.0.1-0ubuntu0.24.04.7_amd64.deb ...
+#12 2.362 Unpacking libapparmor1:amd64 (4.0.1really4.0.1-0ubuntu0.24.04.7) ...
+#12 2.380 Selecting previously unselected package libargon2-1:amd64.
+#12 2.381 Preparing to unpack .../libargon2-1_0~20190702+dfsg-4build1_amd64.deb ...
+#12 2.384 Unpacking libargon2-1:amd64 (0~20190702+dfsg-4build1) ...
+#12 2.404 Preparing to unpack .../libblkid1_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 2.407 Unpacking libblkid1:amd64 (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 2.430 Setting up libblkid1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 2.449 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38380 files and directories currently installed.)
+#12 2.459 Preparing to unpack .../libudev1_255.4-1ubuntu8.17_amd64.deb ...
+#12 2.463 Unpacking libudev1:amd64 (255.4-1ubuntu8.17) over (255.4-1ubuntu8.16) ...
+#12 2.485 Setting up libudev1:amd64 (255.4-1ubuntu8.17) ...
+#12 2.503 Selecting previously unselected package libdevmapper1.02.1:amd64.
+#12 2.503 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38380 files and directories currently installed.)
+#12 2.512 Preparing to unpack .../libdevmapper1.02.1_2%3a1.02.185-3ubuntu3.2_amd64.deb ...
+#12 2.514 Unpacking libdevmapper1.02.1:amd64 (2:1.02.185-3ubuntu3.2) ...
+#12 2.532 Selecting previously unselected package libjson-c5:amd64.
+#12 2.534 Preparing to unpack .../libjson-c5_0.17-1build1_amd64.deb ...
+#12 2.535 Unpacking libjson-c5:amd64 (0.17-1build1) ...
+#12 2.552 Preparing to unpack .../libuuid1_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 2.556 Unpacking libuuid1:amd64 (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 2.576 Setting up libuuid1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 2.595 Selecting previously unselected package libcryptsetup12:amd64.
+#12 2.595 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38391 files and directories currently installed.)
+#12 2.605 Preparing to unpack .../libcryptsetup12_2%3a2.7.0-1ubuntu4.2_amd64.deb ...
+#12 2.606 Unpacking libcryptsetup12:amd64 (2:2.7.0-1ubuntu4.2) ...
+#12 2.624 Selecting previously unselected package libfdisk1:amd64.
+#12 2.626 Preparing to unpack .../libfdisk1_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 2.628 Unpacking libfdisk1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 2.645 Selecting previously unselected package libkmod2:amd64.
+#12 2.646 Preparing to unpack .../libkmod2_31+20240202-2ubuntu7.2_amd64.deb ...
+#12 2.648 Unpacking libkmod2:amd64 (31+20240202-2ubuntu7.2) ...
+#12 2.665 Preparing to unpack .../libmount1_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 2.669 Unpacking libmount1:amd64 (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 2.692 Setting up libmount1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 2.709 Selecting previously unselected package libsystemd-shared:amd64.
+#12 2.709 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38410 files and directories currently installed.)
+#12 2.719 Preparing to unpack .../libsystemd-shared_255.4-1ubuntu8.17_amd64.deb ...
+#12 2.720 Unpacking libsystemd-shared:amd64 (255.4-1ubuntu8.17) ...
+#12 2.763 Preparing to unpack .../libsystemd0_255.4-1ubuntu8.17_amd64.deb ...
+#12 2.767 Unpacking libsystemd0:amd64 (255.4-1ubuntu8.17) over (255.4-1ubuntu8.16) ...
+#12 2.792 Setting up libsystemd0:amd64 (255.4-1ubuntu8.17) ...
+#12 2.810 Selecting previously unselected package systemd-dev.
+#12 2.810 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38418 files and directories currently installed.)
+#12 2.820 Preparing to unpack .../systemd-dev_255.4-1ubuntu8.17_all.deb ...
+#12 2.821 Unpacking systemd-dev (255.4-1ubuntu8.17) ...
+#12 2.843 Selecting previously unselected package systemd.
+#12 2.845 Preparing to unpack .../systemd_255.4-1ubuntu8.17_amd64.deb ...
+#12 2.854 Unpacking systemd (255.4-1ubuntu8.17) ...
+#12 2.928 Selecting previously unselected package cron-daemon-common.
+#12 2.930 Preparing to unpack .../cron-daemon-common_3.0pl1-184ubuntu2_all.deb ...
+#12 2.932 Unpacking cron-daemon-common (3.0pl1-184ubuntu2) ...
+#12 2.951 Setting up libapparmor1:amd64 (4.0.1really4.0.1-0ubuntu0.24.04.7) ...
+#12 2.954 Setting up libargon2-1:amd64 (0~20190702+dfsg-4build1) ...
+#12 2.958 Setting up libdevmapper1.02.1:amd64 (2:1.02.185-3ubuntu3.2) ...
+#12 2.961 Setting up libjson-c5:amd64 (0.17-1build1) ...
+#12 2.964 Setting up libcryptsetup12:amd64 (2:2.7.0-1ubuntu4.2) ...
+#12 2.967 Setting up libfdisk1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 2.970 Setting up libkmod2:amd64 (31+20240202-2ubuntu7.2) ...
+#12 2.974 Setting up libsystemd-shared:amd64 (255.4-1ubuntu8.17) ...
+#12 2.977 Setting up systemd-dev (255.4-1ubuntu8.17) ...
+#12 2.980 Setting up mount (2.39.3-9ubuntu6.6) ...
+#12 2.983 Setting up systemd (255.4-1ubuntu8.17) ...
+#12 2.998 Created symlink /etc/systemd/system/getty.target.wants/getty@tty1.service → /usr/lib/systemd/system/getty@.service.
+#12 3.000 Created symlink /etc/systemd/system/multi-user.target.wants/remote-fs.target → /usr/lib/systemd/system/remote-fs.target.
+#12 3.002 Created symlink /etc/systemd/system/sysinit.target.wants/systemd-pstore.service → /usr/lib/systemd/system/systemd-pstore.service.
+#12 3.004 Initializing machine ID from random generator.
+#12 3.017 /usr/lib/tmpfiles.d/cron-daemon-common.conf:1: Failed to resolve group 'crontab': No such process
+#12 3.018 /usr/lib/tmpfiles.d/systemd-network.conf:10: Failed to resolve user 'systemd-network': No such process
+#12 3.018 /usr/lib/tmpfiles.d/systemd-network.conf:11: Failed to resolve user 'systemd-network': No such process
+#12 3.018 /usr/lib/tmpfiles.d/systemd-network.conf:12: Failed to resolve user 'systemd-network': No such process
+#12 3.018 /usr/lib/tmpfiles.d/systemd-network.conf:13: Failed to resolve user 'systemd-network': No such process
+#12 3.018 /usr/lib/tmpfiles.d/systemd.conf:22: Failed to resolve group 'systemd-journal': No such process
+#12 3.018 /usr/lib/tmpfiles.d/systemd.conf:23: Failed to resolve group 'systemd-journal': No such process
+#12 3.018 /usr/lib/tmpfiles.d/systemd.conf:28: Failed to resolve group 'systemd-journal': No such process
+#12 3.018 /usr/lib/tmpfiles.d/systemd.conf:29: Failed to resolve group 'systemd-journal': No such process
+#12 3.018 /usr/lib/tmpfiles.d/systemd.conf:30: Failed to resolve group 'systemd-journal': No such process
+#12 3.023 Creating group 'systemd-journal' with GID 999.
+#12 3.023 Creating group 'systemd-network' with GID 998.
+#12 3.023 Creating user 'systemd-network' (systemd Network Management) with UID 998 and GID 998.
+#12 3.039 Setting up cron-daemon-common (3.0pl1-184ubuntu2) ...
+#12 3.053 Creating group 'crontab' with GID 997.
+#12 3.081 Selecting previously unselected package cron.
+#12 3.081 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39415 files and directories currently installed.)
+#12 3.091 Preparing to unpack .../cron_3.0pl1-184ubuntu2_amd64.deb ...
+#12 3.093 Unpacking cron (3.0pl1-184ubuntu2) ...
+#12 3.111 Selecting previously unselected package python3-pkg-resources.
+#12 3.113 Preparing to unpack .../python3-pkg-resources_68.1.2-2ubuntu1.2_all.deb ...
+#12 3.114 Unpacking python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+#12 3.135 Selecting previously unselected package supervisor.
+#12 3.137 Preparing to unpack .../supervisor_4.2.5-1ubuntu0.1_all.deb ...
+#12 3.139 Unpacking supervisor (4.2.5-1ubuntu0.1) ...
+#12 3.168 Preparing to unpack .../libsmartcols1_2.39.3-9ubuntu6.6_amd64.deb ...
+#12 3.171 Unpacking libsmartcols1:amd64 (2.39.3-9ubuntu6.6) over (2.39.3-9ubuntu6.5) ...
+#12 3.195 Setting up libsmartcols1:amd64 (2.39.3-9ubuntu6.6) ...
+#12 3.222 Selecting previously unselected package openssl.
+#12 3.222 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39649 files and directories currently installed.)
+#12 3.232 Preparing to unpack .../00-openssl_3.0.13-0ubuntu3.15_amd64.deb ...
+#12 3.234 Unpacking openssl (3.0.13-0ubuntu3.15) ...
+#12 3.260 Selecting previously unselected package ca-certificates.
+#12 3.262 Preparing to unpack .../01-ca-certificates_20260601~24.04.1_all.deb ...
+#12 3.263 Unpacking ca-certificates (20260601~24.04.1) ...
+#12 3.287 Selecting previously unselected package dbus-bin.
+#12 3.289 Preparing to unpack .../02-dbus-bin_1.14.10-4ubuntu4.1_amd64.deb ...
+#12 3.290 Unpacking dbus-bin (1.14.10-4ubuntu4.1) ...
+#12 3.305 Selecting previously unselected package dbus-session-bus-common.
+#12 3.306 Preparing to unpack .../03-dbus-session-bus-common_1.14.10-4ubuntu4.1_all.deb ...
+#12 3.308 Unpacking dbus-session-bus-common (1.14.10-4ubuntu4.1) ...
+#12 3.324 Selecting previously unselected package dbus-daemon.
+#12 3.325 Preparing to unpack .../04-dbus-daemon_1.14.10-4ubuntu4.1_amd64.deb ...
+#12 3.327 Unpacking dbus-daemon (1.14.10-4ubuntu4.1) ...
+#12 3.342 Selecting previously unselected package dbus-system-bus-common.
+#12 3.344 Preparing to unpack .../05-dbus-system-bus-common_1.14.10-4ubuntu4.1_all.deb ...
+#12 3.345 Unpacking dbus-system-bus-common (1.14.10-4ubuntu4.1) ...
+#12 3.363 Selecting previously unselected package dbus.
+#12 3.365 Preparing to unpack .../06-dbus_1.14.10-4ubuntu4.1_amd64.deb ...
+#12 3.368 Unpacking dbus (1.14.10-4ubuntu4.1) ...
+#12 3.388 Selecting previously unselected package dmsetup.
+#12 3.389 Preparing to unpack .../07-dmsetup_2%3a1.02.185-3ubuntu3.2_amd64.deb ...
+#12 3.391 Unpacking dmsetup (2:1.02.185-3ubuntu3.2) ...
+#12 3.410 Selecting previously unselected package libglib2.0-0t64:amd64.
+#12 3.412 Preparing to unpack .../08-libglib2.0-0t64_2.80.0-6ubuntu3.8_amd64.deb ...
+#12 3.421 Unpacking libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.8) ...
+#12 3.452 Selecting previously unselected package gir1.2-glib-2.0:amd64.
+#12 3.454 Preparing to unpack .../09-gir1.2-glib-2.0_2.80.0-6ubuntu3.8_amd64.deb ...
+#12 3.456 Unpacking gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.8) ...
+#12 3.475 Selecting previously unselected package libgirepository-1.0-1:amd64.
+#12 3.476 Preparing to unpack .../10-libgirepository-1.0-1_1.80.1-1_amd64.deb ...
+#12 3.478 Unpacking libgirepository-1.0-1:amd64 (1.80.1-1) ...
+#12 3.493 Selecting previously unselected package gir1.2-girepository-2.0:amd64.
+#12 3.495 Preparing to unpack .../11-gir1.2-girepository-2.0_1.80.1-1_amd64.deb ...
+#12 3.496 Unpacking gir1.2-girepository-2.0:amd64 (1.80.1-1) ...
+#12 3.512 Selecting previously unselected package libestr0:amd64.
+#12 3.514 Preparing to unpack .../12-libestr0_0.1.11-1build1_amd64.deb ...
+#12 3.515 Unpacking libestr0:amd64 (0.1.11-1build1) ...
+#12 3.531 Selecting previously unselected package libfastjson4:amd64.
+#12 3.533 Preparing to unpack .../13-libfastjson4_1.2304.0-1build1_amd64.deb ...
+#12 3.534 Unpacking libfastjson4:amd64 (1.2304.0-1build1) ...
+#12 3.548 Selecting previously unselected package libglib2.0-data.
+#12 3.550 Preparing to unpack .../14-libglib2.0-data_2.80.0-6ubuntu3.8_all.deb ...
+#12 3.552 Unpacking libglib2.0-data (2.80.0-6ubuntu3.8) ...
+#12 3.568 Selecting previously unselected package libpopt0:amd64.
+#12 3.569 Preparing to unpack .../15-libpopt0_1.19+dfsg-1build1_amd64.deb ...
+#12 3.571 Unpacking libpopt0:amd64 (1.19+dfsg-1build1) ...
+#12 3.589 Selecting previously unselected package logrotate.
+#12 3.591 Preparing to unpack .../16-logrotate_3.21.0-2build1_amd64.deb ...
+#12 3.593 Unpacking logrotate (3.21.0-2build1) ...
+#12 3.610 Selecting previously unselected package python3-dbus.
+#12 3.612 Preparing to unpack .../17-python3-dbus_1.3.2-5build3_amd64.deb ...
+#12 3.613 Unpacking python3-dbus (1.3.2-5build3) ...
+#12 3.631 Selecting previously unselected package python3-gi.
+#12 3.633 Preparing to unpack .../18-python3-gi_3.48.2-1_amd64.deb ...
+#12 3.634 Unpacking python3-gi (3.48.2-1) ...
+#12 3.654 Selecting previously unselected package networkd-dispatcher.
+#12 3.656 Preparing to unpack .../19-networkd-dispatcher_2.2.4-1_all.deb ...
+#12 3.658 Unpacking networkd-dispatcher (2.2.4-1) ...
+#12 3.676 Selecting previously unselected package ucf.
+#12 3.678 Preparing to unpack .../20-ucf_3.0043+nmu1_all.deb ...
+#12 3.680 Moving old data out of the way
+#12 3.681 Unpacking ucf (3.0043+nmu1) ...
+#12 3.702 Selecting previously unselected package rsyslog.
+#12 3.704 Preparing to unpack .../21-rsyslog_8.2312.0-3ubuntu9.3_amd64.deb ...
+#12 3.713 Unpacking rsyslog (8.2312.0-3ubuntu9.3) ...
+#12 3.739 Selecting previously unselected package shared-mime-info.
+#12 3.740 Preparing to unpack .../22-shared-mime-info_2.4-4_amd64.deb ...
+#12 3.744 Unpacking shared-mime-info (2.4-4) ...
+#12 3.769 Selecting previously unselected package systemd-resolved.
+#12 3.771 Preparing to unpack .../23-systemd-resolved_255.4-1ubuntu8.17_amd64.deb ...
+#12 3.772 Unpacking systemd-resolved (255.4-1ubuntu8.17) ...
+#12 3.793 Selecting previously unselected package systemd-timesyncd.
+#12 3.796 Preparing to unpack .../24-systemd-timesyncd_255.4-1ubuntu8.17_amd64.deb ...
+#12 3.799 Unpacking systemd-timesyncd (255.4-1ubuntu8.17) ...
+#12 3.819 Selecting previously unselected package xdg-user-dirs.
+#12 3.821 Preparing to unpack .../25-xdg-user-dirs_0.18-1build1_amd64.deb ...
+#12 3.827 Unpacking xdg-user-dirs (0.18-1build1) ...
+#12 3.846 Selecting previously unselected package javascript-common.
+#12 3.849 Preparing to unpack .../26-javascript-common_11+nmu1_all.deb ...
+#12 3.857 Unpacking javascript-common (11+nmu1) ...
+#12 3.873 Selecting previously unselected package libexpat1-dev:amd64.
+#12 3.875 Preparing to unpack .../27-libexpat1-dev_2.6.1-2ubuntu0.4_amd64.deb ...
+#12 3.877 Unpacking libexpat1-dev:amd64 (2.6.1-2ubuntu0.4) ...
+#12 3.897 Selecting previously unselected package libjs-jquery.
+#12 3.899 Preparing to unpack .../28-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+#12 3.904 Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+#12 3.923 Selecting previously unselected package libjs-underscore.
+#12 3.925 Preparing to unpack .../29-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+#12 3.926 Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+#12 3.941 Selecting previously unselected package libjs-sphinxdoc.
+#12 3.943 Preparing to unpack .../30-libjs-sphinxdoc_7.2.6-6_all.deb ...
+#12 3.944 Unpacking libjs-sphinxdoc (7.2.6-6) ...
+#12 3.962 Selecting previously unselected package libpython3.12t64:amd64.
+#12 3.964 Preparing to unpack .../31-libpython3.12t64_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 3.966 Unpacking libpython3.12t64:amd64 (3.12.3-1ubuntu0.16) ...
+#12 4.008 Selecting previously unselected package zlib1g-dev:amd64.
+#12 4.010 Preparing to unpack .../32-zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb ...
+#12 4.011 Unpacking zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+#12 4.030 Selecting previously unselected package libpython3.12-dev:amd64.
+#12 4.032 Preparing to unpack .../33-libpython3.12-dev_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 4.033 Unpacking libpython3.12-dev:amd64 (3.12.3-1ubuntu0.16) ...
+#12 4.139 Selecting previously unselected package libpython3-dev:amd64.
+#12 4.141 Preparing to unpack .../34-libpython3-dev_3.12.3-0ubuntu2.1_amd64.deb ...
+#12 4.142 Unpacking libpython3-dev:amd64 (3.12.3-0ubuntu2.1) ...
+#12 4.157 Selecting previously unselected package net-tools.
+#12 4.159 Preparing to unpack .../35-net-tools_2.10-0.1ubuntu4.4_amd64.deb ...
+#12 4.160 Unpacking net-tools (2.10-0.1ubuntu4.4) ...
+#12 4.179 Selecting previously unselected package python3.12-dev.
+#12 4.181 Preparing to unpack .../36-python3.12-dev_3.12.3-1ubuntu0.16_amd64.deb ...
+#12 4.182 Unpacking python3.12-dev (3.12.3-1ubuntu0.16) ...
+#12 4.198 Selecting previously unselected package python3-dev.
+#12 4.200 Preparing to unpack .../37-python3-dev_3.12.3-0ubuntu2.1_amd64.deb ...
+#12 4.202 Unpacking python3-dev (3.12.3-0ubuntu2.1) ...
+#12 4.219 Selecting previously unselected package python3-setuptools.
+#12 4.221 Preparing to unpack .../38-python3-setuptools_68.1.2-2ubuntu1.2_all.deb ...
+#12 4.222 Unpacking python3-setuptools (68.1.2-2ubuntu1.2) ...
+#12 4.252 Selecting previously unselected package python3-wheel.
+#12 4.254 Preparing to unpack .../39-python3-wheel_0.42.0-2_all.deb ...
+#12 4.256 Unpacking python3-wheel (0.42.0-2) ...
+#12 4.275 Selecting previously unselected package python3-pip.
+#12 4.277 Preparing to unpack .../40-python3-pip_24.0+dfsg-1ubuntu1.3_all.deb ...
+#12 4.278 Unpacking python3-pip (24.0+dfsg-1ubuntu1.3) ...
+#12 4.339 Setting up python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+#12 4.613 Setting up javascript-common (11+nmu1) ...
+#12 4.629 Setting up net-tools (2.10-0.1ubuntu4.4) ...
+#12 4.632 Setting up supervisor (4.2.5-1ubuntu0.1) ...
+#12 4.898 invoke-rc.d: could not determine current runlevel
+#12 4.901 invoke-rc.d: policy-rc.d denied execution of start.
+#12 4.979 Created symlink /etc/systemd/system/multi-user.target.wants/supervisor.service → /usr/lib/systemd/system/supervisor.service.
+#12 4.982 Setting up python3-setuptools (68.1.2-2ubuntu1.2) ...
+#12 5.297 Setting up xdg-user-dirs (0.18-1build1) ...
+#12 5.308 Setting up libestr0:amd64 (0.1.11-1build1) ...
+#12 5.311 Setting up libfastjson4:amd64 (1.2304.0-1build1) ...
+#12 5.314 Setting up cron (3.0pl1-184ubuntu2) ...
+#12 5.333 invoke-rc.d: could not determine current runlevel
+#12 5.336 invoke-rc.d: policy-rc.d denied execution of start.
+#12 5.413 Created symlink /etc/systemd/system/multi-user.target.wants/cron.service → /usr/lib/systemd/system/cron.service.
+#12 5.416 Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.16) ...
+#12 5.422 Setting up python3-wheel (0.42.0-2) ...
+#12 5.520 Setting up libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.8) ...
+#12 5.524 No schema files found: doing nothing.
+#12 5.527 Setting up libglib2.0-data (2.80.0-6ubuntu3.8) ...
+#12 5.531 Setting up libexpat1-dev:amd64 (2.6.1-2ubuntu0.4) ...
+#12 5.535 Setting up shared-mime-info (2.4-4) ...
+#12 6.388 Setting up libssl-dev:amd64 (3.0.13-0ubuntu3.15) ...
+#12 6.392 Setting up systemd-timesyncd (255.4-1ubuntu8.17) ...
+#12 6.402 Creating group 'systemd-timesync' with GID 996.
+#12 6.402 Creating user 'systemd-timesync' (systemd Time Synchronization) with UID 996 and GID 996.
+#12 6.487 Created symlink /etc/systemd/system/dbus-org.freedesktop.timesync1.service → /usr/lib/systemd/system/systemd-timesyncd.service.
+#12 6.487 Created symlink /etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service → /usr/lib/systemd/system/systemd-timesyncd.service.
+#12 6.490 Setting up ucf (3.0043+nmu1) ...
+#12 6.538 Setting up gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.8) ...
+#12 6.542 Setting up zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+#12 6.546 Setting up dmsetup (2:1.02.185-3ubuntu3.2) ...
+#12 6.553 Setting up dbus-session-bus-common (1.14.10-4ubuntu4.1) ...
+#12 6.556 Setting up libgirepository-1.0-1:amd64 (1.80.1-1) ...
+#12 6.559 Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+#12 6.566 Setting up dbus-system-bus-common (1.14.10-4ubuntu4.1) ...
+#12 6.621 Setting up openssl (3.0.13-0ubuntu3.15) ...
+#12 6.627 Setting up dbus-bin (1.14.10-4ubuntu4.1) ...
+#12 6.630 Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+#12 6.634 Setting up libpopt0:amd64 (1.19+dfsg-1build1) ...
+#12 6.637 Setting up logrotate (3.21.0-2build1) ...
+#12 6.723 Created symlink /etc/systemd/system/timers.target.wants/logrotate.timer → /usr/lib/systemd/system/logrotate.timer.
+#12 6.726 Setting up python3.12-minimal (3.12.3-1ubuntu0.16) ...
+#12 7.206 Setting up python3-dbus (1.3.2-5build3) ...
+#12 7.292 Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.16) ...
+#12 7.296 Setting up python3.12 (3.12.3-1ubuntu0.16) ...
+#12 7.937 Setting up rsyslog (8.2312.0-3ubuntu9.3) ...
+#12 8.011 info: Adding user `syslog' to group `adm' ...
+#12 8.114 
+#12 8.114 Creating config file /etc/rsyslog.d/50-default.conf with new version
+#12 8.230 Created symlink /etc/systemd/system/multi-user.target.wants/dmesg.service → /usr/lib/systemd/system/dmesg.service.
+#12 8.310 Created symlink /etc/systemd/system/syslog.service → /usr/lib/systemd/system/rsyslog.service.
+#12 8.310 Created symlink /etc/systemd/system/multi-user.target.wants/rsyslog.service → /usr/lib/systemd/system/rsyslog.service.
+#12 8.313 Setting up dbus-daemon (1.14.10-4ubuntu4.1) ...
+#12 8.323 Setting up libpython3.12t64:amd64 (3.12.3-1ubuntu0.16) ...
+#12 8.326 Setting up ca-certificates (20260601~24.04.1) ...
+#12 8.679 Updating certificates in /etc/ssl/certs...
+#12 9.114 121 added, 0 removed; done.
+#12 9.127 Setting up gir1.2-girepository-2.0:amd64 (1.80.1-1) ...
+#12 9.130 Setting up dbus (1.14.10-4ubuntu4.1) ...
+#12 9.146 Setting up python3-gi (3.48.2-1) ...
+#12 9.259 Setting up python3-pip (24.0+dfsg-1ubuntu1.3) ...
+#12 10.08 Setting up libjs-sphinxdoc (7.2.6-6) ...
+#12 10.09 Setting up systemd-resolved (255.4-1ubuntu8.17) ...
+#12 10.09 Converting /etc/resolv.conf to a symlink to /run/systemd/resolve/stub-resolv.conf...
+#12 10.10 mv: cannot move '/etc/resolv.conf' to '/etc/.resolv.conf.systemd-resolved.bak': Device or resource busy
+#12 10.10 Cannot take a backup of /etc/resolv.conf.
+#12 10.10 ln: failed to create symbolic link '/etc/resolv.conf': Device or resource busy
+#12 10.10 Cannot install symlink from /etc/resolv.conf to ../run/systemd/resolve/stub-resolv.conf
+#12 10.10 Creating group 'systemd-resolve' with GID 995.
+#12 10.10 Creating user 'systemd-resolve' (systemd Resolver) with UID 995 and GID 995.
+#12 10.19 Created symlink /etc/systemd/system/dbus-org.freedesktop.resolve1.service → /usr/lib/systemd/system/systemd-resolved.service.
+#12 10.19 Created symlink /etc/systemd/system/sysinit.target.wants/systemd-resolved.service → /usr/lib/systemd/system/systemd-resolved.service.
+#12 10.19 Setting up networkd-dispatcher (2.2.4-1) ...
+#12 10.27 Created symlink /etc/systemd/system/multi-user.target.wants/networkd-dispatcher.service → /usr/lib/systemd/system/networkd-dispatcher.service.
+#12 10.27 Setting up libpython3.12-dev:amd64 (3.12.3-1ubuntu0.16) ...
+#12 10.28 Setting up python3.12-dev (3.12.3-1ubuntu0.16) ...
+#12 10.28 Setting up libpython3-dev:amd64 (3.12.3-0ubuntu2.1) ...
+#12 10.28 Setting up python3-dev (3.12.3-0ubuntu2.1) ...
+#12 10.29 Processing triggers for libc-bin (2.39-0ubuntu8.8) ...
+#12 10.30 Processing triggers for ca-certificates (20260601~24.04.1) ...
+#12 10.31 Updating certificates in /etc/ssl/certs...
+#12 10.68 0 added, 0 removed; done.
+#12 10.68 Running hooks in /etc/ca-certificates/update.d...
+#12 10.68 done.
+#12 DONE 11.1s
+
+#13 [base  9/12] RUN pip3 install --break-system-packages supervisord-dependent-startup
+#13 0.376 Looking in links: /sonic/target/vcache/docker-dash-engine/pip-wheelhouse
+#13 0.384 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad9bf2cf0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisord-dependent-startup/
+#13 0.885 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad9702e40>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisord-dependent-startup/
+#13 1.885 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95981d0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisord-dependent-startup/
+#13 3.885 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95985c0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisord-dependent-startup/
+#13 7.886 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95986e0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisord-dependent-startup/
+#13 7.906 Processing /sonic/target/vcache/docker-dash-engine/pip-wheelhouse/supervisord_dependent_startup-1.4.0-py2.py3-none-any.whl
+#13 7.911 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95e89b0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisor/
+#13 8.411 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95e8980>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisor/
+#13 9.412 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95e8b30>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisor/
+#13 11.41 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95e8ad0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisor/
+#13 15.41 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95e8bf0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/supervisor/
+#13 15.42 Processing /sonic/target/vcache/docker-dash-engine/pip-wheelhouse/supervisor-4.1.0-py2.py3-none-any.whl (from supervisord-dependent-startup)
+#13 15.42 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95e80b0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/toposort/
+#13 15.92 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95e8560>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/toposort/
+#13 16.92 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95e89b0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/toposort/
+#13 18.92 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95e8080>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/toposort/
+#13 22.92 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x718ad95e9220>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/toposort/
+#13 22.93 Processing /sonic/target/vcache/docker-dash-engine/pip-wheelhouse/toposort-1.10-py3-none-any.whl (from supervisord-dependent-startup)
+#13 22.95 Installing collected packages: toposort, supervisor, supervisord-dependent-startup
+#13 22.96   Attempting uninstall: supervisor
+#13 22.96     Found existing installation: supervisor 4.2.5
+#13 22.96     Uninstalling supervisor-4.2.5:
+#13 22.98       Successfully uninstalled supervisor-4.2.5
+#13 23.21 Successfully installed supervisor-4.1.0 supervisord-dependent-startup-1.4.0 toposort-1.10
+#13 23.21 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#13 DONE 23.3s
+
+#14 [base 10/12] COPY [start.sh, /usr/bin/]
+#14 DONE 0.0s
+
+#15 [base 11/12] RUN post_run_buildinfo docker-dash-engine
+#15 0.510 ./
+#15 0.510 ./pip-wheelhouse/
+#15 0.510 ./pip-wheelhouse/supervisor-4.3.0-py2.py3-none-any.whl
+#15 0.517 ./pip-wheelhouse/sonic_yang_models-1.0-py3-none-any.whl
+#15 0.531 ./pip-wheelhouse/six-1.17.0-py2.py3-none-any.whl
+#15 0.532 ./pip-wheelhouse/typing_extensions-4.13.2-py3-none-any.whl
+#15 0.533 ./pip-wheelhouse/cffi-2.1.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+#15 0.538 ./pip-wheelhouse/python_dotenv-1.2.3-py3-none-any.whl
+#15 0.539 ./pip-wheelhouse/click-8.4.2-py3-none-any.whl
+#15 0.542 ./pip-wheelhouse/bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl
+#15 0.549 ./pip-wheelhouse/wheel-0.46.1-py3-none-any.whl
+#15 0.550 ./pip-wheelhouse/inotify-0.2.12-py2.py3-none-any.whl
+#15 0.550 ./pip-wheelhouse/smbus2-0.6.1-py2.py3-none-any.whl
+#15 0.550 ./pip-wheelhouse/grpcio_tools-1.71.0.tar.gz
+#15 0.686 ./pip-wheelhouse/scapy-2.6.1-py3-none-any.whl
+#15 0.748 ./pip-wheelhouse/prefixed-0.7.0-py2.py3-none-any.whl
+#15 0.748 ./pip-wheelhouse/azure_storage-0.36.0-py2.py3-none-any.whl
+#15 0.753 ./pip-wheelhouse/thrift-0.13.0.tar.gz
+#15 0.754 ./pip-wheelhouse/prettyprinter-0.18.0-py2.py3-none-any.whl
+#15 0.756 ./pip-wheelhouse/pluggy-1.6.0-py3-none-any.whl
+#15 0.756 ./pip-wheelhouse/markupsafe-3.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 0.757 ./pip-wheelhouse/pycparser-2.22-py3-none-any.whl
+#15 0.760 ./pip-wheelhouse/www-authenticate-0.9.2.tar.gz
+#15 0.760 ./pip-wheelhouse/pycairo-1.26.1.tar.gz
+#15 0.768 ./pip-wheelhouse/ptyprocess-0.7.0-py2.py3-none-any.whl
+#15 0.769 ./pip-wheelhouse/pyproject_hooks-1.2.0-py3-none-any.whl
+#15 0.769 ./pip-wheelhouse/azure_nspkg-3.0.2-py3-none-any.whl
+#15 0.769 ./pip-wheelhouse/protobuf-4.21.12-cp37-abi3-manylinux2014_x86_64.whl
+#15 0.780 ./pip-wheelhouse/regex-2026.5.9-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 0.800 ./pip-wheelhouse/docker_image_py-0.1.13-py3-none-any.whl
+#15 0.800 ./pip-wheelhouse/pygments-2.20.0-py3-none-any.whl
+#15 0.832 ./pip-wheelhouse/blkinfo-0.2.0.tar.gz
+#15 0.832 ./pip-wheelhouse/lxml-5.4.0-cp313-cp313-manylinux_2_28_x86_64.whl
+#15 0.960 ./pip-wheelhouse/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+#15 0.965 ./pip-wheelhouse/build-1.5.0-py3-none-any.whl
+#15 0.965 ./pip-wheelhouse/PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl
+#15 0.988 ./pip-wheelhouse/pyroute2-0.5.14.tar.gz
+#15 1.010 ./pip-wheelhouse/jsonpatch-1.33-py2.py3-none-any.whl
+#15 1.010 ./pip-wheelhouse/pyroute2-0.9.6-py3-none-any.whl
+#15 1.023 ./pip-wheelhouse/zipp-3.21.0-py3-none-any.whl
+#15 1.023 ./pip-wheelhouse/bottle-0.13.2-py2.py3-none-any.whl
+#15 1.026 ./pip-wheelhouse/ijson-3.4.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#15 1.030 ./pip-wheelhouse/lazy_object_proxy-1.12.0-cp314-cp314-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
+#15 1.032 ./pip-wheelhouse/redis-6.1.0-py3-none-any.whl
+#15 1.038 ./pip-wheelhouse/pyang-2.7.1-py2.py3-none-any.whl
+#15 1.053 ./pip-wheelhouse/toposort-1.10-py3-none-any.whl
+#15 1.054 ./pip-wheelhouse/jaraco.text-4.0.0-py3-none-any.whl
+#15 1.054 ./pip-wheelhouse/hiredis-3.4.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 1.062 ./pip-wheelhouse/sonic_platform_common-1.0-py3-none-any.whl
+#15 1.073 ./pip-wheelhouse/jaraco.context-6.0.1-py3-none-any.whl
+#15 1.073 ./pip-wheelhouse/requests-2.34.2-py3-none-any.whl
+#15 1.075 ./pip-wheelhouse/pexpect-4.9.0-py2.py3-none-any.whl
+#15 1.076 ./pip-wheelhouse/typing_extensions-4.16.0-py3-none-any.whl
+#15 1.078 ./pip-wheelhouse/jinjanator_plugins-25.1.0-py3-none-any.whl
+#15 1.078 ./pip-wheelhouse/charset_normalizer-3.4.7-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 1.084 ./pip-wheelhouse/netaddr-0.8.0-py2.py3-none-any.whl
+#15 1.132 ./pip-wheelhouse/smbus-1.1.post2.tar.gz
+#15 1.135 ./pip-wheelhouse/pycparser-3.0-py3-none-any.whl
+#15 1.136 ./pip-wheelhouse/lxml-6.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+#15 1.267 ./pip-wheelhouse/paramiko-5.0.0-py3-none-any.whl
+#15 1.272 ./pip-wheelhouse/bitarray-2.8.1.tar.gz
+#15 1.276 ./pip-wheelhouse/telnetlib3-4.0.5-py3-none-any.whl
+#15 1.285 ./pip-wheelhouse/click-8.5.0-py3-none-any.whl
+#15 1.287 ./pip-wheelhouse/pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl
+#15 1.325 ./pip-wheelhouse/packaging-25.0-py3-none-any.whl
+#15 1.326 ./pip-wheelhouse/colorful-0.5.8-py2.py3-none-any.whl
+#15 1.331 ./pip-wheelhouse/regex-2024.11.6-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#15 1.352 ./pip-wheelhouse/jsonpointer-3.1.1-py3-none-any.whl
+#15 1.352 ./pip-wheelhouse/freezegun-1.5.5-py3-none-any.whl
+#15 1.353 ./pip-wheelhouse/idna-3.19-py3-none-any.whl
+#15 1.354 ./pip-wheelhouse/ijson-3.5.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 1.358 ./pip-wheelhouse/systemd-python-235.tar.gz
+#15 1.359 ./pip-wheelhouse/libpci-0.2-py3-none-any.whl
+#15 1.360 ./pip-wheelhouse/sonic_config_engine-1.0-py3-none-any.whl
+#15 1.363 ./pip-wheelhouse/click-8.1.8-py3-none-any.whl
+#15 1.364 ./pip-wheelhouse/cryptography-43.0.0-cp39-abi3-manylinux_2_28_x86_64.whl
+#15 1.469 ./pip-wheelhouse/lxml-6.1.3-cp314-cp314-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl
+#15 1.604 ./pip-wheelhouse/tabulate-0.9.0-py3-none-any.whl
+#15 1.605 ./pip-wheelhouse/sonic_yang_mgmt-1.0-py3-none-any.whl
+#15 1.606 ./pip-wheelhouse/jinja2-3.1.6-py3-none-any.whl
+#15 1.610 ./pip-wheelhouse/pip-25.1.1-py3-none-any.whl
+#15 1.656 ./pip-wheelhouse/autocommand-2.2.2-py3-none-any.whl
+#15 1.657 ./pip-wheelhouse/hiredis-3.4.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 1.665 ./pip-wheelhouse/inflect-7.3.1-py3-none-any.whl
+#15 1.665 ./pip-wheelhouse/grpcio-1.71.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#15 1.817 ./pip-wheelhouse/paramiko-3.5.1-py3-none-any.whl
+#15 1.822 ./pip-wheelhouse/supervisor-4.1.0-py2.py3-none-any.whl
+#15 1.831 ./pip-wheelhouse/ipaddress-1.0.23-py2.py3-none-any.whl
+#15 1.831 ./pip-wheelhouse/filelock-3.29.4-py3-none-any.whl
+#15 1.832 ./pip-wheelhouse/certifi-2026.6.17-py3-none-any.whl
+#15 1.836 ./pip-wheelhouse/jinjanator-25.3.1-py3-none-any.whl
+#15 1.836 ./pip-wheelhouse/redis-dump-load-1.1.tar.gz
+#15 1.836 ./pip-wheelhouse/natsort-8.4.0-py3-none-any.whl
+#15 1.837 ./pip-wheelhouse/bcrypt-4.2.0-cp39-abi3-manylinux_2_28_x86_64.whl
+#15 1.844 ./pip-wheelhouse/semantic_version-2.10.0-py2.py3-none-any.whl
+#15 1.845 ./pip-wheelhouse/charset_normalizer-3.5.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 1.850 ./pip-wheelhouse/ijson-3.5.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 1.855 ./pip-wheelhouse/grpcio-1.66.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#15 2.002 ./pip-wheelhouse/protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl
+#15 2.011 ./pip-wheelhouse/idna-3.18-py3-none-any.whl
+#15 2.012 ./pip-wheelhouse/certifi-2026.7.22-py3-none-any.whl
+#15 2.016 ./pip-wheelhouse/ipaddr-2.2.0.tar.gz
+#15 2.016 ./pip-wheelhouse/pyangbind-0.8.7-py3-none-any.whl
+#15 2.018 ./pip-wheelhouse/jsondiff-2.2.1-py3-none-any.whl
+#15 2.018 ./pip-wheelhouse/toposort-1.6-py2.py3-none-any.whl
+#15 2.018 ./pip-wheelhouse/grpcio_tools-1.71.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#15 2.082 ./pip-wheelhouse/scp-0.14.5-py2.py3-none-any.whl
+#15 2.082 ./pip-wheelhouse/guacamole-0.9.2-py2.py3-none-any.whl
+#15 2.083 ./pip-wheelhouse/cryptography-50.0.1-cp311-abi3-manylinux_2_34_x86_64.whl
+#15 2.207 ./pip-wheelhouse/python_dotenv-1.2.2-py3-none-any.whl
+#15 2.208 ./pip-wheelhouse/typeguard-4.4.2-py3-none-any.whl
+#15 2.209 ./pip-wheelhouse/enlighten-1.11.2-py2.py3-none-any.whl
+#15 2.209 ./pip-wheelhouse/regex-2026.9.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 2.231 ./pip-wheelhouse/click_log-0.4.0-py2.py3-none-any.whl
+#15 2.231 ./pip-wheelhouse/m2crypto-0.42.0.tar.gz
+#15 2.236 ./pip-wheelhouse/MarkupSafe-2.1.5.tar.gz
+#15 2.237 ./pip-wheelhouse/azure_common-1.1.28-py2.py3-none-any.whl
+#15 2.238 ./pip-wheelhouse/redis-8.1.0-py3-none-any.whl
+#15 2.252 ./pip-wheelhouse/grpcio-1.71.0.tar.gz
+#15 2.571 ./pip-wheelhouse/enum34-1.1.10-py3-none-any.whl
+#15 2.571 ./pip-wheelhouse/wcwidth-0.8.1-py3-none-any.whl
+#15 2.580 ./pip-wheelhouse/redis_dump_load-1.1-py3-none-any.whl
+#15 2.580 ./pip-wheelhouse/redis-3.5.3-py2.py3-none-any.whl
+#15 2.582 ./pip-wheelhouse/urllib3-2.7.0-py3-none-any.whl
+#15 2.585 ./pip-wheelhouse/charset_normalizer-3.5.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 2.591 ./pip-wheelhouse/more_itertools-10.7.0-py3-none-any.whl
+#15 2.593 ./pip-wheelhouse/jaraco.functools-4.1.0-py3-none-any.whl
+#15 2.594 ./pip-wheelhouse/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl
+#15 2.597 ./pip-wheelhouse/pyyaml-6.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 2.618 ./pip-wheelhouse/grpcio_tools-1.66.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#15 2.681 ./pip-wheelhouse/cffi-1.17.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#15 2.692 ./pip-wheelhouse/pygments-2.21.0-py3-none-any.whl
+#15 2.724 ./pip-wheelhouse/setuptools-78.1.1-py3-none-any.whl
+#15 2.756 ./pip-wheelhouse/invoke-3.0.3-py3-none-any.whl
+#15 2.760 ./pip-wheelhouse/pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+#15 2.780 ./pip-wheelhouse/PyYAML-6.0.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#15 2.799 ./pip-wheelhouse/docker-7.1.0-py3-none-any.whl
+#15 2.804 ./pip-wheelhouse/supervisord_dependent_startup-1.4.0-py2.py3-none-any.whl
+#15 2.804 ./pip-wheelhouse/python_arptable-0.0.2.tar.gz
+#15 2.805 ./pip-wheelhouse/lazy_object_proxy-1.12.0-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
+#15 2.807 ./pip-wheelhouse/blessed-1.21.0-py2.py3-none-any.whl
+#15 2.808 ./pip-wheelhouse/sonic_py_common-1.0-py3-none-any.whl
+#15 2.809 ./pip-wheelhouse/attrs-26.1.0-py3-none-any.whl
+#15 2.811 ./pip-wheelhouse/sonic_ctrmgrd-1.0.0-py3-none-any.whl
+#15 2.813 ./pip-wheelhouse/sonic_utilities-1.2-py3-none-any.whl
+#15 2.891 ./pip-wheelhouse/netifaces-0.11.0.tar.gz
+#15 2.892 ./pip-wheelhouse/jsonschema-2.6.0-py2.py3-none-any.whl
+#15 2.893 ./pip-wheelhouse/xmltodict-0.12.0-py2.py3-none-any.whl
+#15 2.893 ./apt-lists/
+#15 2.893 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_InRelease
+#15 2.895 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_main_binary-amd64_Packages.lz4
+#15 2.991 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages.lz4
+#15 4.146 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_restricted_binary-amd64_Packages.lz4
+#15 4.267 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_multiverse_binary-amd64_Packages.lz4
+#15 4.270 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages.lz4
+#15 4.378 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_InRelease
+#15 4.386 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_multiverse_binary-amd64_Packages.lz4
+#15 4.389 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_main_binary-amd64_Packages.lz4
+#15 4.391 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_multiverse_binary-amd64_Packages.lz4
+#15 4.391 ./apt-lists/auxfiles/
+#15 4.391 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_InRelease
+#15 4.395 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_main_binary-amd64_Packages.lz4
+#15 4.470 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_restricted_binary-amd64_Packages.lz4
+#15 4.478 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_universe_binary-amd64_Packages.lz4
+#15 4.610 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages.lz4
+#15 4.705 ./apt-lists/security.ubuntu.com_ubuntu_dists_noble-security_restricted_binary-amd64_Packages.lz4
+#15 4.817 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble_multiverse_binary-amd64_Packages.lz4
+#15 4.836 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-backports_universe_binary-amd64_Packages.lz4
+#15 4.838 ./apt-lists/archive.ubuntu.com_ubuntu_dists_noble-updates_InRelease
+#15 4.843 ./pip/
+#15 4.843 ./pip/http-v2/
+#15 4.843 ./pip/http-v2/b/
+#15 4.843 ./pip/http-v2/b/3/
+#15 4.843 ./pip/http-v2/b/3/2/
+#15 4.843 ./pip/http-v2/b/3/2/f/
+#15 4.843 ./pip/http-v2/b/3/2/f/0/
+#15 4.843 ./pip/http-v2/b/3/2/f/0/b32f017f9c60d09d91ac0bac44002dec28ef8c04355223f13bf00b7a.body
+#15 4.843 ./pip/http-v2/b/3/2/f/0/b32f017f9c60d09d91ac0bac44002dec28ef8c04355223f13bf00b7a
+#15 4.843 ./pip/http-v2/2/
+#15 4.843 ./pip/http-v2/2/8/
+#15 4.843 ./pip/http-v2/2/8/7/
+#15 4.843 ./pip/http-v2/2/8/7/9/
+#15 4.843 ./pip/http-v2/2/8/7/9/6/
+#15 4.843 ./pip/http-v2/2/8/7/9/6/28796067d09eb6879940dba05607b65ff5a21bf3f669ab495c6999a9
+#15 4.843 ./pip/http-v2/2/8/7/9/6/28796067d09eb6879940dba05607b65ff5a21bf3f669ab495c6999a9.body
+#15 4.845 ./pip/http-v2/1/
+#15 4.845 ./pip/http-v2/1/b/
+#15 4.845 ./pip/http-v2/1/b/5/
+#15 4.845 ./pip/http-v2/1/b/5/e/
+#15 4.845 ./pip/http-v2/1/b/5/e/5/
+#15 4.845 ./pip/http-v2/1/b/5/e/5/1b5e5a7ec2469bd2603f897e456dddd563ee5d0ef7634c0f5d7c08b9
+#15 4.845 ./pip/http-v2/1/b/5/e/5/1b5e5a7ec2469bd2603f897e456dddd563ee5d0ef7634c0f5d7c08b9.body
+#15 4.845 ./pip/http-v2/f/
+#15 4.845 ./pip/http-v2/f/a/
+#15 4.846 ./pip/http-v2/f/a/f/
+#15 4.846 ./pip/http-v2/f/a/f/f/
+#15 4.846 ./pip/http-v2/f/a/f/f/d/
+#15 4.846 ./pip/http-v2/f/a/f/f/d/faffdb5825619a041feeb4cdd9df76cefb30cce63d480ff0ed1a5dae
+#15 4.846 ./pip/http-v2/f/a/f/f/d/faffdb5825619a041feeb4cdd9df76cefb30cce63d480ff0ed1a5dae.body
+#15 4.847 ./pip/http-v2/7/
+#15 4.847 ./pip/http-v2/7/6/
+#15 4.847 ./pip/http-v2/7/6/3/
+#15 4.847 ./pip/http-v2/7/6/3/5/
+#15 4.847 ./pip/http-v2/7/6/3/5/d/
+#15 4.847 ./pip/http-v2/7/6/3/5/d/7635de8254c82e7e771831915759d7d8b2dc2759e9c5896e246e8b46.body
+#15 4.847 ./pip/http-v2/7/6/3/5/d/7635de8254c82e7e771831915759d7d8b2dc2759e9c5896e246e8b46
+#15 4.847 ./pip/http-v2/0/
+#15 4.847 ./pip/http-v2/0/6/
+#15 4.848 ./pip/http-v2/0/6/4/
+#15 4.848 ./pip/http-v2/0/6/4/1/
+#15 4.848 ./pip/http-v2/0/6/4/1/2/
+#15 4.848 ./pip/http-v2/0/6/4/1/2/06412fcf44b9a9522ff6367cabc965d23cb1165807c45516a879c5c4.body
+#15 4.848 ./pip/http-v2/0/6/4/1/2/06412fcf44b9a9522ff6367cabc965d23cb1165807c45516a879c5c4
+#15 4.848 ./pip/http-v2/a/
+#15 4.848 ./pip/http-v2/a/5/
+#15 4.848 ./pip/http-v2/a/5/7/
+#15 4.848 ./pip/http-v2/a/5/7/6/
+#15 4.848 ./pip/http-v2/a/5/7/6/a/
+#15 4.848 ./pip/http-v2/a/5/7/6/a/a576adadf536bc11b2719ae2f275733a69215dc284bb6886cbb4384c.body
+#15 4.856 ./pip/http-v2/a/5/7/6/a/a576adadf536bc11b2719ae2f275733a69215dc284bb6886cbb4384c
+#15 4.856 ./pip/http-v2/a/a/
+#15 4.856 ./pip/http-v2/a/a/c/
+#15 4.856 ./pip/http-v2/a/a/c/a/
+#15 4.856 ./pip/http-v2/a/a/c/a/c/
+#15 4.856 ./pip/http-v2/a/a/c/a/c/aacac81bf1d35d08fd880f2e19cbd5a198730437b2c32b1ce1da7aa3.body
+#15 4.856 ./pip/http-v2/a/a/c/a/c/aacac81bf1d35d08fd880f2e19cbd5a198730437b2c32b1ce1da7aa3
+#15 4.856 ./pip/http-v2/6/
+#15 4.856 ./pip/http-v2/6/b/
+#15 4.856 ./pip/http-v2/6/b/c/
+#15 4.856 ./pip/http-v2/6/b/c/4/
+#15 4.856 ./pip/http-v2/6/b/c/4/4/
+#15 4.856 ./pip/http-v2/6/b/c/4/4/6bc44665bb603ed852c296157543510833d416bcf304a53eed83717c
+#15 4.856 ./pip/http-v2/6/b/c/4/4/6bc44665bb603ed852c296157543510833d416bcf304a53eed83717c.body
+#15 4.857 ./deb/
+#15 4.857 ./deb/rsyslog_8.2312.0-3ubuntu9.3_amd64.deb
+#15 4.869 ./deb/cron-daemon-common_3.0pl1-184ubuntu2_all.deb
+#15 4.870 ./deb/libjson-c5_0.17-1build1_amd64.deb
+#15 4.871 ./deb/libjs-sphinxdoc_7.2.6-6_all.deb
+#15 4.875 ./deb/dbus-session-bus-common_1.14.10-4ubuntu4.1_all.deb
+#15 4.876 ./deb/libsystemd0_255.4-1ubuntu8.17_amd64.deb
+#15 4.887 ./deb/util-linux_2.39.3-9ubuntu6.6_amd64.deb
+#15 4.916 ./deb/libsystemd-shared_255.4-1ubuntu8.17_amd64.deb
+#15 4.968 ./deb/libpython3.12-dev_3.12.3-1ubuntu0.16_amd64.deb
+#15 5.112 ./deb/zlib1g_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb
+#15 5.113 ./deb/libpopt0_1.19+dfsg-1build1_amd64.deb
+#15 5.113 ./deb/shared-mime-info_2.4-4_amd64.deb
+#15 5.126 ./deb/systemd-resolved_255.4-1ubuntu8.17_amd64.deb
+#15 5.133 ./deb/libargon2-1_0~20190702+dfsg-4build1_amd64.deb
+#15 5.134 ./deb/javascript-common_11+nmu1_all.deb
+#15 5.134 ./deb/cron_3.0pl1-184ubuntu2_amd64.deb
+#15 5.136 ./deb/xdg-user-dirs_0.18-1build1_amd64.deb
+#15 5.136 ./deb/systemd-dev_255.4-1ubuntu8.17_all.deb
+#15 5.139 ./deb/gir1.2-girepository-2.0_1.80.1-1_amd64.deb
+#15 5.140 ./deb/python3.12-minimal_3.12.3-1ubuntu0.16_amd64.deb
+#15 5.198 ./deb/libfastjson4_1.2304.0-1build1_amd64.deb
+#15 5.199 ./deb/systemd-timesyncd_255.4-1ubuntu8.17_amd64.deb
+#15 5.200 ./deb/libpython3-dev_3.12.3-0ubuntu2.1_amd64.deb
+#15 5.201 ./deb/python3-pkg-resources_68.1.2-2ubuntu1.2_all.deb
+#15 5.205 ./deb/libkmod2_31+20240202-2ubuntu7.2_amd64.deb
+#15 5.206 ./deb/lock
+#15 5.206 ./deb/libpython3.12-stdlib_3.12.3-1ubuntu0.16_amd64.deb
+#15 5.258 ./deb/openssl_3.0.13-0ubuntu3.15_amd64.deb
+#15 5.284 ./deb/networkd-dispatcher_2.2.4-1_all.deb
+#15 5.284 ./deb/ucf_3.0043+nmu1_all.deb
+#15 5.285 ./deb/net-tools_2.10-0.1ubuntu4.4_amd64.deb
+#15 5.291 ./deb/python3-gi_3.48.2-1_amd64.deb
+#15 5.297 ./deb/libestr0_0.1.11-1build1_amd64.deb
+#15 5.297 ./deb/libpython3.12-minimal_3.12.3-1ubuntu0.16_amd64.deb
+#15 5.318 ./deb/logrotate_3.21.0-2build1_amd64.deb
+#15 5.319 ./deb/libdevmapper1.02.1_2%3a1.02.185-3ubuntu3.2_amd64.deb
+#15 5.322 ./deb/libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb
+#15 5.330 ./deb/systemd_255.4-1ubuntu8.17_amd64.deb
+#15 5.418 ./deb/python3-wheel_0.42.0-2_all.deb
+#15 5.419 ./deb/dbus-daemon_1.14.10-4ubuntu4.1_amd64.deb
+#15 5.423 ./deb/python3-pip_24.0+dfsg-1ubuntu1.3_all.deb
+#15 5.455 ./deb/libcryptsetup12_2%3a2.7.0-1ubuntu4.2_amd64.deb
+#15 5.462 ./deb/dbus-system-bus-common_1.14.10-4ubuntu4.1_all.deb
+#15 5.464 ./deb/libmount1_2.39.3-9ubuntu6.6_amd64.deb
+#15 5.468 ./deb/libblkid1_2.39.3-9ubuntu6.6_amd64.deb
+#15 5.471 ./deb/python3-setuptools_68.1.2-2ubuntu1.2_all.deb
+#15 5.481 ./deb/libapparmor1_4.0.1really4.0.1-0ubuntu0.24.04.7_amd64.deb
+#15 5.483 ./deb/libssl3t64_3.0.13-0ubuntu3.15_amd64.deb
+#15 5.531 ./deb/dmsetup_2%3a1.02.185-3ubuntu3.2_amd64.deb
+#15 5.533 ./deb/ca-certificates_20260601~24.04.1_all.deb
+#15 5.536 ./deb/zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb
+#15 5.559 ./deb/libsmartcols1_2.39.3-9ubuntu6.6_amd64.deb
+#15 5.561 ./deb/libpython3.12t64_3.12.3-1ubuntu0.16_amd64.deb
+#15 5.620 ./deb/gir1.2-glib-2.0_2.80.0-6ubuntu3.8_amd64.deb
+#15 5.625 ./deb/rsync_3.2.7-1ubuntu1.5_amd64.deb
+#15 5.635 ./deb/libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb
+#15 5.639 ./deb/supervisor_4.2.5-1ubuntu0.1_all.deb
+#15 5.646 ./deb/bsdutils_1%3a2.39.3-9ubuntu6.6_amd64.deb
+#15 5.649 ./deb/python3-dbus_1.3.2-5build3_amd64.deb
+#15 5.651 ./deb/libglib2.0-data_2.80.0-6ubuntu3.8_all.deb
+#15 5.652 ./deb/python3.12-dev_3.12.3-1ubuntu0.16_amd64.deb
+#15 5.665 ./deb/mount_2.39.3-9ubuntu6.6_amd64.deb
+#15 5.667 ./deb/libglib2.0-0t64_2.80.0-6ubuntu3.8_amd64.deb
+#15 5.706 ./deb/libexpat1-dev_2.6.1-2ubuntu0.4_amd64.deb
+#15 5.710 ./deb/libudev1_255.4-1ubuntu8.17_amd64.deb
+#15 5.714 ./deb/libgirepository-1.0-1_1.80.1-1_amd64.deb
+#15 5.717 ./deb/libssl-dev_3.0.13-0ubuntu3.15_amd64.deb
+#15 5.777 ./deb/partial/
+#15 5.777 ./deb/dbus_1.14.10-4ubuntu4.1_amd64.deb
+#15 5.778 ./deb/dbus-bin_1.14.10-4ubuntu4.1_amd64.deb
+#15 5.779 ./deb/libuuid1_2.39.3-9ubuntu6.6_amd64.deb
+#15 5.780 ./deb/python3.12_3.12.3-1ubuntu0.16_amd64.deb
+#15 5.796 ./deb/python3-dev_3.12.3-0ubuntu2.1_amd64.deb
+#15 5.797 ./deb/libfdisk1_2.39.3-9ubuntu6.6_amd64.deb
+#15 DONE 6.1s
+
+#16 [base 12/12] RUN post_run_cleanup docker-dash-engine
+#16 0.129 ++ get_version_cache_option
+#16 0.129 ++ '[' '!' -z rcache ']'
+#16 0.129 ++ '[' rcache == rcache ']'
+#16 0.129 ++ echo -n rcache
+#16 0.129 ++ echo -n ''
+#16 0.129 ++ return 0
+#16 0.129 + '[' '!' -z rcache ']'
+#16 0.129 + [[ ! docker-dash-engine =~ -slave- ]]
+#16 0.129 + [[ ! docker-dash-engine =~ ^docker-base- ]]
+#16 0.129 + /usr/bin/apt-get purge -y --auto-remove rsync
+#16 0.134 Reading package lists...
+#16 0.766 Building dependency tree...
+#16 0.866 Reading state information...
+#16 1.033 Package 'rsync' is not installed, so not removed
+#16 1.033 0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
+#16 1.034 + apt-get clean -y
+#16 1.060 + apt-get autoclean -y
+#16 1.079 Reading package lists...
+#16 1.710 Building dependency tree...
+#16 1.809 Reading state information...
+#16 1.821 + apt-get autoremove -y --purge
+#16 1.845 Reading package lists...
+#16 1.857 Building dependency tree...
+#16 1.984 Reading state information...
+#16 2.176 0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
+#16 2.177 + rm -f '/var/cache/apt/archives/*.deb' /var/cache/apt/pkgcache.bin /var/cache/apt/srcpkgcache.bin
+#16 2.184 + [[ ! docker-dash-engine =~ -slave- ]]
+#16 2.184 + rm -rf /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-backports_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-backports_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-backports_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-backports_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-updates_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-updates_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-updates_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-updates_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/auxfiles /var/lib/apt/lists/lock /var/lib/apt/lists/partial /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_noble-security_InRelease /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_noble-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_noble-security_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_noble-security_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages.lz4
+#16 2.185 + rm -rf /sonic/target /ssh
+#16 2.194 + rm -rf '/tmp/*'
+#16 2.195 + rm -rf /debs /python-wheels /root/.cache
+#16 2.219 + find /
+#16 2.220 + grep -E __pycache__
+#16 2.220 + xargs rm -rf
+#16 2.405 + rm -rf '/usr/local/share/buildinfo/build-versions/*'
+#16 2.406 + symlink_build_hooks -d
+#16 2.430 + set_reproducible_mirrors -d
+#16 2.430 + local 'expression=s,^#\s*\(.*http://packages.trafficmanager.net/snapshot\),\1,'
+#16 2.430 + local 'expression2=\,^#*deb.*http://packages.trafficmanager.net/snapshot,! s,^#*deb,#&,'
+#16 2.430 + local 'expression3=$a#SET_REPR_MIRRORS'
+#16 2.430 + '[' -d = -d ']'
+#16 2.430 + expression='s,^deb.*http://packages.trafficmanager.net/snapshot,#\0,'
+#16 2.430 + expression2='\,^#*deb.*http://packages.trafficmanager.net/snapshot,! s,^#\s*(#*deb),\1,'
+#16 2.430 + expression3=/#SET_REPR_MIRRORS/d
+#16 2.430 + [[ -d != \-\d ]]
+#16 2.430 + [[ -d == \-\d ]]
+#16 2.430 + '[' -f /etc/apt/sources.list.d/debian.sources.back ']'
+#16 2.431 ++ find /etc/apt/sources.list.d/ -type f
+#16 2.432 + local 'mirrors=/etc/apt/sources.list /etc/apt/sources.list.d/ubuntu.sources'
+#16 2.432 + for mirror in $mirrors
+#16 2.432 + grep -iq http://packages.trafficmanager.net/snapshot /etc/apt/sources.list
+#16 2.433 + continue
+#16 2.433 + for mirror in $mirrors
+#16 2.433 + grep -iq http://packages.trafficmanager.net/snapshot /etc/apt/sources.list.d/ubuntu.sources
+#16 2.434 + continue
+#16 2.434 + rm -f /usr/local/share/buildinfo/versions/01-versions-deb
+#16 2.435 + rm -f /etc/apt/preferences.d/01-versions-deb
+#16 2.436 + find /usr/share/doc -depth '(' -type f -o -type l ')' '!' -name copyright
+#16 2.436 + xargs rm
+#16 2.453 ++ find /usr/share/doc -depth -type d -empty -print -exec rmdir '{}' +
+#16 2.463 + '[' -n '/usr/share/doc/libssl3
+#16 2.463 /usr/share/doc/libp11-kit0/examples
+#16 2.463 /usr/share/doc/util-linux/examples
+#16 2.463 /usr/share/doc/util-linux/releases
+#16 2.463 /usr/share/doc/procps/examples
+#16 2.463 /usr/share/doc/libpam-modules/examples
+#16 2.463 /usr/share/doc/apt/examples
+#16 2.463 /usr/share/doc/sed/examples
+#16 2.463 /usr/share/doc/mawk/examples
+#16 2.463 /usr/share/doc/passwd/examples
+#16 2.463 /usr/share/doc/dpkg/spec
+#16 2.463 /usr/share/doc/mount/examples
+#16 2.463 /usr/share/doc/sgml-base/examples
+#16 2.463 /usr/share/doc/lcov/examples/methods
+#16 2.463 /usr/share/doc/python3/_static
+#16 2.463 /usr/share/doc/python3-pip/man/commands
+#16 2.463 /usr/share/doc/python3-pip/html/cli
+#16 2.463 /usr/share/doc/python3-pip/html/topics
+#16 2.463 /usr/share/doc/python3-pip/html/reference/build-system
+#16 2.463 /usr/share/doc/python3-pip/html/development/architecture
+#16 2.463 /usr/share/doc/ca-certificates/examples/ca-certificates-local/debian/source
+#16 2.463 /usr/share/doc/ca-certificates/examples/ca-certificates-local/local
+#16 2.463 /usr/share/doc/libjson-perl/examples
+#16 2.463 /usr/share/doc/libexpat1-dev/examples
+#16 2.463 /usr/share/doc/libexpat1-dev/expat.html
+#16 2.463 /usr/share/doc/openssl/HOWTO
+#16 2.463 /usr/share/doc/supervisor/examples
+#16 2.463 /usr/share/doc/shared-mime-info/shared-mime-info-spec.html
+#16 2.463 /usr/share/doc/binutils/gas
+#16 2.463 /usr/share/doc/binutils/gprof
+#16 2.463 /usr/share/doc/binutils/bfd
+#16 2.463 /usr/share/doc/binutils/ld
+#16 2.463 /usr/share/doc/gcc-13-base/gcc
+#16 2.463 /usr/share/doc/gcc-13-base/C++
+#16 2.463 /usr/share/doc/gcc-13-base/sanitizer
+#16 2.463 /usr/share/doc/gcc-13-base/gomp
+#16 2.463 /usr/share/doc/gcc-13-base/itm
+#16 2.463 /usr/share/doc/gcc-13-base/quadmath
+#16 2.463 /usr/share/doc/tcpdump/examples
+#16 2.463 /usr/share/doc/adduser/examples/adduser.local.conf.examples/skel
+#16 2.463 /usr/share/doc/adduser/examples/adduser.local.conf.examples/skel.other
+#16 2.463 /usr/share/doc/ucf/examples/ucf_helper_functions/tests
+#16 2.463 /usr/share/doc/libjansson4/examples
+#16 2.463 /usr/share/doc/libboost1.83-dev/examples
+#16 2.463 /usr/share/doc/cron/examples
+#16 2.463 /usr/share/doc/libboost-date-time1.83-dev/data
+#16 2.463 /usr/share/doc/libreadline8t64/examples
+#16 2.463 /usr/share/doc/libparams-validationcompiler-perl/examples
+#16 2.463 /usr/share/doc/xml-core/examples
+#16 2.463 /usr/share/doc/liberror-perl/examples/next-in-loop
+#16 2.463 /usr/share/doc/rsyslog/examples/rsyslog.d
+#16 2.463 /usr/share/doc/rsyslog/examples/tmpfiles.d
+#16 2.463 /usr/share/doc/libvariable-magic-perl/examples
+#16 2.463 /usr/share/doc/zlib1g-dev/examples
+#16 2.463 /usr/share/doc/git/RelNotes
+#16 2.463 /usr/share/doc/git/contrib/remote-helpers
+#16 2.463 /usr/share/doc/git/contrib/contacts
+#16 2.463 /usr/share/doc/git/contrib/git-shell-commands
+#16 2.463 /usr/share/doc/git/contrib/vscode
+#16 2.463 /usr/share/doc/git/contrib/buildsystems/Generators
+#16 2.463 /usr/share/doc/git/contrib/persistent-https
+#16 2.463 /usr/share/doc/git/contrib/coccinelle/tests
+#16 2.463 /usr/share/doc/git/contrib/examples
+#16 2.463 /usr/share/doc/git/contrib/subtree/t
+#16 2.463 /usr/share/doc/git/contrib/workdir
+#16 2.463 /usr/share/doc/git/contrib/update-unicode
+#16 2.463 /usr/share/doc/git/contrib/thunderbird-patch-inline
+#16 2.463 /usr/share/doc/git/contrib/hg-to-git
+#16 2.463 /usr/share/doc/git/contrib/diff-highlight/t
+#16 2.463 /usr/share/doc/git/contrib/stats
+#16 2.463 /usr/share/doc/git/contrib/git-jump
+#16 2.463 /usr/share/doc/git/contrib/long-running-filter
+#16 2.463 /usr/share/doc/git/contrib/fast-import
+#16 2.463 /usr/share/doc/git/contrib/credential/wincred
+#16 2.463 /usr/share/doc/git/contrib/credential/libsecret
+#16 2.463 /usr/share/doc/git/contrib/credential/netrc
+#16 2.463 /usr/share/doc/git/contrib/credential/osxkeychain
+#16 2.463 /usr/share/doc/libcapture-tiny-perl/examples
+#16 2.463 /usr/share/doc/libxstring-perl/examples' ']'
+#16 2.463 + :
+#16 2.464 ++ find /usr/share/doc -depth -type d -empty -print -exec rmdir '{}' +
+#16 2.472 + '[' -n '/usr/share/doc/lcov/examples
+#16 2.472 /usr/share/doc/python3-pip/man
+#16 2.472 /usr/share/doc/python3-pip/html/reference
+#16 2.472 /usr/share/doc/python3-pip/html/development
+#16 2.472 /usr/share/doc/adduser/examples/adduser.local.conf.examples
+#16 2.472 /usr/share/doc/ucf/examples/ucf_helper_functions
+#16 2.472 /usr/share/doc/liberror-perl/examples
+#16 2.472 /usr/share/doc/rsyslog/examples
+#16 2.472 /usr/share/doc/git/contrib/buildsystems
+#16 2.472 /usr/share/doc/git/contrib/coccinelle
+#16 2.472 /usr/share/doc/git/contrib/subtree
+#16 2.472 /usr/share/doc/git/contrib/diff-highlight
+#16 2.472 /usr/share/doc/git/contrib/credential' ']'
+#16 2.472 + :
+#16 2.472 ++ find /usr/share/doc -depth -type d -empty -print -exec rmdir '{}' +
+#16 2.480 + '[' -n '/usr/share/doc/python3-pip/html
+#16 2.480 /usr/share/doc/adduser/examples
+#16 2.480 /usr/share/doc/ucf/examples
+#16 2.480 /usr/share/doc/git/contrib' ']'
+#16 2.480 + :
+#16 2.480 ++ find /usr/share/doc -depth -type d -empty -print -exec rmdir '{}' +
+#16 2.486 + '[' -n '' ']'
+#16 2.486 + rm -rf /usr/share/man/cs /usr/share/man/da /usr/share/man/de /usr/share/man/es /usr/share/man/fr /usr/share/man/hu /usr/share/man/id /usr/share/man/it /usr/share/man/ja /usr/share/man/ko /usr/share/man/man1 /usr/share/man/man5 /usr/share/man/man7 /usr/share/man/man8 /usr/share/man/nl /usr/share/man/pl /usr/share/man/pt /usr/share/man/pt_BR /usr/share/man/ru /usr/share/man/sl /usr/share/man/sv /usr/share/man/tr /usr/share/man/uk /usr/share/man/zh_CN /usr/share/man/zh_TW /usr/share/info/coreutils.info.gz /usr/share/info/diffutils.info.gz /usr/share/info/dir /usr/share/info/find-maint.info.gz /usr/share/info/find.info-1.gz /usr/share/info/find.info-2.gz /usr/share/info/find.info.gz /usr/share/info/grep.info.gz /usr/share/info/gzip.info.gz /usr/share/info/rluserman.info.gz /usr/share/info/sed.info.gz /usr/share/lintian/overrides /usr/share/lintian/profiles '/usr/share/linda/*' '/var/cache/man/*' /usr/share/locale/af /usr/share/locale/ar /usr/share/locale/ast /usr/share/locale/be /usr/share/locale/bg /usr/share/locale/bs /usr/share/locale/ca /usr/share/locale/cs /usr/share/locale/cy /usr/share/locale/da /usr/share/locale/de /usr/share/locale/dz /usr/share/locale/el /usr/share/locale/eo /usr/share/locale/es /usr/share/locale/et /usr/share/locale/eu /usr/share/locale/fi /usr/share/locale/fr /usr/share/locale/ga /usr/share/locale/gl /usr/share/locale/hr /usr/share/locale/hu /usr/share/locale/ia /usr/share/locale/id /usr/share/locale/it /usr/share/locale/ja /usr/share/locale/ka /usr/share/locale/kk /usr/share/locale/km /usr/share/locale/ko /usr/share/locale/ku /usr/share/locale/lg /usr/share/locale/lt /usr/share/locale/mr /usr/share/locale/ms /usr/share/locale/nb /usr/share/locale/ne /usr/share/locale/nl /usr/share/locale/nn /usr/share/locale/oc /usr/share/locale/pa /usr/share/locale/pl /usr/share/locale/pt /usr/share/locale/pt_BR /usr/share/locale/ro /usr/share/locale/ru /usr/share/locale/sk /usr/share/locale/sl /usr/share/locale/sr /usr/share/locale/sv /usr/share/locale/ta /usr/share/locale/th /usr/share/locale/tl /usr/share/locale/tr /usr/share/locale/uk /usr/share/locale/vi /usr/share/locale/zh_CN /usr/share/locale/zh_TW
+#16 2.498 + [[ ! docker-dash-engine =~ -slave- ]]
+#16 2.498 + rm -rf '/usr/share/groff/*'
+#16 DONE 2.5s
+
+#17 [stage-1 1/1] COPY --from=base / /
+#17 DONE 6.1s
+
+#18 exporting to image
+#18 exporting layers
+#18 exporting layers 4.8s done
+#18 writing image sha256:2d17942e761f79b7772b9dd0a001b5c87e6b665f38725aa2a0c4f0a35989f29e done
+#18 naming to docker.io/library/docker-dash-engine-sonic:latest done
+#18 DONE 4.8s
+6f40c03a9f408af73e4c19f9c4559217d867f893c88400c1acaec139690d0913
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.cleanup
+#1 transferring dockerfile: 315B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/docker-dash-engine-sonic:latest
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 FROM docker.io/library/docker-dash-engine-sonic:latest
+#4 DONE 0.0s
+
+#5 [output 1/1] COPY --from=docker-dash-engine-sonic:latest /cache.tgz cache.tgz
+#5 DONE 0.3s
+
+#6 exporting to client directory
+#6 copying files 48.37MB 0.1s
+#6 copying files 166.89MB 0.3s done
+#6 DONE 0.3s
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.cleanup
+#1 transferring dockerfile: 315B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/docker-dash-engine-sonic:latest
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [final 1/2] FROM docker.io/library/docker-dash-engine-sonic:latest
+#4 CACHED
+
+#5 [final 2/2] RUN rm /cache.tgz
+#5 DONE 0.3s
+
+#6 exporting to image
+#6 exporting layers done
+#6 writing image sha256:b2af580f2fb299d6aa935b2034e2c74a2f577925cda33aabfea5ea5dd215ae66 done
+#6 naming to docker.io/library/docker-dash-engine-sonic:latest done
+#6 DONE 0.0s
+Error response from daemon: conflict: unable to remove repository reference "tmp-docker-dash-engine-sonic:latest" (must force) - container 6f40c03a9f40 is using its referenced image 2d17942e761f
+sync: error opening 'platform/vs/docker-dash-engine/vcache/cache.base64': No such file or directory
+cat: 'files/build/versions/dockers/docker-dash-engine/versions-*-trixie-amd64': No such file or directory
+docker-dash-engine-sonic-latest
+Attempting docker image lock for docker-dash-engine save
+Obtained docker image lock for docker-dash-engine save
+Tagging docker image docker-dash-engine-sonic:latest as docker-dash-engine:latest
+Saving docker image docker-dash-engine:latest
+Released docker image lock for docker-dash-engine save
+Removing docker image docker-dash-engine-sonic:latest
+Untagged: docker-dash-engine-sonic:latest
+Build end time: Mon Sep 7 03:22:18 UTC 2026
+Elapsed time: 0h 1m 30s

@@ -1,0 +1,555 @@
+Entering 'platform/alpinevs'
+Entering 'platform/alpinevs/src/libsai-grpc/lemming'
+Entering 'platform/aspeed/sonic-platform-modules-arista'
+Entering 'platform/barefoot/sonic-platform-modules-arista'
+Entering 'platform/broadcom/saibcm-modules'
+Entering 'platform/broadcom/saibcm-modules-dnx'
+Entering 'platform/broadcom/sonic-platform-modules-arista'
+Entering 'platform/broadcom/sonic-platform-modules-nokia'
+Entering 'platform/broadcom/sonic-platform-modules-nokia/mackinac/fmt'
+Entering 'platform/marvell-prestera/mrvl-prestera'
+Entering 'platform/marvell-prestera/sonic-platform-marvell'
+Entering 'platform/marvell-teralynx/mrvl-teralynx'
+Entering 'platform/marvell-teralynx/sonic-platform-marvell-teralynx'
+Entering 'platform/mellanox/hw-management/hw-mgmt'
+Entering 'platform/p4/SAI-P4-BM'
+Entering 'platform/p4/SAI-P4-BM/p4-switch/behavioral-model'
+Entering 'platform/p4/p4-hlir/p4-hlir'
+Entering 'platform/p4/p4-hlir/p4-hlir-v1.1'
+Entering 'platform/p4/p4c-bm/p4c-bm'
+Entering 'platform/vpp'
+Entering 'sonic_rules'
+Entering 'src/dhcpmon'
+Entering 'src/dhcprelay'
+Would remove sonic-dhcp4relay_1.0.0-0_amd64.buildinfo
+Would remove sonic-dhcp4relay_1.0.0-0_amd64.changes
+Would remove sonic-dhcp6relay_1.0.0-0_amd64.buildinfo
+Would remove sonic-dhcp6relay_1.0.0-0_amd64.changes
+Entering 'src/dhcprelay/gmock_global'
+Entering 'src/linkmgrd'
+Would remove src/link_prober/LinkProberBase.d
+Would remove src/link_prober/LinkProberHw.d
+Would remove src/link_prober/LinkProberSw.d
+Entering 'src/ptf'
+Entering 'src/ptf-py3'
+Entering 'src/redis-dump-load'
+Would remove build/
+Would remove dist/
+Would remove redis_dump_load.egg-info/
+Entering 'src/scapy'
+Would remove build/
+Would remove dist/
+Would remove scapy.egg-info/
+Would remove scapy/__pycache__/
+Entering 'src/sonic-bmp'
+Would remove deb_package/debPackageConfig.cmake
+Would remove deb_package/debPackageSourceConfig.cmake
+Entering 'src/sonic-dash-api'
+Would remove misc/pypkg/dash_api/_utils.so
+Would remove misc/pypkg/dash_api/acl_group_pb2.pyi
+Would remove misc/pypkg/dash_api/acl_in_pb2.pyi
+Would remove misc/pypkg/dash_api/acl_out_pb2.pyi
+Would remove misc/pypkg/dash_api/acl_rule_pb2.pyi
+Would remove misc/pypkg/dash_api/appliance_pb2.pyi
+Would remove misc/pypkg/dash_api/eni_pb2.pyi
+Would remove misc/pypkg/dash_api/eni_route_pb2.pyi
+Would remove misc/pypkg/dash_api/ha_scope_config_pb2.pyi
+Would remove misc/pypkg/dash_api/ha_scope_pb2.pyi
+Would remove misc/pypkg/dash_api/ha_scope_state_pb2.pyi
+Would remove misc/pypkg/dash_api/ha_set_config_pb2.pyi
+Would remove misc/pypkg/dash_api/ha_set_pb2.pyi
+Would remove misc/pypkg/dash_api/ha_set_state_pb2.pyi
+Would remove misc/pypkg/dash_api/meter_pb2.pyi
+Would remove misc/pypkg/dash_api/meter_policy_pb2.pyi
+Would remove misc/pypkg/dash_api/meter_rule_pb2.pyi
+Would remove misc/pypkg/dash_api/outbound_port_map_pb2.pyi
+Would remove misc/pypkg/dash_api/outbound_port_map_range_pb2.pyi
+Would remove misc/pypkg/dash_api/pa_validation_pb2.pyi
+Would remove misc/pypkg/dash_api/prefix_tag_pb2.pyi
+Would remove misc/pypkg/dash_api/qos_pb2.pyi
+Would remove misc/pypkg/dash_api/route_group_pb2.pyi
+Would remove misc/pypkg/dash_api/route_pb2.pyi
+Would remove misc/pypkg/dash_api/route_rule_pb2.pyi
+Would remove misc/pypkg/dash_api/route_type_pb2.pyi
+Would remove misc/pypkg/dash_api/routing_appliance_pb2.pyi
+Would remove misc/pypkg/dash_api/tunnel_pb2.pyi
+Would remove misc/pypkg/dash_api/types_pb2.pyi
+Would remove misc/pypkg/dash_api/utils.py
+Would remove misc/pypkg/dash_api/vnet_mapping_pb2.pyi
+Would remove misc/pypkg/dash_api/vnet_pb2.pyi
+Would remove misc/tests/test
+Entering 'src/sonic-dash-ha'
+Would remove target/
+Entering 'src/sonic-dash-ha/crates/sonic-dash-api-proto/sonic-dash-api'
+Entering 'src/sonic-dbsyncd'
+Would remove .coverage
+Would remove .pytest_cache/
+Would remove build/
+Would remove coverage.xml
+Would remove dist/
+Would remove htmlcov/
+Would remove sonic_d.egg-info/
+Would remove src/lldp_syncd/__pycache__/
+Would remove src/sonic_syncd/__pycache__/
+Would remove tests/__pycache__/
+Would remove tests/mock_tables/__pycache__/
+Entering 'src/sonic-frr/frr'
+Would remove Makefile.in
+Would remove aclocal.m4
+Would remove autom4te.cache/
+Would remove build/
+Would remove config.h.in
+Would remove configure
+Would remove debian/.debhelper/
+Would remove debian/autoreconf.after
+Would remove debian/autoreconf.before
+Would remove debian/debhelper-build-stamp
+Would remove debian/files
+Would remove debian/frr-doc.debhelper.log
+Would remove debian/frr-doc.substvars
+Would remove debian/frr-doc/
+Would remove debian/frr-pythontools.debhelper.log
+Would remove debian/frr-pythontools.substvars
+Would remove debian/frr-pythontools/
+Would remove debian/frr-snmp.debhelper.log
+Would remove debian/frr-snmp.substvars
+Would remove debian/frr-snmp/
+Would remove debian/frr-test-tools.debhelper.log
+Would remove debian/frr-test-tools.substvars
+Would remove debian/frr-test-tools/
+Would remove debian/frr.debhelper.log
+Would remove debian/frr.init
+Would remove debian/frr.postinst.debhelper
+Would remove debian/frr.postrm.debhelper
+Would remove debian/frr.service
+Would remove debian/frr.substvars
+Would remove debian/frr/
+Would remove debian/frr@.service
+Would remove debian/tmp/
+Would remove m4/ac/
+Would remove m4/libtool.m4
+Would remove m4/ltoptions.m4
+Would remove m4/ltsugar.m4
+Would remove m4/ltversion.m4
+Would remove m4/lt~obsolete.m4
+Would remove python/__pycache__/
+Would remove python/clippy/__pycache__/
+Entering 'src/sonic-genl-packet'
+Entering 'src/sonic-gnmi'
+Would remove swsscommon/swsscommon.go
+Would remove swsscommon/swsscommon.i
+Would remove swsscommon/swsscommon_wrap.cxx
+Would remove swsscommon/swsscommon_wrap.h
+Entering 'src/sonic-host-services'
+Would remove .coverage
+Would remove .pytest_cache/
+Would remove __pycache__/
+Would remove build/
+Would remove coverage.xml
+Would remove host_modules/__pycache__/
+Would remove htmlcov/
+Would remove scripts/__pycache__/
+Would remove sonic_host_services.egg-info/
+Would remove test-results.xml
+Would remove tests/__pycache__/
+Would remove tests/caclmgrd/__pycache__/
+Would remove tests/common/__pycache__/
+Would remove tests/console_monitor/__pycache__/
+Would remove tests/featured/__pycache__/
+Would remove tests/host_modules/__pycache__/
+Would remove tests/hostcfgd/__pycache__/
+Would remove tests/hostcfgd/output/LDAP/
+Would remove tests/hostcfgd/output/LOCAL/
+Would remove tests/hostcfgd/output/PASSWORD_HARDENING_default_values/
+Would remove tests/hostcfgd/output/PASSWORD_HARDENING_enable_digits_class/
+Would remove tests/hostcfgd/output/PASSWORD_HARDENING_enable_feature/
+Would remove tests/hostcfgd/output/RADIUS/
+Would remove tests/hostcfgd/output/SSH_SERVER_default_values/
+Would remove tests/hostcfgd/output/SSH_SERVER_modify_all/
+Would remove tests/hostcfgd/output/SSH_SERVER_modify_authentication_retries/
+Would remove tests/hostcfgd/output/SSH_SERVER_modify_ciphers/
+Would remove tests/hostcfgd/output/SSH_SERVER_modify_kex_algorithms/
+Would remove tests/hostcfgd/output/SSH_SERVER_modify_login_timeout/
+Would remove tests/hostcfgd/output/SSH_SERVER_modify_macs/
+Would remove tests/hostcfgd/output/SSH_SERVER_modify_password_authentication/
+Would remove tests/hostcfgd/output/SSH_SERVER_modify_permit_root_login/
+Would remove tests/hostcfgd/output/SSH_SERVER_modify_ports/
+Would remove tests/hostcfgd/output/TACACS_config_db_disable_accounting/
+Would remove tests/hostcfgd/output/TACACS_config_db_local/
+Would remove tests/hostcfgd/output/TACACS_config_db_local_and_tacacs/
+Would remove tests/hostcfgd/output/TACACS_config_db_tacacs/
+Would remove utils/__pycache__/
+Entering 'src/sonic-linux-kernel'
+Would remove linux-6.12.41/
+Would remove linux-image-6.12.41+deb13-sonic-amd64-dbg_6.12.41-1_amd64.deb
+Would remove linux-image-amd64-signed-template_6.12.41-1_amd64.deb
+Would remove linux-image-sonic-amd64-dbg_6.12.41-1_amd64.deb
+Would remove linux-kbuild-6.12.41+deb13-dbgsym_6.12.41-1_amd64.deb
+Would remove linux-libc-dev_6.12.41-1_all.deb
+Would remove linux-support-6.12.41+deb13_6.12.41-1_all.deb
+Would remove linux_6.12.41-1.debian.tar.xz
+Would remove linux_6.12.41-1.dsc
+Would remove linux_6.12.41.orig.tar.xz
+Entering 'src/sonic-mgmt-common'
+Would remove build/
+Would remove models/yang/allyangs.tree
+Would remove models/yang/allyangs_tree.html
+Would remove models/yang/sonic_allyangs.tree
+Would remove models/yang/sonic_allyangs_tree.html
+Would remove translib/ocbinds/ocbinds.go
+Entering 'src/sonic-mgmt-framework'
+Would remove tools/swagger_codegen/openapi-generator-cli-4.2.3.jar
+Entering 'src/sonic-p4rt/sonic-pins'
+Entering 'src/sonic-platform-common'
+Would remove .coverage
+Would remove .pytest_cache/
+Would remove __pycache__/
+Would remove build/
+Would remove coverage.xml
+Would remove htmlcov/
+Would remove sonic_platform_base/__pycache__/
+Would remove sonic_platform_base/sonic_eeprom/__pycache__/
+Would remove sonic_platform_base/sonic_pcie/__pycache__/
+Would remove sonic_platform_base/sonic_sfp/__pycache__/
+Would remove sonic_platform_base/sonic_storage/__pycache__/
+Would remove sonic_platform_base/sonic_thermal_control/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/api/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/api/amphenol/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/api/bailly/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/api/broadcom/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/api/credo/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/api/hisense/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/api/innolight/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/api/public/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/cdb/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/codes/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/codes/amphenol/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/codes/bailly/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/codes/credo/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/codes/public/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/cpo/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/fields/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/fields/bailly/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/fields/public/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/mem_maps/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/mem_maps/amphenol/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/mem_maps/bailly/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/mem_maps/broadcom/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/mem_maps/credo/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/mem_maps/public/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/mem_maps/public/cmis/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/mem_maps/public/cmis/elsfp/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/mem_maps/public/cmis/elsfp/pages/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/mem_maps/public/cmis/pages/__pycache__/
+Would remove sonic_platform_base/sonic_xcvr/utils/__pycache__/
+Would remove sonic_platform_common.egg-info/
+Would remove test-results.xml
+Would remove tests/__pycache__/
+Would remove tests/mocked_libs/__pycache__/
+Would remove tests/sonic_xcvr/__pycache__/
+Entering 'src/sonic-platform-daemons'
+Would remove sonic-bmcctld/.coverage
+Would remove sonic-bmcctld/.pytest_cache/
+Would remove sonic-bmcctld/build/
+Would remove sonic-bmcctld/coverage.xml
+Would remove sonic-bmcctld/dist/
+Would remove sonic-bmcctld/htmlcov/
+Would remove sonic-bmcctld/scripts/__pycache__/
+Would remove sonic-bmcctld/sonic_bmcctld.egg-info/
+Would remove sonic-bmcctld/test-results.xml
+Would remove sonic-bmcctld/tests/__pycache__/
+Would remove sonic-bmcctld/tests/mocked_libs/sonic_platform/__pycache__/
+Would remove sonic-bmcctld/tests/mocked_libs/sonic_py_common/__pycache__/
+Would remove sonic-bmcctld/tests/mocked_libs/swsscommon/__pycache__/
+Would remove sonic-chassisd/build/
+Would remove sonic-chassisd/dist/
+Would remove sonic-chassisd/sonic_chassisd.egg-info/
+Would remove sonic-ledd/.coverage
+Would remove sonic-ledd/.pytest_cache/
+Would remove sonic-ledd/build/
+Would remove sonic-ledd/coverage.xml
+Would remove sonic-ledd/dist/
+Would remove sonic-ledd/htmlcov/
+Would remove sonic-ledd/scripts/__pycache__/
+Would remove sonic-ledd/sonic_ledd.egg-info/
+Would remove sonic-ledd/test-results.xml
+Would remove sonic-ledd/tests/__pycache__/
+Would remove sonic-pcied/.coverage
+Would remove sonic-pcied/.pytest_cache/
+Would remove sonic-pcied/build/
+Would remove sonic-pcied/coverage.xml
+Would remove sonic-pcied/dist/
+Would remove sonic-pcied/htmlcov/
+Would remove sonic-pcied/scripts/__pycache__/
+Would remove sonic-pcied/sonic_pcied.egg-info/
+Would remove sonic-pcied/test-results.xml
+Would remove sonic-pcied/tests/__pycache__/
+Would remove sonic-pcied/tests/mocked_libs/sonic_platform/__pycache__/
+Would remove sonic-pcied/tests/mocked_libs/sonic_platform_base/__pycache__/
+Would remove sonic-pcied/tests/mocked_libs/sonic_platform_base/sonic_pcie/__pycache__/
+Would remove sonic-pcied/tests/mocked_libs/swsscommon/__pycache__/
+Would remove sonic-psud/.coverage
+Would remove sonic-psud/.pytest_cache/
+Would remove sonic-psud/build/
+Would remove sonic-psud/coverage.xml
+Would remove sonic-psud/dist/
+Would remove sonic-psud/htmlcov/
+Would remove sonic-psud/scripts/__pycache__/
+Would remove sonic-psud/sonic_psud.egg-info/
+Would remove sonic-psud/test-results.xml
+Would remove sonic-psud/tests/__pycache__/
+Would remove sonic-psud/tests/mocked_libs/sonic_platform/__pycache__/
+Would remove sonic-psud/tests/mocked_libs/swsscommon/__pycache__/
+Would remove sonic-sensormond/.coverage
+Would remove sonic-sensormond/.pytest_cache/
+Would remove sonic-sensormond/build/
+Would remove sonic-sensormond/coverage.xml
+Would remove sonic-sensormond/dist/
+Would remove sonic-sensormond/htmlcov/
+Would remove sonic-sensormond/scripts/__pycache__/
+Would remove sonic-sensormond/sonic_sensormond.egg-info/
+Would remove sonic-sensormond/test-results.xml
+Would remove sonic-sensormond/tests/__pycache__/
+Would remove sonic-sensormond/tests/mocked_libs/sonic_platform/__pycache__/
+Would remove sonic-stormond/.coverage
+Would remove sonic-stormond/.pytest_cache/
+Would remove sonic-stormond/build/
+Would remove sonic-stormond/coverage.xml
+Would remove sonic-stormond/dist/
+Would remove sonic-stormond/htmlcov/
+Would remove sonic-stormond/scripts/__pycache__/
+Would remove sonic-stormond/sonic_stormond.egg-info/
+Would remove sonic-stormond/test-results.xml
+Would remove sonic-stormond/tests/__pycache__/
+Would remove sonic-stormond/tests/mocked_libs/sonic_platform_base/__pycache__/
+Would remove sonic-stormond/tests/mocked_libs/sonic_platform_base/sonic_storage/__pycache__/
+Would remove sonic-stormond/tests/mocked_libs/swsscommon/__pycache__/
+Would remove sonic-syseepromd/.coverage
+Would remove sonic-syseepromd/.pytest_cache/
+Would remove sonic-syseepromd/build/
+Would remove sonic-syseepromd/coverage.xml
+Would remove sonic-syseepromd/dist/
+Would remove sonic-syseepromd/htmlcov/
+Would remove sonic-syseepromd/scripts/__pycache__/
+Would remove sonic-syseepromd/sonic_syseepromd.egg-info/
+Would remove sonic-syseepromd/test-results.xml
+Would remove sonic-syseepromd/tests/__pycache__/
+Would remove sonic-syseepromd/tests/mocked_libs/sonic_platform/__pycache__/
+Would remove sonic-syseepromd/tests/mocked_libs/swsscommon/__pycache__/
+Would remove sonic-thermalctld/.coverage
+Would remove sonic-thermalctld/.pytest_cache/
+Would remove sonic-thermalctld/build/
+Would remove sonic-thermalctld/coverage.xml
+Would remove sonic-thermalctld/dist/
+Would remove sonic-thermalctld/htmlcov/
+Would remove sonic-thermalctld/scripts/__pycache__/
+Would remove sonic-thermalctld/sonic_thermalctld.egg-info/
+Would remove sonic-thermalctld/test-results.xml
+Would remove sonic-thermalctld/tests/__pycache__/
+Would remove sonic-thermalctld/tests/mocked_libs/sonic_platform/__pycache__/
+Would remove sonic-thermalctld/tests/mocked_libs/swsscommon/__pycache__/
+Would remove sonic-xcvrd/.coverage
+Would remove sonic-xcvrd/.pytest_cache/
+Would remove sonic-xcvrd/build/
+Would remove sonic-xcvrd/coverage.xml
+Would remove sonic-xcvrd/dist/
+Would remove sonic-xcvrd/htmlcov/
+Would remove sonic-xcvrd/sonic_xcvrd.egg-info/
+Would remove sonic-xcvrd/test-results.xml
+Would remove sonic-xcvrd/tests/__pycache__/
+Would remove sonic-xcvrd/xcvrd/__pycache__/
+Would remove sonic-xcvrd/xcvrd/cmis/__pycache__/
+Would remove sonic-xcvrd/xcvrd/dom/__pycache__/
+Would remove sonic-xcvrd/xcvrd/dom/utilities/__pycache__/
+Would remove sonic-xcvrd/xcvrd/dom/utilities/db/__pycache__/
+Would remove sonic-xcvrd/xcvrd/dom/utilities/dom_sensor/__pycache__/
+Would remove sonic-xcvrd/xcvrd/dom/utilities/status/__pycache__/
+Would remove sonic-xcvrd/xcvrd/dom/utilities/vdm/__pycache__/
+Would remove sonic-xcvrd/xcvrd/xcvrd_utilities/__pycache__/
+Would remove sonic-ycabled/.coverage
+Would remove sonic-ycabled/.pytest_cache/
+Would remove sonic-ycabled/build/
+Would remove sonic-ycabled/coverage.xml
+Would remove sonic-ycabled/dist/
+Would remove sonic-ycabled/htmlcov/
+Would remove sonic-ycabled/proto_out/__pycache__/
+Would remove sonic-ycabled/sonic_ycabled.egg-info/
+Would remove sonic-ycabled/test-results.xml
+Would remove sonic-ycabled/tests/__pycache__/
+Would remove sonic-ycabled/ycable/__pycache__/
+Would remove sonic-ycabled/ycable/ycable_utilities/__pycache__/
+Entering 'src/sonic-platform-pde'
+Entering 'src/sonic-py-swsssdk'
+Would remove .coverage
+Would remove .pytest_cache/
+Would remove build/
+Would remove coverage.xml
+Would remove dist/
+Would remove htmlcov/
+Would remove src/swsssdk/__pycache__/
+Would remove swsssdk.egg-info/
+Would remove test/__pycache__/
+Entering 'src/sonic-redfish'
+Entering 'src/sonic-restapi'
+Entering 'src/sonic-sairedis'
+Entering 'src/sonic-sairedis/SAI'
+Entering 'src/sonic-sairedis/SAI/test/ptf'
+Entering 'src/sonic-sairedis/SAI/test/saithrift/ctypesgen'
+Entering 'src/sonic-snmpagent'
+Would remove .coverage
+Would remove .pytest_cache/
+Would remove __pycache__/
+Would remove asyncsnmp.egg-info/
+Would remove build/
+Would remove coverage.xml
+Would remove dist/
+Would remove htmlcov/
+Would remove src/ax_interface/__pycache__/
+Would remove src/sonic_ax_impl/__pycache__/
+Would remove src/sonic_ax_impl/mibs/__pycache__/
+Would remove src/sonic_ax_impl/mibs/ietf/__pycache__/
+Would remove src/sonic_ax_impl/mibs/vendor/__pycache__/
+Would remove src/sonic_ax_impl/mibs/vendor/cisco/__pycache__/
+Would remove src/sonic_ax_impl/mibs/vendor/dell/__pycache__/
+Would remove src/sonic_ax_impl/utils/__pycache__/
+Would remove tests/__pycache__/
+Would remove tests/mock_tables/__pycache__/
+Would remove tests/namespace/__pycache__/
+Entering 'src/sonic-stp'
+Entering 'src/sonic-swss'
+Entering 'src/sonic-swss-common'
+Would remove Makefile.in
+Would remove aclocal.m4
+Would remove common/.deps/
+Would remove common/c-api/.deps/
+Would remove common/cfg_schema.h
+Would remove config.h.in
+Would remove config/
+Would remove configure
+Would remove m4/libtool.m4
+Would remove m4/ltoptions.m4
+Would remove m4/ltsugar.m4
+Would remove m4/ltversion.m4
+Would remove m4/lt~obsolete.m4
+Would remove pyext/py3/.deps/
+Would remove sonic-db-cli/.deps/
+Would remove tests/.deps/
+Entering 'src/sonic-sysmgr/gnoi'
+Entering 'src/sonic-utilities'
+Would remove .coverage
+Would remove .pytest_cache/
+Would remove __pycache__/
+Would remove acl_loader/__pycache__/
+Would remove build/
+Would remove clear/__pycache__/
+Would remove clear/plugins/__pycache__/
+Would remove clear/plugins/auto/__pycache__/
+Would remove config/__pycache__/
+Would remove config/plugins/__pycache__/
+Would remove config/plugins/auto/__pycache__/
+Would remove consutil/__pycache__/
+Would remove counterpoll/__pycache__/
+Would remove coverage.xml
+Would remove crm/__pycache__/
+Would remove debug/__pycache__/
+Would remove dist/
+Would remove dump/__pycache__/
+Would remove dump/plugins/__pycache__/
+Would remove fdbutil/__pycache__/
+Would remove flow_counter_util/__pycache__/
+Would remove fwutil/__pycache__/
+Would remove generic_config_updater/__pycache__/
+Would remove htmlcov/
+Would remove pcieutil/__pycache__/
+Would remove pddf_thermalutil/__pycache__/
+Would remove pfc/__pycache__/
+Would remove pfcwd/__pycache__/
+Would remove psuutil/__pycache__/
+Would remove rcli/__pycache__/
+Would remove scripts/__pycache__/
+Would remove sfputil/__pycache__/
+Would remove show/__pycache__/
+Would remove show/interfaces/__pycache__/
+Would remove show/plugins/__pycache__/
+Would remove show/plugins/auto/__pycache__/
+Would remove sonic-utilities-data_1.0-1_amd64.buildinfo
+Would remove sonic-utilities-data_1.0-1_amd64.changes
+Would remove sonic_cli_gen/__pycache__/
+Would remove sonic_installer/__pycache__/
+Would remove sonic_installer/bootloader/__pycache__/
+Would remove sonic_package_manager/__pycache__/
+Would remove sonic_package_manager/service_creator/__pycache__/
+Would remove sonic_utilities.egg-info/
+Would remove ssdutil/__pycache__/
+Would remove syslog_util/__pycache__/
+Would remove tests/__pycache__/
+Would remove tests/bfd_input/__pycache__/
+Would remove tests/bgp_commands_input/__pycache__/
+Would remove tests/bgp_input/__pycache__/
+Would remove tests/buffer_input/__pycache__/
+Would remove tests/cli_autogen_input/__pycache__/
+Would remove tests/cli_autogen_input/autogen_test/__pycache__/
+Would remove tests/cli_autogen_input/yang_parser_test/__pycache__/
+Would remove tests/dump_tests/__pycache__/
+Would remove tests/dump_tests/module_tests/__pycache__/
+Would remove tests/ecn_input/__pycache__/
+Would remove tests/fdbshow_input/__pycache__/
+Would remove tests/filter_fdb_input/__pycache__/
+Would remove tests/fine_grained_ecmp_input/__pycache__/
+Would remove tests/generic_config_updater/__pycache__/
+Would remove tests/hash_input/__pycache__/
+Would remove tests/ldap_input/__pycache__/
+Would remove tests/mmuconfig_input/__pycache__/
+Would remove tests/mock_platform_sfputil/__pycache__/
+Would remove tests/mock_tables/__pycache__/
+Would remove tests/mocked_libs/__pycache__/
+Would remove tests/nvgre_tunnel_input/__pycache__/
+Would remove tests/passw_hardening_input/__pycache__/
+Would remove tests/pbh_input/__pycache__/
+Would remove tests/pfc_input/__pycache__/
+Would remove tests/pfcstat_input/__pycache__/
+Would remove tests/pfcwd_input/__pycache__/
+Would remove tests/portstat_input/__pycache__/
+Would remove tests/queuestat_input/__pycache__/
+Would remove tests/sonic_package_manager/__pycache__/
+Would remove tests/switchstat_input/__pycache__/
+Would remove tests/syslog_input/__pycache__/
+Would remove tests/trimming_input/__pycache__/
+Would remove tests/wm_input/__pycache__/
+Would remove undebug/__pycache__/
+Would remove utilities_common/__pycache__/
+Would remove watchdogutil/__pycache__/
+Entering 'src/sonic-ztp'
+Entering 'src/supervisor'
+Entering 'src/wpasupplicant/sonic-wpa-supplicant'
+Would remove build/
+Would remove hostapd/.config
+Would remove hostapd/hostapd
+Would remove hostapd/hostapd_cli
+Would remove wpa_supplicant/.config
+Would remove wpa_supplicant/dbus/fi.w1.wpa_supplicant1.service
+Would remove wpa_supplicant/doc/docbook/eapol_test.8
+Would remove wpa_supplicant/doc/docbook/manpage.links
+Would remove wpa_supplicant/doc/docbook/manpage.refs
+Would remove wpa_supplicant/doc/docbook/wpa_background.8
+Would remove wpa_supplicant/doc/docbook/wpa_cli.8
+Would remove wpa_supplicant/doc/docbook/wpa_gui.8
+Would remove wpa_supplicant/doc/docbook/wpa_passphrase.8
+Would remove wpa_supplicant/doc/docbook/wpa_priv.8
+Would remove wpa_supplicant/doc/docbook/wpa_supplicant.8
+Would remove wpa_supplicant/doc/docbook/wpa_supplicant.conf.5
+Would remove wpa_supplicant/eapol_test
+Would remove wpa_supplicant/systemd/wpa_supplicant-nl80211@.service
+Would remove wpa_supplicant/systemd/wpa_supplicant-wired@.service
+Would remove wpa_supplicant/systemd/wpa_supplicant.service
+Would remove wpa_supplicant/systemd/wpa_supplicant@.service
+Would remove wpa_supplicant/wpa_cli
+Would remove wpa_supplicant/wpa_gui-qt4/.moc/
+Would remove wpa_supplicant/wpa_gui-qt4/.obj/
+Would remove wpa_supplicant/wpa_gui-qt4/.ui/
+Would remove wpa_supplicant/wpa_gui-qt4/Makefile
+Would remove wpa_supplicant/wpa_gui-qt4/qrc_icons.cpp
+Would remove wpa_supplicant/wpa_gui-qt4/wpa_gui
+Would remove wpa_supplicant/wpa_passphrase
+Would remove wpa_supplicant/wpa_supplicant

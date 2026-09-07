@@ -1,0 +1,40 @@
+## master...origin/master
+ M Makefile.work
+ M platform/vs/docker-dash-engine/Dockerfile.j2
+ M sonic-slave-trixie/Dockerfile.j2
+ M src/bash/patches/series
+ M src/libyang3-py3/Makefile
+ ? src/linkmgrd
+ M src/monit/BUILD.bazel
+ M src/p4lang/Makefile
+ M src/radius/pam/Makefile
+ M src/sflow/hsflowd/Makefile
+ M src/sflow/psample/Makefile
+ M src/sflow/sflowtool/Makefile
+ m src/sonic-bmp
+ M src/sonic-build-hooks/scripts/post_run_cleanup
+ M src/sonic-config-engine/tests/test_cfggen.py
+ m src/sonic-dash-ha
+ ? src/sonic-dbsyncd
+ M src/sonic-frr/Makefile
+ M src/sonic-frr/frr
+ m src/sonic-host-services
+ ? src/sonic-linux-kernel
+ m src/sonic-mgmt-common
+ m src/sonic-mgmt-framework
+ m src/sonic-platform-common
+ ? src/sonic-py-swsssdk
+ ? src/sonic-stp
+ M src/sonic-supervisord-utilities-rs/Cargo.lock
+ M src/sonic-supervisord-utilities-rs/debian/rules
+ ? src/sonic-swss-common
+ M src/tacacs/audisp/Makefile
+ M src/tacacs/nss/Makefile
+ M src/tacacs/pam/Makefile
+ ? src/wpasupplicant/sonic-wpa-supplicant
+?? .alinos/
+?? .measure/
+?? src/bash/patches/0002-write-pdf-via-stdout.patch
+?? src/p4lang/p4lang-bmv2.patch/serialize-grpc-tests.patch
+?? src/p4lang/p4lang-bmv2.patch/tolerate-ageing-timer-jitter.patch
+?? src/sonic-eventd/eventdb

@@ -1,0 +1,348 @@
+Computing main repo mapping: 
+Computing main repo mapping: 
+WARNING: For repository 'protobuf', the root module requires module version protobuf@29.0, but got protobuf@31.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+WARNING: For repository 'rules_rust', the root module requires module version rules_rust@0.61.0, but got rules_rust@0.66.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 5 targets (5 packages loaded, 7 targets configured)
+Analyzing: 5 targets (5 packages loaded, 7 targets configured)
+
+INFO: From SONiC make (local) -> p4lang-pi_0.1.1-1_amd64.deb @@p4lang+//:p4lang-pi_0.1.1-1.deb:
+make: Entering directory '/data/sonic/sonic-dzf-time-measure'
+make: 'target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb' is up to date.
+make: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+INFO: From SONiC make (local) -> p4lang-bmv2_1.15.0-9_amd64.deb @@p4lang+//:p4lang-bmv2_1.15.0-9.deb:
+make: Entering directory '/data/sonic/sonic-dzf-time-measure'
+make: 'target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb' is up to date.
+make: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+INFO: From SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+//:p4lang-p4c_1.2.4.2-2.deb:
+make: Entering directory '/data/sonic/sonic-dzf-time-measure'
+make: 'target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb' is up to date.
+make: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+Analyzing: 5 targets (239 packages loaded, 56034 targets configured)
+[8 / 8] no actions running
+INFO: Analyzed 5 targets (239 packages loaded, 108629 targets configured).
+[290 / 2,791] Unpack external/rules_distroless++apt+trixie-security_linux-libc-dev-all_6.12.74-2/usr/include/asm-generic/auxvec.h; 0s linux-sandbox ... (180 actions running)
+INFO: From Compiling src/util.c [for tool]:
+external/sonic-build-infra++_repo_rules2+cpio_src/src/util.c: In function 'prepare_append':
+external/sonic-build-infra++_repo_rules2+cpio_src/src/util.c:653:7: warning: ignoring return value of 'read' declared with attribute 'warn_unused_result' [-Wunused-result]
+  653 |       read (out_file_des, tmp_buf, useful_bytes_in_block);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: From Compiling shared/util.c [for tool]:
+external/sonic-build-infra++_repo_rules2+kmod_src/shared/util.c: In function 'mkdir_parents':
+external/sonic-build-infra++_repo_rules2+kmod_src/shared/util.c:470:21: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  470 |         char *end = strrchr(path, '/');
+      |                     ^~~~~~~
+INFO: From Compiling gnulib/lib/memchr2.c [for tool]:
+external/rules_m4++m4_repository_ext+m4_v1.4.18__cfgD7AAA708/gnulib/lib/memchr2.c: In function 'memchr2':
+external/rules_m4++m4_repository_ext+m4_v1.4.18__cfgD7AAA708/gnulib/lib/memchr2.c:58:12: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   58 |     return memchr (s, c1, n);
+      |            ^~~~~~
+INFO: From Compiling src/tar.c [for tool]:
+external/sonic-build-infra++_repo_rules2+cpio_src/src/tar.c: In function 'write_out_tar_header':
+external/sonic-build-infra++_repo_rules2+cpio_src/src/tar.c:213:7: warning: '__builtin_strncpy' output truncated before terminating nul copying 2 bytes from a string of the same length [-Wstringop-truncation]
+  213 |       strncpy (tar_hdr->version, TVERSION, TVERSLEN);
+      |       ^
+external/sonic-build-infra++_repo_rules2+cpio_src/src/tar.c:147:7: warning: '__builtin___strncpy_chk' specified bound depends on the length of the source argument [-Wstringop-truncation]
+  147 |       strncpy (tar_hdr->name, file_hdr->c_name, name_len);
+      |       ^
+external/sonic-build-infra++_repo_rules2+cpio_src/src/tar.c:144:14: note: length computed here
+  144 |   name_len = strlen (file_hdr->c_name);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: From Compiling gnu/argp-help.c [for tool]:
+external/sonic-build-infra++_repo_rules2+cpio_src/gnu/argp-help.c: In function 'argp_doc':
+external/sonic-build-infra++_repo_rules2+cpio_src/gnu/argp-help.c:1599:18: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1599 |       char *vt = strchr (doc, '\v');
+      |                  ^~~~~~
+INFO: From Compiling src/read.c [for tool]:
+external/sonic-build-infra++_repo_rules2+make_src/src/read.c: In function 'tilde_expand':
+external/sonic-build-infra++_repo_rules2+make_src/src/read.c:3136:23: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3136 |       char *userend = strchr (name + 1, '/');
+      |                       ^~~~~~
+[1,983 / 2,791] Compiling support/regex.c [for tool]; 1s linux-sandbox ... (10 actions, 9 running)
+[2,002 / 2,791] Compiling src/libbpf.c [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/libbpf.c [for tool]:
+external/sonic-build-infra++_repo_rules2+libbpf_src/src/libbpf.c: In function 'resolve_full_path':
+external/sonic-build-infra++_repo_rules2+libbpf_src/src/libbpf.c:11364:35: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+11364 |                         next_path = strchr(s, ':');
+      |                                   ^
+INFO: From Compiling backends/m68k_corenote.c [for tool]:
+In file included from external/sonic-build-infra++_repo_rules2+elfutils_src/backends/m68k_corenote.c:72:
+external/sonic-build-infra++_repo_rules2+elfutils_src/backends/linux-core-note.c:116:1: warning: alignment 2 of 'struct m68k_prstatus' is less than 4 [-Wpacked-not-aligned]
+  116 | ;
+      | ^
+external/sonic-build-infra++_repo_rules2+elfutils_src/backends/linux-core-note.c:110:5: warning: '({anonymous})' offset 70 in 'struct m68k_prstatus' isn't aligned to 4 [-Wpacked-not-aligned]
+  110 |     ;
+      |     ^
+INFO: From Compiling libcpu/riscv_disasm.c [for tool]:
+external/sonic-build-infra++_repo_rules2+elfutils_src/libcpu/riscv_disasm.c: In function 'riscv_disasm':
+external/sonic-build-infra++_repo_rules2+elfutils_src/libcpu/riscv_disasm.c:1259:46: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1259 |                   struct known_csrs *found = bsearch (&key, known,
+      |                                              ^~~~~~~
+INFO: From Compiling backends/m68k_corenote.c [for tool]:
+In file included from external/sonic-build-infra++_repo_rules2+elfutils_src/backends/m68k_corenote.c:72:
+external/sonic-build-infra++_repo_rules2+elfutils_src/backends/linux-core-note.c:116:1: warning: alignment 2 of 'struct m68k_prstatus' is less than 4 [-Wpacked-not-aligned]
+  116 | ;
+      | ^
+external/sonic-build-infra++_repo_rules2+elfutils_src/backends/linux-core-note.c:110:5: warning: '({anonymous})' offset 70 in 'struct m68k_prstatus' isn't aligned to 4 [-Wpacked-not-aligned]
+  110 |     ;
+      |     ^
+INFO: From Compiling libcpu/riscv_disasm.c [for tool]:
+external/sonic-build-infra++_repo_rules2+elfutils_src/libcpu/riscv_disasm.c: In function 'riscv_disasm':
+external/sonic-build-infra++_repo_rules2+elfutils_src/libcpu/riscv_disasm.c:1259:46: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1259 |                   struct known_csrs *found = bsearch (&key, known,
+      |                                              ^~~~~~~
+[2,467 / 2,791] Compiling dwarves_fprintf.c [for tool]; 0s linux-sandbox ... (192 actions, 191 running)
+INFO: From Compiling btf_encoder.c [for tool]:
+external/sonic-build-infra++_repo_rules2+dwarves_src/btf_encoder.c: In function 'btf_encoder__tag_kfunc':
+external/sonic-build-infra++_repo_rules2+dwarves_src/btf_encoder.c:1827:16: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1827 |         target = bsearch(&key, base, cnt, sizeof(key), btf_func_cmp);
+      |                ^
+external/sonic-build-infra++_repo_rules2+dwarves_src/btf_encoder.c: In function 'btf_encoder__add_func_proto':
+external/sonic-build-infra++_repo_rules2+dwarves_src/btf_encoder.c:752:65: warning: 'state' may be used uninitialized [-Wmaybe-uninitialized]
+  752 |                         struct btf_encoder_func_parm *p = &state->parms[param_idx];
+      |                                                            ~~~~~^~~~~~~
+external/sonic-build-infra++_repo_rules2+dwarves_src/btf_encoder.c:705:40: note: 'state' was declared here
+  705 |         struct btf_encoder_func_state *state;
+      |                                        ^~~~~
+INFO: From Compiling libdw/dwarf_getsrclines.c [for tool]:
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c: In function 'read_srclines':
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:332:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  332 |           uint8_t *endp = memchr (dirp, '\0', lineendp - dirp);
+      |                           ^~~~~~
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:408:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  408 |           uint8_t *endp = memchr (linep, '\0', lineendp - linep);
+      |                           ^~~~~~
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:796:33: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  796 |                 uint8_t *endp = memchr (linep, '\0', lineendp - linep);
+      |                                 ^~~~~~
+INFO: From Compiling libdw/dwarf_getsrclines.c [for tool]:
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c: In function 'read_srclines':
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:332:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  332 |           uint8_t *endp = memchr (dirp, '\0', lineendp - dirp);
+      |                           ^~~~~~
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:408:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  408 |           uint8_t *endp = memchr (linep, '\0', lineendp - linep);
+      |                           ^~~~~~
+external/sonic-build-infra++_repo_rules2+elfutils_src/libdw/dwarf_getsrclines.c:796:33: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  796 |                 uint8_t *endp = memchr (linep, '\0', lineendp - linep);
+      |                                 ^~~~~~
+INFO: From Compiling pahole.c [for tool]:
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c: In function 'type_instance__int_value':
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c:2451:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2451 |                 char *sep = strchr(member_name_orig, '.');
+      |                             ^~~~~~
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c: In function 'prototype__new':
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c:2922:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2922 |         char *args_open = strchr(name, '(');
+      |                           ^~~~~~
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c: In function 'type__find_type_enum':
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c:3082:21: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3082 |         char *sep = strchr(type_enum, '+');
+      |                     ^~~~~~
+external/sonic-build-infra++_repo_rules2+dwarves_src/pahole.c:3112:21: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3112 |                 sep = strchr(type_enum, '+');
+      |                     ^
+[2,787 / 2,791] debian_kernel_config @@sonic-linux-kernel+//:kernel_amd64_config (arch=amd64 platform=vs); 1s linux-sandbox
+[2,788 / 2,791] [Prepa] Creating symlink external/sonic-linux-kernel+/kernel_amd64_managed_config/.kernelvariables
+[2,790 / 2,791] Building Linux kernel 6.12.41+deb13-sonic-amd64 (make bzImage + modules); 1s local
+[2,790 / 2,791] Building Linux kernel 6.12.41+deb13-sonic-amd64 (make bzImage + modules); 11s local
+[2,790 / 2,791] Building Linux kernel 6.12.41+deb13-sonic-amd64 (make bzImage + modules); 41s local
+[2,790 / 2,791] Building Linux kernel 6.12.41+deb13-sonic-amd64 (make bzImage + modules); 101s local
+INFO: From Building Linux kernel 6.12.41+deb13-sonic-amd64 (make bzImage + modules):
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/security/integrity/platform_certs/machine_keyring.c:52:20: warning: 'uefi_check_trust_mok_keys' defined but not used [-Wunused-function]
+   52 | static __init bool uefi_check_trust_mok_keys(void)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/device.h:15,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/acpi.h:14,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/i2c.h:13,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/sff_8436_eeprom.c:82:
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/sff_8436_eeprom.c: In function 'sff_8436_eeprom_probe':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/sff_8436_eeprom.c:898:32: warning: format '%zu' expects argument of type 'size_t', but argument 3 has type 'int' [-Wformat=]
+  898 |         dev_info(&client->dev, "%zu byte %s EEPROM, %s\n",
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dev_printk.h:110:30: note: in definition of macro 'dev_printk_index_wrap'
+  110 |                 _p_func(dev, fmt, ##__VA_ARGS__);                       \
+      |                              ^~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dev_printk.h:160:58: note: in expansion of macro 'dev_fmt'
+  160 |         dev_printk_index_wrap(_dev_info, KERN_INFO, dev, dev_fmt(fmt), ##__VA_ARGS__)
+      |                                                          ^~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/sff_8436_eeprom.c:898:9: note: in expansion of macro 'dev_info'
+  898 |         dev_info(&client->dev, "%zu byte %s EEPROM, %s\n",
+      |         ^~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/sff_8436_eeprom.c:898:35: note: format string is defined here
+  898 |         dev_info(&client->dev, "%zu byte %s EEPROM, %s\n",
+      |                                 ~~^
+      |                                   |
+      |                                   long unsigned int
+      |                                 %u
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/optoe.c: In function 'set_max_bank_size':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/drivers/misc/eeprom/optoe.c:1138:9: warning: ignoring return value of 'sysfs_create_bin_file' declared with attribute 'warn_unused_result' [-Wunused-result]
+ 1138 |         sysfs_create_bin_file(&client->dev.kobj, &optoe->bin);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/printk.h:605,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/asm-generic/bug.h:22,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/bug.h:100,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/alternative.h:8,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/barrier.h:5,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/asm-generic/bitops/generic-non-atomic.h:7,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/bitops.h:29,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/kernel.h:23,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/skbuff.h:13,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/if_arp.h:22,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:9:
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c: In function 'mctp_rtm_newaddr':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:246:25: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+  246 |         netdev_dbg(dev, "MCTP: address %u added (total %u addresses)\n",
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  247 |                    addr->s_addr, mdev->num_addrs);
+      |                                  ~~~~~~~~~~~~~~~
+      |                                      |
+      |                                      size_t {aka long unsigned int}
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:224:29: note: in definition of macro '__dynamic_func_call_cls'
+  224 |                 func(&id, ##__VA_ARGS__);                       \
+      |                             ^~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:250:9: note: in expansion of macro '_dynamic_func_call_cls'
+  250 |         _dynamic_func_call_cls(_DPRINTK_CLASS_DFLT, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:277:9: note: in expansion of macro '_dynamic_func_call'
+  277 |         _dynamic_func_call(fmt, __dynamic_netdev_dbg,           \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/net/net_debug.h:57:9: note: in expansion of macro 'dynamic_netdev_dbg'
+   57 |         dynamic_netdev_dbg(__dev, format, ##args);              \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:246:9: note: in expansion of macro 'netdev_dbg'
+  246 |         netdev_dbg(dev, "MCTP: address %u added (total %u addresses)\n",
+      |         ^~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:246:57: note: format string is defined here
+  246 |         netdev_dbg(dev, "MCTP: address %u added (total %u addresses)\n",
+      |                                                        ~^
+      |                                                         |
+      |                                                         unsigned int
+      |                                                        %lu
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c: In function 'mctp_rtm_deladdr':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:307:25: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+  307 |         netdev_dbg(dev, "MCTP: address %u deleted (remaining %u addresses)\n",
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  308 |                    addr->s_addr, mdev->num_addrs);
+      |                                  ~~~~~~~~~~~~~~~
+      |                                      |
+      |                                      size_t {aka long unsigned int}
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:224:29: note: in definition of macro '__dynamic_func_call_cls'
+  224 |                 func(&id, ##__VA_ARGS__);                       \
+      |                             ^~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:250:9: note: in expansion of macro '_dynamic_func_call_cls'
+  250 |         _dynamic_func_call_cls(_DPRINTK_CLASS_DFLT, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:277:9: note: in expansion of macro '_dynamic_func_call'
+  277 |         _dynamic_func_call(fmt, __dynamic_netdev_dbg,           \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/net/net_debug.h:57:9: note: in expansion of macro 'dynamic_netdev_dbg'
+   57 |         dynamic_netdev_dbg(__dev, format, ##args);              \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:307:9: note: in expansion of macro 'netdev_dbg'
+  307 |         netdev_dbg(dev, "MCTP: address %u deleted (remaining %u addresses)\n",
+      |         ^~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:307:63: note: format string is defined here
+  307 |         netdev_dbg(dev, "MCTP: address %u deleted (remaining %u addresses)\n",
+      |                                                              ~^
+      |                                                               |
+      |                                                               unsigned int
+      |                                                              %lu
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c: In function 'mctp_unregister':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:469:25: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+  469 |         netdev_dbg(dev, "MCTP: device unregistering (%u addresses)\n", mdev->num_addrs);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~
+      |                                                                            |
+      |                                                                            size_t {aka long unsigned int}
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:224:29: note: in definition of macro '__dynamic_func_call_cls'
+  224 |                 func(&id, ##__VA_ARGS__);                       \
+      |                             ^~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:250:9: note: in expansion of macro '_dynamic_func_call_cls'
+  250 |         _dynamic_func_call_cls(_DPRINTK_CLASS_DFLT, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:277:9: note: in expansion of macro '_dynamic_func_call'
+  277 |         _dynamic_func_call(fmt, __dynamic_netdev_dbg,           \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/net/net_debug.h:57:9: note: in expansion of macro 'dynamic_netdev_dbg'
+   57 |         dynamic_netdev_dbg(__dev, format, ##args);              \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:469:9: note: in expansion of macro 'netdev_dbg'
+  469 |         netdev_dbg(dev, "MCTP: device unregistering (%u addresses)\n", mdev->num_addrs);
+      |         ^~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/device.c:469:55: note: format string is defined here
+  469 |         netdev_dbg(dev, "MCTP: device unregistering (%u addresses)\n", mdev->num_addrs);
+      |                                                      ~^
+      |                                                       |
+      |                                                       unsigned int
+      |                                                      %lu
+In file included from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/asm-generic/bug.h:22,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/bug.h:100,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/alternative.h:8,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/arch/x86/include/asm/barrier.h:5,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/asm-generic/bitops/generic-non-atomic.h:7,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/bitops.h:29,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/radix-tree.h:11,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/idr.h:15,
+                 from /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:13:
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c: In function 'mctp_queue_error':
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:2984:34: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+ 2984 |                         pr_debug("mctp_queue_error: TX - used key payload (len=%u)\n", capture_len);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/printk.h:386:21: note: in definition of macro 'pr_fmt'
+  386 | #define pr_fmt(fmt) fmt
+      |                     ^~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:248:9: note: in expansion of macro '__dynamic_func_call_cls'
+  248 |         __dynamic_func_call_cls(__UNIQUE_ID(ddebug), cls, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:250:9: note: in expansion of macro '_dynamic_func_call_cls'
+  250 |         _dynamic_func_call_cls(_DPRINTK_CLASS_DFLT, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:269:9: note: in expansion of macro '_dynamic_func_call'
+  269 |         _dynamic_func_call(fmt, __dynamic_pr_debug,             \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/printk.h:620:9: note: in expansion of macro 'dynamic_pr_debug'
+  620 |         dynamic_pr_debug(fmt, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:2984:25: note: in expansion of macro 'pr_debug'
+ 2984 |                         pr_debug("mctp_queue_error: TX - used key payload (len=%u)\n", capture_len);
+      |                         ^~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:2984:81: note: format string is defined here
+ 2984 |                         pr_debug("mctp_queue_error: TX - used key payload (len=%u)\n", capture_len);
+      |                                                                                ~^
+      |                                                                                 |
+      |                                                                                 unsigned int
+      |                                                                                %lu
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:3035:26: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+ 3035 |                 pr_debug("mctp_queue_error: RX - used TX key payload (REQUEST, len=%u)\n", capture_len);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/printk.h:386:21: note: in definition of macro 'pr_fmt'
+  386 | #define pr_fmt(fmt) fmt
+      |                     ^~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:248:9: note: in expansion of macro '__dynamic_func_call_cls'
+  248 |         __dynamic_func_call_cls(__UNIQUE_ID(ddebug), cls, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:250:9: note: in expansion of macro '_dynamic_func_call_cls'
+  250 |         _dynamic_func_call_cls(_DPRINTK_CLASS_DFLT, fmt, func, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/dynamic_debug.h:269:9: note: in expansion of macro '_dynamic_func_call'
+  269 |         _dynamic_func_call(fmt, __dynamic_pr_debug,             \
+      |         ^~~~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/include/linux/printk.h:620:9: note: in expansion of macro 'dynamic_pr_debug'
+  620 |         dynamic_pr_debug(fmt, ##__VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:3035:17: note: in expansion of macro 'pr_debug'
+ 3035 |                 pr_debug("mctp_queue_error: RX - used TX key payload (REQUEST, len=%u)\n", capture_len);
+      |                 ^~~~~~~~
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/external/sonic-linux-kernel++_repo_rules+kernel_sources/linux-6.12.41/net/mctp/route.c:3035:85: note: format string is defined here
+ 3035 |                 pr_debug("mctp_queue_error: RX - used TX key payload (REQUEST, len=%u)\n", capture_len);
+      |                                                                                    ~^
+      |                                                                                     |
+      |                                                                                     unsigned int
+      |                                                                                    %lu
+stdout (/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/execroot/_main/bazel-out/_tmp/actions/stdout-4254) 4336594 exceeds maximum size of --experimental_ui_max_stdouterr_bytes=1048576 bytes; skipping
+[2,791 / 2,791] no actions running
+INFO: Found 5 targets...
+INFO: Elapsed time: 160.139s, Critical Path: 154.93s
+INFO: 2791 processes: 1248 internal, 1538 linux-sandbox, 5 local.
+INFO: Build completed successfully, 2791 total actions

@@ -1,0 +1,36 @@
+INFO: Invocation ID: 0018691c-82cf-4067-ba0f-b3fb071f5563
+WARNING: This information is intended for consumption by Bazel developers only, and may change at any time. Script against it at your own risk
+INFO: Profile created on 2026-09-01T18:35:29.629633990Z, build ID: 123bd5d6-0ac2-4f08-bd06-5faa010747c9, output base: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base
+
+=== PHASE SUMMARY INFORMATION ===
+
+Total launch phase time                              1.850 s    0.06%
+Total init phase time                               22.578 s    0.72%
+Total target pattern evaluation phase time          28.601 s    0.92%
+Total interleaved loading, analysis and execution phase time 3072.065 s   98.30%
+Total finish phase time                              0.035 s    0.00%
+---------------------------------------------------------------------
+Total run time                                    3125.130 s  100.00%
+
+Critical path (2231.521 s):
+       Time Percentage   Description
+ 2128.569 s   95.39%   action 'SONiC make (local) -> p4lang-p4c_1.2.4.2-2_amd64.deb @@p4lang+// p4lang-p4c_1.2.4.2-2.deb'
+   24.285 s    1.09%   action 'Executing genrule @@dash-sai++_repo_rules+dash_src// p4_compile'
+    3.775 s    0.17%   action 'Executing genrule @@dash-sai++_repo_rules+dash_src// sai_gen'
+    19.5 ms    0.00%   action 'Executing genrule @@dash-sai++_repo_rules+dash_src// sai_inc_hdrs'
+    1.323 s    0.06%   action 'Building doxygen documentation for rule 'doxygen''
+    2.387 s    0.11%   action 'Executing genrule @@dash-sai++_repo_rules+dash_src// saimetadata_sources'
+   18.891 s    0.85%   action 'Compiling external/dash-sai++_repo_rules+dash_src/meta/saimetadata.c'
+    33.5 ms    0.00%   action 'Linking external/dash-sai++_repo_rules+dash_src/libdashsaimetadata.pic.lo'
+     393 ms    0.02%   action 'Linking external/dash-sai++_repo_rules+dash_src/libsai.so'
+    0.13 ms    0.00%   action 'SolibSymlink _solib_k8/_Uexternal_Sdash-sai++_Urepo_Urules+dash_Usrc/libsai.so'
+     625 ms    0.03%   action 'Linking external/sonic-sairedis+/syncd/syncd_dash_elf'
+    48.8 ms    0.00%   action 'Executing genrule @@sonic-sairedis+//syncd syncd_dash'
+     254 ms    0.01%   action 'Stripping binaries for syncd-vs_1.0.0.deb_stripped'
+     617 ms    0.03%   action 'Tar external/sonic-sairedis+/syncd-vs_1.0.0.deb_data.tar.gz'
+     326 ms    0.01%   action 'Flattening //platform/vs/docker-syncd-vs sonic_pkgs'
+    68.4 ms    0.00%   action 'OCI Descriptor platform/vs/docker-syncd-vs/sonic_pkgs.tar'
+    1.502 s    0.07%   action 'OCI Image //platform/vs/docker-syncd-vs docker-syncd-vs'
+   41.005 s    1.84%   action 'Building overlay2 store platform/vs/dockerfs.tar.gz'
+    2.658 s    0.12%   action 'Building installer payload platform/vs/fs.zip'
+    4.739 s    0.21%   action 'Building ONIE self-extracting installer platform/vs/sonic-vs.bin'

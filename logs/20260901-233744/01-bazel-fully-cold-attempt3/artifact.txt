@@ -1,0 +1,4 @@
+path: /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/execroot/_main/bazel-out/k8-opt/bin/platform/vs/sonic-vs.bin
+size_bytes: 1882308591
+/data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/execroot/_main/bazel-out/k8-opt/bin/platform/vs/sonic-vs.bin: POSIX shell script executable (binary data)
+9f32d7cdd4ec2d18800d9fd467e95a3b547d358ae26737ade42c7183df7e80f3  /data/sonic/sonic-dzf-time-measure/.measure/20260901-233744/bazel-fully-cold-attempt3/output-base/execroot/_main/bazel-out/k8-opt/bin/platform/vs/sonic-vs.bin

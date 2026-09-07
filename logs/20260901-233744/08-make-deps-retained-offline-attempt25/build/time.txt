@@ -1,0 +1,24 @@
+Command exited with non-zero status 2
+	Command being timed: "env http_proxy=http://127.0.0.1:9 https_proxy=http://127.0.0.1:9 HTTP_PROXY=http://127.0.0.1:9 HTTPS_PROXY=http://127.0.0.1:9 ALL_PROXY=http://127.0.0.1:9 no_proxy=localhost,127.0.0.1,0.0.0.0 NO_PROXY=localhost,127.0.0.1,0.0.0.0 GOPROXY=off CARGO_NET_OFFLINE=true npm_config_offline=true PIP_NO_INDEX=1 GIT_TERMINAL_PROMPT=0 GIT_SSH_COMMAND=false SONIC_BUILDER_EXTRA_CMDLINE=-v /data/sonic/时间统计/cache/20260901-233744/make-git-mirrors:/git-mirrors:ro -v /data/sonic/时间统计/cache/20260901-233744/offline.gitconfig:/etc/sonic-offline.gitconfig:ro -v /data/sonic/时间统计/cache/20260901-233744/make-cargo-home:/cargo-home:rw -v /data/sonic/时间统计/cache/20260901-233744/make-go-mod-cache:/tmp/go/pkg/mod:rw -v /data/sonic/时间统计/cache/20260901-233744/make-go-sumdb-cache:/tmp/go/pkg/sumdb:rw -v /data/sonic/时间统计/cache/20260901-233744/make-pip-wheelhouse:/pip-wheelhouse:ro -v /data/sonic/时间统计/cache/20260901-233744:/rootfs-cache:ro -e GIT_CONFIG_GLOBAL=/etc/sonic-offline.gitconfig -e GIT_TERMINAL_PROMPT=0 -e CARGO_HOME=/cargo-home -e CARGO_NET_OFFLINE=true -e GOMODCACHE=/tmp/go/pkg/mod -e DEB_BUILD_OPTIONS=nocheck -e PIP_NO_INDEX=1 -e PIP_FIND_LINKS=/pip-wheelhouse -e SONIC_DEBOOTSTRAP_TARBALL=/rootfs-cache/make-debootstrap-cache/baseimage-amd64-trixie.tgz -e SONIC_ROOTFS_APT_CACHE=/rootfs-cache/make-rootfs-apt-cache -e SONIC_ROOTFS_DOCKER_GPG_KEY=/rootfs-cache/make-rootfs-apt-cache/docker.asc -e SONIC_ROOTFS_PIP_WHEELHOUSE=/pip-wheelhouse -e SONIC_ROOTFS_OFFLINE=y make PLATFORM=vs NOJESSIE=1 NOSTRETCH=1 NOBUSTER=1 NOBULLSEYE=1 NOBOOKWORM=1 NOTRIXIE=0 ENABLE_DOCKER_BASE_PULL=n SONIC_CONFIG_USE_CCACHE=n SONIC_DPKG_CACHE_METHOD=none SONIC_VERSION_CACHE_METHOD=rcache SONIC_VERSION_CACHE_SOURCE=/data/sonic/时间统计/cache/20260901-233744/make-version-cache BUILD_SKIP_TEST=y SONIC_BUILD_JOBS=8 SONIC_CONFIG_MAKE_JOBS=192 TRUSTED_GPG_URLS= target/sonic-vs.bin"
+	User time (seconds): 1.76
+	System time (seconds): 0.67
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 19:40.11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 46888
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 175865
+	Voluntary context switches: 12965
+	Involuntary context switches: 117
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1960
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 2

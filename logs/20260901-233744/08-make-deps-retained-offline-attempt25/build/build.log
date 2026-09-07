@@ -1,0 +1,1193 @@
++++ --- Making target/sonic-vs.bin --- +++
+./scripts/run_with_retry make BLDENV=trixie -f Makefile.work target/sonic-vs.bin
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+sudo: A terminal is required to authenticate
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:ca17477b760
+Checking sonic-slave-user image: sonic-slave-trixie-qiuying.xzc:0e69d80ab15
+SONiC Build System
+
+Build Configuration
+"CONFIGURED_PLATFORM"             : "vs"
+"CONFIGURED_ARCH"                 : "amd64"
+"SONIC_CONFIG_PRINT_DEPENDENCIES" : ""
+"SONIC_BUILD_JOBS"                : "8"
+"SONIC_CONFIG_MAKE_JOBS"          : "192"
+"USE_NATIVE_DOCKERD_FOR_BUILD"    : ""
+"USE_DOCKER_CACHE"               : ""
+"SONIC_CONFIG_USE_CCACHE"         : "n"
+"USERNAME"                        : "admin"
+"PASSWORD"                        : "YourPaSsWoRd"
+"CHANGE_DEFAULT_PASSWORD"         : "n"
+"SECURE_UPGRADE_MODE"             : "no_sign"
+"SECURE_UPGRADE_DEV_SIGNING_KEY"  : ""
+"SECURE_UPGRADE_SIGNING_CERT"     : ""
+"SECURE_UPGRADE_KERNEL_CAFILE"    : ""
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+"SECURE_UPGRADE_PROD_TOOL_ARGS"   : ""
+"ONIE_IMAGE_PART_SIZE"            : ""
+"SHUTDOWN_BGP_ON_START"           : ""
+"ENABLE_PFCWD_ON_START"           : ""
+"SONIC_BUFFER_MODEL"              : ""
+"INSTALL_DEBUG_TOOLS"             : ""
+"ROUTING_STACK"                   : "frr"
+"FRR_USER_UID"                    : "300"
+"FRR_USER_GID"                    : "300"
+"ENABLE_FRR_TCMALLOC"             : "y"
+"ENABLE_SYNCD_RPC"                : ""
+"SAITHRIFT_V2"                    : ""
+"ENABLE_ORGANIZATION_EXTENSIONS"  : "y"
+"HTTP_PROXY"                      : "http://127.0.0.1:9"
+"HTTPS_PROXY"                     : "http://127.0.0.1:9"
+"NO_PROXY"                        : "localhost,127.0.0.1,0.0.0.0"
+"ENABLE_ZTP"                      : ""
+"INCLUDE_PDE"                     : ""
+"SONIC_DEBUGGING_ON"              : ""
+"SONIC_PROFILING_ON"              : ""
+"KERNEL_PROCURE_METHOD"           : "build"
+"BUILD_TIMESTAMP"                 : "20260906.103448"
+"BUILD_LOG_TIMESTAMP"             : "none"
+"SONIC_IMAGE_VERSION"             : "master.0-dirty-20260906.103448"
+"BLDENV"                          : "trixie"
+"VS_PREPARE_MEM"                  : "yes"
+"INCLUDE_MGMT_FRAMEWORK"          : "y"
+"INCLUDE_ICCPD"                   : "n"
+"INCLUDE_STP"                     : ""
+"INCLUDE_SYSTEM_TELEMETRY"        : "n"
+"INCLUDE_SYSTEM_GNMI"             : "y"
+"INCLUDE_SYSTEM_BMP"              : "y"
+"INCLUDE_SYSTEM_OTEL"             : "y"
+"INCLUDE_SYSTEM_EVENTD"           : "y"
+"ENABLE_HOST_SERVICE_ON_START"    : "y"
+"INCLUDE_RESTAPI"                 : "n"
+"INCLUDE_SFLOW"                   : "y"
+"INCLUDE_NAT"                     : "y"
+"INCLUDE_DHCP_RELAY"              : "y"
+"INCLUDE_DHCP_SERVER"             : "n"
+"INCLUDE_P4RT"                    : "n"
+"INCLUDE_VS_DASH_SAI"             : "y"
+"INCLUDE_KUBERNETES"              : "n"
+"INCLUDE_KUBERNETES_MASTER"       : "n"
+"INCLUDE_MACSEC"                  : "y"
+"INCLUDE_MUX"                     : "y"
+"INCLUDE_TEAMD"                   : "y"
+"INCLUDE_DASH_HA"                 : "y"
+"INCLUDE_ROUTER_ADVERTISER"       : "y"
+"INCLUDE_SNMP"                    : "y"
+"INCLUDE_LLDP"                    : "y"
+"INCLUDE_BOOTCHART                : "y"
+"ENABLE_BOOTCHART                 : "n"
+"INCLUDE_FIPS"                    : "y"
+"ENABLE_TRANSLIB_WRITE"           : ""
+"ENABLE_NATIVE_WRITE"             : "y"
+"ENABLE_DIALOUT"                  : ""
+"ENABLE_AUTO_TECH_SUPPORT"        : "y"
+"PDDF_SUPPORT"                    : "y"
+"MULTIARCH_QEMU_ENVIRON"          : "n"
+"SONIC_VERSION_CONTROL_COMPONENTS": "py2,py3,web,git,docker"
+"ENABLE_ASAN"                     : "n"
+"DEFAULT_CONTAINER_REGISTRY"      : "publicmirror.azurecr.io/"
+"BUILD_MULTIASIC_KVM"             : "n"
+"CROSS_BUILD_ENVIRON"             : "n"
+"INCLUDE_EXTERNAL_PATCHES"        : "n"
+"PTF_ENV_PY_VER"                  : "py3"
+"ENABLE_MULTIDB"                  : ""
+"ENABLE_SBOM"                     : "n"
+"SBOM_FORMAT"                     : "both"
+"SBOM_SCAN_TOOL"                  : "syft"
+"SBOM_INCLUDE_LICENSES"           : "y"
+"SBOM_STRICT"                     : "y"
+
+"SONIC_DPKG_CACHE_METHOD"         : "none"
+
+[ building ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ building ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/initramfs-tools_0.142_all.deb ] 
+[ building ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-platform-vs_1.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnss-radius_1.0.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/makedumpfile_1.7.7-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/kdump-tools_1.10.7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/ifupdown2_3.0.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/systemd-sonic-generator_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/sonic-nettools_0.0.1-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-host-services-data_1.0-1_all.deb ] 
+[ finished ] [ target/debs/trixie/sonic-host-services-data_1.0-1_all.deb ] 
+[ building ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libtac2_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang3_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sedutil_1.15-5ad84d8_amd64.deb ] 
+[ building ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/files/trixie/swss_vars.j2 ] 
+[ finished ] [ target/files/trixie/swss_vars.j2 ] 
+[ building ] [ target/files/trixie/rsyslog_plugin.conf.j2 ] 
+[ finished ] [ target/files/trixie/rsyslog_plugin.conf.j2 ] 
+[ building ] [ target/files/trixie/container ] 
+[ finished ] [ target/files/trixie/container ] 
+[ building ] [ target/files/trixie/readiness_probe.sh ] 
+[ finished ] [ target/files/trixie/readiness_probe.sh ] 
+[ building ] [ target/files/trixie/container_startup.py ] 
+[ finished ] [ target/files/trixie/container_startup.py ] 
+[ building ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/redis_dump_load-1.1-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/monit_5.34.3-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libpam-radius-auth_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libssl3t64_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libssl3t64_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libssl-dev_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libssl-dev_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/openssl_3.5.4-1+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/openssl_3.5.4-1+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libk5crypto3_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libk5crypto3_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libkrb5support0_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libkrb5support0_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libkrb5-3_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libkrb5-3_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/libgssapi-krb5-2_1.21.3-5+fips_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libgssapi-krb5-2_1.21.3-5+fips_amd64.deb ] 
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/socat_1.7.4.1-3_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/iproute2_6.15.0-1+sonic.0_amd64.deb ] 
+[ building ] [ target/files/trixie/90-sonic.conf ] 
+[ finished ] [ target/files/trixie/90-sonic.conf ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb ] 
+[ building ] [ target/files/trixie/update_chassisdb_config ] 
+[ finished ] [ target/files/trixie/update_chassisdb_config ] 
+[ building ] [ target/files/trixie/container_checker ] 
+[ finished ] [ target/files/trixie/container_checker ] 
+[ building ] [ target/files/trixie/gnmi.sh ] 
+[ finished ] [ target/files/trixie/gnmi.sh ] 
+[ building ] [ target/files/trixie/k8s_pod_control.sh ] 
+[ finished ] [ target/files/trixie/k8s_pod_control.sh ] 
+[ building ] [ target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb ] 
+[ building ] [ target/files/trixie/arp_update ] 
+[ finished ] [ target/files/trixie/arp_update ] 
+[ building ] [ target/files/trixie/arp_update_vars.j2 ] 
+[ finished ] [ target/files/trixie/arp_update_vars.j2 ] 
+[ building ] [ target/python-wheels/trixie/scapy-2.6.1.dev0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/scapy-2.6.1.dev0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/lm-sensors_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/lm-sensors_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/lldpd_1.0.16-1+deb12u1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_pddf_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/files/trixie/restapi.sh ] 
+[ finished ] [ target/files/trixie/restapi.sh ] 
+[ building ] [ target/debs/trixie/hsflowd_2.0.51-26_amd64.deb ] 
+[ building ] [ target/debs/trixie/sflowtool_5.04_amd64.deb ] 
+[ finished ] [ target/debs/trixie/bash_5.2.37-2_amd64.deb ] 
+[ building ] [ target/debs/trixie/psample_1.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/psample_1.1-1_amd64.deb ] 
+[ building ] [ target/docker-dash-engine.gz ] 
+[ finished ] [ target/debs/trixie/sflowtool_5.04_amd64.deb ] 
+[ building ] [ target/debs/trixie/isc-dhcp-relay_4.4.3-P1-2_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_pddf_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/rasdaemon_0.6.8-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-device-data_1.0-1_all.deb ] 
+[ building ] [ target/files/trixie/remote_ctr.config.json ] 
+[ finished ] [ target/files/trixie/remote_ctr.config.json ] 
+[ building ] [ target/files/trixie/ctrmgrd.service ] 
+[ finished ] [ target/files/trixie/ctrmgrd.service ] 
+[ building ] [ target/debs/trixie/libpam-tacplus_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libpam-tacplus_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libyang-dev_3.12.2-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/hsflowd_2.0.51-26_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libtac-dev_1.4.1-1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/swsssdk-2.0.1-py3-none-any.whl-install ] 
+[ building ] [ target/docker-base-trixie.gz ] 
+[ finished ] [ target/debs/trixie/rasdaemon_0.6.8-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libsensors5_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libsensors5_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/fancontrol_3.6.0-7.1_all.deb ] 
+[ finished ] [ target/debs/trixie/fancontrol_3.6.0-7.1_all.deb ] 
+[ building ] [ target/debs/trixie/sensord_3.6.0-7.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sensord_3.6.0-7.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnss-tacplus_1.0.4-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libdashapi_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/python3-libyang_3.1.0-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-genl-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/bash-tacplus_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-route-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/audisp-tacplus_1.0.2_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnss-tacplus_1.0.4-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-pi_0.1.1-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnexthopgroup-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/openssh-server_10.0p1-7_amd64.deb ] 
+[ finished ] [ target/debs/trixie/bash-tacplus_1.0.0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/audisp-tacplus_1.0.2_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-nf-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_models-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/frr_10.5.4-sonic-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb ] 
+[ finished ] [ target/docker-dash-engine.gz ] 
+[ building ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb-install ] 
+[ finished ] [ target/debs/trixie/linux-headers-6.12.41+deb13-common-sonic_6.12.41-1_all.deb-install ] 
+[ building ] [ target/debs/trixie/linux-image-6.12.41+deb13-sonic-amd64-unsigned_6.12.41-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/linux-image-6.12.41+deb13-sonic-amd64-unsigned_6.12.41-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_yang_mgmt-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-200_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/linux-kbuild-6.12.41+deb13_6.12.41-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libnl-cli-3-dev_3.7.0-0.2+b1sonic1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/frr_10.5.4-sonic-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/frr-snmp_10.5.4-sonic-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/frr-snmp_10.5.4-sonic-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/openssh-server_10.0p1-7_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-common-codegen_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-mgmt-framework_1.0-01_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb ] 
+[ building ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libteam5_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteamdctl0_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam-dev_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libteam-utils_1.31-1_amd64.deb-install ] 
+[ finished ] [ target/docker-base-trixie.gz ] 
+[ building ] [ target/docker-base-trixie.gz-load ] 
+[ finished ] [ target/docker-base-trixie.gz-load ] 
+[ finished ] [ target/debs/trixie/sonic-mgmt-framework_1.0-01_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-db-cli_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-db-cli_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/libswsscommon-dev_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-eventd_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-ctrmgrd-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/python3-swsscommon_1.0.0_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/sonic-host-services-rs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/syslog-counter_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-supervisord-utilities-rs_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-eventd_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/grub2-common_2.06-13+deb13u1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-supervisord-utilities-rs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/dash-ha_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/syslog-counter_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/stp_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/isc-dhcp-relay_4.4.3-P1-2_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-gnmi_0.1_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-linkmgrd_1.0.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-linkmgrd_1.0.0-1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/stp_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sysmgr_1.0.0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-ctrmgrd-rs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcpmon_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-host-services-rs_1.0.0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcp4relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-dhcp6relay_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-dhcpmon_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-dhcp6relay_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-gnmi_0.1_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-dhcp4relay_1.0.0-0_amd64.deb ] 
+[ building ] [ target/debs/trixie/wpasupplicant_2.9.0-14_amd64.deb ] 
+[ building ] [ target/sonic-vs.bin__vs__rfs.squashfs ] 
+[ finished ] [ target/debs/trixie/wpasupplicant_2.9.0-14_amd64.deb ] 
+[ building ] [ target/debs/trixie/sonic-rsyslog-plugin_1.0.0-0_amd64.deb ] 
+[ finished ] [ target/debs/trixie/sonic-rsyslog-plugin_1.0.0-0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sonic-bmp_0.1_amd64.deb-install ] 
+[ building ] [ target/debs/trixie/stp_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/stp_1.0.0_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/sysmgr_1.0.0_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_py_common-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_containercfgd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_supervisord_utilities-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_d-2.0.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_ledd-1.1-py3-none-any.whl ] 
+/sonic/src/sonic-dash-ha /sonic
+Removing patch ../sonic-dash-ha.patch/0001-build-use-relative-path-when-building-cargo-dependen.patch
+Restoring Cargo.toml
+
+No patches applied
+/sonic
+[ finished ] [ target/debs/trixie/dash-ha_1.0.0_amd64.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_pcied-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_containercfgd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_stormond-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_dhcp_utilities-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_supervisord_utilities-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_d-2.0.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_ctrmgrd-1.0.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ledd-1.1-py3-none-any.whl ] 
+[ building ] [ target/docker-config-engine-trixie.gz ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb ] 
+[ building ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ finished ] [ target/debs/trixie/p4lang-bmv2_1.15.0-9_amd64.deb-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_pcied-1.0-py3-none-any.whl ] 
+[ building ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ] 
+[ finished ] [ target/python-wheels/trixie/sonic_config_engine-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_bgpcfgd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_stormond-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_frr_mgmt_framework-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_dhcp_utilities-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/system_health-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ctrmgrd-1.0.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_bgpcfgd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_frr_mgmt_framework-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_platform_common-1.0-py3-none-any.whl-install ] 
+[ building ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_psud-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_syseepromd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_thermalctld-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/system_health-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_sensormond-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_psud-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_xcvrd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_syseepromd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_ycabled-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_thermalctld-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_chassisd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_sensormond-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_bmcctld-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/asyncsnmp-2.1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_xcvrd-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install ] 
+[ finished ] [ target/python-wheels/trixie/sonic_ycabled-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_chassisd-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_utilities-1.2-py3-none-any.whl-install ] 
+[ building ] [ target/debs/trixie/sonic-utilities-data_1.0-1_all.deb ] 
+[ building ] [ target/python-wheels/trixie/sonic_bmpcfgd_services-1.0-py3-none-any.whl ] 
+[ building ] [ target/python-wheels/trixie/sonic_host_services-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_bmcctld-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/asyncsnmp-2.1.0-py3-none-any.whl ] 
+[ finished ] [ target/debs/trixie/sonic-utilities-data_1.0-1_all.deb ] 
+[ finished ] [ target/sonic-vs.bin__vs__rfs.squashfs ] 
+[ finished ] [ target/python-wheels/trixie/sonic_bmpcfgd_services-1.0-py3-none-any.whl ] 
+[ finished ] [ target/python-wheels/trixie/sonic_host_services-1.0-py3-none-any.whl ] 
+[ finished ] [ target/docker-config-engine-trixie.gz ] 
+[ building ] [ target/docker-config-engine-trixie.gz-load ] 
+[ finished ] [ target/docker-config-engine-trixie.gz-load ] 
+[ building ] [ target/docker-bmp-watchdog.gz ] 
+[ building ] [ target/docker-sonic-bmp.gz ] 
+[ building ] [ target/docker-database.gz ] 
+[ building ] [ target/docker-eventd.gz ] 
+[ building ] [ target/docker-gnmi-sidecar.gz ] 
+[ building ] [ target/docker-gnmi-watchdog.gz ] 
+[ building ] [ target/docker-sonic-gnmi.gz ] 
+[ finished ] [ target/docker-bmp-watchdog.gz ] 
+[ FAIL LOG START ] [ target/docker-bmp-watchdog.gz ]
+Build start time: Sun Sep 6 02:47:29 UTC 2026
+[ REASON ] :      target/docker-bmp-watchdog.gz does not exist   NON-EXISTENT PREREQUISITES: docker-start target/docker-config-engine-trixie.gz-load 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+cat: 'files/build/versions/dockers/docker-bmp-watchdog/versions-*-trixie-amd64': No such file or directory
+Client: Docker Engine - Community
+ Version:    28.5.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.26.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.39.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 1
+  Running: 1
+  Paused: 0
+  Stopped: 0
+ Images: 562
+ Server Version: 28.5.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: b98a3aace656320842a23f4a392a33f46af97866
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 7.0.0-22-generic
+ Operating System: Debian GNU/Linux 13 (trixie)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 192
+ Total Memory: 743GiB
+ Name: 9f2d2b192b29
+ ID: 9050de27-efa9-406a-855d-9324d28b5135
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http://127.0.0.1:9
+ HTTPS Proxy: http://127.0.0.1:9
+ No Proxy: localhost,127.0.0.1,0.0.0.0
+ Experimental: true
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.10kB done
+#1 WARN: LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 28)
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/docker-config-engine-trixie-sonic:latest
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [builder  1/10] FROM docker.io/library/docker-config-engine-trixie-sonic:latest
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 33.65MB 0.1s done
+#5 DONE 0.2s
+
+#6 [builder  2/10] COPY [buildinfo, /usr/local/share/buildinfo]
+#6 DONE 0.1s
+
+#7 [base 2/7] RUN [ -f /etc/rsyslog.conf ] && sed -ri "s/%syslogtag%/bmp_watchdog#%syslogtag%/;" /etc/rsyslog.conf
+#7 DONE 0.2s
+
+#8 [base 3/7] COPY [supervisord.conf, /etc/supervisor/conf.d/]
+#8 DONE 0.1s
+
+#9 [builder  3/10] COPY vcache/ /sonic/target/vcache/docker-bmp-watchdog
+#9 DONE 0.1s
+
+#10 [builder  4/10] RUN dpkg -i /usr/local/share/buildinfo/sonic-build-hooks_1.0_all.deb
+#10 0.178 (Reading database ... 12052 files and directories currently installed.)
+#10 0.178 Preparing to unpack .../sonic-build-hooks_1.0_all.deb ...
+#10 0.185 Unpacking sonic-build-hooks (1.0) over (1.0) ...
+#10 0.210 Setting up sonic-build-hooks (1.0) ...
+#10 DONE 0.4s
+
+#11 [builder  5/10] RUN pre_run_buildinfo docker-bmp-watchdog
+#11 2.895 ./
+#11 2.898 restored_deb_count=0
+#11 DONE 3.0s
+
+#12 [builder  6/10] RUN apt-get update && apt-get install -y     build-essential
+#12 0.312 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#12 0.312 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#12 0.312 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#12 0.312 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#12 1.313 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#12 1.313 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#12 1.313 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#12 1.313 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#12 3.314 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#12 3.314 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#12 3.314 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#12 3.314 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#12 7.314 Err:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#12 7.314   Unable to connect to 127.0.0.1:9:
+#12 7.314 Err:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#12 7.314   Unable to connect to 127.0.0.1:9:
+#12 7.314 Err:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#12 7.314   Unable to connect to 127.0.0.1:9:
+#12 7.314 Err:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#12 7.314   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#12 7.314   Unable to connect to 127.0.0.1:9:
+#12 7.318 sending incremental file list
+#12 7.319 ./
+#12 7.319 lock
+#12 7.319 partial/
+#12 7.360 
+#12 7.360 sent 163 bytes  received 46 bytes  418.00 bytes/sec
+#12 7.360 total size is 0  speedup is 0.00
+#12 7.363 sending incremental file list
+#12 7.363 lock
+#12 7.363 auxfiles/
+#12 7.363 partial/
+#12 7.404 
+#12 7.404 sent 189 bytes  received 47 bytes  472.00 bytes/sec
+#12 7.404 total size is 0  speedup is 0.00
+#12 7.405 Reading package lists...
+#12 7.413 W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie/InRelease  Unable to connect to 127.0.0.1:9:
+#12 7.413 W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-updates/InRelease  Unable to connect to 127.0.0.1:9:
+#12 7.413 W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-backports/InRelease  Unable to connect to 127.0.0.1:9:
+#12 7.413 W: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/dists/trixie-security/InRelease  Unable to connect to 127.0.0.1:9:
+#12 7.413 W: Some index files failed to download. They have been ignored, or old ones used instead.
+#12 7.432 Reading package lists...
+#12 7.435 Building dependency tree...
+#12 7.435 Reading state information...
+#12 7.436 Package build-essential is not available, but is referred to by another package.
+#12 7.436 This may mean that the package is missing, has been obsoleted, or
+#12 7.436 is only available from another source
+#12 7.436 
+#12 7.436 E: Package 'build-essential' has no installation candidate
+#12 ERROR: process "/bin/sh -c apt-get update && apt-get install -y     build-essential" did not complete successfully: exit code: 100
+------
+ > [builder  6/10] RUN apt-get update && apt-get install -y     build-essential:
+7.314   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+7.314   Unable to connect to 127.0.0.1:9:
+
+7.435 Building dependency tree...
+7.435 Reading state information...
+7.436 Package build-essential is not available, but is referred to by another package.
+7.436 This may mean that the package is missing, has been obsoleted, or
+7.436 is only available from another source
+7.436 
+7.436 E: Package 'build-essential' has no installation candidate
+------
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 28)
+Dockerfile:20
+--------------------
+  19 |     
+  20 | >>> RUN apt-get update && apt-get install -y \
+  21 | >>>     build-essential
+  22 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c apt-get update && apt-get install -y     build-essential" did not complete successfully: exit code: 100
+[  FAIL LOG END  ] [ target/docker-bmp-watchdog.gz ]
+make: *** [slave.mk:1406: target/docker-bmp-watchdog.gz] Error 1
+make: *** Waiting for unfinished jobs....
+[ finished ] [ target/docker-gnmi-watchdog.gz ] 
+[ FAIL LOG START ] [ target/docker-gnmi-watchdog.gz ]
+Build start time: Sun Sep 6 02:47:31 UTC 2026
+[ REASON ] :      target/docker-gnmi-watchdog.gz does not exist   NON-EXISTENT PREREQUISITES: docker-start target/docker-config-engine-trixie.gz-load 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+cat: 'files/build/versions/dockers/docker-gnmi-watchdog/versions-*-trixie-amd64': No such file or directory
+Client: Docker Engine - Community
+ Version:    28.5.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.26.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.39.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 562
+ Server Version: 28.5.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: b98a3aace656320842a23f4a392a33f46af97866
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 7.0.0-22-generic
+ Operating System: Debian GNU/Linux 13 (trixie)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 192
+ Total Memory: 743GiB
+ Name: 9f2d2b192b29
+ ID: 9050de27-efa9-406a-855d-9324d28b5135
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http://127.0.0.1:9
+ HTTPS Proxy: http://127.0.0.1:9
+ No Proxy: localhost,127.0.0.1,0.0.0.0
+ Experimental: true
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+#0 building with "default" instance using docker driver
+
+#1 [builder  1/10] FROM docker.io/library/docker-config-engine-trixie-sonic:latest
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.76kB done
+#2 WARN: LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 25)
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/docker-config-engine-trixie-sonic:latest
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 33.64MB 0.1s done
+#5 DONE 0.2s
+
+#6 [builder  2/10] COPY [buildinfo, /usr/local/share/buildinfo]
+#6 DONE 0.1s
+
+#7 [builder  2/10] COPY [buildinfo, /usr/local/share/buildinfo]
+#7 CACHED
+
+#8 [builder  3/10] COPY vcache/ /sonic/target/vcache/docker-gnmi-watchdog
+#8 ...
+
+#9 [stage-1 2/7] RUN [ -f /etc/rsyslog.conf ] && sed -ri "s/%syslogtag%/gnmi_watchdog#%syslogtag%/;" /etc/rsyslog.conf
+#9 DONE 0.6s
+
+#8 [builder  3/10] COPY vcache/ /sonic/target/vcache/docker-gnmi-watchdog
+#8 DONE 0.4s
+
+#10 [stage-1 3/7] COPY [supervisord.conf, /etc/supervisor/conf.d/]
+#10 DONE 0.1s
+
+#11 [builder  4/10] RUN dpkg -i /usr/local/share/buildinfo/sonic-build-hooks_1.0_all.deb
+#11 0.354 (Reading database ... 12052 files and directories currently installed.)
+#11 0.355 Preparing to unpack .../sonic-build-hooks_1.0_all.deb ...
+#11 0.363 Unpacking sonic-build-hooks (1.0) over (1.0) ...
+#11 0.393 Setting up sonic-build-hooks (1.0) ...
+#11 DONE 0.4s
+
+#12 [builder  5/10] RUN pre_run_buildinfo docker-gnmi-watchdog
+#12 2.645 ./
+#12 2.648 restored_deb_count=0
+#12 DONE 2.7s
+
+#13 [builder  6/10] RUN apt-get update && apt-get install -y     build-essential
+#13 0.199 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 0.199 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 0.199 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 0.199 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 1.199 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 1.199 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 1.199 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 1.199 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 3.200 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 3.200 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 3.200 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 3.200 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 7.201 Err:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#13 7.201   Unable to connect to 127.0.0.1:9:
+#13 7.201 Err:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#13 7.201   Unable to connect to 127.0.0.1:9:
+#13 7.201 Err:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#13 7.201   Unable to connect to 127.0.0.1:9:
+#13 7.201 Err:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#13 7.201   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#13 7.201   Unable to connect to 127.0.0.1:9:
+#13 7.205 sending incremental file list
+#13 7.205 ./
+#13 7.205 lock
+#13 7.205 partial/
+#13 7.249 
+#13 7.249 sent 163 bytes  received 46 bytes  418.00 bytes/sec
+#13 7.249 total size is 0  speedup is 0.00
+#13 7.251 sending incremental file list
+#13 7.252 lock
+#13 7.252 auxfiles/
+#13 7.252 partial/
+#13 7.293 
+#13 7.293 sent 189 bytes  received 47 bytes  472.00 bytes/sec
+#13 7.293 total size is 0  speedup is 0.00
+#13 7.295 Reading package lists...
+#13 7.303 W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.303 W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-updates/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.303 W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-backports/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.303 W: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/dists/trixie-security/InRelease  Unable to connect to 127.0.0.1:9:
+#13 7.303 W: Some index files failed to download. They have been ignored, or old ones used instead.
+#13 7.321 Reading package lists...
+#13 7.323 Building dependency tree...
+#13 7.324 Reading state information...
+#13 7.324 Package build-essential is not available, but is referred to by another package.
+#13 7.324 This may mean that the package is missing, has been obsoleted, or
+#13 7.324 is only available from another source
+#13 7.324 
+#13 7.325 E: Package 'build-essential' has no installation candidate
+#13 ERROR: process "/bin/sh -c apt-get update && apt-get install -y     build-essential" did not complete successfully: exit code: 100
+------
+ > [builder  6/10] RUN apt-get update && apt-get install -y     build-essential:
+7.303 W: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/dists/trixie-security/InRelease  Unable to connect to 127.0.0.1:9:
+7.303 W: Some index files failed to download. They have been ignored, or old ones used instead.
+7.321 Reading package lists...
+7.323 Building dependency tree...
+7.324 Reading state information...
+7.324 Package build-essential is not available, but is referred to by another package.
+7.324 This may mean that the package is missing, has been obsoleted, or
+7.324 is only available from another source
+7.324 
+7.325 E: Package 'build-essential' has no installation candidate
+------
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 25)
+Dockerfile:17
+--------------------
+  16 |     
+  17 | >>> RUN apt-get update && apt-get install -y \
+  18 | >>>     build-essential
+  19 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c apt-get update && apt-get install -y     build-essential" did not complete successfully: exit code: 100
+[  FAIL LOG END  ] [ target/docker-gnmi-watchdog.gz ]
+make: *** [slave.mk:1406: target/docker-gnmi-watchdog.gz] Error 1
+[ finished ] [ target/docker-gnmi-sidecar.gz ] 
+[ finished ] [ target/docker-database.gz ] 
+[ FAIL LOG START ] [ target/docker-database.gz ]
+Build start time: Sun Sep 6 02:47:30 UTC 2026
+[ REASON ] :      target/docker-database.gz does not exist   NON-EXISTENT PREREQUISITES: docker-start target/docker-config-engine-trixie.gz-load 
+[ FLAGS  FILE    ] : [] 
+[ FLAGS  DEPENDS ] : [] 
+[ FLAGS  DIFF    ] : [] 
+cat: 'files/build/versions/dockers/docker-database/versions-*-trixie-amd64': No such file or directory
+Client: Docker Engine - Community
+ Version:    28.5.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.26.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.39.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 1
+  Running: 1
+  Paused: 0
+  Stopped: 0
+ Images: 562
+ Server Version: 28.5.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: b98a3aace656320842a23f4a392a33f46af97866
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 7.0.0-22-generic
+ Operating System: Debian GNU/Linux 13 (trixie)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 192
+ Total Memory: 743GiB
+ Name: 9f2d2b192b29
+ ID: 9050de27-efa9-406a-855d-9324d28b5135
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http://127.0.0.1:9
+ HTTPS Proxy: http://127.0.0.1:9
+ No Proxy: localhost,127.0.0.1,0.0.0.0
+ Experimental: true
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+#0 building with "default" instance using docker driver
+
+#1 [builder  1/10] FROM docker.io/library/docker-config-engine-trixie-sonic:latest
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 3.57kB done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/docker-config-engine-trixie-sonic:latest
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 71.37MB 0.3s done
+#5 DONE 0.3s
+
+#6 [base  2/22] COPY [buildinfo, /usr/local/share/buildinfo]
+#6 DONE 0.3s
+
+#7 [base  3/22] COPY vcache/ /sonic/target/vcache/docker-database
+#7 DONE 0.2s
+
+#8 [base  4/22] RUN dpkg -i /usr/local/share/buildinfo/sonic-build-hooks_1.0_all.deb
+#8 0.164 (Reading database ... 12052 files and directories currently installed.)
+#8 0.164 Preparing to unpack .../sonic-build-hooks_1.0_all.deb ...
+#8 0.189 Unpacking sonic-build-hooks (1.0) over (1.0) ...
+#8 0.233 Setting up sonic-build-hooks (1.0) ...
+#8 DONE 0.3s
+
+#9 [base  5/22] RUN pre_run_buildinfo docker-database
+#9 2.959 ./
+#9 2.959 ./apt-lists/
+#9 2.959 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_main_source_Sources.lz4
+#9 2.959 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_non-free-firmware_source_Sources.lz4
+#9 2.959 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_contrib_source_Sources.lz4
+#9 2.960 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_non-free-firmware_binary-amd64_Packages.lz4
+#9 2.960 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_main_source_Sources.lz4
+#9 3.167 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_main_binary-amd64_Packages.lz4
+#9 3.172 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_non-free-firmware_source_Sources.lz4
+#9 3.172 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_InRelease
+#9 3.172 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_main_source_Sources.lz4
+#9 3.177 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_main_binary-amd64_Packages.lz4
+#9 3.370 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_InRelease
+#9 3.370 ./apt-lists/auxfiles/
+#9 3.370 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_non-free-firmware_binary-amd64_Packages.lz4
+#9 3.370 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_main_binary-amd64_Packages.lz4
+#9 3.376 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-backports_contrib_binary-amd64_Packages.lz4
+#9 3.376 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_InRelease
+#9 3.377 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_non-free-firmware_binary-amd64_Packages.lz4
+#9 3.377 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_contrib_binary-amd64_Packages.lz4
+#9 3.378 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie_contrib_binary-amd64_Packages.lz4
+#9 3.378 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_contrib_source_Sources.lz4
+#9 3.378 ./apt-lists/debian-archive.trafficmanager.net_debian_dists_trixie-updates_main_binary-amd64_Packages.lz4
+#9 3.378 ./apt-lists/debian-archive.trafficmanager.net_debian-security_dists_trixie-security_InRelease
+#9 3.379 ./pip/
+#9 3.379 ./pip/http-v2/
+#9 3.379 ./pip/http-v2/3/
+#9 3.379 ./pip/http-v2/3/3/
+#9 3.379 ./pip/http-v2/3/3/2/
+#9 3.379 ./pip/http-v2/3/3/2/7/
+#9 3.379 ./pip/http-v2/3/3/2/7/a/
+#9 3.379 ./pip/http-v2/3/3/2/7/a/3327a46f678846be6cb46f3352e6fba668d9664c70a79484c770e358
+#9 3.379 ./pip/http-v2/3/3/2/7/a/3327a46f678846be6cb46f3352e6fba668d9664c70a79484c770e358.body
+#9 3.379 ./pip/http-v2/4/
+#9 3.379 ./pip/http-v2/4/5/
+#9 3.379 ./pip/http-v2/4/5/2/
+#9 3.380 ./pip/http-v2/4/5/2/4/
+#9 3.380 ./pip/http-v2/4/5/2/4/1/
+#9 3.380 ./pip/http-v2/4/5/2/4/1/45241d61b1606b84c3825a9119b750e7cd16e5fac504d31f79203a8e
+#9 3.380 ./pip/http-v2/4/5/2/4/1/45241d61b1606b84c3825a9119b750e7cd16e5fac504d31f79203a8e.body
+#9 3.380 ./pip/http-v2/8/
+#9 3.380 ./pip/http-v2/8/a/
+#9 3.380 ./pip/http-v2/8/a/c/
+#9 3.380 ./pip/http-v2/8/a/c/4/
+#9 3.380 ./pip/http-v2/8/a/c/4/d/
+#9 3.380 ./pip/http-v2/8/a/c/4/d/8ac4d14dc45e27d21da49fb515570b6f875b78707de9b08ce1088d1b
+#9 3.380 ./pip/http-v2/8/a/c/4/d/8ac4d14dc45e27d21da49fb515570b6f875b78707de9b08ce1088d1b.body
+#9 3.380 ./deb/
+#9 3.380 ./deb/libprotobuf32t64_3.21.12-11+deb13u1_amd64.deb
+#9 3.384 ./deb/redis-server_5%3a8.0.2-3+deb13u2_amd64.deb
+#9 3.384 ./deb/libpopt0_1.19+dfsg-2_amd64.deb
+#9 3.385 ./deb/rsync_3.4.1+ds1-5+deb13u4_amd64.deb
+#9 3.387 ./deb/lock
+#9 3.387 ./deb/partial/
+#9 3.395 restored_deb_count=4
+#9 DONE 3.6s
+
+#10 [base  6/22] RUN apt-get update
+#10 0.177 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#10 0.177 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#10 0.177 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#10 0.177 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#10 1.178 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#10 1.178 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#10 1.178 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#10 1.178 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#10 3.178 Ign:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#10 3.178 Ign:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#10 3.178 Ign:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#10 3.178 Ign:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#10 7.179 Err:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#10 7.179   Unable to connect to 127.0.0.1:9:
+#10 7.179 Err:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#10 7.179   Unable to connect to 127.0.0.1:9:
+#10 7.179 Err:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#10 7.179   Unable to connect to 127.0.0.1:9:
+#10 7.179 Err:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#10 7.179   Could not connect to 127.0.0.1:9 (127.0.0.1). - connect (111: Connection refused)
+#10 7.179   Unable to connect to 127.0.0.1:9:
+#10 7.183 sending incremental file list
+#10 7.184 ./
+#10 7.184 libpopt0_1.19+dfsg-2_amd64.deb
+#10 7.185 libprotobuf32t64_3.21.12-11+deb13u1_amd64.deb
+#10 7.186 lock
+#10 7.186 redis-server_5%3a8.0.2-3+deb13u2_amd64.deb
+#10 7.187 rsync_3.4.1+ds1-5+deb13u4_amd64.deb
+#10 7.188 partial/
+#10 7.228 
+#10 7.228 sent 1.53M bytes  received 122 bytes  3.05M bytes/sec
+#10 7.228 total size is 1.52M  speedup is 1.00
+#10 7.231 sending incremental file list
+#10 7.232 ./
+#10 7.232 lock
+#10 7.232 partial/
+#10 7.273 
+#10 7.273 sent 1.41K bytes  received 47 bytes  2.91K bytes/sec
+#10 7.273 total size is 45.49M  speedup is 31,304.84
+#10 7.274 Reading package lists...
+#10 7.758 W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie/InRelease  Unable to connect to 127.0.0.1:9:
+#10 7.758 W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-updates/InRelease  Unable to connect to 127.0.0.1:9:
+#10 7.758 W: Failed to fetch http://debian-archive.trafficmanager.net/debian/dists/trixie-backports/InRelease  Unable to connect to 127.0.0.1:9:
+#10 7.758 W: Failed to fetch http://debian-archive.trafficmanager.net/debian-security/dists/trixie-security/InRelease  Unable to connect to 127.0.0.1:9:
+#10 7.758 W: Some index files failed to download. They have been ignored, or old ones used instead.
+#10 DONE 8.0s
+
+#11 [base  7/22] RUN apt-get install -y redis-tools redis-server
+#11 0.160 Reading package lists...
+#11 0.172 Building dependency tree...
+#11 0.257 Reading state information...
+#11 0.423 redis-tools is already the newest version (5:8.0.2-3+deb13u2).
+#11 0.423 The following NEW packages will be installed:
+#11 0.423   redis-server
+#11 0.558 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#11 0.591 0 upgraded, 1 newly installed, 0 to remove and 20 not upgraded.
+#11 0.591 Need to get 0 B/66.6 kB of archives.
+#11 0.591 After this operation, 181 kB of additional disk space will be used.
+#11 0.606 Selecting previously unselected package redis-server.
+#11 0.606 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 12052 files and directories currently installed.)
+#11 0.611 Preparing to unpack .../redis-server_5%3a8.0.2-3+deb13u2_amd64.deb ...
+#11 0.614 Unpacking redis-server (5:8.0.2-3+deb13u2) ...
+#11 0.639 Setting up redis-server (5:8.0.2-3+deb13u2) ...
+#11 0.641 
+#11 0.641 Configuration file '/etc/default/redis-server', does not exist on system.
+#11 0.641 Installing new config file as you requested.
+#11 0.642 
+#11 0.642 Configuration file '/etc/init.d/redis-server', does not exist on system.
+#11 0.642 Installing new config file as you requested.
+#11 0.643 
+#11 0.643 Configuration file '/etc/logrotate.d/redis-server', does not exist on system.
+#11 0.643 Installing new config file as you requested.
+#11 0.644 
+#11 0.644 Configuration file '/etc/redis/redis.conf', does not exist on system.
+#11 0.644 Installing new config file as you requested.
+#11 0.658 invoke-rc.d: could not determine current runlevel
+#11 0.662 invoke-rc.d: policy-rc.d denied execution of start.
+#11 0.881 sending incremental file list
+#11 0.881 redis-server_5%3a8.0.2-3+deb13u2_amd64.deb
+#11 0.923 
+#11 0.923 sent 66.95K bytes  received 36 bytes  133.98K bytes/sec
+#11 0.923 total size is 1.52M  speedup is 22.76
+#11 DONE 0.9s
+
+#12 [base  8/22] RUN pip3 install click
+#12 0.800 Looking in links: /sonic/target/vcache/docker-database/pip-wheelhouse
+#12 0.808 WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x769adffa0d70>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/click/
+#12 1.309 WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x769ae0080b90>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/click/
+#12 2.310 WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x769ae0080cd0>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/click/
+#12 4.310 WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x769ae0080e10>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/click/
+#12 8.311 WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x769ae0080f50>: Failed to establish a new connection: [Errno 111] Connection refused'))': /simple/click/
+#12 8.316 ERROR: Cannot install click because these package versions have conflicting dependencies.
+#12 8.316 
+#12 8.316 The conflict is caused by:
+#12 8.316     The user requested click
+#12 8.316     The user requested (constraint) click==8.4.2
+#12 8.316 
+#12 8.316 To fix this you could try to:
+#12 8.316 1. loosen the range of package versions you've specified
+#12 8.316 2. remove package versions to allow pip to attempt to solve the dependency conflict
+#12 8.316 
+#12 8.316 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+#12 ERROR: process "/bin/sh -c pip3 install click" did not complete successfully: exit code: 1
+------
+ > [base  8/22] RUN pip3 install click:
+8.316 
+8.316 The conflict is caused by:
+8.316     The user requested click
+8.316     The user requested (constraint) click==8.4.2
+8.316 
+8.316 To fix this you could try to:
+8.316 1. loosen the range of package versions you've specified
+8.316 2. remove package versions to allow pip to attempt to solve the dependency conflict
+8.316 
+8.316 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+------
+Dockerfile:31
+--------------------
+  29 |     
+  30 |     # Install click for CLI
+  31 | >>> RUN pip3 install click
+  32 |     
+  33 |     # Copy locally-built Debian package dependencies
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c pip3 install click" did not complete successfully: exit code: 1
+[  FAIL LOG END  ] [ target/docker-database.gz ]
+make: *** [slave.mk:1406: target/docker-database.gz] Error 1
+[ finished ] [ target/docker-sonic-gnmi.gz ] 
+[ finished ] [ target/docker-sonic-bmp.gz ] 
+[ finished ] [ target/docker-eventd.gz ] 
+[ finished ] [ target/debs/trixie/p4lang-p4c_1.2.4.2-2_amd64.deb ] 
+make[1]: *** [Makefile.work:751: target/sonic-vs.bin] Error 2
+make[1]: Leaving directory '/data/sonic/sonic-dzf-time-measure'
+make: *** [Makefile:50: target/sonic-vs.bin] Error 2

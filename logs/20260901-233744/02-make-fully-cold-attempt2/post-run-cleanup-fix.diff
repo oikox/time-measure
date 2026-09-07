@@ -1,0 +1,18 @@
+diff --git a/src/sonic-build-hooks/scripts/post_run_cleanup b/src/sonic-build-hooks/scripts/post_run_cleanup
+index 57b7bf657..be8ec8e7b 100755
+--- a/src/sonic-build-hooks/scripts/post_run_cleanup
++++ b/src/sonic-build-hooks/scripts/post_run_cleanup
+@@ -46,9 +46,12 @@ find /usr/share/doc -depth \( -type f -o -type l \) ! -name copyright | xargs rm
+ while [ -n "$(find /usr/share/doc -depth -type d -empty -print -exec rmdir {} +)" ]; do :; done && \
+     rm -rf               \
+     /usr/share/man/*     \
+-    /usr/share/groff/*   \
+     /usr/share/info/*    \
+     /usr/share/lintian/* \
+     /usr/share/linda/*   \
+     /var/cache/man/*     \
+     /usr/share/locale/*
++
++if [[ ! ${IMAGENAME} =~ -slave- ]]; then
++    rm -rf /usr/share/groff/*
++fi

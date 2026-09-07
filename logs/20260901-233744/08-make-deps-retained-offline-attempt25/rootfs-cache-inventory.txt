@@ -1,0 +1,12 @@
+44M	/data/sonic/时间统计/cache/20260901-233744/make-debootstrap-cache
+449M	/data/sonic/时间统计/cache/20260901-233744/make-rootfs-apt-cache
+/data/sonic/时间统计/cache/20260901-233744/make-debootstrap-cache/baseimage-amd64-trixie.tgz 45910881 bytes 2026-09-06 07:02:14.644547420 +0800
+/data/sonic/时间统计/cache/20260901-233744/make-debootstrap-cache/baseimage-amd64-trixie.tgz.metadata 25 bytes 2026-09-06 07:02:14.859907475 +0800
+/data/sonic/时间统计/cache/20260901-233744/make-rootfs-apt-cache/cache.tgz 470254189 bytes 2026-09-06 07:41:15.506914628 +0800
+/data/sonic/时间统计/cache/20260901-233744/make-rootfs-apt-cache/docker.asc 3817 bytes 2026-09-06 07:13:33.561322087 +0800
+db5c4545ff8b964992a2b04650d0695e49d3d9e597f86e0ad57d094d1e08f87c  /data/sonic/时间统计/cache/20260901-233744/make-debootstrap-cache/baseimage-amd64-trixie.tgz
+7e723cd5853749e5f9f5f73890b83419aa463615d54654acd5655faad8c415cb  /data/sonic/时间统计/cache/20260901-233744/make-debootstrap-cache/baseimage-amd64-trixie.tgz.metadata
+ccc0c8ee88ab1560a9ae9ccf6060e67756e85bc046f1fd3a3c3a6055f40c70eb  /data/sonic/时间统计/cache/20260901-233744/make-rootfs-apt-cache/cache.tgz
+1500c1f56fa9e26b9b8f42452a553675796ade0807cdce11975eb98170b3a570  /data/sonic/时间统计/cache/20260901-233744/make-rootfs-apt-cache/docker.asc
+a933fa1048561ebd28f1c6f7d84fd1df582e75556079843c587fac21f0181c15  /data/sonic/时间统计/cache/20260901-233744/make-rootfs-apt-cache/extra-debs/libeatmydata1_131-2+b1_amd64.deb
+a87a1d0ba1760bd961e624e0841d0f50d2cd3eb6de26bbb67ecb567a4516de78  /data/sonic/时间统计/cache/20260901-233744/make-rootfs-apt-cache/extra-debs/eatmydata_131-2_all.deb

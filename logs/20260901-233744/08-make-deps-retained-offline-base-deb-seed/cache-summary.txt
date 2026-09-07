@@ -1,0 +1,4 @@
+archive=/data/sonic/时间统计/cache/20260901-233744/make-version-cache/docker-base-trixie/docker-base-trixie-3c0ac773218f402693c847d.tgz
+size=70841995
+apt_entries=22
+deb_entries=97

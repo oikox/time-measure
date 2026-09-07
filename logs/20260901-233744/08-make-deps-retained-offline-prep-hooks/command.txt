@@ -1,0 +1,1 @@
+env TRUSTED_GPG_URLS=https://packages.microsoft.com/keys/microsoft.asc make -C src/sonic-build-hooks all 

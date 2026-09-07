@@ -1,0 +1,711 @@
++++ Checking platform/vs +++
++++ Making configure +++
+BLDENV=trixie make -f Makefile.work configure
+make[1]: Entering directory '/data/sonic/sonic-dzf-time-measure'
+"SECURE_UPGRADE_PROD_SIGNING_TOOL": ""
+/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks /data/sonic/sonic-dzf-time-measure
+make[2]: Entering directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+dpkg-deb: warning: root directory tmp/sonic-build-hooks has unusual owner or group 17388989:983
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sonic-build-hooks' in 'buildinfo/sonic-build-hooks_1.0_all.deb'.
+make[2]: Leaving directory '/data/sonic/sonic-dzf-time-measure/src/sonic-build-hooks'
+/data/sonic/sonic-dzf-time-measure
+Checking sonic-slave-base image: sonic-slave-trixie:d80ffb598b0
+Image sonic-slave-trixie:d80ffb598b0 not found. Building...
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 18.47kB done
+#1 WARN: MaintainerDeprecated: Maintainer instruction is deprecated in favor of using label (line 3)
+#1 DONE 0.0s
+
+#2 [internal] load metadata for publicmirror.azurecr.io/debian:trixie@sha256:d07d1b51c39f51188e60be9b64e6bf769fa94e187f092bc32b91305cfa34ba5a
+#2 DONE 2.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [ 1/65] FROM publicmirror.azurecr.io/debian:trixie@sha256:d07d1b51c39f51188e60be9b64e6bf769fa94e187f092bc32b91305cfa34ba5a
+#4 resolve publicmirror.azurecr.io/debian:trixie@sha256:d07d1b51c39f51188e60be9b64e6bf769fa94e187f092bc32b91305cfa34ba5a done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 264.98kB done
+#5 DONE 0.0s
+
+#6 [ 2/65] COPY [files/apt/apt.conf.d/no-check-valid-until, /etc/apt/apt.conf.d/]
+#6 DONE 0.0s
+
+#7 [ 3/65] COPY [files/apt/apt.conf.d/apt-timeout-n-retries, /etc/apt/apt.conf.d/]
+#7 DONE 0.0s
+
+#8 [ 4/65] COPY [sources.list.amd64, /etc/apt/sources.list]
+#8 DONE 0.0s
+
+#9 [ 5/65] COPY [buildinfo, /usr/local/share/buildinfo]
+#9 DONE 0.0s
+
+#10 [ 6/65] COPY vcache/ /sonic/target/vcache/sonic-slave-trixie
+#10 DONE 0.0s
+
+#11 [ 7/65] RUN dpkg -i /usr/local/share/buildinfo/sonic-build-hooks_1.0_all.deb
+#11 0.142 Selecting previously unselected package sonic-build-hooks.
+#11 0.145 (Reading database ... 4936 files and directories currently installed.)
+#11 0.145 Preparing to unpack .../sonic-build-hooks_1.0_all.deb ...
+#11 0.146 Unpacking sonic-build-hooks (1.0) ...
+#11 0.157 Setting up sonic-build-hooks (1.0) ...
+#11 DONE 0.3s
+
+#12 [ 8/65] RUN pre_run_buildinfo sonic-slave-trixie
+#12 DONE 15.7s
+
+#13 [ 9/65] RUN apt -o Acquire::https::Verify-Peer=false update &&     apt -o Acquire::https::Verify-Peer=false install -y ca-certificates
+#13 0.253 
+#13 0.253 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#13 0.253 
+#13 0.554 Get:1 http://debian-archive.trafficmanager.net/debian trixie InRelease [140 kB]
+#13 0.895 Get:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease [47.3 kB]
+#13 0.982 Get:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease [54.0 kB]
+#13 1.068 Get:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease [43.4 kB]
+#13 1.155 Get:5 http://debian-archive.trafficmanager.net/debian trixie/main Sources [10.5 MB]
+#13 1.693 Get:6 http://debian-archive.trafficmanager.net/debian trixie/non-free-firmware Sources [6552 B]
+#13 1.693 Get:7 http://debian-archive.trafficmanager.net/debian trixie/contrib Sources [52.3 kB]
+#13 1.693 Get:8 http://debian-archive.trafficmanager.net/debian trixie/non-free-firmware amd64 Packages [6884 B]
+#13 1.693 Get:9 http://debian-archive.trafficmanager.net/debian trixie/main amd64 Packages [9673 kB]
+#13 2.020 Get:10 http://debian-archive.trafficmanager.net/debian trixie/contrib amd64 Packages [53.8 kB]
+#13 2.020 Get:11 http://debian-archive.trafficmanager.net/debian trixie-updates/main Sources [1840 B]
+#13 2.020 Get:12 http://debian-archive.trafficmanager.net/debian trixie-updates/main amd64 Packages [4412 B]
+#13 2.020 Get:13 http://debian-archive.trafficmanager.net/debian trixie-backports/non-free-firmware amd64 Packages [6480 B]
+#13 2.020 Get:14 http://debian-archive.trafficmanager.net/debian trixie-backports/main amd64 Packages [321 kB]
+#13 2.021 Get:15 http://debian-archive.trafficmanager.net/debian trixie-backports/contrib amd64 Packages [7964 B]
+#13 2.021 Get:16 http://debian-archive.trafficmanager.net/debian-security trixie-security/main Sources [226 kB]
+#13 2.022 Get:17 http://debian-archive.trafficmanager.net/debian-security trixie-security/contrib Sources [1564 B]
+#13 2.022 Get:18 http://debian-archive.trafficmanager.net/debian-security trixie-security/non-free-firmware Sources [696 B]
+#13 2.107 Get:19 http://debian-archive.trafficmanager.net/debian-security trixie-security/non-free-firmware amd64 Packages [544 B]
+#13 2.192 Get:20 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 Packages [251 kB]
+#13 2.194 Get:21 http://debian-archive.trafficmanager.net/debian-security trixie-security/contrib amd64 Packages [3148 B]
+#13 3.029 Fetched 21.4 MB in 3s (7756 kB/s)
+#13 3.029 Reading package lists...
+#13 3.462 Building dependency tree...
+#13 3.542 Reading state information...
+#13 3.555 13 packages can be upgraded. Run 'apt list --upgradable' to see them.
+#13 3.585 
+#13 3.585 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#13 3.585 
+#13 3.599 Reading package lists...
+#13 4.024 Building dependency tree...
+#13 4.103 Reading state information...
+#13 4.250 Upgrading:
+#13 4.250   libssl3t64  openssl-provider-legacy
+#13 4.250 
+#13 4.251 Installing:
+#13 4.251   ca-certificates
+#13 4.251 
+#13 4.252 Installing dependencies:
+#13 4.252   openssl
+#13 4.252 
+#13 4.559 Summary:
+#13 4.559   Upgrading: 2, Installing: 2, Removing: 0, Not Upgrading: 11
+#13 4.559   Download size: 4439 kB
+#13 4.559   Space needed: 2978 kB / 692 GB available
+#13 4.559 
+#13 4.559 Get:1 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl-provider-legacy amd64 3.5.7-1~deb13u2 [316 kB]
+#13 4.987 Get:2 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 libssl3t64 amd64 3.5.7-1~deb13u2 [2454 kB]
+#13 5.245 Get:3 http://debian-archive.trafficmanager.net/debian-security trixie-security/main amd64 openssl amd64 3.5.7-1~deb13u2 [1507 kB]
+#13 5.253 Get:4 http://debian-archive.trafficmanager.net/debian trixie/main amd64 ca-certificates all 20250419 [162 kB]
+#13 5.334 debconf: unable to initialize frontend: Dialog
+#13 5.334 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#13 5.334 debconf: falling back to frontend: Readline
+#13 5.334 debconf: unable to initialize frontend: Readline
+#13 5.334 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 4.)
+#13 5.334 debconf: falling back to frontend: Teletype
+#13 5.338 debconf: unable to initialize frontend: Teletype
+#13 5.338 debconf: (This frontend requires a controlling tty.)
+#13 5.338 debconf: falling back to frontend: Noninteractive
+#13 5.772 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#13 5.775 Preconfiguring packages ...
+#13 5.811 Fetched 4439 kB in 1s (4474 kB/s)
+#13 5.821 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4963 files and directories currently installed.)
+#13 5.824 Preparing to unpack .../openssl-provider-legacy_3.5.7-1~deb13u2_amd64.deb ...
+#13 5.827 Unpacking openssl-provider-legacy (3.5.7-1~deb13u2) over (3.5.6-1~deb13u2) ...
+#13 5.851 Setting up openssl-provider-legacy (3.5.7-1~deb13u2) ...
+#13 5.871 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4963 files and directories currently installed.)
+#13 5.874 Preparing to unpack .../libssl3t64_3.5.7-1~deb13u2_amd64.deb ...
+#13 5.878 Unpacking libssl3t64:amd64 (3.5.7-1~deb13u2) over (3.5.6-1~deb13u2) ...
+#13 5.997 Setting up libssl3t64:amd64 (3.5.7-1~deb13u2) ...
+#13 6.016 Selecting previously unselected package openssl.
+#13 6.016 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4963 files and directories currently installed.)
+#13 6.018 Preparing to unpack .../openssl_3.5.7-1~deb13u2_amd64.deb ...
+#13 6.020 Unpacking openssl (3.5.7-1~deb13u2) ...
+#13 6.084 Selecting previously unselected package ca-certificates.
+#13 6.084 Preparing to unpack .../ca-certificates_20250419_all.deb ...
+#13 6.086 Unpacking ca-certificates (20250419) ...
+#13 6.114 Setting up openssl (3.5.7-1~deb13u2) ...
+#13 6.120 Setting up ca-certificates (20250419) ...
+#13 6.169 debconf: unable to initialize frontend: Dialog
+#13 6.169 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#13 6.169 debconf: falling back to frontend: Readline
+#13 6.169 debconf: unable to initialize frontend: Readline
+#13 6.169 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+#13 6.169 debconf: falling back to frontend: Teletype
+#13 6.173 debconf: unable to initialize frontend: Teletype
+#13 6.173 debconf: (This frontend requires a controlling tty.)
+#13 6.173 debconf: falling back to frontend: Noninteractive
+#13 6.537 Updating certificates in /etc/ssl/certs...
+#13 7.039 150 added, 0 removed; done.
+#13 7.056 Processing triggers for libc-bin (2.41-12+deb13u3) ...
+#13 7.064 Processing triggers for ca-certificates (20250419) ...
+#13 7.068 Updating certificates in /etc/ssl/certs...
+#13 7.476 0 added, 0 removed; done.
+#13 7.476 Running hooks in /etc/ca-certificates/update.d...
+#13 7.477 done.
+#13 DONE 7.6s
+
+#14 [10/65] COPY [pip.conf, /etc/pip.conf]
+#14 DONE 0.0s
+
+#15 [11/65] RUN apt-get update && apt-get install -y eatmydata && eatmydata apt-get install -y         apt-utils         default-jre-headless         openssh-server         curl         wget         unzip         gzip         pigz         git         build-essential         ccache         remake         libtool         lintian         sudo         dh-make         dh-exec         kmod         libtinyxml2-dev         python3         python3-pip         python3-setuptools         python3-wheel         python3-build         libncurses5-dev         texinfo         dh-autoreconf         doxygen         devscripts         git-buildpackage         perl-modules         libclass-accessor-perl         libcap2-bin         libswitch-perl         libzmq5         libzmq3-dev         libyaml-cpp-dev         uuid-dev         jq         cron         debootstrap         e2fsprogs         gdisk         nlohmann-json3-dev         libhiredis-dev         libreadline-dev         texlive-latex-base         texlive-plain-generic         texlive-fonts-recommended         libpam0g-dev         libpam-dev         libcap-dev         imagemagick         ghostscript         groff         gawk         chrpath         libc-ares-dev         libsnmp-dev         libjson-c-dev         libsystemd-dev         libcmocka-dev         libgoogle-perftools-dev         libprotobuf-c-dev         protobuf-c-compiler         python3-all-dev         python3-all-dbg         install-info         logrotate         cdbs         libxml-simple-perl         graphviz         aspell         libgetopt-long-descriptive-perl         libconst-fast-perl         libtemplate-perl         libnamespace-autoclean-perl         libmoose-perl         libmoosex-aliases-perl         bc         fakeroot         build-essential         devscripts         quilt         stgit         sbsigntool         module-assistant         gem2deb         libevent-dev         libglib2.0-dev         python3-all-dev         python3-twisted         phpunit         libbit-vector-perl         default-jdk         javahelper         maven-debian-helper         ant         libhttpclient-java         libslf4j-java         libservlet3.1-java         pkg-php-tools         byacc         flex         libglib2.0-dev         bison         expat         libexpat1-dev         libdb-dev         libiptc-dev         libxtables-dev         libbpf-dev         libtool-bin         libxml2-dev         libusb-1.0-0-dev         libcurl4-openssl-dev         libunwind8-dev         telnet         libc-ares2         libgoogle-perftools4t64         cpio         squashfs-tools         zip         libdaemon-dev         libdbus-1-dev         libjansson-dev         libpcap-dev         dnsutils         libusb-dev         libgrpc++1         libabsl-dev         augeas-tools         libyaml-dev         libevent-dev         libjudy-dev         libedit-dev         libnanomsg-dev         python3-stdeb         libjemalloc-dev         liblua5.1-0-dev         lua-bitop-dev          lua-cjson-dev         dkms         cppcheck         clang         pylint         python3-pytest         python3-nose2         python3-venv         gcovr         lcov         python3-pytest-cov         python3-pytest-cov         python3-parse         default-libmysqlclient-dev         libssl-dev         libperl-dev         libpci-dev         libpci3         libsensors5         libsensors-dev         libwrap0-dev         debhelper         autotools-dev         libbsd-dev         pkg-config         check         librdkafka-dev         libyaml-cpp-dev         libsasl2-dev         docutils-common         libjs-sphinxdoc         libjs-underscore         python3-docutils         python3-jinja2         python3-markupsafe         python3-pygments         python3-roman         python3-sphinx         sphinx-common         python3-sphinx         python3-dev         j2cli         procmail         libgtest-dev         cmake         libgmock-dev         autoconf-archive         cm-super-minimal         dh-package-notes         libatm1-dev         libbpf-dev         libelf-dev         libmnl-dev         libnsl-dev         libselinux1-dev         linuxdoc-tools         lynx         texlive-latex-extra         texlive-latex-recommended         iproute2         texi2html         sharutils         locales         time         man2html-base         libcunit1         libcunit1-dev         shellcheck         bash-completion         tiny-initramfs         linux-base         dosfstools         qemu-kvm         libvirt-clients         python3-pexpect         libsqlite3-dev         libgettextpo-dev         autogen         libopts25-dev         pps-tools         dh-apparmor         librrd8t64         librrd-dev         rrdtool         liblzo2-dev         libnetfilter-conntrack-dev         libnftnl-dev         xxd         libexplain-dev         libevent-dev         swig         pkgconf         tcl-expect         libxxhash-dev         python3-cffi         device-tree-compiler         autoconf         m4         libxml2-utils         xsltproc         python3-lxml         libexpat1-dev         libcurl4t64         libcjson-dev         python3-yaml         python3-parameterized         python3-inflection         python3-mako         systemd-dev         qtbase5-dev                  aspell-en                    libssl-dev                   dbus                         libdbus-1-dev                libdbus-glib-1-2             libdbus-glib-1-dev           libreadline-dev              libncurses5-dev              libpcsclite-dev              docbook-to-man               docbook-utils                libbz2-dev         libboost-dev         libboost-program-options-dev         libboost-system-dev         libboost-serialization-dev         libboost-thread-dev         libboost-atomic-dev         libboost-chrono-dev         libboost-container-dev         libboost-context-dev         libboost-contract-dev         libboost-coroutine-dev         libboost-date-time-dev         libboost-fiber-dev         libboost-filesystem-dev         libboost-graph-parallel-dev         libboost-log-dev         libboost-regex-dev         googletest         libgtest-dev         libgmock-dev         libcairo2-dev         libdbus-1-dev         libgirepository1.0-dev         libsystemd-dev         pkg-config         python3-dbus         python3-systemd         python3-gi         python3-cryptography         python3-deepdiff         python3-natsort         python3-netifaces         python3-paramiko         python3-scp         python3-enlighten         python3-requests         libauparse-dev         auditd         libdbus-c++-dev         protobuf-compiler         libprotobuf-dev         libjsoncpp-dev         pciutils         dh-dkms         rpm2cpio         libsnmp-dev         libpopt-dev         libfuse-dev         efibootmgr         watchdog         dmidecode         usbutils         xmlstarlet         python3-cheetah         python3-docs-theme         ss-dev         liblmdb-dev         libverto-dev         systemtap-sdt-dev         xvfb         help2man         xfonts-unifont         libdevmapper-dev         xfonts-unifont         libsdl1.2-dev         xorriso         parted         mtools         wamerican         libefiboot-dev         libefivar-dev         dosfstools         cython3         pandoc         valgrind         udev         inkscape         meson         python3-pyelftools         hwdata         libzip-dev
+#15 0.377 Hit:1 http://debian-archive.trafficmanager.net/debian trixie InRelease
+#15 0.463 Hit:2 http://debian-archive.trafficmanager.net/debian trixie-updates InRelease
+#15 0.556 Hit:3 http://debian-archive.trafficmanager.net/debian trixie-backports InRelease
+#15 0.649 Hit:4 http://debian-archive.trafficmanager.net/debian-security trixie-security InRelease
+#15 0.658 Reading package lists...
+#15 1.128 Reading package lists...
+#15 1.552 Building dependency tree...
+#15 1.630 Reading state information...
+#15 1.760 The following additional packages will be installed:
+#15 1.761   libeatmydata1
+#15 1.790 The following NEW packages will be installed:
+#15 1.790   eatmydata libeatmydata1
+#15 1.981 0 upgraded, 2 newly installed, 0 to remove and 11 not upgraded.
+#15 1.981 Need to get 14.6 kB of archives.
+#15 1.981 After this operation, 57.3 kB of additional disk space will be used.
+#15 1.981 Get:1 http://debian-archive.trafficmanager.net/debian trixie/main amd64 libeatmydata1 amd64 131-2+b1 [7044 B]
+#15 2.069 Get:2 http://debian-archive.trafficmanager.net/debian trixie/main amd64 eatmydata all 131-2 [7532 B]
+#15 2.568 N: Ignoring file 'debian.sources.back' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+#15 2.593 Fetched 14.6 kB in 0s (54.0 kB/s)
+#15 2.605 Selecting previously unselected package libeatmydata1:amd64.
+#15 2.605 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5527 files and directories currently installed.)
+#15 2.608 Preparing to unpack .../libeatmydata1_131-2+b1_amd64.deb ...
+#15 2.610 Unpacking libeatmydata1:amd64 (131-2+b1) ...
+#15 2.624 Selecting previously unselected package eatmydata.
+#15 2.625 Preparing to unpack .../eatmydata_131-2_all.deb ...
+#15 2.626 Unpacking eatmydata (131-2) ...
+#15 2.643 Setting up libeatmydata1:amd64 (131-2+b1) ...
+#15 2.646 Setting up eatmydata (131-2) ...
+#15 2.649 Processing triggers for libc-bin (2.41-12+deb13u3) ...
+#15 2.703 Reading package lists...
+#15 3.117 Building dependency tree...
+#15 3.193 Reading state information...
+#15 3.396 gzip is already the newest version (1.13-1).
+#15 3.396 gzip set to manually installed.
+#15 3.396 The following additional packages will be installed:
+#15 3.396   adduser adwaita-icon-theme alsa-topology-conf alsa-ucm-conf ant-optional
+#15 3.396   appstream apt-file arch-test at-spi2-common at-spi2-core augeas-lenses
+#15 3.396   autogen-doc automake autopoint bind9-host bind9-libs binfmt-support binutils
+#15 3.396   binutils-common binutils-x86-64-linux-gnu blt bsd-mailx bsdextrautils
+#15 3.396   bsdutils bzip2 bzip2-doc ca-certificates-java clang-19 clang-tools-19
+#15 3.396   cmake-data cmocka-doc comerr-dev cowbuilder cowdancer cpp cpp-14
+#15 3.396   cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu cppzmq-dev cron-daemon-common
+#15 3.396   dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common
+#15 3.396   dbus-user-session dconf-gsettings-backend dconf-service dctrl-tools
+#15 3.396   debian-keyring debian-tag2upload-keyring default-jdk-headless default-jre
+#15 3.396   dh-strip-nondeterminism dictionaries-common diffstat dirmngr distro-info
+#15 3.396   distro-info-data dmsetup docbook docbook-dsssl docbook-xml dpkg-dev dput
+#15 3.396   dvisvgm dwz e2fsprogs-l10n ed emacsen-common enchant-2 equivs exim4-base
+#15 3.396   exim4-config exim4-daemon-light fastjar fig2dev file fontconfig
+#15 3.396   fontconfig-config fonts-dejavu-core fonts-dejavu-extra fonts-dejavu-mono
+#15 3.396   fonts-droid-fallback fonts-font-awesome fonts-lato fonts-liberation
+#15 3.396   fonts-liberation-sans-narrow fonts-lmodern fonts-lyx fonts-noto-mono
+#15 3.396   fonts-texgyre fonts-texgyre-math fonts-tuffy fonts-urw-base35 g++ g++-14
+#15 3.396   g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-14
+#15 3.396   gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu gdb gem2deb-test-runner gettext
+#15 3.396   gettext-base gir1.2-freedesktop gir1.2-freedesktop-dev
+#15 3.396   gir1.2-girepository-2.0 gir1.2-girepository-2.0-dev gir1.2-glib-2.0
+#15 3.396   gir1.2-glib-2.0-dev gir1.2-ibus-1.0 girepository-tools git-man
+#15 3.396   glib-networking glib-networking-common glib-networking-services gnupg
+#15 3.396   gnupg-l10n gnupg-utils gobject-introspection gobject-introspection-bin gpg
+#15 3.396   gpg-agent gpg-wks-client gpgconf gpgsm gpgv groff-base
+#15 3.396   gsettings-desktop-schemas gstreamer1.0-libav gstreamer1.0-plugins-base
+#15 3.396   gstreamer1.0-plugins-good gstreamer1.0-x gtk-update-icon-cache
+#15 3.396   guile-3.0-libs hicolor-icon-theme hunspell-en-us i965-va-driver
+#15 3.396   ibverbs-providers icu-devtools imagemagick-7-common imagemagick-7.q16
+#15 3.396   inetutils-telnet intel-media-va-driver intltool-debian ipxe-qemu iso-codes
+#15 3.396   isympy-common isympy3 jarwrapper java-common javascript-common junit4 junit5
+#15 3.396   krb5-locales krb5-multidev less lib2geom1.4.0 lib32gcc-s1 lib32stdc++6
+#15 3.396   libaa1 libaacs0 libabsl20240722 libacl1-dev libaec0 libaio1t64
+#15 3.396   libalgorithm-c3-perl libalgorithm-diff-perl libalgorithm-diff-xs-perl
+#15 3.396   libalgorithm-merge-perl libaliased-perl libamd-comgr2 libamdhip64-5 libann0
+#15 3.397   libaom3 libaopalliance-java libapache-pom-java libapiguardian-java
+#15 3.397   libapparmor1 libappconfig-perl libappstream5 libapt-pkg-perl
+#15 3.397   libarchive-cpio-perl libarchive-zip-perl libarchive13t64 libargon2-1
+#15 3.397   libarray-intspan-perl libasan8 libasm-java libasound2-data libasound2-dev
+#15 3.397   libasound2t64 libaspell15 libass9 libassuan9 libasyncns0
+#15 3.397   libatinject-jsr330-api-java libatk-bridge2.0-0t64 libatk-wrapper-java
+#15 3.397   libatk-wrapper-java-jni libatk1.0-0t64 libatkmm-1.6-1v5 libatm1t64
+#15 3.397   libatomic1 libatspi2.0-0t64 libattr1-dev libaugeas0 libauparse0t64
+#15 3.397   libauthen-sasl-perl libavahi-client3 libavahi-common-data libavahi-common3
+#15 3.397   libavc1394-0 libavcodec61 libavfilter10 libavformat61 libavif16 libavutil59
+#15 3.397   libb-hooks-endofscope-perl libb-hooks-op-check-perl libbabeltrace1
+#15 3.397   libbdplus0 libberkeleydb-perl libbinutils libblas3 libblkid-dev libblkid1
+#15 3.397   libblkio1 libblosc1 libblosc2-4 libbluray2 libboost-atomic1.83-dev
+#15 3.397   libboost-atomic1.83.0 libboost-chrono1.83-dev libboost-chrono1.83.0t64
+#15 3.397   libboost-container1.83-dev libboost-container1.83.0 libboost-context1.83-dev
+#15 3.397   libboost-context1.83.0 libboost-contract1.83-dev libboost-contract1.83.0
+#15 3.397   libboost-coroutine1.83-dev libboost-coroutine1.83.0
+#15 3.397   libboost-date-time1.83-dev libboost-date-time1.83.0 libboost-fiber1.83-dev
+#15 3.397   libboost-fiber1.83.0 libboost-filesystem1.83-dev libboost-filesystem1.83.0
+#15 3.397   libboost-graph-parallel1.83-dev libboost-graph-parallel1.83.0
+#15 3.397   libboost-iostreams1.83.0 libboost-log1.83-dev libboost-log1.83.0
+#15 3.397   libboost-mpi1.83.0 libboost-program-options1.83-dev
+#15 3.397   libboost-program-options1.83.0 libboost-regex1.83-dev libboost-regex1.83.0
+#15 3.397   libboost-serialization1.83-dev libboost-serialization1.83.0
+#15 3.397   libboost-system1.83-dev libboost-system1.83.0 libboost-test1.83-dev
+#15 3.397   libboost-test1.83.0 libboost-thread1.83-dev libboost-thread1.83.0
+#15 3.397   libboost1.83-dev libbpf1 libbrlapi0.8 libbrotli-dev libbrotli1 libbs2b0
+#15 3.397   libbsh-java libburn4t64 libc-dev-bin libc-l10n libc6-dbg libc6-dev
+#15 3.397   libc6-i386 libcaca0 libcacard0 libcairo-gobject2
+#15 3.397   libcairo-script-interpreter2 libcairo2 libcairomm-1.0-1v5 libcapstone5
+#15 3.397   libcapture-tiny-perl libcares2 libcarp-clan-perl libcbor0.10 libcc1-0
+#15 3.397   libcdi-api-java libcdparanoia0 libcdr-0.1-1 libcdt5 libcgi-fast-perl
+#15 3.397   libcgi-pm-perl libcgraph6 libchromaprint1 libcjson1 libclang-common-19-dev
+#15 3.397   libclang-cpp19 libclang-rt-19-dev libclang1-19 libclass-c3-perl
+#15 3.397   libclass-c3-xs-perl libclass-data-inheritable-perl libclass-inspector-perl
+#15 3.397   libclass-load-perl libclass-load-xs-perl libclass-method-modifiers-perl
+#15 3.397   libclass-singleton-perl libclass-tiny-perl libclass-xsaccessor-perl
+#15 3.397   libclone-perl libcloudproviders0 libcmocka0 libcodec2-1.2 libcolord2
+#15 3.397   libcom-err2 libcommon-sense-perl libcommons-beanutils-java
+#15 3.397   libcommons-cli-java libcommons-codec-java libcommons-collections3-java
+#15 3.397   libcommons-compress-java libcommons-digester-java libcommons-io-java
+#15 3.397   libcommons-lang-java libcommons-lang3-java libcommons-logging-java
+#15 3.397   libcommons-parent-java libcommons-text-java libcommons-validator-java
+#15 3.397   libconfig-tiny-perl libcontextual-return-perl libconvert-binhex-perl
+#15 3.397   libcpanel-json-xs-perl libcrypt-dev libcrypt-rc4-perl libcryptsetup12
+#15 3.397   libctf-nobfd0 libctf0 libcups2t64 libcurl3t64-gnutls libdaemon0
+#15 3.397   libdata-dpath-perl libdata-dump-perl libdata-messagepack-perl
+#15 3.397   libdata-optlist-perl libdata-validate-domain-perl libdata-validate-ip-perl
+#15 3.397   libdata-validate-uri-perl libdate-calc-perl libdate-calc-xs-perl
+#15 3.397   libdate-manip-perl libdatetime-locale-perl libdatetime-perl
+#15 3.397   libdatetime-timezone-perl libdatrie1 libdav1d7 libdaxctl1 libdb5.3-dev
+#15 3.397   libdbi1t64 libdbus-1-3 libdbus-c++-1-0v5 libdbus-c++-bin
+#15 3.397   libdbus-c++-ecore-1-0 libdbus-c++-glib-1-0 libdbus-glib-1-dev-bin libdconf1
+#15 3.397   libde265-0 libdebhelper-perl libdebuginfod-common libdebuginfod1t64
+#15 3.397   libdecor-0-0 libdecor-0-dev libdecor-0-plugin-1-gtk libdeflate0
+#15 3.397   libdevel-callchecker-perl libdevel-caller-perl
+#15 3.397   libdevel-globaldestruction-perl libdevel-lexalias-perl
+#15 3.397   libdevel-overloadinfo-perl libdevel-partialdump-perl libdevel-size-perl
+#15 3.397   libdevel-stacktrace-perl libdevmapper-event1.02.1 libdevmapper1.02.1
+#15 3.397   libdigest-perl-md5-perl libdist-checkconflicts-perl libdistro-info-perl
+#15 3.397   libdjvulibre-text libdjvulibre21 libdom4j-java libdouble-conversion3
+#15 3.397   libdoxia-core-java libdoxia-java libdoxia-sitetools-java libdpkg-perl
+#15 3.397   libdrm-amdgpu1 libdrm-common libdrm-dev libdrm-intel1 libdrm-nouveau2
+#15 3.397   libdrm-radeon1 libdrm2 libduktape207 libdv4t64 libdvdnav4 libdvdread8t64
+#15 3.397   libdw1t64 libdynaloader-functions-perl libebur128-1 libecore1 libedit2
+#15 3.397   libefiboot1t64 libefivar1t64 libegl-dev libegl-mesa0 libegl1 libeina1t64
+#15 3.397   libel-api-java libelf1t64 libemail-address-xs-perl libenchant-2-2
+#15 3.397   libencode-locale-perl libepoxy0 liberror-perl liberror-prone-java libev4t64
+#15 3.397   libeval-closure-perl libevdev2 libevent-2.1-7t64 libevent-core-2.1-7t64
+#15 3.397   libevent-extra-2.1-7t64 libevent-openssl-2.1-7t64 libevent-pthreads-2.1-7t64
+#15 3.397   libexception-class-perl libexecs1 libexpat1 libexplain51t64
+#15 3.397   libexporter-tiny-perl libext2fs2t64 libfabric1 libfakeroot libfcgi-bin
+#15 3.397   libfcgi-perl libfcgi0t64 libfdt1 libfeature-compat-class-perl
+#15 3.397   libfeature-compat-try-perl libffi-dev libffi8 libfftw3-double3
+#15 3.397   libfftw3-single3 libfido2-1 libfile-basedir-perl libfile-chdir-perl
+#15 3.397   libfile-desktopentry-perl libfile-dirlist-perl libfile-fcntllock-perl
+#15 3.397   libfile-find-rule-perl libfile-homedir-perl libfile-listing-perl
+#15 3.397   libfile-mimeinfo-perl libfile-sharedir-perl libfile-stripnondeterminism-perl
+#15 3.397   libfile-touch-perl libfile-which-perl libfl-dev libfl2 libflac14 libflite1
+#15 3.397   libfmt10 libfont-afm-perl libfont-ttf-perl libfontbox-java libfontconfig-dev
+#15 3.397   libfontconfig1 libfontenc1 libfreetype-dev libfreetype6 libfreezethaw-perl
+#15 3.397   libfribidi0 libfstrm0 libfuse2t64 libfuse3-4 libgav1-1 libgbm-dev libgbm1
+#15 3.397   libgc1 libgcc-14-dev libgcrypt20 libgd-perl libgd3 libgdbm-compat4t64
+#15 3.397   libgdbm6t64 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common
+#15 3.397   libgeronimo-annotation-1.3-spec-java libgeronimo-interceptor-3.0-spec-java
+#15 3.397   libgettextpo0 libgfapi0 libgfortran5 libgfrpc0 libgfxdr0 libgif7
+#15 3.397   libgio-2.0-dev libgio-2.0-dev-bin libgirepository-1.0-1
+#15 3.397   libgirepository-1.0-dev libgirepository-2.0-0 libgit-wrapper-perl
+#15 3.397   libgitlab-api-v4-perl libgl-dev libgl1 libgl1-mesa-dri libgles-dev libgles1
+#15 3.397   libgles2 libglib2.0-0t64 libglib2.0-bin libglib2.0-data libglib2.0-dev-bin
+#15 3.397   libglibmm-2.4-1t64 libglu1-mesa libglu1-mesa-dev libglusterfs0 libglvnd0
+#15 3.397   libglx-dev libglx-mesa0 libglx0 libgme0 libgmp-dev libgmpxx4ldbl
+#15 3.397   libgnutls-dane0t64 libgnutls-openssl27t64 libgnutls28-dev libgnutls30t64
+#15 3.397   libgomp1 libgpg-error-l10n libgpg-error0 libgpgme11t64 libgpgmepp6t64
+#15 3.397   libgpm2 libgprofng0 libgraphite2-3 libgs-common libgs10 libgs10-common
+#15 3.397   libgsl28 libgslcblas0 libgsm1 libgspell-1-3 libgspell-1-common
+#15 3.397   libgssapi-krb5-2 libgssrpc4t64 libgstreamer-plugins-base1.0-0
+#15 3.397   libgstreamer1.0-0 libgtk-3-0t64 libgtk-3-bin libgtk-3-common
+#15 3.397   libgtkmm-3.0-1t64 libgtksourceview-4-0 libgtksourceview-4-common
+#15 3.397   libgts-0.7-5t64 libgts-bin libguava-java libgudev-1.0-0 libguice-java
+#15 3.397   libgumbo3 libgvc6 libgvpr2 libhamcrest-java libharfbuzz0b libhdf5-310
+#15 3.397   libheif-plugin-aomenc libheif-plugin-dav1d libheif-plugin-libde265
+#15 3.397   libheif-plugin-x265 libheif1 libhiredis1.1.0 libhsa-runtime64-1 libhsakmt1
+#15 3.397   libhtml-form-perl libhtml-format-perl libhtml-html5-entities-perl
+#15 3.397   libhtml-parser-perl libhtml-tagset-perl libhtml-tokeparser-simple-perl
+#15 3.397   libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl
+#15 3.397   libhttp-message-perl libhttp-negotiate-perl libhttp-tiny-multipart-perl
+#15 3.397   libhttpcore-java libhunspell-1.7-0 libhwasan0 libhwloc-plugins libhwloc15
+#15 3.397   libhwy1t64 libibmad5 libibumad3 libibus-1.0-5 libibus-1.0-dev libibverbs1
+#15 3.397   libice-dev libice6 libicu-dev libicu76 libidn12 libidn2-0 libidn2-dev
+#15 3.397   libiec61883-0 libigdgmm12 libijs-0.35 libimage-magick-perl
+#15 3.397   libimage-magick-q16-perl libimagequant0 libimath-3-1-29t64
+#15 3.397   libimport-into-perl libindirect-perl libinput-bin libinput10
+#15 3.397   libio-compress-brotli-perl libio-html-perl libio-interactive-perl
+#15 3.397   libio-prompter-perl libio-sessiondata-perl libio-socket-ssl-perl
+#15 3.397   libio-string-perl libio-stringy-perl libip4tc-dev libip4tc2 libip6tc-dev
+#15 3.397   libip6tc2 libipc-run3-perl libipc-system-simple-perl libipt2 libiscsi7
+#15 3.397   libisl23 libisoburn1t64 libisofs6t64 libiterator-perl libiterator-util-perl
+#15 3.397   libitm1 libjack-jackd2-0 libjansi-java libjansson4 libjaxen-java libjbig0
+#15 3.397   libjbig2dec0 libjcode-pm-perl libjemalloc2 libjetty9-java libjpeg62-turbo
+#15 3.397   libjq1 libjs-bootstrap5 libjs-d3 libjs-jquery libjs-jquery-hotkeys
+#15 3.397   libjs-jquery-isonscreen libjs-jquery-metadata libjs-jquery-tablesorter
+#15 3.397   libjs-jquery-throttle-debounce libjs-jquery-ui libjson-c5
+#15 3.397   libjson-maybexs-perl libjson-perl libjson-xs-perl libjsoncpp26 libjsoup-java
+#15 3.397   libjsp-api-java libjsr305-java libjte2 libjtidy-java libjudydebian1
+#15 3.397   libjxl0.11 libjxr-tools libjxr0t64 libk5crypto3 libkadm5clnt-mit12
+#15 3.397   libkadm5srv-mit12 libkdb5-10t64 libkeyutils1 libkmod2 libkpathsea6 libkrb5-3
+#15 3.397   libkrb5-dev libkrb5support0 libksba8 liblab-gamut1 liblapack3 liblastlog2-2
+#15 3.397   liblcms2-2 libldap-common libldap-dev libldap2 liblerc4 liblilv-0-0
+#15 3.397   liblist-compare-perl liblist-moreutils-perl liblist-moreutils-xs-perl
+#15 3.397   liblist-someutils-perl liblist-someutils-xs-perl liblist-utilsby-perl
+#15 3.397   libllvm17t64 libllvm19 liblmdb0 liblocale-gettext-perl liblockfile-bin
+#15 3.397   liblockfile1 liblog-any-adapter-screen-perl liblog-any-perl liblqr-1-0
+#15 3.397   liblsan0 liblsof0 libltdl-dev libltdl7 liblua5.1-0 liblua5.3-0 liblua5.4-0
+#15 3.397   liblwp-mediatypes-perl liblwp-protocol-https-perl liblz1 liblz4-dev
+#15 3.397   liblzma-dev liblzma5 liblzo2-2 libmagic-mgc libmagic1t64
+#15 3.397   libmagickcore-7.q16-10 libmagickcore-7.q16-10-extra libmagickwand-7.q16-10
+#15 3.397   libmail-sendmail-perl libmailtools-perl libmariadb-dev libmariadb-dev-compat
+#15 3.397   libmariadb3 libmarkdown2 libmatch-simple-perl libmatch-simple-xs-perl
+#15 3.397   libmath-base85-perl libmaven-archiver-java libmaven-clean-plugin-java
+#15 3.397   libmaven-common-artifact-filters-java libmaven-compiler-plugin-java
+#15 3.397   libmaven-file-management-java libmaven-filtering-java
+#15 3.397   libmaven-jar-plugin-java libmaven-parent-java libmaven-plugin-tools-java
+#15 3.397   libmaven-reporting-api-java libmaven-reporting-exec-java
+#15 3.397   libmaven-reporting-impl-java libmaven-resolver-java
+#15 3.397   libmaven-resources-plugin-java libmaven-shared-incremental-java
+#15 3.397   libmaven-shared-io-java libmaven-shared-utils-java libmaven-site-plugin-java
+#15 3.397   libmaven3-core-java libmaxminddb0 libmbedcrypto16 libmd-dev libmd4c0
+#15 3.397   libmime-tools-perl libmldbm-perl libmnl0 libmodule-implementation-perl
+#15 3.397   libmodule-runtime-conflicts-perl libmodule-runtime-perl libmoo-perl
+#15 3.397   libmoox-aliases-perl libmount-dev libmount1 libmouse-perl libmp3lame0
+#15 3.397   libmpc3 libmpfi0 libmpfr6 libmpg123-0t64 libmro-compat-perl libmtdev1t64
+#15 3.397   libmujs3 libmunge2 libmupdf25.1 libmysofa1 libnamespace-clean-perl
+#15 3.397   libnanomsg5 libncurses6 libncursesw6 libndctl6 libnet-dbus-perl
+#15 3.397   libnet-domain-tld-perl libnet-http-perl libnet-ipv6addr-perl
+#15 3.397   libnet-netmask-perl libnet-smtp-ssl-perl libnet-ssleay-perl
+#15 3.397   libnetaddr-ip-perl libnetfilter-conntrack3 libnetpbm11t64
+#15 3.397   libnetsnmptrapd40t64 libnfnetlink-dev libnfnetlink0 libnfs14 libnftnl11
+#15 3.397   libnghttp2-14 libnghttp2-dev libnghttp3-9 libnghttp3-dev libngtcp2-16
+#15 3.397   libngtcp2-crypto-gnutls8 libnl-3-200 libnl-route-3-200 libnorm-dev
+#15 3.397   libnorm1t64 libnpth0t64 libnsl2 libnspr4 libnss-systemd libnss3 libnuma1
+#15 3.397   libnumber-compare-perl libobjc-14-dev libobjc4 libobject-pad-perl libogg0
+#15 3.397   libole-storage-lite-perl libonig5 libopencore-amrnb0 libopencore-amrwb0
+#15 3.397   libopenexr-3-1-30 libopengl-dev libopengl0 libopenjp2-7 libopenmpi40
+#15 3.397   libopenmpt0t64 libopentest4j-java libopentest4j-reporting-java libopts25
+#15 3.397   libopus0 liborc-0.4-0t64 liboro-java libosp5 libostyle1t64 libp11-kit-dev
+#15 3.397   libp11-kit0 libpackage-deprecationmanager-perl libpackage-stash-perl
+#15 3.397   libpackage-stash-xs-perl libpadwalker-perl libpam-cap libpam-doc
+#15 3.397   libpam-systemd libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+#15 3.397   libpangomm-1.4-1v5 libpaper-utils libpaper2 libparams-classify-perl
+#15 3.397   libparams-util-perl libparams-validate-perl
+#15 3.397   libparams-validationcompiler-perl libparse-recdescent-perl libparted2t64
+#15 3.397   libpath-iterator-rule-perl libpath-tiny-perl libpathplan4 libpcap0.8-dev
+#15 3.397   libpcap0.8t64 libpciaccess-dev libpciaccess0 libpcre2-16-0 libpcre2-32-0
+#15 3.397   libpcre2-dev libpcre2-posix3 libpcsclite1 libpdfbox-java libperl5.40
+#15 3.397   libperlio-gzip-perl libperlio-utf8-strict-perl libpfm4 libpgm-5.3-0t64
+#15 3.397   libpgm-dev libpicocli-java libpipeline1 libpipewire-0.3-0t64
+#15 3.397   libpipewire-0.3-common libpixman-1-0 libpixman-1-dev libpkgconf3
+#15 3.397   libplacebo349 libplexus-ant-factory-java libplexus-archiver-java
+#15 3.397   libplexus-bsh-factory-java libplexus-build-api-java libplexus-cipher-java
+#15 3.397   libplexus-classworlds-java libplexus-compiler-java
+#15 3.397   libplexus-component-annotations-java libplexus-container-default-java
+#15 3.397   libplexus-container-default1.5-java libplexus-i18n-java
+#15 3.397   libplexus-interpolation-java libplexus-io-java libplexus-languages-java
+#15 3.397   libplexus-sec-dispatcher-java libplexus-utils2-java libplexus-velocity-java
+#15 3.397   libplexus-xml-java libpmem1 libpmix2t64 libpng-dev libpng-tools
+#15 3.397   libpng16-16t64 libpocketsphinx3 libpod-constants-perl libpod-parser-perl
+#15 3.397   libpoppler-glib8t64 libpoppler147 libpopt0 libpostproc58 libpotrace0
+#15 3.397   libproc-processtable-perl libproc2-0 libprotobuf-c1 libprotobuf-lite32t64
+#15 3.397   libprotobuf32t64 libprotoc32t64 libproxy1v5 libpsl-dev libpsl5t64 libpsm2-2
+#15 3.397   libptexenc1 libpulse-dev libpulse-mainloop-glib0 libpulse0
+#15 3.397   libpython3-all-dbg libpython3-all-dev libpython3-dbg libpython3-dev
+#15 3.397   libpython3-stdlib libpython3.13 libpython3.13-dbg libpython3.13-dev
+#15 3.397   libpython3.13-minimal libpython3.13-stdlib libqdox2-java libqhull-r8.0
+#15 3.397   libqt5concurrent5t64 libqt5core5t64 libqt5dbus5t64 libqt5gui5t64
+#15 3.397   libqt5network5t64 libqt5opengl5-dev libqt5opengl5t64 libqt5printsupport5t64
+#15 3.397   libqt5qml5 libqt5qmlmodels5 libqt5quick5 libqt5sql5-sqlite libqt5sql5t64
+#15 3.397   libqt5svg5 libqt5test5t64 libqt5waylandclient5 libqt5waylandcompositor5
+#15 3.397   libqt5widgets5t64 libqt5xml5t64 libquadmath0 librabbitmq4 librados2 libraqm0
+#15 3.397   librav1e0.7 libraw1394-11 libraw23t64 librbd1 librdkafka++1 librdkafka1
+#15 3.397   librdmacm1t64 libre-engine-re2-perl libre2-11 libreadline8t64
+#15 3.397   libreadonly-perl libref-util-perl libref-util-xs-perl
+#15 3.397   libregexp-assemble-perl libregexp-pattern-license-perl
+#15 3.397   libregexp-pattern-perl libregexp-wildcards-perl librevenge-0.0-0 librhash1
+#15 3.397   librist4 librole-tiny-perl librpm-sequoia-1 librpm10 librpmio10 librsvg2-2
+#15 3.397   librsvg2-common librtmp-dev librtmp1 librubberband2 libruby libruby3.3
+#15 3.397   libsamplerate0 libsamplerate0-dev libsasl2-2 libsasl2-modules
+#15 3.397   libsasl2-modules-db libsdl1.2debian libsdl2-2.0-0 libsdl2-dev
+#15 3.397   libsensors-config libsepol-dev libserd-0-0 libsereal-decoder-perl
+#15 3.397   libsereal-encoder-perl libservlet-api-java libset-intspan-perl libsframe1
+#15 3.397   libsgmls-perl libsharpyuv0 libshine3 libshout3 libsigc++-2.0-0v5 libsigsegv2
+#15 3.397   libsisu-inject-java libsisu-plexus-java libslang2 libslirp0 libsm-dev libsm6
+#15 3.397   libsmartcols1 libsnappy-java libsnappy-jni libsnappy1v5 libsndfile1
+#15 3.397   libsndio-dev libsndio7.0 libsnmp-base libsnmp-perl libsnmp40t64
+#15 3.397   libsoap-lite-perl libsocket6-perl libsodium-dev libsodium23 libsord-0-0
+#15 3.397   libsort-versions-perl libsoup-3.0-0 libsoup-3.0-common
+#15 3.397   libsource-highlight-common libsource-highlight4t64 libsoxr0
+#15 3.397   libspa-0.2-modules libspecio-perl libspeex1 libsphinxbase3t64
+#15 3.397   libspice-server1 libspreadsheet-parseexcel-perl
+#15 3.397   libspreadsheet-writeexcel-perl libsratom-0-0 libsrt1.5-gnutls libss2
+#15 3.397   libssh-4 libssh2-1-dev libssh2-1t64 libstdc++-14-dev libstemmer0d
+#15 3.397   libstrictures-perl libstring-copyright-perl libstring-escape-perl
+#15 3.397   libstring-license-perl libstring-shellquote-perl libsub-exporter-perl
+#15 3.397   libsub-exporter-progressive-perl libsub-identify-perl libsub-infix-perl
+#15 3.397   libsub-install-perl libsub-name-perl libsub-quote-perl libsubunit-dev
+#15 3.397   libsubunit0 libsurefire-java libsvtav1enc2 libswresample5 libswscale8
+#15 3.397   libsynctex2 libsyntax-keyword-try-perl libsys-cpuaffinity-perl
+#15 3.397   libsys-hostname-long-perl libsysprof-capture-4-dev libsystemd-shared libsz2
+#15 3.397   libtag2 libtask-weaken-perl libtasn1-6 libtasn1-6-dev libtasn1-doc libtbb12
+#15 3.397   libtbbbind-2-5 libtbbmalloc2 libtcl8.6 libtcmalloc-minimal4t64 libteckit0
+#15 3.397   libterm-readkey-perl libtexlua53-5 libtext-charwidth-perl libtext-glob-perl
+#15 3.397   libtext-iconv-perl libtext-levenshteinxs-perl libtext-markdown-discount-perl
+#15 3.397   libtext-unidecode-perl libtext-wrapi18n-perl libtext-xslate-perl
+#15 3.397   libthai-data libthai0 libtheora0 libtheoradec1 libtheoraenc1
+#15 3.397   libtie-ixhash-perl libtiff6 libtime-duration-perl libtime-moment-perl
+#15 3.397   libtimedate-perl libtinyxml2-11 libtirpc-common libtirpc-dev libtirpc3t64
+#15 3.397   libtk8.6 libtry-tiny-perl libtsan2 libtwolame0 libtype-tiny-perl
+#15 3.397   libtype-tiny-xs-perl libtypes-serialiser-perl libubsan1 libuchardet0 libucx0
+#15 3.397   libudev-dev libudfread0 libunbound8 libunibreak6 libunicode-map-perl
+#15 3.397   libunicode-utf8-perl libunistring5 libunivocity-parsers-java libunwind8
+#15 3.397   liburcu8t64 liburi-perl liburing2 libusb-0.1-4 libusb-1.0-0 libusb-1.0-doc
+#15 3.397   libusbredirparser1t64 libuuid1 libuv1t64 libv4l-0t64 libv4lconvert0t64
+#15 3.397   libva-drm2 libva-x11-2 libva2 libvariable-magic-perl libvdeplug2t64
+#15 3.397   libvdpau-va-gl1 libvdpau1 libvelocity-tools-java libverto-glib1t64
+#15 3.397   libverto-libev1t64 libverto1t64 libvidstab1.1 libvirglrenderer1
+#15 3.397   libvirt-common libvirt-l10n libvirt0 libvisio-0.1-1 libvisual-0.4-0
+#15 3.397   libvorbis0a libvorbisenc2 libvorbisfile3 libvpl2 libvpx9 libvte-2.91-0
+#15 3.397   libvte-2.91-common libvulkan-dev libvulkan1 libwacom-common libwacom9
+#15 3.397   libwagon-file-java libwagon-http-java libwagon-provider-api-java
+#15 3.397   libwant-perl libwavpack1 libwayland-bin libwayland-client0
+#15 3.397   libwayland-cursor0 libwayland-dev libwayland-egl1 libwayland-server0
+#15 3.397   libwebp7 libwebpdemux2 libwebpmux3 libwebrtc-audio-processing-1-3
+#15 3.397   libwebsocket-api-java libwmf-0.2-7 libwmf-bin libwmflite-0.2-7 libwoff1
+#15 3.397   libwpd-0.10-10 libwpg-0.3-3 libwrap0 libwtmpdb0 libwww-mechanize-perl
+#15 3.397   libwww-perl libwww-robotrules-perl libx11-6 libx11-data libx11-dev
+#15 3.397   libx11-protocol-perl libx11-xcb1 libx264-164 libx265-215 libxapian30
+#15 3.397   libxau-dev libxau6 libxaw7 libxbean-reflect-java libxcb-dri3-0 libxcb-glx0
+#15 3.397   libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-present0 libxcb-randr0
+#15 3.397   libxcb-render-util0 libxcb-render0 libxcb-render0-dev libxcb-shape0
+#15 3.397   libxcb-shm0 libxcb-shm0-dev libxcb-sync1 libxcb-util1 libxcb-xfixes0
+#15 3.397   libxcb-xinerama0 libxcb-xinput0 libxcb-xkb1 libxcb1 libxcb1-dev
+#15 3.397   libxcomposite1 libxcursor-dev libxcursor1 libxdamage1 libxdelta2t64
+#15 3.397   libxdmcp-dev libxdmcp6 libxext-dev libxext6 libxfixes-dev libxfixes3
+#15 3.397   libxfont2 libxft2 libxi-dev libxi6 libxinerama-dev libxinerama1
+#15 3.397   libxkbcommon-dev libxkbcommon-x11-0 libxkbcommon0 libxkbfile1
+#15 3.397   libxml-libxml-perl libxml-namespacesupport-perl libxml-parser-perl
+#15 3.397   libxml-sax-base-perl libxml-sax-expat-perl libxml-sax-perl libxml-twig-perl
+#15 3.397   libxml-xpathengine-perl libxml2 libxmlb2 libxmlrpc-lite-perl libxmu6
+#15 3.397   libxmuu1 libxnvctrl0 libxpm4 libxrandr-dev libxrandr2 libxrender-dev
+#15 3.397   libxrender1 libxs-parse-keyword-perl libxs-parse-sublike-perl libxshmfence1
+#15 3.397   libxslt1.1 libxss-dev libxss1 libxstring-perl libxt-dev libxt6t64
+#15 3.397   libxtables12 libxtst6 libxv-dev libxv1 libxvidcore4 libxxf86dga1
+#15 3.397   libxxf86vm-dev libxxf86vm1 libxz-java libyaml-0-2 libyaml-cpp0.8
+#15 3.397   libyaml-libyaml-perl libyuv0 libz3-4 libz3-dev libze1 libzimg2 libzip5
+#15 3.397   libzix-0-0 libzopfli1 libzstd-dev libzvbi-common libzvbi0t64 libzzip-0-13t64
+#15 3.397   licensecheck linux-libc-dev linux-sysctl-defaults llvm-19 llvm-19-dev
+#15 3.397   llvm-19-linker-tools llvm-19-runtime llvm-19-tools lmdb-doc lmodern login
+#15 3.397   logsave lsb-release lsof lua-bitop lua-cjson luit lynx-common lzip lzop
+#15 3.397   mailcap make man-db manpages manpages-dev mariadb-common maven
+#15 3.397   maven-repo-helper media-types mesa-libgallium mesa-va-drivers
+#15 3.397   mesa-vdpau-drivers mesa-vulkan-drivers mount mupdf-tools mysql-common
+#15 3.397   native-architecture ncurses-term netbase netpbm nettle-dev ninja-build
+#15 3.397   node-popper2 numba-doc ocl-icd-libopencl1 openjade openjdk-21-jdk
+#15 3.397   openjdk-21-jdk-headless openjdk-21-jre openjdk-21-jre-headless opensp
+#15 3.397   openssh-client openssh-sftp-server ovmf pandoc-data patch patchutils
+#15 3.397   pbuilder pbzip2 pci.ids perl perl-openssl-defaults php-cli php-codecoverage
+#15 3.397   php-common php-deepcopy php-file-iterator php-invoker php-mbstring
+#15 3.397   php-parser php-pear php-phar-io-manifest php-phar-io-version
+#15 3.397   php-staabm-side-effects-detector php-text-template php-timer php-tokenizer
+#15 3.397   php-xml php8.4-cli php8.4-common php8.4-mbstring php8.4-opcache
+#15 3.397   php8.4-readline php8.4-xml phpunit-cli-parser phpunit-code-unit
+#15 3.397   phpunit-code-unit-reverse-lookup phpunit-comparator phpunit-complexity
+#15 3.397   phpunit-diff phpunit-environment phpunit-exporter phpunit-global-state
+#15 3.397   phpunit-lines-of-code phpunit-object-enumerator phpunit-object-reflector
+#15 3.398   phpunit-recursion-context phpunit-type phpunit-version pinentry-curses pixz
+#15 3.398   pkgconf-bin plzip pnp.ids po-debconf pocketsphinx-en-us poppler-data
+#15 3.398   preview-latex-style pristine-tar procps psmisc psutils publicsuffix
+#15 3.398   python-apt-common python-babel-localedata python-matplotlib-data
+#15 3.398   python-odf-doc python-odf-tools python-tables-data python3-alabaster
+#15 3.398   python3-all python3-apt python3-astroid python3-attr python3-autocommand
+#15 3.398   python3-automat python3-babel python3-bcrypt python3-blessed
+#15 3.398   python3-bottleneck python3-brotli python3-bs4 python3-certifi
+#15 3.398   python3-cffi-backend python3-chardet python3-charset-normalizer
+#15 3.398   python3-clevercsv python3-click python3-colorlog python3-constantly
+#15 3.398   python3-contourpy python3-coverage python3-cpuinfo python3-cssselect
+#15 3.398   python3-cycler python3-dateutil python3-dbg python3-debian python3-decorator
+#15 3.398   python3-defusedxml python3-dill python3-et-xmlfile python3-fonttools
+#15 3.398   python3-fs python3-gpg python3-hamcrest python3-html5lib python3-hyperlink
+#15 3.398   python3-idna python3-imagesize python3-incremental python3-inflect
+#15 3.398   python3-iniconfig python3-invoke python3-isort python3-jaraco.context
+#15 3.398   python3-jaraco.functools python3-jaraco.text python3-jsonpickle
+#15 3.398   python3-kiwisolver python3-legacy-cgi python3-llvmlite
+#15 3.398   python3-logilab-common python3-lz4 python3-magic python3-markdown
+#15 3.398   python3-matplotlib python3-mccabe python3-minimal python3-more-itertools
+#15 3.398   python3-mpmath python3-mypy-extensions python3-nacl python3-numba
+#15 3.398   python3-numexpr python3-numpy python3-numpy-dev python3-odf python3-olefile
+#15 3.398   python3-openpyxl python3-openssl python3-orderly-set python3-packaging
+#15 3.398   python3-pandas python3-pandas-lib python3-pil python3-pil.imagetk
+#15 3.398   python3-pip-whl python3-pkg-resources python3-platformdirs python3-pluggy
+#15 3.398   python3-ply python3-pooch python3-prefixed python3-psutils
+#15 3.398   python3-ptyprocess python3-puremagic python3-pyasn1 python3-pyasn1-modules
+#15 3.398   python3-pycparser python3-pycryptodome python3-pyparsing python3-pypdf
+#15 3.398   python3-pyproject-hooks python3-pytz python3-regex python3-scipy
+#15 3.398   python3-scour python3-service-identity python3-setuptools-whl
+#15 3.398   python3-snowballstemmer python3-soupsieve python3-sympy python3-tables
+#15 3.398   python3-tables-lib python3-tk python3-tomlkit python3-tqdm python3-typeguard
+#15 3.398   python3-typing-extensions python3-tz python3-ufolib2 python3-unidiff
+#15 3.398   python3-urllib3 python3-wcwidth python3-webencodings python3-wilderness
+#15 3.398   python3-xdg python3-zipp python3-zope.interface python3-zopfli python3.13
+#15 3.398   python3.13-dbg python3.13-dev python3.13-minimal python3.13-tk
+#15 3.398   python3.13-venv qemu-block-extra qemu-system-common qemu-system-data
+#15 3.398   qemu-system-gui qemu-system-modules-opengl qemu-system-modules-spice
+#15 3.398   qemu-utils qt5-gtk-platformtheme qt5-qmake qt5-qmake-bin qtbase5-dev-tools
+#15 3.398   qtchooser qttranslations5-l10n qtwayland5 rake readline-common rpcsvc-proto
+#15 3.398   rpm-common ruby ruby-all-dev ruby-csv ruby-did-you-mean ruby-minitest
+#15 3.398   ruby-net-telnet ruby-power-assert ruby-ruby2-keywords ruby-rubygems
+#15 3.398   ruby-sdbm ruby-test-unit ruby-webrick ruby-xmlrpc ruby3.3 ruby3.3-dev
+#15 3.398   ruby3.3-doc rubygems-integration runit-helper scour seabios sensible-utils
+#15 3.398   sgml-base sgml-data sgmlspl shared-mime-info sphinx-rtd-theme-common sq
+#15 3.398   strace systemd systemd-cryptsetup systemd-sysv systemd-timesyncd t1utils tcl
+#15 3.398   tcl8.6 teckit tex-common tex-gyre texinfo-lib texlive-base texlive-binaries
+#15 3.398   texlive-formats-extra texlive-pictures texlive-xetex tiny-initramfs-core
+#15 3.398   tipa tk tk8.6 tk8.6-blt2.5 ucf unicode-data usb.ids util-linux va-driver-all
+#15 3.398   vdpau-driver-all velocity wdiff x11-common x11-utils x11-xkb-utils
+#15 3.398   x11-xserver-utils x11proto-dev xauth xdelta xdelta3 xdg-user-dirs xdg-utils
+#15 3.398   xfonts-base xfonts-encodings xfonts-utils xkb-data xml-core
+#15 3.398   xorg-sgml-doctools xserver-common xtrans-dev xz-utils zipcmp zipmerge
+#15 3.398   ziptool zlib1g-dev zutty
+#15 3.401 Suggested packages:
+#15 3.401   quota adwaita-icon-theme-legacy ant-doc antlr javacc junit jython
+#15 3.401   libactivation-java libbcel-java libbsf-java libcommons-net-java libmail-java
+#15 3.401   libjaxp1.3-java libjdepend-java libjsch-java liblog4j1.2-java libregexp-java
+#15 3.401   libxalan2-java libxml-commons-resolver1.1-java apt-config-icons aspell-doc
+#15 3.401   spellutils audispd-plugins augeas-doc gnu-standards autoconf-doc
+#15 3.401   binutils-doc gprofng-gui binutils-gold bison-doc blt-demo distcc | icecc
+#15 3.401   clang-19-doc wasi-libc cmake-doc cmake-format elpa-cmake-mode doc-base
+#15 3.401   libarchive-dev cpp-doc gcc-14-locales cpp-14-doc cppcheck-gui clang-tidy
+#15 3.401   anacron checksecurity supercat bat cython-doc debtags squid-deb-proxy-client
+#15 3.401   ubuntu-archive-keyring zstd adequate at autopkgtest bls-standalone
+#15 3.401   check-all-the-things diffoscope disorderfs docker.io dose-extra duck
+#15 3.401   elpa-devscripts faketime gnuplot how-can-i-help libdbd-pg-perl
+#15 3.401   libterm-size-perl mmdebstrap mutt piuparts postgresql-client pristine-lfs
+#15 3.401   python3-debianbts python3-pycurl ratt reprotest svn-buildpackage w3m
+#15 3.401   apparmor-utils pinentry-gnome3 tor shunit2 menu docbook-defguide psgml
+#15 3.401   docbook-dsssl-doc docbook-xsl doxygen-latex doxygen-doc doxygen-gui
+#15 3.401   mini-dinstall rsync gpart fuse2fs e2fsck-static exim4-doc-html
+#15 3.401   | exim4-doc-info eximon4 spf-tools-perl swaks xfig flex-doc fonts-noto
+#15 3.401   fonts-freefont-otf | fonts-freefont-ttf g++-multilib g++-14-multilib
+#15 3.401   gcc-14-doc gawk-doc gcc-multilib gcc-doc gcc-14-multilib
+#15 3.401   gdb-x86-64-linux-gnu gdb-doc gdbserver gettext-doc libasprintf-dev
+#15 3.401   gnulib-l10n git-doc git-email git-gui gitk gitweb git-cvs git-mediawiki
+#15 3.401   git-svn python3-notify2 gpg-wks-server parcimonie xloadimage scdaemon
+#15 3.401   tpm2daemon gsfonts graphviz-doc gvfs hunspell openoffice.org-hunspell
+#15 3.401   | openoffice.org-core i965-va-driver-shaders imagemagick-7-doc autotrace
+#15 3.401   cups-bsd | lpr | lprng enscript ffmpeg gimp grads hp2xx html2ps mplayer
+#15 3.401   povray radiance sane-utils libraw-bin dia inkscape-tutorials libsvg-perl
+#15 3.401   pstoedit python3-uniconvertor isoquery apache2 | lighttpd | httpd krb5-doc
+#15 3.401   lrzip alsa-utils libasound2-doc libasound2-plugins
+#15 3.401   libatinject-jsr330-api-java-doc libdigest-hmac-perl libgssapi-perl libcuda1
+#15 3.401   libnvcuvid1 libnvidia-encode1 libbluray-bdj libboost-doc libboost1.83-doc
+#15 3.401   libboost-exception1.83-dev libboost-graph1.83-dev libboost-iostreams1.83-dev
+#15 3.401   libboost-json1.83-dev libboost-locale1.83-dev libboost-math1.83-dev
+#15 3.401   libboost-mpi-python1.83-dev libboost-mpi1.83-dev libboost-nowide1.83-dev
+#15 3.401   libboost-numpy1.83-dev libboost-python1.83-dev libboost-random1.83-dev
+#15 3.401   libboost-stacktrace1.83-dev libboost-timer1.83-dev
+#15 3.401   libboost-type-erasure1.83-dev libboost-url1.83-dev libboost-wave1.83-dev
+#15 3.401   libboost1.83-tools-dev libmpfrc++-dev libntl-dev libc-devtools glibc-doc
+#15 3.401   libcairo2-doc colord libcommons-collections3-java-doc
+#15 3.401   libcommons-lang-java-doc libavalon-framework-java libexcalibur-logkit-java
+#15 3.401   libcunit1-doc cups-common libcurl4-doc libidn-dev libdaemon-doc db5.3-doc
+#15 3.401   libmsv-java libxpp2-java libxpp3-java bzr libdv-bin oss-compat libdvdcss2
+#15 3.401   libenchant-2-voikko libfftw3-bin libfftw3-dev freetype2-doc fuse3 rng-tools
+#15 3.401   libgd-tools gdbm-l10n libglib2.0-doc libgirepository1.0-doc
+#15 3.401   low-memory-monitor gmp-doc libgmp10-doc libmpfr-dev dns-root-data gnutls-bin
+#15 3.401   gnutls-doc gpm gsl-ref-psdoc | gsl-doc-pdf | gsl-doc-info | gsl-ref-html
+#15 3.401   krb5-user libvisual-0.4-plugins gstreamer1.0-tools libheif-plugin-ffmpegdec
+#15 3.401   libheif-plugin-jpegdec libheif-plugin-jpegenc libheif-plugin-j2kdec
+#15 3.401   libheif-plugin-j2kenc libheif-plugin-kvazaar libheif-plugin-rav1e
+#15 3.401   libheif-plugin-svtenc libhwloc-contrib-plugins libice-doc icu-doc jackd2
+#15 3.401   libjdom1-java libxom-java jetty9 bootstrap-icons libjs-bootstrap5-doc
+#15 3.401   libjs-jquery-ui-docs libjsoup-java-doc libjsr305-java-doc libjtidy-java-doc
+#15 3.401   liblcms2-utils libtool-doc libcrypt-ssleay-perl liblzma-doc
+#15 3.401   libmaven-file-management-java-doc liblogback-java mmdb-bin libmpfi-doc
+#15 3.401   ncurses-doc libnetfilter-conntrack-doc libnftnl-dev-doc libnghttp2-doc
+#15 3.401   libnorm-doc libtss2-rc0t64 opus-tools p11-kit-doc libscalar-number-perl
+#15 3.401   libparted-dev libparted-i18n pcscd pipewire libeclipse-jdt-core-java
+#15 3.401   libplexus-utils2-java-doc pulseaudio qgnomeplatform-qt5
+#15 3.401   qt5-image-formats-plugins qt5-qmltooling-plugins libraw1394-doc readline-doc
+#15 3.401   librsvg2-bin libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
+#15 3.401   libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql lm-sensors
+#15 3.401   serdi sgmls-doc testng libsm-doc sndiod snmp-mibs-downloader
+#15 3.401   libapache2-mod-perl2 libmime-lite-perl libnet-jabber-perl sordi
+#15 3.401   libtest-fatal-perl speex gstreamer1.0-plugins-ugly sqlite3-doc libssl-doc
+#15 3.401   libstdc++-14-doc libbareword-filehandles-perl libmultidimensional-perl
+#15 3.401   libpwquality1 libqrencode4 libtemplate-plugin-gd-perl
+#15 3.401   libtemplate-plugin-xml-perl gfortran | fortran95-compiler gcj-jdk
+#15 3.401   libbusiness-isbn-perl libmime-base32-perl libregexp-ipv6-perl
+#15 3.401   libvirt-clients-qemu libvirt-daemon libvirt-login-shell libwacom-bin
+#15 3.401   libwayland-doc libwmf-0.2-7-gtk libauthen-ntlm-perl libx11-doc xapian-tools
+#15 3.401   libxcb-doc libxext-doc libxml-sax-expatxs-perl libunicode-map8-perl
+#15 3.401   libunicode-string-perl xml-twig-tools libxt-doc libyaml-doc
+#15 3.401   binutils-multiarch libtext-template-perl info-browser linuxdoc-tools-text
+#15 3.401   linuxdoc-tools-latex linuxdoc-tools-info llvm-19-doc m4-doc make-doc
+#15 3.401   apparmor libmaven-javadoc-plugin-java subversion dialog | whiptail floppyd
+#15 3.401   opencl-icd openjdk-21-demo openjdk-21-source visualvm libnss-mdns
+#15 3.401   fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
+#15 3.401   | fonts-wqy-zenhei fonts-indic keychain libpam-ssh monkeysphere ssh-askpass
+#15 3.401   molly-guard ufw texlive-luatex pandoc-citeproc context wkhtmltopdf ghc
+#15 3.401   nodejs php python r-base-core libjs-mathjax libjs-katex
+#15 3.401   citation-style-language-styles parted-doc diffutils-doc gdebi-core perl-doc
+#15 3.401   libterm-readline-gnu-perl | libterm-readline-perl-perl
+#15 3.401   libtap-harness-archive-perl php-pcov php-xdebug php-soap php-bcmath
+#15 3.401   pinentry-doc libmail-box-perl poppler-utils fonts-japanese-mincho
+#15 3.401   | fonts-ipafont-mincho fonts-japanese-gothic | fonts-ipafont-gothic
+#15 3.401   fonts-arphic-ukai fonts-arphic-uming fonts-nanum protobuf-mode-el
+#15 3.401   python3-doc python-apt-doc python-attr-doc python-bottleneck-doc
+#15 3.401   python-build-doc python-charset-normalizer-doc python-cheetah-doc
+#15 3.401   python3-memcache python3-clevercsv-doc python-coverage-doc
+#15 3.401   python-cryptography-doc python3-cryptography-vectors python-cycler-doc
+#15 3.401   python-dbus-doc python3-objgraph docutils-doc fonts-linuxlibertine
+#15 3.401   | ttf-linux-libertine texlive-lang-french python3-genshi python-invoke-doc
+#15 3.401   python-jinja2-doc python-jsonpickle-doc python3-simplejson llvmlite-doc
+#15 3.401   python-lxml-doc python-mako-doc python3-beaker python-markdown-doc dvipng
+#15 3.401   fonts-staypuft gir1.2-gtk-3.0 gir1.2-gtk-4.0 ipython3 python-matplotlib-doc
+#15 3.401   python3-cairocffi python3-gi-cairo python3-gobject python3-pyqt5 python3-sip
+#15 3.401   python3-tornado texlive-extra-utils python-mpmath-doc python3-gmpy2
+#15 3.401   python-nacl-doc python-natsort-doc python-nose2-doc nvidia-cuda-toolkit
+#15 3.401   gfortran python-numpy-doc python-openpyxl-doc python-openssl-doc
+#15 3.401   python-pandas-doc python3-statsmodels python3-gssapi python-pexpect-doc
+#15 3.401   python-pil-doc python-ply-doc python-pygments-doc ttf-bitstream-vera
+#15 3.401   python-pyparsing-doc python3-socks python-requests-doc python-scipy-doc
+#15 3.401   python-setuptools-doc python3-stemmer fonts-freefont-otf latexmk
+#15 3.401   node-mathjax-full python3-sphinx-rtd-theme sphinx-doc texlive-fonts-extra
+#15 3.401   python-sympy-doc python3-netcdf4 python-tables-doc vitables tix
+#15 3.401   python3-tk-dbg python3-pampy python3-serial python3-wxgtk4.0
+#15 3.401   python-pyxdg-doc python3.13-doc python3-gdbm-dbg samba vde2 firebird-dev
+#15 3.401   libpq-dev unixodbc-dev rpm-i18n librrds-perl ri ruby-dev bundler
+#15 3.401   gir1.2-rsvg-2.0 sgml-base-doc perlsgml w3-recs sharutils-doc swig-doc
+#15 3.401   swig-examples systemd-container systemd-homed systemd-userdbd systemd-boot
+#15 3.401   systemd-resolved systemd-repart libtss2-tcti-device0 polkitd expect
+#15 3.401   tcl-tclreadline latex2html perl-tk xpdf | pdf-viewer xzdec
+#15 3.401   texlive-binaries-sse2 hintview texlive-fonts-recommended-doc
+#15 3.401   texlive-latex-base-doc wp2latex icc-profiles texlive-latex-extra-doc
+#15 3.401   texlive-science texlive-latex-recommended-doc texlive-pstricks dot2tex
+#15 3.401   prerex texlive-pictures-doc vprerex tipa-doc usbutils-py valgrind-mpi
+#15 3.401   kcachegrind nvidia-vdpau-driver nvidia-tesla-440-vdpau-driver
+#15 3.401   nvidia-tesla-418-vdpau-driver nvidia-legacy-390xx-vdpau-driver
+#15 3.401   nvidia-legacy-340xx-vdpau-driver wdiff-doc mesa-utils nickle cairo-5c
+#15 3.401   xorg-docs-core fonts-unifont xorriso-tcltk jigit cdck
+make: *** [Makefile:125: configure] Hangup
+make[1]: *** [Makefile.work:750: configure] Hangup
